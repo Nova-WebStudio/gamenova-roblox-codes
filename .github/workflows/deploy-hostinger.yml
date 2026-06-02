@@ -1,0 +1,37 @@
+name: 🚀 Deploy GameNova → Hostinger
+
+on:
+  push:
+    branches:
+      - main   # chaque git push sur main déclenche le déploiement
+  workflow_dispatch:  # bouton manuel depuis GitHub Actions
+
+jobs:
+  deploy:
+    name: Upload vers Hostinger via FTP
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Télécharger le code
+        uses: actions/checkout@v4
+
+      - name: 📤 Déployer sur Hostinger (FTP)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server:       ${{ secrets.FTP_HOST }}
+          username:     ${{ secrets.FTP_USER }}
+          password:     ${{ secrets.FTP_PASS }}
+          port:         21
+          protocol:     ftp
+          local-dir:    ./          # racine du projet GameNova
+          server-dir:   /public_html/  # dossier racine Hostinger
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.vercel/**
+            **/node_modules/**
+            **/.github/**
+            **/deploy.bat
+            **/deploy.ps1
+            **/*.md
+            **/_TEMPLATE.html
