@@ -159,84 +159,134 @@ p  { color: var(--text-muted); }
    ============================================================ */
 .hero {
   position: relative;
-  padding: 100px 0 80px;
+  min-height: 580px;
+  display: flex;
+  align-items: center;
   text-align: center;
-  border-bottom: 1px solid var(--border);
   overflow: hidden;
-  min-height: 520px;
-  display: flex; align-items: center;
+  border-bottom: 1px solid var(--border);
 }
 
-/* Background image — ../images/ = relatif depuis css/style.css */
+/* ── Image de fond : balise <img> positionnée en absolu ── */
 .hero-bg-img {
-  position: absolute; inset: 0; z-index: 0;
-  background-image: url('../images/hero-bg.png');
-  background-size: cover;
-  background-position: center 30%;
-  background-repeat: no-repeat;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  z-index: 0;
+  /* légère désaturation pour que le texte ressorte mieux */
+  filter: brightness(0.85) saturate(1.1);
 }
 
-/* Dark overlay so text stays readable — heavier on left, lighter on right */
+/* ── Overlay multicouche ── */
 .hero-overlay {
-  position: absolute; inset: 0; z-index: 1;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
   background:
+    /* fondu bas vers la couleur du site */
     linear-gradient(to bottom,
-      rgba(7,7,26,0.72) 0%,
-      rgba(7,7,26,0.55) 50%,
-      rgba(7,7,26,0.85) 100%),
-    radial-gradient(ellipse at 20% 50%, rgba(162,89,255,0.18) 0%, transparent 60%);
+      rgba(7,7,26,0.35)  0%,
+      rgba(7,7,26,0.20) 35%,
+      rgba(7,7,26,0.55) 70%,
+      rgba(7,7,26,0.95) 100%
+    ),
+    /* lueur violette centre-gauche (effet Roblox) */
+    radial-gradient(ellipse at 30% 60%,
+      rgba(120,50,220,0.30) 0%,
+      transparent 65%
+    );
+}
+
+/* ── Contenu du hero ── */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 90px 20px 80px;
+  width: 100%;
 }
 
 .hero-badge {
   display: inline-flex; align-items: center; gap: 6px;
-  background: rgba(162,89,255,0.15); border: 1px solid rgba(162,89,255,0.45);
-  border-radius: 20px; padding: 5px 16px; font-size: 0.8rem;
-  color: #d4aaff; font-weight: 700; margin-bottom: 20px;
-  letter-spacing: 0.3px;
-  box-shadow: 0 0 20px rgba(162,89,255,0.2);
+  background: rgba(162,89,255,0.18);
+  border: 1px solid rgba(162,89,255,0.5);
+  border-radius: 20px; padding: 5px 18px; font-size: 0.8rem;
+  color: #e0b4ff; font-weight: 700; margin-bottom: 22px;
+  letter-spacing: 0.4px;
+  box-shadow: 0 0 24px rgba(162,89,255,0.25), inset 0 1px 0 rgba(255,255,255,0.1);
+  backdrop-filter: blur(6px);
 }
 .hero-badge::before { content: '🟣'; font-size: 0.7rem; }
 
 .hero h1 {
-  text-shadow: 0 2px 20px rgba(0,0,0,0.8);
-  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  text-shadow: 0 2px 30px rgba(0,0,0,0.9), 0 0 60px rgba(120,50,220,0.4);
+  line-height: 1.15;
 }
+
 .hero p {
-  font-size: 1.1rem; color: rgba(240,240,255,0.82); max-width: 560px;
-  margin: 16px auto 0; text-shadow: 0 1px 8px rgba(0,0,0,0.6);
+  font-size: 1.1rem;
+  color: rgba(230,220,255,0.88);
+  max-width: 560px;
+  margin: 16px auto 0;
+  text-shadow: 0 1px 10px rgba(0,0,0,0.7);
 }
+
+/* Stats */
 .hero-stats {
-  display: flex; justify-content: center; gap: 0; margin-top: 44px;
-  flex-wrap: wrap; gap: 8px;
+  display: flex; justify-content: center;
+  flex-wrap: wrap; gap: 10px;
+  margin-top: 44px;
 }
 .stat-item {
   text-align: center;
-  background: rgba(13,13,43,0.7); backdrop-filter: blur(8px);
-  border: 1px solid rgba(162,89,255,0.2); border-radius: var(--radius);
+  background: rgba(10,8,30,0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(162,89,255,0.25);
+  border-radius: var(--radius);
   padding: 14px 28px; min-width: 120px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.06);
 }
 .stat-num {
-  font-size: 1.8rem; font-weight: 900;
-  background: linear-gradient(135deg, #c084fc, #00cfff);
+  font-size: 1.9rem; font-weight: 900;
+  background: linear-gradient(135deg, #c084fc, #38bdf8);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  line-height: 1;
 }
-.stat-label { font-size: 0.78rem; color: rgba(200,200,230,0.7); margin-top: 3px; font-weight: 500; }
+.stat-label {
+  font-size: 0.75rem; color: rgba(200,190,230,0.7);
+  margin-top: 4px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px;
+}
 
-/* Floating icons for kids */
-.hero-floaters { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
-.floater {
-  position: absolute; font-size: 2rem; animation: float 6s ease-in-out infinite;
-  filter: drop-shadow(0 0 8px rgba(162,89,255,0.6));
+/* Icônes flottantes */
+.hero-floaters {
+  position: absolute; inset: 0; pointer-events: none; z-index: 2;
 }
-.f1 { top:15%; left:6%;  animation-delay:0s;   animation-duration:5s; }
-.f2 { top:25%; right:8%; animation-delay:1s;   animation-duration:7s; }
-.f3 { bottom:20%; left:10%; animation-delay:2s; animation-duration:6s; }
-.f4 { top:60%; right:12%; animation-delay:0.5s; animation-duration:8s; }
-.f5 { bottom:30%; right:5%; animation-delay:1.5s; animation-duration:5.5s; }
+.floater {
+  position: absolute; font-size: 2.2rem;
+  animation: float 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(162,89,255,0.7));
+}
+.f1 { top:12%; left:5%;   animation-delay:0s;   animation-duration:5.2s; }
+.f2 { top:18%; right:7%;  animation-delay:1.1s; animation-duration:7s;   }
+.f3 { bottom:22%; left:8%;  animation-delay:2s;   animation-duration:6.3s; }
+.f4 { top:55%; right:10%; animation-delay:0.6s; animation-duration:8s;   }
+.f5 { bottom:28%; right:4%; animation-delay:1.7s; animation-duration:5.8s; }
 @keyframes float {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  33%       { transform: translateY(-14px) rotate(8deg); }
-  66%       { transform: translateY(8px) rotate(-5deg); }
+  0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+  33%       { transform: translateY(-16px) rotate(8deg) scale(1.05); }
+  66%       { transform: translateY(8px) rotate(-5deg) scale(0.97); }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero { min-height: 480px; }
+  .hero-content { padding: 70px 16px 60px; }
+  .hero-bg-img { object-position: 65% 25%; } /* recadre sur les persos à droite */
+  .floater { font-size: 1.6rem; }
 }
 
 /* ============================================================

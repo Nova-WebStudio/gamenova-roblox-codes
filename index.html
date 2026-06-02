@@ -92,13 +92,24 @@
 
 <!-- ░░░ HERO ░░░ -->
 <section class="hero">
-  <!-- Background image layer -->
-  <div class="hero-bg-img" aria-hidden="true"></div>
-  <!-- Overlay gradient to keep text readable -->
+
+  <!-- Image de fond via <img> — 100% fiable -->
+  <img
+    class="hero-bg-img"
+    src="images/hero-bg.png"
+    alt=""
+    aria-hidden="true"
+    fetchpriority="high"
+  >
+
+  <!-- Overlay multicouche : lisibilité du texte + ambiance violette -->
   <div class="hero-overlay" aria-hidden="true"></div>
 
-  <div class="container" style="position:relative;z-index:2">
+  <!-- Contenu centré au-dessus -->
+  <div class="hero-content container">
+
     <div class="hero-badge" data-i18n="hero.badge">Updated Daily</div>
+
     <h1>All <span class="gradient-text">Roblox Codes</span><br>in One Place</h1>
     <p data-i18n="hero.subtitle">The #1 source for Roblox codes, tips &amp; videos — updated every day.</p>
 
@@ -123,7 +134,7 @@
       </div>
     </div>
 
-    <!-- Floating badges for kids — fun visual -->
+    <!-- Icônes flottantes animées -->
     <div class="hero-floaters" aria-hidden="true">
       <span class="floater f1">🎁</span>
       <span class="floater f2">⭐</span>
@@ -131,6 +142,7 @@
       <span class="floater f4">🎮</span>
       <span class="floater f5">💎</span>
     </div>
+
   </div>
 </section>
 
