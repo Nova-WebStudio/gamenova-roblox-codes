@@ -214,16 +214,19 @@ async function loadRobloxThumbnails() {
   const ids = Object.values(ROBLOX_UNIVERSE_IDS).join(',');
 
   try {
+    // On utilise les thumbnails (bannières 768×432) plutôt que les icônes carrées
     const res = await fetch(
-      `https://thumbnails.roblox.com/v1/games/icons?universeIds=${ids}&size=512x512&format=Png&isCircular=false`,
+      `https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=${ids}&countPerUniverse=1&size=768x432&format=Png&isCircular=false`,
       { headers: { 'Accept': 'application/json' } }
     );
     if (!res.ok) return;
     const json = await res.json();
 
+    // Format de réponse différent des icônes : item.thumbnails[0].imageUrl
     json.data.forEach(item => {
-      const slug = idToSlug[item.targetId];
-      if (slug && item.imageUrl) _thumbCache[slug] = item.imageUrl;
+      const slug = idToSlug[item.universeId];
+      const url  = item.thumbnails?.[0]?.imageUrl;
+      if (slug && url) _thumbCache[slug] = url;
     });
 
     applyRobloxThumbs();
