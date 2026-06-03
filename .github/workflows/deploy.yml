@@ -38,8 +38,13 @@ jobs:
           VERCEL_ORG_ID:     ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
-      - name: Build project (static site — no build needed)
-        run: echo "Static site — no build step required."
+      - name: Build project (generates .vercel/output with all assets)
+        run: |
+          vercel build --prod \
+            --token=${{ secrets.VERCEL_TOKEN }}
+        env:
+          VERCEL_ORG_ID:     ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
       - name: Deploy to Vercel Production
         run: |
@@ -49,8 +54,4 @@ jobs:
             --token=${{ secrets.VERCEL_TOKEN }} \
             --scope=nova-webstudios-projects
         env:
-          VERCEL_ORG_ID:     ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-
-      - name: Print deployment URL
-        run: echo "✅ GameNova deployed to production!"
+          VERCEL_ORG_ID:     ${{ sec
