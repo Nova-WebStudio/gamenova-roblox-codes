@@ -219,11 +219,9 @@ async function loadRobloxThumbnails() {
     if (!res.ok) return;
     const json = await res.json();
 
-    // Format : item.universeId + item.thumbnails[0].imageUrl
-    json.data.forEach(item => {
-      const slug = idToSlug[item.universeId];
-      const url  = item.thumbnails?.[0]?.imageUrl;
-      if (slug && url) _thumbCache[slug] = url;
+    // Format : objet {slug: imageUrl}
+    Object.entries(json).forEach(([slug, url]) => {
+      if (url) _thumbCache[slug] = url;
     });
 
     applyRobloxThumbs();
