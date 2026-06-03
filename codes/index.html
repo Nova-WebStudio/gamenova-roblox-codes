@@ -53,6 +53,13 @@
     }
     .game-row:hover { border-color:rgba(255,77,77,.35); background:var(--bg-card-hover); transform:translateX(4px); }
     .game-row .game-emoji { font-size:2rem; width:44px; text-align:center; flex-shrink:0; }
+    .game-row .game-thumb { width:58px;height:58px;border-radius:10px;overflow:hidden;flex-shrink:0;background:var(--bg-secondary); }
+    .game-row .game-thumb img { width:100%;height:100%;object-fit:cover;transition:.3s ease; }
+    .game-row:hover .game-thumb img { transform:scale(1.06); }
+    .game-row .game-emoji-fallback { width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:1.8rem; }
+    /* Grid view thumbnail */
+    #gamesContainer.grid-view .game-thumb { width:100%;height:120px;border-radius:10px 10px 0 0;margin:-18px -18px 12px -18px;width:calc(100% + 36px); }
+    #gamesContainer.grid-view .game-thumb img { border-radius:10px 10px 0 0; }
     .game-row .game-info { flex:1; min-width:0; }
     .game-row .game-name { font-weight:700; font-size:.95rem; color:var(--text-primary); }
     .game-row .game-meta { font-size:.78rem; color:var(--text-muted); margin-top:2px; }
@@ -234,14 +241,17 @@ function renderGames(){
   const isGrid=document.getElementById('gamesContainer').classList.contains('grid-view');
   document.getElementById('gamesContainer').innerHTML=shown.map(g=>`
     <a class="game-row" href="/codes/${g.slug}.html">
-      <div class="game-emoji">${g.emoji}</div>
+      <div class="game-thumb">
+        <img src="/images/games/${g.slug}.svg" alt="${g.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="game-emoji-fallback" style="display:none">${g.emoji}</div>
+      </div>
       <div class="game-info">
         <div class="game-name">${g.name}${g.hot?' 🔥':''}</div>
         <div class="game-meta">Updated ${g.updated}</div>
-        <div class="game-tags"><span class="g-tag">${g.cat}</span>${g.codes>0?`<span class="g-tag" style="color:var(--accent);border-color:rgba(255,77,77,.3)">✅ active</span>`:''}</div>
+        <div class="game-tags"><span class="g-tag">${g.cat}</span>${g.codes>0?`<span class="g-tag" style="color:var(--accent2);border-color:rgba(0,207,255,.3)">✅ active</span>`:''}</div>
       </div>
       <div class="code-count">
-        <div class="num" style="${g.codes===0?'color:var(--text-muted)':''}">${g.codes}</div>
+        <div class="num" style="${g.codes===0?'color:var(--text-muted)':'color:var(--accent)'}">${g.codes}</div>
         <div class="lbl">code${g.codes!==1?'s':''}</div>
       </div>
       <div class="row-arrow">→</div>
