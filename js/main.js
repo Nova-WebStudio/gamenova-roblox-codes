@@ -166,6 +166,72 @@ function highlightNav() {
   });
 }
 
+/* ---- Roblox Official Thumbnails Loader ---- */
+const ROBLOX_UNIVERSE_IDS = {
+  'blox-fruits':           2753915549,
+  'pet-simulator-x':       6284583030,
+  'adopt-me':              920587237,
+  'shindo-life':           6017744795,
+  'king-legacy':           6096648965,
+  'murder-mystery-2':      142823291,
+  'fruit-battlegrounds':   10449761463,
+  'anime-adventures':      7974552544,
+  'rivals':                17017769292,
+  'brookhaven':            4924922222,
+  'royale-high':           735030788,
+  'encounters':            16768148699,
+  'tower-of-hell':         1962086868,
+  'work-at-a-pizza-place': 192800,
+};
+
+// Cache slug → URL (évite des appels API répétés au filtrage)
+const _thumbCache = {};
+
+// Applique les URLs cachées à toutes les img[data-game] présentes dans le DOM
+function applyRobloxThumbs() {
+  Object.entries(_thumbCache).forEach(([slug, url]) => {
+    document.querySelectorAll(`img[data-game="${slug}"]`).forEach(img => {
+      if (img.getAttribute('src') !== url) {
+        img.style.opacity = '0';
+        img.src = url;
+        img.onload = () => {
+          img.style.transition = 'opacity .35s';
+          img.style.opacity = '1';
+        };
+      }
+    });
+  });
+}
+window.applyRobloxThumbs = applyRobloxThumbs; // accessible depuis codes/index.html
+
+async function loadRobloxThumbnails() {
+  // Si déjà chargé, juste appliquer le cache
+  if (Object.keys(_thumbCache).length > 0) { applyRobloxThumbs(); return; }
+
+  const idToSlug = Object.fromEntries(
+    Object.entries(ROBLOX_UNIVERSE_IDS).map(([s, id]) => [id, s])
+  );
+  const ids = Object.values(ROBLOX_UNIVERSE_IDS).join(',');
+
+  try {
+    const res = await fetch(
+      `https://thumbnails.roblox.com/v1/games/icons?universeIds=${ids}&size=512x512&format=Png&isCircular=false`,
+      { headers: { 'Accept': 'application/json' } }
+    );
+    if (!res.ok) return;
+    const json = await res.json();
+
+    json.data.forEach(item => {
+      const slug = idToSlug[item.targetId];
+      if (slug && item.imageUrl) _thumbCache[slug] = item.imageUrl;
+    });
+
+    applyRobloxThumbs();
+  } catch(e) {
+    console.log('Roblox thumbnails API unavailable — SVG fallbacks in use.');
+  }
+}
+
 /* ---- Init ---- */
 document.addEventListener('DOMContentLoaded', () => {
   applyLang();
@@ -179,4 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => switchLang(btn.dataset.lang));
   });
+
+  // Charge les vraies images Roblox après le rendu
+  loadRobloxThumbnails();
 });

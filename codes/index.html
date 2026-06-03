@@ -237,12 +237,14 @@ function renderGames(){
   const shown=games.slice(0,visibleCount);
   document.getElementById('gameCount').innerHTML=`Showing <strong>${shown.length}</strong> of <strong>${games.length}</strong> games`;
   document.getElementById('loadMoreBtn').style.display=games.length>visibleCount?'inline-flex':'none';
+  // Applique les vraies images Roblox si déjà chargées, sinon attend le loader
+  if(typeof applyRobloxThumbs==='function') setTimeout(applyRobloxThumbs, 50);
 
   const isGrid=document.getElementById('gamesContainer').classList.contains('grid-view');
   document.getElementById('gamesContainer').innerHTML=shown.map(g=>`
     <a class="game-row" href="/codes/${g.slug}.html">
       <div class="game-thumb">
-        <img src="/images/games/${g.slug}.svg" alt="${g.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <img data-game="${g.slug}" src="/images/games/${g.slug}.svg" alt="${g.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="game-emoji-fallback" style="display:none">${g.emoji}</div>
       </div>
       <div class="game-info">
@@ -277,23 +279,4 @@ document.getElementById('dirSearch').addEventListener('input',e=>{
 document.getElementById('sortSelect').addEventListener('change',e=>{
   sortBy=e.target.value; renderGames();
 });
-document.getElementById('loadMoreBtn').addEventListener('click',()=>{ visibleCount+=10; renderGames(); });
-
-// View toggle
-document.getElementById('listBtn').addEventListener('click',()=>{
-  document.getElementById('gamesContainer').classList.remove('grid-view');
-  document.getElementById('listBtn').classList.add('active');
-  document.getElementById('gridBtn').classList.remove('active');
-  renderGames();
-});
-document.getElementById('gridBtn').addEventListener('click',()=>{
-  document.getElementById('gamesContainer').classList.add('grid-view');
-  document.getElementById('gridBtn').classList.add('active');
-  document.getElementById('listBtn').classList.remove('active');
-  renderGames();
-});
-
-renderGames();
-</script>
-</body>
-</html>
+document.getElementById('loadMoreBtn').addEventList
