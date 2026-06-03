@@ -1,49 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="220" viewBox="0 0 400 220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="400" height="220">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#660000;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#0d0000;stop-opacity:1"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" style="stop-color:#cc0000;stop-opacity:0.35"/>
-      <stop offset="100%" style="stop-color:#cc0000;stop-opacity:0"/>
-    </radialGradient>
-    <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#660000"/><stop offset="100%" stop-color="#0d0000"/></linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="45%"><stop offset="0%" stop-color="#ff0000" stop-opacity=".3"/><stop offset="100%" stop-color="#ff0000" stop-opacity="0"/></radialGradient>
   </defs>
-
-  <!-- Background -->
   <rect width="400" height="220" fill="url(#bg)"/>
-
-  <!-- Glow blob -->
-  <ellipse cx="200" cy="110" rx="160" ry="100" fill="url(#glow)" filter="url(#blur)"/>
-
-  <!-- Grid lines décoratives -->
-  <g stroke="#cc0000" stroke-opacity="0.08" stroke-width="1">
-    <line x1="0" y1="44" x2="400" y2="44"/>
-    <line x1="0" y1="88" x2="400" y2="88"/>
-    <line x1="0" y1="132" x2="400" y2="132"/>
-    <line x1="0" y1="176" x2="400" y2="176"/>
-    <line x1="80" y1="0" x2="80" y2="220"/>
-    <line x1="160" y1="0" x2="160" y2="220"/>
-    <line x1="240" y1="0" x2="240" y2="220"/>
-    <line x1="320" y1="0" x2="320" y2="220"/>
-  </g>
-
-  <!-- Accent corner top-left -->
-  <rect x="0" y="0" width="4" height="60" fill="#cc0000" opacity="0.9" rx="2"/>
-  <rect x="0" y="0" width="60" height="4" fill="#cc0000" opacity="0.9" rx="2"/>
-
-  <!-- Accent corner bottom-right -->
-  <rect x="396" y="160" width="4" height="60" fill="#cc0000" opacity="0.6" rx="2"/>
-  <rect x="340" y="216" width="60" height="4" fill="#cc0000" opacity="0.6" rx="2"/>
-
-  <!-- Emoji icon -->
-  <text x="200" y="115" font-size="72" text-anchor="middle" dominant-baseline="middle"
-        font-family="Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, sans-serif"
-        opacity="0.92">🔪</text>
-
-  <!-- Game name bar -->
-  <rect x="0" y="175" width="400" height="45" fill="rgba(0,0,0,0.55)"/>
-  <text x="200" y="203" font-size="18" font-weight="bold" text-anchor="middle"
-        font-family="Inter, Arial, sans-serif" fill="white" letter-spacing="0.3">Murder Mystery 2</text>
+  <ellipse cx="200" cy="100" rx="120" ry="85" fill="url(#glow)"/>
+  <!-- Knife -->
+  <rect x="188" y="35" width="24" height="90" rx="4" fill="#aaa" stroke="#888" stroke-width="1"/>
+  <polygon points="188,35 212,35 200,8" fill="#ccc" stroke="#999" stroke-width="1"/>
+  <!-- Knife handle -->
+  <rect x="185" y="123" width="30" height="35" rx="5" fill="#5c3317" stroke="#3e2009" stroke-width="1.5"/>
+  <rect x="183" y="120" width="34" height="8" rx="3" fill="#8B6914"/>
+  <!-- Blood drip -->
+  <ellipse cx="200" cy="55" rx="5" ry="8" fill="#cc0000" opacity=".7"/>
+  <ellipse cx="194" cy="68" rx="3" ry="5" fill="#cc0000" opacity=".6"/>
+  <!-- Detective hat -->
+  <ellipse cx="130" cy="95" rx="30" ry="10" fill="#222"/>
+  <rect x="110" y="65" width="40" height="32" rx="6" fill="#333"/>
+  <!-- Badge -->
+  <polygon points="310,70 316,85 333,85 320,95 325,112 310,102 295,112 300,95 287,85 304,85" fill="#ffd700" opacity=".9"/>
+  <!-- Name bar -->
+  <rect x="0" y="175" width="400" height="45" fill="rgba(0,0,0,.7)"/>
+  <text x="200" y="200" font-size="15" font-weight="bold" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" fill="white" letter-spacing=".3">MURDER MYSTERY 2</text>
 </svg>
