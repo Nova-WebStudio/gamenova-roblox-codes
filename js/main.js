@@ -22,6 +22,11 @@ const ROBLOX_THUMBS = {
   'anime-defenders': 'https://tr.rbxcdn.com/180DAY-c5a2289b4baf7194add46247482074d7/768/432/Image/Png/noFilter',
   'toilet-tower-defense': 'https://tr.rbxcdn.com/180DAY-5a9d6ca7af3e521497366c956bbbea05/768/432/Image/Png/noFilter',
   'pet-simulator-99': 'https://tr.rbxcdn.com/180DAY-b7b8ad3ad6f4103c91efc25da7bc1118/768/432/Image/Png/noFilter',
+  'bee-swarm-simulator': 'https://tr.rbxcdn.com/180DAY-315e29556054777604420711cb64f0b6/768/432/Image/Png/noFilter',
+  'anime-vanguards': 'https://tr.rbxcdn.com/180DAY-cb38398e8a1315ca4046f168c7504d6b/768/432/Image/Png/noFilter',
+  'arsenal': 'https://tr.rbxcdn.com/180DAY-fd5d29ef7df403915891862d02ae09bb/768/432/Image/Png/noFilter',
+  'jailbreak': 'https://tr.rbxcdn.com/180DAY-fef285ce1b8ac805b17da2a4f998ccec/768/432/Image/Png/noFilter',
+  'bedwars': 'https://tr.rbxcdn.com/180DAY-9e34b6ee9e93b7840f82d1381d14c641/768/432/Image/Png/noFilter',
 };
 
 /* ---- Copy code ---- */
@@ -67,6 +72,11 @@ const GAMES_INDEX = [
   { name: 'Anime Defenders',      slug: 'anime-defenders',      emoji: '🗡️', codes: 0 },
   { name: 'Toilet Tower Defense', slug: 'toilet-tower-defense', emoji: '🚽', codes: 0 },
   { name: 'Pet Simulator 99',     slug: 'pet-simulator-99',     emoji: '🐹', codes: 0 },
+  { name: 'Bee Swarm Simulator', slug: 'bee-swarm-simulator',  emoji: '🐝', codes: 8 },
+  { name: 'Anime Vanguards',     slug: 'anime-vanguards',      emoji: '⚔️', codes: 4 },
+  { name: 'Arsenal',             slug: 'arsenal',              emoji: '🔫', codes: 5 },
+  { name: 'Jailbreak',           slug: 'jailbreak',            emoji: '🚔', codes: 4 },
+  { name: 'BedWars',             slug: 'bedwars',              emoji: '🛏️', codes: 0 },
 ];
 
 function gameResultHTML(g) {
@@ -156,6 +166,11 @@ const ROBLOX_UNIVERSE_IDS = {
   'anime-defenders':       5836869368,
   'toilet-tower-defense':  4778845442,
   'pet-simulator-99':      3317771874,
+  'bee-swarm-simulator':   601130232,
+  'anime-vanguards':       5578556129,
+  'arsenal':               111958650,
+  'jailbreak':             245662005,
+  'bedwars':               2619619496,
 };
 
 const _thumbCache = {};
