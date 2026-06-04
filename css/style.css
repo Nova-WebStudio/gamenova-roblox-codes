@@ -362,7 +362,7 @@ p  { color: var(--text-muted); }
   border-color: rgba(162,89,255,0.5);
 }
 .game-card-thumb {
-  position: relative; height: 160px; overflow: hidden;
+  position: relative; aspect-ratio: 16 / 9; overflow: hidden;
   background: linear-gradient(135deg, #1a1a30, #0a0a1a);
 }
 .game-card-thumb img {
