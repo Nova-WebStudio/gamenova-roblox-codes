@@ -54,4 +54,8 @@ jobs:
             --token=${{ secrets.VERCEL_TOKEN }} \
             --scope=nova-webstudios-projects
         env:
-          VERCEL_ORG_ID:     ${{ sec
+          VERCEL_ORG_ID:     ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+      - name: Print deployment URL
+        run: echo "✅ GameNova deployed to production!"

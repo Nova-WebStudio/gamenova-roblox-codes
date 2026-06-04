@@ -1,70 +1,12 @@
 /* ============================================================
-   GameNova – Main JavaScript
+   Zoneblox – Main JavaScript (FR)
    ============================================================ */
-
-/* ---- Language system ---- */
-const TRANSLATIONS = {
-  en: {
-    'nav.home': 'Home', 'nav.codes': 'All Codes', 'nav.tips': 'Tips',
-    'nav.about': 'About', 'search.placeholder': 'Search a game…',
-    'hero.badge': 'Updated Daily', 'hero.subtitle': 'The #1 source for Roblox codes, tips & videos — updated every day.',
-    'section.featured': '🔥 Featured Games', 'section.recent': '⭐ Recently Updated',
-    'section.allgames': '🎮 All Games', 'viewall': 'View all →',
-    'code.active': 'Active Codes', 'code.expired': 'Expired Codes',
-    'code.updated': 'Updated', 'copy': 'Copy', 'copied': 'Copied!',
-    'redeem.title': 'How to Redeem Codes',
-    'tips.title': '💡 Tips & Tricks', 'videos.title': '🎬 Videos',
-    'newsletter.title': '📧 Get Notified', 'newsletter.desc': 'New codes straight to your inbox.',
-    'newsletter.placeholder': 'your@email.com', 'newsletter.btn': 'Subscribe',
-    'affiliate.title': 'Buy Robux & Gift Cards', 'affiliate.desc': 'Support the site — buy official Robux or Roblox gift cards.',
-    'affiliate.btn': 'Shop Now →', 'footer.desc': 'Your #1 daily source for Roblox codes, tips, and game guides.',
-    'stat.games': 'Games Covered', 'stat.codes': 'Active Codes', 'stat.updated': 'Daily Updates',
-  },
-  fr: {
-    'nav.home': 'Accueil', 'nav.codes': 'Tous les Codes', 'nav.tips': 'Astuces',
-    'nav.about': 'À Propos', 'search.placeholder': 'Rechercher un jeu…',
-    'hero.badge': 'Mis à jour chaque jour', 'hero.subtitle': 'La référence #1 des codes Roblox, astuces & vidéos — mise à jour quotidienne.',
-    'section.featured': '🔥 Jeux Populaires', 'section.recent': '⭐ Récemment Mis à Jour',
-    'section.allgames': '🎮 Tous les Jeux', 'viewall': 'Voir tout →',
-    'code.active': 'Codes Actifs', 'code.expired': 'Codes Expirés',
-    'code.updated': 'Mis à jour', 'copy': 'Copier', 'copied': 'Copié !',
-    'redeem.title': 'Comment utiliser les codes',
-    'tips.title': '💡 Astuces & Conseils', 'videos.title': '🎬 Vidéos',
-    'newsletter.title': '📧 Être notifié', 'newsletter.desc': 'Nouveaux codes directement dans votre boîte mail.',
-    'newsletter.placeholder': 'votre@email.com', 'newsletter.btn': 'S\'abonner',
-    'affiliate.title': 'Acheter des Robux & Gift Cards', 'affiliate.desc': 'Soutenez le site — achetez des Robux officiels ou des cartes cadeaux Roblox.',
-    'affiliate.btn': 'Acheter →', 'footer.desc': 'Votre source #1 quotidienne de codes Roblox, astuces et guides de jeux.',
-    'stat.games': 'Jeux Couverts', 'stat.codes': 'Codes Actifs', 'stat.updated': 'Mises à Jour / Jour',
-  }
-};
-
-let currentLang = localStorage.getItem('lang') || 'en';
-
-function t(key) { return TRANSLATIONS[currentLang][key] || key; }
-
-function applyLang() {
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (el.tagName === 'INPUT') { el.placeholder = t(key); }
-    else { el.textContent = t(key); }
-  });
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === currentLang);
-  });
-  document.documentElement.lang = currentLang;
-}
-
-function switchLang(lang) {
-  currentLang = lang;
-  localStorage.setItem('lang', lang);
-  applyLang();
-}
 
 /* ---- Copy code ---- */
 function copyCode(btn, code) {
   navigator.clipboard.writeText(code).then(() => {
     const orig = btn.textContent;
-    btn.textContent = t('copied');
+    btn.textContent = 'Copié !';
     btn.classList.add('copied');
     setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 2000);
   });
@@ -82,7 +24,7 @@ function initMobileNav() {
   });
 }
 
-/* ---- Search ---- */
+/* ---- Search index ---- */
 const GAMES_INDEX = [
   { name: 'Blox Fruits',         slug: 'blox-fruits',          emoji: '🍎', codes: 5 },
   { name: 'Pet Simulator X',     slug: 'pet-simulator-x',      emoji: '🐾', codes: 8 },
@@ -94,11 +36,21 @@ const GAMES_INDEX = [
   { name: 'Shindo Life',         slug: 'shindo-life',          emoji: '🌀', codes: 12 },
   { name: 'Royale High',         slug: 'royale-high',          emoji: '👑', codes: 1 },
   { name: 'Fruit Battlegrounds', slug: 'fruit-battlegrounds',  emoji: '💥', codes: 7 },
-  { name: 'Blox Fruits 2',       slug: 'blox-fruits-2',        emoji: '🍊', codes: 3 },
   { name: 'King Legacy',         slug: 'king-legacy',          emoji: '⚡', codes: 9 },
   { name: 'Encounters',          slug: 'encounters',           emoji: '👾', codes: 4 },
   { name: 'Rivals',              slug: 'rivals',               emoji: '🎯', codes: 5 },
 ];
+
+function gameResultHTML(g) {
+  return `
+    <a class="search-result-item" href="/codes/${g.slug}.html">
+      <span style="font-size:1.4rem">${g.emoji}</span>
+      <div>
+        <div style="font-size:.88rem;font-weight:600;color:var(--text-primary)">${g.name}</div>
+        <div style="font-size:.75rem;color:var(--text-muted)">${g.codes} code${g.codes !== 1 ? 's' : ''} actif${g.codes !== 1 ? 's' : ''}</div>
+      </div>
+    </a>`;
+}
 
 function initSearch() {
   const input   = document.getElementById('searchInput');
@@ -112,20 +64,34 @@ function initSearch() {
     const matches = GAMES_INDEX.filter(g => g.name.toLowerCase().includes(q)).slice(0, 6);
     if (!matches.length) { results.classList.remove('open'); return; }
 
-    results.innerHTML = matches.map(g => `
-      <a class="search-result-item" href="/codes/${g.slug}.html">
-        <span style="font-size:1.4rem">${g.emoji}</span>
-        <div>
-          <div style="font-size:.88rem;font-weight:600;color:var(--text-primary)">${g.name}</div>
-          <div style="font-size:.75rem;color:var(--text-muted)">${g.codes} active code${g.codes !== 1 ? 's' : ''}</div>
-        </div>
-      </a>`).join('');
+    results.innerHTML = matches.map(gameResultHTML).join('');
     results.classList.add('open');
   });
 
   document.addEventListener('click', e => {
     if (!input.contains(e.target) && !results.contains(e.target))
       results.classList.remove('open');
+  });
+}
+
+/* ---- Hero search (page d'accueil) ---- */
+function initHeroSearch() {
+  const heroInput   = document.getElementById('heroSearch');
+  const heroResults = document.getElementById('heroSearchResults');
+  if (!heroInput || !heroResults) return;
+
+  heroInput.addEventListener('input', () => {
+    const q = heroInput.value.trim().toLowerCase();
+    if (q.length < 2) { heroResults.classList.remove('open'); return; }
+    const matches = GAMES_INDEX.filter(g => g.name.toLowerCase().includes(q)).slice(0, 6);
+    if (!matches.length) { heroResults.classList.remove('open'); return; }
+    heroResults.innerHTML = matches.map(gameResultHTML).join('');
+    heroResults.classList.add('open');
+  });
+
+  document.addEventListener('click', e => {
+    if (!heroInput.contains(e.target) && !heroResults.contains(e.target))
+      heroResults.classList.remove('open');
   });
 }
 
@@ -137,23 +103,12 @@ function initNewsletter() {
       const inp = form.querySelector('input[type="email"]');
       const btn = form.querySelector('button');
       if (!inp.value) return;
-      btn.textContent = '✓ Done!';
+      const orig = btn.textContent;
+      btn.textContent = '✓ Inscrit !';
       btn.disabled = true;
       inp.value = '';
-      setTimeout(() => { btn.textContent = t('newsletter.btn'); btn.disabled = false; }, 3000);
+      setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 3000);
     });
-  });
-}
-
-/* ---- Sticky ad hide on scroll ---- */
-function initStickyAd() {
-  const ad = document.querySelector('.ad-sticky-bottom');
-  if (!ad) return;
-  let lastY = 0;
-  window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    ad.style.transform = y > lastY && y > 200 ? 'translateY(0)' : 'translateY(0)';
-    lastY = y;
   });
 }
 
@@ -184,10 +139,8 @@ const ROBLOX_UNIVERSE_IDS = {
   'work-at-a-pizza-place': 192800,
 };
 
-// Cache slug → URL (évite des appels API répétés au filtrage)
 const _thumbCache = {};
 
-// Applique les URLs cachées à toutes les img[data-game] présentes dans le DOM
 function applyRobloxThumbs() {
   Object.entries(_thumbCache).forEach(([slug, url]) => {
     document.querySelectorAll(`img[data-game="${slug}"]`).forEach(img => {
@@ -202,48 +155,27 @@ function applyRobloxThumbs() {
     });
   });
 }
-window.applyRobloxThumbs = applyRobloxThumbs; // accessible depuis codes/index.html
+window.applyRobloxThumbs = applyRobloxThumbs;
 
 async function loadRobloxThumbnails() {
-  // Si déjà chargé, juste appliquer le cache
   if (Object.keys(_thumbCache).length > 0) { applyRobloxThumbs(); return; }
-
-  const idToSlug = Object.fromEntries(
-    Object.entries(ROBLOX_UNIVERSE_IDS).map(([s, id]) => [id, s])
-  );
-  const ids = Object.values(ROBLOX_UNIVERSE_IDS).join(',');
-
   try {
-    // Appel via notre proxy Vercel /api/thumbnails (évite le CORS de Roblox)
     const res = await fetch('/api/thumbnails', { headers: { 'Accept': 'application/json' } });
     if (!res.ok) return;
     const json = await res.json();
-
-    // Format : objet {slug: imageUrl}
-    Object.entries(json).forEach(([slug, url]) => {
-      if (url) _thumbCache[slug] = url;
-    });
-
+    Object.entries(json).forEach(([slug, url]) => { if (url) _thumbCache[slug] = url; });
     applyRobloxThumbs();
   } catch(e) {
-    console.log('Roblox thumbnails API unavailable — SVG fallbacks in use.');
+    console.log('API miniatures Roblox indisponible — utilisation des SVG de secours.');
   }
 }
 
 /* ---- Init ---- */
 document.addEventListener('DOMContentLoaded', () => {
-  applyLang();
   initMobileNav();
   initSearch();
+  initHeroSearch();
   initNewsletter();
-  initStickyAd();
   highlightNav();
-
-  // Lang buttons
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', () => switchLang(btn.dataset.lang));
-  });
-
-  // Charge les vraies images Roblox après le rendu
   loadRobloxThumbnails();
 });

@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gamenova.gg/sitemap.xml
+# Pages techniques non destinées à l'indexation
+Disallow: /codes/_TEMPLATE.html
+
+Sitemap: https://zoneblox.com/sitemap.xml
