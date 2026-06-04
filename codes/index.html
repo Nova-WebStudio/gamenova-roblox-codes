@@ -108,6 +108,14 @@
     #gamesContainer.grid-view .game-emoji { font-size:2.8rem; width:auto; }
     #gamesContainer.grid-view .code-count { padding:0; }
     #gamesContainer.grid-view .row-arrow { display:none; }
+    #loadMoreBtn {
+      display:inline-flex; align-items:center; gap:8px;
+      background:linear-gradient(135deg, var(--accent), var(--accent2));
+      color:#fff; border:none; padding:12px 28px; border-radius:var(--radius-sm);
+      font-size:.9rem; font-weight:700; cursor:pointer; transition:.2s ease;
+      box-shadow:0 4px 14px rgba(162,89,255,.35);
+    }
+    #loadMoreBtn:hover { opacity:.92; transform:translateY(-1px); box-shadow:0 6px 20px rgba(162,89,255,.5); }
   </style>
 </head>
 <body>
@@ -271,7 +279,7 @@ const ALL_GAMES = [
 ];
 
 let activeCat='all', activeStatus='all', searchQ='', sortBy='hot';
-let visibleCount=10;
+let visibleCount=100;
 
 function renderGames(){
   let games=[...ALL_GAMES];
@@ -311,17 +319,17 @@ function renderGames(){
 document.querySelectorAll('[data-cat]').forEach(el=>{
   el.addEventListener('click',()=>{
     document.querySelectorAll('[data-cat]').forEach(x=>x.classList.remove('active'));
-    el.classList.add('active'); activeCat=el.dataset.cat; visibleCount=10; renderGames();
+    el.classList.add('active'); activeCat=el.dataset.cat; visibleCount=100; renderGames();
   });
 });
 document.querySelectorAll('[data-status]').forEach(el=>{
   el.addEventListener('click',()=>{
     document.querySelectorAll('[data-status]').forEach(x=>x.classList.remove('active'));
-    el.classList.add('active'); activeStatus=el.dataset.status; visibleCount=10; renderGames();
+    el.classList.add('active'); activeStatus=el.dataset.status; visibleCount=100; renderGames();
   });
 });
 document.getElementById('dirSearch').addEventListener('input',e=>{
-  searchQ=e.target.value.trim().toLowerCase(); visibleCount=10; renderGames();
+  searchQ=e.target.value.trim().toLowerCase(); visibleCount=100; renderGames();
 });
 document.getElementById('sortSelect').addEventListener('change',e=>{
   sortBy=e.target.value; renderGames();
