@@ -48,31 +48,31 @@ function initMobileNav() {
 
 /* ---- Search index ---- */
 const GAMES_INDEX = [
-  { name: 'Blox Fruits',         slug: 'blox-fruits',          emoji: '🍎', codes: 5 },
-  { name: 'Pet Simulator X',     slug: 'pet-simulator-x',      emoji: '🐾', codes: 8 },
-  { name: 'Adopt Me',            slug: 'adopt-me',             emoji: '🐣', codes: 3 },
-  { name: 'Anime Adventures',    slug: 'anime-adventures',     emoji: '⚔️', codes: 6 },
-  { name: 'Brookhaven',          slug: 'brookhaven',           emoji: '🏙️', codes: 2 },
-  { name: 'Tower of Hell',       slug: 'tower-of-hell',        emoji: '🗼', codes: 0 },
-  { name: 'Murder Mystery 2',    slug: 'murder-mystery-2',     emoji: '🔪', codes: 4 },
-  { name: 'Shindo Life',         slug: 'shindo-life',          emoji: '🌀', codes: 12 },
-  { name: 'Royale High',         slug: 'royale-high',          emoji: '👑', codes: 1 },
-  { name: 'Fruit Battlegrounds', slug: 'fruit-battlegrounds',  emoji: '💥', codes: 7 },
-  { name: 'King Legacy',         slug: 'king-legacy',          emoji: '⚡', codes: 9 },
-  { name: 'Encounters',          slug: 'encounters',           emoji: '👾', codes: 4 },
-  { name: 'Rivals',              slug: 'rivals',               emoji: '🎯', codes: 5 },
-  { name: 'Work at a Pizza Place', slug: 'work-at-a-pizza-place', emoji: '🍕', codes: 0 },
-  { name: 'Grow a Garden',       slug: 'grow-a-garden',        emoji: '🌱', codes: 2 },
-  { name: 'Blade Ball',          slug: 'blade-ball',           emoji: '⚔️', codes: 8 },
-  { name: 'Anime Defenders',     slug: 'anime-defenders',      emoji: '🗡️', codes: 0 },
-  { name: 'Toilet Tower Defense',slug: 'toilet-tower-defense', emoji: '🚽', codes: 0 },
-  { name: 'Pet Simulator 99',    slug: 'pet-simulator-99',     emoji: '🐹', codes: 0 },
+  { name: 'Blox Fruits',          slug: 'blox-fruits',          emoji: '🍎', codes: 5 },
+  { name: 'Pet Simulator X',      slug: 'pet-simulator-x',      emoji: '🐾', codes: 8 },
+  { name: 'Adopt Me',             slug: 'adopt-me',             emoji: '🐣', codes: 3 },
+  { name: 'Anime Adventures',     slug: 'anime-adventures',     emoji: '⚔️', codes: 6 },
+  { name: 'Brookhaven',           slug: 'brookhaven',           emoji: '🏙️', codes: 0 },
+  { name: 'Tower of Hell',        slug: 'tower-of-hell',        emoji: '🗼', codes: 0 },
+  { name: 'Murder Mystery 2',     slug: 'murder-mystery-2',     emoji: '🔪', codes: 4 },
+  { name: 'Shindo Life',          slug: 'shindo-life',          emoji: '🌀', codes: 12 },
+  { name: 'Royale High',          slug: 'royale-high',          emoji: '👑', codes: 1 },
+  { name: 'Fruit Battlegrounds',  slug: 'fruit-battlegrounds',  emoji: '💥', codes: 7 },
+  { name: 'King Legacy',          slug: 'king-legacy',          emoji: '⚡', codes: 9 },
+  { name: 'Encounters',           slug: 'encounters',           emoji: '👾', codes: 1 },
+  { name: 'Rivals',               slug: 'rivals',               emoji: '🎯', codes: 5 },
+  { name: 'Work at a Pizza Place',slug: 'work-at-a-pizza-place',emoji: '🍕', codes: 0 },
+  { name: 'Grow a Garden',        slug: 'grow-a-garden',        emoji: '🌱', codes: 2 },
+  { name: 'Blade Ball',           slug: 'blade-ball',           emoji: '⚔️', codes: 8 },
+  { name: 'Anime Defenders',      slug: 'anime-defenders',      emoji: '🗡️', codes: 0 },
+  { name: 'Toilet Tower Defense', slug: 'toilet-tower-defense', emoji: '🚽', codes: 0 },
+  { name: 'Pet Simulator 99',     slug: 'pet-simulator-99',     emoji: '🐹', codes: 0 },
 ];
 
 function gameResultHTML(g) {
   return `
     <a class="search-result-item" href="/codes/${g.slug}.html">
-      <img src="${ROBLOX_THUMBS[g.slug]||('/images/games/'+g.slug+'.svg')}" alt="${g.name}" style="width:38px;height:38px;border-radius:7px;object-fit:cover;flex-shrink:0" onerror="this.onerror=null;this.src='/images/games/'+g.slug+'.svg'">
+      <img src="${ROBLOX_THUMBS[g.slug] || ('/images/games/' + g.slug + '.svg')}" alt="${g.name}" style="width:38px;height:38px;border-radius:7px;object-fit:cover;flex-shrink:0" onerror="this.onerror=null;this.src='/images/games/'+'${g.slug}'+'.svg'">
       <div>
         <div style="font-size:.88rem;font-weight:600;color:var(--text-primary)">${g.name}</div>
         <div style="font-size:.75rem;color:var(--text-muted)">${g.codes} code${g.codes !== 1 ? 's' : ''} actif${g.codes !== 1 ? 's' : ''}</div>
@@ -80,18 +80,20 @@ function gameResultHTML(g) {
     </a>`;
 }
 
-function initSearch() {
-  const input   = document.getElementById('searchInput');
-  const results = document.getElementById('searchResults');
+function attachSearch(inputId, resultsId) {
+  const input   = document.getElementById(inputId);
+  const results = document.getElementById(resultsId);
   if (!input || !results) return;
 
   input.addEventListener('input', () => {
     const q = input.value.trim().toLowerCase();
-    if (q.length < 2) { results.classList.remove('open'); return; }
-
+    if (q.length < 1) { results.classList.remove('open'); return; }
     const matches = GAMES_INDEX.filter(g => g.name.toLowerCase().includes(q)).slice(0, 6);
-    if (!matches.length) { results.classList.remove('open'); return; }
-
+    if (!matches.length) {
+      results.innerHTML = '<div style="padding:12px 14px;font-size:.85rem;color:var(--text-muted)">Aucun jeu trouvé</div>';
+      results.classList.add('open');
+      return;
+    }
     results.innerHTML = matches.map(gameResultHTML).join('');
     results.classList.add('open');
   });
@@ -102,25 +104,9 @@ function initSearch() {
   });
 }
 
-/* ---- Hero search (page d'accueil) ---- */
-function initHeroSearch() {
-  const heroInput   = document.getElementById('heroSearch');
-  const heroResults = document.getElementById('heroSearchResults');
-  if (!heroInput || !heroResults) return;
-
-  heroInput.addEventListener('input', () => {
-    const q = heroInput.value.trim().toLowerCase();
-    if (q.length < 2) { heroResults.classList.remove('open'); return; }
-    const matches = GAMES_INDEX.filter(g => g.name.toLowerCase().includes(q)).slice(0, 6);
-    if (!matches.length) { heroResults.classList.remove('open'); return; }
-    heroResults.innerHTML = matches.map(gameResultHTML).join('');
-    heroResults.classList.add('open');
-  });
-
-  document.addEventListener('click', e => {
-    if (!heroInput.contains(e.target) && !heroResults.contains(e.target))
-      heroResults.classList.remove('open');
-  });
+function initSearch() {
+  attachSearch('searchInput', 'searchResults');
+  attachSearch('heroSearch', 'heroSearchResults');
 }
 
 /* ---- Newsletter ---- */
@@ -149,7 +135,7 @@ function highlightNav() {
   });
 }
 
-/* ---- Roblox Official Thumbnails Loader ---- */
+/* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
   'blox-fruits':           2753915549,
   'pet-simulator-x':       6284583030,
@@ -180,10 +166,7 @@ function applyRobloxThumbs() {
       if (img.getAttribute('src') !== url) {
         img.style.opacity = '0';
         img.src = url;
-        img.onload = () => {
-          img.style.transition = 'opacity .35s';
-          img.style.opacity = '1';
-        };
+        img.onload = () => { img.style.transition = 'opacity .35s'; img.style.opacity = '1'; };
       }
     });
   });
@@ -198,38 +181,37 @@ async function loadRobloxThumbnails() {
     const json = await res.json();
     Object.entries(json).forEach(([slug, url]) => { if (url) _thumbCache[slug] = url; });
     applyRobloxThumbs();
-  } catch(e) {
-    console.log('API miniatures Roblox indisponible — utilisation des SVG de secours.');
+  } catch (e) {
+    console.log('API miniatures Roblox indisponible — miniatures en dur en place.');
   }
 }
 
-/* ---- Vidéos YouTube (3 plus récentes & populaires par jeu) ---- */
-// Colle ta clé API YouTube Data v3 ici (gratuite, à restreindre au domaine zoneblox.com) :
+/* ---- Vidéos YouTube (3 plus populaires par jeu) ---- */
+// Colle ta clé API YouTube Data v3 ici (gratuite, restreinte au domaine zoneblox.com) :
 const YOUTUBE_API_KEY = 'AIzaSyCvalvjmUJryGAP_Xg_NEjhrwk_7GAbD3A';
 
 function renderYouTube(grid, items) {
   grid.innerHTML = items.map(v => `
     <div class="video-card">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/${v.id}" title="${(v.title||'').replace(/"/g,'&quot;')}" allowfullscreen loading="lazy"></iframe>
+        <iframe src="https://www.youtube.com/embed/${v.id}" title="${(v.title || '').replace(/"/g, '&quot;')}" allowfullscreen loading="lazy"></iframe>
       </div>
-      <div class="video-label">🎬 ${v.title||''}</div>
+      <div class="video-label">🎬 ${v.title || ''}</div>
     </div>`).join('');
 }
 
 function initYouTubeVideos() {
   const grid = document.querySelector('#tab-videos .videos-grid');
   if (!grid) return;
-  if (!YOUTUBE_API_KEY) return; // pas de clé → on garde le bouton de secours
+  if (!YOUTUBE_API_KEY) return;
 
   const m = location.pathname.match(/\/codes\/([a-z0-9-]+)\.html/i);
   if (!m) return;
   const slug = m[1];
   const game = (GAMES_INDEX.find(g => g.slug === slug) || {}).name || slug.replace(/-/g, ' ');
-  const query = game + ' Roblox'; // vidéos populaires du jeu (pas les tutos de codes concurrents)
+  const query = game + ' Roblox';
   const cacheKey = 'yt_' + slug;
 
-  // Cache navigateur 12h pour limiter la consommation de quota
   try {
     const c = JSON.parse(localStorage.getItem(cacheKey) || 'null');
     if (c && (Date.now() - c.t < 43200000) && c.items && c.items.length) {
@@ -250,18 +232,17 @@ function initYouTubeVideos() {
       const items = (j.items || [])
         .map(it => ({ id: it.id && it.id.videoId, title: it.snippet && it.snippet.title }))
         .filter(x => x.id);
-      if (!items.length) return; // on garde le bouton de secours
+      if (!items.length) return;
       try { localStorage.setItem(cacheKey, JSON.stringify({ t: Date.now(), items })); } catch (e) {}
       renderYouTube(grid, items);
     })
-    .catch(() => { /* en cas d'erreur, le bouton de secours reste affiché */ });
+    .catch(() => {});
 }
 
 /* ---- Init ---- */
 document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initSearch();
-  initHeroSearch();
   initNewsletter();
   highlightNav();
   loadRobloxThumbnails();
