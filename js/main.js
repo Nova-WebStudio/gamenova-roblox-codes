@@ -17,6 +17,11 @@ const ROBLOX_THUMBS = {
   'fruit-battlegrounds': 'https://tr.rbxcdn.com/180DAY-6688078543e2f947bf998f31c4601037/768/432/Image/Png/noFilter',
   'rivals': 'https://tr.rbxcdn.com/180DAY-27507ba164fae9b46c68047d34d0078b/768/432/Image/Png/noFilter',
   'encounters': 'https://tr.rbxcdn.com/180DAY-024bcafc4df055789126ae841598d15d/768/432/Image/Png/noFilter',
+  'grow-a-garden': 'https://tr.rbxcdn.com/180DAY-028e7742f4ef789f654bf0dd91502b41/768/432/Image/Png/noFilter',
+  'blade-ball': 'https://tr.rbxcdn.com/180DAY-aa0679c96e6ce33f961087cebcc07ce6/768/432/Image/Png/noFilter',
+  'anime-defenders': 'https://tr.rbxcdn.com/180DAY-c5a2289b4baf7194add46247482074d7/768/432/Image/Png/noFilter',
+  'toilet-tower-defense': 'https://tr.rbxcdn.com/180DAY-5a9d6ca7af3e521497366c956bbbea05/768/432/Image/Png/noFilter',
+  'pet-simulator-99': 'https://tr.rbxcdn.com/180DAY-b7b8ad3ad6f4103c91efc25da7bc1118/768/432/Image/Png/noFilter',
 };
 
 /* ---- Copy code ---- */
@@ -56,6 +61,12 @@ const GAMES_INDEX = [
   { name: 'King Legacy',         slug: 'king-legacy',          emoji: '⚡', codes: 9 },
   { name: 'Encounters',          slug: 'encounters',           emoji: '👾', codes: 4 },
   { name: 'Rivals',              slug: 'rivals',               emoji: '🎯', codes: 5 },
+  { name: 'Work at a Pizza Place', slug: 'work-at-a-pizza-place', emoji: '🍕', codes: 0 },
+  { name: 'Grow a Garden',       slug: 'grow-a-garden',        emoji: '🌱', codes: 2 },
+  { name: 'Blade Ball',          slug: 'blade-ball',           emoji: '⚔️', codes: 8 },
+  { name: 'Anime Defenders',     slug: 'anime-defenders',      emoji: '🗡️', codes: 0 },
+  { name: 'Toilet Tower Defense',slug: 'toilet-tower-defense', emoji: '🚽', codes: 0 },
+  { name: 'Pet Simulator 99',    slug: 'pet-simulator-99',     emoji: '🐹', codes: 0 },
 ];
 
 function gameResultHTML(g) {
@@ -154,6 +165,11 @@ const ROBLOX_UNIVERSE_IDS = {
   'encounters':            2918970982,
   'tower-of-hell':         1962086868,
   'work-at-a-pizza-place': 192800,
+  'grow-a-garden':         7436755782,
+  'blade-ball':            4777817887,
+  'anime-defenders':       5836869368,
+  'toilet-tower-defense':  4778845442,
+  'pet-simulator-99':      3317771874,
 };
 
 const _thumbCache = {};

@@ -183,7 +183,7 @@
 
     <!-- SORT + VIEW TOGGLE -->
     <div class="sort-bar">
-      <span class="count" id="gameCount">Affichage de <strong>14</strong> jeux</span>
+      <span class="count" id="gameCount">Affichage de <strong>19</strong> jeux</span>
       <div style="display:flex;gap:10px;align-items:center">
         <select class="sort-select" id="sortSelect">
           <option value="hot">🔥 Plus populaires</option>
@@ -241,6 +241,11 @@ const THUMBS = {
   'fruit-battlegrounds':'https://tr.rbxcdn.com/180DAY-6688078543e2f947bf998f31c4601037/768/432/Image/Png/noFilter',
   'rivals':'https://tr.rbxcdn.com/180DAY-27507ba164fae9b46c68047d34d0078b/768/432/Image/Png/noFilter',
   'encounters':'https://tr.rbxcdn.com/180DAY-024bcafc4df055789126ae841598d15d/768/432/Image/Png/noFilter',
+  'grow-a-garden':'https://tr.rbxcdn.com/180DAY-028e7742f4ef789f654bf0dd91502b41/768/432/Image/Png/noFilter',
+  'blade-ball':'https://tr.rbxcdn.com/180DAY-aa0679c96e6ce33f961087cebcc07ce6/768/432/Image/Png/noFilter',
+  'anime-defenders':'https://tr.rbxcdn.com/180DAY-c5a2289b4baf7194add46247482074d7/768/432/Image/Png/noFilter',
+  'toilet-tower-defense':'https://tr.rbxcdn.com/180DAY-5a9d6ca7af3e521497366c956bbbea05/768/432/Image/Png/noFilter',
+  'pet-simulator-99':'https://tr.rbxcdn.com/180DAY-b7b8ad3ad6f4103c91efc25da7bc1118/768/432/Image/Png/noFilter',
 };
 
 const ALL_GAMES = [
@@ -253,11 +258,16 @@ const ALL_GAMES = [
   { name:'Fruit Battlegrounds',  slug:'fruit-battlegrounds',  emoji:'💥', cat:'battle',    codes:7,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
   { name:'Anime Adventures',     slug:'anime-adventures',     emoji:'⚔️', cat:'anime',     codes:6,  iso:'2026-06-02', updated:'2 juin 2026',  hot:false },
   { name:'Rivals',               slug:'rivals',               emoji:'🎯', cat:'battle',    codes:5,  iso:'2026-06-02', updated:'2 juin 2026',  hot:false },
-  { name:'Brookhaven 🏡RP',      slug:'brookhaven',           emoji:'🏙️', cat:'rpg',       codes:2,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
+  { name:'Brookhaven 🏡RP',      slug:'brookhaven',           emoji:'🏙️', cat:'rpg',       codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
   { name:'Royale High',          slug:'royale-high',          emoji:'👑', cat:'rpg',       codes:1,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
-  { name:'Encounters',           slug:'encounters',           emoji:'👾', cat:'simulator', codes:4,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
+  { name:'Encounters',           slug:'encounters',           emoji:'👾', cat:'simulator', codes:1,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
   { name:'Tower of Hell',        slug:'tower-of-hell',        emoji:'🗼', cat:'obby',      codes:0,  iso:'2026-05-30', updated:'30 mai 2026',  hot:false },
   { name:'Work at a Pizza Place',slug:'work-at-a-pizza-place',emoji:'🍕', cat:'tycoon',    codes:0,  iso:'2026-05-28', updated:'28 mai 2026',  hot:false },
+  { name:'Grow a Garden',        slug:'grow-a-garden',        emoji:'🌱', cat:'simulator', codes:2,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
+  { name:'Blade Ball',           slug:'blade-ball',           emoji:'⚔️', cat:'battle',    codes:8,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
+  { name:'Anime Defenders',      slug:'anime-defenders',      emoji:'🗡️', cat:'anime',     codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
+  { name:'Toilet Tower Defense', slug:'toilet-tower-defense', emoji:'🚽', cat:'battle',    codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
+  { name:'Pet Simulator 99',     slug:'pet-simulator-99',     emoji:'🐹', cat:'simulator', codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
 ];
 
 let activeCat='all', activeStatus='all', searchQ='', sortBy='hot';
