@@ -229,7 +229,7 @@
   </div>
 </footer>
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js?v=2"></script>
 <script>
 const CAT_LABELS = { rpg:'RPG', simulator:'Simulateur', battle:'Combat', anime:'Anime', obby:'Obby', tycoon:'Tycoon' };
 
@@ -271,95 +271,4 @@ const ALL_GAMES = [
   { name:'Encounters',           slug:'encounters',           emoji:'👾', cat:'simulator', codes:1,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
   { name:'Tower of Hell',        slug:'tower-of-hell',        emoji:'🗼', cat:'obby',      codes:0,  iso:'2026-05-30', updated:'30 mai 2026',  hot:false },
   { name:'Work at a Pizza Place',slug:'work-at-a-pizza-place',emoji:'🍕', cat:'tycoon',    codes:0,  iso:'2026-05-28', updated:'28 mai 2026',  hot:false },
-  { name:'Grow a Garden',        slug:'grow-a-garden',        emoji:'🌱', cat:'simulator', codes:2,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
-  { name:'Blade Ball',           slug:'blade-ball',           emoji:'⚔️', cat:'battle',    codes:8,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
-  { name:'Anime Defenders',      slug:'anime-defenders',      emoji:'🗡️', cat:'anime',     codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
-  { name:'Toilet Tower Defense', slug:'toilet-tower-defense', emoji:'🚽', cat:'battle',    codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
-  { name:'Pet Simulator 99',     slug:'pet-simulator-99',     emoji:'🐹', cat:'simulator', codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
-];
-
-let activeCat='all', activeStatus='all', searchQ='', sortBy='hot';
-let visibleCount=100;
-
-function renderGames(){
-  let games=[...ALL_GAMES];
-  if(activeCat!=='all')     games=games.filter(g=>g.cat===activeCat);
-  if(activeStatus==='active') games=games.filter(g=>g.codes>0);
-  if(searchQ)               games=games.filter(g=>g.name.toLowerCase().includes(searchQ));
-  if(sortBy==='updated')    games.sort((a,b)=>new Date(b.iso)-new Date(a.iso));
-  else if(sortBy==='codes') games.sort((a,b)=>b.codes-a.codes);
-  else if(sortBy==='alpha') games.sort((a,b)=>a.name.localeCompare(b.name,'fr'));
-  else games.sort((a,b)=>(b.hot?1:0)-(a.hot?1:0)||b.codes-a.codes);
-
-  const shown=games.slice(0,visibleCount);
-  document.getElementById('gameCount').innerHTML=`Affichage de <strong>${shown.length}</strong> sur <strong>${games.length}</strong> jeux`;
-  document.getElementById('loadMoreBtn').style.display=games.length>visibleCount?'inline-flex':'none';
-  if(typeof applyRobloxThumbs==='function') setTimeout(applyRobloxThumbs, 50);
-
-  document.getElementById('gamesContainer').innerHTML=shown.map(g=>`
-    <a class="game-row" href="/codes/${g.slug}.html">
-      <div class="game-thumb">
-        <img data-game="${g.slug}" src="${THUMBS[g.slug]||('/images/games/'+g.slug+'.svg')}" alt="${g.name}" loading="lazy" onerror="this.onerror=null;this.src='/images/games/'+g.slug+'.svg'">
-        <div class="game-emoji-fallback" style="display:none">${g.emoji}</div>
-      </div>
-      <div class="game-info">
-        <div class="game-name">${g.name}${g.hot?' 🔥':''}</div>
-        <div class="game-meta">Mis à jour le ${g.updated}</div>
-        <div class="game-tags"><span class="g-tag">${CAT_LABELS[g.cat]||g.cat}</span>${g.codes>0?`<span class="g-tag" style="color:var(--accent2);border-color:rgba(0,207,255,.3)">✅ actif</span>`:''}</div>
-      </div>
-      <div class="code-count">
-        <div class="num" style="${g.codes===0?'color:var(--text-muted)':'color:var(--accent)'}">${g.codes}</div>
-        <div class="lbl">code${g.codes!==1?'s':''}</div>
-      </div>
-      <div class="row-arrow">→</div>
-    </a>`).join('');
-}
-
-// Filter chips
-document.querySelectorAll('[data-cat]').forEach(el=>{
-  el.addEventListener('click',()=>{
-    document.querySelectorAll('[data-cat]').forEach(x=>x.classList.remove('active'));
-    el.classList.add('active'); activeCat=el.dataset.cat; visibleCount=100; renderGames();
-  });
-});
-document.querySelectorAll('[data-status]').forEach(el=>{
-  el.addEventListener('click',()=>{
-    document.querySelectorAll('[data-status]').forEach(x=>x.classList.remove('active'));
-    el.classList.add('active'); activeStatus=el.dataset.status; visibleCount=100; renderGames();
-  });
-});
-document.getElementById('dirSearch').addEventListener('input',e=>{
-  searchQ=e.target.value.trim().toLowerCase(); visibleCount=100; renderGames();
-});
-document.getElementById('sortSelect').addEventListener('change',e=>{
-  sortBy=e.target.value; renderGames();
-});
-document.getElementById('loadMoreBtn').addEventListener('click',()=>{
-  visibleCount+=10; renderGames();
-});
-
-// View toggle (list / grid)
-document.getElementById('listBtn').addEventListener('click',()=>{
-  document.getElementById('listBtn').classList.add('active');
-  document.getElementById('gridBtn').classList.remove('active');
-  const c=document.getElementById('gamesContainer');
-  c.classList.remove('grid-view'); c.classList.add('games-list');
-  renderGames();
-});
-document.getElementById('gridBtn').addEventListener('click',()=>{
-  document.getElementById('gridBtn').classList.add('active');
-  document.getElementById('listBtn').classList.remove('active');
-  const c=document.getElementById('gamesContainer');
-  c.classList.remove('games-list'); c.classList.add('grid-view');
-  renderGames();
-});
-
-// Initial render
-renderGames();
-
-// Pré-sélection de catégorie via ?cat=
-const _cat=new URLSearchParams(location.search).get('cat');
-if(_cat){const chip=document.querySelector(`[data-cat="${_cat}"]`);if(chip)chip.click();}
-</script>
-</body>
-</html>
+  { name:'Grow a Garden',        slug:'grow-a-garden',        emoji:'🌱', cat:'simulator', codes:2,
