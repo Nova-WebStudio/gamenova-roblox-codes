@@ -279,4 +279,28 @@ document.getElementById('dirSearch').addEventListener('input',e=>{
 document.getElementById('sortSelect').addEventListener('change',e=>{
   sortBy=e.target.value; renderGames();
 });
-document.getElementById('loadMoreBtn').addEventList
+document.getElementById('loadMoreBtn').addEventListener('click',()=>{
+  visibleCount+=10; renderGames();
+});
+
+// View toggle (list / grid)
+document.getElementById('listBtn').addEventListener('click',()=>{
+  document.getElementById('listBtn').classList.add('active');
+  document.getElementById('gridBtn').classList.remove('active');
+  const c=document.getElementById('gamesContainer');
+  c.classList.remove('grid-view'); c.classList.add('games-list');
+  renderGames();
+});
+document.getElementById('gridBtn').addEventListener('click',()=>{
+  document.getElementById('gridBtn').classList.add('active');
+  document.getElementById('listBtn').classList.remove('active');
+  const c=document.getElementById('gamesContainer');
+  c.classList.remove('games-list'); c.classList.add('grid-view');
+  renderGames();
+});
+
+// Initial render
+renderGames();
+</script>
+</body>
+</html>
