@@ -225,6 +225,24 @@
 <script>
 const CAT_LABELS = { rpg:'RPG', simulator:'Simulateur', battle:'Combat', anime:'Anime', obby:'Obby', tycoon:'Tycoon' };
 
+// Miniatures officielles Roblox (chargées directement, fonctionne sur tout hébergement)
+const THUMBS = {
+  'blox-fruits':'https://tr.rbxcdn.com/180DAY-e1ce51abae5188805c3fee78ec7f4d08/768/432/Image/Webp/noFilter',
+  'pet-simulator-x':'https://tr.rbxcdn.com/180DAY-a7bb14d2b3dbf586e67ba2ac7a0c3dc7/500/280/Image/Jpeg/noFilter',
+  'adopt-me':'https://tr.rbxcdn.com/180DAY-ef30533fcd5e71af2468030ffa6c176a/500/280/Image/Jpeg/noFilter',
+  'murder-mystery-2':'https://tr.rbxcdn.com/180DAY-5ba706807447783862364dfef7a465ff/500/280/Image/Jpeg/noFilter',
+  'royale-high':'https://tr.rbxcdn.com/180DAY-1c63d3971f06391b08a95400cdf2bb78/500/280/Image/Jpeg/noFilter',
+  'brookhaven':'https://tr.rbxcdn.com/180DAY-5e77d217cbda7ba5941840cfa3ab8c36/768/432/Image/Webp/noFilter',
+  'tower-of-hell':'https://tr.rbxcdn.com/180DAY-20a372111085c33de1e64004e4dca1d8/768/432/Image/Webp/noFilter',
+  'work-at-a-pizza-place':'https://tr.rbxcdn.com/180DAY-3504f0abedb16721aec2f8fcc0da4e2e/768/432/Image/Webp/noFilter',
+  'shindo-life':'https://t3.rbxcdn.com/180DAY-3b2ec062707376a89a223ea44c20d408',
+  'king-legacy':'https://t3.rbxcdn.com/180DAY-e559fde711d62cc11604158b5f39187c',
+  'anime-adventures':'https://t3.rbxcdn.com/180DAY-58d59bfe7584647d43085d18c3e9d679',
+  'fruit-battlegrounds':'https://tr.rbxcdn.com/180DAY-6688078543e2f947bf998f31c4601037/768/432/Image/Png/noFilter',
+  'rivals':'https://tr.rbxcdn.com/180DAY-27507ba164fae9b46c68047d34d0078b/768/432/Image/Png/noFilter',
+  'encounters':'https://tr.rbxcdn.com/180DAY-024bcafc4df055789126ae841598d15d/768/432/Image/Png/noFilter',
+};
+
 const ALL_GAMES = [
   { name:'Blox Fruits',          slug:'blox-fruits',          emoji:'🍎', cat:'rpg',       codes:5,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
   { name:'Pet Simulator X',      slug:'pet-simulator-x',      emoji:'🐾', cat:'simulator', codes:8,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
@@ -263,7 +281,7 @@ function renderGames(){
   document.getElementById('gamesContainer').innerHTML=shown.map(g=>`
     <a class="game-row" href="/codes/${g.slug}.html">
       <div class="game-thumb">
-        <img data-game="${g.slug}" src="/images/games/${g.slug}.svg" alt="${g.name}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <img data-game="${g.slug}" src="${THUMBS[g.slug]||('/images/games/'+g.slug+'.svg')}" alt="${g.name}" loading="lazy" onerror="this.onerror=null;this.src='/images/games/'+g.slug+'.svg'">
         <div class="game-emoji-fallback" style="display:none">${g.emoji}</div>
       </div>
       <div class="game-info">
