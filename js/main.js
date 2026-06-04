@@ -55,7 +55,7 @@ function initMobileNav() {
 const GAMES_INDEX = [
   { name: 'Blox Fruits',          slug: 'blox-fruits',          emoji: '🍎', codes: 5 },
   { name: 'Pet Simulator X',      slug: 'pet-simulator-x',      emoji: '🐾', codes: 8 },
-  { name: 'Adopt Me',             slug: 'adopt-me',             emoji: '🐣', codes: 3 },
+  { name: 'Adopt Me',             slug: 'adopt-me',             emoji: '🐣', codes: 0 },
   { name: 'Anime Adventures',     slug: 'anime-adventures',     emoji: '⚔️', codes: 6 },
   { name: 'Brookhaven',           slug: 'brookhaven',           emoji: '🏙️', codes: 0 },
   { name: 'Tower of Hell',        slug: 'tower-of-hell',        emoji: '🗼', codes: 0 },
@@ -77,6 +77,12 @@ const GAMES_INDEX = [
   { name: 'Arsenal',             slug: 'arsenal',              emoji: '🔫', codes: 5 },
   { name: 'Jailbreak',           slug: 'jailbreak',            emoji: '🚔', codes: 4 },
   { name: 'BedWars',             slug: 'bedwars',              emoji: '🛏️', codes: 0 },
+  { name: 'Fisch', slug: 'fisch', emoji: '🐟', codes: 10 },
+  { name: 'Dress to Impress', slug: 'dress-to-impress', emoji: '👗', codes: 8 },
+  { name: 'Da Hood', slug: 'da-hood', emoji: '🔫', codes: 6 },
+  { name: 'Bubble Gum Simulator Infinity', slug: 'bubble-gum-simulator-infinity', emoji: '🫧', codes: 5 },
+  { name: 'Blue Lock Rivals', slug: 'blue-lock-rivals', emoji: '⚽', codes: 8 },
+  { name: 'Volleyball Legends', slug: 'volleyball-legends', emoji: '🏐', codes: 3 },
 ];
 
 function gameResultHTML(g) {
