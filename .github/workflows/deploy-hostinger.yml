@@ -1,10 +1,10 @@
-name: 🚀 Deploy GameNova → Hostinger
+name: 🚀 Deploy Zoneblox → Hostinger
 
 on:
   push:
     branches:
-      - main   # chaque git push sur main déclenche le déploiement
-  workflow_dispatch:  # bouton manuel depuis GitHub Actions
+      - main
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -23,8 +23,9 @@ jobs:
           password:     ${{ secrets.FTP_PASS }}
           port:         21
           protocol:     ftp
-          local-dir:    ./          # racine du projet GameNova
-          server-dir:   /public_html/  # dossier racine Hostinger
+          timeout:      600000
+          local-dir:    ./
+          server-dir:   /public_html/
           exclude: |
             **/.git*
             **/.git*/**
