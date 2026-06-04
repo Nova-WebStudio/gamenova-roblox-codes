@@ -210,7 +210,7 @@ function initYouTubeVideos() {
   if (!m) return;
   const slug = m[1];
   const game = (GAMES_INDEX.find(g => g.slug === slug) || {}).name || slug.replace(/-/g, ' ');
-  const query = game + ' codes';
+  const query = game + ' Roblox'; // vidéos populaires du jeu (pas les tutos de codes concurrents)
   const cacheKey = 'yt_' + slug;
 
   // Cache navigateur 12h pour limiter la consommation de quota
