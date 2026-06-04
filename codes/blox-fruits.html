@@ -665,4 +665,15 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Zoneblox — Non affilié à Roblox Corporation ni aux développeurs de Blox Fruits.</sp
+      <span>© 2026 Zoneblox — Non affilié à Roblox Corporation ni aux développeurs de Blox Fruits.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+<script>
+function switchTab(tabId){document.querySelectorAll('.page-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));var b=document.querySelector('[data-tab="'+tabId+'"]');var p=document.getElementById('tab-'+tabId);if(b)b.classList.add('active');if(p)p.classList.add('active');}
+document.querySelectorAll('.page-tab').forEach(function(tab){tab.addEventListener('click',function(){switchTab(tab.dataset.tab);});});
+</script>
+</body>
+</html>
