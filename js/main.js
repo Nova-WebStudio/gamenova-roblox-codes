@@ -27,6 +27,12 @@ const ROBLOX_THUMBS = {
   'arsenal': 'https://tr.rbxcdn.com/180DAY-fd5d29ef7df403915891862d02ae09bb/768/432/Image/Png/noFilter',
   'jailbreak': 'https://tr.rbxcdn.com/180DAY-fef285ce1b8ac805b17da2a4f998ccec/768/432/Image/Png/noFilter',
   'bedwars': 'https://tr.rbxcdn.com/180DAY-9e34b6ee9e93b7840f82d1381d14c641/768/432/Image/Png/noFilter',
+  'fisch': 'https://tr.rbxcdn.com/180DAY-0b48b36aaaebb05f29da4beb58790100/768/432/Image/Png/noFilter',
+  'dress-to-impress': 'https://tr.rbxcdn.com/180DAY-62de69073c3ab87818fa79cd9d34006b/768/432/Image/Png/noFilter',
+  'da-hood': 'https://tr.rbxcdn.com/180DAY-655a8b7fc990b48f595db9bcfd7ea70b/768/432/Image/Png/noFilter',
+  'bubble-gum-simulator-infinity': 'https://tr.rbxcdn.com/180DAY-7c76a88ace2e799826837aee08875eec/768/432/Image/Png/noFilter',
+  'blue-lock-rivals': 'https://tr.rbxcdn.com/180DAY-6c3d95dac7c3d279e20cfa9ef1b27ba5/768/432/Image/Png/noFilter',
+  'volleyball-legends': 'https://tr.rbxcdn.com/180DAY-572cf4e9e5cec5dd45074a98fa143ca0/768/432/Image/Png/noFilter',
 };
 
 /* ---- Copy code ---- */
@@ -177,6 +183,12 @@ const ROBLOX_UNIVERSE_IDS = {
   'arsenal':               111958650,
   'jailbreak':             245662005,
   'bedwars':               2619619496,
+  'fisch': 5750914919,
+  'dress-to-impress': 5203828273,
+  'da-hood': 1008451066,
+  'bubble-gum-simulator-infinity': 6504986360,
+  'blue-lock-rivals': 6325068386,
+  'volleyball-legends': 6931042565,
 };
 
 const _thumbCache = {};
