@@ -32,7 +32,7 @@
     "dateModified":"2026-06-02",
     "author":{"@type":"Organization","name":"Zoneblox"},
     "publisher":{"@type":"Organization","name":"Zoneblox","logo":{"@type":"ImageObject","url":"https://zoneblox.com/images/logo.png"}},
-    "description":"Complete list of active Blox Fruits codes for June 2026, plus update articles and tips."
+    "description":"Liste complète des codes Blox Fruits actifs en juin 2026, ainsi que les actualités des mises à jour et des astuces."
   }
   </script>
   <script type="application/ld+json">
@@ -40,9 +40,9 @@
     "@context":"https://schema.org",
     "@type":"FAQPage",
     "mainEntity":[
-      {"@type":"Question","name":"What are the active Blox Fruits codes in June 2026?","acceptedAnswer":{"@type":"Answer","text":"Active codes include: TRIPLEABOMB (Stat Reset), Sub2Brawlexecution (2x EXP 20 min), Enyu_is_pro (2x EXP 20 min), Sub2Fer999 (2x EXP 20 min), Fudd10_v2 (Beli x1)."}},
-      {"@type":"Question","name":"How do I redeem codes in Blox Fruits?","acceptedAnswer":{"@type":"Answer","text":"1. Launch Blox Fruits on Roblox. 2. Click the Twitter bird icon on the left of the screen. 3. Type or paste the code in the text box. 4. Press Enter or click Redeem. Your reward appears instantly."}},
-      {"@type":"Question","name":"What is the latest Blox Fruits update?","acceptedAnswer":{"@type":"Answer","text":"Update 26 added the new Void Island area, the Celestial Dragon fruit, and reworked PvP balancing in May 2026."}}
+      {"@type":"Question","name":"Quels sont les codes Blox Fruits actifs en juin 2026 ?","acceptedAnswer":{"@type":"Answer","text":"Codes actifs : TRIPLEABOMB (reset de stats), Sub2Brawlexecution (2× EXP 20 min), Enyu_is_pro (2× EXP 20 min), Sub2Fer999 (2× EXP 20 min), Fudd10_v2 (1 Beli)."}},
+      {"@type":"Question","name":"Comment utiliser un code dans Blox Fruits ?","acceptedAnswer":{"@type":"Answer","text":"1. Lancez Blox Fruits sur Roblox. 2. Cliquez sur l'icône oiseau Twitter à gauche de l'écran. 3. Saisissez ou collez le code dans le champ. 4. Appuyez sur Entrée. La récompense arrive instantanément."}},
+      {"@type":"Question","name":"Quelle est la dernière mise à jour de Blox Fruits ?","acceptedAnswer":{"@type":"Answer","text":"L'Update 26 a ajouté la zone de l'Île du Néant, le Fruit Dragon Céleste et une refonte de l'équilibrage PvP."}}
     ]
   }
   </script>
@@ -113,17 +113,29 @@
     .codes-live-banner span  { color:var(--text-muted); font-size:.82rem; }
     @keyframes pulse { 0%,100%{opacity:1}50%{opacity:.3} }
 
-    /* Tabs for codes / updates / tips / videos */
+    /* Navigation par grosses sections (boutons) */
     .page-tabs {
-      display:flex; gap:0; border-bottom:2px solid var(--border); margin-bottom:28px; overflow-x:auto;
+      display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin-bottom:28px;
     }
     .page-tab {
-      padding:12px 20px; font-size:.88rem; font-weight:600; color:var(--text-muted);
-      border-bottom:2px solid transparent; margin-bottom:-2px; white-space:nowrap; cursor:pointer;
-      transition:.15s;
+      background:var(--bg-card); border:1px solid var(--border); border-radius:12px;
+      padding:14px 6px; display:flex; flex-direction:column; align-items:center; gap:6px;
+      font-size:.9rem; font-weight:700; color:var(--text-muted); cursor:pointer;
+      transition:.15s; text-align:center;
     }
-    .page-tab:hover { color:var(--text-primary); }
-    .page-tab.active { color:var(--accent); border-bottom-color:var(--accent); }
+    .page-tab .pt-ico { font-size:1.5rem; line-height:1; }
+    .page-tab .pt-count {
+      font-size:.72rem; font-weight:700; padding:1px 9px; border-radius:10px;
+      background:rgba(162,89,255,.18); color:var(--accent);
+    }
+    .page-tab:hover { color:var(--text-primary); border-color:rgba(162,89,255,.45); transform:translateY(-2px); }
+    .page-tab.active {
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      border-color:transparent; color:#fff;
+      box-shadow:0 6px 18px rgba(162,89,255,.35);
+    }
+    .page-tab.active .pt-count { background:rgba(255,255,255,.25); color:#fff; }
+    @media (max-width:640px){ .page-tabs{ grid-template-columns:repeat(3,1fr); } }
     .tab-content { display:none; }
     .tab-content.active { display:block; }
 
@@ -175,7 +187,7 @@
         <h1>Codes Blox Fruits <span class="gradient-text">juin 2026</span></h1>
         <div class="game-meta">
           <div class="game-meta-item">✅ <strong>5 codes actifs</strong></div>
-          <div class="game-meta-item">🕐 Mis à jour le <strong>June 2, 2026</strong></div>
+          <div class="game-meta-item">🕐 Mis à jour le <strong>5 juin 2026</strong></div>
           <div class="game-meta-item">👥 <strong>Des millions</strong> de joueurs</div>
           <div class="game-meta-item">🏷️ <strong>RPG / Aventure</strong></div>
         </div>
@@ -202,11 +214,11 @@
 
         <!-- PAGE TABS -->
         <div class="page-tabs">
-          <div class="page-tab active" data-tab="codes">🎁 Codes</div>
-          <div class="page-tab" data-tab="updates">📰 Actualités</div>
-          <div class="page-tab" data-tab="tips">💡 Tips & Tricks</div>
-          <div class="page-tab" data-tab="videos">🎬 Vidéos</div>
-          <div class="page-tab" data-tab="faq">❓ FAQ</div>
+          <div class="page-tab active" data-tab="codes"><span class="pt-ico">🎁</span>Codes<span class="pt-count">5</span></div>
+          <div class="page-tab" data-tab="updates"><span class="pt-ico">📰</span>Actualités<span class="pt-count">3</span></div>
+          <div class="page-tab" data-tab="tips"><span class="pt-ico">💡</span>Astuces<span class="pt-count">6</span></div>
+          <div class="page-tab" data-tab="videos"><span class="pt-ico">🎬</span>Vidéos<span class="pt-count">3</span></div>
+          <div class="page-tab" data-tab="faq"><span class="pt-ico">❓</span>FAQ<span class="pt-count">5</span></div>
         </div>
 
         <!-- ═══ TAB: CODES ═══ -->
@@ -275,7 +287,7 @@
                 <tbody>
                   <tr>
                     <td><div class="code-cell"><span class="code-value">TRIPLEABOMB</span></div></td>
-                    <td><span class="reward-tag">🔄 Stat Reset</span></td>
+                    <td><span class="reward-tag">🔄 Reset de stats</span></td>
                     <td><button class="copy-btn" onclick="copyCode(this,'TRIPLEABOMB')">Copier</button></td>
                   </tr>
                   <tr>
@@ -317,7 +329,7 @@
                   <tr class="expired-code"><td><div class="code-cell"><span class="code-value">Sub2CaptainMaui</span></div></td><td><span class="reward-tag">2× EXP</span></td></tr>
                   <tr class="expired-code"><td><div class="code-cell"><span class="code-value">EXP_5B</span></div></td><td><span class="reward-tag">2× EXP</span></td></tr>
                   <tr class="expired-code"><td><div class="code-cell"><span class="code-value">Update17_5</span></div></td><td><span class="reward-tag">2× EXP</span></td></tr>
-                  <tr class="expired-code"><td><div class="code-cell"><span class="code-value">NOOB_REFUND</span></div></td><td><span class="reward-tag">Stat Reset</span></td></tr>
+                  <tr class="expired-code"><td><div class="code-cell"><span class="code-value">NOOB_REFUND</span></div></td><td><span class="reward-tag">Reset de stats</span></td></tr>
                   <tr class="expired-code"><td><div class="code-cell"><span class="code-value">JCWK</span></div></td><td><span class="reward-tag">2× EXP</span></td></tr>
                   <tr class="expired-code"><td><div class="code-cell"><span class="code-value">Magicbus</span></div></td><td><span class="reward-tag">2× EXP</span></td></tr>
                 </tbody>
@@ -336,7 +348,7 @@
 
           <div class="notice notice-success">
             <span class="notice-icon">📰</span>
-            <p><strong>Game update tracker:</strong> We cover every major Blox Fruits update — new areas, fruits, balance patches, and events. Bookmark this page to stay informed.</p>
+            <p><strong>Suivi des mises à jour :</strong> nous couvrons chaque grande mise à jour de Blox Fruits — nouvelles zones, fruits, patchs d'équilibrage et événements. Ajoutez cette page à vos favoris pour rester informé.</p>
           </div>
 
           <!-- AD inside content -->
@@ -346,34 +358,34 @@
 
           <div class="update-posts">
 
-            <!-- Article 1 — latest update -->
+            <!-- Article 1 — dernière mise à jour -->
             <article class="update-post">
               <div class="update-post-header">
                 <div class="update-post-meta">
-                  <span class="update-tag tag-update">🆕 Major Update</span>
-                  <span class="update-post-date">June 1, 2026</span>
+                  <span class="update-tag tag-update">🆕 Mise à jour majeure</span>
+                  <span class="update-post-date">1 juin 2026</span>
                 </div>
                 <h2 class="update-post-title">
-                  <a href="#">Blox Fruits Update 26: Void Island, Celestial Dragon Fruit & PvP Rework</a>
+                  <a href="#">Blox Fruits Update 26 : Île du Néant, Fruit Dragon Céleste et refonte du PvP</a>
                 </h2>
                 <p class="update-post-excerpt">
-                  Update 26 is the biggest patch since the Sea 3 rework. Developers <strong style="color:var(--text-primary)">Mygame43</strong> and <strong style="color:var(--text-primary)">Gordon_Ramsay_fan</strong> dropped the update on June 1st with a brand-new island, a mythical fruit, and sweeping changes to PvP combat that the community has been requesting for months.
+                  L'Update 26 est la plus grosse mise à jour depuis la refonte de la Mer 3. Les développeurs <strong style="color:var(--text-primary)">Mygame43</strong> et <strong style="color:var(--text-primary)">Gordon_Ramsay_fan</strong> l'ont publiée le 1ᵉʳ juin avec une toute nouvelle île, un fruit mythique et de profonds changements du combat PvP réclamés par la communauté depuis des mois.
                 </p>
               </div>
               <div class="update-post-body">
                 <div class="update-highlights">
-                  <h4>What's New in Update 26</h4>
-                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Void Island</strong> — a new endgame area accessible at level 2500+, with 3 new bosses and exclusive loot</span></div>
-                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Celestial Dragon Fruit</strong> — a new Mythical fruit with light-based flight and powerful beam attacks</span></div>
-                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">PvP Rework</strong> — stun durations reduced by 30%, combo windows adjusted for faster combat</span></div>
-                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">New code drop</strong> — <code style="color:var(--text-code);font-family:var(--font-mono)">TRIPLEABOMB</code> released alongside the update (stat reset)</span></div>
-                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Performance fix</strong> — loading times on mobile devices reduced by ~20%</span></div>
+                  <h4>Nouveautés de l'Update 26</h4>
+                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Île du Néant</strong> — nouvelle zone de fin de jeu accessible au niveau 2500+, avec 3 nouveaux boss et du butin exclusif</span></div>
+                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Fruit Dragon Céleste</strong> — nouveau fruit mythique avec vol lumineux et puissantes attaques en rayon</span></div>
+                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Refonte du PvP</strong> — durées d'étourdissement réduites de 30 %, fenêtres de combo ajustées pour des combats plus rapides</span></div>
+                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Nouveau code</strong> — <code style="color:var(--text-code);font-family:var(--font-mono)">TRIPLEABOMB</code> sorti en même temps que la mise à jour (reset de stats)</span></div>
+                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Optimisation</strong> — temps de chargement réduits d'environ 20 % sur mobile</span></div>
                 </div>
               </div>
               <div class="update-post-footer">
-                <a href="#" class="read-more">Read full update breakdown →</a>
+                <a href="#" class="read-more">Lire le décryptage complet →</a>
                 <div class="post-shares">
-                  <button class="share-btn">𝕏 Share</button>
+                  <button class="share-btn">𝕏 Partager</button>
                   <button class="share-btn">💬 Discord</button>
                 </div>
               </div>
@@ -383,61 +395,61 @@
             <article class="update-post">
               <div class="update-post-header">
                 <div class="update-post-meta">
-                  <span class="update-tag tag-patch">🔧 Balance Patch</span>
-                  <span class="update-post-date">May 20, 2026</span>
+                  <span class="update-tag tag-patch">🔧 Patch d'équilibrage</span>
+                  <span class="update-post-date">20 mai 2026</span>
                 </div>
                 <h2 class="update-post-title">
-                  <a href="#">Blox Fruits Patch 25.3: Dragon Fruit Nerfs & Fruit Spawn Rate Changes</a>
+                  <a href="#">Blox Fruits Patch 25.3 : nerf du Fruit Dragon et nouveaux taux d'apparition</a>
                 </h2>
                 <p class="update-post-excerpt">
-                  The 25.3 balance patch addressed long-standing complaints about Dragon Fruit dominating the PvP meta. Several moves received reduced hitboxes, and the fruit spawn system was overhauled to give rare fruits a better chance of appearing in less-trafficked areas.
+                  Le patch d'équilibrage 25.3 répond aux plaintes récurrentes sur la domination du Fruit Dragon dans le méta PvP. Plusieurs attaques ont vu leur zone d'impact réduite, et le système d'apparition des fruits a été revu pour donner plus de chances aux fruits rares dans les zones peu fréquentées.
                 </p>
               </div>
               <div class="update-post-body">
                 <div class="update-highlights">
-                  <h4>Patch Highlights</h4>
-                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Dragon Fruit</strong> — Breath attack hitbox narrowed by 15%, damage reduced by 8%</span></div>
-                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Leopard Fruit</strong> — Slight speed buff; transformation cooldown reduced from 25s to 18s</span></div>
-                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Fruit spawns</strong> — Legendary/Mythical fruits now spawn more often on islands with fewer players</span></div>
-                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Bug fixes</strong> — Fixed Black Leg M1 animation lag, fruit storage glitch on server reset</span></div>
+                  <h4>Points clés du patch</h4>
+                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Fruit Dragon</strong> — zone d'impact du souffle réduite de 15 %, dégâts réduits de 8 %</span></div>
+                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Fruit Léopard</strong> — léger bonus de vitesse ; temps de recharge de la transformation réduit de 25 s à 18 s</span></div>
+                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Apparition des fruits</strong> — les fruits légendaires/mythiques apparaissent plus souvent sur les îles peu peuplées</span></div>
+                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Corrections de bugs</strong> — lag d'animation du M1 Jambe Noire et glitch de stockage de fruits au reset corrigés</span></div>
                 </div>
               </div>
               <div class="update-post-footer">
-                <a href="#" class="read-more">Read full patch notes →</a>
+                <a href="#" class="read-more">Lire les notes complètes →</a>
                 <div class="post-shares">
-                  <button class="share-btn">𝕏 Share</button>
+                  <button class="share-btn">𝕏 Partager</button>
                   <button class="share-btn">💬 Discord</button>
                 </div>
               </div>
             </article>
 
-            <!-- Article 3 — Event -->
+            <!-- Article 3 — Événement -->
             <article class="update-post">
               <div class="update-post-header">
                 <div class="update-post-meta">
-                  <span class="update-tag tag-event">🎉 Event</span>
-                  <span class="update-post-date">May 10, 2026</span>
+                  <span class="update-tag tag-event">🎉 Événement</span>
+                  <span class="update-post-date">10 mai 2026</span>
                 </div>
                 <h2 class="update-post-title">
-                  <a href="#">Summer Festival Event 2026: Limited Cosmetics, Seasonal Quests & 3 Bonus Codes</a>
+                  <a href="#">Festival d'été 2026 : cosmétiques limités, quêtes saisonnières et 3 codes bonus</a>
                 </h2>
                 <p class="update-post-excerpt">
-                  The Summer Festival 2026 event ran from May 10–31 and brought limited-edition cosmetics, daily login rewards, and 3 exclusive codes that were only available during the event window. Here's everything that happened and what might return for the next event.
+                  L'événement Festival d'été 2026 s'est tenu du 10 au 31 mai et a apporté des cosmétiques en édition limitée, des récompenses de connexion quotidiennes et 3 codes exclusifs disponibles uniquement pendant l'événement. Voici tout ce qu'il s'est passé et ce qui pourrait revenir au prochain événement.
                 </p>
               </div>
               <div class="update-post-body">
                 <div class="update-highlights">
-                  <h4>Event Recap</h4>
-                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Beach Pirate Cosmetic Set</strong> — limited skin bundle for 800 Robux (now retired)</span></div>
-                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Daily Login Rewards</strong> — 21 days of free Beli, EXP boosts, and fragments</span></div>
-                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Event codes (expired)</strong> — SUMMER2026, FESTIVALCODE, WAVE_BLAST — all now inactive</span></div>
-                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Next event</strong> — Developers hinted at a Halloween 2026 event starting October</span></div>
+                  <h4>Récapitulatif de l'événement</h4>
+                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Set cosmétique Pirate de plage</strong> — pack de skins limité à 800 Robux (désormais retiré)</span></div>
+                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Récompenses de connexion</strong> — 21 jours de Beli gratuits, boosts d'EXP et fragments</span></div>
+                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Codes de l'événement (expirés)</strong> — SUMMER2026, FESTIVALCODE, WAVE_BLAST — tous désormais inactifs</span></div>
+                  <div class="update-highlight-item"><span class="dot">▶</span><span><strong style="color:var(--text-primary)">Prochain événement</strong> — les développeurs ont laissé entendre un événement Halloween 2026 dès octobre</span></div>
                 </div>
               </div>
               <div class="update-post-footer">
-                <a href="#" class="read-more">Full event recap →</a>
+                <a href="#" class="read-more">Récapitulatif complet →</a>
                 <div class="post-shares">
-                  <button class="share-btn">𝕏 Share</button>
+                  <button class="share-btn">𝕏 Partager</button>
                   <button class="share-btn">💬 Discord</button>
                 </div>
               </div>
@@ -452,44 +464,44 @@
 
           <div class="notice notice-warning">
             <span class="notice-icon">💡</span>
-            <p><strong>Pro tip:</strong> These strategies are based on the current Update 26 meta. Some may change after future balance patches.</p>
+            <p><strong>Astuce :</strong> ces stratégies reposent sur le méta actuel de l'Update 26. Certaines peuvent évoluer avec les prochains patchs d'équilibrage.</p>
           </div>
 
-          <h3 style="margin:20px 0 16px">Beginner Tips</h3>
+          <h3 style="margin:20px 0 16px">Astuces pour débuter</h3>
           <div class="tips-grid">
             <div class="tip-card">
               <div class="tip-num">1</div>
-              <h4>Always use 2× EXP codes</h4>
-              <p>Redeem all EXP boost codes before grinding — they stack together for up to 40 minutes of boosted XP when used back-to-back.</p>
+              <h4>Activez toujours les codes 2× EXP</h4>
+              <p>Utilisez tous les codes de boost d'EXP avant de farmer : ils se cumulent jusqu'à 40 minutes d'XP boostée en les enchaînant.</p>
             </div>
             <div class="tip-card">
               <div class="tip-num">2</div>
-              <h4>Don't eat your first fruit</h4>
-              <p>The first Devil Fruit you find is best sold or traded. Focus on leveling to 100 first before committing to a fruit build.</p>
+              <h4>Ne mangez pas votre premier fruit</h4>
+              <p>Le premier Fruit du Démon trouvé vaut mieux être vendu ou échangé. Montez d'abord au niveau 100 avant de choisir un build de fruit.</p>
             </div>
             <div class="tip-card">
               <div class="tip-num">3</div>
-              <h4>Farm Flower Quest early</h4>
-              <p>The Flower quest near spawn gives excellent EXP-per-minute at levels 1–50. Don't skip it for flashier areas.</p>
+              <h4>Farmez la quête Fleur tôt</h4>
+              <p>La quête de la Fleur près du spawn offre un excellent ratio EXP/minute aux niveaux 1 à 50. Ne la zappez pas pour des zones plus tape-à-l'œil.</p>
             </div>
           </div>
 
-          <h3 style="margin:28px 0 16px">Advanced Tips (Update 26 Meta)</h3>
+          <h3 style="margin:28px 0 16px">Astuces avancées (méta Update 26)</h3>
           <div class="tips-grid">
             <div class="tip-card">
               <div class="tip-num">4</div>
-              <h4>Void Island boss rotation</h4>
-              <p>The 3 Void Island bosses spawn on a 45-minute cycle. Use a server with low population for guaranteed spawns and solo drops.</p>
+              <h4>Rotation des boss de l'Île du Néant</h4>
+              <p>Les 3 boss de l'Île du Néant apparaissent par cycle de 45 minutes. Choisissez un serveur peu peuplé pour des apparitions garanties et des drops en solo.</p>
             </div>
             <div class="tip-card">
               <div class="tip-num">5</div>
-              <h4>Best PvP combo post-patch</h4>
-              <p>Leopard + Dark Step is the strongest PvP combo in Update 26. The speed buff + Ken Haki gives you unmatched mobility in fights.</p>
+              <h4>Meilleur combo PvP post-patch</h4>
+              <p>Léopard + Dark Step est le combo PvP le plus fort de l'Update 26. Le bonus de vitesse + le Ken Haki offrent une mobilité inégalée en combat.</p>
             </div>
             <div class="tip-card">
               <div class="tip-num">6</div>
-              <h4>Fruit storage trick</h4>
-              <p>Store fruits before server resets to preserve your collection. The reset-glitch bug from Patch 25.2 has been fixed — storage is now safe.</p>
+              <h4>Astuce de stockage des fruits</h4>
+              <p>Stockez vos fruits avant les resets de serveur pour préserver votre collection. Le glitch de reset du Patch 25.2 est corrigé — le stockage est désormais sûr.</p>
             </div>
           </div>
 
@@ -502,7 +514,7 @@
         <!-- ═══ TAB: VIDEOS ═══ -->
         <div class="tab-content" id="tab-videos">
 
-          <p style="margin-bottom:20px;font-size:.9rem">Best YouTube videos for Blox Fruits — code guides, update breakdowns, and tier lists.</p>
+          <p style="margin-bottom:20px;font-size:.9rem">Les meilleures vidéos YouTube sur Blox Fruits — guides de codes, décryptages de mises à jour et tier lists.</p>
 
           <div class="videos-grid">
 
@@ -511,28 +523,28 @@
                 <!-- Replace VIDEO_ID with the real YouTube ID -->
                 <a href="https://www.youtube.com/results?search_query=Blox+Fruits" target="_blank" rel="noopener" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#1a1a30,#0a0a1a);color:#fff;text-decoration:none;font-weight:700;font-size:.95rem"><span style="font-size:2.4rem">▶</span> Voir les vidéos sur YouTube</a>
               </div>
-              <div class="video-label">🎬 Update 26 Full Review — New Void Island & Celestial Fruit</div>
+              <div class="video-label">🎬 Revue complète de l'Update 26 — Île du Néant & Fruit Céleste</div>
             </div>
 
             <div class="video-card">
               <div class="video-embed">
                 <a href="https://www.youtube.com/results?search_query=Blox+Fruits" target="_blank" rel="noopener" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#1a1a30,#0a0a1a);color:#fff;text-decoration:none;font-weight:700;font-size:.95rem"><span style="font-size:2.4rem">▶</span> Voir les vidéos sur YouTube</a>
               </div>
-              <div class="video-label">🎁 All Working Codes June 2026 — Free Stat Resets & EXP</div>
+              <div class="video-label">🎁 Tous les codes qui marchent en juin 2026 — Resets de stats & EXP gratuits</div>
             </div>
 
             <div class="video-card">
               <div class="video-embed">
                 <a href="https://www.youtube.com/results?search_query=Blox+Fruits" target="_blank" rel="noopener" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#1a1a30,#0a0a1a);color:#fff;text-decoration:none;font-weight:700;font-size:.95rem"><span style="font-size:2.4rem">▶</span> Voir les vidéos sur YouTube</a>
               </div>
-              <div class="video-label">🍎 Best Fruit Tier List — Update 26 Meta Rankings</div>
+              <div class="video-label">🍎 Tier list des meilleurs fruits — classement méta Update 26</div>
             </div>
 
           </div>
 
           <div class="notice notice-info" style="margin-top:20px">
             <span class="notice-icon">📌</span>
-            <p>Do you run a Blox Fruits YouTube channel? <a href="/contact.html" style="color:var(--accent)">Contact us</a> to get your videos featured here — free exposure to thousands of daily visitors.</p>
+            <p>Vous tenez une chaîne YouTube sur Blox Fruits ? <a href="/contact.html" style="color:var(--accent)">Contactez-nous</a> pour voir vos vidéos mises en avant ici — une visibilité gratuite auprès de milliers de visiteurs quotidiens.</p>
           </div>
 
         </div><!-- /tab-videos -->
@@ -545,37 +557,37 @@
 
             <details class="tip-card" style="cursor:pointer">
               <summary style="font-weight:700;font-size:.95rem;color:var(--text-primary);user-select:none;list-style:none;display:flex;justify-content:space-between;align-items:center">
-                What are the active Blox Fruits codes in June 2026? <span>▼</span>
+                Quels sont les codes Blox Fruits actifs en juin 2026 ? <span>▼</span>
               </summary>
-              <p style="margin-top:10px;font-size:.88rem">Active codes: <strong style="color:var(--text-code)">TRIPLEABOMB</strong> (Stat Reset), <strong style="color:var(--text-code)">Sub2Brawlexecution</strong>, <strong style="color:var(--text-code)">Enyu_is_pro</strong>, <strong style="color:var(--text-code)">Sub2Fer999</strong> (2× EXP each), and <strong style="color:var(--text-code)">Fudd10_v2</strong> (Beli). All verified June 2, 2026.</p>
+              <p style="margin-top:10px;font-size:.88rem">Codes actifs : <strong style="color:var(--text-code)">TRIPLEABOMB</strong> (reset de stats), <strong style="color:var(--text-code)">Sub2Brawlexecution</strong>, <strong style="color:var(--text-code)">Enyu_is_pro</strong>, <strong style="color:var(--text-code)">Sub2Fer999</strong> (2× EXP chacun) et <strong style="color:var(--text-code)">Fudd10_v2</strong> (Beli). Tous vérifiés le 5 juin 2026.</p>
             </details>
 
             <details class="tip-card" style="cursor:pointer">
               <summary style="font-weight:700;font-size:.95rem;color:var(--text-primary);user-select:none;list-style:none;display:flex;justify-content:space-between;align-items:center">
-                How do I redeem codes in Blox Fruits? <span>▼</span>
+                Comment utiliser un code dans Blox Fruits ? <span>▼</span>
               </summary>
-              <p style="margin-top:10px;font-size:.88rem">Launch Blox Fruits → click the <strong style="color:var(--text-primary)">Twitter bird icon</strong> on the left side → type your code in the box → press Enter. Rewards appear instantly.</p>
+              <p style="margin-top:10px;font-size:.88rem">Lancez Blox Fruits → cliquez sur l'<strong style="color:var(--text-primary)">icône oiseau Twitter</strong> à gauche → saisissez votre code dans le champ → appuyez sur Entrée. Les récompenses arrivent instantanément.</p>
             </details>
 
             <details class="tip-card" style="cursor:pointer">
               <summary style="font-weight:700;font-size:.95rem;color:var(--text-primary);user-select:none;list-style:none;display:flex;justify-content:space-between;align-items:center">
-                Why isn't my code working? <span>▼</span>
+                Pourquoi mon code ne fonctionne-t-il pas ? <span>▼</span>
               </summary>
-              <p style="margin-top:10px;font-size:.88rem">Codes are case-sensitive — copy exactly as shown. If it still fails, the code may have expired or you've already redeemed it. Check the expired list above.</p>
+              <p style="margin-top:10px;font-size:.88rem">Les codes sont sensibles à la casse — copiez-les exactement comme affichés. Si ça ne marche toujours pas, le code a peut-être expiré ou vous l'avez déjà utilisé. Consultez la liste des codes expirés ci-dessus.</p>
             </details>
 
             <details class="tip-card" style="cursor:pointer">
               <summary style="font-weight:700;font-size:.95rem;color:var(--text-primary);user-select:none;list-style:none;display:flex;justify-content:space-between;align-items:center">
-                Where do new Blox Fruits codes come from? <span>▼</span>
+                D'où viennent les nouveaux codes Blox Fruits ? <span>▼</span>
               </summary>
-              <p style="margin-top:10px;font-size:.88rem">Developers release codes on the official <a href="https://twitter.com/bloxfruits" target="_blank" rel="noopener" style="color:var(--accent)">@Bloxfruits Twitter</a>, their Discord server, and during livestream events. Zoneblox monitors all channels daily.</p>
+              <p style="margin-top:10px;font-size:.88rem">Les développeurs publient les codes sur le <a href="https://twitter.com/bloxfruits" target="_blank" rel="noopener" style="color:var(--accent)">Twitter officiel @Bloxfruits</a>, leur serveur Discord et lors d'événements en livestream. Zoneblox surveille tous ces canaux chaque jour.</p>
             </details>
 
             <details class="tip-card" style="cursor:pointer">
               <summary style="font-weight:700;font-size:.95rem;color:var(--text-primary);user-select:none;list-style:none;display:flex;justify-content:space-between;align-items:center">
-                What is the latest Blox Fruits update? <span>▼</span>
+                Quelle est la dernière mise à jour de Blox Fruits ? <span>▼</span>
               </summary>
-              <p style="margin-top:10px;font-size:.88rem">Update 26 released June 1, 2026 — adding Void Island, the Celestial Dragon Fruit, and a major PvP rework. See the <button onclick="switchTab('updates')" style="color:var(--accent);background:none;border:none;cursor:pointer;font-size:inherit">Update News tab</button> for full details.</p>
+              <p style="margin-top:10px;font-size:.88rem">L'Update 26 est sortie le 1ᵉʳ juin 2026 — elle ajoute l'Île du Néant, le Fruit Dragon Céleste et une refonte majeure du PvP. Voir l'onglet <button onclick="switchTab('updates')" style="color:var(--accent);background:none;border:none;cursor:pointer;font-size:inherit">Actualités</button> pour tous les détails.</p>
             </details>
 
           </div>
@@ -606,11 +618,11 @@
           <div class="sidebar-widget">
             <h3>🗂️ Articles récents</h3>
             <ul class="toc-list">
-              <li><a href="#" onclick="switchTab('updates');return false">Update 26 — Void Island & Celestial Fruit</a></li>
-              <li><a href="#" onclick="switchTab('updates');return false">Patch 25.3 — Dragon Nerfs</a></li>
-              <li><a href="#" onclick="switchTab('updates');return false">Summer Festival Event Recap</a></li>
-              <li><a href="#">Update 25 — Full Breakdown</a></li>
-              <li><a href="#">Best Fruit Tier List (Update 26)</a></li>
+              <li><a href="#" onclick="switchTab('updates');return false">Update 26 — Île du Néant & Fruit Céleste</a></li>
+              <li><a href="#" onclick="switchTab('updates');return false">Patch 25.3 — Nerf du Dragon</a></li>
+              <li><a href="#" onclick="switchTab('updates');return false">Récap du Festival d'été</a></li>
+              <li><a href="#">Update 25 — Décryptage complet</a></li>
+              <li><a href="#">Tier list des meilleurs fruits (Update 26)</a></li>
             </ul>
           </div>
 
