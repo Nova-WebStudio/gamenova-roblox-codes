@@ -3,6 +3,16 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+  'driving-empire': 'https://tr.rbxcdn.com/180DAY-134d852037dc6df76cd340199bc0eef7/768/432/Image/Png/noFilter',
+  'evasion-clavier': 'https://tr.rbxcdn.com/180DAY-82b559d4f2bd68f909d4b9bdd92d168e/768/432/Image/Png/noFilter',
+  'ferme-d-anneaux': 'https://tr.rbxcdn.com/180DAY-5c24b09b1d9bdfa44deadb955fd8d2fb/768/432/Image/Png/noFilter',
+  'vendre-des-citrons': 'https://tr.rbxcdn.com/180DAY-3bb611c1f3b4d5bfa396b1ae965134af/768/432/Image/Png/noFilter',
+  'liminalite-invisible': 'https://tr.rbxcdn.com/180DAY-3d5bc95ea145c6be0d992c91c173ef1e/768/432/Image/Png/noFilter',
+  'demonologie': 'https://tr.rbxcdn.com/180DAY-4a405de12e9812c5b154529146d0ea13/768/432/Image/Png/noFilter',
+  'mini-guerre': 'https://tr.rbxcdn.com/180DAY-c60de7bb9807464a0564c898db8d8e62/768/432/Image/Png/noFilter',
+  'cliqueur-phonk': 'https://tr.rbxcdn.com/180DAY-ae08f34ff73b587272264895a4e43bae/768/432/Image/Png/noFilter',
+  'arene-de-sniper': 'https://tr.rbxcdn.com/180DAY-e59b96a0c52acd94af855698abc72767/768/432/Image/Png/noFilter',
+  'tour-needoh': 'https://tr.rbxcdn.com/180DAY-709282c91d3fb74801b493d7987004b3/768/432/Image/Png/noFilter',
   'blox-fruits': 'https://tr.rbxcdn.com/180DAY-e1ce51abae5188805c3fee78ec7f4d08/768/432/Image/Webp/noFilter',
   'pet-simulator-x': 'https://tr.rbxcdn.com/180DAY-a7bb14d2b3dbf586e67ba2ac7a0c3dc7/500/280/Image/Jpeg/noFilter',
   'adopt-me': 'https://tr.rbxcdn.com/180DAY-ef30533fcd5e71af2468030ffa6c176a/500/280/Image/Jpeg/noFilter',
@@ -65,6 +75,16 @@ function initMobileNav() {
 
 /* ---- Search index ---- */
 const GAMES_INDEX = [
+  { name: 'Driving Empire', slug: 'driving-empire', emoji: '🏎️', codes: 19 },
+  { name: 'Évasion Clavier', slug: 'evasion-clavier', emoji: '⌨️', codes: 0 },
+  { name: 'Construire une Ferme d\'Anneaux', slug: 'ferme-d-anneaux', emoji: '💍', codes: 0 },
+  { name: 'Vendre des Citrons', slug: 'vendre-des-citrons', emoji: '🍋', codes: 0 },
+  { name: 'Liminalité Invisible', slug: 'liminalite-invisible', emoji: '🌫️', codes: 0 },
+  { name: 'Démonologie', slug: 'demonologie', emoji: '👹', codes: 0 },
+  { name: 'Mini-Guerre', slug: 'mini-guerre', emoji: '💥', codes: 0 },
+  { name: 'Cliqueur Phonk', slug: 'cliqueur-phonk', emoji: '🎵', codes: 0 },
+  { name: 'Arène de Sniper', slug: 'arene-de-sniper', emoji: '🎯', codes: 0 },
+  { name: 'Tour Needoh', slug: 'tour-needoh', emoji: '🗼', codes: 0 },
   { name: 'Blox Fruits',          slug: 'blox-fruits',          emoji: '🍎', codes: 5 },
   { name: 'Pet Simulator X',      slug: 'pet-simulator-x',      emoji: '🐾', codes: 8 },
   { name: 'Adopt Me',             slug: 'adopt-me',             emoji: '🐣', codes: 0 },
@@ -171,6 +191,16 @@ function highlightNav() {
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
+  'driving-empire': 1202096104,
+  'evasion-clavier': 9584852943,
+  'ferme-d-anneaux': 10039338037,
+  'vendre-des-citrons': 7395930870,
+  'liminalite-invisible': 9885372266,
+  'demonologie': 6170143659,
+  'mini-guerre': 9837612476,
+  'cliqueur-phonk': 10051007039,
+  'arene-de-sniper': 9534705677,
+  'tour-needoh': 9874419878,
   'blox-fruits':           2753915549,
   'pet-simulator-x':       6284583030,
   'adopt-me':              920587237,

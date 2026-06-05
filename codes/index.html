@@ -187,7 +187,7 @@
 
     <!-- SORT + VIEW TOGGLE -->
     <div class="sort-bar">
-      <span class="count" id="gameCount">Affichage de <strong>36</strong> jeux</span>
+      <span class="count" id="gameCount">Affichage de <strong>46</strong> jeux</span>
       <div style="display:flex;gap:10px;align-items:center">
         <select class="sort-select" id="sortSelect">
           <option value="hot">🔥 Plus populaires</option>
@@ -223,11 +223,21 @@
   </div>
 </footer>
 
-<script src="/js/main.js?v=5"></script>
+<script src="/js/main.js?v=6"></script>
 <script>
 const CAT_LABELS = { rpg:'RPG', simulator:'Simulateur', battle:'Combat', anime:'Anime', obby:'Obby', tycoon:'Tycoon' };
 
 const THUMBS = {
+  'driving-empire':'https://tr.rbxcdn.com/180DAY-134d852037dc6df76cd340199bc0eef7/768/432/Image/Png/noFilter',
+  'evasion-clavier':'https://tr.rbxcdn.com/180DAY-82b559d4f2bd68f909d4b9bdd92d168e/768/432/Image/Png/noFilter',
+  'ferme-d-anneaux':'https://tr.rbxcdn.com/180DAY-5c24b09b1d9bdfa44deadb955fd8d2fb/768/432/Image/Png/noFilter',
+  'vendre-des-citrons':'https://tr.rbxcdn.com/180DAY-3bb611c1f3b4d5bfa396b1ae965134af/768/432/Image/Png/noFilter',
+  'liminalite-invisible':'https://tr.rbxcdn.com/180DAY-3d5bc95ea145c6be0d992c91c173ef1e/768/432/Image/Png/noFilter',
+  'demonologie':'https://tr.rbxcdn.com/180DAY-4a405de12e9812c5b154529146d0ea13/768/432/Image/Png/noFilter',
+  'mini-guerre':'https://tr.rbxcdn.com/180DAY-c60de7bb9807464a0564c898db8d8e62/768/432/Image/Png/noFilter',
+  'cliqueur-phonk':'https://tr.rbxcdn.com/180DAY-ae08f34ff73b587272264895a4e43bae/768/432/Image/Png/noFilter',
+  'arene-de-sniper':'https://tr.rbxcdn.com/180DAY-e59b96a0c52acd94af855698abc72767/768/432/Image/Png/noFilter',
+  'tour-needoh':'https://tr.rbxcdn.com/180DAY-709282c91d3fb74801b493d7987004b3/768/432/Image/Png/noFilter',
   'blox-fruits':'https://tr.rbxcdn.com/180DAY-e1ce51abae5188805c3fee78ec7f4d08/768/432/Image/Webp/noFilter',
   'pet-simulator-x':'https://tr.rbxcdn.com/180DAY-a7bb14d2b3dbf586e67ba2ac7a0c3dc7/500/280/Image/Jpeg/noFilter',
   'adopt-me':'https://tr.rbxcdn.com/180DAY-ef30533fcd5e71af2468030ffa6c176a/500/280/Image/Jpeg/noFilter',
@@ -267,6 +277,16 @@ const THUMBS = {
 };
 
 const ALL_GAMES = [
+  { name:'Driving Empire', slug:'driving-empire', emoji:'🏎️', cat:'simulator', codes:19, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
+  { name:'Évasion Clavier', slug:'evasion-clavier', emoji:'⌨️', cat:'obby', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
+  { name:'Construire une Ferme d\'Anneaux', slug:'ferme-d-anneaux', emoji:'💍', cat:'simulator', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
+  { name:'Vendre des Citrons', slug:'vendre-des-citrons', emoji:'🍋', cat:'tycoon', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
+  { name:'Liminalité Invisible', slug:'liminalite-invisible', emoji:'🌫️', cat:'obby', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
+  { name:'Démonologie', slug:'demonologie', emoji:'👹', cat:'battle', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
+  { name:'Mini-Guerre', slug:'mini-guerre', emoji:'💥', cat:'battle', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
+  { name:'Cliqueur Phonk', slug:'cliqueur-phonk', emoji:'🎵', cat:'simulator', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
+  { name:'Arène de Sniper', slug:'arene-de-sniper', emoji:'🎯', cat:'battle', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
+  { name:'Tour Needoh', slug:'tour-needoh', emoji:'🗼', cat:'obby', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
   { name:'Blox Fruits',          slug:'blox-fruits',          emoji:'🍎', cat:'rpg',       codes:5,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
   { name:'Pet Simulator X',      slug:'pet-simulator-x',      emoji:'🐾', cat:'simulator', codes:8,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
   { name:'Adopt Me!',            slug:'adopt-me',             emoji:'🐣', cat:'simulator', codes:0,  iso:'2026-06-04', updated:'4 juin 2026',  hot:true  },
