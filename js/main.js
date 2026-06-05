@@ -33,6 +33,12 @@ const ROBLOX_THUMBS = {
   'bubble-gum-simulator-infinity': 'https://tr.rbxcdn.com/180DAY-7c76a88ace2e799826837aee08875eec/768/432/Image/Png/noFilter',
   'blue-lock-rivals': 'https://tr.rbxcdn.com/180DAY-6c3d95dac7c3d279e20cfa9ef1b27ba5/768/432/Image/Png/noFilter',
   'volleyball-legends': 'https://tr.rbxcdn.com/180DAY-572cf4e9e5cec5dd45074a98fa143ca0/768/432/Image/Png/noFilter',
+  'steal-a-brainrot': 'https://tr.rbxcdn.com/180DAY-30a62664e838df470ec079b7fc171637/768/432/Image/Png/noFilter',
+  'build-a-boat-for-treasure': 'https://tr.rbxcdn.com/180DAY-1ca8115eb50594d19be488f3d22ac54e/768/432/Image/Png/noFilter',
+  'anime-last-stand': 'https://tr.rbxcdn.com/180DAY-b3d29df4d10633c51bd9d2a5b6585bde/768/432/Image/Png/noFilter',
+  '99-nights-in-the-forest': 'https://tr.rbxcdn.com/180DAY-c5215eabc21f46723f0084f99bb7622c/768/432/Image/Png/noFilter',
+  'plants-vs-brainrots': 'https://tr.rbxcdn.com/180DAY-2ac6fe0e69b8567ab69bc3ca5a2482a0/768/432/Image/Png/noFilter',
+  'dead-rails': 'https://tr.rbxcdn.com/180DAY-da525289338642275e4838a07d685e93/768/432/Image/Png/noFilter',
 };
 
 /* ---- Copy code ---- */
@@ -89,6 +95,12 @@ const GAMES_INDEX = [
   { name: 'Bubble Gum Simulator Infinity', slug: 'bubble-gum-simulator-infinity', emoji: '🫧', codes: 5 },
   { name: 'Blue Lock Rivals', slug: 'blue-lock-rivals', emoji: '⚽', codes: 8 },
   { name: 'Volleyball Legends', slug: 'volleyball-legends', emoji: '🏐', codes: 3 },
+  { name: 'Steal a Brainrot', slug: 'steal-a-brainrot', emoji: '🧠', codes: 0 },
+  { name: 'Build a Boat for Treasure', slug: 'build-a-boat-for-treasure', emoji: '🚤', codes: 7 },
+  { name: 'Anime Last Stand', slug: 'anime-last-stand', emoji: '🗡️', codes: 5 },
+  { name: '99 Nights in the Forest', slug: '99-nights-in-the-forest', emoji: '🔦', codes: 2 },
+  { name: 'Plants Vs Brainrots', slug: 'plants-vs-brainrots', emoji: '🌻', codes: 5 },
+  { name: 'Dead Rails', slug: 'dead-rails', emoji: '🚂', codes: 0 },
 ];
 
 function gameResultHTML(g) {
@@ -189,6 +201,12 @@ const ROBLOX_UNIVERSE_IDS = {
   'bubble-gum-simulator-infinity': 6504986360,
   'blue-lock-rivals': 6325068386,
   'volleyball-legends': 6931042565,
+  'steal-a-brainrot': 7709344486,
+  'build-a-boat-for-treasure': 210851291,
+  'anime-last-stand': 4509896324,
+  '99-nights-in-the-forest': 7326934954,
+  'plants-vs-brainrots': 8316902627,
+  'dead-rails': 7018190066,
 };
 
 const _thumbCache = {};
