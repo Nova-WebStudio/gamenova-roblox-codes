@@ -49,6 +49,12 @@ const ROBLOX_THUMBS = {
   '99-nights-in-the-forest': 'https://tr.rbxcdn.com/180DAY-c5215eabc21f46723f0084f99bb7622c/768/432/Image/Png/noFilter',
   'plants-vs-brainrots': 'https://tr.rbxcdn.com/180DAY-2ac6fe0e69b8567ab69bc3ca5a2482a0/768/432/Image/Png/noFilter',
   'dead-rails': 'https://tr.rbxcdn.com/180DAY-da525289338642275e4838a07d685e93/768/432/Image/Png/noFilter',
+  'jujutsu-infinite': 'https://tr.rbxcdn.com/180DAY-243b2323af958a373c24bb885e2986b5/500/280/Image/Jpeg/noFilter',
+  'anime-reborn': 'https://tr.rbxcdn.com/180DAY-8b81be86b8e67cbc4db3d07b846ad7c1/500/280/Image/Jpeg/noFilter',
+  'untitled-boxing-game': 'https://tr.rbxcdn.com/180DAY-5e814dc6b0ad9489cc40c4dbf9bb7d96/768/432/Image/Webp/noFilter',
+  'type-soul': 'https://tr.rbxcdn.com/180DAY-8a0cfb06021a3b7813f79e9f9e6eb1b1/768/432/Image/Webp/noFilter',
+  'basketball-zero': 'https://tr.rbxcdn.com/180DAY-0d7d35bbb03eca85b0bfcb0076a0435a/768/432/Image/Webp/noFilter',
+  'haze-piece': 'https://tr.rbxcdn.com/180DAY-41212ff0c4a4a7105b2e1605f3666243/500/280/Image/Jpeg/noFilter',
 };
 
 /* ---- Copy code ---- */
@@ -121,6 +127,12 @@ const GAMES_INDEX = [
   { name: '99 Nights in the Forest', slug: '99-nights-in-the-forest', emoji: '🔦', codes: 2 },
   { name: 'Plants Vs Brainrots', slug: 'plants-vs-brainrots', emoji: '🌻', codes: 5 },
   { name: 'Dead Rails', slug: 'dead-rails', emoji: '🚂', codes: 0 },
+  { name: 'Jujutsu Infinite', slug: 'jujutsu-infinite', emoji: '🌀', codes: 0 },
+  { name: 'Anime Reborn', slug: 'anime-reborn', emoji: '🗡️', codes: 0 },
+  { name: 'Untitled Boxing Game', slug: 'untitled-boxing-game', emoji: '🥊', codes: 9 },
+  { name: 'Type Soul', slug: 'type-soul', emoji: '💀', codes: 0 },
+  { name: 'Basketball Zero', slug: 'basketball-zero', emoji: '🏀', codes: 10 },
+  { name: 'Haze Piece', slug: 'haze-piece', emoji: '🌊', codes: 3 },
 ];
 
 function gameResultHTML(g) {
@@ -237,6 +249,7 @@ const ROBLOX_UNIVERSE_IDS = {
   '99-nights-in-the-forest': 7326934954,
   'plants-vs-brainrots': 8316902627,
   'dead-rails': 7018190066,
+  'haze-piece': 2644656496,
 };
 
 const _thumbCache = {};

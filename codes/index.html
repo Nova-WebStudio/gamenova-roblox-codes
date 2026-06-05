@@ -187,7 +187,7 @@
 
     <!-- SORT + VIEW TOGGLE -->
     <div class="sort-bar">
-      <span class="count" id="gameCount">Affichage de <strong>46</strong> jeux</span>
+      <span class="count" id="gameCount">Affichage de <strong>52</strong> jeux</span>
       <div style="display:flex;gap:10px;align-items:center">
         <select class="sort-select" id="sortSelect">
           <option value="hot">🔥 Plus populaires</option>
@@ -273,7 +273,7 @@
   </div>
 </footer>
 
-<script src="/js/main.js?v=6"></script>
+<script src="/js/main.js?v=7"></script>
 <script>
 const CAT_LABELS = { rpg:'RPG', simulator:'Simulateur', battle:'Combat', anime:'Anime', obby:'Obby', tycoon:'Tycoon' };
 
@@ -324,6 +324,12 @@ const THUMBS = {
   '99-nights-in-the-forest':'https://tr.rbxcdn.com/180DAY-c5215eabc21f46723f0084f99bb7622c/768/432/Image/Png/noFilter',
   'plants-vs-brainrots':'https://tr.rbxcdn.com/180DAY-2ac6fe0e69b8567ab69bc3ca5a2482a0/768/432/Image/Png/noFilter',
   'dead-rails':'https://tr.rbxcdn.com/180DAY-da525289338642275e4838a07d685e93/768/432/Image/Png/noFilter',
+  'jujutsu-infinite':'https://tr.rbxcdn.com/180DAY-243b2323af958a373c24bb885e2986b5/500/280/Image/Jpeg/noFilter',
+  'anime-reborn':'https://tr.rbxcdn.com/180DAY-8b81be86b8e67cbc4db3d07b846ad7c1/500/280/Image/Jpeg/noFilter',
+  'untitled-boxing-game':'https://tr.rbxcdn.com/180DAY-5e814dc6b0ad9489cc40c4dbf9bb7d96/768/432/Image/Webp/noFilter',
+  'type-soul':'https://tr.rbxcdn.com/180DAY-8a0cfb06021a3b7813f79e9f9e6eb1b1/768/432/Image/Webp/noFilter',
+  'basketball-zero':'https://tr.rbxcdn.com/180DAY-0d7d35bbb03eca85b0bfcb0076a0435a/768/432/Image/Webp/noFilter',
+  'haze-piece':'https://tr.rbxcdn.com/180DAY-41212ff0c4a4a7105b2e1605f3666243/500/280/Image/Jpeg/noFilter',
 };
 
 const ALL_GAMES = [
@@ -373,6 +379,12 @@ const ALL_GAMES = [
   { name:'99 Nights in the Forest', slug:'99-nights-in-the-forest', emoji:'🔦', cat:'simulator', codes:2, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
   { name:'Plants Vs Brainrots', slug:'plants-vs-brainrots', emoji:'🌻', cat:'simulator', codes:5, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
   { name:'Dead Rails', slug:'dead-rails', emoji:'🚂', cat:'battle', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
+  { name:'Jujutsu Infinite', slug:'jujutsu-infinite', emoji:'🌀', cat:'anime', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
+  { name:'Anime Reborn', slug:'anime-reborn', emoji:'🗡️', cat:'anime', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
+  { name:'Untitled Boxing Game', slug:'untitled-boxing-game', emoji:'🥊', cat:'battle', codes:9, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
+  { name:'Type Soul', slug:'type-soul', emoji:'💀', cat:'anime', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
+  { name:'Basketball Zero', slug:'basketball-zero', emoji:'🏀', cat:'battle', codes:10, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
+  { name:'Haze Piece', slug:'haze-piece', emoji:'🌊', cat:'rpg', codes:3, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
 ];
 
 let activeCat='all', activeStatus='all', searchQ='', sortBy='hot';

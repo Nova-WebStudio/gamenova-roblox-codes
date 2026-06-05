@@ -17,3 +17,7 @@ npm-debug.log*
 
 .vercel
 .env*
+
+# Scripts utilitaires Zoneblox (génération MAJ — ne pas commiter)
+_build.py
+_integrate.py
