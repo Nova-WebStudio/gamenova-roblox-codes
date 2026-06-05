@@ -113,31 +113,12 @@
     .codes-live-banner span  { color:var(--text-muted); font-size:.82rem; }
     @keyframes pulse { 0%,100%{opacity:1}50%{opacity:.3} }
 
-    /* Navigation par grosses sections (boutons) */
-    .page-tabs {
-      display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin-bottom:28px;
-    }
-    .page-tab {
-      background:var(--bg-card); border:1px solid var(--border); border-radius:12px;
-      padding:14px 6px; display:flex; flex-direction:column; align-items:center; gap:6px;
-      font-size:.9rem; font-weight:700; color:var(--text-muted); cursor:pointer;
-      transition:.15s; text-align:center;
-    }
-    .page-tab .pt-ico { font-size:1.5rem; line-height:1; }
-    .page-tab .pt-count {
-      font-size:.72rem; font-weight:700; padding:1px 9px; border-radius:10px;
-      background:rgba(162,89,255,.18); color:var(--accent);
-    }
-    .page-tab:hover { color:var(--text-primary); border-color:rgba(162,89,255,.45); transform:translateY(-2px); }
-    .page-tab.active {
-      background:linear-gradient(135deg,var(--accent),var(--accent2));
-      border-color:transparent; color:#fff;
-      box-shadow:0 6px 18px rgba(162,89,255,.35);
-    }
-    .page-tab.active .pt-count { background:rgba(255,255,255,.25); color:#fff; }
-    @media (max-width:640px){ .page-tabs{ grid-template-columns:repeat(3,1fr); } }
-    .tab-content { display:none; }
-    .tab-content.active { display:block; }
+    .page-tabs{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin-bottom:28px}
+    .page-tab{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:15px 10px;font-size:.95rem;font-weight:700;color:var(--text-muted);cursor:pointer;transition:.15s;text-align:center}
+    .page-tab:hover{color:var(--text-primary);border-color:rgba(162,89,255,.45);transform:translateY(-2px)}
+    .page-tab.active{background:linear-gradient(135deg,var(--accent),var(--accent2));border-color:transparent;color:#fff;box-shadow:0 6px 18px rgba(162,89,255,.35)}
+    .tab-content{display:none}
+    .tab-content.active{display:block}
 
     /* Sticky TOC sidebar widget */
     .toc-list { list-style:none; display:flex; flex-direction:column; gap:6px; }
@@ -214,11 +195,11 @@
 
         <!-- PAGE TABS -->
         <div class="page-tabs">
-          <div class="page-tab active" data-tab="codes"><span class="pt-ico">🎁</span>Codes<span class="pt-count">5</span></div>
-          <div class="page-tab" data-tab="updates"><span class="pt-ico">📰</span>Actualités<span class="pt-count">3</span></div>
-          <div class="page-tab" data-tab="tips"><span class="pt-ico">💡</span>Astuces<span class="pt-count">6</span></div>
-          <div class="page-tab" data-tab="videos"><span class="pt-ico">🎬</span>Vidéos<span class="pt-count">3</span></div>
-          <div class="page-tab" data-tab="faq"><span class="pt-ico">❓</span>FAQ<span class="pt-count">5</span></div>
+          <div class="page-tab active" data-tab="codes">🎁 Codes</div>
+          <div class="page-tab" data-tab="updates">📰 Actualités</div>
+          <div class="page-tab" data-tab="tips">💡 Astuces</div>
+          <div class="page-tab" data-tab="videos">🎬 Vidéos</div>
+          <div class="page-tab" data-tab="faq">❓ FAQ</div>
         </div>
 
         <!-- ═══ TAB: CODES ═══ -->

@@ -29,10 +29,7 @@
   <style>
     .codes-live-banner{background:linear-gradient(135deg,rgba(0,200,83,.08),rgba(0,207,255,.06));border:1px solid rgba(0,200,83,.3);border-radius:var(--radius);padding:14px 18px;display:flex;align-items:center;gap:12px;margin-bottom:20px}
     .pulse-dot{width:10px;height:10px;border-radius:50%;background:#00c853;box-shadow:0 0 10px #00c853;animation:pulse 2s infinite;flex-shrink:0}
-    .page-tabs{display:flex;gap:0;border-bottom:2px solid var(--border);margin-bottom:28px;overflow-x:auto}
-    .page-tab{padding:12px 20px;font-size:.88rem;font-weight:600;color:var(--text-muted);border-bottom:2px solid transparent;margin-bottom:-2px;white-space:nowrap;cursor:pointer;transition:.15s}
-    .page-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
-    .tab-content{display:none}.tab-content.active{display:block}
+    .page-tabs{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin-bottom:28px}.page-tab{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:15px 10px;font-size:.95rem;font-weight:700;color:var(--text-muted);cursor:pointer;transition:.15s;text-align:center}.page-tab:hover{color:var(--text-primary);border-color:rgba(162,89,255,.45);transform:translateY(-2px)}.page-tab.active{background:linear-gradient(135deg,var(--accent),var(--accent2));border-color:transparent;color:#fff;box-shadow:0 6px 18px rgba(162,89,255,.35)}.tab-content{display:none}.tab-content.active{display:block}
     .tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
     .videos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
     .video-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
