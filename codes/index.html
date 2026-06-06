@@ -187,7 +187,7 @@
 
     <!-- SORT + VIEW TOGGLE -->
     <div class="sort-bar">
-      <span class="count" id="gameCount">Affichage de <strong>58</strong> jeux</span>
+      <span class="count" id="gameCount">Affichage de <strong>64</strong> jeux</span>
       <div style="display:flex;gap:10px;align-items:center">
         <select class="sort-select" id="sortSelect">
           <option value="hot">🔥 Plus populaires</option>
@@ -273,11 +273,17 @@
   </div>
 </footer>
 
-<script src="/js/main.js?v=8"></script>
+<script src="/js/main.js?v=9"></script>
 <script>
 const CAT_LABELS = { rpg:'RPG', simulator:'Simulateur', battle:'Combat', anime:'Anime', obby:'Obby', tycoon:'Tycoon' };
 
 const THUMBS = {
+  'dig':'https://tr.rbxcdn.com/180DAY-38334daf4b8073ee8d3d9976dfc7bfe8/768/432/Image/Webp/noFilter',
+  'sols-rng':'https://tr.rbxcdn.com/180DAY-8965d16c1ee802fff15f681cae4b413e/768/432/Image/Webp/noFilter',
+  'fish-it':'https://tr.rbxcdn.com/180DAY-dfd35b1d04259ea9974c2ee8bcd9ed49/500/280/Image/Jpeg/noFilter',
+  'anime-spirits':'https://tr.rbxcdn.com/180DAY-90d479b01af3f1ed17af3643f447e915/768/432/Image/Webp/noFilter',
+  'slap-battles':'https://tr.rbxcdn.com/180DAY-01bb43634d02e38923c1543a029c95d5/768/432/Image/Webp/noFilter',
+  'forsaken':'https://tr.rbxcdn.com/180DAY-242c4d76325c453886b3382d825eb71c/500/280/Image/Jpeg/noFilter',
   'driving-empire':'https://tr.rbxcdn.com/180DAY-134d852037dc6df76cd340199bc0eef7/768/432/Image/Png/noFilter',
   'evasion-clavier':'https://tr.rbxcdn.com/180DAY-82b559d4f2bd68f909d4b9bdd92d168e/768/432/Image/Png/noFilter',
   'ferme-d-anneaux':'https://tr.rbxcdn.com/180DAY-5c24b09b1d9bdfa44deadb955fd8d2fb/768/432/Image/Png/noFilter',
@@ -339,6 +345,12 @@ const THUMBS = {
 };
 
 const ALL_GAMES = [
+  { name:'DIG', slug:'dig', emoji:'⛏️', cat:'simulator', codes:1, iso:'2026-06-06', updated:'6 juin 2026', hot:true },
+  { name:"Sol's RNG", slug:'sols-rng', emoji:'🎲', cat:'simulator', codes:8, iso:'2026-06-06', updated:'6 juin 2026', hot:true },
+  { name:'Fish It', slug:'fish-it', emoji:'🎣', cat:'simulator', codes:12, iso:'2026-06-06', updated:'6 juin 2026', hot:true },
+  { name:'Anime Spirits', slug:'anime-spirits', emoji:'🗡️', cat:'anime', codes:6, iso:'2026-06-06', updated:'6 juin 2026', hot:true },
+  { name:'Slap Battles', slug:'slap-battles', emoji:'👏', cat:'battle', codes:3, iso:'2026-06-06', updated:'6 juin 2026', hot:true },
+  { name:'Forsaken', slug:'forsaken', emoji:'🔪', cat:'battle', codes:0, iso:'2026-06-06', updated:'6 juin 2026', hot:true },
   { name:'Driving Empire', slug:'driving-empire', emoji:'🏎️', cat:'simulator', codes:19, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
   { name:'Évasion Clavier', slug:'evasion-clavier', emoji:'⌨️', cat:'obby', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
   { name:'Construire une Ferme d\'Anneaux', slug:'ferme-d-anneaux', emoji:'💍', cat:'simulator', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:false },

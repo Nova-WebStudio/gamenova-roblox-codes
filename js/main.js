@@ -3,6 +3,12 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+  'dig': 'https://tr.rbxcdn.com/180DAY-38334daf4b8073ee8d3d9976dfc7bfe8/768/432/Image/Webp/noFilter',
+  'sols-rng': 'https://tr.rbxcdn.com/180DAY-8965d16c1ee802fff15f681cae4b413e/768/432/Image/Webp/noFilter',
+  'fish-it': 'https://tr.rbxcdn.com/180DAY-dfd35b1d04259ea9974c2ee8bcd9ed49/500/280/Image/Jpeg/noFilter',
+  'anime-spirits': 'https://tr.rbxcdn.com/180DAY-90d479b01af3f1ed17af3643f447e915/768/432/Image/Webp/noFilter',
+  'slap-battles': 'https://tr.rbxcdn.com/180DAY-01bb43634d02e38923c1543a029c95d5/768/432/Image/Webp/noFilter',
+  'forsaken': 'https://tr.rbxcdn.com/180DAY-242c4d76325c453886b3382d825eb71c/500/280/Image/Jpeg/noFilter',
   'driving-empire': 'https://tr.rbxcdn.com/180DAY-134d852037dc6df76cd340199bc0eef7/768/432/Image/Png/noFilter',
   'evasion-clavier': 'https://tr.rbxcdn.com/180DAY-82b559d4f2bd68f909d4b9bdd92d168e/768/432/Image/Png/noFilter',
   'ferme-d-anneaux': 'https://tr.rbxcdn.com/180DAY-5c24b09b1d9bdfa44deadb955fd8d2fb/768/432/Image/Png/noFilter',
@@ -87,6 +93,12 @@ function initMobileNav() {
 
 /* ---- Search index ---- */
 const GAMES_INDEX = [
+  { name: 'DIG', slug: 'dig', emoji: '⛏️', codes: 1 },
+  { name: "Sol's RNG", slug: 'sols-rng', emoji: '🎲', codes: 8 },
+  { name: 'Fish It', slug: 'fish-it', emoji: '🎣', codes: 12 },
+  { name: 'Anime Spirits', slug: 'anime-spirits', emoji: '🗡️', codes: 6 },
+  { name: 'Slap Battles', slug: 'slap-battles', emoji: '👏', codes: 3 },
+  { name: 'Forsaken', slug: 'forsaken', emoji: '🔪', codes: 0 },
   { name: 'Driving Empire', slug: 'driving-empire', emoji: '🏎️', codes: 19 },
   { name: 'Évasion Clavier', slug: 'evasion-clavier', emoji: '⌨️', codes: 0 },
   { name: 'Construire une Ferme d\'Anneaux', slug: 'ferme-d-anneaux', emoji: '💍', codes: 0 },
@@ -215,6 +227,12 @@ function highlightNav() {
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
+  'dig': 7218065222,
+  'sols-rng': 5361032378,
+  'fish-it': 6701277882,
+  'anime-spirits': 4161970303,
+  'slap-battles': 2380077519,
+  'forsaken': 6331902150,
   'driving-empire': 1202096104,
   'evasion-clavier': 9584852943,
   'ferme-d-anneaux': 10039338037,
