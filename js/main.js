@@ -55,6 +55,12 @@ const ROBLOX_THUMBS = {
   'type-soul': 'https://tr.rbxcdn.com/180DAY-8a0cfb06021a3b7813f79e9f9e6eb1b1/768/432/Image/Webp/noFilter',
   'basketball-zero': 'https://tr.rbxcdn.com/180DAY-0d7d35bbb03eca85b0bfcb0076a0435a/768/432/Image/Webp/noFilter',
   'haze-piece': 'https://tr.rbxcdn.com/180DAY-41212ff0c4a4a7105b2e1605f3666243/500/280/Image/Jpeg/noFilter',
+  'all-star-tower-defense': 'https://tr.rbxcdn.com/180DAY-9fbd50db5a51699b733c9529ee542d19/768/432/Image/Webp/noFilter',
+  'anime-champions-simulator': 'https://tr.rbxcdn.com/180DAY-9d4be137161ea266ba1c2c6f28832e21/768/432/Image/Webp/noFilter',
+  'sonic-speed-simulator': 'https://tr.rbxcdn.com/180DAY-82939a396600a61e4abadd92664f8d83/768/432/Image/Webp/noFilter',
+  'tower-defense-simulator': 'https://tr.rbxcdn.com/180DAY-f4a7603e22db5d7a43e966fe145a96e1/768/432/Image/Webp/noFilter',
+  'project-slayers': 'https://tr.rbxcdn.com/180DAY-612b92100da817e8dc2bb8fd35ce117e/768/432/Image/Webp/noFilter',
+  'the-strongest-battlegrounds': 'https://tr.rbxcdn.com/180DAY-c947df5b221c30672c3591247a8c6495/768/432/Image/Webp/noFilter',
 };
 
 /* ---- Copy code ---- */
@@ -133,6 +139,12 @@ const GAMES_INDEX = [
   { name: 'Type Soul', slug: 'type-soul', emoji: '💀', codes: 0 },
   { name: 'Basketball Zero', slug: 'basketball-zero', emoji: '🏀', codes: 10 },
   { name: 'Haze Piece', slug: 'haze-piece', emoji: '🌊', codes: 3 },
+  { name: 'All Star Tower Defense', slug: 'all-star-tower-defense', emoji: '🌟', codes: 4 },
+  { name: 'Anime Champions Simulator', slug: 'anime-champions-simulator', emoji: '🌌', codes: 7 },
+  { name: 'Sonic Speed Simulator', slug: 'sonic-speed-simulator', emoji: '💨', codes: 8 },
+  { name: 'Tower Defense Simulator', slug: 'tower-defense-simulator', emoji: '🧟', codes: 0 },
+  { name: 'Project Slayers', slug: 'project-slayers', emoji: '🌸', codes: 0 },
+  { name: 'The Strongest Battlegrounds', slug: 'the-strongest-battlegrounds', emoji: '👊', codes: 0 },
 ];
 
 function gameResultHTML(g) {
@@ -250,6 +262,9 @@ const ROBLOX_UNIVERSE_IDS = {
   'plants-vs-brainrots': 8316902627,
   'dead-rails': 7018190066,
   'haze-piece': 2644656496,
+  'all-star-tower-defense': 4996049426,
+  'project-slayers': 5956785391,
+  'the-strongest-battlegrounds': 10449761463,
 };
 
 const _thumbCache = {};
