@@ -187,7 +187,7 @@
 
     <!-- SORT + VIEW TOGGLE -->
     <div class="sort-bar">
-      <span class="count" id="gameCount">Affichage de <strong>64</strong> jeux</span>
+      <span class="count" id="gameCount">Affichage de <strong>70</strong> jeux</span>
       <div style="display:flex;gap:10px;align-items:center">
         <select class="sort-select" id="sortSelect">
           <option value="hot">🔥 Plus populaires</option>
@@ -252,6 +252,12 @@
         <li><a href="/codes/toilet-tower-defense.html">Codes Toilet Tower Defense</a></li>
         <li><a href="/codes/pet-simulator-99.html">Codes Pet Simulator 99</a></li>
         <li><a href="/codes/bedwars.html">Codes BedWars</a></li>
+        <li><a href="/codes/spongebob-tower-defense.html">Codes SpongeBob Tower Defense</a></li>
+        <li><a href="/codes/garden-tower-defense.html">Codes Garden Tower Defense</a></li>
+        <li><a href="/codes/heroes-battlegrounds.html">Codes Heroes Battlegrounds</a></li>
+        <li><a href="/codes/mad-city.html">Codes Mad City: Chapter 2</a></li>
+        <li><a href="/codes/combat-warriors.html">Codes Combat Warriors</a></li>
+        <li><a href="/codes/survive-the-killer.html">Codes Survive the Killer</a></li>
       </ul>
     </div>
 
@@ -273,7 +279,7 @@
   </div>
 </footer>
 
-<script src="/js/main.js?v=9"></script>
+<script src="/js/main.js?v=10"></script>
 <script>
 const CAT_LABELS = { rpg:'RPG', simulator:'Simulateur', battle:'Combat', anime:'Anime', obby:'Obby', tycoon:'Tycoon' };
 
@@ -342,6 +348,12 @@ const THUMBS = {
   'tower-defense-simulator':'https://tr.rbxcdn.com/180DAY-f4a7603e22db5d7a43e966fe145a96e1/768/432/Image/Webp/noFilter',
   'project-slayers':'https://tr.rbxcdn.com/180DAY-612b92100da817e8dc2bb8fd35ce117e/768/432/Image/Webp/noFilter',
   'the-strongest-battlegrounds':'https://tr.rbxcdn.com/180DAY-c947df5b221c30672c3591247a8c6495/768/432/Image/Webp/noFilter',
+  'spongebob-tower-defense':'https://tr.rbxcdn.com/180DAY-c3a62fcdf7e0a60cd52456d65f267689/768/432/Image/Png/noFilter',
+  'garden-tower-defense':'https://tr.rbxcdn.com/180DAY-ad6eccabf36c9174c02fed274ca4b5a9/768/432/Image/Png/noFilter',
+  'heroes-battlegrounds':'https://tr.rbxcdn.com/180DAY-05b3d7fb729835a6f28de0067fac79cd/768/432/Image/Png/noFilter',
+  'mad-city':'https://tr.rbxcdn.com/180DAY-e03eb43e97fb7031d8187b808fd7ff27/768/432/Image/Png/noFilter',
+  'combat-warriors':'https://tr.rbxcdn.com/180DAY-a631d6d73730a77f93b02eb3b0e8b06c/768/432/Image/Png/noFilter',
+  'survive-the-killer':'https://tr.rbxcdn.com/180DAY-4f30b695e340b41799ff15643fff9795/768/432/Image/Png/noFilter',
 };
 
 const ALL_GAMES = [
@@ -364,24 +376,24 @@ const ALL_GAMES = [
   { name:'Blox Fruits',          slug:'blox-fruits',          emoji:'🍎', cat:'rpg',       codes:5,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
   { name:'Pet Simulator X',      slug:'pet-simulator-x',      emoji:'🐾', cat:'simulator', codes:8,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
   { name:'Adopt Me!',            slug:'adopt-me',             emoji:'🐣', cat:'simulator', codes:0,  iso:'2026-06-04', updated:'4 juin 2026',  hot:true  },
-  { name:'Shindo Life',          slug:'shindo-life',          emoji:'🌀', cat:'anime',     codes:12, iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
-  { name:'King Legacy',          slug:'king-legacy',          emoji:'⚡', cat:'rpg',       codes:9,  iso:'2026-06-02', updated:'2 juin 2026',  hot:false },
-  { name:'Murder Mystery 2',     slug:'murder-mystery-2',     emoji:'🔪', cat:'battle',    codes:4,  iso:'2026-05-31', updated:'31 mai 2026',  hot:false },
-  { name:'Fruit Battlegrounds',  slug:'fruit-battlegrounds',  emoji:'💥', cat:'battle',    codes:7,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
+  { name:'Shindo Life',          slug:'shindo-life',          emoji:'🌀', cat:'anime',     codes:11, iso:'2026-06-07', updated:'7 juin 2026',  hot:true  },
+  { name:'King Legacy',          slug:'king-legacy',          emoji:'⚡', cat:'rpg',       codes:8,  iso:'2026-06-07', updated:'7 juin 2026',  hot:false },
+  { name:'Murder Mystery 2',     slug:'murder-mystery-2',     emoji:'🔪', cat:'battle',    codes:0,  iso:'2026-06-07', updated:'7 juin 2026',  hot:false },
+  { name:'Fruit Battlegrounds',  slug:'fruit-battlegrounds',  emoji:'💥', cat:'battle',    codes:6,  iso:'2026-06-07', updated:'7 juin 2026',  hot:true  },
   { name:'Anime Adventures',     slug:'anime-adventures',     emoji:'⚔️', cat:'anime',     codes:6,  iso:'2026-06-02', updated:'2 juin 2026',  hot:false },
-  { name:'Rivals',               slug:'rivals',               emoji:'🎯', cat:'battle',    codes:5,  iso:'2026-06-02', updated:'2 juin 2026',  hot:false },
+  { name:'Rivals',               slug:'rivals',               emoji:'🎯', cat:'battle',    codes:9,  iso:'2026-06-07', updated:'7 juin 2026',  hot:false },
   { name:'Brookhaven 🏡RP',      slug:'brookhaven',           emoji:'🏙️', cat:'rpg',       codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
   { name:'Royale High',          slug:'royale-high',          emoji:'👑', cat:'rpg',       codes:1,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
   { name:'Encounters',           slug:'encounters',           emoji:'👾', cat:'simulator', codes:1,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
   { name:'Tower of Hell',        slug:'tower-of-hell',        emoji:'🗼', cat:'obby',      codes:0,  iso:'2026-05-30', updated:'30 mai 2026',  hot:false },
   { name:'Work at a Pizza Place',slug:'work-at-a-pizza-place',emoji:'🍕', cat:'tycoon',    codes:0,  iso:'2026-05-28', updated:'28 mai 2026',  hot:false },
   { name:'Grow a Garden',        slug:'grow-a-garden',        emoji:'🌱', cat:'simulator', codes:2,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
-  { name:'Blade Ball',           slug:'blade-ball',           emoji:'⚔️', cat:'battle',    codes:8,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
+  { name:'Blade Ball',           slug:'blade-ball',           emoji:'⚔️', cat:'battle',    codes:23,  iso:'2026-06-07', updated:'7 juin 2026',  hot:true  },
   { name:'Anime Defenders',      slug:'anime-defenders',      emoji:'🗡️', cat:'anime',     codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
   { name:'Toilet Tower Defense', slug:'toilet-tower-defense', emoji:'🚽', cat:'battle',    codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
   { name:'Pet Simulator 99',     slug:'pet-simulator-99',     emoji:'🐹', cat:'simulator', codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
-  { name:'Bee Swarm Simulator',  slug:'bee-swarm-simulator',  emoji:'🐝', cat:'simulator', codes:8,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
-  { name:'Anime Vanguards',      slug:'anime-vanguards',      emoji:'⚔️', cat:'anime',     codes:4,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
+  { name:'Bee Swarm Simulator',  slug:'bee-swarm-simulator',  emoji:'🐝', cat:'simulator', codes:14,  iso:'2026-06-07', updated:'7 juin 2026',  hot:true  },
+  { name:'Anime Vanguards',      slug:'anime-vanguards',      emoji:'⚔️', cat:'anime',     codes:10,  iso:'2026-06-07', updated:'7 juin 2026',  hot:true  },
   { name:'Arsenal',              slug:'arsenal',              emoji:'🔫', cat:'battle',    codes:5,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
   { name:'Jailbreak',            slug:'jailbreak',            emoji:'🚔', cat:'battle',    codes:4,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
   { name:'BedWars',              slug:'bedwars',              emoji:'🛏️', cat:'battle',    codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
@@ -409,6 +421,12 @@ const ALL_GAMES = [
   { name:'Tower Defense Simulator', slug:'tower-defense-simulator', emoji:'🧟', cat:'battle', codes:0, iso:'2026-06-06', updated:'6 juin 2026', hot:true },
   { name:'Project Slayers', slug:'project-slayers', emoji:'🌸', cat:'anime', codes:0, iso:'2026-06-06', updated:'6 juin 2026', hot:true },
   { name:'The Strongest Battlegrounds', slug:'the-strongest-battlegrounds', emoji:'👊', cat:'battle', codes:0, iso:'2026-06-06', updated:'6 juin 2026', hot:true },
+  { name:'SpongeBob Tower Defense', slug:'spongebob-tower-defense', emoji:'🍍', cat:'battle', codes:2, iso:'2026-06-07', updated:'7 juin 2026', hot:true },
+  { name:'Garden Tower Defense', slug:'garden-tower-defense', emoji:'🥕', cat:'battle', codes:6, iso:'2026-06-07', updated:'7 juin 2026', hot:true },
+  { name:'Heroes Battlegrounds', slug:'heroes-battlegrounds', emoji:'🦸', cat:'battle', codes:2, iso:'2026-06-07', updated:'7 juin 2026', hot:true },
+  { name:'Mad City: Chapter 2', slug:'mad-city', emoji:'🚁', cat:'battle', codes:6, iso:'2026-06-07', updated:'7 juin 2026', hot:true },
+  { name:'Combat Warriors', slug:'combat-warriors', emoji:'🗡️', cat:'battle', codes:0, iso:'2026-06-07', updated:'7 juin 2026', hot:true },
+  { name:'Survive the Killer', slug:'survive-the-killer', emoji:'🔪', cat:'battle', codes:0, iso:'2026-06-07', updated:'7 juin 2026', hot:true },
 ];
 
 let activeCat='all', activeStatus='all', searchQ='', sortBy='hot';

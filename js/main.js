@@ -67,6 +67,12 @@ const ROBLOX_THUMBS = {
   'tower-defense-simulator': 'https://tr.rbxcdn.com/180DAY-f4a7603e22db5d7a43e966fe145a96e1/768/432/Image/Webp/noFilter',
   'project-slayers': 'https://tr.rbxcdn.com/180DAY-612b92100da817e8dc2bb8fd35ce117e/768/432/Image/Webp/noFilter',
   'the-strongest-battlegrounds': 'https://tr.rbxcdn.com/180DAY-c947df5b221c30672c3591247a8c6495/768/432/Image/Webp/noFilter',
+  'spongebob-tower-defense': 'https://tr.rbxcdn.com/180DAY-c3a62fcdf7e0a60cd52456d65f267689/768/432/Image/Png/noFilter',
+  'garden-tower-defense': 'https://tr.rbxcdn.com/180DAY-ad6eccabf36c9174c02fed274ca4b5a9/768/432/Image/Png/noFilter',
+  'heroes-battlegrounds': 'https://tr.rbxcdn.com/180DAY-05b3d7fb729835a6f28de0067fac79cd/768/432/Image/Png/noFilter',
+  'mad-city': 'https://tr.rbxcdn.com/180DAY-e03eb43e97fb7031d8187b808fd7ff27/768/432/Image/Png/noFilter',
+  'combat-warriors': 'https://tr.rbxcdn.com/180DAY-a631d6d73730a77f93b02eb3b0e8b06c/768/432/Image/Png/noFilter',
+  'survive-the-killer': 'https://tr.rbxcdn.com/180DAY-4f30b695e340b41799ff15643fff9795/768/432/Image/Png/noFilter',
 };
 
 /* ---- Copy code ---- */
@@ -115,21 +121,21 @@ const GAMES_INDEX = [
   { name: 'Anime Adventures',     slug: 'anime-adventures',     emoji: '⚔️', codes: 6 },
   { name: 'Brookhaven',           slug: 'brookhaven',           emoji: '🏙️', codes: 0 },
   { name: 'Tower of Hell',        slug: 'tower-of-hell',        emoji: '🗼', codes: 0 },
-  { name: 'Murder Mystery 2',     slug: 'murder-mystery-2',     emoji: '🔪', codes: 4 },
-  { name: 'Shindo Life',          slug: 'shindo-life',          emoji: '🌀', codes: 12 },
+  { name: 'Murder Mystery 2',     slug: 'murder-mystery-2',     emoji: '🔪', codes: 0 },
+  { name: 'Shindo Life',          slug: 'shindo-life',          emoji: '🌀', codes: 11 },
   { name: 'Royale High',          slug: 'royale-high',          emoji: '👑', codes: 1 },
-  { name: 'Fruit Battlegrounds',  slug: 'fruit-battlegrounds',  emoji: '💥', codes: 7 },
-  { name: 'King Legacy',          slug: 'king-legacy',          emoji: '⚡', codes: 9 },
+  { name: 'Fruit Battlegrounds',  slug: 'fruit-battlegrounds',  emoji: '💥', codes: 6 },
+  { name: 'King Legacy',          slug: 'king-legacy',          emoji: '⚡', codes: 8 },
   { name: 'Encounters',           slug: 'encounters',           emoji: '👾', codes: 1 },
-  { name: 'Rivals',               slug: 'rivals',               emoji: '🎯', codes: 5 },
+  { name: 'Rivals',               slug: 'rivals',               emoji: '🎯', codes: 9 },
   { name: 'Work at a Pizza Place',slug: 'work-at-a-pizza-place',emoji: '🍕', codes: 0 },
   { name: 'Grow a Garden',        slug: 'grow-a-garden',        emoji: '🌱', codes: 2 },
-  { name: 'Blade Ball',           slug: 'blade-ball',           emoji: '⚔️', codes: 8 },
+  { name: 'Blade Ball',           slug: 'blade-ball',           emoji: '⚔️', codes: 23 },
   { name: 'Anime Defenders',      slug: 'anime-defenders',      emoji: '🗡️', codes: 0 },
   { name: 'Toilet Tower Defense', slug: 'toilet-tower-defense', emoji: '🚽', codes: 0 },
   { name: 'Pet Simulator 99',     slug: 'pet-simulator-99',     emoji: '🐹', codes: 0 },
-  { name: 'Bee Swarm Simulator', slug: 'bee-swarm-simulator',  emoji: '🐝', codes: 8 },
-  { name: 'Anime Vanguards',     slug: 'anime-vanguards',      emoji: '⚔️', codes: 4 },
+  { name: 'Bee Swarm Simulator', slug: 'bee-swarm-simulator',  emoji: '🐝', codes: 14 },
+  { name: 'Anime Vanguards',     slug: 'anime-vanguards',      emoji: '⚔️', codes: 10 },
   { name: 'Arsenal',             slug: 'arsenal',              emoji: '🔫', codes: 5 },
   { name: 'Jailbreak',           slug: 'jailbreak',            emoji: '🚔', codes: 4 },
   { name: 'BedWars',             slug: 'bedwars',              emoji: '🛏️', codes: 0 },
@@ -157,6 +163,12 @@ const GAMES_INDEX = [
   { name: 'Tower Defense Simulator', slug: 'tower-defense-simulator', emoji: '🧟', codes: 0 },
   { name: 'Project Slayers', slug: 'project-slayers', emoji: '🌸', codes: 0 },
   { name: 'The Strongest Battlegrounds', slug: 'the-strongest-battlegrounds', emoji: '👊', codes: 0 },
+  { name: 'SpongeBob Tower Defense', slug: 'spongebob-tower-defense', emoji: '🍍', codes: 2 },
+  { name: 'Garden Tower Defense', slug: 'garden-tower-defense', emoji: '🥕', codes: 6 },
+  { name: 'Heroes Battlegrounds', slug: 'heroes-battlegrounds', emoji: '🦸', codes: 2 },
+  { name: 'Mad City: Chapter 2', slug: 'mad-city', emoji: '🚁', codes: 6 },
+  { name: 'Combat Warriors', slug: 'combat-warriors', emoji: '🗡️', codes: 0 },
+  { name: 'Survive the Killer', slug: 'survive-the-killer', emoji: '🔪', codes: 0 },
 ];
 
 function gameResultHTML(g) {
@@ -283,6 +295,12 @@ const ROBLOX_UNIVERSE_IDS = {
   'all-star-tower-defense': 4996049426,
   'project-slayers': 5956785391,
   'the-strongest-battlegrounds': 10449761463,
+  'spongebob-tower-defense': 6594435384,
+  'garden-tower-defense': 7703614594,
+  'heroes-battlegrounds': 4568630521,
+  'mad-city': 498490399,
+  'combat-warriors': 1390601379,
+  'survive-the-killer': 1489026993,
 };
 
 const _thumbCache = {};

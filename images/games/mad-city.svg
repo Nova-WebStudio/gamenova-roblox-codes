@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="432" viewBox="0 0 768 432">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#396afc"/><stop offset="1" stop-color="#2948ff"/></linearGradient></defs>
+  <rect width="768" height="432" fill="url(#bg)"/>
+  <text x="384" y="200" font-size="110" text-anchor="middle">🚁</text>
+  <text x="384" y="300" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#ffffff" text-anchor="middle">Mad City: Chapter 2</text>
+</svg>
