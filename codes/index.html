@@ -187,7 +187,7 @@
 
     <!-- SORT + VIEW TOGGLE -->
     <div class="sort-bar">
-      <span class="count" id="gameCount">Affichage de <strong>70</strong> jeux</span>
+      <span class="count" id="gameCount">Affichage de <strong>75</strong> jeux</span>
       <div style="display:flex;gap:10px;align-items:center">
         <select class="sort-select" id="sortSelect">
           <option value="hot">🔥 Plus populaires</option>
@@ -279,11 +279,16 @@
   </div>
 </footer>
 
-<script src="/js/main.js?v=10"></script>
+<script src="/js/main.js?v=11"></script>
 <script>
 const CAT_LABELS = { rpg:'RPG', simulator:'Simulateur', battle:'Combat', anime:'Anime', obby:'Obby', tycoon:'Tycoon' };
 
 const THUMBS = {
+  'broken-blade':'https://tr.rbxcdn.com/180DAY-b4137b1c3b07478b27e38a7ee8356800/500/280/Image/Jpeg/noFilter',
+  'sailor-piece':'https://tr.rbxcdn.com/180DAY-b405eb9a7be185d2a560f8857d82fec7/500/280/Image/Jpeg/noFilter',
+  'anime-apocalypse':'https://tr.rbxcdn.com/180DAY-45c04a57026f120497361440a566ee2e/500/280/Image/Jpeg/noFilter',
+  'anime-eternal':'https://tr.rbxcdn.com/180DAY-f755ba09b84bf157f5b4b35b6a8af4c0/500/280/Image/Jpeg/noFilter',
+  'universal-tower-defense-x':'https://tr.rbxcdn.com/180DAY-d7a465629ce61d0dff9fe7b5b11c7d03/500/280/Image/Jpeg/noFilter',
   'dig':'https://tr.rbxcdn.com/180DAY-38334daf4b8073ee8d3d9976dfc7bfe8/768/432/Image/Webp/noFilter',
   'sols-rng':'https://tr.rbxcdn.com/180DAY-8965d16c1ee802fff15f681cae4b413e/768/432/Image/Webp/noFilter',
   'fish-it':'https://tr.rbxcdn.com/180DAY-dfd35b1d04259ea9974c2ee8bcd9ed49/500/280/Image/Jpeg/noFilter',
@@ -357,6 +362,11 @@ const THUMBS = {
 };
 
 const ALL_GAMES = [
+  { name:"Broken Blade", slug:'broken-blade', emoji:'⚔️', cat:'rpg', codes:11, iso:'2026-06-07', updated:'7 juin 2026', hot:true },
+  { name:"Sailor Piece", slug:'sailor-piece', emoji:'⚓', cat:'rpg', codes:16, iso:'2026-06-07', updated:'7 juin 2026', hot:true },
+  { name:"Anime Apocalypse", slug:'anime-apocalypse', emoji:'🧟', cat:'battle', codes:15, iso:'2026-06-07', updated:'7 juin 2026', hot:true },
+  { name:"Anime Eternal", slug:'anime-eternal', emoji:'⭐', cat:'anime', codes:13, iso:'2026-06-07', updated:'7 juin 2026', hot:true },
+  { name:"Universal Tower Defense X", slug:'universal-tower-defense-x', emoji:'🏰', cat:'anime', codes:16, iso:'2026-06-07', updated:'7 juin 2026', hot:true },
   { name:'DIG', slug:'dig', emoji:'⛏️', cat:'simulator', codes:1, iso:'2026-06-06', updated:'6 juin 2026', hot:true },
   { name:"Sol's RNG", slug:'sols-rng', emoji:'🎲', cat:'simulator', codes:8, iso:'2026-06-06', updated:'6 juin 2026', hot:true },
   { name:'Fish It', slug:'fish-it', emoji:'🎣', cat:'simulator', codes:12, iso:'2026-06-06', updated:'6 juin 2026', hot:true },

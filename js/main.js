@@ -3,6 +3,11 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+  'broken-blade': 'https://tr.rbxcdn.com/180DAY-b4137b1c3b07478b27e38a7ee8356800/500/280/Image/Jpeg/noFilter',
+  'sailor-piece': 'https://tr.rbxcdn.com/180DAY-b405eb9a7be185d2a560f8857d82fec7/500/280/Image/Jpeg/noFilter',
+  'anime-apocalypse': 'https://tr.rbxcdn.com/180DAY-45c04a57026f120497361440a566ee2e/500/280/Image/Jpeg/noFilter',
+  'anime-eternal': 'https://tr.rbxcdn.com/180DAY-f755ba09b84bf157f5b4b35b6a8af4c0/500/280/Image/Jpeg/noFilter',
+  'universal-tower-defense-x': 'https://tr.rbxcdn.com/180DAY-d7a465629ce61d0dff9fe7b5b11c7d03/500/280/Image/Jpeg/noFilter',
   'dig': 'https://tr.rbxcdn.com/180DAY-38334daf4b8073ee8d3d9976dfc7bfe8/768/432/Image/Webp/noFilter',
   'sols-rng': 'https://tr.rbxcdn.com/180DAY-8965d16c1ee802fff15f681cae4b413e/768/432/Image/Webp/noFilter',
   'fish-it': 'https://tr.rbxcdn.com/180DAY-dfd35b1d04259ea9974c2ee8bcd9ed49/500/280/Image/Jpeg/noFilter',
@@ -99,6 +104,11 @@ function initMobileNav() {
 
 /* ---- Search index ---- */
 const GAMES_INDEX = [
+  { name: "Broken Blade", slug: 'broken-blade', emoji: '⚔️', codes: 11 },
+  { name: "Sailor Piece", slug: 'sailor-piece', emoji: '⚓', codes: 16 },
+  { name: "Anime Apocalypse", slug: 'anime-apocalypse', emoji: '🧟', codes: 15 },
+  { name: "Anime Eternal", slug: 'anime-eternal', emoji: '⭐', codes: 13 },
+  { name: "Universal Tower Defense X", slug: 'universal-tower-defense-x', emoji: '🏰', codes: 16 },
   { name: 'DIG', slug: 'dig', emoji: '⛏️', codes: 1 },
   { name: "Sol's RNG", slug: 'sols-rng', emoji: '🎲', codes: 8 },
   { name: 'Fish It', slug: 'fish-it', emoji: '🎣', codes: 12 },

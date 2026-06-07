@@ -153,7 +153,7 @@
     </div>
   </div>
 </footer>
-<script src="/js/main.js?v=10"></script>
+<script src="/js/main.js?v=11"></script>
 <script>
 function switchTab(tabId){document.querySelectorAll('.page-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));var b=document.querySelector('[data-tab="'+tabId+'"]');var p=document.getElementById('tab-'+tabId);if(b)b.classList.add('active');if(p)p.classList.add('active');}
 document.querySelectorAll('.page-tab').forEach(function(tab){tab.addEventListener('click',function(){switchTab(tab.dataset.tab);});});
