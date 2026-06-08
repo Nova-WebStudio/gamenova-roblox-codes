@@ -3,6 +3,12 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+  'jujutsu-shenanigans': 'https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/512/512/Image/Png/noFilter',
+  'kick-a-lucky-block': 'https://tr.rbxcdn.com/180DAY-3c320528b9f19497a76e238276cdeb53/512/512/Image/Png/noFilter',
+  'dandys-world': 'https://tr.rbxcdn.com/180DAY-dd5fef14c5a000dba3bebfb71cf4ac64/512/512/Image/Png/noFilter',
+  'slime-rng': 'https://tr.rbxcdn.com/180DAY-b3e07872193b7de060e80e2b300a94ca/768/432/Image/Png/noFilter',
+  'survive-zombie-arena': 'https://tr.rbxcdn.com/180DAY-ccfc78577119d3c8ed223f580e05f222/512/512/Image/Png/noFilter',
+  'attack-on-titan-revolution': 'https://tr.rbxcdn.com/180DAY-b5b0d5438b8f70eca4dc9311ac541afc/512/512/Image/Png/noFilter',
   'broken-blade': 'https://tr.rbxcdn.com/180DAY-b4137b1c3b07478b27e38a7ee8356800/500/280/Image/Jpeg/noFilter',
   'sailor-piece': 'https://tr.rbxcdn.com/180DAY-b405eb9a7be185d2a560f8857d82fec7/500/280/Image/Jpeg/noFilter',
   'anime-apocalypse': 'https://tr.rbxcdn.com/180DAY-45c04a57026f120497361440a566ee2e/500/280/Image/Jpeg/noFilter',
@@ -104,6 +110,12 @@ function initMobileNav() {
 
 /* ---- Search index ---- */
 const GAMES_INDEX = [
+  { name: "Jujutsu Shenanigans", slug: 'jujutsu-shenanigans', emoji: '🌀', codes: 5 },
+  { name: "Kick a Lucky Block", slug: 'kick-a-lucky-block', emoji: '🎁', codes: 0 },
+  { name: "Dandy's World", slug: 'dandys-world', emoji: '🧸', codes: 4 },
+  { name: "Slime RNG", slug: 'slime-rng', emoji: '🟢', codes: 11 },
+  { name: "Survive Zombie Arena", slug: 'survive-zombie-arena', emoji: '🧟', codes: 2 },
+  { name: "Attack on Titan Revolution", slug: 'attack-on-titan-revolution', emoji: '⚔️', codes: 21 },
   { name: "Broken Blade", slug: 'broken-blade', emoji: '⚔️', codes: 11 },
   { name: "Sailor Piece", slug: 'sailor-piece', emoji: '⚓', codes: 16 },
   { name: "Anime Apocalypse", slug: 'anime-apocalypse', emoji: '🧟', codes: 15 },
@@ -249,6 +261,12 @@ function highlightNav() {
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
+  'jujutsu-shenanigans': 3508322461,
+  'kick-a-lucky-block': 10004244222,
+  'dandys-world': 5569032992,
+  'slime-rng': 9792947201,
+  'survive-zombie-arena': 9348272796,
+  'attack-on-titan-revolution': 4658598196,
   'dig': 7218065222,
   'sols-rng': 5361032378,
   'fish-it': 6701277882,
