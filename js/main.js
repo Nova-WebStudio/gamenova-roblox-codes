@@ -3,6 +3,7 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+  'ugc-limited': 'https://tr.rbxcdn.com/180DAY-4c03c829dd96b8bd973dab28a0dd7f8a/768/432/Image/Png/noFilter',
   'jujutsu-shenanigans': 'https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/512/512/Image/Png/noFilter',
   'kick-a-lucky-block': 'https://tr.rbxcdn.com/180DAY-3c320528b9f19497a76e238276cdeb53/512/512/Image/Png/noFilter',
   'dandys-world': 'https://tr.rbxcdn.com/180DAY-dd5fef14c5a000dba3bebfb71cf4ac64/512/512/Image/Png/noFilter',
@@ -110,6 +111,7 @@ function initMobileNav() {
 
 /* ---- Search index ---- */
 const GAMES_INDEX = [
+  { name: "UGC Limited", slug: 'ugc-limited', emoji: '🎁', codes: 32 },
   { name: "Jujutsu Shenanigans", slug: 'jujutsu-shenanigans', emoji: '🌀', codes: 5 },
   { name: "Kick a Lucky Block", slug: 'kick-a-lucky-block', emoji: '🎁', codes: 0 },
   { name: "Dandy's World", slug: 'dandys-world', emoji: '🧸', codes: 4 },
@@ -261,6 +263,7 @@ function highlightNav() {
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
+  'ugc-limited': 5114363215,
   'jujutsu-shenanigans': 3508322461,
   'kick-a-lucky-block': 10004244222,
   'dandys-world': 5569032992,

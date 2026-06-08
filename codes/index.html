@@ -187,7 +187,7 @@
 
     <!-- SORT + VIEW TOGGLE -->
     <div class="sort-bar">
-      <span class="count" id="gameCount">Affichage de <strong>81</strong> jeux</span>
+      <span class="count" id="gameCount">Affichage de <strong>82</strong> jeux</span>
       <div style="display:flex;gap:10px;align-items:center">
         <select class="sort-select" id="sortSelect">
           <option value="hot">🔥 Plus populaires</option>
@@ -206,6 +206,7 @@
     <div id="gamesContainer" class="games-list">
       <!-- Repli statique crawlable : liste complète des jeux. Remplacée par renderGames() dès que le JS s'exécute. -->
       <ul class="static-games-fallback" style="list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;padding:0;margin:0">
+        <li><a href="/codes/ugc-limited.html">Codes UGC Limited (UGC gratuits)</a></li>
         <li><a href="/codes/shindo-life.html">Codes Shindo Life</a></li>
         <li><a href="/codes/fisch.html">Codes Fisch</a></li>
         <li><a href="/codes/pet-simulator-x.html">Codes Pet Simulator X</a></li>
@@ -284,6 +285,7 @@
 const CAT_LABELS = { rpg:'RPG', simulator:'Simulateur', battle:'Combat', anime:'Anime', obby:'Obby', tycoon:'Tycoon' };
 
 const THUMBS = {
+  'ugc-limited':'https://tr.rbxcdn.com/180DAY-4c03c829dd96b8bd973dab28a0dd7f8a/768/432/Image/Png/noFilter',
   'jujutsu-shenanigans':'https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/512/512/Image/Png/noFilter',
   'kick-a-lucky-block':'https://tr.rbxcdn.com/180DAY-3c320528b9f19497a76e238276cdeb53/512/512/Image/Png/noFilter',
   'dandys-world':'https://tr.rbxcdn.com/180DAY-dd5fef14c5a000dba3bebfb71cf4ac64/512/512/Image/Png/noFilter',
@@ -368,6 +370,7 @@ const THUMBS = {
 };
 
 const ALL_GAMES = [
+  { name:"UGC Limited", slug:'ugc-limited', emoji:'🎁', cat:'simulator', codes:32, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
   { name:"Jujutsu Shenanigans", slug:'jujutsu-shenanigans', emoji:'🌀', cat:'battle', codes:5, iso:'2026-06-08', updated:'8 juin 2026', hot:true },
   { name:"Kick a Lucky Block", slug:'kick-a-lucky-block', emoji:'🎁', cat:'simulator', codes:0, iso:'2026-06-08', updated:'8 juin 2026', hot:true },
   { name:"Dandy's World", slug:'dandys-world', emoji:'🧸', cat:'battle', codes:4, iso:'2026-06-08', updated:'8 juin 2026', hot:true },
