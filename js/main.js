@@ -111,6 +111,9 @@ function initMobileNav() {
 
 /* ---- Search index ---- */
 const GAMES_INDEX = [
+  { name: "LOCKED", slug: 'locked', emoji: '⚽', codes: 9 },
+  { name: "Defend ur base with anime", slug: 'defend-ur-base-with-anime', emoji: '🛡️', codes: 4 },
+  { name: "Anime RNG", slug: 'anime-rng', emoji: '🎲', codes: 5 },
   { name: "UGC Limited", slug: 'ugc-limited', emoji: '🎁', codes: 32 },
   { name: "Jujutsu Shenanigans", slug: 'jujutsu-shenanigans', emoji: '🌀', codes: 5 },
   { name: "Kick a Lucky Block", slug: 'kick-a-lucky-block', emoji: '🎁', codes: 0 },

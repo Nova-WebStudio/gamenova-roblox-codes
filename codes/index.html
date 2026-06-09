@@ -186,7 +186,7 @@
 
     <!-- SORT + VIEW TOGGLE -->
     <div class="sort-bar">
-      <span class="count" id="gameCount">Affichage de <strong>82</strong> jeux</span>
+      <span class="count" id="gameCount">Affichage de <strong>85</strong> jeux</span>
       <div style="display:flex;gap:10px;align-items:center">
         <select class="sort-select" id="sortSelect">
           <option value="hot">🔥 Plus populaires</option>
@@ -279,7 +279,7 @@
   </div>
 </footer>
 
-<script src="/js/main.js?v=14"></script>
+<script src="/js/main.js?v=15"></script>
 <script>
 const CAT_LABELS = { rpg:'RPG', simulator:'Simulateur', battle:'Combat', anime:'Anime', obby:'Obby', tycoon:'Tycoon' };
 
@@ -369,6 +369,9 @@ const THUMBS = {
 };
 
 const ALL_GAMES = [
+  { name:"LOCKED", slug:'locked', emoji:'⚽', cat:'anime', codes:9, iso:'2026-06-09', updated:'9 juin 2026', hot:true },
+  { name:"Defend ur base with anime", slug:'defend-ur-base-with-anime', emoji:'🛡️', cat:'battle', codes:4, iso:'2026-06-09', updated:'9 juin 2026', hot:true },
+  { name:"Anime RNG", slug:'anime-rng', emoji:'🎲', cat:'simulator', codes:5, iso:'2026-06-09', updated:'9 juin 2026', hot:true },
   { name:"UGC Limited", slug:'ugc-limited', emoji:'🎁', cat:'simulator', codes:32, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
   { name:"Jujutsu Shenanigans", slug:'jujutsu-shenanigans', emoji:'🌀', cat:'battle', codes:5, iso:'2026-06-08', updated:'8 juin 2026', hot:true },
   { name:"Kick a Lucky Block", slug:'kick-a-lucky-block', emoji:'🎁', cat:'simulator', codes:0, iso:'2026-06-08', updated:'8 juin 2026', hot:true },
