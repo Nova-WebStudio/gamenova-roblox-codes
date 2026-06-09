@@ -14,6 +14,10 @@
   <meta name="theme-color" content="#0e0b1a">
   <link rel="canonical" href="https://zoneblox.com/">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+  <link rel="preconnect" href="https://tr.rbxcdn.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="images/hero-bg.webp" type="image/webp" media="(min-width:769px)" fetchpriority="high">
+  <link rel="preload" as="image" href="images/hero-bg-mobile.webp" type="image/webp" media="(max-width:768px)" fetchpriority="high">
 
   <!-- Open Graph -->
   <meta property="og:type"        content="website">
@@ -107,13 +111,11 @@
 <!-- ░░░ HERO ░░░ -->
 <section class="hero">
 
-  <img
-    class="hero-bg-img"
-    src="images/hero-bg.png"
-    alt=""
-    aria-hidden="true"
-    fetchpriority="high"
-  >
+  <picture>
+    <source media="(max-width:768px)" srcset="images/hero-bg-mobile.webp" type="image/webp">
+    <source srcset="images/hero-bg.webp" type="image/webp">
+    <img class="hero-bg-img" src="images/hero-bg.png" alt="" aria-hidden="true" fetchpriority="high" decoding="async">
+  </picture>
 
   <div class="hero-overlay" aria-hidden="true"></div>
 
@@ -167,7 +169,7 @@
 <!-- FEATURED-WEEK-START -->
 <div class="container" style="margin-top:24px">
   <div style="background:linear-gradient(135deg,rgba(162,89,255,.12),rgba(0,207,255,.08));border:1px solid rgba(162,89,255,.35);border-radius:var(--radius);padding:18px;display:flex;gap:18px;flex-wrap:wrap;align-items:center">
-    <img src="https://tr.rbxcdn.com/180DAY-5e77d217cbda7ba5941840cfa3ab8c36/768/432/Image/Webp/noFilter" alt="Brookhaven RP" loading="lazy" style="width:240px;max-width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;flex-shrink:0">
+    <img src="https://tr.rbxcdn.com/180DAY-5e77d217cbda7ba5941840cfa3ab8c36/480/270/Image/Webp/noFilter" alt="Brookhaven RP" loading="lazy" style="width:240px;max-width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;flex-shrink:0">
     <div style="flex:1;min-width:240px">
       <span style="display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:4px 12px;border-radius:20px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff">⭐ Jeu de la semaine</span>
       <h2 style="margin:10px 0 6px;font-size:1.5rem">Brookhaven RP</h2>
@@ -190,7 +192,7 @@
     <div class="games-grid games-grid-lg">
       <a href="/codes/locked.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="locked" src="https://tr.rbxcdn.com/180DAY-d25adedff694e3710158bf33115397bf/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/locked.svg'" alt="LOCKED" class="thumb-svg">
+          <img data-game="locked" src="https://tr.rbxcdn.com/180DAY-d25adedff694e3710158bf33115397bf/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/locked.svg'" alt="LOCKED" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -205,7 +207,7 @@
       </a>
       <a href="/codes/defend-ur-base-with-anime.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="defend-ur-base-with-anime" src="https://tr.rbxcdn.com/180DAY-5610a932c392b232214df24d7b73480d/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/defend-ur-base-with-anime.svg'" alt="Defend ur base with anime" class="thumb-svg">
+          <img data-game="defend-ur-base-with-anime" src="https://tr.rbxcdn.com/180DAY-5610a932c392b232214df24d7b73480d/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/defend-ur-base-with-anime.svg'" alt="Defend ur base with anime" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -220,7 +222,7 @@
       </a>
       <a href="/codes/anime-rng.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="anime-rng" src="https://tr.rbxcdn.com/180DAY-cb52cb46f7586ef2c76773ae5ca17e0b/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-rng.svg'" alt="Anime RNG" class="thumb-svg">
+          <img data-game="anime-rng" src="https://tr.rbxcdn.com/180DAY-cb52cb46f7586ef2c76773ae5ca17e0b/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-rng.svg'" alt="Anime RNG" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -236,7 +238,7 @@
 
       <a href="/codes/dig.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="dig" src="https://tr.rbxcdn.com/180DAY-38334daf4b8073ee8d3d9976dfc7bfe8/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/dig.svg'" alt="DIG" class="thumb-svg">
+          <img data-game="dig" src="https://tr.rbxcdn.com/180DAY-38334daf4b8073ee8d3d9976dfc7bfe8/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/dig.svg'" alt="DIG" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -251,7 +253,7 @@
       </a>
       <a href="/codes/sols-rng.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="sols-rng" src="https://tr.rbxcdn.com/180DAY-8965d16c1ee802fff15f681cae4b413e/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/sols-rng.svg'" alt="Sol's RNG" class="thumb-svg">
+          <img data-game="sols-rng" src="https://tr.rbxcdn.com/180DAY-8965d16c1ee802fff15f681cae4b413e/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/sols-rng.svg'" alt="Sol's RNG" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -266,7 +268,7 @@
       </a>
       <a href="/codes/fish-it.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="fish-it" src="https://tr.rbxcdn.com/180DAY-dfd35b1d04259ea9974c2ee8bcd9ed49/500/280/Image/Jpeg/noFilter" onerror="this.onerror=null;this.src='/images/games/fish-it.svg'" alt="Fish It" class="thumb-svg">
+          <img data-game="fish-it" src="https://tr.rbxcdn.com/180DAY-dfd35b1d04259ea9974c2ee8bcd9ed49/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/fish-it.svg'" alt="Fish It" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -281,7 +283,7 @@
       </a>
       <a href="/codes/anime-spirits.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="anime-spirits" src="https://tr.rbxcdn.com/180DAY-90d479b01af3f1ed17af3643f447e915/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-spirits.svg'" alt="Anime Spirits" class="thumb-svg">
+          <img data-game="anime-spirits" src="https://tr.rbxcdn.com/180DAY-90d479b01af3f1ed17af3643f447e915/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-spirits.svg'" alt="Anime Spirits" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -296,7 +298,7 @@
       </a>
       <a href="/codes/slap-battles.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="slap-battles" src="https://tr.rbxcdn.com/180DAY-01bb43634d02e38923c1543a029c95d5/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/slap-battles.svg'" alt="Slap Battles" class="thumb-svg">
+          <img data-game="slap-battles" src="https://tr.rbxcdn.com/180DAY-01bb43634d02e38923c1543a029c95d5/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/slap-battles.svg'" alt="Slap Battles" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -312,7 +314,7 @@
       </a>
       <a href="/codes/forsaken.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="forsaken" src="https://tr.rbxcdn.com/180DAY-242c4d76325c453886b3382d825eb71c/500/280/Image/Jpeg/noFilter" onerror="this.onerror=null;this.src='/images/games/forsaken.svg'" alt="Forsaken" class="thumb-svg">
+          <img data-game="forsaken" src="https://tr.rbxcdn.com/180DAY-242c4d76325c453886b3382d825eb71c/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/forsaken.svg'" alt="Forsaken" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -328,7 +330,7 @@
 
       <a href="/codes/all-star-tower-defense.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="all-star-tower-defense" src="https://tr.rbxcdn.com/180DAY-9fbd50db5a51699b733c9529ee542d19/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/all-star-tower-defense.svg'" alt="All Star Tower Defense" class="thumb-svg">
+          <img data-game="all-star-tower-defense" src="https://tr.rbxcdn.com/180DAY-9fbd50db5a51699b733c9529ee542d19/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/all-star-tower-defense.svg'" alt="All Star Tower Defense" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -344,7 +346,7 @@
       </a>
       <a href="/codes/anime-champions-simulator.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="anime-champions-simulator" src="https://tr.rbxcdn.com/180DAY-9d4be137161ea266ba1c2c6f28832e21/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-champions-simulator.svg'" alt="Anime Champions Simulator" class="thumb-svg">
+          <img data-game="anime-champions-simulator" src="https://tr.rbxcdn.com/180DAY-9d4be137161ea266ba1c2c6f28832e21/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-champions-simulator.svg'" alt="Anime Champions Simulator" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -359,7 +361,7 @@
       </a>
       <a href="/codes/sonic-speed-simulator.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="sonic-speed-simulator" src="https://tr.rbxcdn.com/180DAY-82939a396600a61e4abadd92664f8d83/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/sonic-speed-simulator.svg'" alt="Sonic Speed Simulator" class="thumb-svg">
+          <img data-game="sonic-speed-simulator" src="https://tr.rbxcdn.com/180DAY-82939a396600a61e4abadd92664f8d83/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/sonic-speed-simulator.svg'" alt="Sonic Speed Simulator" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -374,7 +376,7 @@
       </a>
       <a href="/codes/tower-defense-simulator.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="tower-defense-simulator" src="https://tr.rbxcdn.com/180DAY-f4a7603e22db5d7a43e966fe145a96e1/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/tower-defense-simulator.svg'" alt="Tower Defense Simulator" class="thumb-svg">
+          <img data-game="tower-defense-simulator" src="https://tr.rbxcdn.com/180DAY-f4a7603e22db5d7a43e966fe145a96e1/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/tower-defense-simulator.svg'" alt="Tower Defense Simulator" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -389,7 +391,7 @@
       </a>
       <a href="/codes/project-slayers.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="project-slayers" src="https://tr.rbxcdn.com/180DAY-612b92100da817e8dc2bb8fd35ce117e/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/project-slayers.svg'" alt="Project Slayers" class="thumb-svg">
+          <img data-game="project-slayers" src="https://tr.rbxcdn.com/180DAY-612b92100da817e8dc2bb8fd35ce117e/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/project-slayers.svg'" alt="Project Slayers" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -404,7 +406,7 @@
       </a>
       <a href="/codes/the-strongest-battlegrounds.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="the-strongest-battlegrounds" src="https://tr.rbxcdn.com/180DAY-c947df5b221c30672c3591247a8c6495/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/the-strongest-battlegrounds.svg'" alt="The Strongest Battlegrounds" class="thumb-svg">
+          <img data-game="the-strongest-battlegrounds" src="https://tr.rbxcdn.com/180DAY-c947df5b221c30672c3591247a8c6495/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/the-strongest-battlegrounds.svg'" alt="The Strongest Battlegrounds" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -419,7 +421,7 @@
       </a>
       <a href="/codes/spongebob-tower-defense.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="spongebob-tower-defense" src="https://tr.rbxcdn.com/180DAY-c3a62fcdf7e0a60cd52456d65f267689/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/spongebob-tower-defense.svg'" alt="SpongeBob Tower Defense" class="thumb-svg">
+          <img data-game="spongebob-tower-defense" src="https://tr.rbxcdn.com/180DAY-c3a62fcdf7e0a60cd52456d65f267689/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/spongebob-tower-defense.svg'" alt="SpongeBob Tower Defense" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -434,7 +436,7 @@
       </a>
       <a href="/codes/garden-tower-defense.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="garden-tower-defense" src="https://tr.rbxcdn.com/180DAY-ad6eccabf36c9174c02fed274ca4b5a9/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/garden-tower-defense.svg'" alt="Garden Tower Defense" class="thumb-svg">
+          <img data-game="garden-tower-defense" src="https://tr.rbxcdn.com/180DAY-ad6eccabf36c9174c02fed274ca4b5a9/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/garden-tower-defense.svg'" alt="Garden Tower Defense" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -449,7 +451,7 @@
       </a>
       <a href="/codes/jujutsu-shenanigans.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="jujutsu-shenanigans" src="https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/512/512/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/jujutsu-shenanigans.svg'" alt="Jujutsu Shenanigans" class="thumb-svg">
+          <img data-game="jujutsu-shenanigans" src="https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/jujutsu-shenanigans.svg'" alt="Jujutsu Shenanigans" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -464,7 +466,7 @@
       </a>
       <a href="/codes/kick-a-lucky-block.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="kick-a-lucky-block" src="https://tr.rbxcdn.com/180DAY-3c320528b9f19497a76e238276cdeb53/512/512/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/kick-a-lucky-block.svg'" alt="Kick a Lucky Block" class="thumb-svg">
+          <img data-game="kick-a-lucky-block" src="https://tr.rbxcdn.com/180DAY-3c320528b9f19497a76e238276cdeb53/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/kick-a-lucky-block.svg'" alt="Kick a Lucky Block" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -479,7 +481,7 @@
       </a>
       <a href="/codes/dandys-world.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="dandys-world" src="https://tr.rbxcdn.com/180DAY-dd5fef14c5a000dba3bebfb71cf4ac64/512/512/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/dandys-world.svg'" alt="Dandy's World" class="thumb-svg">
+          <img data-game="dandys-world" src="https://tr.rbxcdn.com/180DAY-dd5fef14c5a000dba3bebfb71cf4ac64/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/dandys-world.svg'" alt="Dandy's World" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -494,7 +496,7 @@
       </a>
       <a href="/codes/slime-rng.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="slime-rng" src="https://tr.rbxcdn.com/180DAY-b3e07872193b7de060e80e2b300a94ca/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/slime-rng.svg'" alt="Slime RNG" class="thumb-svg">
+          <img data-game="slime-rng" src="https://tr.rbxcdn.com/180DAY-b3e07872193b7de060e80e2b300a94ca/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/slime-rng.svg'" alt="Slime RNG" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -509,7 +511,7 @@
       </a>
       <a href="/codes/survive-zombie-arena.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="survive-zombie-arena" src="https://tr.rbxcdn.com/180DAY-ccfc78577119d3c8ed223f580e05f222/512/512/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/survive-zombie-arena.svg'" alt="Survive Zombie Arena" class="thumb-svg">
+          <img data-game="survive-zombie-arena" src="https://tr.rbxcdn.com/180DAY-ccfc78577119d3c8ed223f580e05f222/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/survive-zombie-arena.svg'" alt="Survive Zombie Arena" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -524,7 +526,7 @@
       </a>
       <a href="/codes/attack-on-titan-revolution.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="attack-on-titan-revolution" src="https://tr.rbxcdn.com/180DAY-b5b0d5438b8f70eca4dc9311ac541afc/512/512/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/attack-on-titan-revolution.svg'" alt="Attack on Titan Revolution" class="thumb-svg">
+          <img data-game="attack-on-titan-revolution" src="https://tr.rbxcdn.com/180DAY-b5b0d5438b8f70eca4dc9311ac541afc/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/attack-on-titan-revolution.svg'" alt="Attack on Titan Revolution" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -539,7 +541,7 @@
       </a>
       <a href="/codes/broken-blade.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="broken-blade" src="https://tr.rbxcdn.com/180DAY-b4137b1c3b07478b27e38a7ee8356800/500/280/Image/Jpeg/noFilter" onerror="this.onerror=null;this.src='/images/games/broken-blade.svg'" alt="Broken Blade" class="thumb-svg">
+          <img data-game="broken-blade" src="https://tr.rbxcdn.com/180DAY-b4137b1c3b07478b27e38a7ee8356800/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/broken-blade.svg'" alt="Broken Blade" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -554,7 +556,7 @@
       </a>
       <a href="/codes/sailor-piece.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="sailor-piece" src="https://tr.rbxcdn.com/180DAY-b405eb9a7be185d2a560f8857d82fec7/500/280/Image/Jpeg/noFilter" onerror="this.onerror=null;this.src='/images/games/sailor-piece.svg'" alt="Sailor Piece" class="thumb-svg">
+          <img data-game="sailor-piece" src="https://tr.rbxcdn.com/180DAY-b405eb9a7be185d2a560f8857d82fec7/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/sailor-piece.svg'" alt="Sailor Piece" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -569,7 +571,7 @@
       </a>
       <a href="/codes/anime-apocalypse.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="anime-apocalypse" src="https://tr.rbxcdn.com/180DAY-45c04a57026f120497361440a566ee2e/500/280/Image/Jpeg/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-apocalypse.svg'" alt="Anime Apocalypse" class="thumb-svg">
+          <img data-game="anime-apocalypse" src="https://tr.rbxcdn.com/180DAY-45c04a57026f120497361440a566ee2e/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-apocalypse.svg'" alt="Anime Apocalypse" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -584,7 +586,7 @@
       </a>
       <a href="/codes/anime-eternal.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="anime-eternal" src="https://tr.rbxcdn.com/180DAY-f755ba09b84bf157f5b4b35b6a8af4c0/500/280/Image/Jpeg/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-eternal.svg'" alt="Anime Eternal" class="thumb-svg">
+          <img data-game="anime-eternal" src="https://tr.rbxcdn.com/180DAY-f755ba09b84bf157f5b4b35b6a8af4c0/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-eternal.svg'" alt="Anime Eternal" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -599,7 +601,7 @@
       </a>
       <a href="/codes/universal-tower-defense-x.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="universal-tower-defense-x" src="https://tr.rbxcdn.com/180DAY-d7a465629ce61d0dff9fe7b5b11c7d03/500/280/Image/Jpeg/noFilter" onerror="this.onerror=null;this.src='/images/games/universal-tower-defense-x.svg'" alt="Universal Tower Defense X" class="thumb-svg">
+          <img data-game="universal-tower-defense-x" src="https://tr.rbxcdn.com/180DAY-d7a465629ce61d0dff9fe7b5b11c7d03/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/universal-tower-defense-x.svg'" alt="Universal Tower Defense X" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -614,7 +616,7 @@
       </a>
       <a href="/codes/heroes-battlegrounds.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="heroes-battlegrounds" src="https://tr.rbxcdn.com/180DAY-05b3d7fb729835a6f28de0067fac79cd/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/heroes-battlegrounds.svg'" alt="Heroes Battlegrounds" class="thumb-svg">
+          <img data-game="heroes-battlegrounds" src="https://tr.rbxcdn.com/180DAY-05b3d7fb729835a6f28de0067fac79cd/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/heroes-battlegrounds.svg'" alt="Heroes Battlegrounds" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -629,7 +631,7 @@
       </a>
       <a href="/codes/mad-city.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="mad-city" src="https://tr.rbxcdn.com/180DAY-e03eb43e97fb7031d8187b808fd7ff27/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/mad-city.svg'" alt="Mad City: Chapter 2" class="thumb-svg">
+          <img data-game="mad-city" src="https://tr.rbxcdn.com/180DAY-e03eb43e97fb7031d8187b808fd7ff27/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/mad-city.svg'" alt="Mad City: Chapter 2" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -644,7 +646,7 @@
       </a>
       <a href="/codes/combat-warriors.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="combat-warriors" src="https://tr.rbxcdn.com/180DAY-a631d6d73730a77f93b02eb3b0e8b06c/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/combat-warriors.svg'" alt="Combat Warriors" class="thumb-svg">
+          <img data-game="combat-warriors" src="https://tr.rbxcdn.com/180DAY-a631d6d73730a77f93b02eb3b0e8b06c/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/combat-warriors.svg'" alt="Combat Warriors" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -659,7 +661,7 @@
       </a>
       <a href="/codes/survive-the-killer.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="survive-the-killer" src="https://tr.rbxcdn.com/180DAY-4f30b695e340b41799ff15643fff9795/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/survive-the-killer.svg'" alt="Survive the Killer" class="thumb-svg">
+          <img data-game="survive-the-killer" src="https://tr.rbxcdn.com/180DAY-4f30b695e340b41799ff15643fff9795/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/survive-the-killer.svg'" alt="Survive the Killer" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -674,7 +676,7 @@
       </a>
       <a href="/codes/jujutsu-infinite.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="jujutsu-infinite" src="https://tr.rbxcdn.com/180DAY-243b2323af958a373c24bb885e2986b5/500/280/Image/Jpeg/noFilter" onerror="this.onerror=null;this.src='/images/games/jujutsu-infinite.svg'" alt="Jujutsu Infinite" class="thumb-svg">
+          <img data-game="jujutsu-infinite" src="https://tr.rbxcdn.com/180DAY-243b2323af958a373c24bb885e2986b5/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/jujutsu-infinite.svg'" alt="Jujutsu Infinite" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -689,7 +691,7 @@
       </a>
       <a href="/codes/anime-reborn.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="anime-reborn" src="https://tr.rbxcdn.com/180DAY-8b81be86b8e67cbc4db3d07b846ad7c1/500/280/Image/Jpeg/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-reborn.svg'" alt="Anime Reborn" class="thumb-svg">
+          <img data-game="anime-reborn" src="https://tr.rbxcdn.com/180DAY-8b81be86b8e67cbc4db3d07b846ad7c1/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-reborn.svg'" alt="Anime Reborn" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -704,7 +706,7 @@
       </a>
       <a href="/codes/untitled-boxing-game.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="untitled-boxing-game" src="https://tr.rbxcdn.com/180DAY-5e814dc6b0ad9489cc40c4dbf9bb7d96/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/untitled-boxing-game.svg'" alt="Untitled Boxing Game" class="thumb-svg">
+          <img data-game="untitled-boxing-game" src="https://tr.rbxcdn.com/180DAY-5e814dc6b0ad9489cc40c4dbf9bb7d96/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/untitled-boxing-game.svg'" alt="Untitled Boxing Game" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -719,7 +721,7 @@
       </a>
       <a href="/codes/type-soul.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="type-soul" src="https://tr.rbxcdn.com/180DAY-8a0cfb06021a3b7813f79e9f9e6eb1b1/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/type-soul.svg'" alt="Type Soul" class="thumb-svg">
+          <img data-game="type-soul" src="https://tr.rbxcdn.com/180DAY-8a0cfb06021a3b7813f79e9f9e6eb1b1/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/type-soul.svg'" alt="Type Soul" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -734,7 +736,7 @@
       </a>
       <a href="/codes/basketball-zero.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="basketball-zero" src="https://tr.rbxcdn.com/180DAY-0d7d35bbb03eca85b0bfcb0076a0435a/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/basketball-zero.svg'" alt="Basketball Zero" class="thumb-svg">
+          <img data-game="basketball-zero" src="https://tr.rbxcdn.com/180DAY-0d7d35bbb03eca85b0bfcb0076a0435a/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/basketball-zero.svg'" alt="Basketball Zero" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -749,7 +751,7 @@
       </a>
       <a href="/codes/haze-piece.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="haze-piece" src="https://tr.rbxcdn.com/180DAY-41212ff0c4a4a7105b2e1605f3666243/500/280/Image/Jpeg/noFilter" onerror="this.onerror=null;this.src='/images/games/haze-piece.svg'" alt="Haze Piece" class="thumb-svg">
+          <img data-game="haze-piece" src="https://tr.rbxcdn.com/180DAY-41212ff0c4a4a7105b2e1605f3666243/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/haze-piece.svg'" alt="Haze Piece" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -780,7 +782,7 @@
       <!-- Blox Fruits -->
       <a href="/codes/blox-fruits.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="blox-fruits" src="https://tr.rbxcdn.com/180DAY-e1ce51abae5188805c3fee78ec7f4d08/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/blox-fruits.svg'" alt="Blox Fruits" class="thumb-svg">
+          <img data-game="blox-fruits" src="https://tr.rbxcdn.com/180DAY-e1ce51abae5188805c3fee78ec7f4d08/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/blox-fruits.svg'" alt="Blox Fruits" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🔥 POPULAIRE</span>
         </div>
         <div class="game-card-body">
@@ -797,7 +799,7 @@
       <!-- Pet Simulator X -->
       <a href="/codes/pet-simulator-x.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="pet-simulator-x" src="https://tr.rbxcdn.com/180DAY-a7bb14d2b3dbf586e67ba2ac7a0c3dc7/500/280/Image/Jpeg/noFilter" onerror="this.onerror=null;this.src='/images/games/pet-simulator-x.svg'" alt="Pet Simulator X" class="thumb-svg">
+          <img data-game="pet-simulator-x" src="https://tr.rbxcdn.com/180DAY-a7bb14d2b3dbf586e67ba2ac7a0c3dc7/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/pet-simulator-x.svg'" alt="Pet Simulator X" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-updated">✅ À JOUR</span>
         </div>
         <div class="game-card-body">
@@ -814,7 +816,7 @@
       <!-- Adopt Me -->
       <a href="/codes/adopt-me.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="adopt-me" src="https://tr.rbxcdn.com/180DAY-ef30533fcd5e71af2468030ffa6c176a/500/280/Image/Jpeg/noFilter" onerror="this.onerror=null;this.src='/images/games/adopt-me.svg'" alt="Adopt Me" class="thumb-svg">
+          <img data-game="adopt-me" src="https://tr.rbxcdn.com/180DAY-ef30533fcd5e71af2468030ffa6c176a/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/adopt-me.svg'" alt="Adopt Me" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-new">🆕 NOUVEAU</span>
         </div>
         <div class="game-card-body">
@@ -831,7 +833,7 @@
       <!-- Shindo Life -->
       <a href="/codes/shindo-life.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="shindo-life" src="https://t3.rbxcdn.com/180DAY-3b2ec062707376a89a223ea44c20d408" onerror="this.onerror=null;this.src='/images/games/shindo-life.svg'" alt="Shindo Life" class="thumb-svg">
+          <img data-game="shindo-life" src="https://t3.rbxcdn.com/180DAY-3b2ec062707376a89a223ea44c20d408" onerror="this.onerror=null;this.src='/images/games/shindo-life.svg'" alt="Shindo Life" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🔥 POPULAIRE</span>
         </div>
         <div class="game-card-body">
@@ -848,7 +850,7 @@
       <!-- King Legacy -->
       <a href="/codes/king-legacy.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="king-legacy" src="https://t3.rbxcdn.com/180DAY-e559fde711d62cc11604158b5f39187c" onerror="this.onerror=null;this.src='/images/games/king-legacy.svg'" alt="King Legacy" class="thumb-svg">
+          <img data-game="king-legacy" src="https://t3.rbxcdn.com/180DAY-e559fde711d62cc11604158b5f39187c" onerror="this.onerror=null;this.src='/images/games/king-legacy.svg'" alt="King Legacy" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-updated">✅ À JOUR</span>
         </div>
         <div class="game-card-body">
@@ -865,7 +867,7 @@
       <!-- Murder Mystery 2 -->
       <a href="/codes/murder-mystery-2.html" class="game-card">
         <div class="game-card-thumb">
-          <img data-game="murder-mystery-2" src="https://tr.rbxcdn.com/180DAY-5ba706807447783862364dfef7a465ff/500/280/Image/Jpeg/noFilter" onerror="this.onerror=null;this.src='/images/games/murder-mystery-2.svg'" alt="Murder Mystery 2" class="thumb-svg">
+          <img data-game="murder-mystery-2" src="https://tr.rbxcdn.com/180DAY-5ba706807447783862364dfef7a465ff/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/murder-mystery-2.svg'" alt="Murder Mystery 2" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-updated">✅ À JOUR</span>
         </div>
         <div class="game-card-body">
@@ -903,7 +905,7 @@
     <div class="games-grid">
 
       <a href="/codes/fruit-battlegrounds.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="fruit-battlegrounds" src="https://tr.rbxcdn.com/180DAY-6688078543e2f947bf998f31c4601037/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/fruit-battlegrounds.svg'" alt="Fruit Battlegrounds" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="fruit-battlegrounds" src="https://tr.rbxcdn.com/180DAY-6688078543e2f947bf998f31c4601037/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/fruit-battlegrounds.svg'" alt="Fruit Battlegrounds" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🔥 POPULAIRE</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Fruit Battlegrounds</div>
@@ -913,7 +915,7 @@
       </a>
 
       <a href="/codes/anime-adventures.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="anime-adventures" src="https://t3.rbxcdn.com/180DAY-58d59bfe7584647d43085d18c3e9d679" onerror="this.onerror=null;this.src='/images/games/anime-adventures.svg'" alt="Anime Adventures" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="anime-adventures" src="https://t3.rbxcdn.com/180DAY-58d59bfe7584647d43085d18c3e9d679" onerror="this.onerror=null;this.src='/images/games/anime-adventures.svg'" alt="Anime Adventures" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-updated">✅ À JOUR</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Anime Adventures</div>
@@ -923,7 +925,7 @@
       </a>
 
       <a href="/codes/rivals.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="rivals" src="https://tr.rbxcdn.com/180DAY-27507ba164fae9b46c68047d34d0078b/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/rivals.svg'" alt="Rivals" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="rivals" src="https://tr.rbxcdn.com/180DAY-27507ba164fae9b46c68047d34d0078b/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/rivals.svg'" alt="Rivals" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-updated">✅ À JOUR</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Rivals</div>
@@ -933,7 +935,7 @@
       </a>
 
       <a href="/codes/brookhaven.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="brookhaven" src="https://tr.rbxcdn.com/180DAY-5e77d217cbda7ba5941840cfa3ab8c36/768/432/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/brookhaven.svg'" alt="Brookhaven" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="brookhaven" src="https://tr.rbxcdn.com/180DAY-5e77d217cbda7ba5941840cfa3ab8c36/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/brookhaven.svg'" alt="Brookhaven" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-new">🆕 NOUVEAU</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Brookhaven 🏡RP</div>
@@ -943,7 +945,7 @@
       </a>
 
       <a href="/codes/royale-high.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="royale-high" src="https://tr.rbxcdn.com/180DAY-1c63d3971f06391b08a95400cdf2bb78/500/280/Image/Jpeg/noFilter" onerror="this.onerror=null;this.src='/images/games/royale-high.svg'" alt="Royale High" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="royale-high" src="https://tr.rbxcdn.com/180DAY-1c63d3971f06391b08a95400cdf2bb78/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/royale-high.svg'" alt="Royale High" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-updated">✅ À JOUR</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Royale High</div>
@@ -953,7 +955,7 @@
       </a>
 
       <a href="/codes/encounters.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="encounters" src="https://tr.rbxcdn.com/180DAY-024bcafc4df055789126ae841598d15d/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/encounters.svg'" alt="Encounters" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="encounters" src="https://tr.rbxcdn.com/180DAY-024bcafc4df055789126ae841598d15d/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/encounters.svg'" alt="Encounters" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-new">🆕 NOUVEAU</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Encounters</div>
@@ -977,7 +979,7 @@
     <div class="games-grid">
 
       <a href="/codes/bee-swarm-simulator.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="bee-swarm-simulator" src="https://tr.rbxcdn.com/180DAY-315e29556054777604420711cb64f0b6/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/bee-swarm-simulator.svg'" alt="Bee Swarm Simulator" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="bee-swarm-simulator" src="https://tr.rbxcdn.com/180DAY-315e29556054777604420711cb64f0b6/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/bee-swarm-simulator.svg'" alt="Bee Swarm Simulator" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🔥 POPULAIRE</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Bee Swarm Simulator</div>
@@ -987,7 +989,7 @@
       </a>
 
       <a href="/codes/anime-vanguards.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="anime-vanguards" src="https://tr.rbxcdn.com/180DAY-cb38398e8a1315ca4046f168c7504d6b/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-vanguards.svg'" alt="Anime Vanguards" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="anime-vanguards" src="https://tr.rbxcdn.com/180DAY-cb38398e8a1315ca4046f168c7504d6b/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-vanguards.svg'" alt="Anime Vanguards" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🔥 POPULAIRE</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Anime Vanguards</div>
@@ -997,7 +999,7 @@
       </a>
 
       <a href="/codes/arsenal.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="arsenal" src="https://tr.rbxcdn.com/180DAY-fd5d29ef7df403915891862d02ae09bb/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/arsenal.svg'" alt="Arsenal" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="arsenal" src="https://tr.rbxcdn.com/180DAY-fd5d29ef7df403915891862d02ae09bb/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/arsenal.svg'" alt="Arsenal" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🔥 POPULAIRE</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Arsenal</div>
@@ -1007,7 +1009,7 @@
       </a>
 
       <a href="/codes/jailbreak.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="jailbreak" src="https://tr.rbxcdn.com/180DAY-fef285ce1b8ac805b17da2a4f998ccec/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/jailbreak.svg'" alt="Jailbreak" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="jailbreak" src="https://tr.rbxcdn.com/180DAY-fef285ce1b8ac805b17da2a4f998ccec/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/jailbreak.svg'" alt="Jailbreak" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🔥 POPULAIRE</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Jailbreak</div>
@@ -1017,7 +1019,7 @@
       </a>
 
       <a href="/codes/bedwars.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="bedwars" src="https://tr.rbxcdn.com/180DAY-9e34b6ee9e93b7840f82d1381d14c641/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/bedwars.svg'" alt="BedWars" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="bedwars" src="https://tr.rbxcdn.com/180DAY-9e34b6ee9e93b7840f82d1381d14c641/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/bedwars.svg'" alt="BedWars" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-new">🆕 NOUVEAU</span></div>
         <div class="game-card-body">
           <div class="game-card-title">BedWars</div>
@@ -1027,7 +1029,7 @@
       </a>
 
       <a href="/codes/grow-a-garden.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="grow-a-garden" src="https://tr.rbxcdn.com/180DAY-028e7742f4ef789f654bf0dd91502b41/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/grow-a-garden.svg'" alt="Grow a Garden" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="grow-a-garden" src="https://tr.rbxcdn.com/180DAY-028e7742f4ef789f654bf0dd91502b41/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/grow-a-garden.svg'" alt="Grow a Garden" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🔥 POPULAIRE</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Grow a Garden</div>
@@ -1037,7 +1039,7 @@
       </a>
 
       <a href="/codes/blade-ball.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="blade-ball" src="https://tr.rbxcdn.com/180DAY-aa0679c96e6ce33f961087cebcc07ce6/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/blade-ball.svg'" alt="Blade Ball" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="blade-ball" src="https://tr.rbxcdn.com/180DAY-aa0679c96e6ce33f961087cebcc07ce6/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/blade-ball.svg'" alt="Blade Ball" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🔥 POPULAIRE</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Blade Ball</div>
@@ -1047,7 +1049,7 @@
       </a>
 
       <a href="/codes/anime-defenders.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="anime-defenders" src="https://tr.rbxcdn.com/180DAY-c5a2289b4baf7194add46247482074d7/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-defenders.svg'" alt="Anime Defenders" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="anime-defenders" src="https://tr.rbxcdn.com/180DAY-c5a2289b4baf7194add46247482074d7/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-defenders.svg'" alt="Anime Defenders" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-new">🆕 NOUVEAU</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Anime Defenders</div>
@@ -1057,7 +1059,7 @@
       </a>
 
       <a href="/codes/toilet-tower-defense.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="toilet-tower-defense" src="https://tr.rbxcdn.com/180DAY-5a9d6ca7af3e521497366c956bbbea05/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/toilet-tower-defense.svg'" alt="Toilet Tower Defense" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="toilet-tower-defense" src="https://tr.rbxcdn.com/180DAY-5a9d6ca7af3e521497366c956bbbea05/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/toilet-tower-defense.svg'" alt="Toilet Tower Defense" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-new">🆕 NOUVEAU</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Toilet Tower Defense</div>
@@ -1067,7 +1069,7 @@
       </a>
 
       <a href="/codes/pet-simulator-99.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="pet-simulator-99" src="https://tr.rbxcdn.com/180DAY-b7b8ad3ad6f4103c91efc25da7bc1118/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/pet-simulator-99.svg'" alt="Pet Simulator 99" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="pet-simulator-99" src="https://tr.rbxcdn.com/180DAY-b7b8ad3ad6f4103c91efc25da7bc1118/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/pet-simulator-99.svg'" alt="Pet Simulator 99" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-new">🆕 NOUVEAU</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Pet Simulator 99</div>
@@ -1078,7 +1080,7 @@
       </a>
 
       <a href="/codes/fisch.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="fisch" src="https://tr.rbxcdn.com/180DAY-0b48b36aaaebb05f29da4beb58790100/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/fisch.svg'" alt="Fisch" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="fisch" src="https://tr.rbxcdn.com/180DAY-0b48b36aaaebb05f29da4beb58790100/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/fisch.svg'" alt="Fisch" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🔥 POPULAIRE</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Fisch</div>
@@ -1088,7 +1090,7 @@
       </a>
 
       <a href="/codes/dress-to-impress.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="dress-to-impress" src="https://tr.rbxcdn.com/180DAY-62de69073c3ab87818fa79cd9d34006b/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/dress-to-impress.svg'" alt="Dress to Impress" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="dress-to-impress" src="https://tr.rbxcdn.com/180DAY-62de69073c3ab87818fa79cd9d34006b/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/dress-to-impress.svg'" alt="Dress to Impress" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🔥 POPULAIRE</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Dress to Impress</div>
@@ -1098,7 +1100,7 @@
       </a>
 
       <a href="/codes/da-hood.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="da-hood" src="https://tr.rbxcdn.com/180DAY-655a8b7fc990b48f595db9bcfd7ea70b/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/da-hood.svg'" alt="Da Hood" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="da-hood" src="https://tr.rbxcdn.com/180DAY-655a8b7fc990b48f595db9bcfd7ea70b/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/da-hood.svg'" alt="Da Hood" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🔥 POPULAIRE</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Da Hood</div>
@@ -1108,7 +1110,7 @@
       </a>
 
       <a href="/codes/bubble-gum-simulator-infinity.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="bubble-gum-simulator-infinity" src="https://tr.rbxcdn.com/180DAY-7c76a88ace2e799826837aee08875eec/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/bubble-gum-simulator-infinity.svg'" alt="Bubble Gum Simulator Infinity" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="bubble-gum-simulator-infinity" src="https://tr.rbxcdn.com/180DAY-7c76a88ace2e799826837aee08875eec/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/bubble-gum-simulator-infinity.svg'" alt="Bubble Gum Simulator Infinity" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-new">🆕 NOUVEAU</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Bubble Gum Simulator Infinity</div>
@@ -1118,7 +1120,7 @@
       </a>
 
       <a href="/codes/blue-lock-rivals.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="blue-lock-rivals" src="https://tr.rbxcdn.com/180DAY-6c3d95dac7c3d279e20cfa9ef1b27ba5/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/blue-lock-rivals.svg'" alt="Blue Lock Rivals" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="blue-lock-rivals" src="https://tr.rbxcdn.com/180DAY-6c3d95dac7c3d279e20cfa9ef1b27ba5/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/blue-lock-rivals.svg'" alt="Blue Lock Rivals" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🔥 POPULAIRE</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Blue Lock Rivals</div>
@@ -1128,7 +1130,7 @@
       </a>
 
       <a href="/codes/volleyball-legends.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="volleyball-legends" src="https://tr.rbxcdn.com/180DAY-572cf4e9e5cec5dd45074a98fa143ca0/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/volleyball-legends.svg'" alt="Volleyball Legends" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="volleyball-legends" src="https://tr.rbxcdn.com/180DAY-572cf4e9e5cec5dd45074a98fa143ca0/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/volleyball-legends.svg'" alt="Volleyball Legends" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-hot">🔥 POPULAIRE</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Volleyball Legends</div>
@@ -1138,7 +1140,7 @@
       </a>
 
       <a href="/codes/steal-a-brainrot.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="steal-a-brainrot" src="https://tr.rbxcdn.com/180DAY-30a62664e838df470ec079b7fc171637/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/steal-a-brainrot.svg'" alt="Steal a Brainrot" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="steal-a-brainrot" src="https://tr.rbxcdn.com/180DAY-30a62664e838df470ec079b7fc171637/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/steal-a-brainrot.svg'" alt="Steal a Brainrot" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-new">🆕 NOUVEAU</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Steal a Brainrot</div>
@@ -1148,7 +1150,7 @@
       </a>
 
       <a href="/codes/build-a-boat-for-treasure.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="build-a-boat-for-treasure" src="https://tr.rbxcdn.com/180DAY-1ca8115eb50594d19be488f3d22ac54e/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/build-a-boat-for-treasure.svg'" alt="Build a Boat for Treasure" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="build-a-boat-for-treasure" src="https://tr.rbxcdn.com/180DAY-1ca8115eb50594d19be488f3d22ac54e/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/build-a-boat-for-treasure.svg'" alt="Build a Boat for Treasure" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-new">🆕 NOUVEAU</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Build a Boat for Treasure</div>
@@ -1158,7 +1160,7 @@
       </a>
 
       <a href="/codes/anime-last-stand.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="anime-last-stand" src="https://tr.rbxcdn.com/180DAY-b3d29df4d10633c51bd9d2a5b6585bde/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-last-stand.svg'" alt="Anime Last Stand" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="anime-last-stand" src="https://tr.rbxcdn.com/180DAY-b3d29df4d10633c51bd9d2a5b6585bde/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/anime-last-stand.svg'" alt="Anime Last Stand" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-new">🆕 NOUVEAU</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Anime Last Stand</div>
@@ -1168,7 +1170,7 @@
       </a>
 
       <a href="/codes/99-nights-in-the-forest.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="99-nights-in-the-forest" src="https://tr.rbxcdn.com/180DAY-c5215eabc21f46723f0084f99bb7622c/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/99-nights-in-the-forest.svg'" alt="99 Nights in the Forest" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="99-nights-in-the-forest" src="https://tr.rbxcdn.com/180DAY-c5215eabc21f46723f0084f99bb7622c/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/99-nights-in-the-forest.svg'" alt="99 Nights in the Forest" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-new">🆕 NOUVEAU</span></div>
         <div class="game-card-body">
           <div class="game-card-title">99 Nights in the Forest</div>
@@ -1178,7 +1180,7 @@
       </a>
 
       <a href="/codes/plants-vs-brainrots.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="plants-vs-brainrots" src="https://tr.rbxcdn.com/180DAY-2ac6fe0e69b8567ab69bc3ca5a2482a0/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/plants-vs-brainrots.svg'" alt="Plants Vs Brainrots" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="plants-vs-brainrots" src="https://tr.rbxcdn.com/180DAY-2ac6fe0e69b8567ab69bc3ca5a2482a0/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/plants-vs-brainrots.svg'" alt="Plants Vs Brainrots" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-new">🆕 NOUVEAU</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Plants Vs Brainrots</div>
@@ -1188,7 +1190,7 @@
       </a>
 
       <a href="/codes/dead-rails.html" class="game-card">
-        <div class="game-card-thumb"><img data-game="dead-rails" src="https://tr.rbxcdn.com/180DAY-da525289338642275e4838a07d685e93/768/432/Image/Png/noFilter" onerror="this.onerror=null;this.src='/images/games/dead-rails.svg'" alt="Dead Rails" class="thumb-svg">
+        <div class="game-card-thumb"><img data-game="dead-rails" src="https://tr.rbxcdn.com/180DAY-da525289338642275e4838a07d685e93/480/270/Image/Webp/noFilter" onerror="this.onerror=null;this.src='/images/games/dead-rails.svg'" alt="Dead Rails" loading="lazy" decoding="async" class="thumb-svg">
           <span class="card-badge badge-new">🆕 NOUVEAU</span></div>
         <div class="game-card-body">
           <div class="game-card-title">Dead Rails</div>
