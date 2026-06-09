@@ -3,6 +3,9 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+  'locked': 'https://tr.rbxcdn.com/180DAY-d25adedff694e3710158bf33115397bf/768/432/Image/Png/noFilter',
+  'defend-ur-base-with-anime': 'https://tr.rbxcdn.com/180DAY-5610a932c392b232214df24d7b73480d/768/432/Image/Png/noFilter',
+  'anime-rng': 'https://tr.rbxcdn.com/180DAY-cb52cb46f7586ef2c76773ae5ca17e0b/768/432/Image/Png/noFilter',
   'ugc-limited': 'https://tr.rbxcdn.com/180DAY-4c03c829dd96b8bd973dab28a0dd7f8a/768/432/Image/Png/noFilter',
   'jujutsu-shenanigans': 'https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/512/512/Image/Png/noFilter',
   'kick-a-lucky-block': 'https://tr.rbxcdn.com/180DAY-3c320528b9f19497a76e238276cdeb53/512/512/Image/Png/noFilter',
@@ -266,6 +269,9 @@ function highlightNav() {
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
+  'locked': 4324259364,
+  'defend-ur-base-with-anime': 10111742174,
+  'anime-rng': 10062593318,
   'ugc-limited': 5114363215,
   'jujutsu-shenanigans': 3508322461,
   'kick-a-lucky-block': 10004244222,
