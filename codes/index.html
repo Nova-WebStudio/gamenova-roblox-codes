@@ -284,7 +284,7 @@
   </div>
 </footer>
 
-<script src="/js/main.js?v=15"></script>
+<script src="/js/main.js?v=16"></script>
 <script>
 const CAT_LABELS = { rpg:'RPG', simulator:'Simulateur', battle:'Combat', anime:'Anime', obby:'Obby', tycoon:'Tycoon' };
 
@@ -433,7 +433,7 @@ const ALL_GAMES = [
   { name:'Anime Defenders',      slug:'anime-defenders',      emoji:'🗡️', cat:'anime',     codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
   { name:'Toilet Tower Defense', slug:'toilet-tower-defense', emoji:'🚽', cat:'battle',    codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
   { name:'Pet Simulator 99',     slug:'pet-simulator-99',     emoji:'🐹', cat:'simulator', codes:0,  iso:'2026-06-01', updated:'1er juin 2026', hot:false },
-  { name:'Bee Swarm Simulator',  slug:'bee-swarm-simulator',  emoji:'🐝', cat:'simulator', codes:14,  iso:'2026-06-07', updated:'7 juin 2026',  hot:true  },
+  { name:'Bee Swarm Simulator',  slug:'bee-swarm-simulator',  emoji:'🐝', cat:'simulator', codes:17,  iso:'2026-06-09', updated:'9 juin 2026',  hot:true  },
   { name:'Anime Vanguards',      slug:'anime-vanguards',      emoji:'⚔️', cat:'anime',     codes:10,  iso:'2026-06-07', updated:'7 juin 2026',  hot:true  },
   { name:'Arsenal',              slug:'arsenal',              emoji:'🔫', cat:'battle',    codes:5,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
   { name:'Jailbreak',            slug:'jailbreak',            emoji:'🚔', cat:'battle',    codes:4,  iso:'2026-06-02', updated:'2 juin 2026',  hot:true  },
@@ -468,6 +468,12 @@ const ALL_GAMES = [
   { name:'Mad City: Chapter 2', slug:'mad-city', emoji:'🚁', cat:'battle', codes:6, iso:'2026-06-07', updated:'7 juin 2026', hot:true },
   { name:'Combat Warriors', slug:'combat-warriors', emoji:'🗡️', cat:'battle', codes:0, iso:'2026-06-07', updated:'7 juin 2026', hot:true },
   { name:'Survive the Killer', slug:'survive-the-killer', emoji:'🔪', cat:'battle', codes:0, iso:'2026-06-07', updated:'7 juin 2026', hot:true },
+  { name:'Peroxide', slug:'peroxide', emoji:'💀', cat:'anime', codes:1, iso:'2026-06-09', updated:'9 juin 2026', hot:true },
+  { name:'Grimoires Era', slug:'grimoires-era', emoji:'📖', cat:'anime', codes:11, iso:'2026-06-09', updated:'9 juin 2026', hot:true },
+  { name:'Pressure', slug:'pressure', emoji:'🌊', cat:'battle', codes:4, iso:'2026-06-09', updated:'9 juin 2026', hot:true },
+  { name:'Muscle Legends', slug:'muscle-legends', emoji:'💪', cat:'simulator', codes:11, iso:'2026-06-09', updated:'9 juin 2026', hot:true },
+  { name:'Anime Dimensions Simulator', slug:'anime-dimensions-simulator', emoji:'🌌', cat:'anime', codes:10, iso:'2026-06-09', updated:'9 juin 2026', hot:true },
+  { name:'Ro-Ghoul', slug:'ro-ghoul', emoji:'👁️', cat:'anime', codes:5, iso:'2026-06-09', updated:'9 juin 2026', hot:true },
 ];
 
 let activeCat='all', activeStatus='all', searchQ='', sortBy='hot';
@@ -521,24 +527,4 @@ document.querySelectorAll('[data-status]').forEach(el=>{
 document.getElementById('dirSearch').addEventListener('input',e=>{
   searchQ=e.target.value.trim().toLowerCase(); visibleCount=100; renderGames();
 });
-document.getElementById('sortSelect').addEventListener('change',e=>{ sortBy=e.target.value; renderGames(); });
-document.getElementById('loadMoreBtn').addEventListener('click',()=>{ visibleCount+=100; renderGames(); });
-
-document.getElementById('listBtn').addEventListener('click',()=>{
-  document.getElementById('listBtn').classList.add('active');
-  document.getElementById('gridBtn').classList.remove('active');
-  const c=document.getElementById('gamesContainer'); c.classList.remove('grid-view'); c.classList.add('games-list'); renderGames();
-});
-document.getElementById('gridBtn').addEventListener('click',()=>{
-  document.getElementById('gridBtn').classList.add('active');
-  document.getElementById('listBtn').classList.remove('active');
-  const c=document.getElementById('gamesContainer'); c.classList.remove('games-list'); c.classList.add('grid-view'); renderGames();
-});
-
-renderGames();
-
-const _cat=new URLSearchParams(location.search).get('cat');
-if(_cat){const chip=document.querySelector(`[data-cat="${_cat}"]`);if(chip)chip.click();}
-</script>
-</body>
-</html>
+document.getElementById('sortSelect').addEventListener('change',e

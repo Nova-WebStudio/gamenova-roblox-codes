@@ -91,6 +91,12 @@ const ROBLOX_THUMBS = {
   'mad-city': 'https://tr.rbxcdn.com/180DAY-e03eb43e97fb7031d8187b808fd7ff27/768/432/Image/Png/noFilter',
   'combat-warriors': 'https://tr.rbxcdn.com/180DAY-a631d6d73730a77f93b02eb3b0e8b06c/768/432/Image/Png/noFilter',
   'survive-the-killer': 'https://tr.rbxcdn.com/180DAY-4f30b695e340b41799ff15643fff9795/768/432/Image/Png/noFilter',
+  'peroxide': '/images/games/peroxide.svg',
+  'grimoires-era': '/images/games/grimoires-era.svg',
+  'pressure': '/images/games/pressure.svg',
+  'muscle-legends': '/images/games/muscle-legends.svg',
+  'anime-dimensions-simulator': '/images/games/anime-dimensions-simulator.svg',
+  'ro-ghoul': '/images/games/ro-ghoul.svg',
 };
 
 /* ---- Copy code ---- */
@@ -170,7 +176,7 @@ const GAMES_INDEX = [
   { name: 'Anime Defenders',      slug: 'anime-defenders',      emoji: '🗡️', codes: 0 },
   { name: 'Toilet Tower Defense', slug: 'toilet-tower-defense', emoji: '🚽', codes: 0 },
   { name: 'Pet Simulator 99',     slug: 'pet-simulator-99',     emoji: '🐹', codes: 0 },
-  { name: 'Bee Swarm Simulator', slug: 'bee-swarm-simulator',  emoji: '🐝', codes: 14 },
+  { name: 'Bee Swarm Simulator', slug: 'bee-swarm-simulator',  emoji: '🐝', codes: 17 },
   { name: 'Anime Vanguards',     slug: 'anime-vanguards',      emoji: '⚔️', codes: 10 },
   { name: 'Arsenal',             slug: 'arsenal',              emoji: '🔫', codes: 5 },
   { name: 'Jailbreak',           slug: 'jailbreak',            emoji: '🚔', codes: 4 },
@@ -205,6 +211,12 @@ const GAMES_INDEX = [
   { name: 'Mad City: Chapter 2', slug: 'mad-city', emoji: '🚁', codes: 6 },
   { name: 'Combat Warriors', slug: 'combat-warriors', emoji: '🗡️', codes: 0 },
   { name: 'Survive the Killer', slug: 'survive-the-killer', emoji: '🔪', codes: 0 },
+  { name: 'Peroxide', slug: 'peroxide', emoji: '💀', codes: 1 },
+  { name: 'Grimoires Era', slug: 'grimoires-era', emoji: '📖', codes: 11 },
+  { name: 'Pressure', slug: 'pressure', emoji: '🌊', codes: 4 },
+  { name: 'Muscle Legends', slug: 'muscle-legends', emoji: '💪', codes: 11 },
+  { name: 'Anime Dimensions Simulator', slug: 'anime-dimensions-simulator', emoji: '🌌', codes: 10 },
+  { name: 'Ro-Ghoul', slug: 'ro-ghoul', emoji: '👁️', codes: 5 },
 ];
 
 function gameResultHTML(g) {
@@ -350,6 +362,12 @@ const ROBLOX_UNIVERSE_IDS = {
   'mad-city': 498490399,
   'combat-warriors': 1390601379,
   'survive-the-killer': 1489026993,
+  'peroxide': 3419284255,
+  'grimoires-era': 4886369361,
+  'pressure': 4367208330,
+  'muscle-legends': 1268927906,
+  'anime-dimensions-simulator': 2655311011,
+  'ro-ghoul': 914010731,
 };
 
 const _thumbCache = {};
