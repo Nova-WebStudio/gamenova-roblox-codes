@@ -492,4 +492,49 @@ document.addEventListener('DOMContentLoaded', () => {
   highlightNav();
   loadRobloxThumbnails();
   initYouTubeVideos();
+  renderNewGames();
 });
+
+/* ---- Nouveaux jeux (accueil) : rendu dynamique trié par date ----
+   Source unique : tableau NEW_GAMES ci-dessous. Pour mettre un jeu en avant,
+   ajoute simplement une entrée en tête (date au format AAAA-MM-JJ). Les 8 plus
+   récents s'affichent automatiquement ; les cartes statiques du HTML servent de
+   repli SEO et sont remplacées au chargement. */
+const NEW_GAMES = [
+  { slug:'anime-squadron', name:'Anime Squadron', codes:11, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-08ea7a58db9a3d940ad2977ffa4b85ae/768/432/Image/Png/noFilter', desc:'Lane battler anime : invoque ta squad et défends contre les vagues et les boss. 11 codes (Gems, Trait Shards).' },
+  { slug:'anime-warriors-iii', name:'Anime Warriors III', codes:0, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-8d6f44923235ed0d52df201e13a77715/768/432/Image/Png/noFilter', desc:'RPG de summon anime : invoque des guerriers et combats des boss. Récompenses via la boîte mail.' },
+  { slug:'build-a-ring-farm', name:'Build A Ring Farm', codes:9, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-5c24b09b1d9bdfa44deadb955fd8d2fb/768/432/Image/Png/noFilter', desc:'Farm incrémental : plante, mute et revends tes cultures sur une ferme en anneaux. 9 codes (seeds, sprays).' },
+  { slug:'broken-blade', name:'Broken Blade', codes:11, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-b3b88034a0ab46ab369abeab783409da/768/432/Image/Png/noFilter', desc:'ARPG nordique sans cooldown : forge tes armes et farme le Boss Rush. 11 codes (Holy, Sky Keys).' },
+  { slug:'dandys-world', name:'Dandy’s World', codes:1, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-46c53b6213dcedc7dc3738e6f20d3baa/768/432/Image/Png/noFilter', desc:'Survie-horreur : complète les machines et fuis les Twisteds. 1 code actif (Ichor).' },
+  { slug:'universal-tower-defense-x', name:'Universal Tower Defense X', codes:18, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-6f54847ff8c83474f83f01eb49b55054/768/432/Image/Webp/noFilter', desc:'Tower defense crossover : invoque tes unités et défends les vagues. 18 codes (Rerolls, Gems).' },
+  { slug:'99-nights-in-the-forest', name:'99 Nights in the Forest', codes:2, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-c5215eabc21f46723f0084f99bb7622c/768/432/Image/Png/noFilter', desc:'Survie coopérative : tiens 99 nuits face au Cerf et aux cultistes. 2 codes (gemmes).' },
+  { slug:'adopt-me', name:'Adopt Me!', codes:0, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-eccebfe3d7d1f3ca377768227d829eb1/768/432/Image/Png/noFilter', desc:'Jeu de rôle d’adoption et de trading de familiers. Pas de codes actifs actuellement.' },
+  { slug:'anime-fighting-simulator-reborn', name:'Anime Fighting Simulator Reborn', codes:4, date:'2026-06-09', updated:'9 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-ad195be47fec95664c1c3176235720b2/768/432/Image/Webp/noFilter', desc:'Entraîne tes 6 stats et deviens le plus fort. 4 codes (Yen, Chikara Shards).' },
+  { slug:'kick-a-lucky-block', name:'Kick a Lucky Block', codes:8, date:'2026-06-09', updated:'9 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-829dd7deb9a2a04609c27a366096f07d/768/432/Image/Webp/noFilter', desc:'Frappe des lucky blocks, collectionne pets et mutations. 8 codes actifs.' },
+  { slug:'catch-and-tame', name:'Catch and Tame', codes:1, date:'2026-06-08', updated:'8 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-0d68f08d3dc380ca03a0159c40640463/768/432/Image/Webp/noFilter', desc:'Capture et apprivoise des créatures dans un monde ouvert. 1 code actif.' },
+  { slug:'blue-lock-rivals', name:'Blue Lock Rivals', codes:5, date:'2026-06-08', updated:'8 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-6c3d95dac7c3d279e20cfa9ef1b27ba5/768/432/Image/Png/noFilter', desc:'Football inspiré de Blue Lock : styles, flows et abilities. 5 codes (spins, rerolls).' }
+];
+
+function renderNewGames(){
+  const grid = document.getElementById('newGamesGrid');
+  if (!grid || !Array.isArray(NEW_GAMES) || !NEW_GAMES.length) return;
+  const games = NEW_GAMES.slice().sort((a,b)=> (b.date||'').localeCompare(a.date||'')).slice(0, 8);
+  const esc = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  grid.innerHTML = games.map(g => {
+    const codesLabel = g.codes > 0
+      ? ('✅ ' + g.codes + ' code' + (g.codes>1?'s':'') + ' actif' + (g.codes>1?'s':''))
+      : 'ℹ️ Pas de codes';
+    const thumb = g.thumb || ('/images/games/' + g.slug + '.svg');
+    return '<a href="/codes/' + g.slug + '.html" class="game-card">'
+      + '<div class="game-card-thumb">'
+      + '<img data-game="' + g.slug + '" src="' + thumb + '" onerror="this.onerror=null;this.src=\'/images/games/' + g.slug + '.svg\'" alt="' + esc(g.name) + '" loading="lazy" decoding="async" class="thumb-svg">'
+      + '<span class="card-badge badge-hot">🆕 NOUVEAU</span>'
+      + '</div>'
+      + '<div class="game-card-body">'
+      + '<div class="game-card-title">' + esc(g.name) + '</div>'
+      + '<div class="game-card-meta"><span class="meta-codes">' + codesLabel + '</span><span class="meta-date">Mis à jour le ' + esc(g.updated) + '</span></div>'
+      + '<div class="game-card-desc">' + esc(g.desc) + '</div>'
+      + '<span class="card-cta">🎁 Voir les codes</span>'
+      + '</div></a>';
+  }).join('');
+}
