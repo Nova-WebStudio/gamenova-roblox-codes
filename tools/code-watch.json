@@ -1,0 +1,22 @@
+{
+  "_comment": "Surveillance automatique des sources de codes (description du jeu Roblox + shout du groupe). La tache quotidienne lit 'hotGames', compare a 'snapshots', detecte les nouveaux codes potentiels, les verifie (2 sources) puis publie, et met a jour 'snapshots'. Ne pas editer 'snapshots' a la main. 'id' peut etre un placeId OU un universeId : la tache auto-resout (si games?universeIds=<id> renvoie data vide, traiter <id> comme placeId via apis.roblox.com/universes/v1/places/<id>/universe).",
+  "version": 1,
+  "hotGames": {
+    "blox-fruits": { "id": 2753915549, "groupId": null },
+    "grow-a-garden": { "id": 7436755782, "groupId": null },
+    "steal-a-brainrot": { "id": 7709344486, "groupId": null },
+    "blade-ball": { "id": 4777817887, "groupId": null },
+    "blue-lock-rivals": { "id": 6325068386, "groupId": null },
+    "anime-last-stand": { "id": 4509896324, "groupId": null },
+    "fisch": { "id": 5750914919, "groupId": null },
+    "volleyball-legends": { "id": 6931042565, "groupId": null },
+    "anime-vanguards": { "id": 5578556129, "groupId": null },
+    "pet-simulator-99": { "id": 3317771874, "groupId": null },
+    "king-legacy": { "id": 6096648965, "groupId": null },
+    "fruit-battlegrounds": { "id": 3457700596, "groupId": null },
+    "tower-defense-simulator": { "id": 1176784616, "groupId": null },
+    "world-fighters": { "id": 10032271327, "groupId": null },
+    "noob-incremental": { "id": 9965411707, "groupId": null }
+  },
+  "snapshots": {}
+}
