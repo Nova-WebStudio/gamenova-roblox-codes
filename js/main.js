@@ -97,6 +97,12 @@ const ROBLOX_THUMBS = {
   'muscle-legends': '/images/games/muscle-legends.svg',
   'anime-dimensions-simulator': '/images/games/anime-dimensions-simulator.svg',
   'ro-ghoul': '/images/games/ro-ghoul.svg',
+  'evade': 'https://tr.rbxcdn.com/180DAY-bf95a86e5f5e37bf61a5f33401e95deb/512/512/Image/Png/noFilter',
+  'dragon-adventures': 'https://tr.rbxcdn.com/180DAY-be3b9158d0827a1a5f9ac66c51888b26/512/512/Image/Png/noFilter',
+  'car-dealership-tycoon': 'https://tr.rbxcdn.com/180DAY-2f49b71e385206d055e54562a79f4b81/512/512/Image/Png/noFilter',
+  'pls-donate': 'https://tr.rbxcdn.com/180DAY-a8c2faf226f0d89bed86a7d5e9683789/512/512/Image/Png/noFilter',
+  'wizard-alchemy': 'https://tr.rbxcdn.com/180DAY-9446c5c0b8ba7bdc6ed1ed6de1ed5c7a/512/512/Image/Png/noFilter',
+  'restaurant-tycoon-3': 'https://tr.rbxcdn.com/180DAY-5537cbddeaee05dea19e0cbf8f452353/512/512/Image/Png/noFilter',
 };
 
 /* ---- Copy code ---- */
@@ -164,14 +170,14 @@ const GAMES_INDEX = [
   { name: 'Brookhaven',           slug: 'brookhaven',           emoji: '🏙️', codes: 0 },
   { name: 'Tower of Hell',        slug: 'tower-of-hell',        emoji: '🗼', codes: 0 },
   { name: 'Murder Mystery 2',     slug: 'murder-mystery-2',     emoji: '🔪', codes: 0 },
-  { name: 'Shindo Life',          slug: 'shindo-life',          emoji: '🌀', codes: 11 },
+  { name: 'Shindo Life',          slug: 'shindo-life',          emoji: '🌀', codes: 18 },
   { name: 'Royale High',          slug: 'royale-high',          emoji: '👑', codes: 1 },
   { name: 'Fruit Battlegrounds',  slug: 'fruit-battlegrounds',  emoji: '💥', codes: 6 },
   { name: 'King Legacy',          slug: 'king-legacy',          emoji: '⚡', codes: 8 },
   { name: 'Encounters',           slug: 'encounters',           emoji: '👾', codes: 1 },
   { name: 'Rivals',               slug: 'rivals',               emoji: '🎯', codes: 9 },
   { name: 'Work at a Pizza Place',slug: 'work-at-a-pizza-place',emoji: '🍕', codes: 0 },
-  { name: 'Grow a Garden',        slug: 'grow-a-garden',        emoji: '🌱', codes: 2 },
+  { name: 'Grow a Garden',        slug: 'grow-a-garden',        emoji: '🌱', codes: 3 },
   { name: 'Blade Ball',           slug: 'blade-ball',           emoji: '⚔️', codes: 23 },
   { name: 'Anime Defenders',      slug: 'anime-defenders',      emoji: '🗡️', codes: 0 },
   { name: 'Toilet Tower Defense', slug: 'toilet-tower-defense', emoji: '🚽', codes: 0 },
@@ -181,7 +187,7 @@ const GAMES_INDEX = [
   { name: 'Arsenal',             slug: 'arsenal',              emoji: '🔫', codes: 5 },
   { name: 'Jailbreak',           slug: 'jailbreak',            emoji: '🚔', codes: 4 },
   { name: 'BedWars',             slug: 'bedwars',              emoji: '🛏️', codes: 0 },
-  { name: 'Fisch', slug: 'fisch', emoji: '🐟', codes: 10 },
+  { name: 'Fisch', slug: 'fisch', emoji: '🐟', codes: 23 },
   { name: 'Dress to Impress', slug: 'dress-to-impress', emoji: '👗', codes: 8 },
   { name: 'Da Hood', slug: 'da-hood', emoji: '🔫', codes: 6 },
   { name: 'Bubble Gum Simulator Infinity', slug: 'bubble-gum-simulator-infinity', emoji: '🫧', codes: 5 },
@@ -217,6 +223,12 @@ const GAMES_INDEX = [
   { name: 'Muscle Legends', slug: 'muscle-legends', emoji: '💪', codes: 11 },
   { name: 'Anime Dimensions Simulator', slug: 'anime-dimensions-simulator', emoji: '🌌', codes: 10 },
   { name: 'Ro-Ghoul', slug: 'ro-ghoul', emoji: '👁️', codes: 5 },
+  { name: 'Evade', slug: 'evade', emoji: '👻', codes: 0 },
+  { name: 'Dragon Adventures', slug: 'dragon-adventures', emoji: '🐉', codes: 6 },
+  { name: 'Car Dealership Tycoon', slug: 'car-dealership-tycoon', emoji: '🚗', codes: 14 },
+  { name: 'PLS DONATE', slug: 'pls-donate', emoji: '💸', codes: 7 },
+  { name: 'Wizard Alchemy', slug: 'wizard-alchemy', emoji: '🧙', codes: 10 },
+  { name: 'Restaurant Tycoon 3', slug: 'restaurant-tycoon-3', emoji: '🍕', codes: 11 },
 ];
 
 function gameResultHTML(g) {
@@ -368,6 +380,12 @@ const ROBLOX_UNIVERSE_IDS = {
   'muscle-legends': 1268927906,
   'anime-dimensions-simulator': 2655311011,
   'ro-ghoul': 914010731,
+  'evade': 3647333358,
+  'dragon-adventures': 1235188606,
+  'car-dealership-tycoon': 605887098,
+  'pls-donate': 3317679266,
+  'wizard-alchemy': 10006104044,
+  'restaurant-tycoon-3': 7094518649,
 };
 
 const _thumbCache = {};
