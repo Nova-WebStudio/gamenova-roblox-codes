@@ -108,6 +108,10 @@ const ROBLOX_THUMBS = {
   'pls-donate': 'https://tr.rbxcdn.com/180DAY-a8c2faf226f0d89bed86a7d5e9683789/512/512/Image/Png/noFilter',
   'wizard-alchemy': 'https://tr.rbxcdn.com/180DAY-9446c5c0b8ba7bdc6ed1ed6de1ed5c7a/512/512/Image/Png/noFilter',
   'restaurant-tycoon-3': 'https://tr.rbxcdn.com/180DAY-5537cbddeaee05dea19e0cbf8f452353/512/512/Image/Png/noFilter',
+  'clover-retribution': '/images/games/clover-retribution.svg',
+  'project-mugetsu': '/images/games/project-mugetsu.svg',
+  'dragon-blox': '/images/games/dragon-blox.svg',
+  'grand-piece-online': '/images/games/grand-piece-online.svg',
 };
 
 /* ---- Copy code ---- */
@@ -160,7 +164,7 @@ const GAMES_INDEX = [
   { name: 'Construire une Ferme d\'Anneaux', slug: 'ferme-d-anneaux', emoji: '💍', codes: 0 },
   { name: 'Vendre des Citrons', slug: 'vendre-des-citrons', emoji: '🍋', codes: 0 },
   { name: 'World Fighters', slug: 'world-fighters', emoji: '🥋', codes: 2 },
-  { name: 'Noob Incremental', slug: 'noob-incremental', emoji: '🧱', codes: 2 },
+  { name: 'Noob Incremental', slug: 'noob-incremental', emoji: '🧱', codes: 17 },
   { name: 'My Gaming Cafe', slug: 'my-gaming-cafe', emoji: '💻', codes: 0 },
   { name: 'Catch and Tame', slug: 'catch-and-tame', emoji: '🐟', codes: 1 },
   { name: 'Build A Ring Farm', slug: 'build-a-ring-farm', emoji: '🌽', codes: 9 },
@@ -205,7 +209,7 @@ const GAMES_INDEX = [
   { name: 'Volleyball Legends', slug: 'volleyball-legends', emoji: '🏐', codes: 3 },
   { name: 'Steal a Brainrot', slug: 'steal-a-brainrot', emoji: '🧠', codes: 0 },
   { name: 'Build a Boat for Treasure', slug: 'build-a-boat-for-treasure', emoji: '🚤', codes: 7 },
-  { name: 'Anime Last Stand', slug: 'anime-last-stand', emoji: '🗡️', codes: 5 },
+  { name: 'Anime Last Stand', slug: 'anime-last-stand', emoji: '🗡️', codes: 21 },
   { name: '99 Nights in the Forest', slug: '99-nights-in-the-forest', emoji: '🔦', codes: 2 },
   { name: 'Plants Vs Brainrots', slug: 'plants-vs-brainrots', emoji: '🌻', codes: 5 },
   { name: 'Dead Rails', slug: 'dead-rails', emoji: '🚂', codes: 0 },
@@ -227,10 +231,10 @@ const GAMES_INDEX = [
   { name: 'Mad City: Chapter 2', slug: 'mad-city', emoji: '🚁', codes: 6 },
   { name: 'Combat Warriors', slug: 'combat-warriors', emoji: '🗡️', codes: 0 },
   { name: 'Survive the Killer', slug: 'survive-the-killer', emoji: '🔪', codes: 0 },
-  { name: 'Peroxide', slug: 'peroxide', emoji: '💀', codes: 1 },
+  { name: 'Peroxide', slug: 'peroxide', emoji: '💀', codes: 4 },
   { name: 'Grimoires Era', slug: 'grimoires-era', emoji: '📖', codes: 11 },
   { name: 'Pressure', slug: 'pressure', emoji: '🌊', codes: 4 },
-  { name: 'Muscle Legends', slug: 'muscle-legends', emoji: '💪', codes: 11 },
+  { name: 'Muscle Legends', slug: 'muscle-legends', emoji: '💪', codes: 14 },
   { name: 'Anime Dimensions Simulator', slug: 'anime-dimensions-simulator', emoji: '🌌', codes: 10 },
   { name: 'Ro-Ghoul', slug: 'ro-ghoul', emoji: '👁️', codes: 5 },
   { name: 'Evade', slug: 'evade', emoji: '👻', codes: 0 },
@@ -239,6 +243,10 @@ const GAMES_INDEX = [
   { name: 'PLS DONATE', slug: 'pls-donate', emoji: '💸', codes: 7 },
   { name: 'Wizard Alchemy', slug: 'wizard-alchemy', emoji: '🧙', codes: 10 },
   { name: 'Restaurant Tycoon 3', slug: 'restaurant-tycoon-3', emoji: '🍕', codes: 11 },
+  { name: 'Clover Retribution', slug: 'clover-retribution', emoji: '🍀', codes: 28 },
+  { name: 'Project Mugetsu', slug: 'project-mugetsu', emoji: '⚡', codes: 4 },
+  { name: 'Dragon Blox', slug: 'dragon-blox', emoji: '🐉', codes: 82 },
+  { name: 'Grand Piece Online', slug: 'grand-piece-online', emoji: '🌊', codes: 3 },
 ];
 
 function gameResultHTML(g) {
@@ -401,6 +409,10 @@ const ROBLOX_UNIVERSE_IDS = {
   'pls-donate': 3317679266,
   'wizard-alchemy': 10006104044,
   'restaurant-tycoon-3': 7094518649,
+  'clover-retribution': 10912405603,
+  'project-mugetsu': 9447079542,
+  'dragon-blox': 3177438863,
+  'grand-piece-online': 1730877806,
 };
 
 const _thumbCache = {};
@@ -455,86 +467,4 @@ function initYouTubeVideos() {
   const slug = m[1];
   const game = (GAMES_INDEX.find(g => g.slug === slug) || {}).name || slug.replace(/-/g, ' ');
   const query = game + ' Roblox';
-  const cacheKey = 'yt_' + slug;
-
-  try {
-    const c = JSON.parse(localStorage.getItem(cacheKey) || 'null');
-    if (c && (Date.now() - c.t < 43200000) && c.items && c.items.length) {
-      renderYouTube(grid, c.items); return;
-    }
-  } catch (e) {}
-
-  const since = new Date(Date.now() - 180 * 86400000).toISOString();
-  const url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=3'
-            + '&order=viewCount&relevanceLanguage=fr'
-            + '&publishedAfter=' + encodeURIComponent(since)
-            + '&q=' + encodeURIComponent(query)
-            + '&key=' + YOUTUBE_API_KEY;
-
-  fetch(url)
-    .then(r => r.json())
-    .then(j => {
-      const items = (j.items || [])
-        .map(it => ({ id: it.id && it.id.videoId, title: it.snippet && it.snippet.title }))
-        .filter(x => x.id);
-      if (!items.length) return;
-      try { localStorage.setItem(cacheKey, JSON.stringify({ t: Date.now(), items })); } catch (e) {}
-      renderYouTube(grid, items);
-    })
-    .catch(() => {});
-}
-
-/* ---- Init ---- */
-document.addEventListener('DOMContentLoaded', () => {
-  initMobileNav();
-  initSearch();
-  initNewsletter();
-  highlightNav();
-  loadRobloxThumbnails();
-  initYouTubeVideos();
-  renderNewGames();
-});
-
-/* ---- Nouveaux jeux (accueil) : rendu dynamique trié par date ----
-   Source unique : tableau NEW_GAMES ci-dessous. Pour mettre un jeu en avant,
-   ajoute simplement une entrée en tête (date au format AAAA-MM-JJ). Les 8 plus
-   récents s'affichent automatiquement ; les cartes statiques du HTML servent de
-   repli SEO et sont remplacées au chargement. */
-const NEW_GAMES = [
-  { slug:'anime-squadron', name:'Anime Squadron', codes:11, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-08ea7a58db9a3d940ad2977ffa4b85ae/768/432/Image/Png/noFilter', desc:'Lane battler anime : invoque ta squad et défends contre les vagues et les boss. 11 codes (Gems, Trait Shards).' },
-  { slug:'anime-warriors-iii', name:'Anime Warriors III', codes:0, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-8d6f44923235ed0d52df201e13a77715/768/432/Image/Png/noFilter', desc:'RPG de summon anime : invoque des guerriers et combats des boss. Récompenses via la boîte mail.' },
-  { slug:'build-a-ring-farm', name:'Build A Ring Farm', codes:9, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-5c24b09b1d9bdfa44deadb955fd8d2fb/768/432/Image/Png/noFilter', desc:'Farm incrémental : plante, mute et revends tes cultures sur une ferme en anneaux. 9 codes (seeds, sprays).' },
-  { slug:'broken-blade', name:'Broken Blade', codes:11, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-b3b88034a0ab46ab369abeab783409da/768/432/Image/Png/noFilter', desc:'ARPG nordique sans cooldown : forge tes armes et farme le Boss Rush. 11 codes (Holy, Sky Keys).' },
-  { slug:'dandys-world', name:'Dandy’s World', codes:1, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-46c53b6213dcedc7dc3738e6f20d3baa/768/432/Image/Png/noFilter', desc:'Survie-horreur : complète les machines et fuis les Twisteds. 1 code actif (Ichor).' },
-  { slug:'universal-tower-defense-x', name:'Universal Tower Defense X', codes:18, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-6f54847ff8c83474f83f01eb49b55054/768/432/Image/Webp/noFilter', desc:'Tower defense crossover : invoque tes unités et défends les vagues. 18 codes (Rerolls, Gems).' },
-  { slug:'99-nights-in-the-forest', name:'99 Nights in the Forest', codes:2, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-c5215eabc21f46723f0084f99bb7622c/768/432/Image/Png/noFilter', desc:'Survie coopérative : tiens 99 nuits face au Cerf et aux cultistes. 2 codes (gemmes).' },
-  { slug:'adopt-me', name:'Adopt Me!', codes:0, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-eccebfe3d7d1f3ca377768227d829eb1/768/432/Image/Png/noFilter', desc:'Jeu de rôle d’adoption et de trading de familiers. Pas de codes actifs actuellement.' },
-  { slug:'anime-fighting-simulator-reborn', name:'Anime Fighting Simulator Reborn', codes:4, date:'2026-06-09', updated:'9 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-ad195be47fec95664c1c3176235720b2/768/432/Image/Webp/noFilter', desc:'Entraîne tes 6 stats et deviens le plus fort. 4 codes (Yen, Chikara Shards).' },
-  { slug:'kick-a-lucky-block', name:'Kick a Lucky Block', codes:8, date:'2026-06-09', updated:'9 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-829dd7deb9a2a04609c27a366096f07d/768/432/Image/Webp/noFilter', desc:'Frappe des lucky blocks, collectionne pets et mutations. 8 codes actifs.' },
-  { slug:'catch-and-tame', name:'Catch and Tame', codes:1, date:'2026-06-08', updated:'8 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-0d68f08d3dc380ca03a0159c40640463/768/432/Image/Webp/noFilter', desc:'Capture et apprivoise des créatures dans un monde ouvert. 1 code actif.' },
-  { slug:'blue-lock-rivals', name:'Blue Lock Rivals', codes:5, date:'2026-06-08', updated:'8 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-6c3d95dac7c3d279e20cfa9ef1b27ba5/768/432/Image/Png/noFilter', desc:'Football inspiré de Blue Lock : styles, flows et abilities. 5 codes (spins, rerolls).' }
-];
-
-function renderNewGames(){
-  const grid = document.getElementById('newGamesGrid');
-  if (!grid || !Array.isArray(NEW_GAMES) || !NEW_GAMES.length) return;
-  const games = NEW_GAMES.slice().sort((a,b)=> (b.date||'').localeCompare(a.date||'')).slice(0, 8);
-  const esc = s => String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-  grid.innerHTML = games.map(g => {
-    const codesLabel = g.codes > 0
-      ? ('✅ ' + g.codes + ' code' + (g.codes>1?'s':'') + ' actif' + (g.codes>1?'s':''))
-      : 'ℹ️ Pas de codes';
-    const thumb = g.thumb || ('/images/games/' + g.slug + '.svg');
-    return '<a href="/codes/' + g.slug + '.html" class="game-card">'
-      + '<div class="game-card-thumb">'
-      + '<img data-game="' + g.slug + '" src="' + thumb + '" onerror="this.onerror=null;this.src=\'/images/games/' + g.slug + '.svg\'" alt="' + esc(g.name) + '" loading="lazy" decoding="async" class="thumb-svg">'
-      + '<span class="card-badge badge-hot">🆕 NOUVEAU</span>'
-      + '</div>'
-      + '<div class="game-card-body">'
-      + '<div class="game-card-title">' + esc(g.name) + '</div>'
-      + '<div class="game-card-meta"><span class="meta-codes">' + codesLabel + '</span><span class="meta-date">Mis à jour le ' + esc(g.updated) + '</span></div>'
-      + '<div class="game-card-desc">' + esc(g.desc) + '</div>'
-      + '<span class="card-cta">🎁 Voir les codes</span>'
-      + '</div></a>';
-  }).join('');
-}
+  const cacheKey =

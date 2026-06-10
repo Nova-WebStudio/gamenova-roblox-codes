@@ -18,5 +18,21 @@
     "world-fighters": { "id": 10032271327, "groupId": 33910482 },
     "noob-incremental": { "id": 9965411707, "groupId": 356937272 }
   },
-  "snapshots": {}
+  "snapshots": {
+    "blox-fruits":             { "ts": "2026-06-10", "desc": null, "shout": null },
+    "grow-a-garden":           { "ts": "2026-06-10", "desc": null, "shout": null },
+    "steal-a-brainrot":        { "ts": "2026-06-10", "desc": null, "shout": null },
+    "blade-ball":              { "ts": "2026-06-10", "desc": null, "shout": null },
+    "blue-lock-rivals":        { "ts": "2026-06-10", "desc": null, "shout": null },
+    "anime-last-stand":        { "ts": "2026-06-10", "desc": null, "shout": null },
+    "fisch":                   { "ts": "2026-06-10", "desc": null, "shout": null },
+    "volleyball-legends":      { "ts": "2026-06-10", "desc": null, "shout": null },
+    "anime-vanguards":         { "ts": "2026-06-10", "desc": null, "shout": null },
+    "pet-simulator-99":        { "ts": "2026-06-10", "desc": null, "shout": null },
+    "king-legacy":             { "ts": "2026-06-10", "desc": null, "shout": null },
+    "fruit-battlegrounds":     { "ts": "2026-06-10", "desc": null, "shout": null },
+    "tower-defense-simulator": { "ts": "2026-06-10", "desc": null, "shout": null },
+    "world-fighters":          { "ts": "2026-06-10", "desc": null, "shout": null },
+    "noob-incremental":        { "ts": "2026-06-10", "desc": null, "shout": null }
+  }
 }
