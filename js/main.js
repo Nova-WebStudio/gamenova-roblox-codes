@@ -96,23 +96,23 @@ const ROBLOX_THUMBS = {
   'mad-city': 'https://tr.rbxcdn.com/180DAY-e03eb43e97fb7031d8187b808fd7ff27/768/432/Image/Png/noFilter',
   'combat-warriors': 'https://tr.rbxcdn.com/180DAY-a631d6d73730a77f93b02eb3b0e8b06c/768/432/Image/Png/noFilter',
   'survive-the-killer': 'https://tr.rbxcdn.com/180DAY-4f30b695e340b41799ff15643fff9795/768/432/Image/Png/noFilter',
-  'peroxide': '/images/games/peroxide.svg',
-  'grimoires-era': '/images/games/grimoires-era.svg',
-  'pressure': '/images/games/pressure.svg',
-  'muscle-legends': '/images/games/muscle-legends.svg',
-  'anime-dimensions-simulator': '/images/games/anime-dimensions-simulator.svg',
-  'ro-ghoul': '/images/games/ro-ghoul.svg',
+  'peroxide': 'https://tr.rbxcdn.com/180DAY-be9eec5f81d445dea3b3e0971411dd2b/500/280/Image/Jpeg/noFilter',
+  'grimoires-era': 'https://tr.rbxcdn.com/180DAY-4ecd0b70b1defc6a712348e3c0230be2/500/280/Image/Jpeg/noFilter',
+  'pressure': 'https://tr.rbxcdn.com/180DAY-5b1179410249512e675aafa90e4fe1e0/500/280/Image/Jpeg/noFilter',
+  'muscle-legends': 'https://tr.rbxcdn.com/180DAY-3a8fdfdb456058592c8a64bef231c27a/500/280/Image/Jpeg/noFilter',
+  'anime-dimensions-simulator': 'https://tr.rbxcdn.com/180DAY-cd6f5a5f32c24fc32e1813f8213338da/500/280/Image/Jpeg/noFilter',
+  'ro-ghoul': 'https://tr.rbxcdn.com/180DAY-114fec0205e2c92fd880fd3aa95777dd/500/280/Image/Jpeg/noFilter',
   'evade': 'https://tr.rbxcdn.com/180DAY-bf95a86e5f5e37bf61a5f33401e95deb/512/512/Image/Png/noFilter',
   'dragon-adventures': 'https://tr.rbxcdn.com/180DAY-be3b9158d0827a1a5f9ac66c51888b26/512/512/Image/Png/noFilter',
   'car-dealership-tycoon': 'https://tr.rbxcdn.com/180DAY-2f49b71e385206d055e54562a79f4b81/512/512/Image/Png/noFilter',
   'pls-donate': 'https://tr.rbxcdn.com/180DAY-a8c2faf226f0d89bed86a7d5e9683789/512/512/Image/Png/noFilter',
   'wizard-alchemy': 'https://tr.rbxcdn.com/180DAY-9446c5c0b8ba7bdc6ed1ed6de1ed5c7a/512/512/Image/Png/noFilter',
   'restaurant-tycoon-3': 'https://tr.rbxcdn.com/180DAY-5537cbddeaee05dea19e0cbf8f452353/512/512/Image/Png/noFilter',
-  'clover-retribution': '/images/games/clover-retribution.svg',
-  'project-mugetsu': '/images/games/project-mugetsu.svg',
+  'clover-retribution': 'https://tr.rbxcdn.com/180DAY-d99b5a21020011e2bef430a352b3fa4b/500/280/Image/Jpeg/noFilter',
+  'project-mugetsu': 'https://tr.rbxcdn.com/180DAY-45c83a7355a6e29a684259c12859f40e/500/280/Image/Jpeg/noFilter',
   'dragon-blox': '/images/games/dragon-blox.svg',
-  'grand-piece-online': '/images/games/grand-piece-online.svg',
-  'scroll-a-brainrot': '/images/games/scroll-a-brainrot.svg',
+  'grand-piece-online': 'https://tr.rbxcdn.com/180DAY-5dfa86c9bab8fb4f1641f42ce7b55c17/500/280/Image/Jpeg/noFilter',
+  'scroll-a-brainrot': 'https://tr.rbxcdn.com/180DAY-73e66eb0f5210e6f36122f97eb56087e/500/280/Image/Jpeg/noFilter',
   'spin-a-brainrot': '/images/games/spin-a-brainrot.svg',
   'be-a-brainrot': '/images/games/be-a-brainrot.svg',
   'anime-rift-tower-defense': '/images/games/anime-rift-tower-defense.svg',
@@ -461,28 +461,4 @@ async function loadRobloxThumbnails() {
   }
 }
 
-/* ---- Vidéos YouTube (3 plus populaires par jeu) ---- */
-// Colle ta clé API YouTube Data v3 ici (gratuite, restreinte au domaine zoneblox.com) :
-const YOUTUBE_API_KEY = 'AIzaSyCvalvjmUJryGAP_Xg_NEjhrwk_7GAbD3A';
-
-function renderYouTube(grid, items) {
-  grid.innerHTML = items.map(v => `
-    <div class="video-card">
-      <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/${v.id}" title="${(v.title || '').replace(/"/g, '&quot;')}" allowfullscreen loading="lazy"></iframe>
-      </div>
-      <div class="video-label">🎬 ${v.title || ''}</div>
-    </div>`).join('');
-}
-
-function initYouTubeVideos() {
-  const grid = document.querySelector('#tab-videos .videos-grid');
-  if (!grid) return;
-  if (!YOUTUBE_API_KEY) return;
-
-  const m = location.pathname.match(/\/codes\/([a-z0-9-]+)\.html/i);
-  if (!m) return;
-  const slug = m[1];
-  const game = (GAMES_INDEX.find(g => g.slug === slug) || {}).name || slug.replace(/-/g, ' ');
-  const query = game + ' Roblox';
-  const cacheKey =
+/* ---- Vidéos YouTube 
