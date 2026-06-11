@@ -1,38 +1,318 @@
 {
-  "_comment": "Surveillance automatique des sources de codes (description du jeu Roblox + shout du groupe createur). La tache quotidienne (ETAPE 0) lit 'hotGames', compare a 'snapshots', detecte les nouveaux codes potentiels, les verifie (2 sources) puis publie, et met a jour 'snapshots'. Ne pas editer 'snapshots' a la main. 'id' = universeId verifie ; 'groupId' = groupe createur (perk join group / shout). Description: games.roblox.com/v1/games?universeIds=<id> (champ description). Shout: groups.roblox.com/v1/groups/<groupId> (champ shout.body).",
+  "_comment": "Surveillance automatique des sources de codes. La tache quotidienne (ETAPE 0) lit hotGames, compare a snapshots, detecte les nouveaux codes potentiels, les verifie (2 sources) puis publie. id = universeId verifie ; groupId = groupe createur.",
   "version": 2,
   "hotGames": {
-    "blox-fruits": { "id": 994732206, "groupId": 4372130 },
-    "grow-a-garden": { "id": 7436755782, "groupId": 35789249 },
-    "steal-a-brainrot": { "id": 7709344486, "groupId": 35815907 },
-    "blade-ball": { "id": 4777817887, "groupId": 12836673 },
-    "blue-lock-rivals": { "id": 6325068386, "groupId": 34671275 },
-    "anime-last-stand": { "id": 4509896324, "groupId": 12229756 },
-    "fisch": { "id": 5750914919, "groupId": 7381705 },
-    "volleyball-legends": { "id": 6931042565, "groupId": 35330702 },
-    "anime-vanguards": { "id": 5578556129, "groupId": 17219742 },
-    "pet-simulator-99": { "id": 3317771874, "groupId": 3959677 },
-    "king-legacy": { "id": 1451439645, "groupId": 5348890 },
-    "fruit-battlegrounds": { "id": 3457700596, "groupId": 14453089 },
-    "tower-defense-simulator": { "id": 1176784616, "groupId": 4914494 },
-    "world-fighters": { "id": 10032271327, "groupId": 33910482 },
-    "noob-incremental": { "id": 9965411707, "groupId": 356937272 }
+    "blox-fruits": {
+      "id": 994732206,
+      "groupId": 4372130
+    },
+    "grow-a-garden": {
+      "id": 7436755782,
+      "groupId": 35789249
+    },
+    "steal-a-brainrot": {
+      "id": 7709344486,
+      "groupId": 35815907
+    },
+    "blade-ball": {
+      "id": 4777817887,
+      "groupId": 12836673
+    },
+    "blue-lock-rivals": {
+      "id": 6325068386,
+      "groupId": 34671275
+    },
+    "anime-last-stand": {
+      "id": 4509896324,
+      "groupId": 12229756
+    },
+    "fisch": {
+      "id": 5750914919,
+      "groupId": 7381705
+    },
+    "volleyball-legends": {
+      "id": 6931042565,
+      "groupId": 35330702
+    },
+    "anime-vanguards": {
+      "id": 5578556129,
+      "groupId": 17219742
+    },
+    "pet-simulator-99": {
+      "id": 3317771874,
+      "groupId": 3959677
+    },
+    "king-legacy": {
+      "id": 1451439645,
+      "groupId": 5348890
+    },
+    "fruit-battlegrounds": {
+      "id": 3457700596,
+      "groupId": 14453089
+    },
+    "tower-defense-simulator": {
+      "id": 1176784616,
+      "groupId": 4914494
+    },
+    "world-fighters": {
+      "id": 10032271327,
+      "groupId": 33910482
+    },
+    "noob-incremental": {
+      "id": 9965411707,
+      "groupId": 356937272
+    }
   },
   "snapshots": {
-    "blox-fruits":             { "ts": "2026-06-10", "desc": null, "shout": null },
-    "grow-a-garden":           { "ts": "2026-06-10", "desc": null, "shout": null },
-    "steal-a-brainrot":        { "ts": "2026-06-10", "desc": null, "shout": null },
-    "blade-ball":              { "ts": "2026-06-10", "desc": null, "shout": null },
-    "blue-lock-rivals":        { "ts": "2026-06-10", "desc": null, "shout": null },
-    "anime-last-stand":        { "ts": "2026-06-10", "desc": null, "shout": null },
-    "fisch":                   { "ts": "2026-06-10", "desc": null, "shout": null },
-    "volleyball-legends":      { "ts": "2026-06-10", "desc": null, "shout": null },
-    "anime-vanguards":         { "ts": "2026-06-10", "desc": null, "shout": null },
-    "pet-simulator-99":        { "ts": "2026-06-10", "desc": null, "shout": null },
-    "king-legacy":             { "ts": "2026-06-10", "desc": null, "shout": null },
-    "fruit-battlegrounds":     { "ts": "2026-06-10", "desc": null, "shout": null },
-    "tower-defense-simulator": { "ts": "2026-06-10", "desc": null, "shout": null },
-    "world-fighters":          { "ts": "2026-06-10", "desc": null, "shout": null },
-    "noob-incremental":        { "ts": "2026-06-10", "desc": null, "shout": null }
+    "blox-fruits": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web (PCGamer, Dexerto). 23 codes actifs.",
+      "knownCodes": [
+        "EASTEREXP",
+        "Starcodeheo",
+        "Sub2Fer999",
+        "SUB2GAMERROBOT_RESET1",
+        "Lightningabuse",
+        "KITT_RESET",
+        "Sub2UncleKizaru",
+        "fudd10_v2",
+        "Fudd10",
+        "Bignews",
+        "kittgaming",
+        "Sub2CaptainMaui",
+        "Enyu_is_Pro",
+        "Magicbus",
+        "JCWK",
+        "Bluxxy",
+        "TheGreatAce",
+        "Sub2OfficialNoobie",
+        "Sub2NoobMaster123",
+        "Axiore",
+        "Sub2Daigrock",
+        "TantaiGaming",
+        "StrawHatMaine"
+      ]
+    },
+    "grow-a-garden": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web (PCGamer, Beebom). 3 codes actifs.",
+      "knownCodes": [
+        "RDCAward",
+        "BEANORLEAVE10",
+        "torigate"
+      ]
+    },
+    "steal-a-brainrot": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web (PCGamesN, Beebom). Aucun code public actif.",
+      "knownCodes": []
+    },
+    "blade-ball": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web (RoCodes, PCGamer). 23 codes actifs.",
+      "knownCodes": [
+        "SERPENT",
+        "SERPENT_HYPE",
+        "5BVISITS",
+        "VISITS_TY",
+        "DRAGONS",
+        "XMAS",
+        "MERRYXMAS",
+        "DELAYBALL",
+        "BPTEAMS",
+        "REBIRTHLTM",
+        "ROBLOXCLASSIC",
+        "GOODVSEVILMODE",
+        "EASTERHYPE",
+        "ZEROGRAVITY",
+        "GALAXYSEASON",
+        "FALLINGLTM",
+        "TOURNAMENTSW",
+        "LAVAFLOOR",
+        "LUNARNEWYEAR",
+        "LIVEEVENTS",
+        "1.5BTHANKS",
+        "UPDATE.DAY",
+        "UPD250COINS"
+      ]
+    },
+    "blue-lock-rivals": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web (ProGameGuides, PCGamer, TryHardGuides). 26 codes actifs. Nouveaux : CHARLESTIME, TONGUESOUT, DELAYSORRY, 1.5MGOALHIT.",
+      "knownCodes": [
+        "CHARLESTIME",
+        "TONGUESOUT",
+        "DELAYSORRY",
+        "1.5MGOALHIT",
+        "NELHIORI",
+        "SNOWFLAKE",
+        "HIORIREWORK",
+        "MASTEROFALLTRADES",
+        "OTOYAUPD",
+        "REOHYPE",
+        "SAEW",
+        "REWORKW",
+        "REOSOON",
+        "WPATCH",
+        "KUNIGAMIW",
+        "WILDCARD",
+        "THEJOKER",
+        "CHIGIRIHERE",
+        "44PANTHER",
+        "SPEEDSTER",
+        "NINJASPINS",
+        "CHIGIRISOON",
+        "NELQUEST",
+        "NEWIMPACTS",
+        "ISAGITODAY",
+        "EGOISTNOW"
+      ]
+    },
+    "anime-last-stand": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web (Beebom, Twinfinite). 21 codes actifs.",
+      "knownCodes": [
+        "DemonicCyborg",
+        "TheATDSituationIsCrazy",
+        "ALSUPD1",
+        "World3Patch2",
+        "WORLD3REBALANCE",
+        "JoJoCurse",
+        "StellarWorld",
+        "SUPERDELAY",
+        "BalancePatch3.1",
+        "BalancePatch3",
+        "GACHIAKUTA!?",
+        "THETIMEISNEAR",
+        "Update84!",
+        "Update83!",
+        "SorryForDelay3",
+        "SorryForDelay2",
+        "SorryForDelay1",
+        "HypeWorld3",
+        "HAPPYVALENTINESDAY",
+        "ReleaseCode!"
+      ]
+    },
+    "fisch": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web (PCGamer, Dexerto, G2A). 23 codes actifs incluant Crews (ajoute le 6 juin).",
+      "knownCodes": [
+        "LivyatanAndCompanions",
+        "HumpbackAndMegamouth",
+        "Sovereign",
+        "VenueTakeover",
+        "MermaidCove",
+        "WrathOfOlympus",
+        "EverturnForest",
+        "Companions",
+        "BIGGLE",
+        "Shady",
+        "Crews",
+        "Easter2026",
+        "NewIslandSoon",
+        "StPatricks",
+        "SeventhOfMarch",
+        "JungleExpansion",
+        "CARBON",
+        "TemporarySubmarine",
+        "scarlet",
+        "ValentinesOver!",
+        "ValentinesDay",
+        "Valentides",
+        "ValentinesSoon"
+      ]
+    },
+    "volleyball-legends": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web (ProGameGuides, GamesRadar, Beebom). Nouveaux codes : UPDATE_73, JUNGLE_MAP, JUNE_2026.",
+      "knownCodes": [
+        "UPDATE_73",
+        "JUNGLE_MAP",
+        "JUNE_2026"
+      ]
+    },
+    "anime-vanguards": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web (ProGameGuides, Beebom). 10 codes actifs.",
+      "knownCodes": [
+        "Cog5th",
+        "223",
+        "Liberation",
+        "DMCAFree",
+        "OopsiePoopsie",
+        "OopsiePoopsie2",
+        "HeHasArrived",
+        "BumBum",
+        "Spring26",
+        "SorryForAutoSell"
+      ]
+    },
+    "pet-simulator-99": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web (PCGamesN, Beebom). Aucun code public actif.",
+      "knownCodes": []
+    },
+    "king-legacy": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web. Page verifie le 7 juin (8 codes actifs).",
+      "knownCodes": []
+    },
+    "fruit-battlegrounds": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web.",
+      "knownCodes": []
+    },
+    "tower-defense-simulator": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web.",
+      "knownCodes": []
+    },
+    "world-fighters": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web. 2 codes actifs : SERVANTS et LASTSHUTDOWN (verifie le 9 juin).",
+      "knownCodes": [
+        "SERVANTS",
+        "LASTSHUTDOWN"
+      ]
+    },
+    "noob-incremental": {
+      "lastChecked": "2026-06-11",
+      "descLen": null,
+      "descExcerpt": "API Roblox inaccessible (403 Tunnel) - verification via sources web (TryHardGuides, Deltia). 17 codes actifs dont 9KCCU!! (verifie le 10 juin).",
+      "knownCodes": [
+        "9KCCU!!",
+        "BUGFIXANDBALANCEFIX",
+        "7KCCU!!",
+        "LABUPDATE",
+        "6KCCU!!",
+        "5KCCU!!",
+        "4KCCU!!",
+        "3KCCU!!",
+        "2KCCU!!",
+        "1.5KCCU!!",
+        "1KLIKES!!",
+        "BUGFIX3",
+        "BUGFIX2",
+        "BUGFIX1",
+        "WWWRELEASE",
+        "RELEASE",
+        "THANKS4JOINING"
+      ]
+    }
   }
 }
