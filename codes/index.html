@@ -292,7 +292,7 @@
   </div>
 </footer>
 
-<script src="/js/main.js?v=20"></script>
+<script src="/js/main.js?v=19"></script>
 <script>
 const CAT_LABELS = { rpg:'RPG', simulator:'Simulateur', battle:'Combat', anime:'Anime', obby:'Obby', tycoon:'Tycoon' };
 
@@ -390,12 +390,23 @@ const THUMBS = {
   'mad-city':'https://tr.rbxcdn.com/180DAY-e03eb43e97fb7031d8187b808fd7ff27/768/432/Image/Png/noFilter',
   'combat-warriors':'https://tr.rbxcdn.com/180DAY-a631d6d73730a77f93b02eb3b0e8b06c/768/432/Image/Png/noFilter',
   'survive-the-killer':'https://tr.rbxcdn.com/180DAY-4f30b695e340b41799ff15643fff9795/768/432/Image/Png/noFilter',
-  'scroll-a-brainrot':'/images/games/scroll-a-brainrot.svg',
-  'spin-a-brainrot':'/images/games/spin-a-brainrot.svg',
-  'be-a-brainrot':'/images/games/be-a-brainrot.svg',
-  'anime-rift-tower-defense':'/images/games/anime-rift-tower-defense.svg',
-  'doors':'/images/games/doors.svg',
-  'anime-story-2':'/images/games/anime-story-2.svg',
+
+  'clover-retribution':'/images/games/clover-retribution.svg',
+  'project-mugetsu':'/images/games/project-mugetsu.svg',
+  'dragon-blox':'/images/games/dragon-blox.svg',
+  'grand-piece-online':'/images/games/grand-piece-online.svg',
+  'muscle-legends':'/images/games/muscle-legends.svg',
+  'peroxide':'/images/games/peroxide.svg',
+  'anime-dimensions-simulator':'/images/games/anime-dimensions-simulator.svg',
+  'car-dealership-tycoon':'https://tr.rbxcdn.com/180DAY-2f49b71e385206d055e54562a79f4b81/512/512/Image/Png/noFilter',
+  'dragon-adventures':'https://tr.rbxcdn.com/180DAY-be3b9158d0827a1a5f9ac66c51888b26/512/512/Image/Png/noFilter',
+  'evade':'https://tr.rbxcdn.com/180DAY-bf95a86e5f5e37bf61a5f33401e95deb/512/512/Image/Png/noFilter',
+  'grimoires-era':'/images/games/grimoires-era.svg',
+  'pls-donate':'https://tr.rbxcdn.com/180DAY-a8c2faf226f0d89bed86a7d5e9683789/512/512/Image/Png/noFilter',
+  'pressure':'/images/games/pressure.svg',
+  'restaurant-tycoon-3':'https://tr.rbxcdn.com/180DAY-5537cbddeaee05dea19e0cbf8f452353/512/512/Image/Png/noFilter',
+  'ro-ghoul':'/images/games/ro-ghoul.svg',
+  'wizard-alchemy':'https://tr.rbxcdn.com/180DAY-9446c5c0b8ba7bdc6ed1ed6de1ed5c7a/512/512/Image/Png/noFilter',
 };
 
 const ALL_GAMES = [
@@ -425,7 +436,7 @@ const ALL_GAMES = [
   { name:'Construire une Ferme d\'Anneaux', slug:'ferme-d-anneaux', emoji:'💍', cat:'simulator', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
   { name:'Vendre des Citrons', slug:'vendre-des-citrons', emoji:'🍋', cat:'tycoon', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:false },
   { name:'World Fighters', slug:'world-fighters', emoji:'🥋', cat:'battle', codes:2, iso:'2026-06-09', updated:'9 juin 2026', hot:true },
-  { name:'Noob Incremental', slug:'noob-incremental', emoji:'🧱', cat:'simulator', codes:17, iso:'2026-06-10', updated:'10 juin 2026', hot:true },
+  { name:'Noob Incremental', slug:'noob-incremental', emoji:'🧱', cat:'simulator', codes:17, iso:'2026-06-09', updated:'9 juin 2026', hot:true },
   { name:'My Gaming Cafe', slug:'my-gaming-cafe', emoji:'💻', cat:'tycoon', codes:0, iso:'2026-06-09', updated:'9 juin 2026', hot:true },
   { name:'Catch and Tame', slug:'catch-and-tame', emoji:'🐟', cat:'simulator', codes:0, iso:'2026-06-10', updated:'10 juin 2026', hot:true },
   { name:'Build A Ring Farm', slug:'build-a-ring-farm', emoji:'🌽', cat:'simulator', codes:9, iso:'2026-06-10', updated:'10 juin 2026', hot:true },
@@ -470,7 +481,7 @@ const ALL_GAMES = [
   { name:'Volleyball Legends', slug:'volleyball-legends', emoji:'🏐', cat:'anime', codes:3, iso:'2026-06-04', updated:'4 juin 2026', hot:true },
   { name:'Steal a Brainrot', slug:'steal-a-brainrot', emoji:'🧠', cat:'simulator', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
   { name:'Build a Boat for Treasure', slug:'build-a-boat-for-treasure', emoji:'🚤', cat:'tycoon', codes:7, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
-  { name:'Anime Last Stand', slug:'anime-last-stand', emoji:'🗡️', cat:'anime', codes:21, iso:'2026-06-10', updated:'10 juin 2026', hot:true },
+  { name:'Anime Last Stand', slug:'anime-last-stand', emoji:'🗡️', cat:'anime', codes:21, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
   { name:'99 Nights in the Forest', slug:'99-nights-in-the-forest', emoji:'🔦', cat:'simulator', codes:2, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
   { name:'Plants Vs Brainrots', slug:'plants-vs-brainrots', emoji:'🌻', cat:'simulator', codes:5, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
   { name:'Dead Rails', slug:'dead-rails', emoji:'🚂', cat:'battle', codes:0, iso:'2026-06-05', updated:'5 juin 2026', hot:true },
@@ -497,6 +508,7 @@ const ALL_GAMES = [
   { name:'Dragon Blox', slug:'dragon-blox', emoji:'🐉', cat:'anime', codes:82, iso:'2026-06-10', updated:'10 juin 2026', hot:true },
   { name:'Grand Piece Online', slug:'grand-piece-online', emoji:'🌊', cat:'anime', codes:3, iso:'2026-06-10', updated:'10 juin 2026', hot:true },
   { name:'Muscle Legends', slug:'muscle-legends', emoji:'💪', cat:'sport', codes:14, iso:'2026-06-10', updated:'10 juin 2026', hot:true },
+  { name:'Peroxide', slug:'peroxide', emoji:'⚡', cat:'anime', codes:4, iso:'2026-06-10', updated:'10 juin 2026', hot:true },
   { name:'Anime Dimensions Simulator', slug:'anime-dimensions-simulator', emoji:'🌌', cat:'anime', codes:10, iso:'2026-06-09', updated:'9 juin 2026', hot:true },
   { name:'Car Dealership Tycoon', slug:'car-dealership-tycoon', emoji:'🚗', cat:'tycoon', codes:14, iso:'2026-06-10', updated:'10 juin 2026', hot:true },
   { name:'Dragon Adventures', slug:'dragon-adventures', emoji:'🐉', cat:'anime', codes:6, iso:'2026-06-10', updated:'10 juin 2026', hot:true },
@@ -507,13 +519,6 @@ const ALL_GAMES = [
   { name:'Restaurant Tycoon 3', slug:'restaurant-tycoon-3', emoji:'🍕', cat:'tycoon', codes:11, iso:'2026-06-10', updated:'10 juin 2026', hot:true },
   { name:'Ro-Ghoul', slug:'ro-ghoul', emoji:'👁️', cat:'anime', codes:5, iso:'2026-06-09', updated:'9 juin 2026', hot:true },
   { name:'Wizard Alchemy', slug:'wizard-alchemy', emoji:'🧙', cat:'rpg', codes:10, iso:'2026-06-10', updated:'10 juin 2026', hot:true },
-  { name:'Peroxide', slug:'peroxide', emoji:'⚡', cat:'anime', codes:4, iso:'2026-06-10', updated:'10 juin 2026', hot:true },
-  { name:'Scroll a Brainrot', slug:'scroll-a-brainrot', emoji:'📜', cat:'simulator', codes:32, iso:'2026-06-11', updated:'11 juin 2026', hot:true },
-  { name:'Spin a Brainrot', slug:'spin-a-brainrot', emoji:'🎲', cat:'simulator', codes:4, iso:'2026-06-11', updated:'11 juin 2026', hot:true },
-  { name:'Be a Brainrot', slug:'be-a-brainrot', emoji:'🧠', cat:'adventure', codes:2, iso:'2026-06-11', updated:'11 juin 2026', hot:true },
-  { name:'Anime Rift Tower Defense', slug:'anime-rift-tower-defense', emoji:'⚔️', cat:'tower-defense', codes:7, iso:'2026-06-11', updated:'11 juin 2026', hot:true },
-  { name:'Doors', slug:'doors', emoji:'🚪', cat:'horror', codes:31, iso:'2026-06-11', updated:'11 juin 2026', hot:true },
-  { name:'Anime Story 2', slug:'anime-story-2', emoji:'📖', cat:'rpg', codes:17, iso:'2026-06-11', updated:'11 juin 2026', hot:true },
 ];
 
 let activeCat='all', activeStatus='all', searchQ='', sortBy='hot';
@@ -564,4 +569,27 @@ document.querySelectorAll('[data-status]').forEach(el=>{
     el.classList.add('active'); activeStatus=el.dataset.status; visibleCount=100; renderGames();
   });
 });
-document.getElem
+document.getElementById('dirSearch').addEventListener('input',e=>{
+  searchQ=e.target.value.trim().toLowerCase(); visibleCount=100; renderGames();
+});
+document.getElementById('sortSelect').addEventListener('change',e=>{ sortBy=e.target.value; renderGames(); });
+document.getElementById('loadMoreBtn').addEventListener('click',()=>{ visibleCount+=100; renderGames(); });
+
+document.getElementById('listBtn').addEventListener('click',()=>{
+  document.getElementById('listBtn').classList.add('active');
+  document.getElementById('gridBtn').classList.remove('active');
+  const c=document.getElementById('gamesContainer'); c.classList.remove('grid-view'); c.classList.add('games-list'); renderGames();
+});
+document.getElementById('gridBtn').addEventListener('click',()=>{
+  document.getElementById('gridBtn').classList.add('active');
+  document.getElementById('listBtn').classList.remove('active');
+  const c=document.getElementById('gamesContainer'); c.classList.remove('games-list'); c.classList.add('grid-view'); renderGames();
+});
+
+renderGames();
+
+const _cat=new URLSearchParams(location.search).get('cat');
+if(_cat){const chip=document.querySelector(`[data-cat="${_cat}"]`);if(chip)chip.click();}
+</script>
+</body>
+</html>
