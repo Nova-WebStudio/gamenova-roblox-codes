@@ -97,6 +97,22 @@ Ce fichier fait ~50 Ko. Il est fragile à l'écriture.
 
 ---
 
+## Bandeaux CTA & équilibre des div
+
+- **Ne jamais remplacer le bloc `data-cta="guidelink"` par regex `.*?</div></div></div>`** : la fermeture du titre/sous-titre matche en premier → boutons orphelins et `</div>` en trop (erreur réelle du 12 juin, page cassée visuellement). Réécrire toute la zone pub+bandeau, ou localiser la fin du bloc par comptage de div.
+- Après toute édition structurelle, vérifier l'équilibre des div sur tout le site :
+```bash
+python3 -c "
+import re,glob
+for f in glob.glob('**/*.html',recursive=True):
+    h=open(f,encoding='utf-8',errors='replace').read()
+    d=len(re.findall(r'<div\b',h))-h.count('</div>')
+    if d: print(f,d)"
+```
+- Bug historique corrigé le 12 juin : `</div>` de fermeture de l'onglet `tab-codes` manquant sur 6 pages (anime-reborn, basketball-zero, haze-piece, jujutsu-infinite, type-soul, untitled-boxing-game). Si une page s'affiche « cassée », vérifier d'abord l'équilibre des div.
+
+---
+
 ## Git
 
 - **Ne jamais faire `git push` automatiquement** — Peter pousse manuellement

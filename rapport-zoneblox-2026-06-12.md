@@ -98,6 +98,10 @@ Pages traitées : blox-fruits, grow-a-garden, steal-a-brainrot, blade-ball, blue
 
 La page codes/type-soul.html affirmait à tort « aucun code de récompense ». Le jeu a bien un système de codes (icône Boîte cadeau, semi-grade 2 requis) : **11 codes actifs confirmés par 2 sources** (Beebom 10/05 + Pocket Tactics 18/05) publiés, étapes d'utilisation corrigées, compteurs synchronisés (ALL_GAMES + GAMES_INDEX).
 
+## Correctif post-session (signalé par Peter)
+
+Le remplacement regex des bandeaux CTA avait laissé des boutons orphelins (« Guides / Tier lists ») et des `</div>` en trop sur les 10 pages codes des nouvelles tier lists → zones réécrites proprement. Au passage, un **bug préexistant** a été découvert et corrigé : le `</div>` fermant l'onglet Codes manquait sur 6 pages (anime-reborn, basketball-zero, haze-piece, jujutsu-infinite, type-soul, untitled-boxing-game). **L'équilibre des `<div>` est maintenant vérifié sur les 200+ pages du site : 0 déséquilibre.**
+
 ## QC session 2 (tout vert)
 
 205 fichiers modifiés/créés : tous finissent par leur balise de fermeture, 0 octet nul, JSON-LD valides, `node --check` OK, nav/GA4/CTA présents sur les nouvelles pages, cache JS uniformisé **v=23** (main.js modifié pour les compteurs type-soul). Backlog restant : ~95 pages codes longue traîne à renforcer (prochains runs, par lots de 15).
