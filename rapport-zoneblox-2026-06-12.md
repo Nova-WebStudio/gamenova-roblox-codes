@@ -108,6 +108,16 @@ Le remplacement regex des bandeaux CTA avait laissé des boutons orphelins (« G
 
 ---
 
+# Session 3 — Renforcement de TOUTES les pages codes (100 pages, 10 lots)
+
+Les 99 pages restantes (+ heroes-battlegrounds, oubliée d'un lot) ont reçu le bloc complet : **présentation du jeu** (2 § spécifiques, ancrés sur la description existante de chaque page), **🔄 Dernière mise à jour** (générée honnêtement depuis l'état réel de la page : nombre de codes actifs + date de vérification), **🔎 Où trouver les nouveaux codes** (4 sources), et **lien automatique vers la tier list et/ou le guide du jeu** quand ils existent.
+
+Résultat sur les 114 pages codes : **médiane 845 mots**, max 1 986 (blox-fruits). Une douzaine de pages restent sous 750 mots — ce sont les jeux **sans système de codes** (BedWars, Brookhaven, Tower of Hell…), où gonfler artificiellement le texte n'aurait pas de valeur ; leurs pages disent honnêtement qu'il n'y a pas de codes.
+
+QC : 118 fichiers modifiés, 0 troncature, 0 octet nul, équilibre des div parfait sur tout le site, JSON-LD valides, cache uniforme v=23 (main.js non modifié → pas de bump).
+
+---
+
 **Pour publier :** dans le dossier GameNova, lance
 `git add -A && git commit -m "MAJ Zoneblox du jour" && git push origin main`.
 Hostinger déploie automatiquement après le push.
