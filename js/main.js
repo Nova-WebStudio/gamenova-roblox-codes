@@ -222,7 +222,7 @@ const GAMES_INDEX = [
   { name: 'Jujutsu Infinite', slug: 'jujutsu-infinite', emoji: '🌀', codes: 0 },
   { name: 'Anime Reborn', slug: 'anime-reborn', emoji: '🗡️', codes: 0 },
   { name: 'Untitled Boxing Game', slug: 'untitled-boxing-game', emoji: '🥊', codes: 9 },
-  { name: 'Type Soul', slug: 'type-soul', emoji: '💀', codes: 0 },
+  { name: 'Type Soul', slug: 'type-soul', emoji: '💀', codes: 11 },
   { name: 'Basketball Zero', slug: 'basketball-zero', emoji: '🏀', codes: 10 },
   { name: 'Haze Piece', slug: 'haze-piece', emoji: '🌊', codes: 3 },
   { name: 'All Star Tower Defense', slug: 'all-star-tower-defense', emoji: '🌟', codes: 4 },

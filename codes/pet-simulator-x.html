@@ -186,6 +186,16 @@
   </div>
 </section>
 
+
+<section data-related="articles" style="padding:8px 0 26px">
+  <div class="container" style="max-width:900px">
+    <h2 style="font-size:1.15rem;margin-bottom:12px">📰 Articles liés</h2>
+    <ul style="list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;padding:0;margin:0">
+      <li style="margin:0"><a href="/guides/" style="display:flex;align-items:center;gap:10px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 14px;text-decoration:none;color:var(--text-primary);font-weight:600;font-size:.9rem">📚 Tous les guides →</a></li>
+      <li style="margin:0"><a href="/tier-list/" style="display:flex;align-items:center;gap:10px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 14px;text-decoration:none;color:var(--text-primary);font-weight:600;font-size:.9rem">📊 Toutes les tier lists →</a></li>
+    </ul>
+  </div>
+</section>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-bottom" style="padding:24px 0">
@@ -193,7 +203,7 @@
     </div>
   </div>
 </footer>
-<script src="/js/main.js?v=22"></script>
+<script src="/js/main.js?v=23"></script>
 <script>
 function switchTab(tabId){document.querySelectorAll('.page-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.tab-content').forEach(c=>c.classList.remove('active'));var b=document.querySelector('[data-tab="'+tabId+'"]');var p=document.getElementById('tab-'+tabId);if(b)b.classList.add('active');if(p)p.classList.add('active');}
 document.querySelectorAll('.page-tab').forEach(function(tab){tab.addEventListener('click',function(){switchTab(tab.dataset.tab);});});

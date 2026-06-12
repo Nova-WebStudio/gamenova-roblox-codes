@@ -76,6 +76,35 @@ Sections « À propos de <Jeu> » (2 paragraphes FR) + bloc « 🎮 Jeux similai
 
 ---
 
+# Session 2 (après-midi) — Plan SEO de Peter
+
+## Priorité 1 — 10 nouvelles tier lists ✅
+
+Créées avec 2 sources chacune, intégrées partout (hub + ItemList JSON-LD, cartes avec vraies miniatures tr.rbxcdn.com, sitemap, liens accueil, bandeau CTA des pages codes mis à jour) :
+
+The Strongest Battlegrounds (personnages), Jujutsu Infinite (techniques innées), Type Soul (armes/Shikai/races/clans), Untitled Boxing Game (styles), Heroes Battlegrounds (personnages), Sol's RNG (auras), Project Slayers (souffles), Peroxide (Shikai), Dead Rails (classes), Anime Reborn (unités).
+
+## Priorité 2 — Maillage interne ✅
+
+Bloc « 📰 Articles liés » ajouté sur **193 pages** (codes + tier lists + guides) : liens croisés vers les pages codes/tier list/guide du même jeu, complétés par les hubs. Idempotent (`data-related="articles"`).
+
+## Priorité 3 — 15 pages codes renforcées (800-1200 mots) ✅
+
+Ajout avant les codes : présentation du jeu (2 §), « 🔄 Dernière mise à jour » (datée et factuelle), « 🔎 Où trouver les nouveaux codes » (4 sources par jeu). FAQ déjà présentes sur les 15 pages. Comptages finaux : toutes les pages entre **801 et 1 986 mots** (blox-fruits 1986, blue-lock-rivals 1055, anime-last-stand 1049, fruit-battlegrounds 1046, TDS 1013…).
+
+Pages traitées : blox-fruits, grow-a-garden, steal-a-brainrot, blade-ball, blue-lock-rivals, anime-vanguards, fisch, volleyball-legends, anime-last-stand, king-legacy, fruit-battlegrounds, tower-defense-simulator, the-strongest-battlegrounds, jujutsu-infinite, type-soul.
+
+## Bonus — correction factuelle majeure : Type Soul
+
+La page codes/type-soul.html affirmait à tort « aucun code de récompense ». Le jeu a bien un système de codes (icône Boîte cadeau, semi-grade 2 requis) : **11 codes actifs confirmés par 2 sources** (Beebom 10/05 + Pocket Tactics 18/05) publiés, étapes d'utilisation corrigées, compteurs synchronisés (ALL_GAMES + GAMES_INDEX).
+
+## QC session 2 (tout vert)
+
+205 fichiers modifiés/créés : tous finissent par leur balise de fermeture, 0 octet nul, JSON-LD valides, `node --check` OK, nav/GA4/CTA présents sur les nouvelles pages, cache JS uniformisé **v=23** (main.js modifié pour les compteurs type-soul). Backlog restant : ~95 pages codes longue traîne à renforcer (prochains runs, par lots de 15).
+
+---
+
 **Pour publier :** dans le dossier GameNova, lance
 `git add -A && git commit -m "MAJ Zoneblox du jour" && git push origin main`.
 Hostinger déploie automatiquement après le push.
+(Si l'erreur index.lock revient : `del .git\index.lock` puis relance.)
