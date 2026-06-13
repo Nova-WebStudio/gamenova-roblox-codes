@@ -46,9 +46,22 @@ Pour chaque page : remplacement des **3 astuces génériques identiques** (prés
 
 À noter : **codes/fish-it.html n'avait aucune section « À propos »** — j'en ai créé une complète (entre `<!-- ABOUT-START/END -->`, 3 paragraphes FR + bloc « 🎮 Jeux similaires » : Fisch, Catch and Tame, Grow a Garden), conforme au gabarit du site. **blox-fruits** était déjà à ~1974 mots → laissée telle quelle. Pour fisch, anime-vanguards et anime-last-stand, les 3 astuces génériques identiques ont été remplacées par 6 astuces spécifiques.
 
-**Total run : 11 pages codes étoffées** (6 fournée 1 + 5 fournée 2), toutes ≥ 1200 mots, QC vert (parser, `</html>`, octets nuls, nav 6, GA4, v=23, CTA unique).
+### Fournée 3 (même méthode, vérifiée par parser HTML)
 
-📋 **Backlog indexation** : avec le compteur strict utilisé ici, **~105 pages codes restent < 1200 mots**. Prochaines priorités (max 6/run) : dress-to-impress, adopt-me, king-legacy, doors, dandys-world, slime-rng, scroll-a-brainrot, fruit-battlegrounds, shindo-life, attack-on-titan-revolution.
+| Page | Avant | Après |
+|------|------:|------:|
+| codes/dress-to-impress.html | 1020 | **1335** |
+| codes/adopt-me.html | 1076 | **1293** |
+| codes/dandys-world.html | 1018 | **1276** |
+| codes/slime-rng.html | 999 | **1267** |
+| codes/doors.html | 923 | **1247** |
+| codes/king-legacy.html | 917 | **1212** |
+
+À noter : **king-legacy, dandys-world et slime-rng n'avaient aucune section « À propos »** — j'en ai créé une complète pour chacune (entre `<!-- ABOUT-START/END -->`, 3 paragraphes FR + bloc « 🎮 Jeux similaires » de même catégorie), conforme au gabarit. Astuces génériques dupliquées remplacées par du spécifique sur dress-to-impress et doors.
+
+**Total run : 17 pages codes étoffées** (6 + 5 + 6), toutes ≥ 1200 mots, QC vert (parser, `</html>`, octets nuls, nav 6, GA4, v=23, CTA unique, section « À propos » présente).
+
+📋 **Backlog indexation** : il reste **~99 pages codes < 1200 mots**. Prochaines priorités (max 6/run) : scroll-a-brainrot, fruit-battlegrounds, shindo-life, attack-on-titan-revolution, restaurant-tycoon-3, car-dealership-tycoon, universal-tower-defense-x, pls-donate, wizard-alchemy, sailor-piece.
 
 ## Étapes 1, 2, 4, 5, 6 — non réalisées ce run
 
