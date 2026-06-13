@@ -114,7 +114,29 @@
 
 <section class="section">
   <div class="container">
-    <div class="tl-grid">
+    <style>
+    .tl-toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:22px}
+    .tl-search-wrap{position:relative;flex:1 1 260px;min-width:220px}
+    .tl-search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:.95rem;opacity:.7;pointer-events:none}
+    #tlSearch{width:100%;padding:12px 16px 12px 40px;border-radius:var(--radius-sm);border:1px solid var(--border);background:var(--bg-card);color:var(--text-primary);font-size:.95rem;font-family:inherit}
+    #tlSearch:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(162,89,255,.25)}
+    #tlSort{padding:12px 14px;border-radius:var(--radius-sm);border:1px solid var(--border);background:var(--bg-card);color:var(--text-primary);font-size:.9rem;font-weight:600;font-family:inherit;cursor:pointer}
+    .tl-count{font-size:.85rem;color:var(--text-muted);white-space:nowrap}
+    #tlNoResults{display:none;text-align:center;color:var(--text-muted);padding:34px 0;font-size:.95rem}
+    </style>
+    <div class="tl-toolbar">
+      <div class="tl-search-wrap">
+        <span class="tl-search-icon">🔍</span>
+        <input type="search" id="tlSearch" placeholder="Rechercher un jeu…" autocomplete="off" aria-label="Rechercher une tier list">
+      </div>
+      <select id="tlSort" aria-label="Trier les tier lists">
+        <option value="default">⭐ Populaires</option>
+        <option value="az">Ordre A → Z</option>
+        <option value="za">Ordre Z → A</option>
+      </select>
+      <span id="tlCount" class="tl-count"></span>
+    </div>
+    <div class="tl-grid" id="tlGrid">
       <a class="tl-card" href="/tier-list/blox-fruits.html"><img class="tl-thumb" src="https://tr.rbxcdn.com/180DAY-e1ce51abae5188805c3fee78ec7f4d08/768/432/Image/Webp/noFilter" alt="blox-fruits" loading="lazy" onerror="this.style.display='none'"><span class="tl-info"><span class="tl-name">Blox Fruits</span><span class="tl-sub">Meilleurs fruits classés</span></span><span class="tl-arrow">→</span></a>
       <a class="tl-card" href="/tier-list/anime-vanguards.html"><img class="tl-thumb" src="https://tr.rbxcdn.com/180DAY-cb38398e8a1315ca4046f168c7504d6b/768/432/Image/Png/noFilter" alt="anime-vanguards" loading="lazy" onerror="this.style.display='none'"><span class="tl-info"><span class="tl-name">Anime Vanguards</span><span class="tl-sub">Meilleures unités classées</span></span><span class="tl-arrow">→</span></a>
       <a class="tl-card" href="/tier-list/blade-ball.html"><img class="tl-thumb" src="https://tr.rbxcdn.com/180DAY-aa0679c96e6ce33f961087cebcc07ce6/768/432/Image/Png/noFilter" alt="blade-ball" loading="lazy" onerror="this.style.display='none'"><span class="tl-info"><span class="tl-name">Blade Ball</span><span class="tl-sub">Meilleures abilities classées</span></span><span class="tl-arrow">→</span></a>
@@ -164,6 +186,8 @@
       <a class="tl-card" href="/tier-list/grow-a-garden-2.html"><img class="tl-thumb" src="https://tr.rbxcdn.com/180DAY-d3506c96f41fb1085677cfc175c2bad3/768/432/Image/Png/noFilter" alt="grow-a-garden-2" loading="lazy" onerror="this.style.display='none'"><span class="tl-info"><span class="tl-name">Grow a Garden 2</span><span class="tl-sub">Meilleures graines par valeur</span></span><span class="tl-arrow">→</span></a>
     </div>
 
+    <p id="tlNoResults">Aucun jeu ne correspond à ta recherche. Essaie un autre nom.</p>
+
     <div class="notice notice-info" style="margin-top:24px;border-radius:var(--radius);padding:14px 18px;background:rgba(0,150,255,0.08);border-left:3px solid #0096ff;display:flex;gap:10px;align-items:flex-start">
       <span style="font-size:1.1rem">ℹ️</span>
       <p style="font-size:.85rem;color:var(--text-muted)">Le méta de chaque jeu évolue à chaque mise à jour. Nos tier lists reflètent les tendances de la communauté et sont revérifiées régulièrement. Le meilleur choix reste souvent celui qui correspond à ton style de jeu.</p>
@@ -175,5 +199,24 @@
 
 <footer class="site-footer"><div class="container"><div class="footer-bottom" style="padding:24px 0"><span>© 2026 Zoneblox — Non affilié à Roblox Corporation.</span><span><a href="/about.html">À propos</a> · <a href="/privacy.html">Confidentialité</a> · <a href="/terms.html">Conditions</a> · <a href="/contact.html">Contact</a></span></div></div></footer>
 <script src="/js/main.js?v=23"></script>
+<script>
+(function(){
+  var grid=document.getElementById('tlGrid'); if(!grid) return;
+  var cards=Array.prototype.slice.call(grid.querySelectorAll('.tl-card'));
+  cards.forEach(function(c,i){ c.dataset.order=i; var n=c.querySelector('.tl-name'); c.dataset.name=(n?n.textContent:'').trim().toLowerCase(); });
+  var search=document.getElementById('tlSearch'), sort=document.getElementById('tlSort'), count=document.getElementById('tlCount'), none=document.getElementById('tlNoResults');
+  function apply(){
+    var q=(search.value||'').trim().toLowerCase(), mode=sort.value, arr=cards.slice();
+    if(mode==='az') arr.sort(function(a,b){return a.dataset.name.localeCompare(b.dataset.name,'fr');});
+    else if(mode==='za') arr.sort(function(a,b){return b.dataset.name.localeCompare(a.dataset.name,'fr');});
+    else arr.sort(function(a,b){return a.dataset.order-b.dataset.order;});
+    var visible=0;
+    arr.forEach(function(c){ var show=!q||c.dataset.name.indexOf(q)!==-1; c.style.display=show?'':'none'; if(show)visible++; grid.appendChild(c); });
+    none.style.display=visible?'none':'block';
+    count.textContent=visible+(visible>1?' jeux':' jeu')+(q?(visible>1?' trouvés':' trouvé'):'');
+  }
+  search.addEventListener('input',apply); sort.addEventListener('change',apply); apply();
+})();
+</script>
 </body>
 </html>
