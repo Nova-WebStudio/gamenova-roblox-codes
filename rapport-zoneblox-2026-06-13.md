@@ -59,9 +59,26 @@ Pour chaque page : remplacement des **3 astuces génériques identiques** (prés
 
 À noter : **king-legacy, dandys-world et slime-rng n'avaient aucune section « À propos »** — j'en ai créé une complète pour chacune (entre `<!-- ABOUT-START/END -->`, 3 paragraphes FR + bloc « 🎮 Jeux similaires » de même catégorie), conforme au gabarit. Astuces génériques dupliquées remplacées par du spécifique sur dress-to-impress et doors.
 
-**Total run : 17 pages codes étoffées** (6 + 5 + 6), toutes ≥ 1200 mots, QC vert (parser, `</html>`, octets nuls, nav 6, GA4, v=23, CTA unique, section « À propos » présente).
+### Fournée 4 (10 jeux, même méthode, vérifiée par parser HTML)
 
-📋 **Backlog indexation** : il reste **~99 pages codes < 1200 mots**. Prochaines priorités (max 6/run) : scroll-a-brainrot, fruit-battlegrounds, shindo-life, attack-on-titan-revolution, restaurant-tycoon-3, car-dealership-tycoon, universal-tower-defense-x, pls-donate, wizard-alchemy, sailor-piece.
+| Page | Avant | Après |
+|------|------:|------:|
+| codes/attack-on-titan-revolution.html | 1169 | **1446** |
+| codes/universal-tower-defense-x.html | 1123 | **1407** |
+| codes/shindo-life.html | 1143 | **1354** |
+| codes/sailor-piece.html | 959 | **1237** |
+| codes/wizard-alchemy.html | 1087 | **1234** |
+| codes/fruit-battlegrounds.html | 1034 | **1240** |
+| codes/scroll-a-brainrot.html | 1004 | **1222** |
+| codes/car-dealership-tycoon.html | 1107 | **1214** |
+| codes/restaurant-tycoon-3.html | 1113 | **1211** |
+| codes/pls-donate.html | 1103 | **1211** |
+
+À noter : **attack-on-titan-revolution, universal-tower-defense-x et sailor-piece n'avaient aucune section « À propos »** — créée pour chacune (3 paragraphes + Jeux similaires de même catégorie). Pour les jeux que je connais moins en détail (scroll-a-brainrot, wizard-alchemy), contenu volontairement honnête et générique au genre, sans inventer de mécaniques/chiffres précis.
+
+**Total run : 27 pages codes étoffées** (6 + 5 + 6 + 10), toutes ≥ 1200 mots, QC vert (parser, `</html>`, octets nuls, nav 6, GA4, v=23, CTA unique, section « À propos » présente).
+
+📋 **Backlog indexation** : il reste **~89 pages codes < 1200 mots**. Prochaines priorités : anime-eternal, broken-blade, clover-retribution, dragon-adventures, anime-apocalypse, build-a-ring-farm, anime-adventures, anime-rng, kick-a-lucky-block, defend-ur-base-with-anime.
 
 ## Étapes 1, 2, 4, 5, 6 — non réalisées ce run
 
