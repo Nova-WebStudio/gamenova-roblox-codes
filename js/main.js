@@ -35,6 +35,7 @@ const ROBLOX_THUMBS = {
   'build-a-ring-farm': 'https://tr.rbxcdn.com/180DAY-5c24b09b1d9bdfa44deadb955fd8d2fb/768/432/Image/Png/noFilter',
   'anime-warriors-iii': 'https://tr.rbxcdn.com/180DAY-8d6f44923235ed0d52df201e13a77715/768/432/Image/Png/noFilter',
   'anime-squadron': 'https://tr.rbxcdn.com/180DAY-08ea7a58db9a3d940ad2977ffa4b85ae/768/432/Image/Png/noFilter',
+  'grow-a-garden-2': 'https://tr.rbxcdn.com/180DAY-d3506c96f41fb1085677cfc175c2bad3/768/432/Image/Png/noFilter',
   'anime-fighting-simulator-reborn': 'https://tr.rbxcdn.com/180DAY-ad195be47fec95664c1c3176235720b2/768/432/Image/Webp/noFilter',
   'liminalite-invisible': 'https://tr.rbxcdn.com/180DAY-3d5bc95ea145c6be0d992c91c173ef1e/768/432/Image/Png/noFilter',
   'demonologie': 'https://tr.rbxcdn.com/180DAY-4a405de12e9812c5b154529146d0ea13/768/432/Image/Png/noFilter',
@@ -176,6 +177,7 @@ const GAMES_INDEX = [
   { name: 'Build A Ring Farm', slug: 'build-a-ring-farm', emoji: '🌽', codes: 9 },
   { name: 'Anime Warriors III', slug: 'anime-warriors-iii', emoji: '⛩️', codes: 0 },
   { name: 'Anime Squadron', slug: 'anime-squadron', emoji: '⚔️', codes: 11 },
+  { name: 'Grow a Garden 2', slug: 'grow-a-garden-2', emoji: '🌱', codes: 1 },
   { name: 'Anime Fighting Simulator Reborn', slug: 'anime-fighting-simulator-reborn', emoji: '🥋', codes: 4 },
   { name: 'Liminalité Invisible', slug: 'liminalite-invisible', emoji: '🌫️', codes: 0 },
   { name: 'Démonologie', slug: 'demonologie', emoji: '👹', codes: 0 },
@@ -356,6 +358,7 @@ const ROBLOX_UNIVERSE_IDS = {
   'build-a-ring-farm': 10039338037,
   'anime-warriors-iii': 6409513651,
   'anime-squadron': 8356066619,
+  'grow-a-garden-2': 10200395747,
   'anime-fighting-simulator-reborn': 8160272434,
   'liminalite-invisible': 9885372266,
   'demonologie': 6170143659,
@@ -531,6 +534,7 @@ document.addEventListener('DOMContentLoaded', () => {
    récents s'affichent automatiquement ; les cartes statiques du HTML servent de
    repli SEO et sont remplacées au chargement. */
 const NEW_GAMES = [
+  { slug:'grow-a-garden-2', name:'Grow a Garden 2', codes:1, date:'2026-06-13', updated:'13 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-d3506c96f41fb1085677cfc175c2bad3/480/270/Image/Png/noFilter', desc:'La suite du plus gros jeu Roblox : cultive le jour, défends ton jardin du vol la nuit. Code TEAMGREENBEAN + tier list des graines.' },
   { slug:'anime-squadron', name:'Anime Squadron', codes:11, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-08ea7a58db9a3d940ad2977ffa4b85ae/480/270/Image/Png/noFilter', desc:'Lane battler anime : invoque ta squad et défends contre les vagues et les boss. 11 codes (Gems, Trait Shards).' },
   { slug:'anime-warriors-iii', name:'Anime Warriors III', codes:0, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-8d6f44923235ed0d52df201e13a77715/480/270/Image/Png/noFilter', desc:'RPG de summon anime : invoque des guerriers et combats des boss. Récompenses via la boîte mail.' },
   { slug:'build-a-ring-farm', name:'Build A Ring Farm', codes:9, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-5c24b09b1d9bdfa44deadb955fd8d2fb/480/270/Image/Png/noFilter', desc:'Farm incrémental : plante, mute et revends tes cultures sur une ferme en anneaux. 9 codes (seeds, sprays).' },
