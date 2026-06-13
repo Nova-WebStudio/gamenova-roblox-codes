@@ -135,4 +135,36 @@ Le working tree contenait **déjà**, avant ce run, des modifications non liées
 
 ---
 
+## Ajout de 10 nouveaux jeux (« la totale »)
+
+10 jeux tendance absents du site, ajoutés avec intégration complète. Codes vérifiés sur 2 sources chacun (sauf Untitled Tag Game = aucun code actif, page honnête « codes à venir »).
+
+| Jeu | Slug | Genre | Codes |
+|-----|------|-------|------:|
+| Steal a Fish | steal-a-fish | Tycoon « steal » | 3 |
+| Knockout | knockout | Combat | 8 |
+| My Gym | my-gym | Tycoon | 3 |
+| Untitled Tag Game | untitled-tag-game | PvP / Tag | 0 (à venir) |
+| BloxStrike | bloxstrike | FPS | 1 |
+| Twenty One | twenty-one | Horreur | 2 |
+| Anime Astral Simulator | anime-astral-simulator | Sim. anime | 9 |
+| Anime Battle RNG | anime-battle-rng | RNG anime | 8 |
+| Anime Fighters Simulator | anime-fighters | Collection anime | 8 |
+| Anime Reversal | anime-reversal | RNG anime | 2 |
+
+Ajustements vs liste initiale : **Counter Blox → BloxStrike** (Counter Blox sans codes fiables), **Anime Roulette → Anime Reversal** (Anime Roulette introuvable). Twenty One s'est avéré un jeu d'**horreur** (et non football) — page rédigée en conséquence.
+
+Chaque page : ≥1200 mots de FR unique (1241–1386), SEO complet (title « Codes <Jeu> (juin 2026)… », meta, keywords, canonical, og, JSON-LD Article + BreadcrumbList + **FAQPage**), nav 6, GA4, onglets Codes/Astuces/Vidéos/FAQ, 6 astuces, FAQ, section « À propos » + 3 jeux similaires, bandeau CTA, sections « plus de codes / codes qui ne marchent pas / codes gratuits ». **Miniatures** : l'og:image n'étant pas récupérable (CDN/API Roblox bloqués, pages client-rendues), placeholder **SVG** généré par jeu (fallback validé) — à remplacer par la vraie miniature quand l'API sera accessible. **Universe IDs** non renseignés (API bloquée, jamais inventés).
+
+Intégration partout : **GAMES_INDEX + ROBLOX_THUMBS** (js/main.js), **ALL_GAMES + THUMBS** (codes/index.html), **10 cartes** en tête de la grille « Nouveaux jeux » de l'accueil, **10 `<url>`** dans sitemap.xml. Cache JS bumpé **v=23 → v=24** sur les 216 fichiers HTML.
+
+### QC final (tout vert)
+- **GAMES_INDEX (126) ↔ ALL_GAMES (126)** : 0 écart, 10 nouveaux présents dans les deux.
+- 10 pages : `</html>`, divs équilibrées (0/0), 0 octet nul, ≥1200 mots, GA4, v=24, CTA unique, JSON-LD valide (3 blocs/page), SVG présent.
+- `node --check js/main.js` ✅ · sitemap se termine par `</urlset>` ✅ · aucun résidu `main.js?v=23` ✅.
+
+⚠️ **Incident environnement géré** : le montage shell a corrompu (troncature à l'écriture) `index.html`, `codes/index.html` et `sitemap.xml` pendant l'intégration ; détecté au QC, fichiers **restaurés depuis git HEAD puis ré-intégrés via l'outil d'édition fiable** (et non plus le shell). État final vérifié complet via l'outil de lecture.
+
+---
+
 Pour publier : dans le dossier GameNova, lance  `git add -A && git commit -m "MAJ Zoneblox du jour" && git push origin main` . Hostinger déploie automatiquement après le push.

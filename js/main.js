@@ -3,6 +3,16 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+  'steal-a-fish': '/images/games/steal-a-fish.svg',
+  'knockout': '/images/games/knockout.svg',
+  'my-gym': '/images/games/my-gym.svg',
+  'untitled-tag-game': '/images/games/untitled-tag-game.svg',
+  'bloxstrike': '/images/games/bloxstrike.svg',
+  'twenty-one': '/images/games/twenty-one.svg',
+  'anime-astral-simulator': '/images/games/anime-astral-simulator.svg',
+  'anime-battle-rng': '/images/games/anime-battle-rng.svg',
+  'anime-fighters': '/images/games/anime-fighters.svg',
+  'anime-reversal': '/images/games/anime-reversal.svg',
   'locked': 'https://tr.rbxcdn.com/180DAY-d25adedff694e3710158bf33115397bf/768/432/Image/Png/noFilter',
   'defend-ur-base-with-anime': 'https://tr.rbxcdn.com/180DAY-5610a932c392b232214df24d7b73480d/768/432/Image/Png/noFilter',
   'anime-rng': 'https://tr.rbxcdn.com/180DAY-cb52cb46f7586ef2c76773ae5ca17e0b/768/432/Image/Png/noFilter',
@@ -145,6 +155,16 @@ function initMobileNav() {
 
 /* ---- Search index ---- */
 const GAMES_INDEX = [
+  { name: "Steal a Fish", slug: 'steal-a-fish', emoji: '🐟', codes: 3 },
+  { name: "Knockout", slug: 'knockout', emoji: '🥊', codes: 8 },
+  { name: "My Gym", slug: 'my-gym', emoji: '🏋️', codes: 3 },
+  { name: "Untitled Tag Game", slug: 'untitled-tag-game', emoji: '🏃', codes: 0 },
+  { name: "BloxStrike", slug: 'bloxstrike', emoji: '🔫', codes: 1 },
+  { name: "Twenty One", slug: 'twenty-one', emoji: '🔪', codes: 2 },
+  { name: "Anime Astral Simulator", slug: 'anime-astral-simulator', emoji: '⭐', codes: 9 },
+  { name: "Anime Battle RNG", slug: 'anime-battle-rng', emoji: '🎲', codes: 8 },
+  { name: "Anime Fighters Simulator", slug: 'anime-fighters', emoji: '👊', codes: 8 },
+  { name: "Anime Reversal", slug: 'anime-reversal', emoji: '🌀', codes: 2 },
   { name: "LOCKED", slug: 'locked', emoji: '⚽', codes: 9 },
   { name: "Defend ur base with anime", slug: 'defend-ur-base-with-anime', emoji: '🛡️', codes: 4 },
   { name: "Anime RNG", slug: 'anime-rng', emoji: '🎲', codes: 5 },
