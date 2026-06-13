@@ -34,7 +34,21 @@ Toutes réécrites en un seul passage Python (restauration/lecture → édition 
 
 Pour chaque page : remplacement des **3 astuces génériques identiques** (présentes à l'identique sur tout le site → mauvais pour le SEO) par **6 astuces spécifiques au jeu** ; ajout de **3 questions FAQ** propres au jeu (gameplay, codes, méta) ; ajout de **2 à 3 paragraphes « À propos »** couvrant gameplay, progression, monnaies/ressources et ce que donnent les codes ; pour Steal a Brainrot, ajout d'une section « Comment jouer » dans l'intro. Contenu honnête et utile, liens internes vers tier lists/guides.
 
-📋 **Backlog indexation** : avec le compteur strict utilisé ici, **~110 pages codes restent < 1200 mots**. Les plus prioritaires à étoffer aux prochains runs (max 6/run) : blox-fruits, fisch, fish-it, anime-vanguards, anime-last-stand, world-fighters, dress-to-impress, adopt-me, king-legacy, doors.
+### Fournée 2 (même méthode, vérifiée par parser HTML)
+
+| Page | Avant | Après |
+|------|------:|------:|
+| codes/anime-last-stand.html | 1036 | **1345** |
+| codes/world-fighters.html | 1062 | **1326** |
+| codes/anime-vanguards.html | 857 | **1271** |
+| codes/fisch.html | 906 | **1251** |
+| codes/fish-it.html | 903 | **1243** |
+
+À noter : **codes/fish-it.html n'avait aucune section « À propos »** — j'en ai créé une complète (entre `<!-- ABOUT-START/END -->`, 3 paragraphes FR + bloc « 🎮 Jeux similaires » : Fisch, Catch and Tame, Grow a Garden), conforme au gabarit du site. **blox-fruits** était déjà à ~1974 mots → laissée telle quelle. Pour fisch, anime-vanguards et anime-last-stand, les 3 astuces génériques identiques ont été remplacées par 6 astuces spécifiques.
+
+**Total run : 11 pages codes étoffées** (6 fournée 1 + 5 fournée 2), toutes ≥ 1200 mots, QC vert (parser, `</html>`, octets nuls, nav 6, GA4, v=23, CTA unique).
+
+📋 **Backlog indexation** : avec le compteur strict utilisé ici, **~105 pages codes restent < 1200 mots**. Prochaines priorités (max 6/run) : dress-to-impress, adopt-me, king-legacy, doors, dandys-world, slime-rng, scroll-a-brainrot, fruit-battlegrounds, shindo-life, attack-on-titan-revolution.
 
 ## Étapes 1, 2, 4, 5, 6 — non réalisées ce run
 
