@@ -76,7 +76,11 @@ Pour chaque page : remplacement des **3 astuces génériques identiques** (prés
 
 À noter : **attack-on-titan-revolution, universal-tower-defense-x et sailor-piece n'avaient aucune section « À propos »** — créée pour chacune (3 paragraphes + Jeux similaires de même catégorie). Pour les jeux que je connais moins en détail (scroll-a-brainrot, wizard-alchemy), contenu volontairement honnête et générique au genre, sans inventer de mécaniques/chiffres précis.
 
-**Total run : 27 pages codes étoffées** (6 + 5 + 6 + 10), toutes ≥ 1200 mots, QC vert (parser, `</html>`, octets nuls, nav 6, GA4, v=23, CTA unique, section « À propos » présente).
+### Priorité demandée — Defend Ur Base With Anime (traduction + boost FR)
+
+Page **codes/defend-ur-base-with-anime.html : 934 → 1513 mots**. Ciblage du mot-clé FR de la Search Console « **Défends ta base avec des animes** » (15 occurrences) : title, meta description, keywords (incl. « defend ta base avec des animes », « defend ur base with anime français »), hero, nouvelle section intro « Defend Ur Base With Anime en français » + « Comment jouer à Défends ta base avec des animes », À propos enrichi (note de traduction), FAQ +4 questions dont « Comment dit-on … en français ? ». **Codes revérifiés** (Pro Game Guides, Beebom, Game Rant) : 67CODE!, SRYFORSHUTDOWN!, CRAFTNERF!, BLEACHPART2! actifs → date passée au **13 juin 2026**. JSON-LD Article + Breadcrumb valides.
+
+**Total run : 28 pages codes étoffées** (6 + 5 + 6 + 10 + 1 prioritaire), toutes ≥ 1200 mots, QC vert (parser, `</html>`, octets nuls, nav 6, GA4, v=23, CTA unique, section « À propos » présente).
 
 📋 **Backlog indexation** : il reste **~89 pages codes < 1200 mots**. Prochaines priorités : anime-eternal, broken-blade, clover-retribution, dragon-adventures, anime-apocalypse, build-a-ring-farm, anime-adventures, anime-rng, kick-a-lucky-block, defend-ur-base-with-anime.
 
