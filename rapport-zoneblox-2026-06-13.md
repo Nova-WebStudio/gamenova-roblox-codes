@@ -82,6 +82,27 @@ Page **codes/defend-ur-base-with-anime.html : 934 → 1513 mots**. Ciblage du mo
 
 **Total run : 28 pages codes étoffées** (6 + 5 + 6 + 10 + 1 prioritaire), toutes ≥ 1200 mots, QC vert (parser, `</html>`, octets nuls, nav 6, GA4, v=23, CTA unique, section « À propos » présente).
 
+---
+
+# Session « toutes les pages restantes » — 100 % du catalogue ≥ 1200 mots
+
+À la demande de Peter, traitement de **toutes** les pages codes encore sous le seuil d'indexation. Méthode : script Python idempotent réutilisable (`/tmp/zb_enrich.py`) qui, par jeu, remplace les 3 astuces génériques dupliquées par 6 astuces spécifiques, ajoute une FAQ propre au jeu, crée/enrichit la section « À propos », et insère deux sections utiles standard (« Comment obtenir plus de codes <Jeu> », « Pourquoi mes codes ne fonctionnent pas », « Les codes sont-ils gratuits et sans risque »). Chaque page est vérifiée par parser HTML (div équilibrées) + comptage de mots avant écriture.
+
+**~58 pages supplémentaires étoffées** en 6 lots : bedwars, tower-of-hell, jailbreak, arsenal, royale-high, dig, work-at-a-pizza-place, dead-rails, project-slayers, toilet-tower-defense, slap-battles, combat-warriors, mini-guerre, demonologie, tour-needoh, liminalite-invisible, cliqueur-phonk, evasion-clavier, arene-de-sniper, ferme-d-anneaux, vendre-des-citrons, my-gaming-cafe, locked, noob-incremental, brookhaven, anime-reborn, bubble-gum-simulator-infinity, haze-piece, plants-vs-brainrots, mad-city, spongebob-tower-defense, survive-the-killer, sonic-speed-simulator, anime-spirits, anime-champions-simulator, build-a-boat-for-treasure, driving-empire, sols-rng, untitled-boxing-game, be-a-brainrot, da-hood, garden-tower-defense, anime-warriors-iii, type-soul, bee-swarm-simulator, project-mugetsu, 99-nights-in-the-forest, jujutsu-infinite, spin-a-brainrot, grand-piece-online, heroes-battlegrounds, basketball-zero, pressure, peroxide, the-strongest-battlegrounds, anime-rift-tower-defense, forsaken, anime-fighting-simulator-reborn, all-star-tower-defense, rivals, catch-and-tame, grimoires-era, ro-ghoul, muscle-legends, anime-dimensions-simulator, anime-squadron, murder-mystery-2, survive-zombie-arena, jujutsu-shenanigans, pet-simulator-x, anime-adventures, anime-rng, kick-a-lucky-block, anime-story-2, evade, anime-eternal, broken-blade, clover-retribution, dragon-adventures, anime-apocalypse, build-a-ring-farm, tower-defense-simulator, encounters, anime-defenders, ugc-limited.
+
+Sections « À propos » **créées** là où elles manquaient (king-legacy, dandys-world, slime-rng, fish-it, attack-on-titan-revolution, universal-tower-defense-x, sailor-piece, et la plupart des lots ci-dessus).
+
+## 🟢 Résultat final (QC complet)
+- **116 / 116 pages codes ≥ 1200 mots** (0 page thin restante).
+- **0** déséquilibre de `<div>` (parser HTML), **0** octet nul, **100 %** finissent par `</html>`.
+- **GA4 + nav 6 + cache `main.js?v=23`** présents sur 100 % des pages (site entier).
+- **CTA `data-cta="guidelink"`** unique sur chaque page codes ; **aucune** section « À propos » dupliquée.
+- **GAMES_INDEX (116) ↔ ALL_GAMES (116)** : 0 écart.
+
+## 🔧 Réparations critiques détectées au QC (laissées par un run précédent)
+- **`js/main.js` était TRONQUÉ** (563 lignes au lieu de 574, coupé en plein milieu d'une chaîne ligne 564) → `node --check` échouait → **aucune miniature sur tout le site**. Restauré depuis `git HEAD` (identique sauf la fin manquante, grow-a-garden-2 toujours présent) → `node --check` OK.
+- **`grow-a-garden-2` (codes + guide + tier-list)** était resté en `main.js?v=18` → corrigé en `v=23` sur les 3 pages. (Le jeu « Grow a Garden 2 » a donc bien été ajouté au catalogue par un run précédent ; il est présent dans GAMES_INDEX et ALL_GAMES.)
+
 📋 **Backlog indexation** : il reste **~89 pages codes < 1200 mots**. Prochaines priorités : anime-eternal, broken-blade, clover-retribution, dragon-adventures, anime-apocalypse, build-a-ring-farm, anime-adventures, anime-rng, kick-a-lucky-block, defend-ur-base-with-anime.
 
 ## Étapes 1, 2, 4, 5, 6 — non réalisées ce run
