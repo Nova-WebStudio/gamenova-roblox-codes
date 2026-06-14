@@ -92,4 +92,41 @@ Ajout de jeux / nouvelles tier lists / guides complets / vérif UGC : dépendent
 
 ---
 
+# Lot 3 — 2 nouveaux jeux (la totale) + extension du guide Grow a Garden 2
+
+## ÉTAPE 1 — 2 nouveaux jeux ajoutés (choisis par Peter)
+
+Peter a fourni deux jeux précis (par URL Roblox). Les deux ont été ajoutés en « la totale niveau contenu » : pages ≥ 1200 mots, SEO complet, nav 7 entrées (avec Avatars), GA4, onglets Codes/Astuces/Vidéos/FAQ, 6 astuces, FAQ, section « À propos » + 3 jeux similaires, bandeau CTA `data-cta="guidelink"`, JSON-LD (Article + Breadcrumb + FAQPage).
+
+| Jeu | Slug | Genre | Codes | Mots |
+|-----|------|-------|-------|------:|
+| **Mini War** (place 131346454575416) | `mini-war` | Stratégie / city-builder militaire | **0 (aucun système de codes encore)** | **1676** |
+| **+1 Aura Per Click** (place 109509029034984) | `1-aura-per-click` | Clicker / incrémental | **0 (aucun code actif)** | **1601** |
+
+- **Honnêteté codes** : les deux jeux n'ont **aucun code actif** à ce jour — confirmé sur 2 sources chacun (Mini War : TechWiser, Pro Game Guides, Destructoid → pas de système de codes ; +1 Aura Per Click : Official Code Zone → aucun code valide). Les pages l'indiquent clairement (bandeau ambre « Aucun code actif », explication, badge « Codes à venir »), sans inventer aucun code. Dès qu'un code sortira, il pourra être ajouté.
+- **Anti-doublon** : « Mini War » (stratégie de construction de nation, communauté M&M) est **distinct** de la page existante `mini-guerre` (combat PvP arcade). Lien croisé ajouté entre les deux pour lever l'ambiguïté.
+- **Miniatures** : pas d'accès à l'API Roblox (`tr.rbxcdn.com`) ni aux pages client-rendues → **placeholders SVG** générés (`images/games/mini-war.svg`, `images/games/1-aura-per-click.svg`), comme pour les ajouts précédents. À remplacer par la vraie miniature quand l'API sera accessible. **Universe IDs non renseignés** (jamais inventés).
+- **Vidéos** : pas d'embed (impossible de vérifier via oEmbed sans réseau) → onglet Vidéos avec lien « Voir sur YouTube » (même motif que les autres pages récentes), aucun ID inventé.
+- **Intégration complète** : GAMES_INDEX + ROBLOX_THUMBS + NEW_GAMES (js/main.js) ; ALL_GAMES + THUMBS + liste de liens SEO (codes/index.html) ; 2 cartes en tête de « Nouveaux jeux ajoutés » (index.html) ; 2 `<url>` (sitemap.xml). GAMES_INDEX et ALL_GAMES passent de 126 → **128**, synchronisés.
+
+## ÉTAPE 5 — Guide Grow a Garden 2 enrichi (3 nouvelles sections + schémas)
+
+À la demande de Peter, le guide `guides/grow-a-garden-2.html` gagne **3 sections de fond** avec une mise en page fonctionnelle (sommaire ancré mis à jour, schémas, encadrés, tableaux) :
+
+1. **💰 Comment devenir riche (méthode complète)** — boucle flips rapides → graines premium (Moon's Bloom ~9 000 Sheckles, Dragon's Breath) → mutations ×25 (Electric). **Schéma SVG original** de la « boucle de richesse » en 4 étapes.
+2. **🪤 Construire une base avec des pièges** — cultures de valeur au centre, anneau de plantes défensives (Venus Fly Trap, Dragon's Breath, Cactus), pets défenseurs (Bee, Ice Serpent), gear Wheelbarrow (Légendaire, 500K Sheckles, anti-vol) et crates de pièges (Bear Trap, Weather Machine, Owner Door). **Schéma SVG original** « vue de dessus » de la base.
+3. **🐞 Glitchs actuels : ce qu'il faut savoir** — traité **honnêtement** : aucun dupe « infini » fiable confirmé (anciens glitchs patchés), avertissement clair contre les **scripts auto-farm** (bannissement + malwares/arnaques), puis pivot vers les vraies optimisations légales (mutations, pousse hors-ligne, timing du shop, vol nocturne).
+
+Sources : Game8, TheGamer, Beebom, Sportskeeda, ggwtb, TechWiser, allthings.how. FAQ enrichie de 3 questions (devenir riche / base à pièges / glitch d'argent), `dateModified` → 2026-06-14, title + meta + keywords retravaillés pour « comment devenir riche grow a garden 2 », « base pièges », « glitch argent ». Images = **SVG inline originaux** (pas d'asset externe, pas de copie d'images tierces).
+
+## QC lot 3
+- `</html>` : ✅ Mini War, +1 Aura Per Click, guide GAG2 (Grep fiable). Mots : Mini War 1676, +1 Aura 1601 (≥ 1200).
+- `js/main.js` : **intact** (vérifié ligne par ligne via l'outil de lecture fiable ; les 4 nouvelles entrées slug présentes, la fin du fichier `renderNewGames` complète). ⚠️ `node --check` via le shell affiche un **faux positif de troncature** : le montage bash sert une copie obsolète/tronquée des fichiers édités ce run (artefact connu du mount). Les **vrais fichiers Windows écrits par les outils d'édition sont complets** — c'est ce que `git add -A` committera. Les fichiers neufs (pages, SVG) apparaissent normalement dans bash.
+- Intégrations vérifiées (Grep) : codes/index.html ×3, index.html ×2, sitemap.xml ×1 par jeu. Nav 7 (Avatars), GA4, cache v=24 sur les 2 nouvelles pages. CTA unique. 3 sections de guide (`#riche`, `#base`, `#glitch`) présentes.
+
+## Fichiers touchés (lot 3)
+`codes/mini-war.html` (neuf), `codes/1-aura-per-click.html` (neuf), `images/games/mini-war.svg` (neuf), `images/games/1-aura-per-click.svg` (neuf), `js/main.js`, `codes/index.html`, `index.html`, `sitemap.xml`, `guides/grow-a-garden-2.html`.
+
+---
+
 Pour publier : dans le dossier GameNova, lance  `git add -A && git commit -m "MAJ Zoneblox du jour" && git push origin main` . Hostinger déploie automatiquement après le push.

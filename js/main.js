@@ -46,6 +46,8 @@ const ROBLOX_THUMBS = {
   'anime-warriors-iii': 'https://tr.rbxcdn.com/180DAY-8d6f44923235ed0d52df201e13a77715/768/432/Image/Png/noFilter',
   'anime-squadron': 'https://tr.rbxcdn.com/180DAY-08ea7a58db9a3d940ad2977ffa4b85ae/768/432/Image/Png/noFilter',
   'grow-a-garden-2': 'https://tr.rbxcdn.com/180DAY-d3506c96f41fb1085677cfc175c2bad3/768/432/Image/Png/noFilter',
+  'mini-war': '/images/games/mini-war.svg',
+  '1-aura-per-click': '/images/games/1-aura-per-click.svg',
   'anime-fighting-simulator-reborn': 'https://tr.rbxcdn.com/180DAY-ad195be47fec95664c1c3176235720b2/768/432/Image/Webp/noFilter',
   'liminalite-invisible': 'https://tr.rbxcdn.com/180DAY-3d5bc95ea145c6be0d992c91c173ef1e/768/432/Image/Png/noFilter',
   'demonologie': 'https://tr.rbxcdn.com/180DAY-4a405de12e9812c5b154529146d0ea13/768/432/Image/Png/noFilter',
@@ -198,6 +200,8 @@ const GAMES_INDEX = [
   { name: 'Anime Warriors III', slug: 'anime-warriors-iii', emoji: '⛩️', codes: 0 },
   { name: 'Anime Squadron', slug: 'anime-squadron', emoji: '⚔️', codes: 11 },
   { name: 'Grow a Garden 2', slug: 'grow-a-garden-2', emoji: '🌱', codes: 1 },
+  { name: 'Mini War', slug: 'mini-war', emoji: '⚔️', codes: 0 },
+  { name: '+1 Aura Per Click', slug: '1-aura-per-click', emoji: '🌀', codes: 0 },
   { name: 'Anime Fighting Simulator Reborn', slug: 'anime-fighting-simulator-reborn', emoji: '🥋', codes: 4 },
   { name: 'Liminalité Invisible', slug: 'liminalite-invisible', emoji: '🌫️', codes: 0 },
   { name: 'Démonologie', slug: 'demonologie', emoji: '👹', codes: 0 },
@@ -554,6 +558,8 @@ document.addEventListener('DOMContentLoaded', () => {
    récents s'affichent automatiquement ; les cartes statiques du HTML servent de
    repli SEO et sont remplacées au chargement. */
 const NEW_GAMES = [
+  { slug:'mini-war', name:'Mini War', codes:0, date:'2026-06-14', updated:'14 juin 2026', thumb:'/images/games/mini-war.svg', desc:'Jeu de stratégie : bâtis ton pays, ton économie et ton armée, puis conquiers les territoires adverses. Codes à venir, page suivie au quotidien.' },
+  { slug:'1-aura-per-click', name:'+1 Aura Per Click', codes:0, date:'2026-06-14', updated:'14 juin 2026', thumb:'/images/games/1-aura-per-click.svg', desc:'Clicker addictif : chaque clic donne de l\'Aura, entraîne-toi et rebirth pour de gros multiplicateurs. Codes à venir, suivi quotidien.' },
   { slug:'grow-a-garden-2', name:'Grow a Garden 2', codes:1, date:'2026-06-13', updated:'13 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-d3506c96f41fb1085677cfc175c2bad3/480/270/Image/Png/noFilter', desc:'La suite du plus gros jeu Roblox : cultive le jour, défends ton jardin du vol la nuit. Code TEAMGREENBEAN + tier list des graines.' },
   { slug:'anime-squadron', name:'Anime Squadron', codes:11, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-08ea7a58db9a3d940ad2977ffa4b85ae/480/270/Image/Png/noFilter', desc:'Lane battler anime : invoque ta squad et défends contre les vagues et les boss. 11 codes (Gems, Trait Shards).' },
   { slug:'anime-warriors-iii', name:'Anime Warriors III', codes:0, date:'2026-06-10', updated:'10 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-8d6f44923235ed0d52df201e13a77715/480/270/Image/Png/noFilter', desc:'RPG de summon anime : invoque des guerriers et combats des boss. Récompenses via la boîte mail.' },
