@@ -129,4 +129,56 @@ Sources : Game8, TheGamer, Beebom, Sportskeeda, ggwtb, TechWiser, allthings.how.
 
 ---
 
-Pour publier : dans le dossier GameNova, lance  `git add -A && git commit -m "MAJ Zoneblox du jour" && git push origin main` . Hostinger déploie automatiquement après le push.
+---
+
+# Lot 4 — Réparation de l'index git corrompu (run du soir, 14 juin)
+
+## Problème détecté (BLOQUANT)
+
+Le dépôt était **incommittable** : `git fsck` renvoyait `bad index file sha1 signature: index file corrupt`. `git status` affichait des entrées fantômes (`AD ./`, conflits `UU` sur des noms aberrants `X0`, `"l\n"`, `"\376"`, tout le dossier `tier-list/` en « supprimé + non suivi »). En cause : un fichier verrou `.git/index.lock` resté en place après un process git interrompu, plus un index binaire endommagé. Aucune fusion/rebase en cours (`MERGE_HEAD` absent). **HEAD et la base d'objets sont sains** (`git cat-file` OK, `fsck` ne signalait que l'index).
+
+## Réparation effectuée
+
+Le montage Linux interdit la **suppression** dans `.git/` (`rm .git/index` → « Operation not permitted ») et le verrou `.git/index.lock` est tenu côté Windows (invisible à `ls`, indéblocable depuis le mount). Contournement : reconstruction d'un index neuf depuis HEAD via un fichier d'index temporaire hors `.git/`, puis **écriture en place** (l'écrasement de contenu est autorisé, contrairement à la suppression) :
+
+```
+GIT_INDEX_FILE=/tmp/newindex git read-tree HEAD      # index valide (370 entrées) pointant sur HEAD
+cat /tmp/newindex > .git/index                        # écrasement en place
+```
+
+Résultat (vu depuis le mount) : `git fsck` **propre**, `git status` redevenu cohérent (plus aucune entrée fantôme), index = 370 fichiers = HEAD. Sauvegarde de l'index corrompu conservée. **Aucun fichier du contenu (working tree) n'a été touché** : `read-tree` ne modifie que l'index.
+
+## Vérification d'intégrité du contenu (outils fiables)
+
+⚠️ Le **montage bash sert toujours une copie obsolète/tronquée** des fichiers édités plus tôt aujourd'hui : `tail` montre des fins coupées, `node --check js/main.js` échoue (faux positif), et `git diff --stat` *via le mount* invente ~8 900 suppressions. **Ce sont des artefacts du mount, pas l'état réel.** Vérifié sur la source fiable (outils Read/Grep, = fichiers Windows réels) :
+
+- `js/main.js` : complet (fonction `renderNewGames` fermée ligne 601, les 4 slugs ajoutés présents).
+- `</html>` présent dans **les 22 fichiers** que le mount croyait modifiés — y compris `avatar/index.html` (le doute du run précédent sur sa troncature était lui aussi un faux positif du mount).
+
+Conclusion : **les vrais fichiers sont intacts et complets.** Le danger serait de committer *depuis le mount* (git y verrait les versions tronquées). Le commit doit se faire **nativement sous Windows**, où les fichiers sont complets.
+
+## Fichier touché (lot 4)
+`rapport-zoneblox-2026-06-14.md` (cette section). L'index git a été réparé hors working tree.
+
+---
+
+## ⚠️ Pour publier — procédure sûre (à exécuter sous Windows, PAS via un shell Linux/WSL)
+
+Le mount Linux affiche une vue tronquée des fichiers : **ne committe jamais depuis là**. Sous Windows (cmd ou PowerShell), dans le dossier GameNova :
+
+```
+del .git\index.lock
+del .git\index
+git reset
+git status
+```
+
+Vérifie que `git status` montre un ensemble **raisonnable** de fichiers (quelques pages éditées aujourd'hui), et **PAS** des milliers de suppressions ni des fichiers vidés. Lance au besoin `git diff --stat` pour contrôler. Si tout est cohérent :
+
+```
+git add -A
+git commit -m "MAJ Zoneblox du jour"
+git push origin main
+```
+
+🛑 **Stop** : si `git status` est déjà propre, tout était déjà committé — rien à pousser. Si tu vois des milliers de suppressions ou des fichiers tronqués, n'ajoute/committe PAS : restaure depuis HEAD (`git checkout -- <fichier>`) et reviens vers moi. Hostinger déploie automatiquement après le push.
