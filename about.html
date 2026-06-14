@@ -29,6 +29,18 @@
     .legal p, .legal li { color: var(--text-muted); }
     .legal ul { margin: 8px 0 8px 22px; display: flex; flex-direction: column; gap: 6px; }
     .legal a { color: var(--accent2); }
+    .zb-form{max-width:640px;margin-top:12px;display:flex;flex-direction:column;gap:14px}
+    .zb-form label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:.9rem;color:var(--text-primary)}
+    .zb-form input,.zb-form textarea{padding:11px 12px;border-radius:var(--radius-sm);background:var(--bg-card);
+      border:1px solid var(--border);color:var(--text-primary);font-size:1rem;font-family:inherit}
+    .zb-form input:focus,.zb-form textarea:focus{outline:none;border-color:var(--accent)}
+    .zb-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media(max-width:560px){.zb-row{grid-template-columns:1fr}}
+    .zb-submit{align-self:flex-start;padding:12px 24px;border-radius:var(--radius-sm);font-weight:800;color:#fff;
+      border:none;cursor:pointer;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 6px 20px var(--accent-glow)}
+    .zb-note{font-size:.78rem;color:var(--text-muted);margin:0}
+    .zb-ok{background:rgba(0,207,255,.10);border:1px solid rgba(0,207,255,.4);color:var(--text-primary);
+      border-radius:var(--radius);padding:14px 18px;margin:0 0 16px;font-weight:600}
   </style>
 </head>
 <body>
@@ -73,10 +85,34 @@
     <h2>Indépendance</h2>
     <p>Zoneblox n'est <strong style="color:var(--text-primary)">pas affilié à Roblox Corporation</strong> ni aux développeurs des jeux présentés. Tous les noms de jeux et les codes sont la propriété de leurs développeurs respectifs. « Roblox » est une marque de Roblox Corporation.</p>
 
-    <h2>Une question ?</h2>
-    <p>Écrivez-nous via la page <a href="/contact.html">Contact</a> — suggestions, codes manquants ou partenariats, nous lisons tout.</p>
+    <h2 id="contact">Proposer ta chaîne YouTube / nous contacter</h2>
+    <p>Tu crées du contenu Roblox et tu aimerais que ta <strong style="color:var(--text-primary)">chaîne YouTube</strong> soit mise en avant sur Zoneblox ? Tu as une suggestion, un code manquant ou une demande de partenariat ? Écris-nous directement ici — on lit tout.</p>
+
+    <div id="zbThanks" class="zb-ok" style="display:none">✅ Merci, ton message a bien été envoyé ! On te répondra par e-mail.</div>
+
+    <form action="https://formsubmit.co/peter.torreele@gmail.com" method="POST" class="zb-form">
+      <input type="hidden" name="_subject" value="Zoneblox — nouveau message (page À propos)">
+      <input type="hidden" name="_captcha" value="true">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://zoneblox.com/about.html?envoye=1#contact">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="zb-row">
+        <label>Nom / pseudo<input type="text" name="nom" required></label>
+        <label>E-mail<input type="email" name="email" required></label>
+      </div>
+      <label>Chaîne YouTube (optionnel)<input type="url" name="chaine_youtube" placeholder="https://www.youtube.com/@..."></label>
+      <label>Message<textarea name="message" rows="5" required placeholder="Présente ta chaîne, ton idée ou ta demande…"></textarea></label>
+      <button type="submit" class="zb-submit">Envoyer le message</button>
+      <p class="zb-note">Tes informations servent uniquement à te répondre. Pas de spam, pas de revente.</p>
+    </form>
   </div>
 </section>
+
+<script>
+  if (new URLSearchParams(location.search).get('envoye') === '1') {
+    var t = document.getElementById('zbThanks'); if (t) t.style.display = 'block';
+  }
+</script>
 
 <footer class="site-footer">
   <div class="container">
