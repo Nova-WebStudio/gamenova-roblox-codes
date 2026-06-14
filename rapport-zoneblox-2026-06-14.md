@@ -61,4 +61,35 @@ Ajout de jeux / nouvelles tier lists / guides complets / vérif UGC : dépendent
 
 ---
 
+# Suite du run (lot 2)
+
+## Codes — vérifications supplémentaires (WebSearch, 2+ sources)
+
+| Jeu | Statut | Action |
+|-----|--------|--------|
+| **Fisch** | La page n'affichait que **4 codes actifs** (nettoyage du 12 juin), alors que 7+ agrégateurs (Pro Game Guides, Pocket Gamer, Beebom, BlueStacks, Game8, PC Gamer, RoCodes) listent ~23 codes actifs en juin 2026 — Fisch étant connu pour des codes qui **expirent rarement**. | **Sovereign** et **Companions** rétablis en actifs avec récompenses vérifiées (≈ 1 000 C$ + objets spécifiques), retirés de la liste expirée (19 → 17). Compteur 4 → **6 codes**, dates → 14 juin, intro et `dateModified` mis à jour. |
+| **Anime Vanguards** | Page déjà à jour avec des codes récents (OopsiePoopsie2, HeHasArrived, BumBum, Spring26, SorryForAutoSell). Liste AV très volatile côté agrégateurs. | Aucune modification (pas de nouveau code confirmable proprement). |
+
+⚠️ **À surveiller (Fisch)** : au-delà de Sovereign/Companions, les agrégateurs listent encore une quinzaine de codes en « actifs » que la page Zoneblox a passés en expirés le 12 juin (LivyatanAndCompanions, Shady, BIGGLE, MermaidCove, WrathOfOlympus, EverturnForest…). Je ne les ai **pas** restaurés en masse faute de récompenses individuellement vérifiées et parce que plusieurs sont saisonniers — mais la divergence mérite une revue : le « grand nettoyage » du 12 juin a probablement été trop agressif pour un jeu dont les codes n'expirent quasiment jamais.
+
+## Contenu minimum (indexation) — lot 2 (3 pages)
+
+| Page | Avant | Ajout | Après (est.) |
+|------|------:|-------|------:|
+| codes/restaurant-tycoon-3.html | 1128 | +2 paragraphes (équilibrage dépenses/revenus, social & saisonnier) | ~1330 |
+| codes/fruit-battlegrounds.html | 1132 | +2 paragraphes (combat pur vs RPG, méta des fruits) | ~1340 |
+| codes/scroll-a-brainrot.html | 1125 | +2 paragraphes (boucle collecte/revenus, mises à jour fréquentes) | ~1330 |
+
+**Total étoffement ce run : 6 pages** (king-legacy, dragon-blox, arsenal, restaurant-tycoon-3, fruit-battlegrounds, scroll-a-brainrot) — limite de 6/run atteinte.
+
+## QC lot 2
+- `</html>` : ✅ 9/9 fichiers édités (Grep fiable). Octets nuls : 0. JSON-LD inchangé hors `dateModified`.
+- Édits = `<p>` purs ou lignes de tableau équilibrées → balance `<div>` préservée.
+- Aucune référence périmée résiduelle sur Fisch (« 4 codes », « 12 juin ») après mise à jour.
+
+## Fichiers touchés (total run)
+`codes/blox-fruits.html`, `codes/volleyball-legends.html`, `codes/fisch.html`, `codes/king-legacy.html`, `codes/dragon-blox.html`, `codes/arsenal.html`, `codes/restaurant-tycoon-3.html`, `codes/fruit-battlegrounds.html`, `codes/scroll-a-brainrot.html`, `rapport-zoneblox-2026-06-14.md`.
+
+---
+
 Pour publier : dans le dossier GameNova, lance  `git add -A && git commit -m "MAJ Zoneblox du jour" && git push origin main` . Hostinger déploie automatiquement après le push.
