@@ -21,18 +21,10 @@
   ];
   const SLOT_LABEL = Object.fromEntries(SLOTS.map((s) => [s.key, s.label]));
 
-  // Position de chaque slot sur le mannequin (% du conteneur) + taille px.
-  const POS = {
-    hat:    { x: 50, y: 1,  size: 60 },
-    hair:   { x: 50, y: 6,  size: 60 },
-    face:   { x: 50, y: 13, size: 44 },
-    neck:   { x: 50, y: 22, size: 34 },
-    top:    { x: 50, y: 31, size: 64 },
-    back:   { x: 16, y: 29, size: 50 },
-    front:  { x: 50, y: 41, size: 42 },
-    waist:  { x: 50, y: 45, size: 42 },
-    bottom: { x: 50, y: 57, size: 62 },
-  };
+  // Le mannequin affiche les objets en deux colonnes qui encadrent l'avatar,
+  // pour éviter tout chevauchement (tête / chapeau / masque se superposaient).
+  const COL_LEFT  = ['hat', 'hair', 'face', 'neck'];
+  const COL_RIGHT = ['top', 'back', 'front', 'waist', 'bottom'];
 
   const STYLE_LABEL = {
     anime: 'Anime', ninja: 'Ninja', cyberpunk: 'Cyberpunk', demon: 'Démon',
@@ -143,6 +135,17 @@
     renderSummary(result, budget);
   }
 
+  function equipChip(slot, picks) {
+    const it = picks[slot]; if (!it) return '';
+    const isLock = !!locked[slot];
+    return `<a class="av-equip${isLock ? ' is-locked' : ''}" href="${catalogUrl(it.id)}"
+              target="_blank" rel="noopener nofollow"
+              title="${esc(SLOT_LABEL[slot])} · ${esc(it.name)} — voir sur Roblox">
+              <img loading="lazy" src="${thumb(it)}" alt="${esc(it.name)}" onerror="this.style.opacity=.2">
+              <span class="av-equip-tag">${esc(SLOT_LABEL[slot])}</span>
+              ${isLock ? '<span class="av-equip-lock">🔒</span>' : ''}
+            </a>`;
+  }
   function renderMannequin(picks) {
     const el = document.getElementById('avatarMannequin');
     if (!el) return;
@@ -155,18 +158,12 @@
         <rect x="44" y="96" width="15" height="48" rx="4" class="av-body2"/>
         <rect x="61" y="96" width="15" height="48" rx="4" class="av-body2"/>
       </svg>`;
-    const overlays = SLOTS.map((s) => {
-      const it = picks[s.key]; if (!it) return '';
-      const p = POS[s.key]; const isLock = !!locked[s.key];
-      return `<a class="av-equip${isLock ? ' is-locked' : ''}" href="${catalogUrl(it.id)}"
-                 target="_blank" rel="noopener nofollow"
-                 title="${esc(SLOT_LABEL[s.key])} · ${esc(it.name)} — voir sur Roblox"
-                 style="left:${p.x}%;top:${p.y}%;width:${p.size}px;height:${p.size}px">
-                <img loading="lazy" src="${thumb(it)}" alt="${esc(it.name)}" onerror="this.style.opacity=.2">
-                ${isLock ? '<span class="av-equip-lock">🔒</span>' : ''}
-              </a>`;
-    }).join('');
-    el.innerHTML = `<div class="av-stage">${figure}${overlays}</div>`;
+    const left = COL_LEFT.map((s) => equipChip(s, picks)).join('');
+    const right = COL_RIGHT.map((s) => equipChip(s, picks)).join('');
+    const hasAny = left || right;
+    el.innerHTML = `<div class="av-stage">
+        <div class="av-col">${left}</div>${figure}<div class="av-col">${right}</div>
+      </div>${hasAny ? '' : '<p class="av-empty" style="padding:14px">Aucun objet à afficher.</p>'}`;
   }
 
   function renderCards(picks) {

@@ -126,15 +126,18 @@
     .av-top{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:stretch;margin-bottom:18px}
     @media(max-width:560px){.av-top{grid-template-columns:1fr}}
     .av-mannequin{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:12px}
-    .av-stage{position:relative;width:230px;height:300px;margin:0 auto}
-    .av-figure{position:absolute;inset:0;width:100%;height:100%}
+    .av-stage{display:flex;align-items:center;justify-content:center;gap:8px;min-height:300px}
+    .av-col{display:flex;flex-direction:column;gap:12px;justify-content:center}
+    .av-figure{width:96px;height:200px;flex:0 0 auto}
     .av-figure .av-skin{fill:#e8c39e}
     .av-figure .av-body{fill:#3a3a6a}
     .av-figure .av-body2{fill:#2c2c52}
-    .av-equip{position:absolute;transform:translate(-50%,-50%);border-radius:10px;overflow:hidden;
-      border:2px solid var(--accent);background:var(--bg-secondary);box-shadow:0 4px 14px rgba(0,0,0,.45);display:block}
-    .av-equip img{width:100%;height:100%;object-fit:contain}
-    .av-equip.is-locked{border-color:#ffd43b}
+    .av-equip{position:relative;width:58px;border-radius:10px;border:2px solid var(--accent);
+      background:var(--bg-secondary);box-shadow:0 3px 10px rgba(0,0,0,.4);display:block;text-decoration:none;color:var(--text-muted)}
+    .av-equip img{width:100%;height:50px;object-fit:contain;display:block;border-radius:8px 8px 0 0}
+    .av-equip-tag{display:block;font-size:.6rem;text-align:center;padding:2px 3px 3px;font-weight:700;
+      text-transform:uppercase;letter-spacing:.3px;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .av-equip.is-locked{border-color:#ffd43b;color:#ffd43b}
     .av-equip-lock{position:absolute;top:-7px;right:-7px;font-size:.72rem;background:#1a1a3a;border-radius:50%;padding:1px 3px;line-height:1}
     .av-top .av-summary{margin-top:0;border-top:none;padding:16px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius)}
     /* Cartes : verrou */
@@ -350,7 +353,7 @@
     c.addEventListener('click',function(){document.getElementById('avBudget').value=c.dataset.b;});
   });
 </script>
-<script src="avatar.js?v=2"></script>
+<script src="avatar.js?v=3"></script>
 <script src="/js/main.js?v=24"></script>
 
 </body>
