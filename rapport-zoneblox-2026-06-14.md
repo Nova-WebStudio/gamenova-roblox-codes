@@ -182,3 +182,30 @@ git push origin main
 ```
 
 🛑 **Stop** : si `git status` est déjà propre, tout était déjà committé — rien à pousser. Si tu vois des milliers de suppressions ou des fichiers tronqués, n'ajoute/committe PAS : restaure depuis HEAD (`git checkout -- <fichier>`) et reviens vers moi. Hostinger déploie automatiquement après le push.
+
+---
+
+# Lot 5 — Vérification codes des ~12 jeux volatils (run du soir)
+
+Périmètre choisi par Peter : les jeux dont les codes bougent souvent (vérification 2 sources via WebSearch, jamais d'invention). Résultat : **1 seul jeu avait de vrais nouveaux codes à publier** ; les autres étaient déjà à jour (dont plusieurs traités plus tôt aujourd'hui : Blox Fruits, Volleyball Legends, Fisch, Blue Lock Rivals, Anime Vanguards).
+
+| Jeu | Vérification (2 sources) | Action |
+|-----|--------------------------|--------|
+| **Blade Ball** | `SUMMER2026`, `ABILITYDROP`, `JUNEUPDATE` (spins) confirmés actifs ~11 juin sur 2 jeux de résultats distincts (PCGamesN, GamesRadar, Pocket Tactics, BlueStacks, RobloxDen, Endsights, Gfinity). Absents de la page. | ✅ **3 codes ajoutés** en tête de tableau. Compteur 23 → **26**, dates → 14 juin, `dateModified` → 2026-06-14, intro réécrite. |
+| Grow a Garden 2 | `TEAMGREENBEAN` seul code actif (Beebom, Sportskeeda, Pro Game Guides, Fandomwire). | Déjà sur la page. Aucun changement. |
+| Bee Swarm Simulator | 14–17 codes (Game8, PC Gamer, Beebom, Sportskeeda). Tous présents. | Aucun changement (codes stables). |
+| Pet Simulator 99 | Aucun code public (seulement codes « merch ») — confirmé Beebom, PCGamesN, GameRant. | Page indique déjà « Aucun code actif ». Aucun changement. |
+| Dress to Impress | ~38 codes (PC Gamer, PCGamesN, GamesRadar, RoCodes). Tous déjà listés. | Aucun changement. |
+| Bubble Gum Sim Infinity | Plus récents `throwback` + `ogbfs` (Insider Gaming, RoCodes, Try Hard Guides). Présents. | Aucun changement. |
+| Sol's RNG | `AmalgamationHELL` (Pro Game Guides, Beebom, TechWiser, Pocket Tactics). Présent. | Aucun changement. |
+| Shindo Life | `ShindoXm4z1!`, `ShindoXm4z2!`, `DisEsn0tDe3nd!` actifs (Beebom, PCGamesN, BlueStacks). Présents (11 codes en page). | Aucun changement. |
+| King Legacy | « Aucun nouveau code » depuis Pâques (PC Gamer, Sportskeeda, RoCodes) ; WELCOMETOKINGLEGACY, SKGames, Peodiz, RainbowDragon présents. | Aucun changement. |
+| Jujutsu Infinite | Agrégateurs listent HELLO_JJI / 400K_SUBS / JUDGEMAN_REWORK / JUDGE_SOON « actifs », mais ces codes expirent en quelques jours et la page les a déjà passés en **expirés** le 12 juin. Listings probablement en retard. | Aucun changement (posture prudente conservée, honnête). |
+| Grow a Garden (original) | RDCAward + code « Green Bean » + torigate ; une source nomme `GREENBEANCHAMBER` au lieu de `BEANORLEAVE10` (même récompense). Ambigu, 1 source. | Aucun changement (pas de 2e source concordante pour modifier). |
+| Anime Adventures | Jeu **retiré de Roblox** (DMCA Gamefam/Crunchyroll) — pas de codes fiables. | Aucun changement. À signaler : page d'un jeu délisté. |
+
+**QC lot 5** (`codes/blade-ball.html`, seul fichier édité) : `</html>` présent (Grep fiable), 3 nouvelles lignes de code + compteur « 26 » + `dateModified` 2026-06-14 confirmés, lignes de tableau équilibrées (pas de déséquilibre `<div>`), pas d'octet nul. ⚠️ Rappel : la vue bash reste obsolète/tronquée — vérif faite via Read/Grep (= fichiers Windows réels).
+
+**Fichier touché (lot 5)** : `codes/blade-ball.html` (+3 codes Blade Ball), `rapport-zoneblox-2026-06-14.md`.
+
+> Note honnêteté : je n'ai **pas** « mis à jour » les jeux déjà corrects juste pour modifier la date. Conformément aux règles (2 sources, jamais inventer, date inchangée si pas de modif réelle), la plupart des pages volatiles étaient déjà alignées et restent datées de leur dernière vraie modification.
