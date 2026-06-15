@@ -96,4 +96,39 @@ Chaque tier list et guide est **honnêtement indicatif** (méta volatil signalé
 
 ---
 
+# Lot 3 — 10 nouveaux jeux (avec codes actifs)
+
+À la demande de Peter : 10 jeux populaires absents du catalogue, **avec codes actifs vérifiés sur 2+ sources**. Catalogue **128 → 138** (GAMES_INDEX et ALL_GAMES synchronisés).
+
+| Jeu | Slug | Genre | Codes actifs |
+|-----|------|-------|------:|
+| Anime Rangers X (Re:Rangers X) | `anime-rangers-x` | Tower Defense anime | 6 |
+| A One Piece Game (AOPG) | `a-one-piece-game` | RPG pirate | 8 |
+| Sakura Stand | `sakura-stand` | Combat anime (Stands) | 8 |
+| Untitled Attack on Titan (UAOT) | `untitled-attack-on-titan` | Action AoT | 6 |
+| Ninja Legends | `ninja-legends` | Simulateur | 8 |
+| Arm Wrestle Simulator | `arm-wrestle-simulator` | Simulateur force | 2 |
+| Strongman Simulator | `strongman-simulator` | Simulateur force | 8 |
+| Anime Souls Simulator X | `anime-souls-simulator-x` | Simulateur anime | 3 |
+| Fire Force Online (Reignition) | `fire-force-online` | RPG anime | 3 |
+| Skibidi Masters Tower Defense | `skibidi-masters-tower-defense` | Tower Defense | 5 |
+
+**Sources codes (2+ chacun)** : Beebom, ProGameGuides, Pocket Gamer, GamesRadar, Dexerto, Try Hard Guides, RoCodes, Destructoid, PCGamesN, TechWiser, Roblox Den… (toutes datées juin 2026). Aucun code inventé ; récompenses indiquées au niveau de détail fourni par les sources (certaines pages source listent des « récompenses gratuites » génériques, repris tel quel honnêtement).
+
+**Honnêteté / limites** :
+- **Miniatures** : pas d'accès à l'API Roblox (`tr.rbxcdn.com`) ni aux pages client-rendues → **placeholders SVG** générés par jeu (`images/games/<slug>.svg`), à remplacer par la vraie miniature quand l'API sera accessible. **Universe IDs non renseignés** (jamais inventés).
+- **Vidéos** : onglet Vidéos avec lien « Voir sur YouTube » (pas d'embed, impossible de vérifier via oEmbed sans réseau — aucun ID inventé).
+- **Codes génériques** : pour UAOT/Ninja Legends/AOPG, certaines récompenses sont décrites par catégorie (or/gemmes, Chi, boost) car les sources elles-mêmes ne détaillent pas par code.
+
+**Chaque page (10)** : ≥1200 mots FR, SEO complet (title « Codes <Jeu> (juin 2026)… »), nav 7 entrées avec Avatars, GA4, onglets Codes/Astuces/Vidéos/FAQ, étapes de redeem, tableau de codes, sections « plus de codes » + « codes qui ne marchent pas », 6 astuces, FAQ (4), section « À propos » (4–6 paragraphes) + 3 jeux similaires, bandeau CTA `data-cta="guidelink"`, JSON-LD Article + Breadcrumb + FAQPage.
+
+**Intégration** : GAMES_INDEX + ROBLOX_THUMBS + NEW_GAMES (js/main.js) ; ALL_GAMES + THUMBS + liens SEO (codes/index.html) ; 10 `<url>` sitemap ; cartes « Nouveaux jeux » de l'accueil auto-rendues via NEW_GAMES. ROBLOX_UNIVERSE_IDS non modifié (IDs non vérifiables). js/main.js non bumpé en version (structure inchangée, reste `v=24`).
+
+**QC Lot 3** : `</html>` ✅ sur les 10 pages (Grep) ; **≥1200 mots** ✅ sur les 10 (1211–1328) ; GA4 ×2, nav Avatars, 1 seul `data-cta` ✅ ; équilibre `<div>` préservé (ajouts = `<p>` purs) ; GAMES_INDEX↔ALL_GAMES synchronisés (9 occurrences symétriques par échantillon de slugs) ; aucun octet nul. ⚠️ Le shell affiche js/main.js et les fichiers édités comme « tronqués » (artefact mount connu) — réels fichiers complets, c'est ce que `git add -A` committera.
+
+## Fichiers touchés (Lot 3)
+10 pages neuves `codes/<slug>.html` + 10 SVG `images/games/<slug>.svg` ; `js/main.js`, `codes/index.html`, `sitemap.xml` (intégration). Total catalogue : **138 jeux**.
+
+---
+
 **Pour publier :** dans le dossier GameNova, lance  `git add -A && git commit -m "MAJ Zoneblox du jour" && git push origin main` . Hostinger déploie automatiquement après le push.

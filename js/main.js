@@ -131,6 +131,16 @@ const ROBLOX_THUMBS = {
   'anime-rift-tower-defense': '/images/games/anime-rift-tower-defense.svg',
   'doors': '/images/games/doors.svg',
   'anime-story-2': '/images/games/anime-story-2.svg',
+  'anime-rangers-x': '/images/games/anime-rangers-x.svg',
+  'a-one-piece-game': '/images/games/a-one-piece-game.svg',
+  'sakura-stand': '/images/games/sakura-stand.svg',
+  'untitled-attack-on-titan': '/images/games/untitled-attack-on-titan.svg',
+  'ninja-legends': '/images/games/ninja-legends.svg',
+  'arm-wrestle-simulator': '/images/games/arm-wrestle-simulator.svg',
+  'strongman-simulator': '/images/games/strongman-simulator.svg',
+  'anime-souls-simulator-x': '/images/games/anime-souls-simulator-x.svg',
+  'fire-force-online': '/images/games/fire-force-online.svg',
+  'skibidi-masters-tower-defense': '/images/games/skibidi-masters-tower-defense.svg',
 };
 
 /* ---- Copy code ---- */
@@ -285,6 +295,16 @@ const GAMES_INDEX = [
   { name: 'Anime Rift Tower Defense', slug: 'anime-rift-tower-defense', emoji: '⚔️', codes: 7 },
   { name: 'Doors', slug: 'doors', emoji: '🚪', codes: 31 },
   { name: 'Anime Story 2', slug: 'anime-story-2', emoji: '📖', codes: 17 },
+  { name: 'Anime Rangers X', slug: 'anime-rangers-x', emoji: '🗼', codes: 6 },
+  { name: 'A One Piece Game', slug: 'a-one-piece-game', emoji: '🏴‍☠️', codes: 8 },
+  { name: 'Sakura Stand', slug: 'sakura-stand', emoji: '🌸', codes: 8 },
+  { name: 'Untitled Attack on Titan', slug: 'untitled-attack-on-titan', emoji: '🗡️', codes: 6 },
+  { name: 'Ninja Legends', slug: 'ninja-legends', emoji: '🥷', codes: 8 },
+  { name: 'Arm Wrestle Simulator', slug: 'arm-wrestle-simulator', emoji: '💪', codes: 2 },
+  { name: 'Strongman Simulator', slug: 'strongman-simulator', emoji: '🏋️', codes: 8 },
+  { name: 'Anime Souls Simulator X', slug: 'anime-souls-simulator-x', emoji: '👹', codes: 3 },
+  { name: 'Fire Force Online', slug: 'fire-force-online', emoji: '🔥', codes: 3 },
+  { name: 'Skibidi Masters Tower Defense', slug: 'skibidi-masters-tower-defense', emoji: '🚽', codes: 5 },
 ];
 
 function gameResultHTML(g) {
@@ -558,6 +578,16 @@ document.addEventListener('DOMContentLoaded', () => {
    récents s'affichent automatiquement ; les cartes statiques du HTML servent de
    repli SEO et sont remplacées au chargement. */
 const NEW_GAMES = [
+  { slug:'anime-rangers-x', name:'Anime Rangers X', codes:6, date:'2026-06-15', updated:'15 juin 2026', thumb:'/images/games/anime-rangers-x.svg', desc:'Tower Defense anime : invoque tes rangers et défends contre les vagues. 6 codes (Trait Reroll, Shadow Orbs, gemmes).' },
+  { slug:'a-one-piece-game', name:'A One Piece Game', codes:8, date:'2026-06-15', updated:'15 juin 2026', thumb:'/images/games/a-one-piece-game.svg', desc:'RPG pirate inspiré de One Piece : Fruits du Démon, Haki, mers à explorer. 8 codes (boosts EXP/drop, Gems, Beli).' },
+  { slug:'sakura-stand', name:'Sakura Stand', codes:8, date:'2026-06-15', updated:'15 juin 2026', thumb:'/images/games/sakura-stand.svg', desc:'Combat anime à Stands (JoJo, Touhou…) : farme, reroll et affronte les joueurs. 8 codes (cash, tokens, double XP).' },
+  { slug:'untitled-attack-on-titan', name:'Untitled Attack on Titan', codes:6, date:'2026-06-15', updated:'15 juin 2026', thumb:'/images/games/untitled-attack-on-titan.svg', desc:'Action AoT à l\'ODM gear : tranche la nuque des Titans. 6 codes (or, gemmes).' },
+  { slug:'ninja-legends', name:'Ninja Legends', codes:8, date:'2026-06-15', updated:'15 juin 2026', thumb:'/images/games/ninja-legends.svg', desc:'Simulateur ninja culte : farme le Chi, débloque îles et rangs. 8 codes (Chi, Gems, auto-train).' },
+  { slug:'arm-wrestle-simulator', name:'Arm Wrestle Simulator', codes:2, date:'2026-06-15', updated:'15 juin 2026', thumb:'/images/games/arm-wrestle-simulator.svg', desc:'Simulateur de force : entraîne-toi et gagne au bras de fer. 2 codes (boosts ×3 de stats).' },
+  { slug:'strongman-simulator', name:'Strongman Simulator', codes:8, date:'2026-06-15', updated:'15 juin 2026', thumb:'/images/games/strongman-simulator.svg', desc:'Simulateur de musculation : soulève, gagne en force, débloque des zones. 8 codes (boosts énergie/vitesse).' },
+  { slug:'anime-souls-simulator-x', name:'Anime Souls Simulator X', codes:3, date:'2026-06-15', updated:'15 juin 2026', thumb:'/images/games/anime-souls-simulator-x.svg', desc:'Simulateur anime : invoque, fais évoluer et farme. 3 codes généreux (potions, shards, gold).' },
+  { slug:'fire-force-online', name:'Fire Force Online', codes:3, date:'2026-06-15', updated:'15 juin 2026', thumb:'/images/games/fire-force-online.svg', desc:'RPG inspiré de Fire Force : gacha de générations et capacités. 3 codes (Ability Rerolls, Reroll Tokens).' },
+  { slug:'skibidi-masters-tower-defense', name:'Skibidi Masters Tower Defense', codes:5, date:'2026-06-15', updated:'15 juin 2026', thumb:'/images/games/skibidi-masters-tower-defense.svg', desc:'Tower Defense Skibidi : invoque et améliore tes unités. 5 codes (Toilet Paper, Trait Crystals, Lucky Drops).' },
   { slug:'mini-war', name:'Mini War', codes:0, date:'2026-06-14', updated:'14 juin 2026', thumb:'/images/games/mini-war.svg', desc:'Jeu de stratégie : bâtis ton pays, ton économie et ton armée, puis conquiers les territoires adverses. Codes à venir, page suivie au quotidien.' },
   { slug:'1-aura-per-click', name:'+1 Aura Per Click', codes:0, date:'2026-06-14', updated:'14 juin 2026', thumb:'/images/games/1-aura-per-click.svg', desc:'Clicker addictif : chaque clic donne de l\'Aura, entraîne-toi et rebirth pour de gros multiplicateurs. Codes à venir, suivi quotidien.' },
   { slug:'grow-a-garden-2', name:'Grow a Garden 2', codes:1, date:'2026-06-13', updated:'13 juin 2026', thumb:'https://tr.rbxcdn.com/180DAY-d3506c96f41fb1085677cfc175c2bad3/480/270/Image/Png/noFilter', desc:'La suite du plus gros jeu Roblox : cultive le jour, défends ton jardin du vol la nuit. Code TEAMGREENBEAN + tier list des graines.' },
