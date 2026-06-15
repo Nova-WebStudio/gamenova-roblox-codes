@@ -56,8 +56,43 @@ Dates « Mis à jour le… » **laissées inchangées** sur ces 6 pages : seul l
 ## Fichiers touchés ce run
 `index.html`, `codes/99-nights-in-the-forest.html`, `codes/blue-lock-rivals.html`, `codes/doors.html`, `codes/grow-a-garden.html`, `codes/royale-high.html`, `codes/work-at-a-pizza-place.html`, `codes/dandys-world.html`, `codes/pet-simulator-99.html`, `rapport-zoneblox-2026-06-15.md`.
 
-## Étapes 1, 4, 5, 6 — non réalisées ce run
-Ajout de jeux / nouvelles tier lists / guides complets / vérif UGC : dépendent de l'API Roblox (éligibilité ≥4000, universe IDs, miniatures `tr.rbxcdn.com`, vidéos oEmbed) — données non inventables, reportées au rétablissement réseau.
+## Étape 6 — non réalisée ce run
+Vérif UGC : reportée (priorité donnée aux tier lists + guides demandés).
+
+---
+
+# Lot 2 — 3 tier lists + 3 guides (demande de Peter)
+
+Sur 69 jeux du catalogue sans tier list ni guide, 3 jeux populaires, classables et bien documentés ont été retenus : **Grand Piece Online (GPO)**, **Project Mugetsu (PM)** et **Jujutsu Shenanigans (JJS)**. Pour chacun : une **tier list** + un **guide complet** (gabarits grow-a-garden / blox-fruits), contenu FR honnête, vérifié sur **2 sources** chacun.
+
+## ÉTAPE 4 — 3 nouvelles tier lists
+- **tier-list/grand-piece-online.html** — Fruits du Démon classés S→C (Pika V2, Dragon V2, Soul, Gura/Mochi/Goro/Magu en S…). Sources : Pocket Gamer, Dotesports/Destructoid/GameGeekFusion.
+- **tier-list/project-mugetsu.html** — Races (S Soul Reaper, A Quincy/Fullbringer, B Hollow) + clans par rareté (War Power → Common). Sources : TheNerdStash, DroidGamers, GGRecon, TryHardGuides/MrGuider.
+- **tier-list/jujutsu-shenanigans.html** — Personnages S+→D (Megumi & Choso en tête). Sources : Beebom, AllThings.how/U7Buy/BloxSpot.
+
+## ÉTAPE 5 — 3 guides complets
+- **guides/grand-piece-online.html** — débuter, leveling île par île (Town of Beginnings, Sandora, Marquan…), obtenir/choisir un fruit, races, Haki (Buso/Kenbun), mers. Sources : Pocket Gamer level guide, Fandom, Destructoid, Beanstalk.
+- **guides/project-mugetsu.html** — devenir Soul Reaper (Kisuke), méditation, Shikai (médit. 20 + niv 15) puis Bankai (niv 75, ou 50 clan Urahara), voie Hollow→Arrancar→Resurrección, clans, meilleure race. Sources : TryHardGuides, Gosunoob, Fandom, DroidGamers.
+- **guides/jujutsu-shenanigans.html** — mécaniques (M1, ragdoll cancel, awakening, domaine, Black Flash), persos débutants (Hakari, Gojo), méta, conseils PvP. Sources : Beebom, AllThings.how.
+
+Chaque tier list et guide est **honnêtement indicatif** (méta volatil signalé) ; aucun classement ni mécanique inventé.
+
+## Intégration
+- **tier-list/index.html** : 3 cartes (vraies miniatures `tr.rbxcdn.com`, jamais d'emoji) + 3 entrées ItemList (pos. 48-50).
+- **guides/index.html** : 3 cartes + 3 entrées ItemList (pos. 27-29).
+- **sitemap.xml** : 6 nouveaux `<url>` (lastmod 2026-06-15).
+- **index.html** : 3 `<li>` ajoutés à la liste « Toutes les tier lists ».
+- **codes/{gpo,pm,jjs}.html** : bandeau `data-cta="guidelink"` mis à jour (titre « Progresse plus vite à <Jeu> » + boutons « 📖 Guide complet » et « 📊 Tier list » pointant vers les pages dédiées). Chaque tier list et guide relie aussi codes ↔ tier ↔ guide.
+
+## QC Lot 2
+- `</html>` : ✅ sur les 6 nouvelles pages + hubs + index (Grep fiable). `</urlset>` : ✅ sitemap.
+- GA4 (×2), nav 7 entrées avec Avatars, JSON-LD (ItemList + Breadcrumb ; + Article + FAQPage pour les guides) : ✅.
+- Équilibre `<div>` : 0 sur les 6 nouvelles pages ; éditions d'intégration = insertions équilibrées (cartes, `<li>`, `<url>`, JSON). Octets nuls : 0. Cache JS `v=24` inchangé.
+- Miniatures hubs = vraies images `tr.rbxcdn.com` (aucune carte emoji). 1 seul `data-cta="guidelink"` par page codes.
+- ⚠️ Artefact mount bash : les fichiers d'intégration édités s'affichent « tronqués » dans le shell (faux positif) — réels fichiers complets confirmés via Grep/Read.
+
+## Fichiers touchés (Lot 2)
+`tier-list/grand-piece-online.html`, `tier-list/project-mugetsu.html`, `tier-list/jujutsu-shenanigans.html`, `guides/grand-piece-online.html`, `guides/project-mugetsu.html`, `guides/jujutsu-shenanigans.html` (neufs) ; `tier-list/index.html`, `guides/index.html`, `sitemap.xml`, `index.html`, `codes/grand-piece-online.html`, `codes/project-mugetsu.html`, `codes/jujutsu-shenanigans.html` (intégration).
 
 ---
 
