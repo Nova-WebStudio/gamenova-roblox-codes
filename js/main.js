@@ -3,6 +3,11 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+  'a-dusty-trip': 'https://tr.rbxcdn.com/180DAY-c7bb56c7b813baf35d1a7335ec3e48fd/768/432/Image/Png/noFilter',
+  'war-tycoon': 'https://tr.rbxcdn.com/180DAY-002e1c99ba576f8c2f015859e13c1d83/768/432/Image/Png/noFilter',
+  'iron-soul-dungeon': 'https://tr.rbxcdn.com/180DAY-6624e54164ae1e6a970c6ba71fb6776a/768/432/Image/Png/noFilter',
+  'blox-monsters': 'https://tr.rbxcdn.com/180DAY-b5a0ea014346723cbbb5337ee7ba4ce5/768/432/Image/Png/noFilter',
+  'car-crushers-2': 'https://tr.rbxcdn.com/180DAY-caf6bc510c2bc241535541c8c41ddcf7/768/432/Image/Png/noFilter',
   'steal-a-fish': '/images/games/steal-a-fish.svg',
   'knockout': '/images/games/knockout.svg',
   'my-gym': '/images/games/my-gym.svg',
@@ -167,6 +172,11 @@ function initMobileNav() {
 
 /* ---- Search index ---- */
 const GAMES_INDEX = [
+  { name: "A Dusty Trip", slug: 'a-dusty-trip', emoji: '🚗', codes: 3 },
+  { name: "War Tycoon", slug: 'war-tycoon', emoji: '🪖', codes: 4 },
+  { name: "Iron Soul: Dungeon", slug: 'iron-soul-dungeon', emoji: '⚒️', codes: 11 },
+  { name: "Blox Monsters", slug: 'blox-monsters', emoji: '🐾', codes: 5 },
+  { name: "Car Crushers 2", slug: 'car-crushers-2', emoji: '💥', codes: 6 },
   { name: "Steal a Fish", slug: 'steal-a-fish', emoji: '🐟', codes: 3 },
   { name: "Knockout", slug: 'knockout', emoji: '🥊', codes: 8 },
   { name: "My Gym", slug: 'my-gym', emoji: '🏋️', codes: 3 },
@@ -375,6 +385,11 @@ function highlightNav() {
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
+  'a-dusty-trip': 5650396773,
+  'war-tycoon': 1526814825,
+  'iron-soul-dungeon': 9910245722,
+  'blox-monsters': 10086454767,
+  'car-crushers-2': 274816972,
   'locked': 4324259364,
   'defend-ur-base-with-anime': 10111742174,
   'anime-rng': 10062593318,

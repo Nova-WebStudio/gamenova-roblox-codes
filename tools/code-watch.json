@@ -111,15 +111,23 @@
       "knownCodes": []
     },
     "blade-ball": {
-      "lastChecked": "2026-06-12T02:10:56Z",
+      "lastChecked": "2026-06-16T11:00:00Z",
       "descLen": null,
-      "descExcerpt": "API Roblox inaccessible (shell bloque) - verifie le 12 juin par recherche web (2 sources).",
+      "descExcerpt": "API Roblox inaccessible (shell bloque) - verifie le 16 juin via Pocket Tactics + GamesRadar (2 sources). Grand nettoyage : nombreux codes saisonniers expires retires.",
       "knownCodes": [
         "SERPENT",
-        "SERPENT_HYPE",
-        "5BVISITS",
-        "VISITS_TY",
-        "DRAGONS"
+        "RAMADAN",
+        "4BVISITS",
+        "2BTHANKS",
+        "SPOOKYSEASON",
+        "FROGS",
+        "ENERGYSWORDS",
+        "SHARKATTACK",
+        "SUMMERWHEEL",
+        "SUMMERSTARTSHERE",
+        "RNGEMOTES",
+        "GIVEMELUCK",
+        "FREESPINS"
       ]
     },
     "blue-lock-rivals": {
