@@ -35,4 +35,6 @@
   <FilesMatch "\.html$">
     Header set Cache-Control "public, max-age=3600, must-revalidate"
   </FilesMatch>
+  # HSTS : évite la redirection http->https aux visites suivantes
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 </IfModule>
