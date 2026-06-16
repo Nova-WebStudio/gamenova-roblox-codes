@@ -77,10 +77,19 @@ Ce fichier fait ~50 Ko. Il est fragile à l'écriture.
 
 ## Miniatures Roblox
 
+⚠️ **RÈGLE ABSOLUE (demandée par Peter) : JAMAIS de SVG comme miniature affichée d'un jeu.** Toujours une **vraie miniature `tr.rbxcdn.com`** récupérée via l'API officielle. Le SVG `/images/games/<slug>.svg` ne sert QUE de fallback `onerror`, jamais de `src` principal, et jamais comme valeur dans `ROBLOX_THUMBS` / `THUMBS`.
+
+**Méthode fiable pour obtenir la vraie miniature (le shell bash n'a PAS de réseau ; utiliser le navigateur Chrome) :**
+1. placeId → universeId : `https://apis.roblox.com/universes/v1/places/<placeId>/universe`
+2. universeId → imageUrl : `https://thumbnails.roblox.com/v1/games/multiget/thumbnails?universeIds=<id>&countPerUniverse=1&size=768x432&format=Png&defaults=true` → champ `imageUrl` (format `https://tr.rbxcdn.com/180DAY-<hash>/768/432/Image/Png/noFilter`).
+3. **Toujours vérifier que l'universeId correspond au BON jeu** via `https://games.roblox.com/v1/games?universeIds=<id>` (champ `name`). Bug réel du 16 juin : `ROBLOX_UNIVERSE_IDS['king-legacy']` valait `6096648965` = « Kkimusya's Place » (baseplate vide, 0 joueur) au lieu de `1451439645` (King Legacy) → la miniature live était fausse et retombait sur le SVG.
+
+Mettre la vraie URL dans **les 3 endroits** : `ROBLOX_THUMBS` (js/main.js), `THUMBS` (codes/index.html), et le `src` du hero `codes/<slug>.html` (+ carte index.html, carte tier-list/index.html, guide). Renseigner aussi le bon `ROBLOX_UNIVERSE_IDS` pour le rafraîchissement client-side.
+
 - L'URL `og:image` se trouve dans les meta tags de `https://www.roblox.com/games/<placeId>/<name>`
-- Certaines pages Roblox sont client-rendues (JS requis) → `web_fetch` ne retourne pas les meta tags → pas d'URL récupérable
-- L'API `thumbnails.roblox.com` est bloquée depuis le shell bash (403)
-- En cas d'échec, garder le SVG placeholder plutôt que d'inventer une URL
+- Certaines pages Roblox sont client-rendues (JS requis) → `web_fetch` ne retourne pas les meta tags → utiliser Chrome (`navigate` + `get_page_text`) qui exécute le JS et peut lire les endpoints JSON de l'API Roblox
+- L'API `thumbnails.roblox.com` est bloquée depuis le shell bash (403) → passer par Chrome
+- En dernier recours seulement, si la vraie miniature est introuvable, garder le SVG placeholder — mais ne JAMAIS inventer d'URL
 
 **Jeux dont la page Roblox ne retourne pas og:image (client-rendu) :**
 - `dragon-blox` (place ID: 3177438863)
