@@ -69,6 +69,18 @@
     .g-body{padding:16px}
     .g-name{font-weight:800;font-size:1.05rem;color:var(--text-primary)}
     .g-sub{font-size:.83rem;color:var(--text-muted);margin-top:4px}
+    .guides-filter{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin:6px 0 16px}
+    .guides-search{flex:1;min-width:220px;position:relative}
+    .guides-search input{width:100%;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 14px 12px 40px;color:var(--text-primary);font-size:.95rem;font-family:inherit}
+    .guides-search input:focus{outline:none;border-color:var(--accent)}
+    .guides-search .gs-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:1rem;pointer-events:none}
+    .guides-chips{display:flex;gap:6px;flex-wrap:wrap}
+    .g-chip{background:var(--bg-card);border:1px solid var(--border);border-radius:999px;padding:8px 14px;font-size:.82rem;font-weight:700;color:var(--text-muted);cursor:pointer;transition:.15s;user-select:none}
+    .g-chip:hover{color:var(--text-primary);border-color:rgba(162,89,255,.45)}
+    .g-chip.active{background:linear-gradient(135deg,var(--accent),var(--accent2));border-color:transparent;color:#fff}
+    .g-card.hidden{display:none}
+    .guides-count{font-size:.82rem;color:var(--text-muted);margin:0 0 12px}
+    .guides-empty{display:none;color:var(--text-muted);font-size:.95rem;padding:18px 0}
   </style>
 </head>
 <body>
@@ -92,6 +104,21 @@
 <section class="section">
   <div class="container">
     <h2 class="section-title" style="margin-bottom:8px"><span>📚 Tous les guides</span></h2>
+    <div class="guides-filter">
+      <div class="guides-search"><span class="gs-icon">🔎</span><input type="search" id="guideSearch" placeholder="Rechercher un guide (nom, mécanique…)" aria-label="Rechercher un guide"></div>
+      <div class="guides-chips" id="guideChips">
+        <span class="g-chip active" data-cat="all">Tous</span>
+        <span class="g-chip" data-cat="anime">Anime</span>
+        <span class="g-chip" data-cat="battle">Combat</span>
+        <span class="g-chip" data-cat="rpg">RPG</span>
+        <span class="g-chip" data-cat="simulator">Simulateur</span>
+        <span class="g-chip" data-cat="tower-defense">Tower Defense</span>
+        <span class="g-chip" data-cat="tycoon">Tycoon</span>
+        <span class="g-chip" data-cat="horror">Horreur</span>
+      </div>
+    </div>
+    <p class="guides-count" id="guideCount"></p>
+    <p class="guides-empty" id="guideEmpty">Aucun guide ne correspond à ta recherche. Essaie un autre mot-clé ou retire les filtres.</p>
     <div class="g-grid">
       <a class="g-card" href="/guides/grand-piece-online.html"><img class="g-thumb" src="https://tr.rbxcdn.com/180DAY-5dfa86c9bab8fb4f1641f42ce7b55c17/500/280/Image/Jpeg/noFilter" alt="Guide Grand Piece Online" loading="lazy"><div class="g-body"><div class="g-name">Guide Grand Piece Online</div><div class="g-sub">Débuter, monter de niveau île par île, obtenir les fruits, meilleure race &amp; Haki</div></div></a>
       <a class="g-card" href="/guides/project-mugetsu.html"><img class="g-thumb" src="https://tr.rbxcdn.com/180DAY-45c83a7355a6e29a684259c12859f40e/500/280/Image/Jpeg/noFilter" alt="Guide Project Mugetsu" loading="lazy"><div class="g-body"><div class="g-name">Guide Project Mugetsu</div><div class="g-sub">Soul Reaper, Hollow, Shikai, Bankai, Resurrección, clans &amp; meilleure race</div></div></a>
@@ -128,5 +155,35 @@
 </section>
 <footer class="site-footer"><div class="container"><div class="footer-bottom" style="padding:24px 0"><span>© 2026 Zoneblox — Non affilié à Roblox Corporation.</span><span><a href="/about.html">À propos</a> · <a href="/privacy.html">Confidentialité</a> · <a href="/terms.html">Conditions</a> · <a href="/contact.html">Contact</a></span></div></div></footer>
 <script src="/js/main.js?v=24"></script>
+<script>
+(function(){
+  var CATS={'grand-piece-online':'anime','project-mugetsu':'anime','jujutsu-shenanigans':'battle','blox-fruits':'rpg','blade-ball':'battle','blue-lock-rivals':'anime','anime-last-stand':'anime','anime-vanguards':'anime','tower-defense-simulator':'battle','world-fighters':'battle','noob-incremental':'simulator','my-gaming-cafe':'tycoon','vendre-des-citrons':'tycoon','pressure':'horror','steal-a-brainrot':'simulator','fish-it':'simulator','catch-and-tame':'simulator','forsaken':'battle','kick-a-lucky-block':'simulator','anime-fighting-simulator-reborn':'battle','universal-tower-defense-x':'anime','dandys-world':'battle','broken-blade':'rpg','build-a-ring-farm':'simulator','adopt-me':'simulator','99-nights-in-the-forest':'simulator','anime-warriors-iii':'battle','anime-squadron':'tower-defense','grow-a-garden-2':'simulator'};
+  function norm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');}
+  var cards=[].slice.call(document.querySelectorAll('.g-card'));
+  cards.forEach(function(c){
+    var m=(c.getAttribute('href')||'').match(/\/guides\/([^.\/]+)\.html/);
+    c.dataset.cat=CATS[m?m[1]:'']||'autre';
+    c.dataset.text=norm(c.textContent);
+  });
+  var search=document.getElementById('guideSearch');
+  var chips=[].slice.call(document.querySelectorAll('#guideChips .g-chip'));
+  var countEl=document.getElementById('guideCount');
+  var emptyEl=document.getElementById('guideEmpty');
+  var activeCat='all',q='';
+  function apply(){
+    var n=0;
+    cards.forEach(function(c){
+      var show=(activeCat==='all'||c.dataset.cat===activeCat)&&(!q||c.dataset.text.indexOf(q)!==-1);
+      c.classList.toggle('hidden',!show);
+      if(show)n++;
+    });
+    if(countEl)countEl.textContent=n+(n>1?' guides affichés':' guide affiché');
+    if(emptyEl)emptyEl.style.display=n?'none':'block';
+  }
+  if(search)search.addEventListener('input',function(e){q=norm(e.target.value);apply();});
+  chips.forEach(function(ch){ch.addEventListener('click',function(){chips.forEach(function(x){x.classList.remove('active');});ch.classList.add('active');activeCat=ch.dataset.cat;apply();});});
+  apply();
+})();
+</script>
 </body>
 </html>
