@@ -188,7 +188,7 @@ const GAMES_INDEX = [
   { name: "Anime Fighters Simulator", slug: 'anime-fighters', emoji: '👊', codes: 8 },
   { name: "Anime Reversal", slug: 'anime-reversal', emoji: '🌀', codes: 2 },
   { name: "LOCKED", slug: 'locked', emoji: '⚽', codes: 9 },
-  { name: "Defend ur base with anime", slug: 'defend-ur-base-with-anime', emoji: '🛡️', codes: 4 },
+  { name: "Defend ur base with anime", slug: 'defend-ur-base-with-anime', emoji: '🛡️', codes: 5 },
   { name: "Anime RNG", slug: 'anime-rng', emoji: '🎲', codes: 5 },
   { name: "UGC Limited", slug: 'ugc-limited', emoji: '🎁', codes: 32 },
   { name: "Jujutsu Shenanigans", slug: 'jujutsu-shenanigans', emoji: '🌀', codes: 5 },
