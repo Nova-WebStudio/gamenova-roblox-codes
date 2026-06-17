@@ -238,7 +238,7 @@ const GAMES_INDEX = [
   { name: 'Murder Mystery 2',     slug: 'murder-mystery-2',     emoji: '🔪', codes: 0 },
   { name: 'Shindo Life',          slug: 'shindo-life',          emoji: '🌀', codes: 11 },
   { name: 'Royale High',          slug: 'royale-high',          emoji: '👑', codes: 1 },
-  { name: 'Fruit Battlegrounds',  slug: 'fruit-battlegrounds',  emoji: '💥', codes: 5 },
+  { name: 'Fruit Battlegrounds',  slug: 'fruit-battlegrounds',  emoji: '💥', codes: 6 },
   { name: 'King Legacy',          slug: 'king-legacy',          emoji: '⚡', codes: 8 },
   { name: 'Encounters',           slug: 'encounters',           emoji: '👾', codes: 1 },
   { name: 'Rivals',               slug: 'rivals',               emoji: '🎯', codes: 9 },
