@@ -49,8 +49,15 @@ Le mount bash du bac à sable a servi un cache de lecture périmé pour les fich
 ## Non traité ce run
 Ajout de 6 jeux (Étape 1), nouvelles tier lists (Étape 4), guides complets (Étape 5), UGC (Étape 6) : non abordés ce run, centré sur surveillance + indexation + QC.
 
+## Sitemap — mise à jour des `lastmod`
+Réalignement de tous les `lastmod` du `sitemap.xml` sur la **vraie date de dernière modification** de chaque page (date du dernier commit git), et **2026-06-18** pour les 6 pages éditées ce jour. 237 entrées ajustées, XML revérifié bien formé (244 URLs, se termine par `</urlset>`). Choix volontaire de **ne pas** tout dater à aujourd'hui (un `lastmod` massivement faux peut être perçu comme du spam par Google). Distribution : 226 pages au 06-16, 1 au 06-17, 17 au 06-18.
+
+### Indexation Google (rappel)
+64/244 pages indexées sur un domaine de ~16 jours = normal. Re-soumettre le sitemap ne force pas l'indexation. Leviers réels : étoffer le thin content (en cours), demander l'indexation des pages prioritaires via l'inspection d'URL dans Search Console (~10/jour), obtenir des backlinks, et patienter. Une seule soumission du sitemap suffit (Google le relit seul).
+
 ## Fichiers touchés
 - `tools/code-watch.json`
+- `sitemap.xml` (lastmod réalignés)
 - `codes/fish-it.html`, `codes/slap-battles.html`, `codes/project-slayers.html`, `codes/bloxstrike.html`, `codes/volleyball-legends.html`, `codes/be-a-brainrot.html`
 - `rapport-zoneblox-2026-06-18.md` (ce rapport)
 
