@@ -65,6 +65,46 @@
     "defend-ur-base-with-anime": {
       "id": 10111742174,
       "groupId": 104489519
+    },
+    "spin-a-soccer-card": {
+      "id": 9272693470,
+      "groupId": null
+    },
+    "merge-a-nuke": {
+      "id": 10199301628,
+      "groupId": null
+    },
+    "vv-ultimatum": {
+      "id": 2309918273,
+      "groupId": null
+    },
+    "fifa-super-soccer": {
+      "id": 4293374620,
+      "groupId": null
+    },
+    "hypershot": {
+      "id": 5995470825,
+      "groupId": null
+    },
+    "blockspin": {
+      "id": 6765805766,
+      "groupId": null
+    },
+    "run-a-restaurant": {
+      "id": 9970645639,
+      "groupId": null
+    },
+    "squid-game-x": {
+      "id": 2936053166,
+      "groupId": null
+    },
+    "catch-a-monster": {
+      "id": 9141743926,
+      "groupId": null
+    },
+    "brainrot-evolution": {
+      "id": 7332711118,
+      "groupId": null
     }
   },
   "snapshots": {
@@ -277,6 +317,116 @@
         "SRYFORSHUTDOWN!",
         "CRAFTNERF!"
       ]
+    },
+    "spin-a-soccer-card": {
+      "lastChecked": "2026-06-18T20:00:00Z",
+      "descLen": null,
+      "knownCodes": [
+        "EPIC-LION",
+        "PRIME-TURBO",
+        "CRYSTAL-GOAL",
+        "WOLF-METEOR",
+        "OMEGA-STAR",
+        "TIGER-HAWK"
+      ],
+      "descExcerpt": "Ajout du spin-a-soccer-card. Codes vérifiés (2 sources). Base de référence pour la surveillance."
+    },
+    "merge-a-nuke": {
+      "lastChecked": "2026-06-18T20:00:00Z",
+      "descLen": null,
+      "knownCodes": [
+        "UPDATE2",
+        "BOOM",
+        "ATOMIC"
+      ],
+      "descExcerpt": "Ajout du merge-a-nuke. Codes vérifiés (2 sources). Base de référence pour la surveillance."
+    },
+    "vv-ultimatum": {
+      "lastChecked": "2026-06-18T20:00:00Z",
+      "descLen": null,
+      "knownCodes": [
+        "MIDVVEEK"
+      ],
+      "descExcerpt": "Ajout du vv-ultimatum. Codes vérifiés (2 sources). Base de référence pour la surveillance."
+    },
+    "fifa-super-soccer": {
+      "lastChecked": "2026-06-18T20:00:00Z",
+      "descLen": null,
+      "knownCodes": [
+        "WorldCupSecret",
+        "bestfootball",
+        "fifasupersoccer",
+        "sub2fssdevilz"
+      ],
+      "descExcerpt": "Ajout du fifa-super-soccer. Codes vérifiés (2 sources). Base de référence pour la surveillance."
+    },
+    "hypershot": {
+      "lastChecked": "2026-06-18T20:00:00Z",
+      "descLen": null,
+      "knownCodes": [
+        "ONEBILLION",
+        "SIXSEVEN",
+        "HAPPYMAY",
+        "NEWUPDATE"
+      ],
+      "descExcerpt": "Ajout du hypershot. Codes vérifiés (2 sources). Base de référence pour la surveillance."
+    },
+    "blockspin": {
+      "lastChecked": "2026-06-18T20:00:00Z",
+      "descLen": null,
+      "knownCodes": [
+        "HURRICANE_RELEASE",
+        "M16_RELEASE",
+        "UNDER_THE_BARREL"
+      ],
+      "descExcerpt": "Ajout du blockspin. Codes vérifiés (2 sources). Base de référence pour la surveillance."
+    },
+    "run-a-restaurant": {
+      "lastChecked": "2026-06-18T20:00:00Z",
+      "descLen": null,
+      "knownCodes": [
+        "RAR4EVER"
+      ],
+      "descExcerpt": "Ajout du run-a-restaurant. Codes vérifiés (2 sources). Base de référence pour la surveillance."
+    },
+    "squid-game-x": {
+      "lastChecked": "2026-06-18T20:00:00Z",
+      "descLen": null,
+      "knownCodes": [
+        "FRONTMAN",
+        "REVAMP",
+        "150KLIKES",
+        "PENTA",
+        "MINGLE",
+        "UPDATE11RELEASE"
+      ],
+      "descExcerpt": "Ajout du squid-game-x. Codes vérifiés (2 sources). Base de référence pour la surveillance."
+    },
+    "catch-a-monster": {
+      "lastChecked": "2026-06-18T20:00:00Z",
+      "descLen": null,
+      "knownCodes": [
+        "graon",
+        "magmorus",
+        "moovik",
+        "danvok",
+        "LIVEXP",
+        "LIVECOIN"
+      ],
+      "descExcerpt": "Ajout du catch-a-monster. Codes vérifiés (2 sources). Base de référence pour la surveillance."
+    },
+    "brainrot-evolution": {
+      "lastChecked": "2026-06-18T20:00:00Z",
+      "descLen": null,
+      "knownCodes": [
+        "Krang",
+        "Luck",
+        "Patrick",
+        "Fishybara",
+        "Tsunami",
+        "Love"
+      ],
+      "descExcerpt": "Ajout du brainrot-evolution. Codes vérifiés (2 sources). Base de référence pour la surveillance."
     }
   }
 }

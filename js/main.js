@@ -3,6 +3,16 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+  'spin-a-soccer-card': 'https://tr.rbxcdn.com/180DAY-bf53b88875889ac2f4ac48047d017b4a/480/270/Image/Webp/noFilter',
+  'merge-a-nuke': 'https://tr.rbxcdn.com/180DAY-559508ad864c626f049ce0870d43665b/480/270/Image/Webp/noFilter',
+  'vv-ultimatum': 'https://tr.rbxcdn.com/180DAY-a1d19383f4330a2b5e1902fdcc5f5171/480/270/Image/Webp/noFilter',
+  'fifa-super-soccer': 'https://tr.rbxcdn.com/180DAY-8dbf3df11aed03b0c733d41fda2bd3a4/480/270/Image/Webp/noFilter',
+  'hypershot': 'https://tr.rbxcdn.com/180DAY-e640b4e4d607ef8db910b23b7adc09f4/480/270/Image/Webp/noFilter',
+  'blockspin': 'https://tr.rbxcdn.com/180DAY-d2785094a0b157d6fc654e7a3c53e5d9/480/270/Image/Webp/noFilter',
+  'run-a-restaurant': 'https://tr.rbxcdn.com/180DAY-abe7f648884a7c427c69f828e51c65ce/480/270/Image/Webp/noFilter',
+  'squid-game-x': 'https://tr.rbxcdn.com/180DAY-2264689de7f046b3c3df5e135abd5ffa/480/270/Image/Webp/noFilter',
+  'catch-a-monster': 'https://tr.rbxcdn.com/180DAY-874bb92a4550696298e41ef059e6cb57/480/270/Image/Webp/noFilter',
+  'brainrot-evolution': 'https://tr.rbxcdn.com/180DAY-fc4ce9bf5f0886c17c472d7e9b291b2d/480/270/Image/Webp/noFilter',
   'a-dusty-trip': 'https://tr.rbxcdn.com/180DAY-c7bb56c7b813baf35d1a7335ec3e48fd/480/270/Image/Webp/noFilter',
   'war-tycoon': 'https://tr.rbxcdn.com/180DAY-002e1c99ba576f8c2f015859e13c1d83/480/270/Image/Webp/noFilter',
   'iron-soul-dungeon': 'https://tr.rbxcdn.com/180DAY-6624e54164ae1e6a970c6ba71fb6776a/480/270/Image/Webp/noFilter',
@@ -172,6 +182,16 @@ function initMobileNav() {
 
 /* ---- Search index ---- */
 const GAMES_INDEX = [
+  { name: "Spin a Soccer Card", slug: 'spin-a-soccer-card', emoji: '⚽', codes: 6 },
+  { name: "Merge a Nuke", slug: 'merge-a-nuke', emoji: '☢️', codes: 3 },
+  { name: "VV: ULTIMATUM", slug: 'vv-ultimatum', emoji: '⚔️', codes: 1 },
+  { name: "FIFA Super Soccer", slug: 'fifa-super-soccer', emoji: '⚽', codes: 4 },
+  { name: "Hypershot", slug: 'hypershot', emoji: '🔫', codes: 4 },
+  { name: "BlockSpin", slug: 'blockspin', emoji: '🔪', codes: 3 },
+  { name: "Run a Restaurant", slug: 'run-a-restaurant', emoji: '🍔', codes: 1 },
+  { name: "Squid Game X", slug: 'squid-game-x', emoji: '🦑', codes: 6 },
+  { name: "Catch a Monster", slug: 'catch-a-monster', emoji: '👾', codes: 6 },
+  { name: "Brainrot Evolution", slug: 'brainrot-evolution', emoji: '🧠', codes: 6 },
   { name: "A Dusty Trip", slug: 'a-dusty-trip', emoji: '🚗', codes: 3 },
   { name: "War Tycoon", slug: 'war-tycoon', emoji: '🪖', codes: 4 },
   { name: "Iron Soul: Dungeon", slug: 'iron-soul-dungeon', emoji: '⚒️', codes: 11 },
@@ -385,6 +405,16 @@ function highlightNav() {
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
+  'spin-a-soccer-card': 9272693470,
+  'merge-a-nuke': 10199301628,
+  'vv-ultimatum': 2309918273,
+  'fifa-super-soccer': 4293374620,
+  'hypershot': 5995470825,
+  'blockspin': 6765805766,
+  'run-a-restaurant': 9970645639,
+  'squid-game-x': 2936053166,
+  'catch-a-monster': 9141743926,
+  'brainrot-evolution': 7332711118,
   'mini-war': 9837612476,
   '1-aura-per-click': 10067258922,
   'steal-a-fish': 7907828295,

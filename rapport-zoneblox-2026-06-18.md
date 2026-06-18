@@ -49,6 +49,27 @@ Le mount bash du bac à sable a servi un cache de lecture périmé pour les fich
 ## Non traité ce run
 Ajout de 6 jeux (Étape 1), nouvelles tier lists (Étape 4), guides complets (Étape 5), UGC (Étape 6) : non abordés ce run, centré sur surveillance + indexation + QC.
 
+## Ajout de 10 nouveaux jeux (« la totale »)
+
+10 jeux Roblox tendance de juin 2026, **tous ≥4000 joueurs simultanés** et **tous avec codes actifs vérifiés par 2+ sources**, absents du catalogue, ajoutés avec page complète (≥1200 mots), vraie miniature `tr.rbxcdn.com`, 2 vidéos YouTube vérifiées via oEmbed, astuces, FAQ, À propos + 3 jeux similaires, bandeau CTA, et intégration dans toutes les sources de données.
+
+| Jeu | Joueurs | Genre | Mots | Codes |
+|-----|--------:|-------|-----:|------:|
+| Spin a Soccer Card | ~32 700 | Sport/RNG | 1454 | 6 |
+| Merge a Nuke | ~30 400 | Simulation | 1372 | 3 |
+| VV: ULTIMATUM | ~31 100 | RPG anime (Bleach) | 1338 | 1 |
+| FIFA Super Soccer | ~27 400 | Sport | 1287 | 4 |
+| Hypershot | ~26 200 | FPS | 1289 | 4 |
+| BlockSpin | ~22 000 | Combat/armes | 1322 | 3 |
+| Run a Restaurant | ~21 300 | Tycoon | 1284 | 1 |
+| Squid Game X | ~18 400 | Survie | 1312 | 6 |
+| Catch a Monster | ~18 300 | Simulation | 1348 | 6 |
+| Brainrot Evolution | ~4 800 | Brainrot/sim | 1305 | 6 |
+
+Sélection : jeux écartés car **sans système de codes** (Animal Hospital 69k, Violence District 40k, Fling Things and People 34k, Flee the Facility, Ink Game) ou **retombés sous 4000 joueurs** (YBA, Gym League, Heaven Stand, Anime Paradox en maintenance).
+
+Intégrations réalisées pour chaque jeu : carte sur `index.html` (section « Nouveaux jeux »), `ALL_GAMES` + `THUMBS` (codes/index.html), `GAMES_INDEX` + `ROBLOX_THUMBS` + `ROBLOX_UNIVERSE_IDS` (js/main.js), SVG de fallback, `<url>` au sitemap, `hotGames` + `snapshots` (code-watch.json). Synchro vérifiée : **GAMES_INDEX 153 = ALL_GAMES 153**, aucun écart. `node --check js/main.js` OK. Sitemap : 254 URLs, bien formé. Toutes les pages finissent par `</html>`, divs équilibrés, GA4 + nav 7 entrées + cache `v=24` présents, miniatures `tr.rbxcdn.com` (SVG en fallback `onerror` uniquement), aucun octet nul, aucune vidéo invalide.
+
 ## Sitemap — mise à jour des `lastmod`
 Réalignement de tous les `lastmod` du `sitemap.xml` sur la **vraie date de dernière modification** de chaque page (date du dernier commit git), et **2026-06-18** pour les 6 pages éditées ce jour. 237 entrées ajustées, XML revérifié bien formé (244 URLs, se termine par `</urlset>`). Choix volontaire de **ne pas** tout dater à aujourd'hui (un `lastmod` massivement faux peut être perçu comme du spam par Google). Distribution : 226 pages au 06-16, 1 au 06-17, 17 au 06-18.
 
