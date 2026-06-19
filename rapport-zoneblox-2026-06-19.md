@@ -56,8 +56,21 @@ Comme la veille, le **mount bash du sandbox sert une lecture tronquée** des fic
 ## Non traité ce run
 Ajout de 6 jeux (Étape 1), nouvelles tier lists (Étape 4), guides complets (Étape 5), UGC (Étape 6) : non abordés ce run, centré sur surveillance des codes + indexation + QC. 10 jeux ayant été ajoutés la veille, le catalogue est récent.
 
+## Ajout d'un jeu (« la totale ») — 100 Days at Sea / 100 jours en mer
+
+Jeu de survie en monde ouvert de **Stranded Devs** (placeId 70411440483149, universeId 9167377564, groupId 425035678), **~41 800 joueurs simultanés** (largement éligible), absent du catalogue. Page complète créée : `codes/100-days-at-sea.html`, **1997 mots** de rédactionnel FR, miniature réelle `tr.rbxcdn.com`, 2 vidéos YouTube vérifiées via oEmbed (CHALLS « Tips & Tricks » `BjXm4F1E9UA` ; Ricoko « NOOB to PRO » `gB_iMCdUkus`), 6 astuces, FAQ (4 questions), section À propos + guide des classes (Sailor, Survivor, Medic, Crewmate, Camper, Adventurer, Knight, Millionaire) + 3 jeux similaires (99 Nights in the Forest, Dead Rails, Squid Game X), bandeau CTA, GA4, nav 7 entrées.
+
+**⚠️ Codes — décision d'honnêteté :** la description in-game ne contient **aucun code**, et aucune source fiable ne confirme de codes. Les seules « listes » qui circulent (ex. Lawod : RAFTBOOST, HARPOONX, OCEANLIFE…) ne sont corroborées par aucune source sérieuse et ont tout du remplissage SEO inventé. **Aucun code n'a donc été publié** : la page affiche honnêtement « Pas de code officiel confirmé », explique la méthode de saisie et où les vrais codes apparaîtront. Dès qu'un code sera confirmé (2 sources), il sera ajouté.
+
+**Intégrations réalisées :** carte sur `index.html` (1ʳᵉ position « Nouveaux jeux »), `ALL_GAMES` + `THUMBS` (codes/index.html), `GAMES_INDEX` + `ROBLOX_THUMBS` + `ROBLOX_UNIVERSE_IDS` (js/main.js), SVG de fallback `images/games/100-days-at-sea.svg`, `<url>` au sitemap, `hotGames` + snapshot de référence (code-watch.json, premier run → aucun signalement). Synchro vérifiée : **GAMES_INDEX 154 = ALL_GAMES 154**, aucun écart.
+
+**Cache JS :** js/main.js modifié → version bumpée **v=24 → v=25** dans les **257 fichiers HTML** (procédure ÉTAPE 9). Vérification : aucun fichier versionné physique sur le serveur (query-string pur sur `/js/main.js`, confirmé via `.htaccess`), le bump est donc sans risque. Les fichiers édités via l'outil ont été bumpés un par un via l'outil (écriture disque réelle), les 253 autres via un script Python avec garde-fou anti-troncature ; aucun fichier corrompu.
+
 ## Fichiers touchés
-- `tools/code-watch.json` (lastChecked 26 jeux + 2 nouveaux codes)
+- `tools/code-watch.json` (lastChecked 26 jeux + 2 nouveaux codes + ajout 100-days-at-sea)
+- `codes/100-days-at-sea.html` (nouveau, 1997 mots) + `images/games/100-days-at-sea.svg` (nouveau)
+- `index.html`, `codes/index.html`, `js/main.js`, `sitemap.xml` (intégration du jeu)
+- **Tous les .html** : bump cache `v=24 → v=25`
 - `codes/blockspin.html` (+code `W7C28D`, date, FAQ)
 - `codes/squid-game-x.html` (+code `$1M$`, date)
 - `codes/tower-of-hell.html`, `codes/toilet-tower-defense.html`, `codes/brookhaven.html`, `codes/twenty-one.html`, `codes/fire-force-online.html`, `codes/slime-rng.html` (étoffement)

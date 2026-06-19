@@ -105,6 +105,10 @@
     "brainrot-evolution": {
       "id": 7332711118,
       "groupId": null
+    },
+    "100-days-at-sea": {
+      "id": 9167377564,
+      "groupId": 425035678
     }
   },
   "snapshots": {
@@ -429,6 +433,12 @@
         "Love"
       ],
       "descExcerpt": "Ajout du brainrot-evolution. Codes vérifiés (2 sources). Base de référence pour la surveillance."
+    },
+    "100-days-at-sea": {
+      "lastChecked": "2026-06-19T02:30:00Z",
+      "descLen": 210,
+      "knownCodes": [],
+      "descExcerpt": "Tu es envoye en mission au milieu de l ocean. Tu dois decouvrir le mystere du Triangle des Bermudes. Survivez 100 jours et devenez riche! Jeu de survie en monde ouvert: harpon, radeau, iles mysterieuses, armes."
     }
   }
 }
