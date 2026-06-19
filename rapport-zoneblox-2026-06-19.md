@@ -95,6 +95,18 @@ JSON-LD ItemList + Breadcrumb valides, date affichée (19 juin 2026), boutons he
 - `index.html`, `codes/index.html`, `js/main.js`, `sitemap.xml`, `guides/index.html` (intégration jeu + guide)
 - `codes/100-days-at-sea.html` (bouton hero + bandeau CTA vers le guide)
 - **Tous les .html** : bump cache `v=24 → v=25`
+
+## Checkup codes — vagues de 10 jeux (vagues 1-6/12)
+
+Vérification des codes actifs/nouvellement sortis pour les jeux à codes, par vagues de 10, chaque jeu recoupé sur des agrégateurs reconnus (Pocket Tactics, Pro Game Guides, Beebom, Pocket Gamer, gamesradar, Dexerto, RoCodes…) +, quand pertinent, la description in-game. **Principe d'honnêteté : on n'ajoute que des codes confirmés ; on ne supprime pas un code existant sans preuve d'expiration explicite (pour ne pas retirer un code encore valide).**
+
+**~158 nouveaux codes ajoutés sur 60 jeux** (vagues 1-6). Dates « Vérifié le » rafraîchies au 19 juin sur les jeux confirmés.
+
+Principaux ajouts : Blade Ball +6, Shindo Life +6, Anime Battle RNG +14, Slime RNG +12, Knockout +9, BloxStrike +8, Iron Soul Dungeon +8, Anime Apocalypse +7, Dandy's World +7, Anime Spirits +10, World Fighters +8, Catch a Monster +9, Sailor Piece +5, Broken Blade +5, Universal Tower Defense X +5, Anime Reversal +5, Fruit Battlegrounds +4, AOT Revolution +3, Anime Squadron +3, Noob Incremental +3, et beaucoup d'autres (+1/+2).
+
+**Jeux signalés à revoir (non modifiés faute de certitude) :** Pet Simulator X (sources : 0 actif / 48 expirés), Car Crushers 2 (sources contradictoires), Driving Empire (pas de noms précis), Anime Adventures (jeu retiré DMCA), anime-fighters / anime-rng / locked (résultats pour un autre jeu ou une suite), jujutsu-shenanigans (1 seul code actif d'après la source → 4 probablement expirés), DIG (résultats « Dig It »), Run a Restaurant (RAR4EVER possiblement expiré), twenty-one (pas de noms).
+
+**Vagues restantes (7-12, ~56 jeux) :** non traitées à ce déploiement, à poursuivre lors d'un prochain run.
 - `codes/blockspin.html` (+code `W7C28D`, date, FAQ)
 - `codes/squid-game-x.html` (+code `$1M$`, date)
 - `codes/tower-of-hell.html`, `codes/toilet-tower-defense.html`, `codes/brookhaven.html`, `codes/twenty-one.html`, `codes/fire-force-online.html`, `codes/slime-rng.html` (étoffement)

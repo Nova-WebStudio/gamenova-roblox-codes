@@ -113,7 +113,7 @@
   },
   "snapshots": {
     "blox-fruits": {
-      "lastChecked": "2026-06-19T02:10:00Z",
+      "lastChecked": "2026-06-19T03:30:00Z",
       "descLen": null,
       "descExcerpt": "Welcome to Blox Fruits! Become a master swordsman or a powerful blox fruit user... Current level cap: 2800. Fruits spawn every hour. Codes dans la description du groupe.",
       "knownCodes": [
@@ -159,7 +159,7 @@
       "knownCodes": []
     },
     "blade-ball": {
-      "lastChecked": "2026-06-19T02:10:00Z",
+      "lastChecked": "2026-06-19T03:30:00Z",
       "descLen": null,
       "descExcerpt": "Dans ce jeu de timing et de strategie, vous etes une balle de renvoi deviante qui chasse les joueurs. Obtenez de nouvelles capacites. Pas de code dans la description.",
       "knownCodes": [
@@ -175,11 +175,17 @@
         "SUMMERSTARTSHERE",
         "RNGEMOTES",
         "GIVEMELUCK",
-        "FREESPINS"
+        "FREESPINS",
+        "SUMMER2026",
+        "ABILITYDROP",
+        "JUNEUPDATE",
+        "PERFECTBLOCK",
+        "THANKYOU2M",
+        "LATEGAME"
       ]
     },
     "blue-lock-rivals": {
-      "lastChecked": "2026-06-19T02:10:00Z",
+      "lastChecked": "2026-06-19T03:30:00Z",
       "descLen": null,
       "descExcerpt": "Jeu non officiel par les fans de Blue Lock. Matchs de football 5v5, choisissez une classe avec capacites uniques. Pas de code dans la description.",
       "knownCodes": [
@@ -203,7 +209,7 @@
       ]
     },
     "fisch": {
-      "lastChecked": "2026-06-19T02:10:00Z",
+      "lastChecked": "2026-06-19T03:30:00Z",
       "descLen": null,
       "descExcerpt": "Bienvenue a Fisch. L'aventure de peche ultime, plus de 400 000 variations de poissons. Createur @WoozyNate. Pas de code dans la description.",
       "knownCodes": [
@@ -224,14 +230,17 @@
       ]
     },
     "anime-vanguards": {
-      "lastChecked": "2026-06-19T02:10:00Z",
+      "lastChecked": "2026-06-19T03:30:00Z",
       "descLen": null,
       "descExcerpt": "Bienvenue chez les Anime Vanguards: Godly Ascension. Invoque des unites, niveau et evolue pour les renforcer. Pas de code dans la description.",
       "knownCodes": [
         "Cog5th",
         "223",
         "Liberation",
-        "DMCAFree"
+        "DMCAFree",
+        "TooMuchPain",
+        "ExtraWeek",
+        "Shinobi"
       ]
     },
     "pet-simulator-99": {
@@ -241,7 +250,7 @@
       "knownCodes": []
     },
     "king-legacy": {
-      "lastChecked": "2026-06-19T02:10:00Z",
+      "lastChecked": "2026-06-19T03:30:00Z",
       "descLen": null,
       "descExcerpt": "Rejoignez le serveur de la communaute pour plus d'informations et de codes. Limite de niveau: 5450, 44 fruits physiques. Codes via Discord communautaire.",
       "knownCodes": [
@@ -256,7 +265,7 @@
       ]
     },
     "fruit-battlegrounds": {
-      "lastChecked": "2026-06-19T02:10:00Z",
+      "lastChecked": "2026-06-19T03:30:00Z",
       "descLen": null,
       "descExcerpt": "OPE V2 EST LA (MYTHIQUE). 1MIL110K CODE : YOO1M110K ! PROCHAIN CODE A 1 120 000 J'AIME, AIMEZ POUR PLUS DE CODES. OMGUPDATE22 confirme expire (Beebom + Pocket Tactics).",
       "knownCodes": [
@@ -264,7 +273,11 @@
         "BIGMILLIHUNNID!",
         "MILLI90SWAG",
         "ITSTHEBILLION!",
-        "CODEFIX"
+        "CODEFIX",
+        "1M60WOWZER",
+        "1M50INSANE",
+        "4MPUTAT3",
+        "1M40KRAZY!!"
       ]
     },
     "tower-defense-simulator": {
