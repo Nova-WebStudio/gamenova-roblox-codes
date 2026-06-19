@@ -637,7 +637,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initSearch();
   initNewsletter();
   highlightNav();
-  loadRobloxThumbnails();
+  // Miniatures live : différées hors du chemin critique (les vraies miniatures en dur s'affichent déjà)
+  if ('requestIdleCallback' in window) requestIdleCallback(loadRobloxThumbnails, { timeout: 4000 });
+  else setTimeout(loadRobloxThumbnails, 2500);
   initYouTubeVideos();
   renderNewGames();
 });
