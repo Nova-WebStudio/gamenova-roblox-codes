@@ -66,10 +66,34 @@ Jeu de survie en monde ouvert de **Stranded Devs** (placeId 70411440483149, univ
 
 **Cache JS :** js/main.js modifié → version bumpée **v=24 → v=25** dans les **257 fichiers HTML** (procédure ÉTAPE 9). Vérification : aucun fichier versionné physique sur le serveur (query-string pur sur `/js/main.js`, confirmé via `.htaccess`), le bump est donc sans risque. Les fichiers édités via l'outil ont été bumpés un par un via l'outil (écriture disque réelle), les 253 autres via un script Python avec garde-fou anti-troncature ; aucun fichier corrompu.
 
+## Guide complet (ÉTAPE 5) — guides/100-days-at-sea.html
+
+Guide complet FR créé sur le gabarit `guides/blox-fruits.html` : **1678 mots**, sommaire ancré (TOC, 10 sections), image hero réelle `tr.rbxcdn.com`, contenu **vérifié sur 2 sources** (Sportskeeda + Lawod/Deltia's). Sections : guide débutant, survivre les 100 jours, le harpon & la récolte, construire/fortifier le radeau, économie Pearls & Doubloons, **tableau des 8 classes** (Sailor → Knight, Millionaire) + quelle débloquer en priorité, **tableau des 9 compagnons** (Frog, Turtle, Crab, Dolphin, Shark, Crow, Lava Snail, Salamander, Magma Golem) avec effets, explorer les îles & armes, survivre aux vagues d'ennemis, FAQ (5 questions). JSON-LD Article + Breadcrumb + FAQPage valides.
+
+**Liaisons (codes ↔ guide) :** carte ajoutée en tête de `guides/index.html` (+ `ItemList` JSON-LD position 30), `<url>` au sitemap, **bouton « 📚 Guide complet » ajouté dans le hero** de `codes/100-days-at-sea.html`, et **bandeau CTA `data-cta="guidelink"` mis à jour** pour pointer vers le guide dédié (« Progresse plus vite à 100 Days at Sea » → /guides/100-days-at-sea.html). Liens internes tous vérifiés existants ; pages se terminant bien par `</html>` / `</urlset>` (recoupé via l'outil de lecture, les lectures bash étant tronquées sur les fichiers édités).
+
+## Tier list (ÉTAPE 4) — tier-list/100-days-at-sea.html
+
+Tier list créée sur le gabarit `tier-list/grow-a-garden.html`, contenu **vérifié sur 2 sources** (Sportskeeda + Deltia's/Lawod) : **deux classements** indicatifs (méta juin 2026) avec chips S/A/B/C —
+- **Classes** : S = Knight, Millionaire, Adventurer ; A = Medic, Survivor ; B = Camper, Crewmate ; C = Sailor.
+- **Compagnons** : S = Salamander, Magma Golem ; A = Crow, Shark, Dolphin ; B = Lava Snail, Crab ; C = Frog, Turtle.
+
+JSON-LD ItemList + Breadcrumb valides, date affichée (19 juin 2026), boutons hero vers codes + guide.
+
+**Liaisons :** carte ajoutée en tête du hub `tier-list/index.html` (**vraie miniature `tr.rbxcdn.com`, jamais d'emoji**) + `ItemList` position 51 ; `<li>` ajouté sur l'accueil (section « Toutes les tier lists ») ; `<url>` au sitemap ; **boutons croisés** mis à jour : la page codes et le guide pointent désormais vers la **tier list dédiée** (et non plus le hub). Les 3 pages (codes ↔ tier list ↔ guide) sont entièrement reliées entre elles.
+
+## Habitude enregistrée — « la totale »
+
+À la demande de Peter, ajout d'une section en tête de `CLAUDE.md` : **« la totale » sur un jeu = page codes + tier list + guide**, complètes et reliées, avec toutes les intégrations (accueil, hubs, sitemap, sources de données, liens croisés). Les prochains runs s'y conformeront automatiquement.
+
 ## Fichiers touchés
 - `tools/code-watch.json` (lastChecked 26 jeux + 2 nouveaux codes + ajout 100-days-at-sea)
+- `tier-list/100-days-at-sea.html` (nouveau) + `tier-list/index.html` (carte + ItemList)
+- `CLAUDE.md` (définition de « la totale »)
 - `codes/100-days-at-sea.html` (nouveau, 1997 mots) + `images/games/100-days-at-sea.svg` (nouveau)
-- `index.html`, `codes/index.html`, `js/main.js`, `sitemap.xml` (intégration du jeu)
+- `guides/100-days-at-sea.html` (nouveau, guide complet 1678 mots)
+- `index.html`, `codes/index.html`, `js/main.js`, `sitemap.xml`, `guides/index.html` (intégration jeu + guide)
+- `codes/100-days-at-sea.html` (bouton hero + bandeau CTA vers le guide)
 - **Tous les .html** : bump cache `v=24 → v=25`
 - `codes/blockspin.html` (+code `W7C28D`, date, FAQ)
 - `codes/squid-game-x.html` (+code `$1M$`, date)

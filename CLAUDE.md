@@ -4,6 +4,18 @@ Règles et pièges à éviter, documentés à partir des erreurs réelles rencon
 
 ---
 
+## « La totale » sur un jeu (demande de Peter)
+
+Quand Peter dit **« fais-moi la totale »** sur un jeu, cela signifie produire **les 3 pages dédiées** pour ce jeu, complètes et reliées entre elles :
+
+1. **Page codes** — `codes/<slug>.html` (≥1200 mots, miniature réelle `tr.rbxcdn.com`, 2 vidéos vérifiées oEmbed, astuces, FAQ, À propos + 3 similaires, bandeau CTA). Si le jeu n'a pas de codes vérifiables (2 sources / description in-game), ne pas en inventer : afficher honnêtement « pas de code confirmé ».
+2. **Tier list** — `tier-list/<slug>.html` (classement pertinent : classes, unités, pets, fruits… selon le jeu ; 2 sources ; chips + ItemList + date).
+3. **Guide complet** — `guides/<slug>.html` (gabarit `guides/blox-fruits.html` : TOC ancré, sections adaptées, CTA, FAQ ; 2 sources).
+
+**Intégrations obligatoires à chaque fois** : carte accueil + `GAMES_INDEX`/`ALL_GAMES`/`ROBLOX_THUMBS`/`THUMBS`/`ROBLOX_UNIVERSE_IDS` (pour la page codes) ; carte + ItemList du hub tier-list (vraie miniature) et du hub guides ; `<li>` accueil ; `<url>` au sitemap pour les 3 pages ; **liens croisés** codes ↔ tier list ↔ guide (boutons hero + bandeau CTA `data-cta="guidelink"` pointant vers les pages dédiées) ; SVG fallback ; bump cache si `js/main.js` modifié.
+
+---
+
 ## Architecture des données (CRITIQUE)
 
 Il y a **3 sources de données indépendantes** qui doivent toujours être synchronisées manuellement :
