@@ -1,463 +1,462 @@
 {
-  "_comment": "Surveillance automatique des sources de codes. La tache quotidienne (ETAPE 0) lit hotGames, compare a snapshots, detecte les nouveaux codes potentiels, les verifie (2 sources) puis publie. id = universeId verifie ; groupId = groupe createur.",
-  "version": 2,
-  "hotGames": {
-    "blox-fruits": {
-      "id": 994732206,
-      "groupId": 4372130
+    "_comment": "Surveillance automatique des sources de codes. La tache quotidienne (ETAPE 0) lit hotGames, compare a snapshots, detecte les nouveaux codes potentiels, les verifie (2 sources) puis publie. id = universeId verifie ; groupId = groupe createur.",
+    "version": 2,
+    "hotGames": {
+        "blox-fruits": {
+            "id": 994732206,
+            "groupId": 4372130
+        },
+        "grow-a-garden": {
+            "id": 7436755782,
+            "groupId": 35789249
+        },
+        "steal-a-brainrot": {
+            "id": 7709344486,
+            "groupId": 35815907
+        },
+        "blade-ball": {
+            "id": 4777817887,
+            "groupId": 12836673
+        },
+        "blue-lock-rivals": {
+            "id": 6325068386,
+            "groupId": 34671275
+        },
+        "anime-last-stand": {
+            "id": 4509896324,
+            "groupId": 12229756
+        },
+        "fisch": {
+            "id": 5750914919,
+            "groupId": 7381705
+        },
+        "volleyball-legends": {
+            "id": 6931042565,
+            "groupId": 35330702
+        },
+        "anime-vanguards": {
+            "id": 5578556129,
+            "groupId": 17219742
+        },
+        "pet-simulator-99": {
+            "id": 3317771874,
+            "groupId": 3959677
+        },
+        "king-legacy": {
+            "id": 1451439645,
+            "groupId": 5348890
+        },
+        "fruit-battlegrounds": {
+            "id": 3457700596,
+            "groupId": 14453089
+        },
+        "tower-defense-simulator": {
+            "id": 1176784616,
+            "groupId": 4914494
+        },
+        "world-fighters": {
+            "id": 10032271327,
+            "groupId": 33910482
+        },
+        "noob-incremental": {
+            "id": 9965411707,
+            "groupId": 356937272
+        },
+        "defend-ur-base-with-anime": {
+            "id": 10111742174,
+            "groupId": 104489519
+        },
+        "spin-a-soccer-card": {
+            "id": 9272693470,
+            "groupId": 520125566
+        },
+        "merge-a-nuke": {
+            "id": 10199301628,
+            "groupId": 446405201
+        },
+        "vv-ultimatum": {
+            "id": 2309918273,
+            "groupId": 9233039
+        },
+        "fifa-super-soccer": {
+            "id": 4293374620,
+            "groupId": 16790592
+        },
+        "hypershot": {
+            "id": 5995470825,
+            "groupId": 3385385
+        },
+        "blockspin": {
+            "id": 6765805766,
+            "groupId": 33720745
+        },
+        "run-a-restaurant": {
+            "id": 9970645639,
+            "groupId": 75550158
+        },
+        "squid-game-x": {
+            "id": 2936053166,
+            "groupId": 12255003
+        },
+        "catch-a-monster": {
+            "id": 9141743926,
+            "groupId": 15753989
+        },
+        "brainrot-evolution": {
+            "id": 7332711118,
+            "groupId": 35325835
+        },
+        "100-days-at-sea": {
+            "id": 9167377564,
+            "groupId": 425035678
+        }
     },
-    "grow-a-garden": {
-      "id": 7436755782,
-      "groupId": 35789249
-    },
-    "steal-a-brainrot": {
-      "id": 7709344486,
-      "groupId": 35815907
-    },
-    "blade-ball": {
-      "id": 4777817887,
-      "groupId": 12836673
-    },
-    "blue-lock-rivals": {
-      "id": 6325068386,
-      "groupId": 34671275
-    },
-    "anime-last-stand": {
-      "id": 4509896324,
-      "groupId": 12229756
-    },
-    "fisch": {
-      "id": 5750914919,
-      "groupId": 7381705
-    },
-    "volleyball-legends": {
-      "id": 6931042565,
-      "groupId": 35330702
-    },
-    "anime-vanguards": {
-      "id": 5578556129,
-      "groupId": 17219742
-    },
-    "pet-simulator-99": {
-      "id": 3317771874,
-      "groupId": 3959677
-    },
-    "king-legacy": {
-      "id": 1451439645,
-      "groupId": 5348890
-    },
-    "fruit-battlegrounds": {
-      "id": 3457700596,
-      "groupId": 14453089
-    },
-    "tower-defense-simulator": {
-      "id": 1176784616,
-      "groupId": 4914494
-    },
-    "world-fighters": {
-      "id": 10032271327,
-      "groupId": 33910482
-    },
-    "noob-incremental": {
-      "id": 9965411707,
-      "groupId": 356937272
-    },
-    "defend-ur-base-with-anime": {
-      "id": 10111742174,
-      "groupId": 104489519
-    },
-    "spin-a-soccer-card": {
-      "id": 9272693470,
-      "groupId": 520125566
-    },
-    "merge-a-nuke": {
-      "id": 10199301628,
-      "groupId": 446405201
-    },
-    "vv-ultimatum": {
-      "id": 2309918273,
-      "groupId": 9233039
-    },
-    "fifa-super-soccer": {
-      "id": 4293374620,
-      "groupId": 16790592
-    },
-    "hypershot": {
-      "id": 5995470825,
-      "groupId": 3385385
-    },
-    "blockspin": {
-      "id": 6765805766,
-      "groupId": 33720745
-    },
-    "run-a-restaurant": {
-      "id": 9970645639,
-      "groupId": 75550158
-    },
-    "squid-game-x": {
-      "id": 2936053166,
-      "groupId": 12255003
-    },
-    "catch-a-monster": {
-      "id": 9141743926,
-      "groupId": 15753989
-    },
-    "brainrot-evolution": {
-      "id": 7332711118,
-      "groupId": 35325835
-    },
-    "100-days-at-sea": {
-      "id": 9167377564,
-      "groupId": 425035678
+    "snapshots": {
+        "blox-fruits": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 143,
+            "descExcerpt": "Welcome to Blox Fruits! Become a master swordsman or a powerful blox fruit user... Current level cap: 2800. More info in the group description.",
+            "knownCodes": [
+                "EASTEREXP",
+                "Starcodeheo",
+                "Sub2Fer999",
+                "SUB2GAMERROBOT_RESET1",
+                "Lightningabuse",
+                "KITT_RESET",
+                "Sub2UncleKizaru",
+                "fudd10_v2",
+                "Fudd10",
+                "Bignews",
+                "kittgaming",
+                "Sub2CaptainMaui",
+                "Enyu_is_Pro",
+                "Magicbus",
+                "JCWK",
+                "Bluxxy",
+                "TheGreatAce",
+                "Sub2OfficialNoobie",
+                "Sub2NoobMaster123",
+                "Axiore",
+                "Sub2Daigrock",
+                "TantaiGaming",
+                "StrawHatMaine"
+            ]
+        },
+        "grow-a-garden": {
+            "lastChecked": "2026-06-24T18:23:36Z",
+            "descLen": 273,
+            "descExcerpt": "🍅Bienvenue à Grow a Garden🍅 Êtes-vous prêt à faire pousser votre propre jardin? Achetez des graines dans la boutique lorsqu'elles sont réapprovisionnées, plantez-les, attendez qu'elles poussent et récoltez les profits! Flexez les fruits et trouvez des amis, et amusez-vous!",
+            "knownCodes": [
+                "RDCAward",
+                "BEANORLEAVE10"
+            ]
+        },
+        "steal-a-brainrot": {
+            "lastChecked": "2026-06-24T18:23:36Z",
+            "descLen": 227,
+            "descExcerpt": "🗣️ Bienvenue dans Steal a Brainrot! 👍 Aimez le jeu et rejoignez le groupe. Comment jouer: Acheter un Brainrot, Vole des Brainrots d'autres joueurs, Générer de l'argent, Renaissance, Achète des slaps et de l'équipement de troll!",
+            "knownCodes": []
+        },
+        "blade-ball": {
+            "lastChecked": "2026-06-24T18:23:36Z",
+            "descLen": 234,
+            "descExcerpt": "⚡ Dans ce jeu de mise au point, de timing et de stratégie, votre compétence est mise à l'épreuve en tant que balle de renvoi déviante qui chasse les joueurs avec une vitesse croissante. Obtenez de nouvelles capacités et améliorez-les.",
+            "knownCodes": [
+                "SERPENT",
+                "RAMADAN",
+                "4BVISITS",
+                "2BTHANKS",
+                "SPOOKYSEASON",
+                "FROGS",
+                "ENERGYSWORDS",
+                "SHARKATTACK",
+                "SUMMERWHEEL",
+                "SUMMERSTARTSHERE",
+                "RNGEMOTES",
+                "GIVEMELUCK",
+                "FREESPINS",
+                "SUMMER2026",
+                "ABILITYDROP",
+                "JUNEUPDATE",
+                "PERFECTBLOCK",
+                "THANKYOU2M",
+                "LATEGAME"
+            ]
+        },
+        "blue-lock-rivals": {
+            "lastChecked": "2026-06-24T18:23:36Z",
+            "descLen": 228,
+            "descExcerpt": "Ce jeu non officiel fait par les fans a été créé par d'énormes fans de Blue Lock. Entrez dans le monde à haut risque de Blue Lock: Rivals. Participez à des matchs de football 5v5 électrisants, où l'ego et la compétence brillent.",
+            "knownCodes": [
+                "NELEVENT",
+                "NEL2.0",
+                "MASSIVEUPDATE"
+            ]
+        },
+        "anime-last-stand": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 86,
+            "descExcerpt": "Aimez le jeu pour des codes GRATUITS. Tower Defense anime, jouable sur tous appareils.",
+            "knownCodes": [
+                "DemonicCyborg",
+                "TheATDSituationIsCrazy",
+                "ALSUPD1",
+                "World3Patch2",
+                "WORLD3REBALANCE"
+            ]
+        },
+        "fisch": {
+            "lastChecked": "2026-06-24T18:23:36Z",
+            "descLen": 243,
+            "descExcerpt": "🦈 Bienvenue à Fisch 🦈 Plongez dans Fisch, l'aventure de pêche ultime où l'exploration et la progression sont à vous de contrôler. Mettez votre ligne pour attraper des poissons rares et uniques, chacun avec plus de 400 000 variations possibles.",
+            "knownCodes": [
+                "Crews",
+                "scarlet",
+                "TemporarySubmarine",
+                "CARBON"
+            ]
+        },
+        "volleyball-legends": {
+            "lastChecked": "2026-06-24T18:23:36Z",
+            "descLen": 232,
+            "descExcerpt": "DEVENEZ LE ROI DE LA COURT dans Volleyball Legends!! Volley-ball 6v6 au rythme rapide. Jouez à une partie de volley-ball avec des amis OU défiez n'importe qui dans un match RANGÉ. De nouvelles mises à jour chaque samedi à 11h30 EST!",
+            "knownCodes": [
+                "UPDATE_75",
+                "SPECTATING",
+                "SHOW_OFF",
+                "UPDATE_74",
+                "SEASON_16",
+                "SUMMER_UPDATE",
+                "UPDATE_73",
+                "JUNGLE_MAP",
+                "JUNE_2026"
+            ]
+        },
+        "anime-vanguards": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 108,
+            "descExcerpt": "Bienvenue chez les avant-gardes de l'anime! Invoquez des unites, nivelez et evoluez, plusieurs modes de jeu.",
+            "knownCodes": [
+                "13.5",
+                "EternalAdversaries",
+                "Gambler",
+                "DMCAFree",
+                "Liberation",
+                "223",
+                "Cog5th"
+            ]
+        },
+        "pet-simulator-99": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 116,
+            "descExcerpt": "Gagnez des pieces, ouvrez des oeufs et collectionnez des animaux! Equipez 99 animaux, rejoignez des clans, echangez.",
+            "knownCodes": []
+        },
+        "king-legacy": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 113,
+            "descExcerpt": "Rejoignez le serveur communautaire pour codes! Limite niveau 5450; 44 fruits physiques; fruits apparaissent 1-2h.",
+            "knownCodes": [
+                "DinoxLive",
+                "Peodiz",
+                "<3LEEPUNGG",
+                "WELCOMETOKINGLEGACY",
+                "SKGames",
+                "DragonColorRefund",
+                "RainbowDragon",
+                "FREESTATSRESET"
+            ]
+        },
+        "fruit-battlegrounds": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 120,
+            "descExcerpt": "OPE V2 est la (Mythique). 1MIL110K CODE: YOO1M110K! Prochain code a 1120000 likes. Champ de bataille de fruits en alpha.",
+            "knownCodes": [
+                "YOO1M110K",
+                "BIGMILLIHUNNID!",
+                "MILLI90SWAG",
+                "ITSTHEBILLION!",
+                "CODEFIX",
+                "1M60WOWZER",
+                "1M50INSANE",
+                "4MPUTAT3",
+                "1M40KRAZY!!"
+            ]
+        },
+        "tower-defense-simulator": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 109,
+            "descExcerpt": "Faites equipe pour terrasser des vagues de zombies. Caisse de jouets, carte fievre du printemps. Jeu en beta.",
+            "knownCodes": []
+        },
+        "world-fighters": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 116,
+            "descExcerpt": "Bienvenue dans World Fighters! 25kLIKE = nouveau code. Explorez des mondes inspires d'anime, collectez des cristaux.",
+            "knownCodes": [
+                "WOOGARPP",
+                "UPDATE7PT2",
+                "DRAGONDEFENSEHARD",
+                "SORRYYADELAY",
+                "UPDATE7",
+                "SERVANTS",
+                "LASTSHUTDOWN",
+                "SRRY5SHUTDOWSERVANT",
+                "UPDATE6PT2",
+                "BATTLEPASS_SEASON2",
+                "25KLIKESAMAZING!!!"
+            ]
+        },
+        "noob-incremental": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 100,
+            "descExcerpt": "Jeu incremental massif: centaines d'ameliorations, prestige, runes. Achetez des noobs et faites Oof!",
+            "knownCodes": [
+                "35KCOMMUNITYMEMBERS!!",
+                "15KCCU!!",
+                "14KCCU!!",
+                "13KCCU!!",
+                "12KCCU!!",
+                "11KCCU!!",
+                "10KCCU!!",
+                "9KCCU!!",
+                "LABUPDATE",
+                "YouFoundMe",
+                "GetBetterSon",
+                "BAZALRIGHT",
+                "RELEASE",
+                "THANKS4JOINING"
+            ]
+        },
+        "defend-ur-base-with-anime": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 96,
+            "descExcerpt": "Defends ta base avec des anime. Invoquez des combattants, vagues infinies, fusionnez vos animes.",
+            "knownCodes": [
+                "JJKUPDATE",
+                "NEWMUTATIONS",
+                "BURAH",
+                "SRYFORSHUTDOWN!",
+                "CRAFTNERF!"
+            ]
+        },
+        "spin-a-soccer-card": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 114,
+            "knownCodes": [
+                "EPIC-LION",
+                "PRIME-TURBO",
+                "CRYSTAL-GOAL",
+                "WOLF-METEOR",
+                "OMEGA-STAR",
+                "TIGER-HAWK"
+            ],
+            "descExcerpt": "Bienvenue dans Spin a Soccer Card. Achete un pack, deballe une carte de football aleatoire, place sur ton terrain."
+        },
+        "merge-a-nuke": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 119,
+            "knownCodes": [
+                "UPDATE2",
+                "BOOM",
+                "ATOMIC"
+            ],
+            "descExcerpt": "Fusionnez les armes nucleaires. Utiliser le code: BOOM. Lancez des nukes sur les bases ennemies. MAJ tous les vendredi."
+        },
+        "vv-ultimatum": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 93,
+            "knownCodes": [
+                "MIDVVEEK"
+            ],
+            "descExcerpt": "Aimez le jeu pour des codes et recompenses gratuits! Jeu de combat stylise, 130+ competences."
+        },
+        "fifa-super-soccer": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 117,
+            "knownCodes": [
+                "WorldCupSecret",
+                "bestfootball",
+                "fifasupersoccer",
+                "sub2fssdevilz"
+            ],
+            "descExcerpt": "4 contre 4 dans un stade. Evenement Coupe du monde FIFA a duree limitee. Jeu cree par Play! (ex Super League Soccer)."
+        },
+        "hypershot": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 98,
+            "knownCodes": [
+                "ONEBILLION",
+                "SIXSEVEN",
+                "HAPPYMAY",
+                "NEWUPDATE"
+            ],
+            "descExcerpt": "Bienvenue a Hypershot! FPS intense rapide: TDM, Capture the Flag, FFA, Gun Game. Grimpe les rangs."
+        },
+        "blockspin": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 116,
+            "knownCodes": [
+                "HURRICANE_RELEASE",
+                "M16_RELEASE",
+                "UNDER_THE_BARREL",
+                "W7C28D"
+            ],
+            "descExcerpt": "Utilisez le code W7C28D pour 500$ si nouveau joueur! Faites tourner le bloc, affrontez des taches, comte de Floride."
+        },
+        "run-a-restaurant": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 119,
+            "knownCodes": [
+                "RAR4EVER"
+            ],
+            "descExcerpt": "Bienvenue dans Run a Restaurant! Preparez des recettes, servez les clients, construis ton restaurant, gagne hors ligne."
+        },
+        "squid-game-x": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 123,
+            "knownCodes": [
+                "$1M$",
+                "FRONTMAN",
+                "REVAMP",
+                "150KLIKES",
+                "PENTA",
+                "MINGLE",
+                "UPDATE11RELEASE"
+            ],
+            "descExcerpt": "NOUVEAU CODE \"$1M$\". Prochain gros code a 1,2M likes. Saison 3, nouveaux modes (ciel calamar, cache-cache). Version 11.0.0."
+        },
+        "catch-a-monster": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 97,
+            "knownCodes": [
+                "graon",
+                "magmorus",
+                "moovik",
+                "danvok",
+                "LIVEXP",
+                "LIVECOIN"
+            ],
+            "descExcerpt": "Bienvenue dans Catch a Monster! Vaincre des monstres, attrape-les, oeufs rares, gagne des pieces."
+        },
+        "brainrot-evolution": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 109,
+            "knownCodes": [
+                "Krang",
+                "Luck",
+                "Patrick",
+                "Fishybara",
+                "Tsunami",
+                "Love"
+            ],
+            "descExcerpt": "Bienvenue dans Brainrot Evolution! MAJ chaque samedi. Mange pour gagner des niveaux, debloque des evolutions."
+        },
+        "100-days-at-sea": {
+            "lastChecked": "2026-06-23T20:05:14Z",
+            "descLen": 119,
+            "knownCodes": [],
+            "descExcerpt": "Survivez 100 jours en mer et devenez riche! Survie monde ouvert, recuperez des ressources, construisez une base radeau."
+        }
     }
-  },
-  "snapshots": {
-    "blox-fruits": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 143,
-      "descExcerpt": "Welcome to Blox Fruits! Become a master swordsman or a powerful blox fruit user... Current level cap: 2800. More info in the group description.",
-      "knownCodes": [
-        "EASTEREXP",
-        "Starcodeheo",
-        "Sub2Fer999",
-        "SUB2GAMERROBOT_RESET1",
-        "Lightningabuse",
-        "KITT_RESET",
-        "Sub2UncleKizaru",
-        "fudd10_v2",
-        "Fudd10",
-        "Bignews",
-        "kittgaming",
-        "Sub2CaptainMaui",
-        "Enyu_is_Pro",
-        "Magicbus",
-        "JCWK",
-        "Bluxxy",
-        "TheGreatAce",
-        "Sub2OfficialNoobie",
-        "Sub2NoobMaster123",
-        "Axiore",
-        "Sub2Daigrock",
-        "TantaiGaming",
-        "StrawHatMaine"
-      ]
-    },
-    "grow-a-garden": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 113,
-      "descExcerpt": "Bienvenue a Grow a Garden. Achetez des graines, plantez-les, recoltez les profits. Ton jardin grandit hors ligne.",
-      "knownCodes": [
-        "RDCAward",
-        "BEANORLEAVE10",
-        "torigate"
-      ]
-    },
-    "steal-a-brainrot": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 122,
-      "descExcerpt": "Bienvenue dans Steal a Brainrot! Achete un Brainrot, vole des Brainrots d'autres joueurs, genere de l'argent, renaissance.",
-      "knownCodes": []
-    },
-    "blade-ball": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 113,
-      "descExcerpt": "Jeu de mise au point, timing et strategie; balle deviante qui chasse les joueurs. Obtenez de nouvelles capacites.",
-      "knownCodes": [
-        "SERPENT",
-        "RAMADAN",
-        "4BVISITS",
-        "2BTHANKS",
-        "SPOOKYSEASON",
-        "FROGS",
-        "ENERGYSWORDS",
-        "SHARKATTACK",
-        "SUMMERWHEEL",
-        "SUMMERSTARTSHERE",
-        "RNGEMOTES",
-        "GIVEMELUCK",
-        "FREESPINS",
-        "SUMMER2026",
-        "ABILITYDROP",
-        "JUNEUPDATE",
-        "PERFECTBLOCK",
-        "THANKYOU2M",
-        "LATEGAME"
-      ]
-    },
-    "blue-lock-rivals": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 118,
-      "descExcerpt": "Jeu non officiel fait par des fans de Blue Lock. Matchs de football 5v5; choisissez une classe avec capacites uniques.",
-      "knownCodes": [
-        "NELEVENT",
-        "NEL2.0",
-        "MASSIVEUPDATE"
-      ]
-    },
-    "anime-last-stand": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 86,
-      "descExcerpt": "Aimez le jeu pour des codes GRATUITS. Tower Defense anime, jouable sur tous appareils.",
-      "knownCodes": [
-        "DemonicCyborg",
-        "TheATDSituationIsCrazy",
-        "ALSUPD1",
-        "World3Patch2",
-        "WORLD3REBALANCE"
-      ]
-    },
-    "fisch": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 120,
-      "descExcerpt": "Bienvenue a Fisch. Aventure de peche; attrapez des poissons rares (400000+ variations). Explorez un monde en croissance.",
-      "knownCodes": [
-        "Crews",
-        "scarlet",
-        "TemporarySubmarine",
-        "CARBON"
-      ]
-    },
-    "volleyball-legends": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 118,
-      "descExcerpt": "Devenez le roi de la court dans Volleyball Legends! Volley 6v6 rapide. Nouvelles mises a jour chaque samedi 11h30 EST.",
-      "knownCodes": [
-        "UPDATE_75",
-        "SPECTATING",
-        "SHOW_OFF",
-        "UPDATE_74",
-        "SEASON_16",
-        "SUMMER_UPDATE",
-        "UPDATE_73",
-        "JUNGLE_MAP",
-        "JUNE_2026"
-      ]
-    },
-    "anime-vanguards": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 108,
-      "descExcerpt": "Bienvenue chez les avant-gardes de l'anime! Invoquez des unites, nivelez et evoluez, plusieurs modes de jeu.",
-      "knownCodes": [
-        "Cog5th",
-        "223",
-        "Liberation",
-        "DMCAFree",
-        "TooMuchPain",
-        "ExtraWeek",
-        "Shinobi"
-      ]
-    },
-    "pet-simulator-99": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 116,
-      "descExcerpt": "Gagnez des pieces, ouvrez des oeufs et collectionnez des animaux! Equipez 99 animaux, rejoignez des clans, echangez.",
-      "knownCodes": []
-    },
-    "king-legacy": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 113,
-      "descExcerpt": "Rejoignez le serveur communautaire pour codes! Limite niveau 5450; 44 fruits physiques; fruits apparaissent 1-2h.",
-      "knownCodes": [
-        "DinoxLive",
-        "Peodiz",
-        "<3LEEPUNGG",
-        "WELCOMETOKINGLEGACY",
-        "SKGames",
-        "DragonColorRefund",
-        "RainbowDragon",
-        "FREESTATSRESET"
-      ]
-    },
-    "fruit-battlegrounds": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 120,
-      "descExcerpt": "OPE V2 est la (Mythique). 1MIL110K CODE: YOO1M110K! Prochain code a 1120000 likes. Champ de bataille de fruits en alpha.",
-      "knownCodes": [
-        "YOO1M110K",
-        "BIGMILLIHUNNID!",
-        "MILLI90SWAG",
-        "ITSTHEBILLION!",
-        "CODEFIX",
-        "1M60WOWZER",
-        "1M50INSANE",
-        "4MPUTAT3",
-        "1M40KRAZY!!"
-      ]
-    },
-    "tower-defense-simulator": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 109,
-      "descExcerpt": "Faites equipe pour terrasser des vagues de zombies. Caisse de jouets, carte fievre du printemps. Jeu en beta.",
-      "knownCodes": []
-    },
-    "world-fighters": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 116,
-      "descExcerpt": "Bienvenue dans World Fighters! 25kLIKE = nouveau code. Explorez des mondes inspires d'anime, collectez des cristaux.",
-      "knownCodes": [
-        "WOOGARPP",
-        "UPDATE7PT2",
-        "DRAGONDEFENSEHARD",
-        "SORRYYADELAY",
-        "UPDATE7",
-        "SERVANTS",
-        "LASTSHUTDOWN",
-        "SRRY5SHUTDOWSERVANT",
-        "UPDATE6PT2",
-        "BATTLEPASS_SEASON2",
-        "25KLIKESAMAZING!!!"
-      ]
-    },
-    "noob-incremental": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 100,
-      "descExcerpt": "Jeu incremental massif: centaines d'ameliorations, prestige, runes. Achetez des noobs et faites Oof!",
-      "knownCodes": [
-        "35KCOMMUNITYMEMBERS!!",
-        "15KCCU!!",
-        "14KCCU!!",
-        "13KCCU!!",
-        "12KCCU!!",
-        "11KCCU!!",
-        "10KCCU!!",
-        "9KCCU!!",
-        "LABUPDATE",
-        "YouFoundMe",
-        "GetBetterSon",
-        "BAZALRIGHT",
-        "RELEASE",
-        "THANKS4JOINING"
-      ]
-    },
-    "defend-ur-base-with-anime": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 96,
-      "descExcerpt": "Defends ta base avec des anime. Invoquez des combattants, vagues infinies, fusionnez vos animes.",
-      "knownCodes": [
-        "JJKUPDATE",
-        "NEWMUTATIONS",
-        "BURAH",
-        "SRYFORSHUTDOWN!",
-        "CRAFTNERF!"
-      ]
-    },
-    "spin-a-soccer-card": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 114,
-      "knownCodes": [
-        "EPIC-LION",
-        "PRIME-TURBO",
-        "CRYSTAL-GOAL",
-        "WOLF-METEOR",
-        "OMEGA-STAR",
-        "TIGER-HAWK"
-      ],
-      "descExcerpt": "Bienvenue dans Spin a Soccer Card. Achete un pack, deballe une carte de football aleatoire, place sur ton terrain."
-    },
-    "merge-a-nuke": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 119,
-      "knownCodes": [
-        "UPDATE2",
-        "BOOM",
-        "ATOMIC"
-      ],
-      "descExcerpt": "Fusionnez les armes nucleaires. Utiliser le code: BOOM. Lancez des nukes sur les bases ennemies. MAJ tous les vendredi."
-    },
-    "vv-ultimatum": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 93,
-      "knownCodes": [
-        "MIDVVEEK"
-      ],
-      "descExcerpt": "Aimez le jeu pour des codes et recompenses gratuits! Jeu de combat stylise, 130+ competences."
-    },
-    "fifa-super-soccer": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 117,
-      "knownCodes": [
-        "WorldCupSecret",
-        "bestfootball",
-        "fifasupersoccer",
-        "sub2fssdevilz"
-      ],
-      "descExcerpt": "4 contre 4 dans un stade. Evenement Coupe du monde FIFA a duree limitee. Jeu cree par Play! (ex Super League Soccer)."
-    },
-    "hypershot": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 98,
-      "knownCodes": [
-        "ONEBILLION",
-        "SIXSEVEN",
-        "HAPPYMAY",
-        "NEWUPDATE"
-      ],
-      "descExcerpt": "Bienvenue a Hypershot! FPS intense rapide: TDM, Capture the Flag, FFA, Gun Game. Grimpe les rangs."
-    },
-    "blockspin": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 116,
-      "knownCodes": [
-        "HURRICANE_RELEASE",
-        "M16_RELEASE",
-        "UNDER_THE_BARREL",
-        "W7C28D"
-      ],
-      "descExcerpt": "Utilisez le code W7C28D pour 500$ si nouveau joueur! Faites tourner le bloc, affrontez des taches, comte de Floride."
-    },
-    "run-a-restaurant": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 119,
-      "knownCodes": [
-        "RAR4EVER"
-      ],
-      "descExcerpt": "Bienvenue dans Run a Restaurant! Preparez des recettes, servez les clients, construis ton restaurant, gagne hors ligne."
-    },
-    "squid-game-x": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 123,
-      "knownCodes": [
-        "$1M$",
-        "FRONTMAN",
-        "REVAMP",
-        "150KLIKES",
-        "PENTA",
-        "MINGLE",
-        "UPDATE11RELEASE"
-      ],
-      "descExcerpt": "NOUVEAU CODE \"$1M$\". Prochain gros code a 1,2M likes. Saison 3, nouveaux modes (ciel calamar, cache-cache). Version 11.0.0."
-    },
-    "catch-a-monster": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 97,
-      "knownCodes": [
-        "graon",
-        "magmorus",
-        "moovik",
-        "danvok",
-        "LIVEXP",
-        "LIVECOIN"
-      ],
-      "descExcerpt": "Bienvenue dans Catch a Monster! Vaincre des monstres, attrape-les, oeufs rares, gagne des pieces."
-    },
-    "brainrot-evolution": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 109,
-      "knownCodes": [
-        "Krang",
-        "Luck",
-        "Patrick",
-        "Fishybara",
-        "Tsunami",
-        "Love"
-      ],
-      "descExcerpt": "Bienvenue dans Brainrot Evolution! MAJ chaque samedi. Mange pour gagner des niveaux, debloque des evolutions."
-    },
-    "100-days-at-sea": {
-      "lastChecked": "2026-06-22T02:15:00Z",
-      "descLen": 119,
-      "knownCodes": [],
-      "descExcerpt": "Survivez 100 jours en mer et devenez riche! Survie monde ouvert, recuperez des ressources, construisez une base radeau."
-    }
-  }
 }
