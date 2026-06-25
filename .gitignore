@@ -21,3 +21,7 @@ npm-debug.log*
 # Scripts utilitaires Zoneblox (génération MAJ — ne pas commiter)
 _build.py
 _integrate.py
+
+# Fichier temporaire de surveillance (ne pas commiter)
+tools/_api_tmp.json
+n
