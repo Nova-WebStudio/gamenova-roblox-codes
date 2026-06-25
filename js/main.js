@@ -116,6 +116,7 @@ const ROBLOX_THUMBS = {
   'haze-piece': 'https://tr.rbxcdn.com/180DAY-41212ff0c4a4a7105b2e1605f3666243/500/280/Image/Jpeg/noFilter',
   'all-star-tower-defense': 'https://tr.rbxcdn.com/180DAY-9fbd50db5a51699b733c9529ee542d19/480/270/Image/Webp/noFilter',
   'anime-champions-simulator': 'https://tr.rbxcdn.com/180DAY-9d4be137161ea266ba1c2c6f28832e21/480/270/Image/Webp/noFilter',
+  'animal-hospital': 'https://tr.rbxcdn.com/180DAY-db27bdc698b088f2d8352327f7dc64f6/480/270/Image/Png/noFilter',
   'sonic-speed-simulator': 'https://tr.rbxcdn.com/180DAY-82939a396600a61e4abadd92664f8d83/480/270/Image/Webp/noFilter',
   'tower-defense-simulator': 'https://tr.rbxcdn.com/180DAY-f4a7603e22db5d7a43e966fe145a96e1/480/270/Image/Webp/noFilter',
   'project-slayers': 'https://tr.rbxcdn.com/180DAY-612b92100da817e8dc2bb8fd35ce117e/480/270/Image/Webp/noFilter',
@@ -297,6 +298,7 @@ const GAMES_INDEX = [
   { name: 'Haze Piece', slug: 'haze-piece', emoji: '🌊', codes: 3 },
   { name: 'All Star Tower Defense', slug: 'all-star-tower-defense', emoji: '🌟', codes: 4 },
   { name: 'Anime Champions Simulator', slug: 'anime-champions-simulator', emoji: '🌌', codes: 11 },
+  { name: 'Animal Hospital', slug: 'animal-hospital', emoji: '🏥', codes: 0 },
   { name: 'Sonic Speed Simulator', slug: 'sonic-speed-simulator', emoji: '💨', codes: 8 },
   { name: 'Tower Defense Simulator', slug: 'tower-defense-simulator', emoji: '🧟', codes: 0 },
   { name: 'Project Slayers', slug: 'project-slayers', emoji: '🌸', codes: 0 },
@@ -410,6 +412,7 @@ function highlightNav() {
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
   'anime-champions-simulator': 4986566693,
+  'animal-hospital': 10148749921,
   'spin-a-soccer-card': 9272693470,
   'merge-a-nuke': 10199301628,
   'vv-ultimatum': 2309918273,
