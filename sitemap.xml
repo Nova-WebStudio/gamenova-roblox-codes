@@ -113,6 +113,11 @@
   <url><loc>https://zoneblox.com/codes/evasion-clavier.html</loc><changefreq>daily</changefreq><priority>0.8</priority><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://zoneblox.com/guides/evasion-clavier.html</loc><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://zoneblox.com/tier-list/evasion-clavier.html</loc><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://zoneblox.com/guides/paint-and-seek.html</loc><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://zoneblox.com/tier-list/paint-and-seek.html</loc><changefreq>weekly</changefreq><priority>0.8</priority><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://zoneblox.com/en/codes/paint-and-seek.html</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://zoneblox.com/en/tier-list/paint-and-seek.html</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://zoneblox.com/en/guides/paint-and-seek.html</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://zoneblox.com/codes/ferme-d-anneaux.html</loc><changefreq>daily</changefreq><priority>0.8</priority><lastmod>2026-06-16</lastmod></url>
   <url><loc>https://zoneblox.com/codes/ugc-limited.html</loc><changefreq>daily</changefreq><priority>0.8</priority><lastmod>2026-06-16</lastmod></url>
   <url><loc>https://zoneblox.com/codes/vendre-des-citrons.html</loc><changefreq>daily</changefreq><priority>0.8</priority><lastmod>2026-06-16</lastmod></url>
@@ -152,6 +157,7 @@
   <url><loc>https://zoneblox.com/codes/anime-champions-simulator.html</loc><changefreq>daily</changefreq><priority>0.8</priority><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://zoneblox.com/codes/animal-hospital.html</loc><changefreq>daily</changefreq><priority>0.8</priority><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://zoneblox.com/codes/demonology.html</loc><changefreq>daily</changefreq><priority>0.8</priority><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://zoneblox.com/codes/paint-and-seek.html</loc><changefreq>daily</changefreq><priority>0.8</priority><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://zoneblox.com/codes/sonic-speed-simulator.html</loc><changefreq>daily</changefreq><priority>0.8</priority><lastmod>2026-06-16</lastmod></url>
   <url><loc>https://zoneblox.com/codes/tower-defense-simulator.html</loc><changefreq>daily</changefreq><priority>0.8</priority><lastmod>2026-06-16</lastmod></url>
   <url><loc>https://zoneblox.com/codes/project-slayers.html</loc><changefreq>daily</changefreq><priority>0.8</priority><lastmod>2026-06-18</lastmod></url>
