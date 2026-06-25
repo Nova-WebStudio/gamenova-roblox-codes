@@ -296,7 +296,7 @@ const GAMES_INDEX = [
   { name: 'Basketball Zero', slug: 'basketball-zero', emoji: '🏀', codes: 10 },
   { name: 'Haze Piece', slug: 'haze-piece', emoji: '🌊', codes: 3 },
   { name: 'All Star Tower Defense', slug: 'all-star-tower-defense', emoji: '🌟', codes: 4 },
-  { name: 'Anime Champions Simulator', slug: 'anime-champions-simulator', emoji: '🌌', codes: 7 },
+  { name: 'Anime Champions Simulator', slug: 'anime-champions-simulator', emoji: '🌌', codes: 11 },
   { name: 'Sonic Speed Simulator', slug: 'sonic-speed-simulator', emoji: '💨', codes: 8 },
   { name: 'Tower Defense Simulator', slug: 'tower-defense-simulator', emoji: '🧟', codes: 0 },
   { name: 'Project Slayers', slug: 'project-slayers', emoji: '🌸', codes: 0 },
@@ -409,6 +409,7 @@ function highlightNav() {
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
+  'anime-champions-simulator': 4986566693,
   'spin-a-soccer-card': 9272693470,
   'merge-a-nuke': 10199301628,
   'vv-ultimatum': 2309918273,
