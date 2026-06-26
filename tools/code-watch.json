@@ -4,111 +4,196 @@
   "hotGames": {
     "blox-fruits": {
       "id": 994732206,
-      "groupId": 4372130
+      "groupId": 4372130,
+      "trello": {
+        "boardId": "imb75BzG",
+        "url": "https://trello.com/b/imb75BzG.json",
+        "codes": "list",
+        "listMatch": "Codes",
+        "checked": "2026-06-26"
+      }
     },
     "grow-a-garden": {
       "id": 7436755782,
-      "groupId": 35789249
+      "groupId": 35789249,
+      "trello": {
+        "boardId": null,
+        "url": null,
+        "codes": "absent",
+        "checked": "2026-06-26"
+      }
     },
     "steal-a-brainrot": {
       "id": 7709344486,
-      "groupId": 35815907
+      "groupId": 35815907,
+      "trello": {
+        "boardId": null,
+        "url": null,
+        "codes": "absent",
+        "checked": "2026-06-26"
+      }
     },
     "blade-ball": {
       "id": 4777817887,
-      "groupId": 12836673
+      "groupId": 12836673,
+      "trello": {
+        "boardId": "xdplf9oF",
+        "url": "https://trello.com/b/xdplf9oF.json",
+        "codes": "private",
+        "checked": "2026-06-26"
+      }
     },
     "blue-lock-rivals": {
       "id": 6325068386,
-      "groupId": 34671275
+      "groupId": 34671275,
+      "trello": {
+        "boardId": "R9gCGamp",
+        "url": "https://trello.com/b/R9gCGamp.json",
+        "codes": "private",
+        "checked": "2026-06-26"
+      }
     },
     "anime-last-stand": {
       "id": 4509896324,
-      "groupId": 12229756
+      "groupId": 12229756,
+      "trello": {
+        "boardId": "m1Mqaqkh",
+        "url": "https://trello.com/b/m1Mqaqkh.json",
+        "codes": "card",
+        "listMatch": "Codes",
+        "checked": "2026-06-26"
+      }
     },
     "fisch": {
       "id": 5750914919,
-      "groupId": 7381705
+      "groupId": 7381705,
+      "trello": {
+        "boardId": "k8WMQFb3",
+        "url": "https://trello.com/b/k8WMQFb3.json",
+        "codes": "none",
+        "checked": "2026-06-26"
+      }
     },
     "volleyball-legends": {
       "id": 6931042565,
-      "groupId": 35330702
+      "groupId": 35330702,
+      "trello": {
+        "boardId": "W659ag0P",
+        "url": "https://trello.com/b/W659ag0P.json",
+        "codes": "none",
+        "checked": "2026-06-26",
+        "note": "Carte 'In-Game Codes' = tutoriel de saisie uniquement, aucune valeur de code. Codes sur Discord/X."
+      }
     },
     "anime-vanguards": {
       "id": 5578556129,
-      "groupId": 17219742
+      "groupId": 17219742,
+      "trello": {
+        "boardId": null,
+        "url": null,
+        "codes": "absent",
+        "checked": "2026-06-26"
+      }
     },
     "pet-simulator-99": {
       "id": 3317771874,
-      "groupId": 3959677
+      "groupId": 3959677,
+      "trello": null
     },
     "king-legacy": {
       "id": 1451439645,
-      "groupId": 5348890
+      "groupId": 5348890,
+      "trello": {
+        "boardId": "pb6yySnh",
+        "url": "https://trello.com/b/pb6yySnh.json",
+        "codes": "none",
+        "checked": "2026-06-26"
+      }
     },
     "fruit-battlegrounds": {
       "id": 3457700596,
-      "groupId": 14453089
+      "groupId": 14453089,
+      "trello": {
+        "boardId": "NjZf12R5",
+        "url": "https://trello.com/b/NjZf12R5.json",
+        "codes": "none",
+        "checked": "2026-06-26"
+      }
     },
     "tower-defense-simulator": {
       "id": 1176784616,
-      "groupId": 4914494
+      "groupId": 4914494,
+      "trello": null
     },
     "world-fighters": {
       "id": 10032271327,
-      "groupId": 33910482
+      "groupId": 33910482,
+      "trello": null
     },
     "noob-incremental": {
       "id": 9965411707,
-      "groupId": 356937272
+      "groupId": 356937272,
+      "trello": null
     },
     "defend-ur-base-with-anime": {
       "id": 10111742174,
-      "groupId": 104489519
+      "groupId": 104489519,
+      "trello": null
     },
     "spin-a-soccer-card": {
       "id": 9272693470,
-      "groupId": 520125566
+      "groupId": 520125566,
+      "trello": null
     },
     "merge-a-nuke": {
       "id": 10199301628,
-      "groupId": 446405201
+      "groupId": 446405201,
+      "trello": null
     },
     "vv-ultimatum": {
       "id": 2309918273,
-      "groupId": 9233039
+      "groupId": 9233039,
+      "trello": null
     },
     "fifa-super-soccer": {
       "id": 4293374620,
-      "groupId": 16790592
+      "groupId": 16790592,
+      "trello": null
     },
     "hypershot": {
       "id": 5995470825,
-      "groupId": 3385385
+      "groupId": 3385385,
+      "trello": null
     },
     "blockspin": {
       "id": 6765805766,
-      "groupId": 33720745
+      "groupId": 33720745,
+      "trello": null
     },
     "run-a-restaurant": {
       "id": 9970645639,
-      "groupId": 75550158
+      "groupId": 75550158,
+      "trello": null
     },
     "squid-game-x": {
       "id": 2936053166,
-      "groupId": 12255003
+      "groupId": 12255003,
+      "trello": null
     },
     "catch-a-monster": {
       "id": 9141743926,
-      "groupId": 15753989
+      "groupId": 15753989,
+      "trello": null
     },
     "brainrot-evolution": {
       "id": 7332711118,
-      "groupId": 35325835
+      "groupId": 35325835,
+      "trello": null
     },
     "100-days-at-sea": {
       "id": 9167377564,
-      "groupId": 425035678
+      "groupId": 425035678,
+      "trello": null
     }
   },
   "snapshots": {
@@ -455,5 +540,6 @@
       "knownCodes": [],
       "descExcerpt": "Inspiré par 99 nuits dans la forêt. Tu es envoyé en mission au milieu de l'océan. Vous devez percer le mystère du triangle des Bermudes. Survivez pendant 100 jours et devenez riche! Un jeu de survie en monde ouvert où l'exploration et la construction de bases sont la clé de la survie."
     }
-  }
+  },
+  "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board."
 }
