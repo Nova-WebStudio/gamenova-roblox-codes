@@ -251,7 +251,7 @@ const GAMES_INDEX = [
   { name: 'Anime Fighting Simulator Reborn', slug: 'anime-fighting-simulator-reborn', emoji: '🥋', codes: 4 },
   { name: 'Liminalité Invisible', slug: 'liminalite-invisible', emoji: '🌫️', codes: 0 },
   { name: 'Démonologie', slug: 'demonologie', emoji: '👹', codes: 0 },
-  { name: 'Mini-Guerre', slug: 'mini-guerre', emoji: '💥', codes: 0 },
+  { name: 'Mini-Guerre', slug: 'mini-guerre', emoji: '🪖', codes: 2 },
   { name: 'Cliqueur Phonk', slug: 'cliqueur-phonk', emoji: '🎵', codes: 0 },
   { name: 'Arène de Sniper', slug: 'arene-de-sniper', emoji: '🎯', codes: 0 },
   { name: 'Tour Needoh', slug: 'tour-needoh', emoji: '🗼', codes: 0 },
