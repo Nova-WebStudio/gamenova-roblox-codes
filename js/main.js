@@ -102,7 +102,7 @@ const ROBLOX_THUMBS = {
   'bubble-gum-simulator-infinity': 'https://tr.rbxcdn.com/180DAY-7c76a88ace2e799826837aee08875eec/480/270/Image/Webp/noFilter',
   'blue-lock-rivals': 'https://tr.rbxcdn.com/180DAY-6c3d95dac7c3d279e20cfa9ef1b27ba5/480/270/Image/Webp/noFilter',
   'volleyball-legends': 'https://tr.rbxcdn.com/180DAY-572cf4e9e5cec5dd45074a98fa143ca0/480/270/Image/Webp/noFilter',
-  'steal-a-brainrot': 'https://tr.rbxcdn.com/180DAY-30a62664e838df470ec079b7fc171637/480/270/Image/Webp/noFilter',
+  'steal-a-brainrot': 'https://tr.rbxcdn.com/180DAY-64170d84ffa0cba4ee5af8bd1cd2df66/480/270/Image/Webp/noFilter',
   'build-a-boat-for-treasure': 'https://tr.rbxcdn.com/180DAY-1ca8115eb50594d19be488f3d22ac54e/480/270/Image/Webp/noFilter',
   'anime-last-stand': 'https://tr.rbxcdn.com/180DAY-b3d29df4d10633c51bd9d2a5b6585bde/480/270/Image/Webp/noFilter',
   '99-nights-in-the-forest': 'https://tr.rbxcdn.com/180DAY-c5215eabc21f46723f0084f99bb7622c/480/270/Image/Webp/noFilter',
