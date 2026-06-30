@@ -4,6 +4,24 @@ Règles et pièges à éviter, documentés à partir des erreurs réelles rencon
 
 ---
 
+## Deux dates distinctes sur les pages codes (demande de Peter, 30 juin)
+
+Chaque `codes/<slug>.html` doit afficher **deux dates séparées** dans le `game-meta` du hero, et il ne faut JAMAIS les confondre :
+
+| Libellé | Sens | Quand la changer |
+|---------|------|------------------|
+| **🕐 Mis à jour le `<date>`** | Dernière **vraie modification de la liste de codes** (ajout / expiration). | UNIQUEMENT si les codes changent réellement (règle d'honnêteté). Ne reflète PAS les mises à jour du jeu. |
+| **🔄 Vérifié le `<date>`** | Date de la **dernière vérification** des codes. | À CHAQUE run quotidien, même sans aucun changement de codes. C'est cette date qui « rajeunit » la page. |
+
+- Pourquoi : « Mis à jour le » seul donnait l'impression de pages abandonnées (ex. « 2 juin ») alors que le jeu avait reçu des MAJ — mais sans nouveau code, donc date figée. La ligne « Vérifié le » résout ça sans mentir sur l'ancienneté des codes.
+- **Markup standard** : `<div class="game-meta-item">🔄 Vérifié le <strong>JJ mois AAAA</strong></div>`, placé juste après l'item « Mis à jour le ».
+- **Idempotent** : si une ligne `🔄 Vérifié le <strong>` existe déjà, mettre à jour sa date à celle du run ; sinon l'insérer. Ne JAMAIS dupliquer (exactement 1 par page).
+- Variantes de markup rencontrées pour « Mis à jour le » (à gérer toutes) : `🕐 Mis à jour le <strong>DATE</strong>` ; `🆕 <strong>Mis à jour le DATE</strong>` ; `🆕 <strong>Mis à jour aujourd'hui</strong>` (sans date). Quelques pages n'ont QUE « 🕐 Vérifié le » (pas de « Mis à jour le ») : juste rafraîchir la date.
+- Exclure `codes/index.html` (hub), `codes/mini-war.html` (stub de redirection), `codes/_TEMPLATE.html`.
+- À chaque run : rafraîchir « Vérifié le » sur toutes les pages codes parcourues ; ne toucher « Mis à jour le » que sur celles dont les codes changent vraiment.
+
+---
+
 ## « La totale » sur un jeu (demande de Peter)
 
 Quand Peter dit **« fais-moi la totale »** sur un jeu, cela signifie produire **les 3 pages dédiées** pour ce jeu, complètes et reliées entre elles :

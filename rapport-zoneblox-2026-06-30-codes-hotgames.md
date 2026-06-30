@@ -68,6 +68,20 @@ Modifs sur `codes/fisch.html` : table active (6 codes), table expirés (17 → *
 
 > Rappel : `git status` affiche aussi les modifications héritées des runs du matin (`codes/blue-lock-rivals.html`, et `tools/code-watch.json` / `tools/rapport-2026-06-10.md` / `ugc-gratuit/` en « deleted staged + untracked »). Tous intègres ; l'incohérence d'index se résout au `git add -A`.
 
+## Ajout demandé par Peter : double date « Mis à jour le » / « Vérifié le »
+
+Constat de Peter : des pages affichaient « Mis à jour le 2 juin / 16 juin » alors que le jeu avait reçu des MAJ → impression de page abandonnée. Cause : « Mis à jour le » ne bouge que si **les codes** changent (règle d'honnêteté), pas quand le **jeu** est mis à jour.
+
+Solution déployée (choix de Peter) : ajout d'une 2e date **« 🔄 Vérifié le [date du jour] »** dans le hero de **chaque page codes**, rafraîchie à chaque run, en gardant « 🕐 Mis à jour le » pour les vraies modifs de codes.
+
+- **157 pages codes** traitées : 5 « Vérifié le » existantes rafraîchies + 152 nouvelles lignes insérées. Exclus : `index.html` (hub), `mini-war.html` (stub), `_TEMPLATE.html`.
+- Markup géré (4 variantes) : `🕐 Mis à jour le <strong>`, `🆕 <strong>Mis à jour le `, `🆕 <strong>Mis à jour aujourd'hui</strong>`, et pages n'ayant que `🕐 Vérifié le`.
+- Idempotent : exactement **1** ligne « Vérifié le » par page (re-vérifié sur les 157).
+- Règle inscrite dans **CLAUDE.md** pour que les prochains runs quotidiens rafraîchissent « Vérifié le » automatiquement.
+- QC : 0 null byte, toutes finissent par `</html>`, `<div>` équilibrés (0), `node --check js/main.js` OK.
+
+⚠️ À corriger plus tard : 7 pages (`brainrot-evolution, catch-and-tame, fifa-super-soccer, fish-it, forsaken, merge-a-nuke, run-a-restaurant`) affichent encore un libellé **« Mis à jour aujourd'hui »** sans date (trompeur car toujours « aujourd'hui »). Elles ont désormais une vraie ligne « Vérifié le 30 juin » ; il faudrait remplacer « Mis à jour aujourd'hui » par la vraie date de dernière modif de codes (inconnue ici, à renseigner au prochain passage sur ces jeux).
+
 ---
 
 **Pour publier** : dans le dossier GameNova, lance
