@@ -1,7 +1,9 @@
 User-agent: *
 Allow: /
 
-# Pages techniques non destinées à l'indexation
+# Fichiers techniques non destinés à l'indexation
 Disallow: /codes/_TEMPLATE.html
+Disallow: /*.tmp$
 
+# Sitemap index (segmenté par type de contenu)
 Sitemap: https://zoneblox.com/sitemap.xml

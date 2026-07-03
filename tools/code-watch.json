@@ -198,7 +198,7 @@
   },
   "snapshots": {
     "blox-fruits": {
-      "lastChecked": "2026-06-30T05:32:00Z",
+      "lastChecked": "2026-07-01T05:00:00Z",
       "descLen": 366,
       "descExcerpt": "Bienvenue à Blox Fruits! Devenez un maître des épées ou un puissant utilisateur de fruits blox en vous entraînant pour devenir le joueur le plus fort à avoir jamais vécu. Vous pouvez choisir de combattre des ennemis difficiles ou d'avoir de puissantes batailles de boss en naviguant à travers l'océan",
       "knownCodes": [
@@ -229,7 +229,7 @@
       "note30": "Verifie 30/06 : 23 codes actifs (RoCodes/PCGamesN 28/06) = set Zoneblox inchange."
     },
     "grow-a-garden": {
-      "lastChecked": "2026-06-30T05:32:00Z",
+      "lastChecked": "2026-07-01T05:00:00Z",
       "descLen": 327,
       "descExcerpt": "Bienvenue à Grow a Garden. Êtes-vous prêt à faire pousser votre propre jardin? Achetez des graines dans la boutique lorsqu'elles sont réapprovisionnées, plantez-les, attendez qu'elles poussent et récoltez les profits! Flexez les fruits et trouvez des amis. N'oublie pas, ton jardin grandit littéralem",
       "knownCodes": [
@@ -239,14 +239,14 @@
       "note30": "Verifie 30/06 : page MAJ 26/06, set inchange."
     },
     "steal-a-brainrot": {
-      "lastChecked": "2026-06-30T05:35:00Z",
+      "lastChecked": "2026-07-01T05:00:00Z",
       "descLen": 313,
       "descExcerpt": "Bienvenue dans Steal a Brainrot! Aimez le jeu et rejoignez le groupe. Comment jouer: Acheter un Brainrot, vole des Brainrots d'autres joueurs, générer de l'argent, renaissance, achète des slaps et de l'équipement de troll pour troller d'autres joueurs. Prend en charge les joueurs de bureau, mobiles ",
       "knownCodes": [],
       "note": "Sources en conflit (0 vs 9) — prudence: page sans code maintenue"
     },
     "blade-ball": {
-      "lastChecked": "2026-06-30T05:16:48Z",
+      "lastChecked": "2026-07-02T05:00:00Z",
       "descLen": 323,
       "descExcerpt": "Dans ce jeu de mise au point, de timing et de stratégie, votre compétence est mise à l'épreuve en tant que balle de renvoi déviante qui chasse les joueurs avec une vitesse croissante. Obtenez de nouvelles capacités et améliorez-les pour complimenter votre style de jeu. Montez dans les rangs en maîtr",
       "knownCodes": [
@@ -269,10 +269,11 @@
         "PERFECTBLOCK",
         "THANKYOU2M",
         "LATEGAME"
-      ]
+      ],
+      "note02": "Verifie 02/07 : set inchange (Pocket Tactics/The Click/GamesRadar). Aucun nouveau code."
     },
     "blue-lock-rivals": {
-      "lastChecked": "2026-06-30T05:30:00Z",
+      "lastChecked": "2026-07-02T05:00:00Z",
       "descLen": 313,
       "descExcerpt": "Ce jeu non officiel fait par les fans a été créé par d'énormes fans de Blue Lock. Entrez dans le monde à haut risque de Blue Lock: Rivals, inspiré par l'anime. Participez à des matchs de football 5v5 électrisants, où l'ego et la compétence brillent. Choisissez une classe de personnage avec des capac",
       "knownCodes": [
@@ -282,10 +283,11 @@
       ],
       "pending": [],
       "pendingNote": "Publies le 30/06 : GAGAREWORK/ADDRESSME/BEARCLAW confirmes par GamesRadar(29/06)+PGG(27/06)+PCGamer. Anciens NELEVENT/NEL2.0/MASSIVEUPDATE passes expires (GamesRadar 29/06).",
-      "officialSource": "web3+"
+      "officialSource": "web3+",
+      "note02": "Verifie 02/07 : PGG (MAJ 27/06) liste toujours GAGAREWORK/ADDRESSME/BEARCLAW en NEW/actif. Set prudent de 3 maintenu (conflit sur les anciens codes selon sources). Inchange."
     },
     "anime-last-stand": {
-      "lastChecked": "2026-06-30T05:35:00Z",
+      "lastChecked": "2026-07-02T05:00:00Z",
       "descLen": 299,
       "descExcerpt": "Aimez le jeu pour des codes GRATUITS. Rejoignez la communauté ci-dessous pour les mises à jour. Vous pouvez jouer sur TOUS LES APPAREILS. L'un des jeux de Tower Defense les plus contentés de Roblox. Avertissement: ce projet peut comporter de l'inspiration créée par l'admiration du travail original.",
       "knownCodes": [
@@ -294,7 +296,8 @@
         "ALSUPD1",
         "World3Patch2",
         "WORLD3REBALANCE"
-      ]
+      ],
+      "note02": "A VERIFIER 02/07 : RoCodes (01/07) ne liste que 5 actifs (TheATDSituationIsCrazy/JoJoCurse/DemonicCyborg/ALSUPD1/World3Patch2) alors que la page en affiche 21 (MAJ contenu 10/06, probablement gonflee). Non modifiee ce run (1 seule source datee) -> trimmer au prochain run apres cross-check >=3 sources."
     },
     "fisch": {
       "lastChecked": "2026-06-30T05:35:00Z",
@@ -314,31 +317,23 @@
       "officialSource": "ingame/discord (WoozyNate)"
     },
     "volleyball-legends": {
-      "lastChecked": "2026-06-30T05:35:00Z",
+      "lastChecked": "2026-07-02T05:00:00Z",
       "descLen": 293,
       "descExcerpt": "DEVENEZ LE ROI DE LA COURT dans Volleyball Legends. Volley-ball 6v6 au rythme rapide. Jouez à une partie de volley-ball avec des amis OU défiez n'importe qui dans un match RANGÉ. Avantages Premium: les joueurs Premium reçoivent +10% de Yen. De nouvelles mises à jour chaque samedi à 11h30 EST.",
       "knownCodes": [
-        "UPDATE_75",
-        "SPECTATING",
-        "SHOW_OFF",
-        "UPDATE_74",
-        "SEASON_16",
-        "SUMMER_UPDATE",
-        "UPDATE_73",
-        "JUNGLE_MAP",
-        "JUNE_2026"
-      ],
-      "pending": [
         "UPDATE_76",
         "ENCHO_RETURNS",
-        "BALANCE_76 (1 source, à confirmer)"
-      ]
+        "BALANCE_76"
+      ],
+      "pending": [],
+      "note02": "MAJ 02/07 : update 76 -> 3 codes actifs (UPDATE_76/ENCHO_RETURNS/BALANCE_76). Anciens update 75/saison 16/Jungle expires (RoCodes+Beebom+GamesRadar 01-02/07). Page passee de 9 a 3."
     },
     "anime-vanguards": {
-      "lastChecked": "2026-06-30T05:35:00Z",
+      "lastChecked": "2026-07-02T05:00:00Z",
       "descLen": 288,
       "descExcerpt": "Bienvenue chez les avant-gardes de l'anime! Tous les mondes et les univers ont besoin de votre aide! Un événement a provoqué la collision de plusieurs mondes. Invoquez des unités pour combattre ces ennemis. Nivelez et évoluez les unités pour les renforcer pour d'autres batailles à venir.",
       "knownCodes": [
+        "LagGone",
         "13.5",
         "EternalAdversaries",
         "Gambler",
@@ -348,9 +343,9 @@
         "Cog5th"
       ],
       "pending": [
-        "LagGone (confirmé 3+ sources mais expire le 30/06)",
-        "kat (meme code)"
-      ]
+        "Conflit sources 02/07"
+      ],
+      "note02": "CONFLIT 02/07 : Beebom (MAJ 22/06) liste 13.5/EternalAdversaries/Gambler actifs ; aggregateurs (01/07) disent 'aucun code actif, LagGone expire'. Prudence : page (8 actifs) laissee inchangee. A RECONCILIER au prochain run avec source datee du jour."
     },
     "pet-simulator-99": {
       "lastChecked": "2026-06-30T05:35:00Z",
