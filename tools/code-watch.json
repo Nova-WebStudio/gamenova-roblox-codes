@@ -198,7 +198,7 @@
   },
   "snapshots": {
     "blox-fruits": {
-      "lastChecked": "2026-07-01T05:00:00Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 366,
       "descExcerpt": "Bienvenue à Blox Fruits! Devenez un maître des épées ou un puissant utilisateur de fruits blox en vous entraînant pour devenir le joueur le plus fort à avoir jamais vécu. Vous pouvez choisir de combattre des ennemis difficiles ou d'avoir de puissantes batailles de boss en naviguant à travers l'océan",
       "knownCodes": [
@@ -226,27 +226,30 @@
         "TantaiGaming",
         "StrawHatMaine"
       ],
-      "note30": "Verifie 30/06 : 23 codes actifs (RoCodes/PCGamesN 28/06) = set Zoneblox inchange."
+      "note30": "Verifie 30/06 : 23 codes actifs (RoCodes/PCGamesN 28/06) = set Zoneblox inchange.",
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "grow-a-garden": {
-      "lastChecked": "2026-07-01T05:00:00Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 327,
       "descExcerpt": "Bienvenue à Grow a Garden. Êtes-vous prêt à faire pousser votre propre jardin? Achetez des graines dans la boutique lorsqu'elles sont réapprovisionnées, plantez-les, attendez qu'elles poussent et récoltez les profits! Flexez les fruits et trouvez des amis. N'oublie pas, ton jardin grandit littéralem",
       "knownCodes": [
         "RDCAward",
         "BEANORLEAVE10"
       ],
-      "note30": "Verifie 30/06 : page MAJ 26/06, set inchange."
+      "note30": "Verifie 30/06 : page MAJ 26/06, set inchange.",
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "steal-a-brainrot": {
-      "lastChecked": "2026-07-01T05:00:00Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 313,
       "descExcerpt": "Bienvenue dans Steal a Brainrot! Aimez le jeu et rejoignez le groupe. Comment jouer: Acheter un Brainrot, vole des Brainrots d'autres joueurs, générer de l'argent, renaissance, achète des slaps et de l'équipement de troll pour troller d'autres joueurs. Prend en charge les joueurs de bureau, mobiles ",
       "knownCodes": [],
-      "note": "Sources en conflit (0 vs 9) — prudence: page sans code maintenue"
+      "note": "Sources en conflit (0 vs 9) — prudence: page sans code maintenue",
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "blade-ball": {
-      "lastChecked": "2026-07-02T05:00:00Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 323,
       "descExcerpt": "Dans ce jeu de mise au point, de timing et de stratégie, votre compétence est mise à l'épreuve en tant que balle de renvoi déviante qui chasse les joueurs avec une vitesse croissante. Obtenez de nouvelles capacités et améliorez-les pour complimenter votre style de jeu. Montez dans les rangs en maîtr",
       "knownCodes": [
@@ -270,10 +273,11 @@
         "THANKYOU2M",
         "LATEGAME"
       ],
-      "note02": "Verifie 02/07 : set inchange (Pocket Tactics/The Click/GamesRadar). Aucun nouveau code."
+      "note02": "Verifie 02/07 : set inchange (Pocket Tactics/The Click/GamesRadar). Aucun nouveau code.",
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "blue-lock-rivals": {
-      "lastChecked": "2026-07-02T05:00:00Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 313,
       "descExcerpt": "Ce jeu non officiel fait par les fans a été créé par d'énormes fans de Blue Lock. Entrez dans le monde à haut risque de Blue Lock: Rivals, inspiré par l'anime. Participez à des matchs de football 5v5 électrisants, où l'ego et la compétence brillent. Choisissez une classe de personnage avec des capac",
       "knownCodes": [
@@ -284,10 +288,11 @@
       "pending": [],
       "pendingNote": "Publies le 30/06 : GAGAREWORK/ADDRESSME/BEARCLAW confirmes par GamesRadar(29/06)+PGG(27/06)+PCGamer. Anciens NELEVENT/NEL2.0/MASSIVEUPDATE passes expires (GamesRadar 29/06).",
       "officialSource": "web3+",
-      "note02": "Verifie 02/07 : PGG (MAJ 27/06) liste toujours GAGAREWORK/ADDRESSME/BEARCLAW en NEW/actif. Set prudent de 3 maintenu (conflit sur les anciens codes selon sources). Inchange."
+      "note02": "Verifie 02/07 : PGG (MAJ 27/06) liste toujours GAGAREWORK/ADDRESSME/BEARCLAW en NEW/actif. Set prudent de 3 maintenu (conflit sur les anciens codes selon sources). Inchange.",
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "anime-last-stand": {
-      "lastChecked": "2026-07-02T05:00:00Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 299,
       "descExcerpt": "Aimez le jeu pour des codes GRATUITS. Rejoignez la communauté ci-dessous pour les mises à jour. Vous pouvez jouer sur TOUS LES APPAREILS. L'un des jeux de Tower Defense les plus contentés de Roblox. Avertissement: ce projet peut comporter de l'inspiration créée par l'admiration du travail original.",
       "knownCodes": [
@@ -297,27 +302,27 @@
         "World3Patch2",
         "WORLD3REBALANCE"
       ],
-      "note02": "A VERIFIER 02/07 : RoCodes (01/07) ne liste que 5 actifs (TheATDSituationIsCrazy/JoJoCurse/DemonicCyborg/ALSUPD1/World3Patch2) alors que la page en affiche 21 (MAJ contenu 10/06, probablement gonflee). Non modifiee ce run (1 seule source datee) -> trimmer au prochain run apres cross-check >=3 sources."
+      "note02": "A VERIFIER 02/07 : RoCodes (01/07) ne liste que 5 actifs (TheATDSituationIsCrazy/JoJoCurse/DemonicCyborg/ALSUPD1/World3Patch2) alors que la page en affiche 21 (MAJ contenu 10/06, probablement gonflee). Non modifiee ce run (1 seule source datee) -> trimmer au prochain run apres cross-check >=3 sources.",
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "fisch": {
-      "lastChecked": "2026-06-30T05:35:00Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 297,
       "descExcerpt": "Bienvenue à Fisch. Plongez dans Fisch, l'aventure de pêche ultime où l'exploration et la progression sont à vous de contrôler. Mettez votre ligne pour attraper des poissons rares et uniques, chacun avec plus de 400 000 variations possibles. Explorez un monde en croissance avec votre canne fiable.",
       "knownCodes": [
         "KingCrabstle",
-        "Fischfest2026",
-        "AquariumCustomization",
         "scarlet",
         "TemporarySubmarine",
         "CARBON"
       ],
       "pending": [
-        "TheDeepAwaitsForYou (Beebom seul)"
+        "Fischfest2026/AquariumCustomization: RoCodes les liste encore actifs, Pocket Tactics/PCGamer expirés — retirés par prudence"
       ],
-      "officialSource": "ingame/discord (WoozyNate)"
+      "officialSource": "ingame/discord (WoozyNate)",
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "volleyball-legends": {
-      "lastChecked": "2026-07-02T05:00:00Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 293,
       "descExcerpt": "DEVENEZ LE ROI DE LA COURT dans Volleyball Legends. Volley-ball 6v6 au rythme rapide. Jouez à une partie de volley-ball avec des amis OU défiez n'importe qui dans un match RANGÉ. Avantages Premium: les joueurs Premium reçoivent +10% de Yen. De nouvelles mises à jour chaque samedi à 11h30 EST.",
       "knownCodes": [
@@ -326,14 +331,14 @@
         "BALANCE_76"
       ],
       "pending": [],
-      "note02": "MAJ 02/07 : update 76 -> 3 codes actifs (UPDATE_76/ENCHO_RETURNS/BALANCE_76). Anciens update 75/saison 16/Jungle expires (RoCodes+Beebom+GamesRadar 01-02/07). Page passee de 9 a 3."
+      "note02": "MAJ 02/07 : update 76 -> 3 codes actifs (UPDATE_76/ENCHO_RETURNS/BALANCE_76). Anciens update 75/saison 16/Jungle expires (RoCodes+Beebom+GamesRadar 01-02/07). Page passee de 9 a 3.",
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "anime-vanguards": {
-      "lastChecked": "2026-07-02T05:00:00Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 288,
       "descExcerpt": "Bienvenue chez les avant-gardes de l'anime! Tous les mondes et les univers ont besoin de votre aide! Un événement a provoqué la collision de plusieurs mondes. Invoquez des unités pour combattre ces ennemis. Nivelez et évoluez les unités pour les renforcer pour d'autres batailles à venir.",
       "knownCodes": [
-        "LagGone",
         "13.5",
         "EternalAdversaries",
         "Gambler",
@@ -345,17 +350,20 @@
       "pending": [
         "Conflit sources 02/07"
       ],
-      "note02": "CONFLIT 02/07 : Beebom (MAJ 22/06) liste 13.5/EternalAdversaries/Gambler actifs ; aggregateurs (01/07) disent 'aucun code actif, LagGone expire'. Prudence : page (8 actifs) laissee inchangee. A RECONCILIER au prochain run avec source datee du jour."
+      "note02": "CONFLIT 02/07 : Beebom (MAJ 22/06) liste 13.5/EternalAdversaries/Gambler actifs ; aggregateurs (01/07) disent 'aucun code actif, LagGone expire'. Prudence : page (8 actifs) laissee inchangee. A RECONCILIER au prochain run avec source datee du jour.",
+      "officialSource": "twitter",
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "pet-simulator-99": {
-      "lastChecked": "2026-06-30T05:35:00Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 237,
       "descExcerpt": "Gagnez des pièces, ouvrez des œufs et collectionnez des animaux! Équipez 99 animaux! Ouvrez 99 œufs! Jouez à des mini-jeux! Explorez le monde! Rejoignez des clans! Échangez des animaux! Suivez les mises à jour du jeu! Merci d'avoir joué!",
       "knownCodes": [],
-      "note": "0 code actif (jeu sans MAJ ; seuls codes merch one-time) — confirmé 29/06"
+      "note": "0 code actif (jeu sans MAJ ; seuls codes merch one-time) — confirmé 29/06",
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "king-legacy": {
-      "lastChecked": "2026-06-30T05:35:00Z",
+      "lastChecked": "2026-07-05T05:00:00Z",
       "descLen": 358,
       "descExcerpt": "Rejoignez le serveur de la communauté pour plus d'informations et de codes! Limite de niveau: 5450. Il y a 44 fruits physiques dans le jeu. Les fruits apparaissent sur la carte toutes les 1 à 2 heures / disparaissent toutes les 15 minutes. La première fois que vous rejoignez le jeu, vous avez 0,1% d",
       "knownCodes": [
@@ -364,36 +372,39 @@
         "FREESTATSRESET",
         "WELCOMETOKINGLEGACY",
         "DragonColorRefund"
-      ]
+      ],
+      "pending": [
+        "DinoxLive",
+        "Peodiz",
+        "SKGames"
+      ],
+      "note": "Conflit 5/07: PocketTactics(01/07)+PCGamer listent DinoxLive/Peodiz/SKGames ACTIFS mais PGG(22/06) les liste INACTIFS. Prudence: page maintenue a 5 codes, candidats en attente."
     },
     "fruit-battlegrounds": {
-      "lastChecked": "2026-06-30T05:35:00Z",
+      "lastChecked": "2026-07-05T05:00:00Z",
       "descLen": 314,
       "descExcerpt": "L'exploitation entraînera un bannissement permanent. OPE V2 EST LÀ (MYTHIQUE). La saison d'hiver est de retour. 1MIL110K CODE : YOO1M110K ! PROCHAIN CODE À 1 120 000 J'AIME, AIMEZ POUR PLUS DE CODES. Bienvenue dans les champs de bataille de fruits. Un champ de bataille simpliste où vous pouvez comba",
       "knownCodes": [
-        "YOO1M110K",
         "BIGMILLIHUNNID!",
-        "MILLI90SWAG",
         "ITSTHEBILLION!",
         "CODEFIX",
-        "1M60WOWZER",
-        "1M50INSANE",
-        "4MPUTAT3",
-        "1M40KRAZY!!"
+        "1M60WOWZER"
       ],
       "pending": [
         "CRASHL4NDING",
         "TIMEISVALUABLE (à confirmer ≥3 sources nommées)"
-      ]
+      ],
+      "note": "Trim 9->4 le 5/07 apres croisement PGG(01/07)+Destructoid+PocketTactics. Retires: YOO1M110K, MILLI90SWAG, 1M50INSANE, 4MPUTAT3, 1M40KRAZY!!"
     },
     "tower-defense-simulator": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 287,
       "descExcerpt": "Dans ce monde, personne ne peut survivre seul. Faites équipe avec vos amis pour terrasser des vagues de zombies sans fins, combattre des boss, gagner des pièces, monter de niveau et acheter de nouvelles tours! Rejoignez le groupe pour avoir 100$ de plus dès le début. CE JEU EST EN BETA.",
-      "knownCodes": []
+      "knownCodes": [],
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "world-fighters": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 290,
       "descExcerpt": "Bienvenue dans World Fighters! 25kLIKE = NOUVEAU CODE!!! Explorez des mondes inspirés de vos anime préférés et vivez des aventures épiques! Vainquez les ennemis pour collecter des cristaux et débloquer de nouveaux avatars / animaux exclusifs! Disponible sur PC, mobile, tablette et console.",
       "knownCodes": [
@@ -408,10 +419,12 @@
         "UPDATE6PT2",
         "BATTLEPASS_SEASON2",
         "25KLIKESAMAZING!!!"
-      ]
+      ],
+      "note": "Verifie 5/07: page Zoneblox affiche codes ere Berserk (BERSERKUPDATE, SORRYYSACRIFICEBUG, SRRY4DELAY) coherents avec sources. Pas de liste 3-sources propre pour le BON jeu (homonyme World Fighters Simulator StarX). Aucun changement, a re-verifier.",
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "noob-incremental": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 324,
       "descExcerpt": "Bienvenue dans Noob Incremental! Un jeu incrémental massif avec des centaines d'améliorations, des dizaines de statistiques, plusieurs niveaux de prestige et de nombreuses fonctionnalités à explorer! Achetez des noobs et faites Oof! Achetez des améliorations et devenez plus fort! Prestige et débloqu",
       "knownCodes": [
@@ -429,7 +442,8 @@
         "BAZALRIGHT",
         "RELEASE",
         "THANKS4JOINING"
-      ]
+      ],
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "defend-ur-base-with-anime": {
       "lastChecked": "2026-06-29T20:05:35Z",
@@ -497,7 +511,7 @@
       "descExcerpt": "Bienvenue à Hypershot! Entrez dans notre jeu de tir à la première personne intense et rapide où l'habileté, le style et le chaos règnent en maître! Dominez dans des modes de jeu classiques tels que Team Deathmatch, Capture the Flag, Free for All et Gun Game. Grimpe les rangs pour atteindre le leader"
     },
     "blockspin": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-05T05:00:00Z",
       "descLen": 315,
       "knownCodes": [
         "HURRICANE_RELEASE",
@@ -505,18 +519,20 @@
         "UNDER_THE_BARREL",
         "W7C28D"
       ],
-      "descExcerpt": "Pouces vers le haut du jeu pour plus de mises à jour! Utilisez le code W7C28D pour 500 $ d'argent gratuit si vous êtes un nouveau joueur! Faites tourner le bloc. Affrontez des tâches pour débloquer des caisses de récompenses aléatoires et améliorez le niveau de votre personnage pour devenir le top d"
+      "descExcerpt": "Pouces vers le haut du jeu pour plus de mises à jour! Utilisez le code W7C28D pour 500 $ d'argent gratuit si vous êtes un nouveau joueur! Faites tourner le bloc. Affrontez des tâches pour débloquer des caisses de récompenses aléatoires et améliorez le niveau de votre personnage pour devenir le top d",
+      "note": "Verifie 5/07: trackers = 0 code actif classique; HURRICANE_RELEASE/UNDER_THE_BARREL sont des codes referral/1-fois persistants. Page inchangee."
     },
     "run-a-restaurant": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 280,
       "knownCodes": [
         "RAR4EVER"
       ],
-      "descExcerpt": "Bienvenue dans Run a Restaurant! Préparez des recettes et servez les clients! Construis et décore ton restaurant! Élevez des animaux et des cultures agricoles! Embauchez du personnel pour faire le travail pour vous! Ton restaurant gagne de l'argent hors ligne! Merci d'avoir joué!"
+      "descExcerpt": "Bienvenue dans Run a Restaurant! Préparez des recettes et servez les clients! Construis et décore ton restaurant! Élevez des animaux et des cultures agricoles! Embauchez du personnel pour faire le travail pour vous! Ton restaurant gagne de l'argent hors ligne! Merci d'avoir joué!",
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "squid-game-x": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-06T05:00:00Z",
       "descLen": 1400,
       "knownCodes": [
         "$1.2M$",
@@ -533,7 +549,8 @@
         "token": "$1.2M$ (nom in-game: '1,2 million de dollars')",
         "detected": "2026-06-27T16:59:23+00:00",
         "status": "PUBLIE le 2026-06-29 — confirme par description in-game (« 1,2 million de dollars ») + Roblox Den (06/28/2026, NEW CODE $1.2M, 200 Coins)"
-      }
+      },
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "catch-a-monster": {
       "lastChecked": "2026-06-29T20:05:35Z",
