@@ -363,7 +363,7 @@
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "king-legacy": {
-      "lastChecked": "2026-07-05T05:00:00Z",
+      "lastChecked": "2026-07-07T05:00:00Z",
       "descLen": 358,
       "descExcerpt": "Rejoignez le serveur de la communauté pour plus d'informations et de codes! Limite de niveau: 5450. Il y a 44 fruits physiques dans le jeu. Les fruits apparaissent sur la carte toutes les 1 à 2 heures / disparaissent toutes les 15 minutes. La première fois que vous rejoignez le jeu, vous avez 0,1% d",
       "knownCodes": [
@@ -371,14 +371,13 @@
         "2MFAV",
         "FREESTATSRESET",
         "WELCOMETOKINGLEGACY",
-        "DragonColorRefund"
-      ],
-      "pending": [
+        "DragonColorRefund",
         "DinoxLive",
         "Peodiz",
         "SKGames"
       ],
-      "note": "Conflit 5/07: PocketTactics(01/07)+PCGamer listent DinoxLive/Peodiz/SKGames ACTIFS mais PGG(22/06) les liste INACTIFS. Prudence: page maintenue a 5 codes, candidats en attente."
+      "note": "Conflit 5/07: PocketTactics(01/07)+PCGamer listent DinoxLive/Peodiz/SKGames ACTIFS mais PGG(22/06) les liste INACTIFS. Prudence: page maintenue a 5 codes, candidats en attente.",
+      "officialSource": "trackers x3 (PC Gamer, PGG, Pocket Tactics)"
     },
     "fruit-battlegrounds": {
       "lastChecked": "2026-07-05T05:00:00Z",
@@ -446,7 +445,7 @@
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "defend-ur-base-with-anime": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-07T05:00:00Z",
       "descLen": 279,
       "descExcerpt": "Défends ta base avec des anime. Les méchants se précipitent vers votre base, protégez-la à tout prix! Invoquez des combattants anime et repoussez-les! Battez des vagues infinies d'ennemis! Fusionnez vos animes pour monter de niveau! Lancez des animes secrets pour vous améliorer!",
       "knownCodes": [
@@ -458,20 +457,18 @@
       ]
     },
     "spin-a-soccer-card": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-07T05:00:00Z",
       "descLen": 282,
       "knownCodes": [
-        "EPIC-LION",
-        "PRIME-TURBO",
-        "CRYSTAL-GOAL",
-        "WOLF-METEOR",
-        "OMEGA-STAR",
-        "TIGER-HAWK"
+        "PHOENIX-MYTHIC"
       ],
-      "descExcerpt": "GAGNE DE L'ARGENT PENDANT QUE TU DORS! Bienvenue dans Spin a Soccer Card. Comment jouer: Achète un pack dans la boutique! Touche pour déballer et révéler une carte de football aléatoire! Place-les sur ton terrain pour gagner $$$! Achète plus de packs ÉPIQUES et flexifie tes cartes!"
+      "descExcerpt": "GAGNE DE L'ARGENT PENDANT QUE TU DORS! Bienvenue dans Spin a Soccer Card. Comment jouer: Achète un pack dans la boutique! Touche pour déballer et révéler une carte de football aléatoire! Place-les sur ton terrain pour gagner $$$! Achète plus de packs ÉPIQUES et flexifie tes cartes!",
+      "pending": [
+        "BLAZE-STORM (conflit : cité par agrégateurs mais absent de Pocket Tactics 02/07 qui donne PHOENIX-MYTHIC)"
+      ]
     },
     "merge-a-nuke": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-07T05:00:00Z",
       "descLen": 317,
       "knownCodes": [
         "UPDATE2",
@@ -481,15 +478,27 @@
       "descExcerpt": "Fusionnez les armes nucléaires. Empilez votre arsenal. Attaquez tout le monde. Fusionner les bombes en des armes nucléaires plus grandes. Vos armes nucléaires gagnent de l'argent à chaque seconde - même hors ligne! UTILISER LE CODE : BOOM. NOUVELLES MISES À JOUR TOUS LES VENDREDI. Rejoignez le group"
     },
     "vv-ultimatum": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-07T05:00:00Z",
       "descLen": 304,
       "knownCodes": [
         "MIDVVEEK"
       ],
-      "descExcerpt": "Aimez le jeu pour des codes et des récompenses gratuits! Rejoignez notre serveur communautaire. Un jeu de combat stylisé dans lequel vous naviguez dans des mondes dangereux, protégez votre faction choisie, et participez à des combats avec des monstres étranges. Avec plus de 130 compétences et capaci"
+      "descExcerpt": "Aimez le jeu pour des codes et des récompenses gratuits! Rejoignez notre serveur communautaire. Un jeu de combat stylisé dans lequel vous naviguez dans des mondes dangereux, protégez votre faction choisie, et participez à des combats avec des monstres étranges. Avec plus de 130 compétences et capaci",
+      "pending": [
+        "UPD2",
+        "160KLIKES",
+        "35ROLLS",
+        "UPDATE1",
+        "SHUTDOWNFIX",
+        "140KLIKES",
+        "FEWREROLLS",
+        "FULLRELEASE",
+        "100KLIKES",
+        "SDFIX (à vérifier rewards + >=3 sources avant publication)"
+      ]
     },
     "fifa-super-soccer": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-07T05:00:00Z",
       "descLen": 313,
       "knownCodes": [
         "WorldCupSecret",
@@ -500,7 +509,7 @@
       "descExcerpt": "Le jeu se joue en 4 contre 4 dans un stade rempli. Soyez le meilleur gardien de but, le maître du milieu de terrain ou l'attaquant vedette. EN DIRECT : Événement Coupe du monde de la FIFA à durée limitée. FIFA Super Soccer fait partie de l'été ultime du football sur Roblox. Ce jeu s'appelait Super L"
     },
     "hypershot": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-07T05:00:00Z",
       "descLen": 306,
       "knownCodes": [
         "ONEBILLION",
@@ -553,7 +562,7 @@
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "catch-a-monster": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-07T05:00:00Z",
       "descLen": 291,
       "knownCodes": [
         "graon",
@@ -563,10 +572,14 @@
         "LIVEXP",
         "LIVECOIN"
       ],
-      "descExcerpt": "Bienvenue dans Catch a Monster! Comment jouer: Vaincre des monstres sauvages en combat. Attrape-les et récupère-les! Découvre et récolte des animaux de compagnie de rang supérieur. Trouvez des œufs rares et faites éclore de nouveaux compagnons. Gagne des pièces et fais grandir ton escouade!"
+      "descExcerpt": "Bienvenue dans Catch a Monster! Comment jouer: Vaincre des monstres sauvages en combat. Attrape-les et récupère-les! Découvre et récolte des animaux de compagnie de rang supérieur. Trouvez des œufs rares et faites éclore de nouveaux compagnons. Gagne des pièces et fais grandir ton escouade!",
+      "pending": [
+        "clacerglaw (1 Flash Chest Egg)",
+        "massglaw (2 Wyrmfire Keys + 1 Chaos Potion)"
+      ]
     },
     "brainrot-evolution": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-07T05:00:00Z",
       "descLen": 276,
       "knownCodes": [
         "Krang",
@@ -579,10 +592,13 @@
       "descExcerpt": "Bienvenue dans Brainrot Evolution! MISES À JOUR CHAQUE SAMEDI! Mange pour gagner des niveaux! Gagne des niveaux pour débloquer de nouvelles évolutions Brainrot! Récupère des victoires et des animaux de compagnie! Les joueurs Premium obtiennent +10% de victoires et +10% d'EXP."
     },
     "100-days-at-sea": {
-      "lastChecked": "2026-06-29T20:05:35Z",
+      "lastChecked": "2026-07-07T05:00:00Z",
       "descLen": 285,
       "knownCodes": [],
-      "descExcerpt": "Inspiré par 99 nuits dans la forêt. Tu es envoyé en mission au milieu de l'océan. Vous devez percer le mystère du triangle des Bermudes. Survivez pendant 100 jours et devenez riche! Un jeu de survie en monde ouvert où l'exploration et la construction de bases sont la clé de la survie."
+      "descExcerpt": "Inspiré par 99 nuits dans la forêt. Tu es envoyé en mission au milieu de l'océan. Vous devez percer le mystère du triangle des Bermudes. Survivez pendant 100 jours et devenez riche! Un jeu de survie en monde ouvert où l'exploration et la construction de bases sont la clé de la survie.",
+      "pending": [
+        "ALIENS (Pearls, expire ~13h, trop volatil pour page statique)"
+      ]
     }
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board."
