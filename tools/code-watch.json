@@ -403,7 +403,7 @@
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "world-fighters": {
-      "lastChecked": "2026-07-06T05:00:00Z",
+      "lastChecked": "2026-07-09T05:00:00Z",
       "descLen": 290,
       "descExcerpt": "Bienvenue dans World Fighters! 25kLIKE = NOUVEAU CODE!!! Explorez des mondes inspirés de vos anime préférés et vivez des aventures épiques! Vainquez les ennemis pour collecter des cristaux et débloquer de nouveaux avatars / animaux exclusifs! Disponible sur PC, mobile, tablette et console.",
       "knownCodes": [
@@ -419,7 +419,7 @@
         "BATTLEPASS_SEASON2",
         "25KLIKESAMAZING!!!"
       ],
-      "note": "Verifie 5/07: page Zoneblox affiche codes ere Berserk (BERSERKUPDATE, SORRYYSACRIFICEBUG, SRRY4DELAY) coherents avec sources. Pas de liste 3-sources propre pour le BON jeu (homonyme World Fighters Simulator StarX). Aucun changement, a re-verifier.",
+      "note": "Sources ambigues: PGG(avril) et Pocket Tactics(mai) couvrent le World Fighters StarX/DragonBall (place 95630541662383) DIFFERENT du notre. Beebom(juillet) seule source concordante -> insuffisant (1). Prudence: inchange. Verifier universeId 10032271327 et source dediee.",
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "noob-incremental": {
@@ -478,24 +478,21 @@
       "descExcerpt": "Fusionnez les armes nucléaires. Empilez votre arsenal. Attaquez tout le monde. Fusionner les bombes en des armes nucléaires plus grandes. Vos armes nucléaires gagnent de l'argent à chaque seconde - même hors ligne! UTILISER LE CODE : BOOM. NOUVELLES MISES À JOUR TOUS LES VENDREDI. Rejoignez le group"
     },
     "vv-ultimatum": {
-      "lastChecked": "2026-07-07T05:00:00Z",
+      "lastChecked": "2026-07-08T05:00:00Z",
       "descLen": 304,
       "knownCodes": [
-        "MIDVVEEK"
+        "UPD2",
+        "160KLIKES",
+        "35ROLLS"
       ],
       "descExcerpt": "Aimez le jeu pour des codes et des récompenses gratuits! Rejoignez notre serveur communautaire. Un jeu de combat stylisé dans lequel vous naviguez dans des mondes dangereux, protégez votre faction choisie, et participez à des combats avec des monstres étranges. Avec plus de 130 compétences et capaci",
       "pending": [
-        "UPD2",
-        "160KLIKES",
-        "35ROLLS",
         "UPDATE1",
-        "SHUTDOWNFIX",
         "140KLIKES",
-        "FEWREROLLS",
-        "FULLRELEASE",
-        "100KLIKES",
-        "SDFIX (à vérifier rewards + >=3 sources avant publication)"
-      ]
+        "SHUTDOWNFIX"
+      ],
+      "pendingReason": "Conflit: Pocket Tactics (Jul 6) les donne EXPIRES, RoCodes (Jul 8) les donne ACTIFS. Prudence: non publies. Publies actifs = UPD2/160KLIKES/35ROLLS (confirmes par les 2 sources).",
+      "officialSource": "discord"
     },
     "fifa-super-soccer": {
       "lastChecked": "2026-07-07T05:00:00Z",
@@ -520,7 +517,7 @@
       "descExcerpt": "Bienvenue à Hypershot! Entrez dans notre jeu de tir à la première personne intense et rapide où l'habileté, le style et le chaos règnent en maître! Dominez dans des modes de jeu classiques tels que Team Deathmatch, Capture the Flag, Free for All et Gun Game. Grimpe les rangs pour atteindre le leader"
     },
     "blockspin": {
-      "lastChecked": "2026-07-05T05:00:00Z",
+      "lastChecked": "2026-07-09T05:00:00Z",
       "descLen": 315,
       "knownCodes": [
         "HURRICANE_RELEASE",
@@ -529,7 +526,7 @@
         "W7C28D"
       ],
       "descExcerpt": "Pouces vers le haut du jeu pour plus de mises à jour! Utilisez le code W7C28D pour 500 $ d'argent gratuit si vous êtes un nouveau joueur! Faites tourner le bloc. Affrontez des tâches pour débloquer des caisses de récompenses aléatoires et améliorez le niveau de votre personnage pour devenir le top d",
-      "note": "Verifie 5/07: trackers = 0 code actif classique; HURRICANE_RELEASE/UNDER_THE_BARREL sont des codes referral/1-fois persistants. Page inchangee."
+      "note": "Systeme de codes referral (1/compte). HURRICANE_RELEASE, UNDER_THE_BARREL, M16_RELEASE, W7C28D confirmes. Inchange."
     },
     "run-a-restaurant": {
       "lastChecked": "2026-07-06T05:00:00Z",
@@ -541,7 +538,7 @@
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "squid-game-x": {
-      "lastChecked": "2026-07-06T05:00:00Z",
+      "lastChecked": "2026-07-08T05:00:00Z",
       "descLen": 1400,
       "knownCodes": [
         "$1.2M$",
@@ -562,7 +559,7 @@
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "catch-a-monster": {
-      "lastChecked": "2026-07-07T05:00:00Z",
+      "lastChecked": "2026-07-09T05:00:00Z",
       "descLen": 291,
       "knownCodes": [
         "graon",
@@ -574,22 +571,52 @@
       ],
       "descExcerpt": "Bienvenue dans Catch a Monster! Comment jouer: Vaincre des monstres sauvages en combat. Attrape-les et récupère-les! Découvre et récolte des animaux de compagnie de rang supérieur. Trouvez des œufs rares et faites éclore de nouveaux compagnons. Gagne des pièces et fais grandir ton escouade!",
       "pending": [
-        "clacerglaw (1 Flash Chest Egg)",
-        "massglaw (2 Wyrmfire Keys + 1 Chaos Potion)"
-      ]
+        "massglaw",
+        "clacerglaw",
+        "cabshark",
+        "ungolem",
+        "teravok",
+        "dueggy",
+        "bullordy",
+        "jokairy",
+        "solguard",
+        "stumfoxy",
+        "poseidive",
+        "nampyra"
+      ],
+      "pendingReason": "Sources en conflit fort: Pocket Tactics (Jul 1) liste actifs crablade/spabling/fspegg/skillfix/crysting/pectshall/coin/xp/cam et donne graon/magmorus/moovik/danvok EXPIRES; agregateurs (PGG/Destructoid) donnent clacerglaw/massglaw actifs (absents de PT). Jeu tres volatil. Page NON modifiee ce run -> necessite passe dediee multi-sources (>=3) avant remaniement.",
+      "note": "Conflit fort PT(01/07) vs PGG(03/07): PGG marque graon/magmorus/danvok/moovik ACTIFS, PT les marque EXPIRES. Prudence: page inchangee. Passe dediee requise."
     },
     "brainrot-evolution": {
-      "lastChecked": "2026-07-07T05:00:00Z",
-      "descLen": 276,
+      "lastChecked": "2026-07-09T05:00:00Z",
       "knownCodes": [
+        "Uncle",
+        "ZAPYBARA",
+        "BWAB",
+        "Capybara",
+        "Brainblock",
+        "Season10",
+        "Dragoni",
+        "EVIL",
         "Krang",
+        "Combinasion",
+        "Beowl",
+        "Easter2026",
         "Luck",
         "Patrick",
+        "Ding",
+        "Dididididi",
         "Fishybara",
+        "Brainheaven",
+        "Love",
         "Tsunami",
-        "Love"
+        "2026",
+        "List",
+        "Cheese",
+        "OP"
       ],
-      "descExcerpt": "Bienvenue dans Brainrot Evolution! MISES À JOUR CHAQUE SAMEDI! Mange pour gagner des niveaux! Gagne des niveaux pour débloquer de nouvelles évolutions Brainrot! Récupère des victoires et des animaux de compagnie! Les joueurs Premium obtiennent +10% de victoires et +10% d'EXP."
+      "officialSource": "none",
+      "note": "MAJ 09/07: liste etendue de 6 a 24 codes actifs, confirmee par Beebom (04/07) + Pocket Gamer (04/07) + Pocket Tactics (core). Jeu MAJ chaque samedi."
     },
     "100-days-at-sea": {
       "lastChecked": "2026-07-07T05:00:00Z",
