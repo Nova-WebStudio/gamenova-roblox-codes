@@ -194,6 +194,13 @@
       "id": 9167377564,
       "groupId": 425035678,
       "trello": null
+    },
+    "animal-hospital": {
+      "id": 10148749921,
+      "placeId": 78515283254292,
+      "groupId": 344908697,
+      "note": "Jeu en forte croissance (~900K joueurs simultanés, 675M visites). Pas encore de système de codes au 2026-07-10 — surveiller l'ajout d'une zone de rédemption.",
+      "checked": "2026-07-10"
     }
   },
   "snapshots": {
@@ -230,7 +237,7 @@
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "grow-a-garden": {
-      "lastChecked": "2026-07-06T05:00:00Z",
+      "lastChecked": "2026-07-10T05:00:00Z",
       "descLen": 327,
       "descExcerpt": "Bienvenue à Grow a Garden. Êtes-vous prêt à faire pousser votre propre jardin? Achetez des graines dans la boutique lorsqu'elles sont réapprovisionnées, plantez-les, attendez qu'elles poussent et récoltez les profits! Flexez les fruits et trouvez des amis. N'oublie pas, ton jardin grandit littéralem",
       "knownCodes": [
@@ -238,18 +245,23 @@
         "BEANORLEAVE10"
       ],
       "note30": "Verifie 30/06 : page MAJ 26/06, set inchange.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "pending": [
+        "TEAMGREENBEAN (3 Green Bean Seeds) — sources confondent Grow a Garden et Grow a Garden 2 ; verifier a quel jeu il appartient avant publication"
+      ],
+      "note0710": "Verifie 10/07: RDCAward/BEANORLEAVE10 coherents. Nouveau candidat TEAMGREENBEAN a rattacher au bon jeu (GaG ou GaG2) avant publication. Page inchangee."
     },
     "steal-a-brainrot": {
-      "lastChecked": "2026-07-06T05:00:00Z",
+      "lastChecked": "2026-07-10T05:00:00Z",
       "descLen": 313,
       "descExcerpt": "Bienvenue dans Steal a Brainrot! Aimez le jeu et rejoignez le groupe. Comment jouer: Acheter un Brainrot, vole des Brainrots d'autres joueurs, générer de l'argent, renaissance, achète des slaps et de l'équipement de troll pour troller d'autres joueurs. Prend en charge les joueurs de bureau, mobiles ",
       "knownCodes": [],
       "note": "Sources en conflit (0 vs 9) — prudence: page sans code maintenue",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "note0710": "Verifie 10/07: sources toujours en conflit (certaines '0 code', une autre '22 codes actifs' sans les lister). Prudence: page sans code maintenue."
     },
     "blade-ball": {
-      "lastChecked": "2026-07-06T05:00:00Z",
+      "lastChecked": "2026-07-10T05:00:00Z",
       "descLen": 323,
       "descExcerpt": "Dans ce jeu de mise au point, de timing et de stratégie, votre compétence est mise à l'épreuve en tant que balle de renvoi déviante qui chasse les joueurs avec une vitesse croissante. Obtenez de nouvelles capacités et améliorez-les pour complimenter votre style de jeu. Montez dans les rangs en maîtr",
       "knownCodes": [
@@ -274,7 +286,8 @@
         "LATEGAME"
       ],
       "note02": "Verifie 02/07 : set inchange (Pocket Tactics/The Click/GamesRadar). Aucun nouveau code.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "note0710": "A VERIFIER 10/07: un agregateur liste un set tres different (5BVISITS/DRAGONS/DELAYBALL/1.5BTHANKS/UPD250COINS... vs notre set SERPENT/4BVISITS/2BTHANKS...). 'Aucun nouveau code depuis un moment, les anciens restent valides' (01/07). Page NON modifiee (ne pas degrader) -> passe dediee multi-sources requise au prochain run pour reconcilier."
     },
     "blue-lock-rivals": {
       "lastChecked": "2026-07-06T05:00:00Z",
@@ -457,25 +470,25 @@
       ]
     },
     "spin-a-soccer-card": {
-      "lastChecked": "2026-07-07T05:00:00Z",
+      "lastChecked": "2026-07-10T05:00:00Z",
       "descLen": 282,
       "knownCodes": [
-        "PHOENIX-MYTHIC"
+        "BLAZE-STORM"
       ],
       "descExcerpt": "GAGNE DE L'ARGENT PENDANT QUE TU DORS! Bienvenue dans Spin a Soccer Card. Comment jouer: Achète un pack dans la boutique! Touche pour déballer et révéler une carte de football aléatoire! Place-les sur ton terrain pour gagner $$$! Achète plus de packs ÉPIQUES et flexifie tes cartes!",
-      "pending": [
-        "BLAZE-STORM (conflit : cité par agrégateurs mais absent de Pocket Tactics 02/07 qui donne PHOENIX-MYTHIC)"
-      ]
+      "pending": [],
+      "note": "MAJ 10/07: code hebdomadaire BLAZE-STORM (2 packs + 3 spins) confirme actif par ~9 sources (Pocket Gamer, Pocket Tactics, Dexerto, PCGamesN, PGG, Destructoid, Roblox Den, Beebom, TechWiser). PHOENIX-MYTHIC (semaine precedente) passe en expires."
     },
     "merge-a-nuke": {
-      "lastChecked": "2026-07-07T05:00:00Z",
+      "lastChecked": "2026-07-10T05:00:00Z",
       "descLen": 317,
       "knownCodes": [
         "UPDATE2",
         "BOOM",
         "ATOMIC"
       ],
-      "descExcerpt": "Fusionnez les armes nucléaires. Empilez votre arsenal. Attaquez tout le monde. Fusionner les bombes en des armes nucléaires plus grandes. Vos armes nucléaires gagnent de l'argent à chaque seconde - même hors ligne! UTILISER LE CODE : BOOM. NOUVELLES MISES À JOUR TOUS LES VENDREDI. Rejoignez le group"
+      "descExcerpt": "Fusionnez les armes nucléaires. Empilez votre arsenal. Attaquez tout le monde. Fusionner les bombes en des armes nucléaires plus grandes. Vos armes nucléaires gagnent de l'argent à chaque seconde - même hors ligne! UTILISER LE CODE : BOOM. NOUVELLES MISES À JOUR TOUS LES VENDREDI. Rejoignez le group",
+      "note": "Verifie 10/07: ATOMIC/UPDATE2 confirmes actifs (Dexerto/Pocket Tactics/GamesRadar/Beebom, aucun expire). BOOM present dans la description in-game (source officielle). Inchange."
     },
     "vv-ultimatum": {
       "lastChecked": "2026-07-08T05:00:00Z",
@@ -495,7 +508,7 @@
       "officialSource": "discord"
     },
     "fifa-super-soccer": {
-      "lastChecked": "2026-07-07T05:00:00Z",
+      "lastChecked": "2026-07-10T05:00:00Z",
       "descLen": 313,
       "knownCodes": [
         "WorldCupSecret",
@@ -503,10 +516,11 @@
         "fifasupersoccer",
         "sub2fssdevilz"
       ],
-      "descExcerpt": "Le jeu se joue en 4 contre 4 dans un stade rempli. Soyez le meilleur gardien de but, le maître du milieu de terrain ou l'attaquant vedette. EN DIRECT : Événement Coupe du monde de la FIFA à durée limitée. FIFA Super Soccer fait partie de l'été ultime du football sur Roblox. Ce jeu s'appelait Super L"
+      "descExcerpt": "Le jeu se joue en 4 contre 4 dans un stade rempli. Soyez le meilleur gardien de but, le maître du milieu de terrain ou l'attaquant vedette. EN DIRECT : Événement Coupe du monde de la FIFA à durée limitée. FIFA Super Soccer fait partie de l'été ultime du football sur Roblox. Ce jeu s'appelait Super L",
+      "note": "Verifie 10/07: WorldCupSecret (event Coupe du monde jusqu'au 31/07), bestfootball, fifasupersoccer confirmes actifs (Beebom/Dexerto/Destructoid/Insider Gaming). sub2fssdevilz = code sub permanent conserve. Inchange."
     },
     "hypershot": {
-      "lastChecked": "2026-07-07T05:00:00Z",
+      "lastChecked": "2026-07-10T05:00:00Z",
       "descLen": 306,
       "knownCodes": [
         "ONEBILLION",
@@ -514,7 +528,11 @@
         "HAPPYMAY",
         "NEWUPDATE"
       ],
-      "descExcerpt": "Bienvenue à Hypershot! Entrez dans notre jeu de tir à la première personne intense et rapide où l'habileté, le style et le chaos règnent en maître! Dominez dans des modes de jeu classiques tels que Team Deathmatch, Capture the Flag, Free for All et Gun Game. Grimpe les rangs pour atteindre le leader"
+      "descExcerpt": "Bienvenue à Hypershot! Entrez dans notre jeu de tir à la première personne intense et rapide où l'habileté, le style et le chaos règnent en maître! Dominez dans des modes de jeu classiques tels que Team Deathmatch, Capture the Flag, Free for All et Gun Game. Grimpe les rangs pour atteindre le leader",
+      "pending": [
+        "100K (cite par agregateurs mais non confirme >=3 sources nommees ce run)"
+      ],
+      "note": "Verifie 10/07: ONEBILLION/SIXSEVEN/HAPPYMAY/NEWUPDATE toujours actifs (Beebom/Dexerto/Destructoid/RoCodes). Candidat 100K en attente. Inchange."
     },
     "blockspin": {
       "lastChecked": "2026-07-09T05:00:00Z",
@@ -559,9 +577,14 @@
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
     },
     "catch-a-monster": {
-      "lastChecked": "2026-07-09T05:00:00Z",
+      "lastChecked": "2026-07-10T05:00:00Z",
       "descLen": 291,
       "knownCodes": [
+        "clacerglaw",
+        "massglaw",
+        "cabshark",
+        "ungolem",
+        "crysting",
         "graon",
         "magmorus",
         "moovik",
@@ -570,22 +593,10 @@
         "LIVECOIN"
       ],
       "descExcerpt": "Bienvenue dans Catch a Monster! Comment jouer: Vaincre des monstres sauvages en combat. Attrape-les et récupère-les! Découvre et récolte des animaux de compagnie de rang supérieur. Trouvez des œufs rares et faites éclore de nouveaux compagnons. Gagne des pièces et fais grandir ton escouade!",
-      "pending": [
-        "massglaw",
-        "clacerglaw",
-        "cabshark",
-        "ungolem",
-        "teravok",
-        "dueggy",
-        "bullordy",
-        "jokairy",
-        "solguard",
-        "stumfoxy",
-        "poseidive",
-        "nampyra"
-      ],
+      "pending": [],
       "pendingReason": "Sources en conflit fort: Pocket Tactics (Jul 1) liste actifs crablade/spabling/fspegg/skillfix/crysting/pectshall/coin/xp/cam et donne graon/magmorus/moovik/danvok EXPIRES; agregateurs (PGG/Destructoid) donnent clacerglaw/massglaw actifs (absents de PT). Jeu tres volatil. Page NON modifiee ce run -> necessite passe dediee multi-sources (>=3) avant remaniement.",
-      "note": "Conflit fort PT(01/07) vs PGG(03/07): PGG marque graon/magmorus/danvok/moovik ACTIFS, PT les marque EXPIRES. Prudence: page inchangee. Passe dediee requise."
+      "note": "MAJ 10/07: passe dediee multi-sources effectuee. Destructoid (09/07, la plus fraiche) corrobore PGG (03/07): graon/magmorus/moovik/danvok ACTIFS (seul PT 01/07, plus ancien, les disait expires). crysting confirme actif par les 3 (PT+PGG+Destructoid). Nettoyage: retires ELECTNOV/BHCOIN/BRWAD/OVERVOLT (expires PT+Destructoid) + MEOWLY/SCAREEP/PECTSHALL (absents des sources actuelles). Ajoutes clacerglaw/massglaw/cabshark (nouveaux, PGG+Destructoid). Set actif 6->11.",
+      "officialSource": "trackers x3 (Pocket Tactics, Pro Game Guides, Destructoid)"
     },
     "brainrot-evolution": {
       "lastChecked": "2026-07-09T05:00:00Z",
@@ -625,6 +636,21 @@
       "descExcerpt": "Inspiré par 99 nuits dans la forêt. Tu es envoyé en mission au milieu de l'océan. Vous devez percer le mystère du triangle des Bermudes. Survivez pendant 100 jours et devenez riche! Un jeu de survie en monde ouvert où l'exploration et la construction de bases sont la clé de la survie.",
       "pending": [
         "ALIENS (Pearls, expire ~13h, trop volatil pour page statique)"
+      ]
+    },
+    "animal-hospital": {
+      "lastChecked": "2026-07-10T19:00:00Z",
+      "descLen": 225,
+      "knownCodes": [],
+      "descExcerpt": "[Nouveau jeu, aidez-nous en signalant les bugs] Vous avez été embauché pour travailler de nuit à l'hôpital pour animaux. Votre travail consiste maintenant à soigner les patients. mais certains patients se comportent bizarrement...",
+      "codeSystem": false,
+      "officialSource": "shout(null)+ingame-desc(no codes)",
+      "sourcesChecked": [
+        "Pro Game Guides",
+        "Dexerto.fr",
+        "Destructoid",
+        "groupe Roblox officiel (shout null)",
+        "description in-game"
       ]
     }
   },
