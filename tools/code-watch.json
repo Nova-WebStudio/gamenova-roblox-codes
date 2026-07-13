@@ -205,7 +205,7 @@
   },
   "snapshots": {
     "blox-fruits": {
-      "lastChecked": "2026-07-06T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 366,
       "descExcerpt": "Bienvenue à Blox Fruits! Devenez un maître des épées ou un puissant utilisateur de fruits blox en vous entraînant pour devenir le joueur le plus fort à avoir jamais vécu. Vous pouvez choisir de combattre des ennemis difficiles ou d'avoir de puissantes batailles de boss en naviguant à travers l'océan",
       "knownCodes": [
@@ -234,10 +234,11 @@
         "StrawHatMaine"
       ],
       "note30": "Verifie 30/06 : 23 codes actifs (RoCodes/PCGamesN 28/06) = set Zoneblox inchange.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "note1207": "Verifie 12/07 : description in-game sans code, aucun changement de liste."
     },
     "grow-a-garden": {
-      "lastChecked": "2026-07-10T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 327,
       "descExcerpt": "Bienvenue à Grow a Garden. Êtes-vous prêt à faire pousser votre propre jardin? Achetez des graines dans la boutique lorsqu'elles sont réapprovisionnées, plantez-les, attendez qu'elles poussent et récoltez les profits! Flexez les fruits et trouvez des amis. N'oublie pas, ton jardin grandit littéralem",
       "knownCodes": [
@@ -249,19 +250,26 @@
       "pending": [
         "TEAMGREENBEAN (3 Green Bean Seeds) — sources confondent Grow a Garden et Grow a Garden 2 ; verifier a quel jeu il appartient avant publication"
       ],
-      "note0710": "Verifie 10/07: RDCAward/BEANORLEAVE10 coherents. Nouveau candidat TEAMGREENBEAN a rattacher au bon jeu (GaG ou GaG2) avant publication. Page inchangee."
+      "note0710": "Verifie 10/07: RDCAward/BEANORLEAVE10 coherents. Nouveau candidat TEAMGREENBEAN a rattacher au bon jeu (GaG ou GaG2) avant publication. Page inchangee.",
+      "note": "Verifie 11/07: liste de l'ORIGINAL inchangee (RDCAward etc.). TEAMGREENBEAN/WATERYOPLANTS appartiennent a Grow a Garden 2, PAS a l'original (confirme: codes non transferables entre les deux jeux).",
+      "note1207": "Verifie 12/07 : description in-game sans code, liste inchangee."
     },
     "steal-a-brainrot": {
-      "lastChecked": "2026-07-10T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 313,
       "descExcerpt": "Bienvenue dans Steal a Brainrot! Aimez le jeu et rejoignez le groupe. Comment jouer: Acheter un Brainrot, vole des Brainrots d'autres joueurs, générer de l'argent, renaissance, achète des slaps et de l'équipement de troll pour troller d'autres joueurs. Prend en charge les joueurs de bureau, mobiles ",
       "knownCodes": [],
-      "note": "Sources en conflit (0 vs 9) — prudence: page sans code maintenue",
+      "note": "Verifie 11/07: sources en conflit fort (22 codes vs 0 code). Candidats BESTBRAINROTEVER / FREEOCTOBLOCK777 cites mais non confirmes >=3 sources fiables ni source officielle -> EN ATTENTE. Page maintenue SANS code (prudence).",
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "note0710": "Verifie 10/07: sources toujours en conflit (certaines '0 code', une autre '22 codes actifs' sans les lister). Prudence: page sans code maintenue."
+      "note0710": "Verifie 10/07: sources toujours en conflit (certaines '0 code', une autre '22 codes actifs' sans les lister). Prudence: page sans code maintenue.",
+      "pending": [
+        "BESTBRAINROTEVER",
+        "FREEOCTOBLOCK777"
+      ],
+      "note1207": "Verifie 12/07 : sources toujours en conflit (22 codes vs 0). Page maintenue SANS code (prudence)."
     },
     "blade-ball": {
-      "lastChecked": "2026-07-10T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 323,
       "descExcerpt": "Dans ce jeu de mise au point, de timing et de stratégie, votre compétence est mise à l'épreuve en tant que balle de renvoi déviante qui chasse les joueurs avec une vitesse croissante. Obtenez de nouvelles capacités et améliorez-les pour complimenter votre style de jeu. Montez dans les rangs en maîtr",
       "knownCodes": [
@@ -287,25 +295,28 @@
       ],
       "note02": "Verifie 02/07 : set inchange (Pocket Tactics/The Click/GamesRadar). Aucun nouveau code.",
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "note0710": "A VERIFIER 10/07: un agregateur liste un set tres different (5BVISITS/DRAGONS/DELAYBALL/1.5BTHANKS/UPD250COINS... vs notre set SERPENT/4BVISITS/2BTHANKS...). 'Aucun nouveau code depuis un moment, les anciens restent valides' (01/07). Page NON modifiee (ne pas degrader) -> passe dediee multi-sources requise au prochain run pour reconcilier."
+      "note0710": "A VERIFIER 10/07: un agregateur liste un set tres different (5BVISITS/DRAGONS/DELAYBALL/1.5BTHANKS/UPD250COINS... vs notre set SERPENT/4BVISITS/2BTHANKS...). 'Aucun nouveau code depuis un moment, les anciens restent valides' (01/07). Page NON modifiee (ne pas degrader) -> passe dediee multi-sources requise au prochain run pour reconcilier.",
+      "note": "Verifie 11/07 (Beebom, GamesRadar, Pocket Tactics): aucun nouveau code depuis un moment, codes existants toujours valides. Liste maintenue telle quelle (prudence).",
+      "note1207": "Verifie 12/07 : aucun nouveau code signale, liste maintenue."
     },
     "blue-lock-rivals": {
-      "lastChecked": "2026-07-06T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 313,
       "descExcerpt": "Ce jeu non officiel fait par les fans a été créé par d'énormes fans de Blue Lock. Entrez dans le monde à haut risque de Blue Lock: Rivals, inspiré par l'anime. Participez à des matchs de football 5v5 électrisants, où l'ego et la compétence brillent. Choisissez une classe de personnage avec des capac",
       "knownCodes": [
-        "GAGAREWORK",
-        "ADDRESSME",
-        "BEARCLAW"
+        "NELSHIDOU",
+        "NEWCHEMSOON",
+        "DEMON"
       ],
       "pending": [],
       "pendingNote": "Publies le 30/06 : GAGAREWORK/ADDRESSME/BEARCLAW confirmes par GamesRadar(29/06)+PGG(27/06)+PCGamer. Anciens NELEVENT/NEL2.0/MASSIVEUPDATE passes expires (GamesRadar 29/06).",
-      "officialSource": "web3+",
+      "officialSource": "ingame",
       "note02": "Verifie 02/07 : PGG (MAJ 27/06) liste toujours GAGAREWORK/ADDRESSME/BEARCLAW en NEW/actif. Set prudent de 3 maintenu (conflit sur les anciens codes selon sources). Inchange.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "note": "MAJ NEL SHIDOU + Knockout Stage confirmee par le titre in-game officiel. GAGAREWORK/ADDRESSME/BEARCLAW expires (PCGamesN 12-07)."
     },
     "anime-last-stand": {
-      "lastChecked": "2026-07-06T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 299,
       "descExcerpt": "Aimez le jeu pour des codes GRATUITS. Rejoignez la communauté ci-dessous pour les mises à jour. Vous pouvez jouer sur TOUS LES APPAREILS. L'un des jeux de Tower Defense les plus contentés de Roblox. Avertissement: ce projet peut comporter de l'inspiration créée par l'admiration du travail original.",
       "knownCodes": [
@@ -313,42 +324,55 @@
         "TheATDSituationIsCrazy",
         "ALSUPD1",
         "World3Patch2",
-        "WORLD3REBALANCE"
+        "WORLD3REBALANCE",
+        "JoJoCurse",
+        "BalancePatch3",
+        "BalancePatch3.1"
       ],
       "note02": "A VERIFIER 02/07 : RoCodes (01/07) ne liste que 5 actifs (TheATDSituationIsCrazy/JoJoCurse/DemonicCyborg/ALSUPD1/World3Patch2) alors que la page en affiche 21 (MAJ contenu 10/06, probablement gonflee). Non modifiee ce run (1 seule source datee) -> trimmer au prochain run apres cross-check >=3 sources.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "note": "Deja tous presents sur la page (21 codes). Aucun changement."
     },
     "fisch": {
-      "lastChecked": "2026-07-06T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 297,
       "descExcerpt": "Bienvenue à Fisch. Plongez dans Fisch, l'aventure de pêche ultime où l'exploration et la progression sont à vous de contrôler. Mettez votre ligne pour attraper des poissons rares et uniques, chacun avec plus de 400 000 variations possibles. Explorez un monde en croissance avec votre canne fiable.",
       "knownCodes": [
-        "KingCrabstle",
         "scarlet",
         "TemporarySubmarine",
         "CARBON"
       ],
       "pending": [
-        "Fischfest2026/AquariumCustomization: RoCodes les liste encore actifs, Pocket Tactics/PCGamer expirés — retirés par prudence"
+        "DrylandsIsFire (conflit PCGamesN actif / PC Gamer expire)",
+        "HAPPY4TH (idem)",
+        "OllieAndFinWhale (2 sources)"
       ],
       "officialSource": "ingame/discord (WoozyNate)",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "note": "KingCrabstle expire (PC Gamer + PCGamesN)."
     },
     "volleyball-legends": {
-      "lastChecked": "2026-07-06T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 293,
       "descExcerpt": "DEVENEZ LE ROI DE LA COURT dans Volleyball Legends. Volley-ball 6v6 au rythme rapide. Jouez à une partie de volley-ball avec des amis OU défiez n'importe qui dans un match RANGÉ. Avantages Premium: les joueurs Premium reçoivent +10% de Yen. De nouvelles mises à jour chaque samedi à 11h30 EST.",
       "knownCodes": [
+        "UPDATE_78",
+        "LEADERBOARD",
+        "NEW_PACK",
+        "UPDATE_77",
+        "RIKU",
+        "HOLO_WALLS",
         "UPDATE_76",
         "ENCHO_RETURNS",
         "BALANCE_76"
       ],
       "pending": [],
       "note02": "MAJ 02/07 : update 76 -> 3 codes actifs (UPDATE_76/ENCHO_RETURNS/BALANCE_76). Anciens update 75/saison 16/Jungle expires (RoCodes+Beebom+GamesRadar 01-02/07). Page passee de 9 a 3.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "note": "MAJ 77 et 78 : 6 nouveaux codes (PGG 08-07, Fossbytes 12-07, Roonby 11-07)."
     },
     "anime-vanguards": {
-      "lastChecked": "2026-07-06T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 288,
       "descExcerpt": "Bienvenue chez les avant-gardes de l'anime! Tous les mondes et les univers ont besoin de votre aide! Un événement a provoqué la collision de plusieurs mondes. Invoquez des unités pour combattre ces ennemis. Nivelez et évoluez les unités pour les renforcer pour d'autres batailles à venir.",
       "knownCodes": [
@@ -361,22 +385,27 @@
         "Cog5th"
       ],
       "pending": [
-        "Conflit sources 02/07"
+        "PowerOfLove (expire 12-07)",
+        "EEPart1 (expire 12-07)",
+        "BPSoon (expire 12-07)",
+        "LagGone (expire)"
       ],
       "note02": "CONFLIT 02/07 : Beebom (MAJ 22/06) liste 13.5/EternalAdversaries/Gambler actifs ; aggregateurs (01/07) disent 'aucun code actif, LagGone expire'. Prudence : page (8 actifs) laissee inchangee. A RECONCILIER au prochain run avec source datee du jour.",
       "officialSource": "twitter",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "note": "Aucun changement."
     },
     "pet-simulator-99": {
-      "lastChecked": "2026-07-06T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 237,
       "descExcerpt": "Gagnez des pièces, ouvrez des œufs et collectionnez des animaux! Équipez 99 animaux! Ouvrez 99 œufs! Jouez à des mini-jeux! Explorez le monde! Rejoignez des clans! Échangez des animaux! Suivez les mises à jour du jeu! Merci d'avoir joué!",
       "knownCodes": [],
-      "note": "0 code actif (jeu sans MAJ ; seuls codes merch one-time) — confirmé 29/06",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "note": "Aucun code gratuit : BIG Games ne diffuse que des codes sur le merch physique. Confirme juillet 2026.",
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "pending": []
     },
     "king-legacy": {
-      "lastChecked": "2026-07-07T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 358,
       "descExcerpt": "Rejoignez le serveur de la communauté pour plus d'informations et de codes! Limite de niveau: 5450. Il y a 44 fruits physiques dans le jeu. Les fruits apparaissent sur la carte toutes les 1 à 2 heures / disparaissent toutes les 15 minutes. La première fois que vous rejoignez le jeu, vous avez 0,1% d",
       "knownCodes": [
@@ -390,33 +419,46 @@
         "SKGames"
       ],
       "note": "Conflit 5/07: PocketTactics(01/07)+PCGamer listent DinoxLive/Peodiz/SKGames ACTIFS mais PGG(22/06) les liste INACTIFS. Prudence: page maintenue a 5 codes, candidats en attente.",
-      "officialSource": "trackers x3 (PC Gamer, PGG, Pocket Tactics)"
+      "officialSource": "trackers x3 (PC Gamer, PGG, Pocket Tactics)",
+      "note1207": "Verifie 12/07 : aucun nouveau code depuis mi-mars selon Pocket Tactics / PC Gamer / Beebom (03/07). Liste des 13 codes maintenue inchangee."
     },
     "fruit-battlegrounds": {
-      "lastChecked": "2026-07-05T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 314,
       "descExcerpt": "L'exploitation entraînera un bannissement permanent. OPE V2 EST LÀ (MYTHIQUE). La saison d'hiver est de retour. 1MIL110K CODE : YOO1M110K ! PROCHAIN CODE À 1 120 000 J'AIME, AIMEZ POUR PLUS DE CODES. Bienvenue dans les champs de bataille de fruits. Un champ de bataille simpliste où vous pouvez comba",
       "knownCodes": [
+        "YOO1M110K!",
         "BIGMILLIHUNNID!",
         "ITSTHEBILLION!",
-        "CODEFIX",
-        "1M60WOWZER"
+        "CODEFIX"
       ],
       "pending": [
-        "CRASHL4NDING",
-        "TIMEISVALUABLE (à confirmer ≥3 sources nommées)"
+        "BIG1M170K!!",
+        "1M50INSANE",
+        "1M40KRAZY!!",
+        "4MPUTAT3",
+        "OMGUPDATE22",
+        "MILLI90SWAG"
       ],
-      "note": "Trim 9->4 le 5/07 apres croisement PGG(01/07)+Destructoid+PocketTactics. Retires: YOO1M110K, MILLI90SWAG, 1M50INSANE, 4MPUTAT3, 1M40KRAZY!!"
+      "note": "YOO1M110K! ajoute (5 sources). 1M60WOWZER expire (Pocket Tactics)."
     },
     "tower-defense-simulator": {
-      "lastChecked": "2026-07-06T05:00:00Z",
-      "descLen": 287,
-      "descExcerpt": "Dans ce monde, personne ne peut survivre seul. Faites équipe avec vos amis pour terrasser des vagues de zombies sans fins, combattre des boss, gagner des pièces, monter de niveau et acheter de nouvelles tours! Rejoignez le groupe pour avoir 100$ de plus dès le début. CE JEU EST EN BETA.",
-      "knownCodes": [],
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "lastChecked": "2026-07-13T05:00:00Z",
+      "descLen": 1080,
+      "descExcerpt": "Dans ce monde, personne ne peut survivre seul. Faites equipe pour terrasser des vagues de zombies sans fin, combattre des boss, gagner des pieces, monter de niveau et acheter de nouvelles tours.",
+      "knownCodes": [
+        "1MILCOMMUNITY",
+        "2MILLION"
+      ],
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "pending": [
+        "CHRISTMAS2025",
+        "NOTESLA?"
+      ],
+      "note1207": "CHANGEMENT 12/07 : 0 -> 2 codes actifs (1MILCOMMUNITY, 2MILLION) confirmes par Pro Game Guides + Pocket Tactics (10/07) + PCGamesN (06/07). CHRISTMAS2025 / NOTESLA? en conflit entre sources -> non publies (prudence)."
     },
     "world-fighters": {
-      "lastChecked": "2026-07-09T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 290,
       "descExcerpt": "Bienvenue dans World Fighters! 25kLIKE = NOUVEAU CODE!!! Explorez des mondes inspirés de vos anime préférés et vivez des aventures épiques! Vainquez les ennemis pour collecter des cristaux et débloquer de nouveaux avatars / animaux exclusifs! Disponible sur PC, mobile, tablette et console.",
       "knownCodes": [
@@ -433,32 +475,46 @@
         "25KLIKESAMAZING!!!"
       ],
       "note": "Sources ambigues: PGG(avril) et Pocket Tactics(mai) couvrent le World Fighters StarX/DragonBall (place 95630541662383) DIFFERENT du notre. Beebom(juillet) seule source concordante -> insuffisant (1). Prudence: inchange. Verifier universeId 10032271327 et source dediee.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "pending": [
+        "UPDATE10",
+        "15MVISITS!",
+        "UPDATE9PT2",
+        "TEMPESTINVASIONHARD",
+        "HYPEEEE",
+        "UPDATE8PT2",
+        "ThanksForAllTheSupport"
+      ],
+      "note1207": "Verifie 12/07 : sources en CONFLIT FORT et desynchronisees (Pocket Tactics fige au 15/05, listes divergentes chez Beebom/PGG). Jeu retombe a ~91 joueurs connectes. Liste Zoneblox maintenue telle quelle (prudence) ; candidats enregistres en attente. A reprioriser."
     },
     "noob-incremental": {
-      "lastChecked": "2026-07-06T05:00:00Z",
-      "descLen": 324,
-      "descExcerpt": "Bienvenue dans Noob Incremental! Un jeu incrémental massif avec des centaines d'améliorations, des dizaines de statistiques, plusieurs niveaux de prestige et de nombreuses fonctionnalités à explorer! Achetez des noobs et faites Oof! Achetez des améliorations et devenez plus fort! Prestige et débloqu",
+      "lastChecked": "2026-07-13T05:00:00Z",
+      "descLen": 760,
+      "descExcerpt": "Bienvenue dans Noob Incremental ! Un jeu incremental massif avec des centaines d'ameliorations, des dizaines de statistiques, plusieurs niveaux de prestige et de nombreuses fonctionnalites a explorer.",
       "knownCodes": [
+        "REFUNDPRISM",
+        "10MVISITS!",
+        "HOPERUNESFIXEDONG!",
+        "SORRYWEIRDANDANNOYINGBUGS!!",
         "35KCOMMUNITYMEMBERS!!",
         "15KCCU!!",
         "14KCCU!!",
         "13KCCU!!",
-        "12KCCU!!",
-        "11KCCU!!",
-        "10KCCU!!",
-        "9KCCU!!",
         "LABUPDATE",
-        "YouFoundMe",
-        "GetBetterSon",
-        "BAZALRIGHT",
         "RELEASE",
         "THANKS4JOINING"
       ],
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "pending": [
+        "SORRYSHUTDOWN69",
+        "SORRYSHUTDOWN68",
+        "SORRYSHUTDOWN67",
+        "FOOTBALLEVENT"
+      ],
+      "note1207": "CHANGEMENT 12/07 : 14 -> 11 codes actifs. Ajouts REFUNDPRISM / 10MVISITS! / HOPERUNESFIXEDONG! / SORRYWEIRDANDANNOYINGBUGS!! (>=3 sources : Pocket Tactics 29/06, PCGamesN 11/07, Beebom 02/07, Try Hard Guides 23/06). Retraits : 12KCCU!!, 11KCCU!!, 10KCCU!!, 9KCCU!! (expires selon 3 sources) et YouFoundMe / GetBetterSon / BAZALRIGHT (plus confirmes par aucune source fiable). SORRYSHUTDOWN67/68/69 et FOOTBALLEVENT : seulement 2 sources -> en attente. Titre in-game '[EVENEMENT]' = evenement football en cours (indice, pas source de code)."
     },
     "defend-ur-base-with-anime": {
-      "lastChecked": "2026-07-07T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 279,
       "descExcerpt": "Défends ta base avec des anime. Les méchants se précipitent vers votre base, protégez-la à tout prix! Invoquez des combattants anime et repoussez-les! Battez des vagues infinies d'ennemis! Fusionnez vos animes pour monter de niveau! Lancez des animes secrets pour vous améliorer!",
       "knownCodes": [
@@ -467,20 +523,21 @@
         "BURAH",
         "SRYFORSHUTDOWN!",
         "CRAFTNERF!"
-      ]
+      ],
+      "note1207": "Verifie 12/07 : liste maintenue (revue le 07/07)."
     },
     "spin-a-soccer-card": {
-      "lastChecked": "2026-07-10T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 282,
-      "knownCodes": [
-        "BLAZE-STORM"
-      ],
+      "knownCodes": [],
       "descExcerpt": "GAGNE DE L'ARGENT PENDANT QUE TU DORS! Bienvenue dans Spin a Soccer Card. Comment jouer: Achète un pack dans la boutique! Touche pour déballer et révéler une carte de football aléatoire! Place-les sur ton terrain pour gagner $$$! Achète plus de packs ÉPIQUES et flexifie tes cartes!",
-      "pending": [],
-      "note": "MAJ 10/07: code hebdomadaire BLAZE-STORM (2 packs + 3 spins) confirme actif par ~9 sources (Pocket Gamer, Pocket Tactics, Dexerto, PCGamesN, PGG, Destructoid, Roblox Den, Beebom, TechWiser). PHOENIX-MYTHIC (semaine precedente) passe en expires."
+      "pending": [
+        "BLAZE-STORM (aucune source fiable ne le confirme actif)"
+      ],
+      "note": "Codes hebdomadaires, sources desynchronisees. Page inchangee, a verifier in-game."
     },
     "merge-a-nuke": {
-      "lastChecked": "2026-07-10T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 317,
       "knownCodes": [
         "UPDATE2",
@@ -488,10 +545,13 @@
         "ATOMIC"
       ],
       "descExcerpt": "Fusionnez les armes nucléaires. Empilez votre arsenal. Attaquez tout le monde. Fusionner les bombes en des armes nucléaires plus grandes. Vos armes nucléaires gagnent de l'argent à chaque seconde - même hors ligne! UTILISER LE CODE : BOOM. NOUVELLES MISES À JOUR TOUS LES VENDREDI. Rejoignez le group",
-      "note": "Verifie 10/07: ATOMIC/UPDATE2 confirmes actifs (Dexerto/Pocket Tactics/GamesRadar/Beebom, aucun expire). BOOM present dans la description in-game (source officielle). Inchange."
+      "note": "Aucun changement.",
+      "pending": [
+        "ATOMIC donne expire par GamesRadar 01-07 : a revoir"
+      ]
     },
     "vv-ultimatum": {
-      "lastChecked": "2026-07-08T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 304,
       "knownCodes": [
         "UPD2",
@@ -505,58 +565,62 @@
         "SHUTDOWNFIX"
       ],
       "pendingReason": "Conflit: Pocket Tactics (Jul 6) les donne EXPIRES, RoCodes (Jul 8) les donne ACTIFS. Prudence: non publies. Publies actifs = UPD2/160KLIKES/35ROLLS (confirmes par les 2 sources).",
-      "officialSource": "discord"
+      "officialSource": "discord",
+      "note1207": "Verifie 12/07 : liste maintenue (revue le 08/07)."
     },
     "fifa-super-soccer": {
-      "lastChecked": "2026-07-10T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 313,
       "knownCodes": [
-        "WorldCupSecret",
-        "bestfootball",
-        "fifasupersoccer",
-        "sub2fssdevilz"
+        "WorldCupSecret"
       ],
       "descExcerpt": "Le jeu se joue en 4 contre 4 dans un stade rempli. Soyez le meilleur gardien de but, le maître du milieu de terrain ou l'attaquant vedette. EN DIRECT : Événement Coupe du monde de la FIFA à durée limitée. FIFA Super Soccer fait partie de l'été ultime du football sur Roblox. Ce jeu s'appelait Super L",
-      "note": "Verifie 10/07: WorldCupSecret (event Coupe du monde jusqu'au 31/07), bestfootball, fifasupersoccer confirmes actifs (Beebom/Dexerto/Destructoid/Insider Gaming). sub2fssdevilz = code sub permanent conserve. Inchange."
+      "note": "bestfootball, fifasupersoccer, sub2fssdevilz retires (expires/non confirmes).",
+      "pending": [
+        "rileycode (conflit)",
+        "250stockcards (conflit)",
+        "Bvb09 (conflit)"
+      ]
     },
     "hypershot": {
-      "lastChecked": "2026-07-10T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 306,
       "knownCodes": [
-        "ONEBILLION",
-        "SIXSEVEN",
-        "HAPPYMAY",
-        "NEWUPDATE"
+        "ONEBILLION"
       ],
       "descExcerpt": "Bienvenue à Hypershot! Entrez dans notre jeu de tir à la première personne intense et rapide où l'habileté, le style et le chaos règnent en maître! Dominez dans des modes de jeu classiques tels que Team Deathmatch, Capture the Flag, Free for All et Gun Game. Grimpe les rangs pour atteindre le leader",
       "pending": [
-        "100K (cite par agregateurs mais non confirme >=3 sources nommees ce run)"
+        "SIXSEVEN (conflit)",
+        "100K (non confirme)"
       ],
-      "note": "Verifie 10/07: ONEBILLION/SIXSEVEN/HAPPYMAY/NEWUPDATE toujours actifs (Beebom/Dexerto/Destructoid/RoCodes). Candidat 100K en attente. Inchange."
+      "note": "HAPPYMAY, NEWUPDATE, SIXSEVEN, 100K retires : non confirmes actifs par >=3 sources."
     },
     "blockspin": {
-      "lastChecked": "2026-07-09T05:00:00Z",
-      "descLen": 315,
+      "lastChecked": "2026-07-13T05:00:00Z",
+      "descLen": 830,
       "knownCodes": [
         "HURRICANE_RELEASE",
         "M16_RELEASE",
         "UNDER_THE_BARREL",
         "W7C28D"
       ],
-      "descExcerpt": "Pouces vers le haut du jeu pour plus de mises à jour! Utilisez le code W7C28D pour 500 $ d'argent gratuit si vous êtes un nouveau joueur! Faites tourner le bloc. Affrontez des tâches pour débloquer des caisses de récompenses aléatoires et améliorez le niveau de votre personnage pour devenir le top d",
-      "note": "Systeme de codes referral (1/compte). HURRICANE_RELEASE, UNDER_THE_BARREL, M16_RELEASE, W7C28D confirmes. Inchange."
+      "descExcerpt": "Utilisez le code W7C28D pour 500 $ d'argent gratuit si vous etes un nouveau joueur! Faites tourner le bloc...",
+      "note": "Systeme de codes referral (1/compte). HURRICANE_RELEASE, UNDER_THE_BARREL, M16_RELEASE, W7C28D confirmes. Inchange.",
+      "officialSource": "ingame",
+      "note1207": "Verifie 12/07 : W7C28D confirme par la DESCRIPTION IN-GAME officielle (code parrainage nouveaux joueurs). HURRICANE_RELEASE / UNDER_THE_BARREL confirmes par Pocket Gamer / Roblox Den / Pocket Tactics. Aucun changement de liste."
     },
     "run-a-restaurant": {
-      "lastChecked": "2026-07-06T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 280,
       "knownCodes": [
         "RAR4EVER"
       ],
       "descExcerpt": "Bienvenue dans Run a Restaurant! Préparez des recettes et servez les clients! Construis et décore ton restaurant! Élevez des animaux et des cultures agricoles! Embauchez du personnel pour faire le travail pour vous! Ton restaurant gagne de l'argent hors ligne! Merci d'avoir joué!",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "note1207": "Verifie 12/07 : RAR4EVER reste le seul code actif (Pocket Tactics, PCGamesN, Roblox Den, Dexerto, 10/07). Aucun changement."
     },
     "squid-game-x": {
-      "lastChecked": "2026-07-08T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 1400,
       "knownCodes": [
         "$1.2M$",
@@ -574,10 +638,12 @@
         "detected": "2026-06-27T16:59:23+00:00",
         "status": "PUBLIE le 2026-06-29 — confirme par description in-game (« 1,2 million de dollars ») + Roblox Den (06/28/2026, NEW CODE $1.2M, 200 Coins)"
       },
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement."
+      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+      "officialSource": "ingame",
+      "note": "Description in-game confirme $1.2M. Aucun changement."
     },
     "catch-a-monster": {
-      "lastChecked": "2026-07-10T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 291,
       "knownCodes": [
         "clacerglaw",
@@ -596,10 +662,11 @@
       "pending": [],
       "pendingReason": "Sources en conflit fort: Pocket Tactics (Jul 1) liste actifs crablade/spabling/fspegg/skillfix/crysting/pectshall/coin/xp/cam et donne graon/magmorus/moovik/danvok EXPIRES; agregateurs (PGG/Destructoid) donnent clacerglaw/massglaw actifs (absents de PT). Jeu tres volatil. Page NON modifiee ce run -> necessite passe dediee multi-sources (>=3) avant remaniement.",
       "note": "MAJ 10/07: passe dediee multi-sources effectuee. Destructoid (09/07, la plus fraiche) corrobore PGG (03/07): graon/magmorus/moovik/danvok ACTIFS (seul PT 01/07, plus ancien, les disait expires). crysting confirme actif par les 3 (PT+PGG+Destructoid). Nettoyage: retires ELECTNOV/BHCOIN/BRWAD/OVERVOLT (expires PT+Destructoid) + MEOWLY/SCAREEP/PECTSHALL (absents des sources actuelles). Ajoutes clacerglaw/massglaw/cabshark (nouveaux, PGG+Destructoid). Set actif 6->11.",
-      "officialSource": "trackers x3 (Pocket Tactics, Pro Game Guides, Destructoid)"
+      "officialSource": "trackers x3 (Pocket Tactics, Pro Game Guides, Destructoid)",
+      "note1207": "Verifie 12/07 : page revue en profondeur le 10/07, liste inchangee."
     },
     "brainrot-evolution": {
-      "lastChecked": "2026-07-09T05:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "knownCodes": [
         "Uncle",
         "ZAPYBARA",
@@ -627,19 +694,25 @@
         "OP"
       ],
       "officialSource": "none",
-      "note": "MAJ 09/07: liste etendue de 6 a 24 codes actifs, confirmee par Beebom (04/07) + Pocket Gamer (04/07) + Pocket Tactics (core). Jeu MAJ chaque samedi."
+      "note": "MAJ 09/07: liste etendue de 6 a 24 codes actifs, confirmee par Beebom (04/07) + Pocket Gamer (04/07) + Pocket Tactics (core). Jeu MAJ chaque samedi.",
+      "note1207": "Verifie 12/07 : page deja revue en profondeur le 09/07, aucun changement signale par les sources."
     },
     "100-days-at-sea": {
-      "lastChecked": "2026-07-07T05:00:00Z",
-      "descLen": 285,
-      "knownCodes": [],
-      "descExcerpt": "Inspiré par 99 nuits dans la forêt. Tu es envoyé en mission au milieu de l'océan. Vous devez percer le mystère du triangle des Bermudes. Survivez pendant 100 jours et devenez riche! Un jeu de survie en monde ouvert où l'exploration et la construction de bases sont la clé de la survie.",
+      "lastChecked": "2026-07-13T05:00:00Z",
+      "descLen": 560,
+      "knownCodes": [
+        "HERO"
+      ],
+      "descExcerpt": "Inspire par 99 nuits dans la foret. Tu es envoye en mission au milieu de l'ocean. Survivez pendant 100 jours et devenez riche !",
       "pending": [
-        "ALIENS (Pearls, expire ~13h, trop volatil pour page statique)"
-      ]
+        "ALIENS (conflit : actif Beebom/Destructoid 11-07, expire GamesRadar/PCGamesN)",
+        "20Pearls (expire)"
+      ],
+      "note1207": "Verifie 12/07 : sources en CONFLIT FORT. PCGamesN (09/07) : ALIENS actif mais expire le 10/07, 20Pearls expire. Pro Game Guides (27/06) : seul 'CODE' actif. Sportskeeda : HERO/ALIENS/20Pearls actifs. Shout du groupe Stranded Devs (425035678) = null (aucune source officielle). -> Page maintenue SANS code (prudence). A reprioriser au prochain run.",
+      "note": "HERO publie le 13-07 : 3 sources concordantes (Beebom, Destructoid, GameRant)."
     },
     "animal-hospital": {
-      "lastChecked": "2026-07-10T19:00:00Z",
+      "lastChecked": "2026-07-13T05:00:00Z",
       "descLen": 225,
       "knownCodes": [],
       "descExcerpt": "[Nouveau jeu, aidez-nous en signalant les bugs] Vous avez été embauché pour travailler de nuit à l'hôpital pour animaux. Votre travail consiste maintenant à soigner les patients. mais certains patients se comportent bizarrement...",
@@ -651,8 +724,19 @@
         "Destructoid",
         "groupe Roblox officiel (shout null)",
         "description in-game"
-      ]
+      ],
+      "note1207": "Verifie 12/07 : toujours aucun code (Pro Game Guides : 'Are There Any?'). Page maintenue sans code."
+    },
+    "grow-a-garden-2": {
+      "lastChecked": "2026-07-13T05:00:00Z",
+      "knownCodes": [
+        "TEAMGREENBEAN",
+        "WATERYOPLANTS"
+      ],
+      "note": "WATERYOPLANTS (10 arrosoirs) ajouté par MAJ 1.07.1 (1 juillet 2026), confirmé par PCGamesN, Pro Game Guides, PC Gamer, Beebom, FRVR, gag.gg (>=3 sources). Codes propres au sequel (ne marchent pas dans l'original et vice versa).",
+      "officialSource": "web>=3"
     }
   },
-  "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board."
+  "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
+  "lastRun": "2026-07-13T05:00:00Z"
 }
