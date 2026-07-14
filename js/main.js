@@ -48,6 +48,7 @@ const ROBLOX_THUMBS = {
   'dig': 'https://tr.rbxcdn.com/180DAY-38334daf4b8073ee8d3d9976dfc7bfe8/480/270/Image/Webp/noFilter',
   'sols-rng': 'https://tr.rbxcdn.com/180DAY-8965d16c1ee802fff15f681cae4b413e/480/270/Image/Webp/noFilter',
   'fish-it': 'https://tr.rbxcdn.com/180DAY-dfd35b1d04259ea9974c2ee8bcd9ed49/500/280/Image/Jpeg/noFilter',
+  'be-a-fish-bait': 'https://tr.rbxcdn.com/180DAY-4002d607bf3b2f0415c5779ac5a87a34/768/432/Image/Png/noFilter',
   'anime-spirits': 'https://tr.rbxcdn.com/180DAY-90d479b01af3f1ed17af3643f447e915/480/270/Image/Webp/noFilter',
   'slap-battles': 'https://tr.rbxcdn.com/180DAY-01bb43634d02e38923c1543a029c95d5/480/270/Image/Webp/noFilter',
   'forsaken': 'https://tr.rbxcdn.com/180DAY-242c4d76325c453886b3382d825eb71c/500/280/Image/Jpeg/noFilter',
@@ -193,6 +194,7 @@ function initMobileNav() {
 
 /* ---- Search index ---- */
 const GAMES_INDEX = [
+  { name: "Be a Fish Bait", slug: 'be-a-fish-bait', emoji: '🐟', codes: 8 },
   { name: "Spin a Soccer Card", slug: 'spin-a-soccer-card', emoji: '⚽', codes: 6 },
   { name: "Merge a Nuke", slug: 'merge-a-nuke', emoji: '☢️', codes: 3 },
   { name: "VV: ULTIMATUM", slug: 'vv-ultimatum', emoji: '⚔️', codes: 1 },
@@ -471,6 +473,7 @@ const ROBLOX_UNIVERSE_IDS = {
   'dig': 7218065222,
   'sols-rng': 5361032378,
   'fish-it': 6701277882,
+  'be-a-fish-bait': 9330616906,
   'anime-spirits': 4161970303,
   'slap-battles': 2380077519,
   'forsaken': 6331902150,
