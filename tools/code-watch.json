@@ -277,7 +277,7 @@
       "note0719": "Verifie 19/07 : aucun code (le jeu n'en propose pas). Honnete, aucun changement."
     },
     "blade-ball": {
-      "lastChecked": "2026-07-18T05:00:00Z",
+      "lastChecked": "2026-07-20T05:00:00Z",
       "descLen": 323,
       "descExcerpt": "Aucun nouveau code depuis plusieurs semaines. 13 actifs confirmes par Pocket Tactics (12/07) et GamesRadar.",
       "knownCodes": [
@@ -298,7 +298,7 @@
       "note02": "Verifie 02/07 : set inchange (Pocket Tactics/The Click/GamesRadar). Aucun nouveau code.",
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
       "note0710": "A VERIFIER 10/07: un agregateur liste un set tres different (5BVISITS/DRAGONS/DELAYBALL/1.5BTHANKS/UPD250COINS... vs notre set SERPENT/4BVISITS/2BTHANKS...). 'Aucun nouveau code depuis un moment, les anciens restent valides' (01/07). Page NON modifiee (ne pas degrader) -> passe dediee multi-sources requise au prochain run pour reconcilier.",
-      "note": "Verifie 11/07 (Beebom, GamesRadar, Pocket Tactics): aucun nouveau code depuis un moment, codes existants toujours valides. Liste maintenue telle quelle (prudence).",
+      "note": "~14 codes actifs selon Beebom/Pocket Tactics/GamesRadar, aucun nouveau code depuis ~01/07. Non modifié ce run (conflits 18/07 non retranchés faute de source officielle).",
       "note1207": "Verifie 12/07 : aucun nouveau code signale, liste maintenue.",
       "pending": [
         "SERPENT (conflit Beebom expire vs PT/GamesRadar actif)",
@@ -427,12 +427,11 @@
       "pending": []
     },
     "king-legacy": {
-      "lastChecked": "2026-07-19T05:00:00Z",
+      "lastChecked": "2026-07-20T05:00:00Z",
       "descLen": 358,
       "descExcerpt": "DinoxLive/Peodiz/SKGames : conflit PGG vs PC Gamer + Pocket Tactics. Maintenus.",
       "knownCodes": [
-        "&lt;3LEEPUNGG",
-        "2MFAV",
+        "<3LEEPUNGG",
         "FREESTATSRESET",
         "WELCOMETOKINGLEGACY",
         "DragonColorRefund",
@@ -440,8 +439,8 @@
         "Peodiz",
         "SKGames"
       ],
-      "note": "Conflit 5/07: PocketTactics(01/07)+PCGamer listent DinoxLive/Peodiz/SKGames ACTIFS mais PGG(22/06) les liste INACTIFS. Prudence: page maintenue a 5 codes, candidats en attente.",
-      "officialSource": "trackers x3 (PC Gamer, PGG, Pocket Tactics)",
+      "note": "2MFAV basculé en expiré (absent des listes actives PC Gamer/Beebom/Pocket Tactics au 13/07). RainbowDragon laissé en expiré (conditionnel avant update 7).",
+      "officialSource": "none-recent",
       "note1207": "Verifie 12/07 : aucun nouveau code depuis mi-mars selon Pocket Tactics / PC Gamer / Beebom (03/07). Liste des 13 codes maintenue inchangee.",
       "pending": [
         "DinoxLive, Peodiz, SKGames, RainbowDragon (conflit PGG vs PC Gamer/Pocket Tactics)"
@@ -449,7 +448,7 @@
       "note0719": "Verifie 19/07 : 8 actifs, 7 confirmes par PCGamer/PT (jeu sans MAJ recente). 2MFAV non retrouve dans les sources (candidat expire a surveiller) ; RainbowDragon (conditionnel) non ajoute. Aucun changement applique."
     },
     "fruit-battlegrounds": {
-      "lastChecked": "2026-07-19T05:00:00Z",
+      "lastChecked": "2026-07-20T05:00:00Z",
       "descLen": 314,
       "descExcerpt": "+ OMGUPDATE22 (PGG, Pocket Tactics, Destructoid).",
       "knownCodes": [
@@ -460,9 +459,9 @@
         "CODEFIX"
       ],
       "pending": [
-        "YOO1M110K! (introuvable chez PGG/PT/Destructoid ce jour, publie le 13/07 -> a revoir)"
+        "MILLI90SWAG (actif Pocket Tactics 17/07, expiré Beebom 01/06 -> conflit, non publié)"
       ],
-      "note": "YOO1M110K! ajoute (5 sources). 1M60WOWZER expire (Pocket Tactics).",
+      "note": "5 actifs confirmés par Pocket Tactics (17/07, source la plus récente). Aucun changement de liste.",
       "note0719": "Verifie 19/07 : OMGUPDATE22 confirme actif (sources July). Correction d'un compteur incoherent (intro/banner disaient 4 alors que 5 codes affiches et game-meta=5) -> aligne a 5. Zoneblox en retard sur les codes recents (BIG1M170K!! etc.) : reconciliation dediee au prochain run. Pas de changement de liste."
     },
     "tower-defense-simulator": {
@@ -799,7 +798,7 @@
     }
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
-  "lastRun": "2026-07-19T05:00:00Z",
+  "lastRun": "2026-07-20",
   "_pending2026-07-18": [
     "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
     "blade-ball: SERPENT -> Beebom le dit expire, PT+GamesRadar actif, conserve actif",

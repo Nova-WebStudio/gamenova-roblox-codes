@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 432" width="768" height="432">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff4d4d"/><stop offset="1" stop-color="#3a0a0a"/></linearGradient></defs>
+  <rect width="768" height="432" fill="url(#g)"/>
+  <text x="384" y="210" font-size="150" text-anchor="middle" dominant-baseline="middle">⚔️</text>
+  <text x="384" y="330" font-size="46" font-family="Inter,Arial,sans-serif" font-weight="800" fill="#ffffff" text-anchor="middle">Weapon RNG</text>
+</svg>
