@@ -12,6 +12,8 @@ setTimeout(loadGA,5000);})();
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Zoneblox — Tous les codes Roblox actifs, vérifiés à la main et mis à jour chaque jour</title>
 <meta name="description" content="Zoneblox regroupe tous les codes Roblox actifs de 200+ jeux, vérifiés à la main et mis à jour chaque jour. Copie tes codes en un clic, consulte les tier lists et les guides." />
+<link rel="preload" as="image" href="images/hero-bg.webp" type="image/webp" media="(min-width:769px)" fetchpriority="high" />
+<link rel="preload" as="image" href="images/hero-bg-mobile.webp" type="image/webp" media="(max-width:768px)" fetchpriority="high" />
 <link rel="canonical" href="https://zoneblox.com/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Zoneblox" />
@@ -321,6 +323,10 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding:44px 0 30px;ba
 .weekly .art{padding:0;overflow:hidden;text-decoration:none}
 .weekly .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .weekly .art .tag{z-index:2}
+
+.hero{overflow:hidden}
+.hero-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-3}
+.hero-overlay{position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(10,11,22,.5) 0%,rgba(10,11,22,.72) 55%,var(--bg) 100%)}
 </style>
 </head>
 <body>
@@ -369,6 +375,12 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding:44px 0 30px;ba
 
 <!-- ============ HERO ============ -->
 <section class="hero">
+  <picture>
+    <source media="(max-width:768px)" srcset="images/hero-bg-mobile.webp" type="image/webp">
+    <source srcset="images/hero-bg.webp" type="image/webp">
+    <img class="hero-bg-img" src="images/hero-bg.png" alt="" aria-hidden="true" fetchpriority="high" decoding="async">
+  </picture>
+  <div class="hero-overlay" aria-hidden="true"></div>
   <div class="decor" aria-hidden="true">
     <span style="left:12%;top:22%">🎁</span>
     <span style="left:84%;top:16%;animation-delay:1.2s">⭐</span>
