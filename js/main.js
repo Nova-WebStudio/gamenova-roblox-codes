@@ -2,7 +2,7 @@
    Zoneblox – Main JavaScript (FR)
    ============================================================ */
 
-const ROBLOX_THUMBS = {
+const ROBLOX_THUMBS = {'anime-expeditions': 'https://tr.rbxcdn.com/180DAY-f6a71fe1399cffc0a1e813a57900b761/768/432/Image/Png/noFilter',
   'spin-a-soccer-card': 'https://tr.rbxcdn.com/180DAY-bf53b88875889ac2f4ac48047d017b4a/480/270/Image/Webp/noFilter',
   'merge-a-nuke': 'https://tr.rbxcdn.com/180DAY-559508ad864c626f049ce0870d43665b/480/270/Image/Webp/noFilter',
   'vv-ultimatum': 'https://tr.rbxcdn.com/180DAY-a1d19383f4330a2b5e1902fdcc5f5171/480/270/Image/Webp/noFilter',
@@ -199,7 +199,7 @@ function initMobileNav() {
 }
 
 /* ---- Search index ---- */
-const GAMES_INDEX = [
+const GAMES_INDEX = [{ name: "Anime Expeditions", slug: 'anime-expeditions', emoji: '🛡️', codes: 10 },
   { name: "Be a Fish Bait", slug: 'be-a-fish-bait', emoji: '🐟', codes: 8 },
   { name: "Spin a Soccer Card", slug: 'spin-a-soccer-card', emoji: '⚽', codes: 6 },
   { name: "Merge a Nuke", slug: 'merge-a-nuke', emoji: '☢️', codes: 3 },
@@ -433,7 +433,7 @@ function highlightNav() {
 }
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
-const ROBLOX_UNIVERSE_IDS = {
+const ROBLOX_UNIVERSE_IDS = {'anime-expeditions': 7613921865,
   'anime-champions-simulator': 4986566693,
   'animal-hospital': 10148749921,
   'demonology': 6170143659,
