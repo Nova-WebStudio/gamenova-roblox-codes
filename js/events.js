@@ -1,7 +1,12 @@
 /* Zoneblox — Encart "Prochains évènements & admin abuses" (accueil)
    Statique-compatible : lit data/events.json, calcule les comptes à rebours
    côté client et se met à jour chaque seconde. N'invente aucune heure :
-   n'affiche un décompte que si une occurrence est réellement calculable. */
+   n'affiche un décompte que si une occurrence est réellement calculable.
+   Récurrences supportées :
+     - recurrence.everyMinutes (+ alignToClock) : restocks alignés sur l'horloge UTC.
+     - recurrence.weekly {dayUTC, hourUTC, minuteUTC, durationMinutes} : events hebdo.
+     - datetime : évènement ponctuel (ISO UTC).
+   status:"no-fixed-time" => affiché en chip "où surveiller", sans décompte. */
 (function () {
   "use strict";
   var BOX = document.getElementById("eventsBox");
@@ -13,17 +18,40 @@
     "update":      { emoji: "🔄", label: "Mise à jour" },
     "admin-abuse": { emoji: "🎬", label: "Admin abuse" }
   };
+  var DOW = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
 
-  // Prochaine occurrence (ms epoch) ou null si non calculable.
-  function nextOccurrence(ev, now) {
-    if (ev.recurrence && ev.recurrence.everyMinutes) {
-      var step = ev.recurrence.everyMinutes * 60000;
-      // alignToClock : occurrences alignées sur l'horloge UTC (:00, :05, :30…)
-      return Math.ceil((now + 1) / step) * step;
+  // Retourne {start, endsAt, inProgress, recurring} ou null si non calculable.
+  function occurrence(ev, now) {
+    var r = ev.recurrence;
+    if (r && r.everyMinutes) {
+      var step = r.everyMinutes * 60000;
+      var start = Math.ceil((now + 1) / step) * step;
+      return { start: start, endsAt: 0, inProgress: false, recurring: true };
+    }
+    if (r && r.weekly) {
+      var w = r.weekly;
+      var d = new Date(now);
+      var target = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(),
+                            w.hourUTC || 0, w.minuteUTC || 0, 0);
+      var delta = ((w.dayUTC - d.getUTCDay()) + 7) % 7;
+      target += delta * 86400000;
+      if (target <= now) target += 7 * 86400000;
+      var dur = (w.durationMinutes || 0) * 60000;
+      var prev = target - 7 * 86400000;
+      if (dur && now >= prev && now < prev + dur) {
+        return { start: prev, endsAt: prev + dur, inProgress: true, recurring: true };
+      }
+      return { start: target, endsAt: target + dur, inProgress: false, recurring: true };
     }
     if (ev.datetime) {
       var t = Date.parse(ev.datetime);
-      if (!isNaN(t) && t > now) return t;
+      if (isNaN(t)) return null;
+      var d2 = (ev.durationMinutes || 0) * 60000;
+      if (d2 && now >= t && now < t + d2) {
+        return { start: t, endsAt: t + d2, inProgress: true, recurring: false };
+      }
+      if (t > now) return { start: t, endsAt: t + d2, inProgress: false, recurring: false };
+      return null; // ponctuel passé => masqué
     }
     return null;
   }
@@ -38,6 +66,20 @@
     if (d > 0) return d + "j " + p(h) + "h " + p(m) + "m";
     if (h > 0) return p(h) + ":" + p(m) + ":" + p(s);
     return p(m) + ":" + p(s);
+  }
+
+  function fmtWhen(ev) {
+    var w = ev.recurrence && ev.recurrence.weekly;
+    if (w) {
+      var hh = (w.hourUTC < 10 ? "0" : "") + w.hourUTC;
+      var mm = (w.minuteUTC || 0) < 10 ? "0" + (w.minuteUTC || 0) : (w.minuteUTC || 0);
+      return "chaque " + DOW[w.dayUTC] + " · " + hh + ":" + mm + " UTC";
+    }
+    if (ev.recurrence && ev.recurrence.everyMinutes) {
+      var em = ev.recurrence.everyMinutes;
+      return em >= 60 ? "toutes les " + (em / 60) + " h" : "toutes les " + em + " min";
+    }
+    return "";
   }
 
   function esc(x) {
@@ -56,14 +98,18 @@
     var events = (data && data.events) || [];
     var now = Date.now();
 
-    var timed = [];   // avec décompte
-    var untimed = []; // sans horaire fixe
+    var timed = [], untimed = [];
     events.forEach(function (ev) {
-      var next = nextOccurrence(ev, now);
-      if (next) { ev._next = next; timed.push(ev); }
+      var occ = occurrence(ev, now);
+      if (occ) { ev._occ = occ; timed.push(ev); }
       else { untimed.push(ev); }
     });
-    timed.sort(function (a, b) { return a._next - b._next; });
+    // En cours d'abord, puis par imminence.
+    timed.sort(function (a, b) {
+      if (a._occ.inProgress !== b._occ.inProgress) return a._occ.inProgress ? -1 : 1;
+      return (a._occ.inProgress ? a._occ.endsAt : a._occ.start) -
+             (b._occ.inProgress ? b._occ.endsAt : b._occ.start);
+    });
 
     var html = "";
 
@@ -72,14 +118,20 @@
       html += '<div class="zb-ev-grid">';
       timed.forEach(function (ev) {
         var k = KIND[ev.kind] || { emoji: "📌", label: ev.kind || "" };
+        var occ = ev._occ;
+        var when = fmtWhen(ev);
+        var w = ev.recurrence && ev.recurrence.weekly;
         html +=
-          '<a class="zb-ev-card" href="' + esc(linkFor(ev)) + '">' +
+          '<a class="zb-ev-card' + (occ.inProgress ? " zb-ev-live" : "") + '" href="' + esc(linkFor(ev)) + '">' +
             '<div class="zb-ev-top"><span class="zb-ev-kind">' + k.emoji + " " + esc(k.label) + "</span>" +
-              (ev.recurrence ? '<span class="zb-ev-rec">récurrent</span>' : "") + "</div>" +
+              (occ.inProgress ? '<span class="zb-ev-badge-live">● en cours</span>'
+                              : (occ.recurring ? '<span class="zb-ev-rec">récurrent</span>' : "")) + "</div>" +
             '<div class="zb-ev-game">' + esc(ev.game) + "</div>" +
             '<div class="zb-ev-title">' + esc(ev.title) + "</div>" +
-            '<div class="zb-ev-cd" data-next="' + ev._next + '" data-rec="' +
-              (ev.recurrence ? ev.recurrence.everyMinutes : "") + '">--:--</div>' +
+            '<div class="zb-ev-cd" data-slug="' + esc(ev.slug) + '">--:--</div>' +
+            '<div class="zb-ev-meta">' +
+              (occ.inProgress ? "se termine dans" : (when || "prochain")) +
+            "</div>" +
             (ev.reward ? '<div class="zb-ev-reward">' + esc(ev.reward) + "</div>" : "") +
           "</a>";
       });
@@ -110,39 +162,33 @@
     }
 
     BOX.innerHTML = html;
-    tick(); // premier affichage immédiat
+    BOX._events = timed; // référence pour tick()
+    tick();
   }
 
-  // Met à jour tous les décomptes ; recalcule l'occurrence des récurrents.
   function tick() {
     var now = Date.now();
-    var nodes = BOX.querySelectorAll(".zb-ev-cd");
-    for (var i = 0; i < nodes.length; i++) {
-      var el = nodes[i];
-      var next = parseInt(el.getAttribute("data-next"), 10);
-      var recMin = parseInt(el.getAttribute("data-rec"), 10);
-      if (recMin && now >= next) {
-        var step = recMin * 60000;
-        next = Math.ceil((now + 1) / step) * step;
-        el.setAttribute("data-next", next);
-      }
-      el.textContent = fmtCountdown(next - now);
-      if (next - now <= 60000) el.classList.add("zb-ev-soon");
-      else el.classList.remove("zb-ev-soon");
+    var list = BOX._events || [];
+    for (var i = 0; i < list.length; i++) {
+      var ev = list[i];
+      var el = BOX.querySelector('.zb-ev-cd[data-slug="' + cssEsc(ev.slug) + '"]');
+      if (!el) continue;
+      var occ = occurrence(ev, now); // recalcul (gère le passage d'occurrence)
+      if (!occ) { el.textContent = "—"; continue; }
+      ev._occ = occ;
+      var remain = occ.inProgress ? (occ.endsAt - now) : (occ.start - now);
+      el.textContent = fmtCountdown(remain);
+      if (remain <= 60000) el.classList.add("zb-ev-soon"); else el.classList.remove("zb-ev-soon");
     }
   }
 
-  function boot(data) {
-    render(data);
-    setInterval(tick, 1000);
-  }
+  function cssEsc(s) { return String(s).replace(/["\\]/g, "\\$&"); }
 
   var url = "/data/events.json?cb=" + Math.floor(Date.now() / 60000);
   fetch(url, { headers: { Accept: "application/json" } })
     .then(function (r) { if (!r.ok) throw 0; return r.json(); })
-    .then(boot)
+    .then(function (data) { render(data); setInterval(tick, 1000); })
     .catch(function () {
-      // Dégradation propre : masque l'encart si les données sont indisponibles.
       var sec = document.getElementById("evenements");
       if (sec) sec.style.display = "none";
     });

@@ -13,10 +13,13 @@ Encart dynamique sur `index.html` (section `id="evenements"`, juste avant « Cod
 | `data/events.json` | **Données** (maintenu par la tâche quotidienne). Liste `events[]`. |
 | `js/events.js` | **Rendu** : fetch du JSON (cache-busté), comptes à rebours en direct (setInterval 1 s), tri par imminence. Inclus dans `index.html` via `<script src="/js/events.js?v=N" defer>`. |
 
-**Schéma d'un évènement** (3 formes) :
-- **Récurrent** : `"recurrence":{"everyMinutes":5,"alignToClock":true}` → prochaine occurrence alignée sur l'horloge UTC (:00, :05, :30…). Ex. restocks Grow a Garden (graines/gear 5 min, œufs 30 min, cosmétiques 240 min).
-- **Ponctuel** : `"datetime":"2026-07-26T18:00:00Z"` → compte à rebours unique (masqué une fois passé).
-- **Sans horaire** : `"status":"no-fixed-time"` → pas de décompte, affiché en chip « où surveiller » (`"watch":"..."`). C'est le cas par défaut des admin abuses (rarement programmés).
+**Schéma d'un évènement** (4 formes) :
+- **Récurrent intervalle** : `"recurrence":{"everyMinutes":5,"alignToClock":true}` → prochaine occurrence alignée sur l'horloge UTC (:00, :05, :30…). Ex. restocks Grow a Garden (graines/gear 5 min, œufs 30 min, cosmétiques 240 min).
+- **Récurrent hebdo** : `"recurrence":{"weekly":{"dayUTC":6,"hourUTC":13,"minuteUTC":0,"durationMinutes":60}}` (dayUTC : 0=dim … 6=sam). Affiche « ● en cours » pendant `durationMinutes`, sinon compte à rebours vers la prochaine occurrence. Ex. Grow a Garden Saturday Admin Abuse (sam 13 h UTC) + MAJ (sam 14 h UTC) ; Steal a Brainrot Taco Tuesday (mar 22 h UTC) & Saturday (sam 19 h UTC).
+- **Ponctuel** : `"datetime":"2026-07-26T18:00:00Z"` (+ `durationMinutes` optionnel) → compte à rebours unique (masqué une fois passé).
+- **Sans horaire** : `"status":"no-fixed-time"` → pas de décompte, affiché en chip « où surveiller » (`"watch":"..."`). C'est le cas par défaut des admin abuses non programmés.
+
+**⚠️ Fuseau / heure d'été US** : les horaires issus de l'US Eastern (Steal a Brainrot : Taco Tuesday 18 h ET, Saturday 15 h ET) sont convertis en UTC dans le JSON en supposant EDT (UTC-4, été). Au retour à l'heure standard US (**dim 2 nov 2026**), **reculer d'1 h** les `hourUTC` de ces entrées (22→21, 19→18). Les horaires de Grow a Garden sont déjà donnés en UTC par les sources → pas de conversion.
 
 **RÈGLE D'HONNÊTETÉ (critique)** : ne JAMAIS inventer d'heure. Un admin abuse / une MAJ n'a une `datetime` que si confirmée par une source officielle (Trello, X/Twitter officiel, in-game, shout de groupe). Sinon → `status:"no-fixed-time"`. Champs `game`, `slug`, `kind` (`restock|event|update|admin-abuse`), `title`, `source` (URL ou `codes/<slug>.html`) obligatoires.
 

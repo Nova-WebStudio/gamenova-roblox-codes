@@ -1,8 +1,8 @@
 {
-  "_comment": "Donnees de l'encart 'Prochains evenements & admin abuses' (accueil). Maintenu par la tache quotidienne. RECURRENCE: everyMinutes + alignToClock=true => prochaine occurrence alignee sur l'horloge UTC (:00, :05, :30...). ONE-OFF: datetime ISO UTC (compte a rebours unique). SANS HORAIRE: status='no-fixed-time' (badge + ou surveiller). REGLE D'HONNETETE: ne jamais inventer d'heure. Un admin abuse n'a une heure que si confirmee par source officielle.",
+  "_comment": "Donnees de l'encart 'Prochains evenements & admin abuses' (accueil). Maintenu par la tache quotidienne. RECURRENCE: (a) everyMinutes + alignToClock => aligne sur l'horloge UTC (:00,:05,:30). (b) weekly {dayUTC(0=dim..6=sam), hourUTC, minuteUTC, durationMinutes} => event hebdo, badge 'en cours' pendant durationMinutes. ONE-OFF: datetime ISO UTC (+ durationMinutes optionnel). SANS HORAIRE: status='no-fixed-time'. REGLE D'HONNETETE: ne jamais inventer d'heure; horaire seulement si confirme par sources fiables/officielles. ATTENTION FUSEAU: les heures US Eastern (ET/EDT=UTC-4 en ete) sont converties en UTC ici; au changement d'heure US (dim 2 nov 2026) reculer d'1h les entrees issues de l'ET.",
   "meta": {
     "updated": "2026-07-24",
-    "note": "Comptes a rebours verifies. Les admin abuses dependent des developpeurs et sont rarement programmes a heure fixe : on n'affiche un horaire que s'il est confirme, sinon on indique ou le surveiller."
+    "note": "Comptes a rebours des restocks et des events hebdomadaires confirmes par plusieurs sources. Les horaires d'admin abuse restent des heures habituelles : verifie toujours le Discord officiel du jeu, les developpeurs peuvent decaler sans preavis."
   },
   "events": [
     {
@@ -36,6 +36,26 @@
       "source": "https://growagarden.fandom.com/wiki/Seed_Shop"
     },
     {
+      "slug": "grow-a-garden",
+      "game": "Grow a Garden",
+      "kind": "admin-abuse",
+      "title": "Saturday Admin Abuse",
+      "recurrence": { "weekly": { "dayUTC": 6, "hourUTC": 13, "minuteUTC": 0, "durationMinutes": 60 } },
+      "confirmed": true,
+      "reward": "Mutations & objets rares spawnés par les admins",
+      "source": "https://growagarden.fandom.com/wiki/Admin_Abuse"
+    },
+    {
+      "slug": "grow-a-garden",
+      "game": "Grow a Garden",
+      "kind": "update",
+      "title": "Mise à jour hebdomadaire",
+      "recurrence": { "weekly": { "dayUTC": 6, "hourUTC": 14, "minuteUTC": 0 } },
+      "confirmed": true,
+      "reward": "Nouveau contenu (souvent le samedi ~14 h UTC)",
+      "source": "https://growagarden.fandom.com/wiki/Admin_Abuse"
+    },
+    {
       "slug": "grow-a-garden-2",
       "game": "Grow a Garden 2",
       "kind": "restock",
@@ -54,6 +74,26 @@
       "confirmed": true,
       "reward": "Nouveaux œufs en vente",
       "source": "https://nerdschalk.com/grow-a-garden-2-shop-restock-times/"
+    },
+    {
+      "slug": "steal-a-brainrot",
+      "game": "Steal a Brainrot",
+      "kind": "admin-abuse",
+      "title": "Taco Tuesday (Admin Abuse)",
+      "recurrence": { "weekly": { "dayUTC": 2, "hourUTC": 22, "minuteUTC": 0, "durationMinutes": 45 } },
+      "confirmed": true,
+      "reward": "Brainrots rares & Lucky Blocks spawnés par SpyderSammy",
+      "source": "https://www.theclick.gg/steal-a-brainrot-admin-abuse-schedule/"
+    },
+    {
+      "slug": "steal-a-brainrot",
+      "game": "Steal a Brainrot",
+      "kind": "admin-abuse",
+      "title": "Saturday Admin Abuse",
+      "recurrence": { "weekly": { "dayUTC": 6, "hourUTC": 19, "minuteUTC": 0, "durationMinutes": 45 } },
+      "confirmed": true,
+      "reward": "Brainrots rares & traits exclusifs sur tous les serveurs",
+      "source": "https://www.theclick.gg/steal-a-brainrot-admin-abuse-schedule/"
     },
     {
       "slug": "blox-fruits",
@@ -79,10 +119,10 @@
       "slug": "blue-lock-rivals",
       "game": "Blue Lock Rivals",
       "kind": "update",
-      "title": "Prochaine mise à jour",
+      "title": "MAJ Quarts de finale (teasée)",
       "status": "no-fixed-time",
       "confirmed": false,
-      "watch": "Discord officiel (annonces)",
+      "watch": "Discord officiel — code QUARTERFINALSOON, date non annoncée",
       "source": "codes/blue-lock-rivals.html"
     },
     {
@@ -94,16 +134,6 @@
       "confirmed": false,
       "watch": "Discord / X officiel",
       "source": "codes/anime-vanguards.html"
-    },
-    {
-      "slug": "steal-a-brainrot",
-      "game": "Steal a Brainrot",
-      "kind": "admin-abuse",
-      "title": "Admin abuse",
-      "status": "no-fixed-time",
-      "confirmed": false,
-      "watch": "Discord officiel du jeu",
-      "source": "codes/steal-a-brainrot.html"
     },
     {
       "slug": "volleyball-legends",
