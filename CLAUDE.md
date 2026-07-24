@@ -4,6 +4,28 @@ Règles et pièges à éviter, documentés à partir des erreurs réelles rencon
 
 ---
 
+## Encart « Prochains évènements & admin abuses » (accueil — demande de Peter, 24 juillet)
+
+Encart dynamique sur `index.html` (section `id="evenements"`, juste avant « Codes du jour »). Deux fichiers :
+
+| Fichier | Rôle |
+|---------|------|
+| `data/events.json` | **Données** (maintenu par la tâche quotidienne). Liste `events[]`. |
+| `js/events.js` | **Rendu** : fetch du JSON (cache-busté), comptes à rebours en direct (setInterval 1 s), tri par imminence. Inclus dans `index.html` via `<script src="/js/events.js?v=N" defer>`. |
+
+**Schéma d'un évènement** (3 formes) :
+- **Récurrent** : `"recurrence":{"everyMinutes":5,"alignToClock":true}` → prochaine occurrence alignée sur l'horloge UTC (:00, :05, :30…). Ex. restocks Grow a Garden (graines/gear 5 min, œufs 30 min, cosmétiques 240 min).
+- **Ponctuel** : `"datetime":"2026-07-26T18:00:00Z"` → compte à rebours unique (masqué une fois passé).
+- **Sans horaire** : `"status":"no-fixed-time"` → pas de décompte, affiché en chip « où surveiller » (`"watch":"..."`). C'est le cas par défaut des admin abuses (rarement programmés).
+
+**RÈGLE D'HONNÊTETÉ (critique)** : ne JAMAIS inventer d'heure. Un admin abuse / une MAJ n'a une `datetime` que si confirmée par une source officielle (Trello, X/Twitter officiel, in-game, shout de groupe). Sinon → `status:"no-fixed-time"`. Champs `game`, `slug`, `kind` (`restock|event|update|admin-abuse`), `title`, `source` (URL ou `codes/<slug>.html`) obligatoires.
+
+**Maintenance quotidienne** : mettre à jour `meta.updated`, promouvoir en `datetime` les events/MAJ dont la date devient confirmée, retirer les `datetime` passées, ajouter/retirer des jeux hot. Après édition : `python3 -c "import json;json.load(open('data/events.json'))"` (JSON valide) + `node --check js/events.js`. Si `js/events.js` modifié → bump `?v=N` dans `index.html`.
+
+**Portée actuelle** : jeux hot (~30 max). Restocks GAG/GAG2 confirmés (source : fandom / nerdschalk). Le reste en `no-fixed-time` avec canal de surveillance.
+
+---
+
 ## Deux dates distinctes sur les pages codes (demande de Peter, 30 juin)
 
 Chaque `codes/<slug>.html` doit afficher **deux dates séparées** dans le `game-meta` du hero, et il ne faut JAMAIS les confondre :
