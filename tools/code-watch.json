@@ -205,7 +205,7 @@
   },
   "snapshots": {
     "blox-fruits": {
-      "lastChecked": "2026-07-23T05:00:00Z",
+      "lastChecked": "2026-07-24T05:00:00Z",
       "descLen": 366,
       "descExcerpt": "24 codes actifs. Les agregateurs en listent 23 (SUB2GAMERROBOT_EXP1 non repris par tous).",
       "knownCodes": [
@@ -306,7 +306,7 @@
       "note0722": "Verifie 22/07 : sources listent DUNGEONSRELEASE actif (50 Dungeon Runes) mais conflit persistant sur SERPENT/BATTLEROYALE. Prudence : liste inchangee, candidats en attente."
     },
     "blue-lock-rivals": {
-      "lastChecked": "2026-07-23T05:00:00Z",
+      "lastChecked": "2026-07-24T05:00:00Z",
       "descLen": 313,
       "descExcerpt": "Page Zoneblox en avance sur Beebom (30/06). Actifs : NELSHIDOU, NEWCHEMSOON, DEMON.",
       "knownCodes": [
@@ -384,7 +384,7 @@
       "note0722": "Update Roaming Fish & Water Park : +1 code actif RoamingFishAndWaterPark confirme par X officiel @FischOnROBLOX + PGG/GamesRadar/Beebom/Roonby. Actifs 3->4."
     },
     "volleyball-legends": {
-      "lastChecked": "2026-07-23T05:00:00Z",
+      "lastChecked": "2026-07-24T05:00:00Z",
       "descLen": 293,
       "descExcerpt": "Update 78 en cours. Codes des Updates 76 et 77 expires (confirme PGG + GamesRadar + Destructoid + bloxodes).",
       "knownCodes": [
@@ -476,7 +476,7 @@
       "note0719": "Verifie 19/07 : OMGUPDATE22 confirme actif (sources July). Correction d'un compteur incoherent (intro/banner disaient 4 alors que 5 codes affiches et game-meta=5) -> aligne a 5. Zoneblox en retard sur les codes recents (BIG1M170K!! etc.) : reconciliation dediee au prochain run. Pas de changement de liste."
     },
     "tower-defense-simulator": {
-      "lastChecked": "2026-07-14T05:00:00Z",
+      "lastChecked": "2026-07-24T05:00:00Z",
       "descLen": 1080,
       "descExcerpt": "2 codes confirmes (Pocket Tactics 10/07, Dexerto 06/07, Roblox Den).",
       "knownCodes": [
@@ -488,7 +488,7 @@
       "note1207": "CHANGEMENT 12/07 : 0 -> 2 codes actifs (1MILCOMMUNITY, 2MILLION) confirmes par Pro Game Guides + Pocket Tactics (10/07) + PCGamesN (06/07). CHRISTMAS2025 / NOTESLA? en conflit entre sources -> non publies (prudence)."
     },
     "world-fighters": {
-      "lastChecked": "2026-07-15T05:00:00Z",
+      "lastChecked": "2026-07-24T05:00:00Z",
       "descLen": 290,
       "descExcerpt": "-3 expires (WOOGARPP, LASTSHUTDOWN, SRRY5SHUTDOWSERVANT) / +8 nouveaux (vague UPDATE8-10).",
       "knownCodes": [
@@ -814,7 +814,7 @@
     }
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
-  "lastRun": "2026-07-23",
+  "lastRun": "2026-07-24",
   "_pending2026-07-18": [
     "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
     "blade-ball: SERPENT -> Beebom le dit expire, PT+GamesRadar actif, conserve actif",
@@ -840,5 +840,12 @@
     "squid-game-x: sources en CONFLIT (jeux de codes differents; page a $1.2M$ absent de l'agregat) -> inchange par prudence",
     "grow-a-garden / grow-a-garden-2: agregat ne distingue pas les codes; aucun nouveau code confirme distinctement -> inchange",
     "brainrot-evolution: aucune liste concrete >=3 sources concordantes -> inchange"
+  ],
+  "_pending2026-07-24": [
+    "blox-fruits: candidat 1LOSTADMIN toujours non confirme (source unique) -> non publie",
+    "anime-rangers-x: candidat AdminAbuseNeedsABuff non confirme -> non publie",
+    "blockspin: candidat UNDER_THE_BARREL non confirme -> non publie",
+    "Deep-verifies stables ce run (aucun changement de code): tower-defense-simulator (1MILCOMMUNITY, 2MILLION), blox-fruits (23-24), world-fighters (24), volleyball-legends (3), blue-lock-rivals (6).",
+    "A prioriser prochain run: noob-incremental, defend-ur-base-with-anime, spin-a-soccer-card, merge-a-nuke, vv-ultimatum, fifa-super-soccer, hypershot, run-a-restaurant, catch-a-monster, animal-hospital, squid-game-x, grow-a-garden/2."
   ]
 }
