@@ -44,10 +44,10 @@ Score = Potentiel trafic (1-5) × Valeur topicale (1-5) − Difficulté (1-5), p
 | 1 | **Blox Fruits — sous-cluster** (races ✓, value list, awakening en page dédiée, best build) | 5 | 5 | 2 | **★★★★★** | Races **FAIT aujourd'hui** |
 | 2 | Hub éditorial « Meilleurs jeux Roblox (mois) » + « Nouveaux jeux Roblox » | 5 | 4 | 3 | ★★★★☆ | À faire |
 | 3 | Value / Trading lists (Blox Fruits, Adopt Me, Murder Mystery 2, Grow a Garden) | 5 | 4 | 3 | ★★★★☆ | À faire (maintenance requise) |
-| 4 | Sous-tier-lists par jeu phare (Blox Fruits swords, GAG pets/seeds, AV units) | 4 | 4 | 2 | ★★★★☆ | À faire |
+| 4 | Sous-tier-lists par jeu phare (Blox Fruits swords, GAG pets/seeds, AV units) | 4 | 4 | 2 | ★★★★☆ | Swords **FAIT le 25/07** ; GAG pets/seeds + AV units à faire |
 | 5 | Cluster « comment awaken / débloquer » (verbes d'intention) sur top jeux | 4 | 4 | 2 | ★★★☆☆ | À faire |
 | 6 | Nettoyage `en/` orphelin (noindex ou plan hreflang) | 2 | 3 | 1 | ★★★☆☆ | À arbitrer |
-| 7 | Grow a Garden — cluster (mutations, weather, calculator, value) | 5 | 5 | 3 | ★★★★☆ | À faire |
+| 7 | Grow a Garden — cluster (mutations, weather, calculator, value) | 5 | 5 | 3 | ★★★★☆ | Tier list **pets GAG2 FAITE le 26/07** ; mutations + value à faire |
 
 ---
 
@@ -70,8 +70,8 @@ Effet топ­ique : renforce le **hub Blox Fruits** (codes ↔ tier fruits ↔ 
 
 **Semaine 1 — Approfondir Blox Fruits (jeu-modèle du sous-cluster)**
 - J1 : Tier list des races ✓ (fait).
-- J2 : Blox Fruits **Value List** (valeurs de trading) — page dédiée, valeurs communautaires clairement datées/sourcées, distinct de la tier list de puissance.
-- J3 : Blox Fruits **meilleurs sword / arme** (tier list armes) — intention « best sword blox fruits ».
+- J2/J3 : Blox Fruits **Sword Tier List** ✓ (fait le 25/07). Choix de la brique la plus **stable** (classement de puissance, pas de valeurs fluctuantes à maintenir), conforme au repli recommandé en section 7. Intention « best sword blox fruits » / « meilleure épée blox fruits », distincte de la tier list des fruits (fruits) et des races (races) → aucune cannibalisation. Interliée aux 3 autres pages du cluster (fruits, races, guide, codes).
+- J4 : Blox Fruits **Value List** (valeurs de trading) — reportée : n'entreprendre que si l'engagement de maintenance quotidienne (redate + resource des valeurs, ≥2 sources) est tenable. Sinon enchaîner sur GAG (semaine 2).
 - J4 : Page « comment awaken » dédiée si le volume le justifie, sinon renforcer la section du pilier + interliens.
 - J5 : Audit interne du cluster Blox Fruits (anti-orphelin, anti-cannibalisation, ancres descriptives).
 
@@ -88,9 +88,17 @@ Effet топ­ique : renforce le **hub Blox Fruits** (codes ↔ tier fruits ↔ 
 
 ---
 
-## 7. Suggestion pour demain (J2)
+## 7. Suggestion pour demain (J5 — 27/07)
 
-**Blox Fruits Value List (valeurs de trading)** — intention « blox fruits value list » / « valeur des fruits blox fruits », très fort volume, absente du site et **non cannibalisante** (la tier list classe la puissance, la value list classe la valeur d'échange). ⚠️ Condition d'honnêteté : les valeurs sont **communautaires et fluctuantes** → il faut les sourcer (≥2 références), les dater visiblement, et prévoir une révision régulière (à intégrer au run quotidien). Si l'engagement de maintenance n'est pas tenable, préférer la **tier list des armes** (plus stable) comme J2.
+**Travail fait le 26/07 :** nouvelle page **`tier-list/grow-a-garden-2-pets.html`** (Tier List Pets Grow a Garden 2, ~1 930 mots). Intention distincte ciblée : « grow a garden 2 pets tier list », « meilleurs pets grow a garden 2 » — sans cannibaliser la tier list des **graines** GAG2 (intention rendement) ni la tier list des **pets du 1er opus** GAG (jeu différent). Classement sourcé (Beebom, Pro Game Guides, FRVR, u7buy, Skycoach) : S = Unicorn, Ice Serpent, Black Dragon, Raccoon · A = Golden Dragonfly, Queen Bee, Deer · B/C détaillés. Effets honnêtes (mutation Rainbow/Gold, défense nocturne, croissance), note d'évolutivité des prix, schema ItemList + FAQPage + Breadcrumb. Maillage complet : carte hub (vraie miniature), cross-links seeds ↔ pets ↔ codes ↔ guide, sitemap-tier-list.xml + sitemap.xml. Aucun orphelin.
+
+Le cluster Grow a Garden compte désormais : GAG pets ✓ · GAG2 graines ✓ · **GAG2 pets ✓**. Prochaine brique recommandée, par ordre de priorité :
+
+1. **Grow a Garden — page « mutations »** (`guides/` ou `tier-list/`) : intention « grow a garden mutations », « comment obtenir mutation Rainbow / Gold / Wet / Chilled ». Fort volume, intention distincte (how-to, pas un classement) → complète le cluster sans cannibaliser. Sourcer ≥2 (valeurs/multiplicateurs communautaires datés).
+2. Alternative : **hub éditorial « Meilleurs jeux Roblox (juillet 2026) »** — forte demande, maillage transversal vers tout le catalogue (opportunité #2 du scoring, encore À faire).
+3. Poursuivre le cluster GAG2 : **value list des graines/pets** uniquement si la maintenance des valeurs (≥2 sources datées) est tenable.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
 
 ---
 

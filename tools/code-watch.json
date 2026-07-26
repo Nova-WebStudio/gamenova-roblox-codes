@@ -1,851 +1,866 @@
 {
-  "_comment": "Surveillance automatique des sources de codes. La tache quotidienne (ETAPE 0) lit hotGames, compare a snapshots, detecte les nouveaux codes potentiels, les verifie (2 sources) puis publie. id = universeId verifie ; groupId = groupe createur.",
-  "version": 2,
-  "hotGames": {
-    "blox-fruits": {
-      "id": 994732206,
-      "groupId": 4372130,
-      "trello": {
-        "boardId": "imb75BzG",
-        "url": "https://trello.com/b/imb75BzG.json",
-        "codes": "list",
-        "listMatch": "Codes",
-        "checked": "2026-06-26"
-      }
-    },
-    "grow-a-garden": {
-      "id": 7436755782,
-      "groupId": 35789249,
-      "trello": {
-        "boardId": null,
-        "url": null,
-        "codes": "absent",
-        "checked": "2026-06-26"
-      }
-    },
-    "steal-a-brainrot": {
-      "id": 7709344486,
-      "groupId": 35815907,
-      "trello": {
-        "boardId": null,
-        "url": null,
-        "codes": "absent",
-        "checked": "2026-06-26"
-      }
-    },
-    "blade-ball": {
-      "id": 4777817887,
-      "groupId": 12836673,
-      "trello": {
-        "boardId": "xdplf9oF",
-        "url": "https://trello.com/b/xdplf9oF.json",
-        "codes": "private",
-        "checked": "2026-06-26"
-      }
-    },
-    "blue-lock-rivals": {
-      "id": 6325068386,
-      "groupId": 34671275,
-      "trello": {
-        "boardId": "R9gCGamp",
-        "url": "https://trello.com/b/R9gCGamp.json",
-        "codes": "private",
-        "checked": "2026-06-26"
-      }
-    },
-    "anime-last-stand": {
-      "id": 4509896324,
-      "groupId": 12229756,
-      "trello": {
-        "boardId": "m1Mqaqkh",
-        "url": "https://trello.com/b/m1Mqaqkh.json",
-        "codes": "card",
-        "listMatch": "Codes",
-        "checked": "2026-06-26"
-      }
-    },
-    "fisch": {
-      "id": 5750914919,
-      "groupId": 7381705,
-      "trello": {
-        "boardId": "k8WMQFb3",
-        "url": "https://trello.com/b/k8WMQFb3.json",
-        "codes": "none",
-        "checked": "2026-06-26"
-      }
-    },
-    "volleyball-legends": {
-      "id": 6931042565,
-      "groupId": 35330702,
-      "trello": {
-        "boardId": "W659ag0P",
-        "url": "https://trello.com/b/W659ag0P.json",
-        "codes": "none",
-        "checked": "2026-06-26",
-        "note": "Carte 'In-Game Codes' = tutoriel de saisie uniquement, aucune valeur de code. Codes sur Discord/X."
-      }
-    },
-    "anime-vanguards": {
-      "id": 5578556129,
-      "groupId": 17219742,
-      "trello": {
-        "boardId": null,
-        "url": null,
-        "codes": "absent",
-        "checked": "2026-06-26"
-      }
-    },
-    "pet-simulator-99": {
-      "id": 3317771874,
-      "groupId": 3959677,
-      "trello": null
-    },
-    "king-legacy": {
-      "id": 1451439645,
-      "groupId": 5348890,
-      "trello": {
-        "boardId": "pb6yySnh",
-        "url": "https://trello.com/b/pb6yySnh.json",
-        "codes": "none",
-        "checked": "2026-06-26"
-      }
-    },
-    "fruit-battlegrounds": {
-      "id": 3457700596,
-      "groupId": 14453089,
-      "trello": {
-        "boardId": "NjZf12R5",
-        "url": "https://trello.com/b/NjZf12R5.json",
-        "codes": "none",
-        "checked": "2026-06-26"
-      }
-    },
-    "tower-defense-simulator": {
-      "id": 1176784616,
-      "groupId": 4914494,
-      "trello": null
-    },
-    "world-fighters": {
-      "id": 10032271327,
-      "groupId": 33910482,
-      "trello": null
-    },
-    "noob-incremental": {
-      "id": 9965411707,
-      "groupId": 356937272,
-      "trello": null
-    },
-    "defend-ur-base-with-anime": {
-      "id": 10111742174,
-      "groupId": 104489519,
-      "trello": null
-    },
-    "spin-a-soccer-card": {
-      "id": 9272693470,
-      "groupId": 520125566,
-      "trello": null
-    },
-    "merge-a-nuke": {
-      "id": 10199301628,
-      "groupId": 446405201,
-      "trello": null
-    },
-    "vv-ultimatum": {
-      "id": 2309918273,
-      "groupId": 9233039,
-      "trello": null
-    },
-    "fifa-super-soccer": {
-      "id": 4293374620,
-      "groupId": 16790592,
-      "trello": null
-    },
-    "hypershot": {
-      "id": 5995470825,
-      "groupId": 3385385,
-      "trello": null
-    },
-    "blockspin": {
-      "id": 6765805766,
-      "groupId": 33720745,
-      "trello": null
-    },
-    "run-a-restaurant": {
-      "id": 9970645639,
-      "groupId": 75550158,
-      "trello": null
-    },
-    "squid-game-x": {
-      "id": 2936053166,
-      "groupId": 12255003,
-      "trello": null
-    },
-    "catch-a-monster": {
-      "id": 9141743926,
-      "groupId": 15753989,
-      "trello": null
-    },
-    "brainrot-evolution": {
-      "id": 7332711118,
-      "groupId": 35325835,
-      "trello": null
-    },
-    "100-days-at-sea": {
-      "id": 9167377564,
-      "groupId": 425035678,
-      "trello": null
-    },
-    "animal-hospital": {
-      "id": 10148749921,
-      "placeId": 78515283254292,
-      "groupId": 344908697,
-      "note": "Jeu en forte croissance (~900K joueurs simultanés, 675M visites). Pas encore de système de codes au 2026-07-10 — surveiller l'ajout d'une zone de rédemption.",
-      "checked": "2026-07-10"
-    }
+ "_comment": "Surveillance automatique des sources de codes. La tache quotidienne (ETAPE 0) lit hotGames, compare a snapshots, detecte les nouveaux codes potentiels, les verifie (2 sources) puis publie. id = universeId verifie ; groupId = groupe createur.",
+ "version": 2,
+ "hotGames": {
+  "blox-fruits": {
+   "id": 994732206,
+   "groupId": 4372130,
+   "trello": {
+    "boardId": "imb75BzG",
+    "url": "https://trello.com/b/imb75BzG.json",
+    "codes": "list",
+    "listMatch": "Codes",
+    "checked": "2026-06-26"
+   }
   },
-  "snapshots": {
-    "blox-fruits": {
-      "lastChecked": "2026-07-24T05:00:00Z",
-      "descLen": 366,
-      "descExcerpt": "24 codes actifs. Les agregateurs en listent 23 (SUB2GAMERROBOT_EXP1 non repris par tous).",
-      "knownCodes": [
-        "SUB2GAMERROBOT_EXP1",
-        "EASTEREXP",
-        "Starcodeheo",
-        "Sub2Fer999",
-        "SUB2GAMERROBOT_RESET1",
-        "Lightningabuse",
-        "KITT_RESET",
-        "Sub2UncleKizaru",
-        "fudd10_v2",
-        "Fudd10",
-        "Bignews",
-        "kittgaming",
-        "Sub2CaptainMaui",
-        "Enyu_is_Pro",
-        "Magicbus",
-        "JCWK",
-        "Bluxxy",
-        "TheGreatAce",
-        "Sub2OfficialNoobie",
-        "Sub2NoobMaster123",
-        "Axiore",
-        "Sub2Daigrock",
-        "TantaiGaming",
-        "StrawHatMaine"
-      ],
-      "note30": "Verifie 30/06 : 23 codes actifs (RoCodes/PCGamesN 28/06) = set Zoneblox inchange.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "note1207": "Verifie 12/07 : description in-game sans code, aucun changement de liste.",
-      "pending": [
-        "1LOSTADMIN (a confirmer)"
-      ],
-      "officialSource": "trello",
-      "note0718": "Aucun changement. SUB2GAMERROBOT_EXP1 conserve (present historiquement sur Trello officiel).",
-      "note0719": "Verifie 19/07 : 24 actifs, coherent. Aucun changement.",
-      "note0722": "Verifie 22/07 : ~23 codes actifs, candidat 1LOSTADMIN (mention vague, a confirmer 3 sources). Liste inchangee."
-    },
-    "grow-a-garden": {
-      "lastChecked": "2026-07-23T05:00:00Z",
-      "descLen": 327,
-      "descExcerpt": "2 codes actifs (RDCAward, BEANORLEAVE10), coherent avec les sources de juillet 2026.",
-      "knownCodes": [
-        "RDCAward",
-        "BEANORLEAVE10"
-      ],
-      "note30": "Verifie 30/06 : page MAJ 26/06, set inchange.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "pending": [
-        "torigate (conflit PCGamesN/PGG actif vs Beebom expire)"
-      ],
-      "note0710": "Verifie 10/07: RDCAward/BEANORLEAVE10 coherents. Nouveau candidat TEAMGREENBEAN a rattacher au bon jeu (GaG ou GaG2) avant publication. Page inchangee.",
-      "note": "Verifie 11/07: liste de l'ORIGINAL inchangee (RDCAward etc.). TEAMGREENBEAN/WATERYOPLANTS appartiennent a Grow a Garden 2, PAS a l'original (confirme: codes non transferables entre les deux jeux).",
-      "note1207": "Verifie 12/07 : description in-game sans code, liste inchangee.",
-      "note0718": "Aucun changement.",
-      "note0719": "Verifie 19/07 : 2 actifs (RDCAward, BEANORLEAVE10), coherent. Aucun changement.",
-      "note0722": "Verifie 22/07 : sources confondent GaG et GaG2. Aucun code original confirme distinctement. Inchange."
-    },
-    "steal-a-brainrot": {
-      "lastChecked": "2026-07-23T05:00:00Z",
-      "descLen": 313,
-      "descExcerpt": "Description in-game consultee, aucun code. 3 sources confirment : aucun code gratuit actif.",
-      "knownCodes": [],
-      "note": "Aucun code actif publiquement (Beebom/PT/allthings/RoDen) — page vide correcte.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "note0710": "Verifie 10/07: sources toujours en conflit (certaines '0 code', une autre '22 codes actifs' sans les lister). Prudence: page sans code maintenue.",
-      "pending": [],
-      "note1207": "Verifie 12/07 : sources toujours en conflit (22 codes vs 0). Page maintenue SANS code (prudence).",
-      "note0719": "Verifie 19/07 : aucun code (le jeu n'en propose pas). Honnete, aucun changement."
-    },
-    "blade-ball": {
-      "lastChecked": "2026-07-23T05:00:00Z",
-      "descLen": 323,
-      "descExcerpt": "14 actifs. DUNGEONSRELEASE (50 Runes de Donjon) publie le 23/07, confirme par TheSpike, GamesRadar et Beebom (>=3 sources).",
-      "knownCodes": [
-        "DUNGEONSRELEASE",
-        "SERPENT",
-        "RAMADAN",
-        "4BVISITS",
-        "2BTHANKS",
-        "SPOOKYSEASON",
-        "FROGS",
-        "ENERGYSWORDS",
-        "SHARKATTACK",
-        "SUMMERWHEEL",
-        "SUMMERSTARTSHERE",
-        "RNGEMOTES",
-        "GIVEMELUCK",
-        "FREESPINS"
-      ],
-      "note02": "Verifie 02/07 : set inchange (Pocket Tactics/The Click/GamesRadar). Aucun nouveau code.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "note0710": "A VERIFIER 10/07: un agregateur liste un set tres different (5BVISITS/DRAGONS/DELAYBALL/1.5BTHANKS/UPD250COINS... vs notre set SERPENT/4BVISITS/2BTHANKS...). 'Aucun nouveau code depuis un moment, les anciens restent valides' (01/07). Page NON modifiee (ne pas degrader) -> passe dediee multi-sources requise au prochain run pour reconcilier.",
-      "note": "~14 codes actifs selon Beebom/Pocket Tactics/GamesRadar, aucun nouveau code depuis ~01/07. Non modifié ce run (conflits 18/07 non retranchés faute de source officielle).",
-      "note1207": "Verifie 12/07 : aucun nouveau code signale, liste maintenue.",
-      "note0718": "SERPENT : PT+GamesRadar actif vs Beebom expire -> conserve. BATTLEROYALE / DUNGEONSRELEASE / GOODVSEVIL : conflit 2v1 -> non publies.",
-      "note0722": "Verifie 22/07 : sources listent DUNGEONSRELEASE actif (50 Dungeon Runes) mais conflit persistant sur SERPENT/BATTLEROYALE. Prudence : liste inchangee, candidats en attente."
-    },
-    "blue-lock-rivals": {
-      "lastChecked": "2026-07-24T05:00:00Z",
-      "descLen": 313,
-      "descExcerpt": "Page Zoneblox en avance sur Beebom (30/06). Actifs : NELSHIDOU, NEWCHEMSOON, DEMON.",
-      "knownCodes": [
-        "QOLUPD",
-        "QUARTERFINALSOON",
-        "REBALANCES",
-        "NELSHIDOU",
-        "NEWCHEMSOON",
-        "DEMON"
-      ],
-      "pending": [],
-      "pendingNote": "Publies le 30/06 : GAGAREWORK/ADDRESSME/BEARCLAW confirmes par GamesRadar(29/06)+PGG(27/06)+PCGamer. Anciens NELEVENT/NEL2.0/MASSIVEUPDATE passes expires (GamesRadar 29/06).",
-      "officialSource": "ingame",
-      "note02": "Verifie 02/07 : PGG (MAJ 27/06) liste toujours GAGAREWORK/ADDRESSME/BEARCLAW en NEW/actif. Set prudent de 3 maintenu (conflit sur les anciens codes selon sources). Inchange.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "note": "+3 codes actifs 21/07 (QOLUPD, QUARTERFINALSOON, REBALANCES) confirmes Pocket Tactics/GamesRadar/PGG/allthings — 6 actifs.",
-      "note0718": "Beebom liste GAGAREWORK/ADDRESSME/BEARCLAW comme actifs alors que la page les a deja passes en expires -> conserve la version la plus recente.",
-      "note0719": "Verifie 19/07 : 3 actifs (NELSHIDOU, NEWCHEMSOON, DEMON) = sources PGG/PCGamer/Beebom (maj 17/07). Aucun changement."
-    },
-    "anime-last-stand": {
-      "lastChecked": "2026-07-19T05:00:00Z",
-      "descLen": 299,
-      "descExcerpt": "31 codes listes actifs sur la page ; les agregateurs n'en confirment que 4 recents.",
-      "knownCodes": [
-        "DemonicCyborg",
-        "TheATDSituationIsCrazy",
-        "ALSUPD1",
-        "World3Patch2",
-        "WORLD3REBALANCE",
-        "JoJoCurse",
-        "StellarWorld",
-        "SUPERDELAY",
-        "BalancePatch3.1",
-        "BalancePatch3",
-        "GACHIAKUTA!?",
-        "THETIMEISNEAR",
-        "Update84!",
-        "Update83!",
-        "SorryForDelay3",
-        "SorryForDelay2",
-        "SorryForDelay1",
-        "HypeWorld3",
-        "HAPPYVALENTINESDAY",
-        "ReleaseCode!",
-        "Update0"
-      ],
-      "note02": "A VERIFIER 02/07 : RoCodes (01/07) ne liste que 5 actifs (TheATDSituationIsCrazy/JoJoCurse/DemonicCyborg/ALSUPD1/World3Patch2) alors que la page en affiche 21 (MAJ contenu 10/06, probablement gonflee). Non modifiee ce run (1 seule source datee) -> trimmer au prochain run apres cross-check >=3 sources.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "note": "Deja tous presents sur la page (21 codes). Aucun changement.",
-      "pending": [
-        "HAPPYVALENTINESDAY, Update84!, THETIMEISNEAR, SUPERDELAY (Pocket Tactics les dit expires, 3 autres actifs)"
-      ],
-      "officialSource": "trello",
-      "note0718": "PRIORITE PROCHAIN RUN : ecart important a trancher (4 confirmes vs 31 publies).",
-      "note0719": "Verifie 19/07 : 21 codes actifs = liste Destructoid (01/07) A L'IDENTIQUE + corrobore Beebom. L'ecart '31 vs 4' etait un artefact de comptage (actifs+expires). Aucun changement."
-    },
-    "fisch": {
-      "lastChecked": "2026-07-23T05:00:00Z",
-      "descLen": 297,
-      "descExcerpt": "4 codes actifs (RoamingFishAndWaterPark + scarlet, TemporarySubmarine, CARBON).",
-      "knownCodes": [
-        "RoamingFishAndWaterPark",
-        "scarlet",
-        "TemporarySubmarine",
-        "CARBON"
-      ],
-      "pending": [
-        "DrylandsIsFire, HAPPY4TH, OllieAndFinWhale, KingCrabstle (non confirmes a 3 sources)"
-      ],
-      "officialSource": "twitter",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "note": "KingCrabstle expire (PC Gamer + PCGamesN).",
-      "note0718": "4 codes ajoutes en actifs. Les ~22 anciens codes restent en expires par prudence (PGG les liste actifs, conflit non tranche).",
-      "note0719": "CORRECTION 19/07 : PCGamer (maj 06/07) declare DrylandsIsFire, HAPPY4TH, KingCrabstle EXPIRES et ne liste que scarlet/TemporarySubmarine/CARBON en actifs. Les 4 codes evenementiels Drylands ajoutes le 18/07 avaient deja expire -> repasses en EXPIRES. Actifs 7->3. 'Mis a jour le' et compteurs mis a jour.",
-      "note0722": "Update Roaming Fish & Water Park : +1 code actif RoamingFishAndWaterPark confirme par X officiel @FischOnROBLOX + PGG/GamesRadar/Beebom/Roonby. Actifs 3->4."
-    },
-    "volleyball-legends": {
-      "lastChecked": "2026-07-24T05:00:00Z",
-      "descLen": 293,
-      "descExcerpt": "Update 78 en cours. Codes des Updates 76 et 77 expires (confirme PGG + GamesRadar + Destructoid + bloxodes).",
-      "knownCodes": [
-        "UPDATE_79",
-        "SEASON_17",
-        "FESTIVAL_UPD",
-        "UPDATE_78",
-        "LEADERBOARD",
-        "NEW_PACK"
-      ],
-      "pending": [],
-      "note02": "MAJ 02/07 : update 76 -> 3 codes actifs (UPDATE_76/ENCHO_RETURNS/BALANCE_76). Anciens update 75/saison 16/Jungle expires (RoCodes+Beebom+GamesRadar 01-02/07). Page passee de 9 a 3.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "note": "Update 79 : +UPDATE_79, SEASON_17, FESTIVAL_UPD (Roonby/Beebom/PGG/Fandom) — 6 actifs.",
-      "officialSource": "discord/aggregateurs",
-      "note0718": "6 codes bascules en expires, 3 actifs restants."
-    },
-    "anime-vanguards": {
-      "lastChecked": "2026-07-23T05:00:00Z",
-      "descLen": 288,
-      "descExcerpt": "Extermination Event Pt.1. WhoopsieDaisy ajoute.",
-      "knownCodes": [
-        "WhoopsieDaisy",
-        "PowerOfLove",
-        "EEPart1",
-        "BPSoon",
-        "13.5",
-        "EternalAdversaries",
-        "Gambler"
-      ],
-      "pending": [
-        "Les 8 codes publies donnes EXPIRES par GamesRadar 06/07 mais actifs par Twinfinite 14/07 -> a trancher en jeu",
-        "LateBP (1 source)"
-      ],
-      "note02": "CONFLIT 02/07 : Beebom (MAJ 22/06) liste 13.5/EternalAdversaries/Gambler actifs ; aggregateurs (01/07) disent 'aucun code actif, LagGone expire'. Prudence : page (8 actifs) laissee inchangee. A RECONCILIER au prochain run avec source datee du jour.",
-      "officialSource": "wiki.vanguards.gg",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "note": "LateBP expire le 19/07 (GamesRadar/PGG/PCGamer/allthings) -> bascule expire, 7 actifs.",
-      "note0718": "WhoopsieDaisy ajoute. PGG annonce seulement 7 actifs vs 22 sur la page : a trancher au prochain run.",
-      "note0719": "Verifie 19/07 : 8 actifs. 13.5/EternalAdversaries/Gambler confirmes actifs par PT (01/07) ET Beebom (22/06). Les 5 recents (WhoopsieDaisy, LateBP~exp19/07, PowerOfLove, EEPart1, BPSoon) issus du run precedent + index de recherche. kat NON ajoute (PT le dit expire = conflit). Aucun changement.",
-      "note0722": "Verifie 22/07 : PGG/Beebom/PocketTactics reaffichent LateBP en actif mais 4 sources l'avaient declare expire le 19/07. Prudence : maintenu EXPIRE, 7 actifs inchanges."
-    },
-    "pet-simulator-99": {
-      "lastChecked": "2026-07-23T05:00:00Z",
-      "descLen": 237,
-      "descExcerpt": "Aucun code : confirme (BIG Games ne diffuse que des codes sur merch physique).",
-      "knownCodes": [],
-      "note": "Aucun code gratuit : BIG Games ne diffuse que des codes sur le merch physique. Confirme juillet 2026.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "pending": []
-    },
-    "king-legacy": {
-      "lastChecked": "2026-07-23T05:00:00Z",
-      "descLen": 358,
-      "descExcerpt": "DinoxLive/Peodiz/SKGames : conflit PGG vs PC Gamer + Pocket Tactics. Maintenus.",
-      "knownCodes": [
-        "<3LEEPUNGG",
-        "FREESTATSRESET",
-        "WELCOMETOKINGLEGACY",
-        "DragonColorRefund",
-        "DinoxLive",
-        "Peodiz",
-        "SKGames"
-      ],
-      "note": "2MFAV basculé en expiré (absent des listes actives PC Gamer/Beebom/Pocket Tactics au 13/07). RainbowDragon laissé en expiré (conditionnel avant update 7).",
-      "officialSource": "none-recent",
-      "note1207": "Verifie 12/07 : aucun nouveau code depuis mi-mars selon Pocket Tactics / PC Gamer / Beebom (03/07). Liste des 13 codes maintenue inchangee.",
-      "pending": [
-        "DinoxLive, Peodiz, SKGames, RainbowDragon (conflit PGG vs PC Gamer/Pocket Tactics)"
-      ],
-      "note0719": "Verifie 19/07 : 8 actifs, 7 confirmes par PCGamer/PT (jeu sans MAJ recente). 2MFAV non retrouve dans les sources (candidat expire a surveiller) ; RainbowDragon (conditionnel) non ajoute. Aucun changement applique.",
-      "note0722": "Verifie 22/07 : aucun nouveau code depuis ~4 mois (PC Gamer). RainbowDragon apparait comme ancien code actif chez certaines sources. Liste inchangee par prudence."
-    },
-    "fruit-battlegrounds": {
-      "lastChecked": "2026-07-20T05:00:00Z",
-      "descLen": 314,
-      "descExcerpt": "+ OMGUPDATE22 (PGG, Pocket Tactics, Destructoid).",
-      "knownCodes": [
-        "OMGUPDATE22",
-        "YOO1M110K!",
-        "BIGMILLIHUNNID!",
-        "ITSTHEBILLION!",
-        "CODEFIX"
-      ],
-      "pending": [
-        "MILLI90SWAG (actif Pocket Tactics 17/07, expiré Beebom 01/06 -> conflit, non publié)"
-      ],
-      "note": "5 actifs confirmés par Pocket Tactics (17/07, source la plus récente). Aucun changement de liste.",
-      "note0719": "Verifie 19/07 : OMGUPDATE22 confirme actif (sources July). Correction d'un compteur incoherent (intro/banner disaient 4 alors que 5 codes affiches et game-meta=5) -> aligne a 5. Zoneblox en retard sur les codes recents (BIG1M170K!! etc.) : reconciliation dediee au prochain run. Pas de changement de liste."
-    },
-    "tower-defense-simulator": {
-      "lastChecked": "2026-07-24T05:00:00Z",
-      "descLen": 1080,
-      "descExcerpt": "2 codes confirmes (Pocket Tactics 10/07, Dexerto 06/07, Roblox Den).",
-      "knownCodes": [
-        "1MILCOMMUNITY",
-        "2MILLION"
-      ],
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "pending": [],
-      "note1207": "CHANGEMENT 12/07 : 0 -> 2 codes actifs (1MILCOMMUNITY, 2MILLION) confirmes par Pro Game Guides + Pocket Tactics (10/07) + PCGamesN (06/07). CHRISTMAS2025 / NOTESLA? en conflit entre sources -> non publies (prudence)."
-    },
-    "world-fighters": {
-      "lastChecked": "2026-07-24T05:00:00Z",
-      "descLen": 290,
-      "descExcerpt": "-3 expires (WOOGARPP, LASTSHUTDOWN, SRRY5SHUTDOWSERVANT) / +8 nouveaux (vague UPDATE8-10).",
-      "knownCodes": [
-        "UPDATE10PART2",
-        "UPDATE10",
-        "15MVISITS!",
-        "UPDATE9PT2",
-        "TEMPESTINVASIONHARD",
-        "HYPEEEE",
-        "UPDATE8PT2",
-        "ThanksForAllTheSupport",
-        "BERSERKUPDATE",
-        "SORRYYSACRIFICEBUG",
-        "SRRY4DELAY",
-        "YEAAA30KFAVORITES!!",
-        "DAMN25KFAVORITES!!",
-        "TYFOR14KLIKES!",
-        "CANTBELIEVE12KCCU!",
-        "OMG4MILLIONVISITS!",
-        "UPDATE7PT2",
-        "DRAGONDEFENSEHARD",
-        "SORRYYADELAY",
-        "UPDATE7",
-        "UPDATE6PT2",
-        "BATTLEPASS_SEASON2",
-        "25KLIKESAMAZING!!!",
-        "SERVANTS"
-      ],
-      "note": "Sources ambigues: PGG(avril) et Pocket Tactics(mai) couvrent le World Fighters StarX/DragonBall (place 95630541662383) DIFFERENT du notre. Beebom(juillet) seule source concordante -> insuffisant (1). Prudence: inchange. Verifier universeId 10032271327 et source dediee.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "pending": [
-        "UPDATE7, UPDATE6PT2, BATTLEPASS_SEASON2, 25KLIKESAMAZING!!!, SERVANTS (2 sources)",
-        "WEARESOSORRY, 25kLIKE (non confirmes a 3 sources)"
-      ],
-      "note1207": "Verifie 12/07 : sources en CONFLIT FORT et desynchronisees (Pocket Tactics fige au 15/05, listes divergentes chez Beebom/PGG). Jeu retombe a ~91 joueurs connectes. Liste Zoneblox maintenue telle quelle (prudence) ; candidats enregistres en attente. A reprioriser."
-    },
-    "noob-incremental": {
-      "lastChecked": "2026-07-14T05:00:00Z",
-      "descLen": 760,
-      "descExcerpt": "11 codes confirmes par 4 sources.",
-      "knownCodes": [
-        "REFUNDPRISM",
-        "10MVISITS!",
-        "HOPERUNESFIXEDONG!",
-        "SORRYWEIRDANDANNOYINGBUGS!!",
-        "35KCOMMUNITYMEMBERS!!",
-        "15KCCU!!",
-        "14KCCU!!",
-        "13KCCU!!",
-        "LABUPDATE",
-        "RELEASE",
-        "THANKS4JOINING"
-      ],
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "pending": [
-        "SORRYSHUTDOWN67, FOOTBALLEVENT (2 sources)",
-        "SORRYSHUTDOWN68, SORRYSHUTDOWN69 (1 source)"
-      ],
-      "note1207": "CHANGEMENT 12/07 : 14 -> 11 codes actifs. Ajouts REFUNDPRISM / 10MVISITS! / HOPERUNESFIXEDONG! / SORRYWEIRDANDANNOYINGBUGS!! (>=3 sources : Pocket Tactics 29/06, PCGamesN 11/07, Beebom 02/07, Try Hard Guides 23/06). Retraits : 12KCCU!!, 11KCCU!!, 10KCCU!!, 9KCCU!! (expires selon 3 sources) et YouFoundMe / GetBetterSon / BAZALRIGHT (plus confirmes par aucune source fiable). SORRYSHUTDOWN67/68/69 et FOOTBALLEVENT : seulement 2 sources -> en attente. Titre in-game '[EVENEMENT]' = evenement football en cours (indice, pas source de code)."
-    },
-    "defend-ur-base-with-anime": {
-      "lastChecked": "2026-07-14T05:00:00Z",
-      "descLen": 279,
-      "descExcerpt": "5 codes ; 67CODE! deja expire sur la page.",
-      "knownCodes": [
-        "JJKUPDATE",
-        "NEWMUTATIONS",
-        "BURAH",
-        "SRYFORSHUTDOWN!",
-        "CRAFTNERF!"
-      ],
-      "note1207": "Verifie 12/07 : liste maintenue (revue le 07/07).",
-      "pending": [
-        "JJKUPDATE, NEWMUTATIONS, BURAH (2 sources seulement)"
-      ]
-    },
-    "spin-a-soccer-card": {
-      "lastChecked": "2026-07-14T05:00:00Z",
-      "descLen": 282,
-      "knownCodes": [],
-      "descExcerpt": "BLAZE-STORM retire (plus present dans aucune liste active). Page passee a 'aucun code confirme'.",
-      "pending": [
-        "Rotation hebdomadaire : PHOENIX-MYTHIC, WOLF-METEOR, OWL-HAPPY, COMET-SHARK cites par 1 source chacun -> aucun publiable"
-      ],
-      "note": "Codes hebdomadaires, sources desynchronisees. Page inchangee, a verifier in-game."
-    },
-    "merge-a-nuke": {
-      "lastChecked": "2026-07-14T05:00:00Z",
-      "descLen": 317,
-      "knownCodes": [
-        "UPDATE2",
-        "BOOM",
-        "ATOMIC"
-      ],
-      "descExcerpt": "BOOM confirme par la description in-game officielle.",
-      "note": "Aucun changement.",
-      "pending": [
-        "ATOMIC/UPDATE2 : GamesRadar 01/07 les dit expires, 3 sources plus recentes les disent actifs -> maintenus"
-      ],
-      "officialSource": "ingame"
-    },
-    "vv-ultimatum": {
-      "lastChecked": "2026-07-14T05:00:00Z",
-      "descLen": 304,
-      "knownCodes": [
-        "UPD2",
-        "160KLIKES",
-        "35ROLLS"
-      ],
-      "descExcerpt": "3 codes, 2 sources seulement (Pocket Tactics 06/07, RoCodes 10/07).",
-      "pending": [
-        "UPDATE1, 140KLIKES, SHUTDOWNFIX (conflit PT expire vs RoCodes actif)"
-      ],
-      "pendingReason": "Conflit: Pocket Tactics (Jul 6) les donne EXPIRES, RoCodes (Jul 8) les donne ACTIFS. Prudence: non publies. Publies actifs = UPD2/160KLIKES/35ROLLS (confirmes par les 2 sources).",
-      "officialSource": "discord",
-      "note1207": "Verifie 12/07 : liste maintenue (revue le 08/07)."
-    },
-    "fifa-super-soccer": {
-      "lastChecked": "2026-07-14T05:00:00Z",
-      "descLen": 313,
-      "knownCodes": [
-        "WorldCupSecret"
-      ],
-      "descExcerpt": "WorldCupSecret confirme (Dexerto, Player.One, PGG).",
-      "note": "bestfootball, fifasupersoccer, sub2fssdevilz retires (expires/non confirmes).",
-      "pending": [
-        "rileycode, 250stockcards, Bvb09 (conflit)"
-      ]
-    },
-    "hypershot": {
-      "lastChecked": "2026-07-14T05:00:00Z",
-      "descLen": 306,
-      "knownCodes": [
-        "ONEBILLION"
-      ],
-      "descExcerpt": "ONEBILLION confirme par 5 sources.",
-      "pending": [
-        "SIXSEVEN, NEWUPDATE, HAPPYMAY (donnes actifs par Beebom/Destructoid/TechWiser mais retires le 13/07 faute de confirmation Pocket Tactics)"
-      ],
-      "note": "HAPPYMAY, NEWUPDATE, SIXSEVEN, 100K retires : non confirmes actifs par >=3 sources."
-    },
-    "blockspin": {
-      "lastChecked": "2026-07-23T05:00:00Z",
-      "descLen": 830,
-      "knownCodes": [
-        "HURRICANE_RELEASE",
-        "W7C28D"
-      ],
-      "descExcerpt": "W7C28D confirme in-game. M16_RELEASE et UNDER_THE_BARREL passes en attente (conflit) -> retires.",
-      "note": "Systeme de codes referral (1/compte). HURRICANE_RELEASE, UNDER_THE_BARREL, M16_RELEASE, W7C28D confirmes. Inchange.",
-      "officialSource": "ingame",
-      "note1207": "Verifie 12/07 : W7C28D confirme par la DESCRIPTION IN-GAME officielle (code parrainage nouveaux joueurs). HURRICANE_RELEASE / UNDER_THE_BARREL confirmes par Pocket Gamer / Roblox Den / Pocket Tactics. Aucun changement de liste.",
-      "pending": [
-        "UNDER_THE_BARREL (source unique, a confirmer)"
-      ],
-      "note0722": "Verifie 22/07 : candidat UNDER_THE_BARREL (10 Cases, source unique TechWiser). En attente."
-    },
-    "run-a-restaurant": {
-      "lastChecked": "2026-07-14T05:00:00Z",
-      "descLen": 280,
-      "knownCodes": [
-        "RAR4EVER"
-      ],
-      "descExcerpt": "RAR4EVER confirme par 4 sources.",
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "note1207": "Verifie 12/07 : RAR4EVER reste le seul code actif (Pocket Tactics, PCGamesN, Roblox Den, Dexerto, 10/07). Aucun changement."
-    },
-    "squid-game-x": {
-      "lastChecked": "2026-07-23T05:00:00Z",
-      "descLen": 1400,
-      "knownCodes": [
-        "$1.2M$",
-        "FRONTMAN",
-        "REVAMP",
-        "150KLIKES",
-        "PENTA",
-        "MINGLE",
-        "$1M$",
-        "UPDATE11RELEASE"
-      ],
-      "descExcerpt": "Description in-game officielle confirme le code $1.2M.",
-      "pendingCandidate": {
-        "token": "$1.2M$ (nom in-game: '1,2 million de dollars')",
-        "detected": "2026-06-27T16:59:23+00:00",
-        "status": "PUBLIE le 2026-06-29 — confirme par description in-game (« 1,2 million de dollars ») + Roblox Den (06/28/2026, NEW CODE $1.2M, 200 Coins)"
-      },
-      "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "officialSource": "ingame",
-      "note": "Description in-game confirme $1.2M. Aucun changement.",
-      "pending": [
-        "$1M$ (1 source web, mais serie coherente avec le code officiel $1.2M)"
-      ]
-    },
-    "catch-a-monster": {
-      "lastChecked": "2026-07-14T05:00:00Z",
-      "descLen": 291,
-      "knownCodes": [
-        "clacerglaw",
-        "massglaw",
-        "cabshark",
-        "ungolem",
-        "crysting",
-        "graon",
-        "magmorus",
-        "moovik",
-        "danvok",
-        "LIVEXP",
-        "LIVECOIN"
-      ],
-      "descExcerpt": "Conflit PT/PGG sur danvok, moovik, graon, magmorus. LIVEXP/LIVECOIN introuvables dans les sources -> a verifier en jeu.",
-      "pending": [
-        "danvok, moovik, graon, magmorus (conflit PT expire vs PGG actif)",
-        "LIVEXP / LIVECOIN : aucune source ne les reference (les sources listent 'xp' et 'coin') -> verifier en jeu"
-      ],
-      "pendingReason": "Sources en conflit fort: Pocket Tactics (Jul 1) liste actifs crablade/spabling/fspegg/skillfix/crysting/pectshall/coin/xp/cam et donne graon/magmorus/moovik/danvok EXPIRES; agregateurs (PGG/Destructoid) donnent clacerglaw/massglaw actifs (absents de PT). Jeu tres volatil. Page NON modifiee ce run -> necessite passe dediee multi-sources (>=3) avant remaniement.",
-      "note": "MAJ 10/07: passe dediee multi-sources effectuee. Destructoid (09/07, la plus fraiche) corrobore PGG (03/07): graon/magmorus/moovik/danvok ACTIFS (seul PT 01/07, plus ancien, les disait expires). crysting confirme actif par les 3 (PT+PGG+Destructoid). Nettoyage: retires ELECTNOV/BHCOIN/BRWAD/OVERVOLT (expires PT+Destructoid) + MEOWLY/SCAREEP/PECTSHALL (absents des sources actuelles). Ajoutes clacerglaw/massglaw/cabshark (nouveaux, PGG+Destructoid). Set actif 6->11.",
-      "officialSource": "trackers x3 (Pocket Tactics, Pro Game Guides, Destructoid)",
-      "note1207": "Verifie 12/07 : page revue en profondeur le 10/07, liste inchangee."
-    },
-    "brainrot-evolution": {
-      "lastChecked": "2026-07-23T05:00:00Z",
-      "knownCodes": [
-        "Uncle",
-        "ZAPYBARA",
-        "BWAB",
-        "Capybara",
-        "Brainblock",
-        "Season10",
-        "Dragoni",
-        "EVIL",
-        "Krang",
-        "Combinasion",
-        "Beowl",
-        "Easter2026",
-        "Luck",
-        "Patrick",
-        "Ding",
-        "Dididididi",
-        "Fishybara",
-        "Brainheaven",
-        "Love",
-        "Tsunami",
-        "2026",
-        "List",
-        "Cheese",
-        "OP"
-      ],
-      "officialSource": "none",
-      "note": "MAJ 09/07: liste etendue de 6 a 24 codes actifs, confirmee par Beebom (04/07) + Pocket Gamer (04/07) + Pocket Tactics (core). Jeu MAJ chaque samedi.",
-      "note1207": "Verifie 12/07 : page deja revue en profondeur le 09/07, aucun changement signale par les sources.",
-      "descExcerpt": "24 codes, 16 doublement confirmes."
-    },
-    "100-days-at-sea": {
-      "lastChecked": "2026-07-23T05:00:00Z",
-      "descLen": 560,
-      "knownCodes": [
-        "CORRUPT",
-        "HERO",
-        "ALIENS",
-        "20Pearls"
-      ],
-      "descExcerpt": "4 actifs (CORRUPT nouveau, HERO, ALIENS, 20Pearls, chacun 20 Pearls) confirmes par Pro Game Guides, GamesRadar, Beebom, RoCodes, GameRant au 20/07.",
-      "note1207": "Verifie 12/07 : sources en CONFLIT FORT. PCGamesN (09/07) : ALIENS actif mais expire le 10/07, 20Pearls expire. Pro Game Guides (27/06) : seul 'CODE' actif. Sportskeeda : HERO/ALIENS/20Pearls actifs. Shout du groupe Stranded Devs (425035678) = null (aucune source officielle). -> Page maintenue SANS code (prudence). A reprioriser au prochain run.",
-      "note": "HERO publie le 13-07 : 3 sources concordantes (Beebom, Destructoid, GameRant)."
-    },
-    "animal-hospital": {
-      "lastChecked": "2026-07-14T05:00:00Z",
-      "descLen": 225,
-      "knownCodes": [],
-      "descExcerpt": "Confirme : le jeu n'a pas de systeme de codes.",
-      "codeSystem": false,
-      "officialSource": "shout(null)+ingame-desc(no codes)",
-      "sourcesChecked": [
-        "Pro Game Guides",
-        "Dexerto.fr",
-        "Destructoid",
-        "groupe Roblox officiel (shout null)",
-        "description in-game"
-      ],
-      "note1207": "Verifie 12/07 : toujours aucun code (Pro Game Guides : 'Are There Any?'). Page maintenue sans code."
-    },
-    "grow-a-garden-2": {
-      "lastChecked": "2026-07-23T05:00:00Z",
-      "knownCodes": [
-        "TEAMGREENBEAN",
-        "WATERYOPLANTS"
-      ],
-      "note": "WATERYOPLANTS (10 arrosoirs) ajouté par MAJ 1.07.1 (1 juillet 2026), confirmé par PCGamesN, Pro Game Guides, PC Gamer, Beebom, FRVR, gag.gg (>=3 sources). Codes propres au sequel (ne marchent pas dans l'original et vice versa).",
-      "officialSource": "web>=3",
-      "descExcerpt": "TEAMGREENBEAN confirme par 5 sources. WATERYOPLANTS : 1 source.",
-      "pending": [
-        "WATERYOPLANTS (1 source)",
-        "STARBUD (deja hors liste active : introuvable dans les sources)"
-      ],
-      "note0722": "Verifie 22/07 : TEAMGREENBEAN toujours actif. Inchange."
-    },
-    "anime-rangers-x": {
-      "lastChecked": "2026-07-23T05:00:00Z",
-      "knownCodes": [
-        "HopeForRRX",
-        "GrindBoost!",
-        "SummerPart1Flop",
-        "DemonKingReturns",
-        "SummerPart1",
-        "MOTIVATION",
-        "JACKPOT",
-        "ALPHA",
-        "OMEGA",
-        "SHADOWBORNE",
-        "THEPLAYER",
-        "ATOMIC",
-        "ECLIPSE",
-        "BUILTINMACRO",
-        "NEWLOBBY"
-      ],
-      "note": "15/07 : page etait sur 6 codes (encore valides), ajout de 9 codes SUMMER confirmes (PGG 13/07 + agregat). ~15 autres codes PGG non ajoutes (a completer).",
-      "officialSource": "pgg+aggregate",
-      "note0719": "Verifie 19/07 : 15 actifs = sous-ensemble prudent de la liste PGG (30 codes, maj 13/07) — tous les 15 presents chez PGG, aucun faux actif. Candidats PGG additionnels non publies (1 seule source). Aucun changement.",
-      "note0722": "Verifie 22/07 : renomme Re:Rangers X. Candidat AdminAbuseNeedsABuff (1 source vague). En attente.",
-      "pending": [
-        "AdminAbuseNeedsABuff (source unique, a confirmer)"
-      ]
-    }
+  "grow-a-garden": {
+   "id": 7436755782,
+   "groupId": 35789249,
+   "trello": {
+    "boardId": null,
+    "url": null,
+    "codes": "absent",
+    "checked": "2026-06-26"
+   }
   },
-  "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
-  "lastRun": "2026-07-24",
-  "_pending2026-07-18": [
-    "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
-    "blade-ball: SERPENT -> Beebom le dit expire, PT+GamesRadar actif, conserve actif",
-    "fisch: ~22 codes marques expires sur Zoneblox mais listes actifs par Pro Game Guides (29 actifs au 13/07) -> a trancher avec une 2e/3e source",
-    "anime-last-stand: 31 actifs publies vs 4 confirmes par les agregateurs -> verification dediee au prochain run",
-    "anime-vanguards: 22 actifs publies vs 7 annonces par PGG -> a trancher",
-    "anime-rangers-x: ~15 codes PGG additionnels toujours non verifies (report du 15/07)"
-  ],
-  "_pending2026-07-19": [
-    "fruit-battlegrounds: Zoneblox liste 5 actifs (OMGUPDATE22 confirme) mais les sources July listent des paliers plus recents (BIG1M170K!!, 1M60WOWZER, 1M50INSANE, 4MPUTAT3, THEMARINEHERO, REBOOTPART2...) absents de Zoneblox -> reconciliation/ajout au prochain run (verifier 2-3 sources).",
-    "king-legacy: 2MFAV present sur Zoneblox mais absent des listes actives PCGamer/PT (probable expire) ; RainbowDragon (conditionnel) candidat a ajouter. A trancher avec 2e source.",
-    "anime-rangers-x: candidats PGG additionnels (AdminAbuseNeedsABuff, SHADOWAA, SummerTime, delaRXy, SINGULARITY, HOLYGRAIL, BOSSEVENT...) non publies faute de 2e/3e source. Verifier GamesRadar+Destructoid au prochain run.",
-    "anime-vanguards: LateBP expire ~19/07 (a repasser en expire au prochain run si confirme) ; kat en conflit (PT=expire) non ajoute.",
-    "blade-ball: candidats en conflit du 18/07 (BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL) non revus ce run.",
-    "~20 jeux hotGames non revus en profondeur ce run : pet-simulator-99, tower-defense-simulator, world-fighters, noob-incremental, defend-ur-base-with-anime, spin-a-soccer-card, merge-a-nuke, vv-ultimatum, fifa-super-soccer, hypershot, blockspin, run-a-restaurant, squid-game-x, catch-a-monster, brainrot-evolution, 100-days-at-sea, animal-hospital, volleyball-legends, grow-a-garden-2, blade-ball."
-  ],
-  "_pending2026-07-21": [
-    "anime-vanguards: patch 20/07 (unit builder overhaul) — codes eventuels non confirmes, a verifier au prochain run.",
-    "blade-ball: conflits SERPENT / BATTLEROYALE / GOODVSEVIL / DUNGEONSRELEASE toujours a trancher via source officielle.",
-    "grow-a-garden (original) : sources web confondent souvent avec GAG2 — verifier via source dediee au prochain run."
-  ],
-  "_pending2026-07-23": [
-    "squid-game-x: sources en CONFLIT (jeux de codes differents; page a $1.2M$ absent de l'agregat) -> inchange par prudence",
-    "grow-a-garden / grow-a-garden-2: agregat ne distingue pas les codes; aucun nouveau code confirme distinctement -> inchange",
-    "brainrot-evolution: aucune liste concrete >=3 sources concordantes -> inchange"
-  ],
-  "_pending2026-07-24": [
-    "blox-fruits: candidat 1LOSTADMIN toujours non confirme (source unique) -> non publie",
-    "anime-rangers-x: candidat AdminAbuseNeedsABuff non confirme -> non publie",
-    "blockspin: candidat UNDER_THE_BARREL non confirme -> non publie",
-    "Deep-verifies stables ce run (aucun changement de code): tower-defense-simulator (1MILCOMMUNITY, 2MILLION), blox-fruits (23-24), world-fighters (24), volleyball-legends (3), blue-lock-rivals (6).",
-    "A prioriser prochain run: noob-incremental, defend-ur-base-with-anime, spin-a-soccer-card, merge-a-nuke, vv-ultimatum, fifa-super-soccer, hypershot, run-a-restaurant, catch-a-monster, animal-hospital, squid-game-x, grow-a-garden/2."
-  ]
+  "steal-a-brainrot": {
+   "id": 7709344486,
+   "groupId": 35815907,
+   "trello": {
+    "boardId": null,
+    "url": null,
+    "codes": "absent",
+    "checked": "2026-06-26"
+   }
+  },
+  "blade-ball": {
+   "id": 4777817887,
+   "groupId": 12836673,
+   "trello": {
+    "boardId": "xdplf9oF",
+    "url": "https://trello.com/b/xdplf9oF.json",
+    "codes": "private",
+    "checked": "2026-06-26"
+   }
+  },
+  "blue-lock-rivals": {
+   "id": 6325068386,
+   "groupId": 34671275,
+   "trello": {
+    "boardId": "R9gCGamp",
+    "url": "https://trello.com/b/R9gCGamp.json",
+    "codes": "private",
+    "checked": "2026-06-26"
+   }
+  },
+  "anime-last-stand": {
+   "id": 4509896324,
+   "groupId": 12229756,
+   "trello": {
+    "boardId": "m1Mqaqkh",
+    "url": "https://trello.com/b/m1Mqaqkh.json",
+    "codes": "card",
+    "listMatch": "Codes",
+    "checked": "2026-06-26"
+   }
+  },
+  "fisch": {
+   "id": 5750914919,
+   "groupId": 7381705,
+   "trello": {
+    "boardId": "k8WMQFb3",
+    "url": "https://trello.com/b/k8WMQFb3.json",
+    "codes": "none",
+    "checked": "2026-06-26"
+   }
+  },
+  "volleyball-legends": {
+   "id": 6931042565,
+   "groupId": 35330702,
+   "trello": {
+    "boardId": "W659ag0P",
+    "url": "https://trello.com/b/W659ag0P.json",
+    "codes": "none",
+    "checked": "2026-06-26",
+    "note": "Carte 'In-Game Codes' = tutoriel de saisie uniquement, aucune valeur de code. Codes sur Discord/X."
+   }
+  },
+  "anime-vanguards": {
+   "id": 5578556129,
+   "groupId": 17219742,
+   "trello": {
+    "boardId": null,
+    "url": null,
+    "codes": "absent",
+    "checked": "2026-06-26"
+   }
+  },
+  "pet-simulator-99": {
+   "id": 3317771874,
+   "groupId": 3959677,
+   "trello": null
+  },
+  "king-legacy": {
+   "id": 1451439645,
+   "groupId": 5348890,
+   "trello": {
+    "boardId": "pb6yySnh",
+    "url": "https://trello.com/b/pb6yySnh.json",
+    "codes": "none",
+    "checked": "2026-06-26"
+   }
+  },
+  "fruit-battlegrounds": {
+   "id": 3457700596,
+   "groupId": 14453089,
+   "trello": {
+    "boardId": "NjZf12R5",
+    "url": "https://trello.com/b/NjZf12R5.json",
+    "codes": "none",
+    "checked": "2026-06-26"
+   }
+  },
+  "tower-defense-simulator": {
+   "id": 1176784616,
+   "groupId": 4914494,
+   "trello": null
+  },
+  "world-fighters": {
+   "id": 10032271327,
+   "groupId": 33910482,
+   "trello": null
+  },
+  "noob-incremental": {
+   "id": 9965411707,
+   "groupId": 356937272,
+   "trello": null
+  },
+  "defend-ur-base-with-anime": {
+   "id": 10111742174,
+   "groupId": 104489519,
+   "trello": null
+  },
+  "spin-a-soccer-card": {
+   "id": 9272693470,
+   "groupId": 520125566,
+   "trello": null
+  },
+  "merge-a-nuke": {
+   "id": 10199301628,
+   "groupId": 446405201,
+   "trello": null
+  },
+  "vv-ultimatum": {
+   "id": 2309918273,
+   "groupId": 9233039,
+   "trello": null
+  },
+  "fifa-super-soccer": {
+   "id": 4293374620,
+   "groupId": 16790592,
+   "trello": null
+  },
+  "hypershot": {
+   "id": 5995470825,
+   "groupId": 3385385,
+   "trello": null
+  },
+  "blockspin": {
+   "id": 6765805766,
+   "groupId": 33720745,
+   "trello": null
+  },
+  "run-a-restaurant": {
+   "id": 9970645639,
+   "groupId": 75550158,
+   "trello": null
+  },
+  "squid-game-x": {
+   "id": 2936053166,
+   "groupId": 12255003,
+   "trello": null
+  },
+  "catch-a-monster": {
+   "id": 9141743926,
+   "groupId": 15753989,
+   "trello": null
+  },
+  "brainrot-evolution": {
+   "id": 7332711118,
+   "groupId": 35325835,
+   "trello": null
+  },
+  "100-days-at-sea": {
+   "id": 9167377564,
+   "groupId": 425035678,
+   "trello": null
+  },
+  "animal-hospital": {
+   "id": 10148749921,
+   "placeId": 78515283254292,
+   "groupId": 344908697,
+   "note": "Jeu en forte croissance (~900K joueurs simultanés, 675M visites). Pas encore de système de codes au 2026-07-10 — surveiller l'ajout d'une zone de rédemption.",
+   "checked": "2026-07-10"
+  }
+ },
+ "snapshots": {
+  "blox-fruits": {
+   "lastChecked": "2026-07-25T05:00:00Z",
+   "descLen": 366,
+   "descExcerpt": "24 codes actifs. Les agregateurs en listent 23 (SUB2GAMERROBOT_EXP1 non repris par tous).",
+   "knownCodes": [
+    "SUB2GAMERROBOT_EXP1",
+    "EASTEREXP",
+    "Starcodeheo",
+    "Sub2Fer999",
+    "SUB2GAMERROBOT_RESET1",
+    "Lightningabuse",
+    "KITT_RESET",
+    "Sub2UncleKizaru",
+    "fudd10_v2",
+    "Fudd10",
+    "Bignews",
+    "kittgaming",
+    "Sub2CaptainMaui",
+    "Enyu_is_Pro",
+    "Magicbus",
+    "JCWK",
+    "Bluxxy",
+    "TheGreatAce",
+    "Sub2OfficialNoobie",
+    "Sub2NoobMaster123",
+    "Axiore",
+    "Sub2Daigrock",
+    "TantaiGaming",
+    "StrawHatMaine"
+   ],
+   "note30": "Verifie 30/06 : 23 codes actifs (RoCodes/PCGamesN 28/06) = set Zoneblox inchange.",
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "note1207": "Verifie 12/07 : description in-game sans code, aucun changement de liste.",
+   "pending": [
+    "1LOSTADMIN (a confirmer)"
+   ],
+   "officialSource": "trello",
+   "note0718": "Aucun changement. SUB2GAMERROBOT_EXP1 conserve (present historiquement sur Trello officiel).",
+   "note0719": "Verifie 19/07 : 24 actifs, coherent. Aucun changement.",
+   "note0722": "Verifie 22/07 : ~23 codes actifs, candidat 1LOSTADMIN (mention vague, a confirmer 3 sources). Liste inchangee."
+  },
+  "grow-a-garden": {
+   "lastChecked": "2026-07-25T05:00:00Z",
+   "descLen": 327,
+   "descExcerpt": "2 codes actifs (RDCAward, BEANORLEAVE10), coherent avec les sources de juillet 2026.",
+   "knownCodes": [
+    "RDCAward",
+    "BEANORLEAVE10"
+   ],
+   "note30": "Verifie 30/06 : page MAJ 26/06, set inchange.",
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "pending": [
+    "torigate (conflit PCGamesN/PGG actif vs Beebom expire)"
+   ],
+   "note0710": "Verifie 10/07: RDCAward/BEANORLEAVE10 coherents. Nouveau candidat TEAMGREENBEAN a rattacher au bon jeu (GaG ou GaG2) avant publication. Page inchangee.",
+   "note": "Verifie 11/07: liste de l'ORIGINAL inchangee (RDCAward etc.). TEAMGREENBEAN/WATERYOPLANTS appartiennent a Grow a Garden 2, PAS a l'original (confirme: codes non transferables entre les deux jeux).",
+   "note1207": "Verifie 12/07 : description in-game sans code, liste inchangee.",
+   "note0718": "Aucun changement.",
+   "note0719": "Verifie 19/07 : 2 actifs (RDCAward, BEANORLEAVE10), coherent. Aucun changement.",
+   "note0722": "Verifie 22/07 : sources confondent GaG et GaG2. Aucun code original confirme distinctement. Inchange."
+  },
+  "steal-a-brainrot": {
+   "lastChecked": "2026-07-25T05:00:00Z",
+   "descLen": 313,
+   "descExcerpt": "Description in-game consultee, aucun code. 3 sources confirment : aucun code gratuit actif.",
+   "knownCodes": [],
+   "note": "Aucun code actif publiquement (Beebom/PT/allthings/RoDen) — page vide correcte.",
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "note0710": "Verifie 10/07: sources toujours en conflit (certaines '0 code', une autre '22 codes actifs' sans les lister). Prudence: page sans code maintenue.",
+   "pending": [],
+   "note1207": "Verifie 12/07 : sources toujours en conflit (22 codes vs 0). Page maintenue SANS code (prudence).",
+   "note0719": "Verifie 19/07 : aucun code (le jeu n'en propose pas). Honnete, aucun changement."
+  },
+  "blade-ball": {
+   "lastChecked": "2026-07-25T05:00:00Z",
+   "descLen": 323,
+   "descExcerpt": "14 actifs. DUNGEONSRELEASE (50 Runes de Donjon) publie le 23/07, confirme par TheSpike, GamesRadar et Beebom (>=3 sources).",
+   "knownCodes": [
+    "DUNGEONSRELEASE",
+    "SERPENT",
+    "RAMADAN",
+    "4BVISITS",
+    "2BTHANKS",
+    "SPOOKYSEASON",
+    "FROGS",
+    "ENERGYSWORDS",
+    "SHARKATTACK",
+    "SUMMERWHEEL",
+    "SUMMERSTARTSHERE",
+    "RNGEMOTES",
+    "GIVEMELUCK",
+    "FREESPINS"
+   ],
+   "note02": "Verifie 02/07 : set inchange (Pocket Tactics/The Click/GamesRadar). Aucun nouveau code.",
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "note0710": "A VERIFIER 10/07: un agregateur liste un set tres different (5BVISITS/DRAGONS/DELAYBALL/1.5BTHANKS/UPD250COINS... vs notre set SERPENT/4BVISITS/2BTHANKS...). 'Aucun nouveau code depuis un moment, les anciens restent valides' (01/07). Page NON modifiee (ne pas degrader) -> passe dediee multi-sources requise au prochain run pour reconcilier.",
+   "note": "~14 codes actifs selon Beebom/Pocket Tactics/GamesRadar, aucun nouveau code depuis ~01/07. Non modifié ce run (conflits 18/07 non retranchés faute de source officielle).",
+   "note1207": "Verifie 12/07 : aucun nouveau code signale, liste maintenue.",
+   "note0718": "SERPENT : PT+GamesRadar actif vs Beebom expire -> conserve. BATTLEROYALE / DUNGEONSRELEASE / GOODVSEVIL : conflit 2v1 -> non publies.",
+   "note0722": "Verifie 22/07 : sources listent DUNGEONSRELEASE actif (50 Dungeon Runes) mais conflit persistant sur SERPENT/BATTLEROYALE. Prudence : liste inchangee, candidats en attente."
+  },
+  "blue-lock-rivals": {
+   "lastChecked": "2026-07-25T05:00:00Z",
+   "descLen": 313,
+   "descExcerpt": "Page Zoneblox en avance sur Beebom (30/06). Actifs : NELSHIDOU, NEWCHEMSOON, DEMON.",
+   "knownCodes": [
+    "QOLUPD",
+    "QUARTERFINALSOON",
+    "REBALANCES",
+    "NELSHIDOU",
+    "NEWCHEMSOON",
+    "DEMON"
+   ],
+   "pending": [],
+   "pendingNote": "Publies le 30/06 : GAGAREWORK/ADDRESSME/BEARCLAW confirmes par GamesRadar(29/06)+PGG(27/06)+PCGamer. Anciens NELEVENT/NEL2.0/MASSIVEUPDATE passes expires (GamesRadar 29/06).",
+   "officialSource": "ingame",
+   "note02": "Verifie 02/07 : PGG (MAJ 27/06) liste toujours GAGAREWORK/ADDRESSME/BEARCLAW en NEW/actif. Set prudent de 3 maintenu (conflit sur les anciens codes selon sources). Inchange.",
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "note": "+3 codes actifs 21/07 (QOLUPD, QUARTERFINALSOON, REBALANCES) confirmes Pocket Tactics/GamesRadar/PGG/allthings — 6 actifs.",
+   "note0718": "Beebom liste GAGAREWORK/ADDRESSME/BEARCLAW comme actifs alors que la page les a deja passes en expires -> conserve la version la plus recente.",
+   "note0719": "Verifie 19/07 : 3 actifs (NELSHIDOU, NEWCHEMSOON, DEMON) = sources PGG/PCGamer/Beebom (maj 17/07). Aucun changement."
+  },
+  "anime-last-stand": {
+   "lastChecked": "2026-07-25T05:00:00Z",
+   "descLen": 299,
+   "descExcerpt": "31 codes listes actifs sur la page ; les agregateurs n'en confirment que 4 recents.",
+   "knownCodes": [
+    "DemonicCyborg",
+    "TheATDSituationIsCrazy",
+    "ALSUPD1",
+    "World3Patch2",
+    "WORLD3REBALANCE",
+    "JoJoCurse",
+    "StellarWorld",
+    "SUPERDELAY",
+    "BalancePatch3.1",
+    "BalancePatch3",
+    "GACHIAKUTA!?",
+    "THETIMEISNEAR",
+    "Update84!",
+    "Update83!",
+    "SorryForDelay3",
+    "SorryForDelay2",
+    "SorryForDelay1",
+    "HypeWorld3",
+    "HAPPYVALENTINESDAY",
+    "ReleaseCode!",
+    "Update0"
+   ],
+   "note02": "A VERIFIER 02/07 : RoCodes (01/07) ne liste que 5 actifs (TheATDSituationIsCrazy/JoJoCurse/DemonicCyborg/ALSUPD1/World3Patch2) alors que la page en affiche 21 (MAJ contenu 10/06, probablement gonflee). Non modifiee ce run (1 seule source datee) -> trimmer au prochain run apres cross-check >=3 sources.",
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "note": "Deja tous presents sur la page (21 codes). Aucun changement.",
+   "pending": [
+    "HAPPYVALENTINESDAY, Update84!, THETIMEISNEAR, SUPERDELAY (Pocket Tactics les dit expires, 3 autres actifs)"
+   ],
+   "officialSource": "trello",
+   "note0718": "PRIORITE PROCHAIN RUN : ecart important a trancher (4 confirmes vs 31 publies).",
+   "note0719": "Verifie 19/07 : 21 codes actifs = liste Destructoid (01/07) A L'IDENTIQUE + corrobore Beebom. L'ecart '31 vs 4' etait un artefact de comptage (actifs+expires). Aucun changement."
+  },
+  "fisch": {
+   "lastChecked": "2026-07-25T05:00:00Z",
+   "descLen": 297,
+   "descExcerpt": "4 codes actifs (RoamingFishAndWaterPark + scarlet, TemporarySubmarine, CARBON).",
+   "knownCodes": [
+    "RoamingFishAndWaterPark",
+    "scarlet",
+    "TemporarySubmarine",
+    "CARBON"
+   ],
+   "pending": [
+    "DrylandsIsFire, HAPPY4TH, OllieAndFinWhale, KingCrabstle (non confirmes a 3 sources)"
+   ],
+   "officialSource": "twitter",
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "note": "KingCrabstle expire (PC Gamer + PCGamesN).",
+   "note0718": "4 codes ajoutes en actifs. Les ~22 anciens codes restent en expires par prudence (PGG les liste actifs, conflit non tranche).",
+   "note0719": "CORRECTION 19/07 : PCGamer (maj 06/07) declare DrylandsIsFire, HAPPY4TH, KingCrabstle EXPIRES et ne liste que scarlet/TemporarySubmarine/CARBON en actifs. Les 4 codes evenementiels Drylands ajoutes le 18/07 avaient deja expire -> repasses en EXPIRES. Actifs 7->3. 'Mis a jour le' et compteurs mis a jour.",
+   "note0722": "Update Roaming Fish & Water Park : +1 code actif RoamingFishAndWaterPark confirme par X officiel @FischOnROBLOX + PGG/GamesRadar/Beebom/Roonby. Actifs 3->4."
+  },
+  "volleyball-legends": {
+   "lastChecked": "2026-07-25T05:00:00Z",
+   "descLen": 293,
+   "descExcerpt": "Update 78 en cours. Codes des Updates 76 et 77 expires (confirme PGG + GamesRadar + Destructoid + bloxodes).",
+   "knownCodes": [
+    "UPDATE_79",
+    "SEASON_17",
+    "FESTIVAL_UPD",
+    "UPDATE_78",
+    "LEADERBOARD",
+    "NEW_PACK"
+   ],
+   "pending": [],
+   "note02": "MAJ 02/07 : update 76 -> 3 codes actifs (UPDATE_76/ENCHO_RETURNS/BALANCE_76). Anciens update 75/saison 16/Jungle expires (RoCodes+Beebom+GamesRadar 01-02/07). Page passee de 9 a 3.",
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "note": "Update 79 : +UPDATE_79, SEASON_17, FESTIVAL_UPD (Roonby/Beebom/PGG/Fandom) — 6 actifs.",
+   "officialSource": "discord/aggregateurs",
+   "note0718": "6 codes bascules en expires, 3 actifs restants."
+  },
+  "anime-vanguards": {
+   "lastChecked": "2026-07-25T05:00:00Z",
+   "descLen": 288,
+   "descExcerpt": "Extermination Event Pt.1. WhoopsieDaisy ajoute.",
+   "knownCodes": [
+    "WhoopsieDaisy",
+    "PowerOfLove",
+    "EEPart1",
+    "BPSoon",
+    "13.5",
+    "EternalAdversaries",
+    "Gambler"
+   ],
+   "pending": [
+    "Les 8 codes publies donnes EXPIRES par GamesRadar 06/07 mais actifs par Twinfinite 14/07 -> a trancher en jeu",
+    "LateBP (1 source)"
+   ],
+   "note02": "CONFLIT 02/07 : Beebom (MAJ 22/06) liste 13.5/EternalAdversaries/Gambler actifs ; aggregateurs (01/07) disent 'aucun code actif, LagGone expire'. Prudence : page (8 actifs) laissee inchangee. A RECONCILIER au prochain run avec source datee du jour.",
+   "officialSource": "wiki.vanguards.gg",
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "note": "LateBP expire le 19/07 (GamesRadar/PGG/PCGamer/allthings) -> bascule expire, 7 actifs.",
+   "note0718": "WhoopsieDaisy ajoute. PGG annonce seulement 7 actifs vs 22 sur la page : a trancher au prochain run.",
+   "note0719": "Verifie 19/07 : 8 actifs. 13.5/EternalAdversaries/Gambler confirmes actifs par PT (01/07) ET Beebom (22/06). Les 5 recents (WhoopsieDaisy, LateBP~exp19/07, PowerOfLove, EEPart1, BPSoon) issus du run precedent + index de recherche. kat NON ajoute (PT le dit expire = conflit). Aucun changement.",
+   "note0722": "Verifie 22/07 : PGG/Beebom/PocketTactics reaffichent LateBP en actif mais 4 sources l'avaient declare expire le 19/07. Prudence : maintenu EXPIRE, 7 actifs inchanges."
+  },
+  "pet-simulator-99": {
+   "lastChecked": "2026-07-23T05:00:00Z",
+   "descLen": 237,
+   "descExcerpt": "Aucun code : confirme (BIG Games ne diffuse que des codes sur merch physique).",
+   "knownCodes": [],
+   "note": "Aucun code gratuit : BIG Games ne diffuse que des codes sur le merch physique. Confirme juillet 2026.",
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "pending": []
+  },
+  "king-legacy": {
+   "lastChecked": "2026-07-25T05:00:00Z",
+   "descLen": 358,
+   "descExcerpt": "DinoxLive/Peodiz/SKGames : conflit PGG vs PC Gamer + Pocket Tactics. Maintenus.",
+   "knownCodes": [
+    "<3LEEPUNGG",
+    "FREESTATSRESET",
+    "WELCOMETOKINGLEGACY",
+    "DragonColorRefund",
+    "DinoxLive",
+    "Peodiz",
+    "SKGames"
+   ],
+   "note": "2MFAV basculé en expiré (absent des listes actives PC Gamer/Beebom/Pocket Tactics au 13/07). RainbowDragon laissé en expiré (conditionnel avant update 7).",
+   "officialSource": "none-recent",
+   "note1207": "Verifie 12/07 : aucun nouveau code depuis mi-mars selon Pocket Tactics / PC Gamer / Beebom (03/07). Liste des 13 codes maintenue inchangee.",
+   "pending": [
+    "DinoxLive, Peodiz, SKGames, RainbowDragon (conflit PGG vs PC Gamer/Pocket Tactics)"
+   ],
+   "note0719": "Verifie 19/07 : 8 actifs, 7 confirmes par PCGamer/PT (jeu sans MAJ recente). 2MFAV non retrouve dans les sources (candidat expire a surveiller) ; RainbowDragon (conditionnel) non ajoute. Aucun changement applique.",
+   "note0722": "Verifie 22/07 : aucun nouveau code depuis ~4 mois (PC Gamer). RainbowDragon apparait comme ancien code actif chez certaines sources. Liste inchangee par prudence."
+  },
+  "fruit-battlegrounds": {
+   "lastChecked": "2026-07-25T05:00:00Z",
+   "descLen": 314,
+   "descExcerpt": "+ OMGUPDATE22 (PGG, Pocket Tactics, Destructoid).",
+   "knownCodes": [
+    "OMGUPDATE22",
+    "YOO1M110K!",
+    "BIGMILLIHUNNID!",
+    "ITSTHEBILLION!",
+    "CODEFIX"
+   ],
+   "pending": [
+    "MILLI90SWAG (actif Pocket Tactics 17/07, expiré Beebom 01/06 -> conflit, non publié)"
+   ],
+   "note": "5 actifs confirmés par Pocket Tactics (17/07, source la plus récente). Aucun changement de liste.",
+   "note0719": "Verifie 19/07 : OMGUPDATE22 confirme actif (sources July). Correction d'un compteur incoherent (intro/banner disaient 4 alors que 5 codes affiches et game-meta=5) -> aligne a 5. Zoneblox en retard sur les codes recents (BIG1M170K!! etc.) : reconciliation dediee au prochain run. Pas de changement de liste."
+  },
+  "tower-defense-simulator": {
+   "lastChecked": "2026-07-24T05:00:00Z",
+   "descLen": 1080,
+   "descExcerpt": "2 codes confirmes (Pocket Tactics 10/07, Dexerto 06/07, Roblox Den).",
+   "knownCodes": [
+    "1MILCOMMUNITY",
+    "2MILLION"
+   ],
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "pending": [],
+   "note1207": "CHANGEMENT 12/07 : 0 -> 2 codes actifs (1MILCOMMUNITY, 2MILLION) confirmes par Pro Game Guides + Pocket Tactics (10/07) + PCGamesN (06/07). CHRISTMAS2025 / NOTESLA? en conflit entre sources -> non publies (prudence)."
+  },
+  "world-fighters": {
+   "lastChecked": "2026-07-24T05:00:00Z",
+   "descLen": 290,
+   "descExcerpt": "-3 expires (WOOGARPP, LASTSHUTDOWN, SRRY5SHUTDOWSERVANT) / +8 nouveaux (vague UPDATE8-10).",
+   "knownCodes": [
+    "UPDATE10PART2",
+    "UPDATE10",
+    "15MVISITS!",
+    "UPDATE9PT2",
+    "TEMPESTINVASIONHARD",
+    "HYPEEEE",
+    "UPDATE8PT2",
+    "ThanksForAllTheSupport",
+    "BERSERKUPDATE",
+    "SORRYYSACRIFICEBUG",
+    "SRRY4DELAY",
+    "YEAAA30KFAVORITES!!",
+    "DAMN25KFAVORITES!!",
+    "TYFOR14KLIKES!",
+    "CANTBELIEVE12KCCU!",
+    "OMG4MILLIONVISITS!",
+    "UPDATE7PT2",
+    "DRAGONDEFENSEHARD",
+    "SORRYYADELAY",
+    "UPDATE7",
+    "UPDATE6PT2",
+    "BATTLEPASS_SEASON2",
+    "25KLIKESAMAZING!!!",
+    "SERVANTS"
+   ],
+   "note": "Sources ambigues: PGG(avril) et Pocket Tactics(mai) couvrent le World Fighters StarX/DragonBall (place 95630541662383) DIFFERENT du notre. Beebom(juillet) seule source concordante -> insuffisant (1). Prudence: inchange. Verifier universeId 10032271327 et source dediee.",
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "pending": [
+    "UPDATE7, UPDATE6PT2, BATTLEPASS_SEASON2, 25KLIKESAMAZING!!!, SERVANTS (2 sources)",
+    "WEARESOSORRY, 25kLIKE (non confirmes a 3 sources)"
+   ],
+   "note1207": "Verifie 12/07 : sources en CONFLIT FORT et desynchronisees (Pocket Tactics fige au 15/05, listes divergentes chez Beebom/PGG). Jeu retombe a ~91 joueurs connectes. Liste Zoneblox maintenue telle quelle (prudence) ; candidats enregistres en attente. A reprioriser."
+  },
+  "noob-incremental": {
+   "lastChecked": "2026-07-14T05:00:00Z",
+   "descLen": 760,
+   "descExcerpt": "11 codes confirmes par 4 sources.",
+   "knownCodes": [
+    "REFUNDPRISM",
+    "10MVISITS!",
+    "HOPERUNESFIXEDONG!",
+    "SORRYWEIRDANDANNOYINGBUGS!!",
+    "35KCOMMUNITYMEMBERS!!",
+    "15KCCU!!",
+    "14KCCU!!",
+    "13KCCU!!",
+    "LABUPDATE",
+    "RELEASE",
+    "THANKS4JOINING"
+   ],
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "pending": [
+    "SORRYSHUTDOWN67, FOOTBALLEVENT (2 sources)",
+    "SORRYSHUTDOWN68, SORRYSHUTDOWN69 (1 source)"
+   ],
+   "note1207": "CHANGEMENT 12/07 : 14 -> 11 codes actifs. Ajouts REFUNDPRISM / 10MVISITS! / HOPERUNESFIXEDONG! / SORRYWEIRDANDANNOYINGBUGS!! (>=3 sources : Pocket Tactics 29/06, PCGamesN 11/07, Beebom 02/07, Try Hard Guides 23/06). Retraits : 12KCCU!!, 11KCCU!!, 10KCCU!!, 9KCCU!! (expires selon 3 sources) et YouFoundMe / GetBetterSon / BAZALRIGHT (plus confirmes par aucune source fiable). SORRYSHUTDOWN67/68/69 et FOOTBALLEVENT : seulement 2 sources -> en attente. Titre in-game '[EVENEMENT]' = evenement football en cours (indice, pas source de code)."
+  },
+  "defend-ur-base-with-anime": {
+   "lastChecked": "2026-07-14T05:00:00Z",
+   "descLen": 279,
+   "descExcerpt": "5 codes ; 67CODE! deja expire sur la page.",
+   "knownCodes": [
+    "JJKUPDATE",
+    "NEWMUTATIONS",
+    "BURAH",
+    "SRYFORSHUTDOWN!",
+    "CRAFTNERF!"
+   ],
+   "note1207": "Verifie 12/07 : liste maintenue (revue le 07/07).",
+   "pending": [
+    "JJKUPDATE, NEWMUTATIONS, BURAH (2 sources seulement)"
+   ]
+  },
+  "spin-a-soccer-card": {
+   "lastChecked": "2026-07-14T05:00:00Z",
+   "descLen": 282,
+   "knownCodes": [],
+   "descExcerpt": "BLAZE-STORM retire (plus present dans aucune liste active). Page passee a 'aucun code confirme'.",
+   "pending": [
+    "Rotation hebdomadaire : PHOENIX-MYTHIC, WOLF-METEOR, OWL-HAPPY, COMET-SHARK cites par 1 source chacun -> aucun publiable"
+   ],
+   "note": "Codes hebdomadaires, sources desynchronisees. Page inchangee, a verifier in-game."
+  },
+  "merge-a-nuke": {
+   "lastChecked": "2026-07-14T05:00:00Z",
+   "descLen": 317,
+   "knownCodes": [
+    "UPDATE2",
+    "BOOM",
+    "ATOMIC"
+   ],
+   "descExcerpt": "BOOM confirme par la description in-game officielle.",
+   "note": "Aucun changement.",
+   "pending": [
+    "ATOMIC/UPDATE2 : GamesRadar 01/07 les dit expires, 3 sources plus recentes les disent actifs -> maintenus"
+   ],
+   "officialSource": "ingame"
+  },
+  "vv-ultimatum": {
+   "lastChecked": "2026-07-14T05:00:00Z",
+   "descLen": 304,
+   "knownCodes": [
+    "UPD2",
+    "160KLIKES",
+    "35ROLLS"
+   ],
+   "descExcerpt": "3 codes, 2 sources seulement (Pocket Tactics 06/07, RoCodes 10/07).",
+   "pending": [
+    "UPDATE1, 140KLIKES, SHUTDOWNFIX (conflit PT expire vs RoCodes actif)"
+   ],
+   "pendingReason": "Conflit: Pocket Tactics (Jul 6) les donne EXPIRES, RoCodes (Jul 8) les donne ACTIFS. Prudence: non publies. Publies actifs = UPD2/160KLIKES/35ROLLS (confirmes par les 2 sources).",
+   "officialSource": "discord",
+   "note1207": "Verifie 12/07 : liste maintenue (revue le 08/07)."
+  },
+  "fifa-super-soccer": {
+   "lastChecked": "2026-07-14T05:00:00Z",
+   "descLen": 313,
+   "knownCodes": [
+    "WorldCupSecret"
+   ],
+   "descExcerpt": "WorldCupSecret confirme (Dexerto, Player.One, PGG).",
+   "note": "bestfootball, fifasupersoccer, sub2fssdevilz retires (expires/non confirmes).",
+   "pending": [
+    "rileycode, 250stockcards, Bvb09 (conflit)"
+   ]
+  },
+  "hypershot": {
+   "lastChecked": "2026-07-14T05:00:00Z",
+   "descLen": 306,
+   "knownCodes": [
+    "ONEBILLION"
+   ],
+   "descExcerpt": "ONEBILLION confirme par 5 sources.",
+   "pending": [
+    "SIXSEVEN, NEWUPDATE, HAPPYMAY (donnes actifs par Beebom/Destructoid/TechWiser mais retires le 13/07 faute de confirmation Pocket Tactics)"
+   ],
+   "note": "HAPPYMAY, NEWUPDATE, SIXSEVEN, 100K retires : non confirmes actifs par >=3 sources."
+  },
+  "blockspin": {
+   "lastChecked": "2026-07-23T05:00:00Z",
+   "descLen": 830,
+   "knownCodes": [
+    "HURRICANE_RELEASE",
+    "W7C28D"
+   ],
+   "descExcerpt": "W7C28D confirme in-game. M16_RELEASE et UNDER_THE_BARREL passes en attente (conflit) -> retires.",
+   "note": "Systeme de codes referral (1/compte). HURRICANE_RELEASE, UNDER_THE_BARREL, M16_RELEASE, W7C28D confirmes. Inchange.",
+   "officialSource": "ingame",
+   "note1207": "Verifie 12/07 : W7C28D confirme par la DESCRIPTION IN-GAME officielle (code parrainage nouveaux joueurs). HURRICANE_RELEASE / UNDER_THE_BARREL confirmes par Pocket Gamer / Roblox Den / Pocket Tactics. Aucun changement de liste.",
+   "pending": [
+    "UNDER_THE_BARREL (source unique, a confirmer)"
+   ],
+   "note0722": "Verifie 22/07 : candidat UNDER_THE_BARREL (10 Cases, source unique TechWiser). En attente."
+  },
+  "run-a-restaurant": {
+   "lastChecked": "2026-07-14T05:00:00Z",
+   "descLen": 280,
+   "knownCodes": [
+    "RAR4EVER"
+   ],
+   "descExcerpt": "RAR4EVER confirme par 4 sources.",
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "note1207": "Verifie 12/07 : RAR4EVER reste le seul code actif (Pocket Tactics, PCGamesN, Roblox Den, Dexerto, 10/07). Aucun changement."
+  },
+  "squid-game-x": {
+   "lastChecked": "2026-07-23T05:00:00Z",
+   "descLen": 1400,
+   "knownCodes": [
+    "$1.2M$",
+    "FRONTMAN",
+    "REVAMP",
+    "150KLIKES",
+    "PENTA",
+    "MINGLE",
+    "$1M$",
+    "UPDATE11RELEASE"
+   ],
+   "descExcerpt": "Description in-game officielle confirme le code $1.2M.",
+   "pendingCandidate": {
+    "token": "$1.2M$ (nom in-game: '1,2 million de dollars')",
+    "detected": "2026-06-27T16:59:23+00:00",
+    "status": "PUBLIE le 2026-06-29 — confirme par description in-game (« 1,2 million de dollars ») + Roblox Den (06/28/2026, NEW CODE $1.2M, 200 Coins)"
+   },
+   "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
+   "officialSource": "ingame",
+   "note": "Description in-game confirme $1.2M. Aucun changement.",
+   "pending": [
+    "$1M$ (1 source web, mais serie coherente avec le code officiel $1.2M)"
+   ]
+  },
+  "catch-a-monster": {
+   "lastChecked": "2026-07-14T05:00:00Z",
+   "descLen": 291,
+   "knownCodes": [
+    "clacerglaw",
+    "massglaw",
+    "cabshark",
+    "ungolem",
+    "crysting",
+    "graon",
+    "magmorus",
+    "moovik",
+    "danvok",
+    "LIVEXP",
+    "LIVECOIN"
+   ],
+   "descExcerpt": "Conflit PT/PGG sur danvok, moovik, graon, magmorus. LIVEXP/LIVECOIN introuvables dans les sources -> a verifier en jeu.",
+   "pending": [
+    "danvok, moovik, graon, magmorus (conflit PT expire vs PGG actif)",
+    "LIVEXP / LIVECOIN : aucune source ne les reference (les sources listent 'xp' et 'coin') -> verifier en jeu"
+   ],
+   "pendingReason": "Sources en conflit fort: Pocket Tactics (Jul 1) liste actifs crablade/spabling/fspegg/skillfix/crysting/pectshall/coin/xp/cam et donne graon/magmorus/moovik/danvok EXPIRES; agregateurs (PGG/Destructoid) donnent clacerglaw/massglaw actifs (absents de PT). Jeu tres volatil. Page NON modifiee ce run -> necessite passe dediee multi-sources (>=3) avant remaniement.",
+   "note": "MAJ 10/07: passe dediee multi-sources effectuee. Destructoid (09/07, la plus fraiche) corrobore PGG (03/07): graon/magmorus/moovik/danvok ACTIFS (seul PT 01/07, plus ancien, les disait expires). crysting confirme actif par les 3 (PT+PGG+Destructoid). Nettoyage: retires ELECTNOV/BHCOIN/BRWAD/OVERVOLT (expires PT+Destructoid) + MEOWLY/SCAREEP/PECTSHALL (absents des sources actuelles). Ajoutes clacerglaw/massglaw/cabshark (nouveaux, PGG+Destructoid). Set actif 6->11.",
+   "officialSource": "trackers x3 (Pocket Tactics, Pro Game Guides, Destructoid)",
+   "note1207": "Verifie 12/07 : page revue en profondeur le 10/07, liste inchangee."
+  },
+  "brainrot-evolution": {
+   "lastChecked": "2026-07-23T05:00:00Z",
+   "knownCodes": [
+    "Uncle",
+    "ZAPYBARA",
+    "BWAB",
+    "Capybara",
+    "Brainblock",
+    "Season10",
+    "Dragoni",
+    "EVIL",
+    "Krang",
+    "Combinasion",
+    "Beowl",
+    "Easter2026",
+    "Luck",
+    "Patrick",
+    "Ding",
+    "Dididididi",
+    "Fishybara",
+    "Brainheaven",
+    "Love",
+    "Tsunami",
+    "2026",
+    "List",
+    "Cheese",
+    "OP"
+   ],
+   "officialSource": "none",
+   "note": "MAJ 09/07: liste etendue de 6 a 24 codes actifs, confirmee par Beebom (04/07) + Pocket Gamer (04/07) + Pocket Tactics (core). Jeu MAJ chaque samedi.",
+   "note1207": "Verifie 12/07 : page deja revue en profondeur le 09/07, aucun changement signale par les sources.",
+   "descExcerpt": "24 codes, 16 doublement confirmes."
+  },
+  "100-days-at-sea": {
+   "lastChecked": "2026-07-23T05:00:00Z",
+   "descLen": 560,
+   "knownCodes": [
+    "CORRUPT",
+    "HERO",
+    "ALIENS",
+    "20Pearls"
+   ],
+   "descExcerpt": "4 actifs (CORRUPT nouveau, HERO, ALIENS, 20Pearls, chacun 20 Pearls) confirmes par Pro Game Guides, GamesRadar, Beebom, RoCodes, GameRant au 20/07.",
+   "note1207": "Verifie 12/07 : sources en CONFLIT FORT. PCGamesN (09/07) : ALIENS actif mais expire le 10/07, 20Pearls expire. Pro Game Guides (27/06) : seul 'CODE' actif. Sportskeeda : HERO/ALIENS/20Pearls actifs. Shout du groupe Stranded Devs (425035678) = null (aucune source officielle). -> Page maintenue SANS code (prudence). A reprioriser au prochain run.",
+   "note": "HERO publie le 13-07 : 3 sources concordantes (Beebom, Destructoid, GameRant)."
+  },
+  "animal-hospital": {
+   "lastChecked": "2026-07-14T05:00:00Z",
+   "descLen": 225,
+   "knownCodes": [],
+   "descExcerpt": "Confirme : le jeu n'a pas de systeme de codes.",
+   "codeSystem": false,
+   "officialSource": "shout(null)+ingame-desc(no codes)",
+   "sourcesChecked": [
+    "Pro Game Guides",
+    "Dexerto.fr",
+    "Destructoid",
+    "groupe Roblox officiel (shout null)",
+    "description in-game"
+   ],
+   "note1207": "Verifie 12/07 : toujours aucun code (Pro Game Guides : 'Are There Any?'). Page maintenue sans code."
+  },
+  "grow-a-garden-2": {
+   "lastChecked": "2026-07-25T05:00:00Z",
+   "knownCodes": [
+    "TEAMGREENBEAN",
+    "WATERYOPLANTS"
+   ],
+   "note": "WATERYOPLANTS (10 arrosoirs) ajouté par MAJ 1.07.1 (1 juillet 2026), confirmé par PCGamesN, Pro Game Guides, PC Gamer, Beebom, FRVR, gag.gg (>=3 sources). Codes propres au sequel (ne marchent pas dans l'original et vice versa).",
+   "officialSource": "web>=3",
+   "descExcerpt": "TEAMGREENBEAN confirme par 5 sources. WATERYOPLANTS : 1 source.",
+   "pending": [
+    "WATERYOPLANTS (1 source)",
+    "STARBUD (deja hors liste active : introuvable dans les sources)"
+   ],
+   "note0722": "Verifie 22/07 : TEAMGREENBEAN toujours actif. Inchange."
+  },
+  "anime-rangers-x": {
+   "lastChecked": "2026-07-23T05:00:00Z",
+   "knownCodes": [
+    "HopeForRRX",
+    "GrindBoost!",
+    "SummerPart1Flop",
+    "DemonKingReturns",
+    "SummerPart1",
+    "MOTIVATION",
+    "JACKPOT",
+    "ALPHA",
+    "OMEGA",
+    "SHADOWBORNE",
+    "THEPLAYER",
+    "ATOMIC",
+    "ECLIPSE",
+    "BUILTINMACRO",
+    "NEWLOBBY"
+   ],
+   "note": "15/07 : page etait sur 6 codes (encore valides), ajout de 9 codes SUMMER confirmes (PGG 13/07 + agregat). ~15 autres codes PGG non ajoutes (a completer).",
+   "officialSource": "pgg+aggregate",
+   "note0719": "Verifie 19/07 : 15 actifs = sous-ensemble prudent de la liste PGG (30 codes, maj 13/07) — tous les 15 presents chez PGG, aucun faux actif. Candidats PGG additionnels non publies (1 seule source). Aucun changement.",
+   "note0722": "Verifie 22/07 : renomme Re:Rangers X. Candidat AdminAbuseNeedsABuff (1 source vague). En attente.",
+   "pending": [
+    "AdminAbuseNeedsABuff (source unique, a confirmer)"
+   ]
+  }
+ },
+ "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
+ "lastRun": "2026-07-26",
+ "_pending2026-07-18": [
+  "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
+  "blade-ball: SERPENT -> Beebom le dit expire, PT+GamesRadar actif, conserve actif",
+  "fisch: ~22 codes marques expires sur Zoneblox mais listes actifs par Pro Game Guides (29 actifs au 13/07) -> a trancher avec une 2e/3e source",
+  "anime-last-stand: 31 actifs publies vs 4 confirmes par les agregateurs -> verification dediee au prochain run",
+  "anime-vanguards: 22 actifs publies vs 7 annonces par PGG -> a trancher",
+  "anime-rangers-x: ~15 codes PGG additionnels toujours non verifies (report du 15/07)"
+ ],
+ "_pending2026-07-19": [
+  "fruit-battlegrounds: Zoneblox liste 5 actifs (OMGUPDATE22 confirme) mais les sources July listent des paliers plus recents (BIG1M170K!!, 1M60WOWZER, 1M50INSANE, 4MPUTAT3, THEMARINEHERO, REBOOTPART2...) absents de Zoneblox -> reconciliation/ajout au prochain run (verifier 2-3 sources).",
+  "king-legacy: 2MFAV present sur Zoneblox mais absent des listes actives PCGamer/PT (probable expire) ; RainbowDragon (conditionnel) candidat a ajouter. A trancher avec 2e source.",
+  "anime-rangers-x: candidats PGG additionnels (AdminAbuseNeedsABuff, SHADOWAA, SummerTime, delaRXy, SINGULARITY, HOLYGRAIL, BOSSEVENT...) non publies faute de 2e/3e source. Verifier GamesRadar+Destructoid au prochain run.",
+  "anime-vanguards: LateBP expire ~19/07 (a repasser en expire au prochain run si confirme) ; kat en conflit (PT=expire) non ajoute.",
+  "blade-ball: candidats en conflit du 18/07 (BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL) non revus ce run.",
+  "~20 jeux hotGames non revus en profondeur ce run : pet-simulator-99, tower-defense-simulator, world-fighters, noob-incremental, defend-ur-base-with-anime, spin-a-soccer-card, merge-a-nuke, vv-ultimatum, fifa-super-soccer, hypershot, blockspin, run-a-restaurant, squid-game-x, catch-a-monster, brainrot-evolution, 100-days-at-sea, animal-hospital, volleyball-legends, grow-a-garden-2, blade-ball."
+ ],
+ "_pending2026-07-21": [
+  "anime-vanguards: patch 20/07 (unit builder overhaul) — codes eventuels non confirmes, a verifier au prochain run.",
+  "blade-ball: conflits SERPENT / BATTLEROYALE / GOODVSEVIL / DUNGEONSRELEASE toujours a trancher via source officielle.",
+  "grow-a-garden (original) : sources web confondent souvent avec GAG2 — verifier via source dediee au prochain run."
+ ],
+ "_pending2026-07-23": [
+  "squid-game-x: sources en CONFLIT (jeux de codes differents; page a $1.2M$ absent de l'agregat) -> inchange par prudence",
+  "grow-a-garden / grow-a-garden-2: agregat ne distingue pas les codes; aucun nouveau code confirme distinctement -> inchange",
+  "brainrot-evolution: aucune liste concrete >=3 sources concordantes -> inchange"
+ ],
+ "_pending2026-07-24": [
+  "blox-fruits: candidat 1LOSTADMIN toujours non confirme (source unique) -> non publie",
+  "anime-rangers-x: candidat AdminAbuseNeedsABuff non confirme -> non publie",
+  "blockspin: candidat UNDER_THE_BARREL non confirme -> non publie",
+  "Deep-verifies stables ce run (aucun changement de code): tower-defense-simulator (1MILCOMMUNITY, 2MILLION), blox-fruits (23-24), world-fighters (24), volleyball-legends (3), blue-lock-rivals (6).",
+  "A prioriser prochain run: noob-incremental, defend-ur-base-with-anime, spin-a-soccer-card, merge-a-nuke, vv-ultimatum, fifa-super-soccer, hypershot, run-a-restaurant, catch-a-monster, animal-hospital, squid-game-x, grow-a-garden/2."
+ ],
+ "_pending2026-07-25": {
+  "volleyball-legends": "3 codes actifs (UPDATE_79, SEASON_17, FESTIVAL_UPD). UPDATE_78/LEADERBOARD/NEW_PACK expires (Update 78) confirme par Beebom, GamesRadar, PGG, TheClick, bloxodes. FAIT.",
+  "grow-a-garden-2": "Ajout REMEMBERTODRINKWATER (1 arrosoir commun) confirme actif par PCGamer, Beebom, PocketGamer, Destructoid, GamesRadar. Total 3 actifs. FAIT.",
+  "steal-a-brainrot": "EN ATTENTE: sources en conflit (0 vs 22 actifs). Codes = drops admin/merch tres courts (BESTBRAINROTEVER, DIVINECURSED cites par sources isolees; BRAINROT2025/STEALIT = fake). Aucun consensus >=3 sources -> page laissee sans code (prudence). Verifier Discord officiel au prochain run.",
+  "grow-a-garden": "BEANORLEAVE10 possiblement expire (signal faible Beebom) -> conserve, a surveiller. RDCAward actif confirme.",
+  "autres-hot": "blox-fruits (24 actifs, EASTEREXP dernier), blue-lock-rivals (GAGAREWORK confirme actif), anime-vanguards, blade-ball (14 actifs), fisch (7 actifs), king-legacy, fruit-battlegrounds, anime-last-stand: verifies >=3 sources, aucun changement -> Verifie le rafraichi."
+ },
+ "_pending2026-07-26": {
+  "volleyball-legends": "Update 80 sorti (25/07): AJOUT UPDATE_80, HIDARI_FINALLY, ENCHO_NERF (5 Lucky Spins chacun). UPDATE_79/SEASON_17/FESTIVAL_UPD toujours actifs (confirme nerdschalk, roonby, PGG, fossbytes, gamesradar). Total 3->6. FAIT.",
+  "blue-lock-rivals": "Update Semi-Finals: AJOUT SEMIFINALS, WORLDTOURNAMENTPART3, NEWMAP (confirme beebom, PGG, pcgamesn, pockettactics, twinfinite). Anciens 6 toujours actifs. Total 6->9. FAIT.",
+  "anime-last-stand": "Update JoJo Part 7: AJOUT DelaySorryals, ALSUPD2, BleachSS, HuntersMark, SaveRukia (confirme PocketTactics, Fossbytes, Beebom, TryHardGuides, Destructoid). Total 21->26. FAIT.",
+  "grow-a-garden": "torigate (Whispering Torii) = EN CONFLIT: certaines sources (pcgamesn, robloxden, mein-mmo, findingdulcinea) le listent actif, mais validite publiquement disputee et notre page le marque expire. PRUDENCE: laisse expire, NON publie. BEANORLEAVE10 confirme encore actif. RDCAward actif. Aucun changement.",
+  "steal-a-brainrot": "Toujours en conflit (0 vs 22 actifs selon sources). Codes = drops admin tres courts, aucun consensus >=3. PRUDENCE maintenue: page sans code. A revoir via Discord officiel.",
+  "verifies-sans-changement": "blox-fruits (24 actifs, rien de neuf), grow-a-garden-2 (3 actifs: TEAMGREENBEAN/WATERYOPLANTS/REMEMBERTODRINKWATER), blade-ball (14 actifs), fisch (7 actifs, RoamingFishAndWaterPark), king-legacy (dormant), fruit-battlegrounds, anime-vanguards (LateBP expire): Verifie le rafraichi au 26/07."
+ }
 }
