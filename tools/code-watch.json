@@ -205,7 +205,7 @@
  },
  "snapshots": {
   "blox-fruits": {
-   "lastChecked": "2026-07-25T05:00:00Z",
+   "lastChecked": "2026-07-27T05:00:00Z",
    "descLen": 366,
    "descExcerpt": "24 codes actifs. Les agregateurs en listent 23 (SUB2GAMERROBOT_EXP1 non repris par tous).",
    "knownCodes": [
@@ -243,10 +243,11 @@
    "officialSource": "trello",
    "note0718": "Aucun changement. SUB2GAMERROBOT_EXP1 conserve (present historiquement sur Trello officiel).",
    "note0719": "Verifie 19/07 : 24 actifs, coherent. Aucun changement.",
-   "note0722": "Verifie 22/07 : ~23 codes actifs, candidat 1LOSTADMIN (mention vague, a confirmer 3 sources). Liste inchangee."
+   "note0722": "Verifie 22/07 : ~23 codes actifs, candidat 1LOSTADMIN (mention vague, a confirmer 3 sources). Liste inchangee.",
+   "note0727": "Verifie 27/07 : sources coherentes, aucun changement de liste."
   },
   "grow-a-garden": {
-   "lastChecked": "2026-07-25T05:00:00Z",
+   "lastChecked": "2026-07-27T05:00:00Z",
    "descLen": 327,
    "descExcerpt": "2 codes actifs (RDCAward, BEANORLEAVE10), coherent avec les sources de juillet 2026.",
    "knownCodes": [
@@ -263,10 +264,11 @@
    "note1207": "Verifie 12/07 : description in-game sans code, liste inchangee.",
    "note0718": "Aucun changement.",
    "note0719": "Verifie 19/07 : 2 actifs (RDCAward, BEANORLEAVE10), coherent. Aucun changement.",
-   "note0722": "Verifie 22/07 : sources confondent GaG et GaG2. Aucun code original confirme distinctement. Inchange."
+   "note0722": "Verifie 22/07 : sources confondent GaG et GaG2. Aucun code original confirme distinctement. Inchange.",
+   "note0727": "Verifie 27/07 : sources coherentes, aucun changement de liste."
   },
   "steal-a-brainrot": {
-   "lastChecked": "2026-07-25T05:00:00Z",
+   "lastChecked": "2026-07-27T05:00:00Z",
    "descLen": 313,
    "descExcerpt": "Description in-game consultee, aucun code. 3 sources confirment : aucun code gratuit actif.",
    "knownCodes": [],
@@ -275,10 +277,11 @@
    "note0710": "Verifie 10/07: sources toujours en conflit (certaines '0 code', une autre '22 codes actifs' sans les lister). Prudence: page sans code maintenue.",
    "pending": [],
    "note1207": "Verifie 12/07 : sources toujours en conflit (22 codes vs 0). Page maintenue SANS code (prudence).",
-   "note0719": "Verifie 19/07 : aucun code (le jeu n'en propose pas). Honnete, aucun changement."
+   "note0719": "Verifie 19/07 : aucun code (le jeu n'en propose pas). Honnete, aucun changement.",
+   "note0727": "Verifie 27/07 : sources toujours en conflit (0 vs 23 actifs). Page maintenue SANS code (prudence)."
   },
   "blade-ball": {
-   "lastChecked": "2026-07-25T05:00:00Z",
+   "lastChecked": "2026-07-27T05:00:00Z",
    "descLen": 323,
    "descExcerpt": "14 actifs. DUNGEONSRELEASE (50 Runes de Donjon) publie le 23/07, confirme par TheSpike, GamesRadar et Beebom (>=3 sources).",
    "knownCodes": [
@@ -303,10 +306,11 @@
    "note": "~14 codes actifs selon Beebom/Pocket Tactics/GamesRadar, aucun nouveau code depuis ~01/07. Non modifié ce run (conflits 18/07 non retranchés faute de source officielle).",
    "note1207": "Verifie 12/07 : aucun nouveau code signale, liste maintenue.",
    "note0718": "SERPENT : PT+GamesRadar actif vs Beebom expire -> conserve. BATTLEROYALE / DUNGEONSRELEASE / GOODVSEVIL : conflit 2v1 -> non publies.",
-   "note0722": "Verifie 22/07 : sources listent DUNGEONSRELEASE actif (50 Dungeon Runes) mais conflit persistant sur SERPENT/BATTLEROYALE. Prudence : liste inchangee, candidats en attente."
+   "note0722": "Verifie 22/07 : sources listent DUNGEONSRELEASE actif (50 Dungeon Runes) mais conflit persistant sur SERPENT/BATTLEROYALE. Prudence : liste inchangee, candidats en attente.",
+   "note0727": "Verifie 27/07 : sources coherentes, aucun changement de liste."
   },
   "blue-lock-rivals": {
-   "lastChecked": "2026-07-25T05:00:00Z",
+   "lastChecked": "2026-07-27T05:00:00Z",
    "descLen": 313,
    "descExcerpt": "Page Zoneblox en avance sur Beebom (30/06). Actifs : NELSHIDOU, NEWCHEMSOON, DEMON.",
    "knownCodes": [
@@ -324,10 +328,11 @@
    "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
    "note": "+3 codes actifs 21/07 (QOLUPD, QUARTERFINALSOON, REBALANCES) confirmes Pocket Tactics/GamesRadar/PGG/allthings — 6 actifs.",
    "note0718": "Beebom liste GAGAREWORK/ADDRESSME/BEARCLAW comme actifs alors que la page les a deja passes en expires -> conserve la version la plus recente.",
-   "note0719": "Verifie 19/07 : 3 actifs (NELSHIDOU, NEWCHEMSOON, DEMON) = sources PGG/PCGamer/Beebom (maj 17/07). Aucun changement."
+   "note0719": "Verifie 19/07 : 3 actifs (NELSHIDOU, NEWCHEMSOON, DEMON) = sources PGG/PCGamer/Beebom (maj 17/07). Aucun changement.",
+   "note0727": "Verifie 27/07 : sources coherentes, aucun changement de liste."
   },
   "anime-last-stand": {
-   "lastChecked": "2026-07-25T05:00:00Z",
+   "lastChecked": "2026-07-27T05:00:00Z",
    "descLen": 299,
    "descExcerpt": "31 codes listes actifs sur la page ; les agregateurs n'en confirment que 4 recents.",
    "knownCodes": [
@@ -361,13 +366,15 @@
    ],
    "officialSource": "trello",
    "note0718": "PRIORITE PROCHAIN RUN : ecart important a trancher (4 confirmes vs 31 publies).",
-   "note0719": "Verifie 19/07 : 21 codes actifs = liste Destructoid (01/07) A L'IDENTIQUE + corrobore Beebom. L'ecart '31 vs 4' etait un artefact de comptage (actifs+expires). Aucun changement."
+   "note0719": "Verifie 19/07 : 21 codes actifs = liste Destructoid (01/07) A L'IDENTIQUE + corrobore Beebom. L'ecart '31 vs 4' etait un artefact de comptage (actifs+expires). Aucun changement.",
+   "note0727": "Verifie 27/07 : sources coherentes, aucun changement de liste."
   },
   "fisch": {
-   "lastChecked": "2026-07-25T05:00:00Z",
+   "lastChecked": "2026-07-27T05:00:00Z",
    "descLen": 297,
    "descExcerpt": "4 codes actifs (RoamingFishAndWaterPark + scarlet, TemporarySubmarine, CARBON).",
    "knownCodes": [
+    "Sorry4Delay",
     "RoamingFishAndWaterPark",
     "scarlet",
     "TemporarySubmarine",
@@ -381,10 +388,11 @@
    "note": "KingCrabstle expire (PC Gamer + PCGamesN).",
    "note0718": "4 codes ajoutes en actifs. Les ~22 anciens codes restent en expires par prudence (PGG les liste actifs, conflit non tranche).",
    "note0719": "CORRECTION 19/07 : PCGamer (maj 06/07) declare DrylandsIsFire, HAPPY4TH, KingCrabstle EXPIRES et ne liste que scarlet/TemporarySubmarine/CARBON en actifs. Les 4 codes evenementiels Drylands ajoutes le 18/07 avaient deja expire -> repasses en EXPIRES. Actifs 7->3. 'Mis a jour le' et compteurs mis a jour.",
-   "note0722": "Update Roaming Fish & Water Park : +1 code actif RoamingFishAndWaterPark confirme par X officiel @FischOnROBLOX + PGG/GamesRadar/Beebom/Roonby. Actifs 3->4."
+   "note0722": "Update Roaming Fish & Water Park : +1 code actif RoamingFishAndWaterPark confirme par X officiel @FischOnROBLOX + PGG/GamesRadar/Beebom/Roonby. Actifs 3->4.",
+   "note0727": "Update The Chapel (25/07): +1 code actif Sorry4Delay (1000 Coins, Shiny Terroscuttler, titre, objet) confirme PGG + wiki officiel Fischipedia + Destructoid. Actifs 4->5."
   },
   "volleyball-legends": {
-   "lastChecked": "2026-07-25T05:00:00Z",
+   "lastChecked": "2026-07-27T05:00:00Z",
    "descLen": 293,
    "descExcerpt": "Update 78 en cours. Codes des Updates 76 et 77 expires (confirme PGG + GamesRadar + Destructoid + bloxodes).",
    "knownCodes": [
@@ -400,10 +408,11 @@
    "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
    "note": "Update 79 : +UPDATE_79, SEASON_17, FESTIVAL_UPD (Roonby/Beebom/PGG/Fandom) — 6 actifs.",
    "officialSource": "discord/aggregateurs",
-   "note0718": "6 codes bascules en expires, 3 actifs restants."
+   "note0718": "6 codes bascules en expires, 3 actifs restants.",
+   "note0727": "Verifie 27/07 : sources coherentes, aucun changement de liste."
   },
   "anime-vanguards": {
-   "lastChecked": "2026-07-25T05:00:00Z",
+   "lastChecked": "2026-07-27T05:00:00Z",
    "descLen": 288,
    "descExcerpt": "Extermination Event Pt.1. WhoopsieDaisy ajoute.",
    "knownCodes": [
@@ -425,7 +434,8 @@
    "note": "LateBP expire le 19/07 (GamesRadar/PGG/PCGamer/allthings) -> bascule expire, 7 actifs.",
    "note0718": "WhoopsieDaisy ajoute. PGG annonce seulement 7 actifs vs 22 sur la page : a trancher au prochain run.",
    "note0719": "Verifie 19/07 : 8 actifs. 13.5/EternalAdversaries/Gambler confirmes actifs par PT (01/07) ET Beebom (22/06). Les 5 recents (WhoopsieDaisy, LateBP~exp19/07, PowerOfLove, EEPart1, BPSoon) issus du run precedent + index de recherche. kat NON ajoute (PT le dit expire = conflit). Aucun changement.",
-   "note0722": "Verifie 22/07 : PGG/Beebom/PocketTactics reaffichent LateBP en actif mais 4 sources l'avaient declare expire le 19/07. Prudence : maintenu EXPIRE, 7 actifs inchanges."
+   "note0722": "Verifie 22/07 : PGG/Beebom/PocketTactics reaffichent LateBP en actif mais 4 sources l'avaient declare expire le 19/07. Prudence : maintenu EXPIRE, 7 actifs inchanges.",
+   "note0727": "Verifie 27/07 : sources coherentes, aucun changement de liste."
   },
   "pet-simulator-99": {
    "lastChecked": "2026-07-23T05:00:00Z",
@@ -771,7 +781,7 @@
    "note1207": "Verifie 12/07 : toujours aucun code (Pro Game Guides : 'Are There Any?'). Page maintenue sans code."
   },
   "grow-a-garden-2": {
-   "lastChecked": "2026-07-25T05:00:00Z",
+   "lastChecked": "2026-07-27T05:00:00Z",
    "knownCodes": [
     "TEAMGREENBEAN",
     "WATERYOPLANTS"
@@ -783,7 +793,8 @@
     "WATERYOPLANTS (1 source)",
     "STARBUD (deja hors liste active : introuvable dans les sources)"
    ],
-   "note0722": "Verifie 22/07 : TEAMGREENBEAN toujours actif. Inchange."
+   "note0722": "Verifie 22/07 : TEAMGREENBEAN toujours actif. Inchange.",
+   "note0727": "Verifie 27/07 : sources coherentes, aucun changement de liste."
   },
   "anime-rangers-x": {
    "lastChecked": "2026-07-23T05:00:00Z",
@@ -814,7 +825,7 @@
   }
  },
  "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
- "lastRun": "2026-07-26",
+ "lastRun": "2026-07-27",
  "_pending2026-07-18": [
   "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
   "blade-ball: SERPENT -> Beebom le dit expire, PT+GamesRadar actif, conserve actif",

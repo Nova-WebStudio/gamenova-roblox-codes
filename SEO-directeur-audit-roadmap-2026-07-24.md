@@ -88,7 +88,21 @@ Effet топ­ique : renforce le **hub Blox Fruits** (codes ↔ tier fruits ↔ 
 
 ---
 
-## 7. Suggestion pour demain (J5 — 27/07)
+## 7. Suggestion pour demain (J6 — 28/07)
+
+**Travail fait le 27/07 (J5) :** nouvelle page **`guides/grow-a-garden-mutations.html`** (Mutations Grow a Garden — liste, multiplicateurs & comment les obtenir, ~1 560 mots). **Intention distincte ciblée** : how-to « comment obtenir mutation grow a garden », « mutation arc-en-ciel / or grow a garden », « multiplicateur mutation grow a garden » — intention *how-to/référence*, distincte des tier lists (classement) et du guide pilier (progression générale) → **aucune cannibalisation**. Contenu sourcé communautaire (wiki Fandom, Beebom, allthings.how, calculateurs) daté juillet 2026, valeurs marquées comme **évolutives** (aucune invention) : familles qualité (Or ×20 / Arc-en-ciel ×50) vs environnementales (Wet/Chilled ×2, Frozen ×10, Cracked/Verdant ×4, Clay/Bloodlit ×5, Shocked ×100, Abyssal ×240), **formule d'empilement** + exemple chiffré, règles d'incompatibilité, méthodes d'obtention (pets, fertilizers, météo). **Schema** Article + BreadcrumbList + FAQPage. **Maillage complet (anti-orphelin)** : carte hub `guides/index.html` (vraie miniature tr.rbxcdn.com) + ItemList, cross-links réciproques codes ↔ tier list graines ↔ guide pilier ↔ mutations, `sitemap-guides.xml` + `sitemap.xml`.
+
+Le cluster Grow a Garden compte désormais : GAG pets ✓ · GAG2 graines ✓ · GAG2 pets ✓ · **GAG mutations ✓**. Prochaine brique recommandée (J6), par ordre de priorité :
+
+1. **Hub éditorial « Meilleurs jeux Roblox (juillet/août 2026) »** — opportunité #2 du scoring, toujours À faire ; fort volume de head terms + maillage transversal vers 30-50 pages jeu (gros effet crawl + distribution d'equity). Le mois change bientôt → viser un hub « mois glissant » maintenable.
+2. Alternative cluster GAG : **guide « weather / événements météo »** (comment déclencher chaque météo : pluie, neige, orage, blood moon, solar flare) — complément how-to naturel de la page mutations, intention distincte (déclencheurs météo ≠ liste des mutations).
+3. **Value/trading list** (GAG pets ou Blox Fruits) uniquement si l'engagement de maintenance quotidienne des valeurs (≥2 sources datées) est tenable.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
+### Archive — J4 (26/07)
 
 **Travail fait le 26/07 :** nouvelle page **`tier-list/grow-a-garden-2-pets.html`** (Tier List Pets Grow a Garden 2, ~1 930 mots). Intention distincte ciblée : « grow a garden 2 pets tier list », « meilleurs pets grow a garden 2 » — sans cannibaliser la tier list des **graines** GAG2 (intention rendement) ni la tier list des **pets du 1er opus** GAG (jeu différent). Classement sourcé (Beebom, Pro Game Guides, FRVR, u7buy, Skycoach) : S = Unicorn, Ice Serpent, Black Dragon, Raccoon · A = Golden Dragonfly, Queen Bee, Deer · B/C détaillés. Effets honnêtes (mutation Rainbow/Gold, défense nocturne, croissance), note d'évolutivité des prix, schema ItemList + FAQPage + Breadcrumb. Maillage complet : carte hub (vraie miniature), cross-links seeds ↔ pets ↔ codes ↔ guide, sitemap-tier-list.xml + sitemap.xml. Aucun orphelin.
 

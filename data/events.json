@@ -1,7 +1,7 @@
 {
  "_comment": "Donnees de l'encart 'Prochains evenements & admin abuses' (accueil). Maintenu par la tache quotidienne. RECURRENCE: (a) everyMinutes + alignToClock => aligne sur l'horloge UTC (:00,:05,:30). (b) weekly {dayUTC(0=dim..6=sam), hourUTC, minuteUTC, durationMinutes} => event hebdo, badge 'en cours' pendant durationMinutes. ONE-OFF: datetime ISO UTC (+ durationMinutes optionnel). SANS HORAIRE: status='no-fixed-time'. REGLE D'HONNETETE: ne jamais inventer d'heure; horaire seulement si confirme par sources fiables/officielles. ATTENTION FUSEAU: les heures US Eastern (ET/EDT=UTC-4 en ete) sont converties en UTC ici; au changement d'heure US (dim 2 nov 2026) reculer d'1h les entrees issues de l'ET.",
  "meta": {
-  "updated": "2026-07-26",
+  "updated": "2026-07-27",
   "note": "Comptes a rebours des restocks et des events hebdomadaires confirmes par plusieurs sources. Les horaires d'admin abuse restent des heures habituelles : verifie toujours le Discord officiel du jeu, les developpeurs peuvent decaler sans preavis."
  },
  "events": [
