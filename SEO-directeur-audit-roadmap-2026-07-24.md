@@ -88,15 +88,58 @@ Effet топ­ique : renforce le **hub Blox Fruits** (codes ↔ tier fruits ↔ 
 
 ---
 
-## 7. Suggestion pour demain (J6 — 28/07)
+## 7. Suggestion pour demain (J10 — 01/08)
 
-**Travail fait le 27/07 (J5) :** nouvelle page **`guides/grow-a-garden-mutations.html`** (Mutations Grow a Garden — liste, multiplicateurs & comment les obtenir, ~1 560 mots). **Intention distincte ciblée** : how-to « comment obtenir mutation grow a garden », « mutation arc-en-ciel / or grow a garden », « multiplicateur mutation grow a garden » — intention *how-to/référence*, distincte des tier lists (classement) et du guide pilier (progression générale) → **aucune cannibalisation**. Contenu sourcé communautaire (wiki Fandom, Beebom, allthings.how, calculateurs) daté juillet 2026, valeurs marquées comme **évolutives** (aucune invention) : familles qualité (Or ×20 / Arc-en-ciel ×50) vs environnementales (Wet/Chilled ×2, Frozen ×10, Cracked/Verdant ×4, Clay/Bloodlit ×5, Shocked ×100, Abyssal ×240), **formule d'empilement** + exemple chiffré, règles d'incompatibilité, méthodes d'obtention (pets, fertilizers, météo). **Schema** Article + BreadcrumbList + FAQPage. **Maillage complet (anti-orphelin)** : carte hub `guides/index.html` (vraie miniature tr.rbxcdn.com) + ItemList, cross-links réciproques codes ↔ tier list graines ↔ guide pilier ↔ mutations, `sitemap-guides.xml` + `sitemap.xml`.
+**Travail fait le 31/07 (J9) :** nouveau **guide how-to `guides/grow-a-garden-weather.html`** (« Événements météo Grow a Garden (2026) – Liste & comment les déclencher », ~1 800 mots). **Intention distincte ciblée** : « grow a garden météo », « événements météo grow a garden / weather events », « comment déclencher pluie / orage / blood moon grow a garden » — intention *how-to sur la météo*, **complémentaire mais distincte** du guide des mutations (`grow-a-garden-mutations.html`, qui liste les multiplicateurs) : la page météo explique le **cycle météo** et **quelle météo déclenche quelle mutation**, sans dupliquer la table des multiplicateurs (renvoyée au guide mutations). **Anti-cannibalisation** : aucune page existante ne visait ces head terms météo ; liens réciproques explicites météo ↔ mutations (la page mutations pointe désormais « météo » vers ce guide). **Contenu** : cycle météo (propre au serveur, automatique vs outils vs admin), tableau des événements permanents (Rain→Wet, Thunderstorm→Shocked ×100, Frost→Chilled/Frozen, Meteor Shower→Celestial ×120, Blood Moon→Bloodlit, Heatwave→Sundried…), événements liés aux updates (Bee Swarm, Zen/Corrupted, Safari…), tableau des événements admin les plus rentables (Sun God/Dawnbound ×150, Meteoric ×125, Disco, Black Hole/Voidtouched…), stratégie de farm, FAQ 6 questions. **EEAT/honnêteté** : encart « info communautaire » (valeurs wiki/Beebom datées juillet 2026, évolutives → renvoi wiki), byline « L'équipe Zoneblox », aucune heure/valeur inventée ; renvoi à l'encart évènements accueil pour les admin abuses. **Schema** Article + BreadcrumbList + FAQPage. **Maillage (anti-orphelin)** : carte ajoutée au hub `guides/index.html` (vraie miniature tr.rbxcdn.com) + ItemList (position 46), liens croisés vers codes / tier list graines / guide complet / mutations + encart accueil, entrées `sitemap-guides.xml` et `sitemap.xml`. **Effet SEO** : le cluster Grow a Garden gagne une 6ᵉ brique (codes ✓ · guide ✓ · tier graines ✓ · GAG2 pets ✓ · mutations ✓ · **météo ✓**) et couvre désormais l'intention how-to météo à fort volume, en distribuant de l'equity interne au sein du cluster. **Trending re-scanné** (web ≥3 sources) : leaders (Grow a Garden 2, Steal a Brainrot, Brookhaven, Blox Fruits, Animal Hospital) tous couverts ; aucun nouveau hit non couvert. Candidat toujours en attente : **« +1 Speed Keyboard Escape »** (~500K CCU, obby, probablement sans codes) — à évaluer pour une fiche (Étape 1).
 
-Le cluster Grow a Garden compte désormais : GAG pets ✓ · GAG2 graines ✓ · GAG2 pets ✓ · **GAG mutations ✓**. Prochaine brique recommandée (J6), par ordre de priorité :
+Prochaine brique recommandée (J10), par ordre de priorité :
 
-1. **Hub éditorial « Meilleurs jeux Roblox (juillet/août 2026) »** — opportunité #2 du scoring, toujours À faire ; fort volume de head terms + maillage transversal vers 30-50 pages jeu (gros effet crawl + distribution d'equity). Le mois change bientôt → viser un hub « mois glissant » maintenable.
-2. Alternative cluster GAG : **guide « weather / événements météo »** (comment déclencher chaque météo : pluie, neige, orage, blood moon, solar flare) — complément how-to naturel de la page mutations, intention distincte (déclencheurs météo ≠ liste des mutations).
-3. **Value/trading list** (GAG pets ou Blox Fruits) uniquement si l'engagement de maintenance quotidienne des valeurs (≥2 sources datées) est tenable.
+1. **Value/trading list GAG (graines ou pets)** — uniquement si l'engagement de maintenance quotidienne des valeurs (≥2 sources datées) est tenable ; sinon la reporter.
+2. **Guide GAG « pets / œufs »** (comment obtenir, meilleurs pets, éclosion) — intention how-to distincte, complète le cluster GAG et se relie à la tier list pets GAG2 + mutations + météo.
+3. **Évaluer « +1 Speed Keyboard Escape »** (~500K CCU) : vérifier éligibilité, miniature réelle, existence de codes ; créer la fiche (Étape 1) si pertinent, sinon l'ajouter comme entrée du hub « nouveaux jeux ».
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
+### Archive — J8 (30/07)
+
+**Travail fait le 30/07 (J8) :** nouveau **second hub éditorial `nouveaux-jeux-roblox.html`** (« Nouveaux jeux Roblox (2026) — les sorties et hits récents à essayer », ~1 810 mots). **Intention distincte ciblée** : head terms « nouveaux jeux roblox », « nouveaux jeux roblox 2026 », « dernières sorties roblox », « jeux roblox récents » — intention *nouveauté*, **voisine mais distincte** de l'intention *popularité* du hub `meilleurs-jeux-roblox.html` (J6). **Anti-cannibalisation** : aucune page existante ne visait ces head terms ; le cadrage éditorial (sorties/croissance récentes 2025-2026, pas « les plus joués ») et les liens réciproques explicites entre les deux hubs séparent nettement les intentions. Roster de 12 jeux récents (Grow a Garden 2, Steal a Brainrot, Animal Hospital, Evomon, Plants vs Brainrots, Fish It, 100 Days at Sea, DIG, Dead Rails, Grimoires Era, Brainrot Evolution, 99 Nights). **EEAT/honnêteté** : encart méthodologie + date (30/07) + byline « L'équipe Zoneblox » + mention que la nouveauté est éphémère. **Schema** BreadcrumbList + CollectionPage/ItemList (12) + FAQPage. **Maillage (anti-orphelin)** : vraies miniatures tr.rbxcdn.com, liens réciproques depuis l'accueil, `meilleurs-jeux-roblox.html`, et les 3 hubs de cluster (`codes/index.html`, `guides/index.html`, `tier-list/index.html`), + `sitemap-pages.xml` et `sitemap.xml`. **Effet SEO** : le cluster « hubs éditoriaux » compte désormais 2 pages d'intention complémentaires (popularité + nouveauté) qui se renforcent mutuellement et redistribuent l'equity vers les fiches jeu. **Trending re-scanné** : leaders (Grow a Garden 2, Steal a Brainrot, Brookhaven, Blox Fruits, Animal Hospital, Anime Expeditions) tous couverts. Candidat toujours en attente : **« +1 Speed Keyboard Escape »** (~500K CCU, obby/incrémental, probablement sans codes) — à évaluer pour une fiche (Étape 1) lors d'un prochain run.
+
+Prochaine brique recommandée (J9), par ordre de priorité :
+
+1. **Guide GAG « weather / événements météo »** (comment déclencher pluie, neige, orage, blood moon, solar flare) — complément how-to du cluster Grow a Garden (à relier à la page mutations et à l'encart évènements), intention distincte.
+2. **Évaluer « +1 Speed Keyboard Escape »** (~500K CCU) : vérifier éligibilité, miniature réelle, existence de codes ; créer la fiche (Étape 1) si pertinent, sinon l'ajouter comme entrée du hub « nouveaux jeux ».
+3. **Value/trading list** (GAG pets ou Blox Fruits) uniquement si la maintenance quotidienne des valeurs (≥2 sources datées) est tenable.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
+### Archive — J7 (29/07)
+
+**Travail fait le 29/07 (J7) :** consolidation du maillage du hub éditorial `meilleurs-jeux-roblox.html` (créé le 28/07). Ajout de **liens contextuels réciproques** depuis les trois hubs de cluster — `codes/index.html`, `guides/index.html` et `tier-list/index.html` — vers le hub éditorial (il n'était relié que depuis l'accueil + sitemaps). **Effet SEO** : le hub reçoit désormais de l'equity interne des quatre points d'entrée principaux du site (accueil + 3 hubs de cluster), ce qui consolide sa capacité à se positionner sur les head terms « meilleurs jeux roblox » et à redistribuer l'autorité vers les 18 pages jeu qu'il cite. **Anti-cannibalisation** : liens à ancres variées et descriptives (intention découverte), aucune nouvelle page créée → zéro risque de cannibalisation. **Trending re-scanné** : leaders (Grow a Garden 2, Steal a Brainrot, Brookhaven, Blox Fruits, Animal Hospital) tous couverts. Candidat repéré : **« +1 Speed Keyboard Escape »** (~405K CCU, obby/escape, probablement sans codes) — à évaluer pour une éventuelle fiche (Étape 1) lors d'un prochain run.
+
+Prochaine brique recommandée (J8), par ordre de priorité :
+
+1. **Second hub d'intention « Nouveaux jeux Roblox (2026) »** — intention *nouveauté* distincte de *popularité* (le hub existant). Cible Animal Hospital, Evomon, Grow a Garden 2, Steal a Brainrot ; relie réciproquement au hub « meilleurs jeux » (intentions voisines mais distinctes → pas de cannibalisation) et aux fiches jeu. Fort volume, complète le cluster hub.
+2. **Guide GAG « weather / événements météo »** (comment déclencher pluie, neige, orage, blood moon, solar flare) — complément how-to du cluster Grow a Garden, intention distincte.
+3. **Évaluer « +1 Speed Keyboard Escape »** (~405K CCU) : vérifier éligibilité, miniature, existence de codes ; créer la fiche si pertinent (Étape 1).
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
+### Archive — J6 (28/07)
+
+
+**Travail fait le 28/07 (J6) :** nouveau **hub éditorial `meilleurs-jeux-roblox.html`** (« Meilleurs jeux Roblox à jouer maintenant — été 2026 », ~1 890 mots). **Intention distincte ciblée** : head terms « meilleurs jeux roblox », « jeux roblox populaires / tendance », « top jeux roblox 2026 » — intention *découverte/navigation*, distincte des pages codes (transaction), guides (how-to) et tier lists (classement d'items) → **aucune cannibalisation** (aucune page existante ne visait ces head terms). **Effet SEO principal** : maillage transversal — le hub distribue de l'equity vers **18 pages jeu** du catalogue (codes + guide + tier list de chacune) et capte des head terms à fort volume. Roster sourcé (palmarès « most played / top games » juillet 2026) : Grow a Garden 2, Steal a Brainrot, Brookhaven (~639K), Blox Fruits (~203K pic), Blade Ball, Blue Lock Rivals, Volleyball Legends, Anime Vanguards, Fisch, Fruit Battlegrounds, Grow a Garden, Animal Hospital, Adopt Me, 99 Nights, DIG, Pet Simulator 99, Anime Last Stand, Evomon. **EEAT/honnêteté** : encart méthodologie + date (28/07) + byline « L'équipe Zoneblox » + mention explicite que le classement évolue ; aucun compteur inventé (chiffres uniquement quand sourcés). **Schema** BreadcrumbList + ItemList (18) + FAQPage. **Maillage (anti-orphelin)** : vraies miniatures tr.rbxcdn.com, lien depuis l'accueil (section « Jeux & codes »), `sitemap-pages.xml` + `sitemap.xml`.
+
+Prochaine brique recommandée (J7), par ordre de priorité :
+
+1. **Renforcer le hub éditorial** : ajouter des liens réciproques depuis les hubs `codes/index.html`, `guides/index.html` et `tier-lists.html` vers `meilleurs-jeux-roblox.html` (aujourd'hui relié depuis l'accueil + sitemaps seulement) pour consolider le maillage ; OU décliner un second hub d'intention voisine mais distincte : **« Nouveaux jeux Roblox (2026) »** (intention *nouveauté* ≠ *popularité*) ciblant Animal Hospital, Evomon, Grow a Garden 2, Steal a Brainrot.
+2. **Guide GAG « weather / événements météo »** (comment déclencher pluie, neige, orage, blood moon, solar flare) — complément how-to de la page mutations, intention distincte.
+3. **Value/trading list** (GAG pets ou Blox Fruits) uniquement si la maintenance quotidienne des valeurs (≥2 sources datées) est tenable.
 
 ⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
 
