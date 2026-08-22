@@ -74,6 +74,34 @@ Candidat en attente depuis plusieurs runs (sources en conflit sur l'ensemble act
 
 ---
 
+---
+
+## (e) Addendum — 5 nouveaux jeux ajoutés (session interactive du 22/08)
+
+À la demande de Peter (absent 20 jours → sorties récentes non fichées), ajout de **5 jeux récents** éligibles (≥4000 joueurs, vraies miniatures `tr.rbxcdn.com` récupérées via Chrome, codes sourcés). Chrome connecté pour résoudre placeId → universeId → imageUrl (nom vérifié à chaque fois).
+
+| Jeu | Slug | Univers | Joueurs | Codes actifs | Miniature |
+|-----|------|--------:|--------:|--------:|-----------|
+| Anime Origins | `anime-origins` | 8946565814 | ~22K | 9 | réelle ✓ |
+| Grow a Chicken Fighter | `grow-a-chicken-fighter` | 10338952197 | ~67K | 4 | réelle ✓ |
+| Dig and Clean | `dig-and-clean` | 10475794799 | ~27K | 3 | réelle ✓ |
+| Fish an Anime RNG | `fish-an-anime-rng` | 9582986239 | ~12K | 5 | réelle ✓ |
+| Anime Stars | `anime-stars` | 10697889407 | ~4,5K | 6 | réelle ✓ |
+
+**Écartés (règle d'honnêteté / éligibilité)** : Anime Capture (3,1K), Anime Final Strike (1,9K), Brace (611) — **< 4000 joueurs**. **+1 Speed Keyboard Escape** : écarté malgré ~250K+ joueurs car **aucun vrai code** (seul un code social Discord) et **identité ambiguë** (nuée de clones quasi identiques : Candy & Chocolat, monkey escape…) → une fiche « codes » y serait thin/trompeuse.
+
+**Chaque fiche** (`codes-<slug>.html`, gabarit servi) : ≥1200 mots FR visibles (1227–1365), hero miniature réelle, intro SEO, codes actifs/expirés sourcés (Beebom + Pocket Tactics + agrégateurs), guide de saisie, « À propos », « obtenir plus », 6 astuces, « pourquoi ça ne marche pas », section stratégie/progression, FAQ 4 questions, JSON-LD BreadcrumbList + FAQPage valides, nav 7 entrées (incl. À propos), GA4, 3 jeux similaires (liens internes réels).
+
+**Intégrations** : cartes ajoutées à `tous-les-codes.html` (vraie miniature) ; `GAMES_INDEX` + `ROBLOX_THUMBS` + `ROBLOX_UNIVERSE_IDS` dans `js/main.js` ; 5 `<url>` dans `sitemap.xml` (arbre servi). Catalogue servi : **171 → 176 jeux**.
+
+**Cache JS** : `js/main.js` modifié → **`main.js?v=36` → `v=37`** sur les **326** fichiers HTML (uniformité vérifiée, 0 resté en v=36).
+
+**QC nouvelles pages (tout vert)** : GA4 ✓, breadcrumb au bon nom ✓, FAQPage JSON-LD `json.loads` OK ✓, vraie miniature `tr.rbxcdn.com` (jamais de SVG) ✓, nav 7 entrées ✓, 0 null byte, `</html>` OK, équilibre `<div>` intact ; `node --check js/main.js` OK ; scan intégrité site entier : 0 déséquilibre `<div>`, 0 null byte.
+
+> ℹ️ Les 5 pages servies utilisent le gabarit `codes-*.html` (self-contained, sans `main.js`), cohérent avec les fiches servies existantes. Elles adoptent déjà la **nav 7 entrées** (correctif anticipé du chantier « deux arbres »).
+
+---
+
 **Pour publier** : dans le dossier GameNova, lance
 `git add -A && git commit -m "MAJ Zoneblox du jour" && git push origin main`.
 Hostinger déploie automatiquement après le push.

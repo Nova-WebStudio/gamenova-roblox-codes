@@ -2,7 +2,12 @@
    Zoneblox – Main JavaScript (FR)
    ============================================================ */
 
-const ROBLOX_THUMBS = {'anime-expeditions': 'https://tr.rbxcdn.com/180DAY-f6a71fe1399cffc0a1e813a57900b761/768/432/Image/Png/noFilter',
+const ROBLOX_THUMBS = {'anime-origins': 'https://tr.rbxcdn.com/180DAY-921f16e3041d929ed22801e02394fad5/768/432/Image/Png/noFilter',
+  'grow-a-chicken-fighter': 'https://tr.rbxcdn.com/180DAY-8403e52cfc77a0fb4df895e64943deab/768/432/Image/Png/noFilter',
+  'dig-and-clean': 'https://tr.rbxcdn.com/180DAY-1912ba1aee413f812eeb5cc59ba88416/768/432/Image/Png/noFilter',
+  'fish-an-anime-rng': 'https://tr.rbxcdn.com/180DAY-93aa19d0ef92135a3bc924b7f7674e61/768/432/Image/Png/noFilter',
+  'anime-stars': 'https://tr.rbxcdn.com/180DAY-3f43b188cd6e094f24e41f813d33e8b1/768/432/Image/Png/noFilter',
+  'anime-expeditions': 'https://tr.rbxcdn.com/180DAY-f6a71fe1399cffc0a1e813a57900b761/768/432/Image/Png/noFilter',
   'spin-a-soccer-card': 'https://tr.rbxcdn.com/180DAY-bf53b88875889ac2f4ac48047d017b4a/480/270/Image/Webp/noFilter',
   'merge-a-nuke': 'https://tr.rbxcdn.com/180DAY-559508ad864c626f049ce0870d43665b/480/270/Image/Webp/noFilter',
   'vv-ultimatum': 'https://tr.rbxcdn.com/180DAY-a1d19383f4330a2b5e1902fdcc5f5171/480/270/Image/Webp/noFilter',
@@ -199,7 +204,12 @@ function initMobileNav() {
 }
 
 /* ---- Search index ---- */
-const GAMES_INDEX = [{ name: "Anime Expeditions", slug: 'anime-expeditions', emoji: '🛡️', codes: 10 },
+const GAMES_INDEX = [{ name: "Anime Origins", slug: 'anime-origins', emoji: '⚔️', codes: 9 },
+  { name: "Grow a Chicken Fighter", slug: 'grow-a-chicken-fighter', emoji: '🐔', codes: 4 },
+  { name: "Dig and Clean", slug: 'dig-and-clean', emoji: '🧼', codes: 3 },
+  { name: "Fish an Anime RNG", slug: 'fish-an-anime-rng', emoji: '🎣', codes: 5 },
+  { name: "Anime Stars", slug: 'anime-stars', emoji: '⭐', codes: 6 },
+  { name: "Anime Expeditions", slug: 'anime-expeditions', emoji: '🛡️', codes: 10 },
   { name: "Be a Fish Bait", slug: 'be-a-fish-bait', emoji: '🐟', codes: 8 },
   { name: "Spin a Soccer Card", slug: 'spin-a-soccer-card', emoji: '⚽', codes: 6 },
   { name: "Merge a Nuke", slug: 'merge-a-nuke', emoji: '☢️', codes: 3 },
@@ -433,7 +443,12 @@ function highlightNav() {
 }
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
-const ROBLOX_UNIVERSE_IDS = {'anime-expeditions': 7613921865,
+const ROBLOX_UNIVERSE_IDS = {'anime-origins': 8946565814,
+  'grow-a-chicken-fighter': 10338952197,
+  'dig-and-clean': 10475794799,
+  'fish-an-anime-rng': 9582986239,
+  'anime-stars': 10697889407,
+  'anime-expeditions': 7613921865,
   'anime-champions-simulator': 4986566693,
   'animal-hospital': 10148749921,
   'demonology': 6170143659,
