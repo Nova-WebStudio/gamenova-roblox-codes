@@ -1,221 +1,221 @@
 {
- "_comment": "Donnees de l'encart 'Prochains evenements & admin abuses' (accueil). Maintenu par la tache quotidienne. RECURRENCE: (a) everyMinutes + alignToClock => aligne sur l'horloge UTC (:00,:05,:30). (b) weekly {dayUTC(0=dim..6=sam), hourUTC, minuteUTC, durationMinutes} => event hebdo, badge 'en cours' pendant durationMinutes. ONE-OFF: datetime ISO UTC (+ durationMinutes optionnel). SANS HORAIRE: status='no-fixed-time'. REGLE D'HONNETETE: ne jamais inventer d'heure; horaire seulement si confirme par sources fiables/officielles. ATTENTION FUSEAU: les heures US Eastern (ET/EDT=UTC-4 en ete) sont converties en UTC ici; au changement d'heure US (dim 2 nov 2026) reculer d'1h les entrees issues de l'ET.",
- "meta": {
-  "updated": "2026-08-22",
-  "note": "Comptes a rebours des restocks et des events hebdomadaires confirmes par plusieurs sources. Les horaires d'admin abuse restent des heures habituelles : verifie toujours le Discord officiel du jeu, les developpeurs peuvent decaler sans preavis."
- },
- "events": [
-  {
-   "slug": "grow-a-garden",
-   "game": "Grow a Garden",
-   "kind": "restock",
-   "title": "Restock graines & équipement",
-   "recurrence": {
-    "everyMinutes": 5,
-    "alignToClock": true
-   },
-   "confirmed": true,
-   "reward": "Nouvelle rotation de graines et de gear",
-   "source": "https://growagarden.fandom.com/wiki/Seed_Shop"
+  "_comment": "Donnees de l'encart 'Prochains evenements & admin abuses' (accueil). Maintenu par la tache quotidienne. RECURRENCE: (a) everyMinutes + alignToClock => aligne sur l'horloge UTC (:00,:05,:30). (b) weekly {dayUTC(0=dim..6=sam), hourUTC, minuteUTC, durationMinutes} => event hebdo, badge 'en cours' pendant durationMinutes. ONE-OFF: datetime ISO UTC (+ durationMinutes optionnel). SANS HORAIRE: status='no-fixed-time'. REGLE D'HONNETETE: ne jamais inventer d'heure; horaire seulement si confirme par sources fiables/officielles. ATTENTION FUSEAU: les heures US Eastern (ET/EDT=UTC-4 en ete) sont converties en UTC ici; au changement d'heure US (dim 2 nov 2026) reculer d'1h les entrees issues de l'ET.",
+  "meta": {
+    "updated": "2026-08-23",
+    "note": "Comptes a rebours des restocks et des events hebdomadaires confirmes par plusieurs sources. Les horaires d'admin abuse restent des heures habituelles : verifie toujours le Discord officiel du jeu, les developpeurs peuvent decaler sans preavis."
   },
-  {
-   "slug": "grow-a-garden",
-   "game": "Grow a Garden",
-   "kind": "restock",
-   "title": "Restock œufs (Pet Egg Shop)",
-   "recurrence": {
-    "everyMinutes": 30,
-    "alignToClock": true
-   },
-   "confirmed": true,
-   "reward": "Nouveaux œufs en vente",
-   "source": "https://growagarden.fandom.com/wiki/Seed_Shop"
-  },
-  {
-   "slug": "grow-a-garden",
-   "game": "Grow a Garden",
-   "kind": "restock",
-   "title": "Restock cosmétiques",
-   "recurrence": {
-    "everyMinutes": 240,
-    "alignToClock": true
-   },
-   "confirmed": true,
-   "reward": "Nouvelle rotation de cosmétiques",
-   "source": "https://growagarden.fandom.com/wiki/Seed_Shop"
-  },
-  {
-   "slug": "grow-a-garden",
-   "game": "Grow a Garden",
-   "kind": "admin-abuse",
-   "title": "Saturday Admin Abuse",
-   "recurrence": {
-    "weekly": {
-     "dayUTC": 6,
-     "hourUTC": 13,
-     "minuteUTC": 0,
-     "durationMinutes": 60
+  "events": [
+    {
+      "slug": "grow-a-garden",
+      "game": "Grow a Garden",
+      "kind": "restock",
+      "title": "Restock graines & équipement",
+      "recurrence": {
+        "everyMinutes": 5,
+        "alignToClock": true
+      },
+      "confirmed": true,
+      "reward": "Nouvelle rotation de graines et de gear",
+      "source": "https://growagarden.fandom.com/wiki/Seed_Shop"
+    },
+    {
+      "slug": "grow-a-garden",
+      "game": "Grow a Garden",
+      "kind": "restock",
+      "title": "Restock œufs (Pet Egg Shop)",
+      "recurrence": {
+        "everyMinutes": 30,
+        "alignToClock": true
+      },
+      "confirmed": true,
+      "reward": "Nouveaux œufs en vente",
+      "source": "https://growagarden.fandom.com/wiki/Seed_Shop"
+    },
+    {
+      "slug": "grow-a-garden",
+      "game": "Grow a Garden",
+      "kind": "restock",
+      "title": "Restock cosmétiques",
+      "recurrence": {
+        "everyMinutes": 240,
+        "alignToClock": true
+      },
+      "confirmed": true,
+      "reward": "Nouvelle rotation de cosmétiques",
+      "source": "https://growagarden.fandom.com/wiki/Seed_Shop"
+    },
+    {
+      "slug": "grow-a-garden",
+      "game": "Grow a Garden",
+      "kind": "admin-abuse",
+      "title": "Saturday Admin Abuse",
+      "recurrence": {
+        "weekly": {
+          "dayUTC": 6,
+          "hourUTC": 13,
+          "minuteUTC": 0,
+          "durationMinutes": 60
+        }
+      },
+      "confirmed": true,
+      "reward": "Mutations & objets rares spawnés par les admins",
+      "source": "https://growagarden.fandom.com/wiki/Admin_Abuse"
+    },
+    {
+      "slug": "grow-a-garden",
+      "game": "Grow a Garden",
+      "kind": "update",
+      "title": "Mise à jour hebdomadaire",
+      "recurrence": {
+        "weekly": {
+          "dayUTC": 6,
+          "hourUTC": 14,
+          "minuteUTC": 0
+        }
+      },
+      "confirmed": true,
+      "reward": "Nouveau contenu (souvent le samedi ~14 h UTC)",
+      "source": "https://growagarden.fandom.com/wiki/Admin_Abuse"
+    },
+    {
+      "slug": "grow-a-garden-2",
+      "game": "Grow a Garden 2",
+      "kind": "restock",
+      "title": "Restock graines & gear",
+      "recurrence": {
+        "everyMinutes": 5,
+        "alignToClock": true
+      },
+      "confirmed": true,
+      "reward": "Nouvelle rotation de graines et de gear",
+      "source": "https://nerdschalk.com/grow-a-garden-2-shop-restock-times/"
+    },
+    {
+      "slug": "grow-a-garden-2",
+      "game": "Grow a Garden 2",
+      "kind": "restock",
+      "title": "Restock œufs",
+      "recurrence": {
+        "everyMinutes": 30,
+        "alignToClock": true
+      },
+      "confirmed": true,
+      "reward": "Nouveaux œufs en vente",
+      "source": "https://nerdschalk.com/grow-a-garden-2-shop-restock-times/"
+    },
+    {
+      "slug": "steal-a-brainrot",
+      "game": "Steal a Brainrot",
+      "kind": "admin-abuse",
+      "title": "Taco Tuesday (Admin Abuse)",
+      "recurrence": {
+        "weekly": {
+          "dayUTC": 2,
+          "hourUTC": 22,
+          "minuteUTC": 0,
+          "durationMinutes": 45
+        }
+      },
+      "confirmed": true,
+      "reward": "Brainrots rares & Lucky Blocks spawnés par SpyderSammy",
+      "source": "https://www.theclick.gg/steal-a-brainrot-admin-abuse-schedule/"
+    },
+    {
+      "slug": "steal-a-brainrot",
+      "game": "Steal a Brainrot",
+      "kind": "admin-abuse",
+      "title": "Saturday Admin Abuse",
+      "recurrence": {
+        "weekly": {
+          "dayUTC": 6,
+          "hourUTC": 19,
+          "minuteUTC": 0,
+          "durationMinutes": 45
+        }
+      },
+      "confirmed": true,
+      "reward": "Brainrots rares & traits exclusifs sur tous les serveurs",
+      "source": "https://www.theclick.gg/steal-a-brainrot-admin-abuse-schedule/"
+    },
+    {
+      "slug": "blox-fruits",
+      "game": "Blox Fruits",
+      "kind": "admin-abuse",
+      "title": "Admin abuse",
+      "status": "no-fixed-time",
+      "confirmed": false,
+      "watch": "Discord / X officiel du jeu",
+      "source": "codes/blox-fruits.html"
+    },
+    {
+      "slug": "blade-ball",
+      "game": "Blade Ball",
+      "kind": "admin-abuse",
+      "title": "Admin abuse",
+      "status": "no-fixed-time",
+      "confirmed": false,
+      "watch": "Discord officiel du jeu",
+      "source": "codes/blade-ball.html"
+    },
+    {
+      "slug": "blue-lock-rivals",
+      "game": "Blue Lock Rivals",
+      "kind": "update",
+      "title": "Prochaine mise à jour",
+      "status": "no-fixed-time",
+      "confirmed": false,
+      "watch": "Discord/X officiel — demi-finales déployées le 25 juil. (codes SEMIFINALS/WORLDTOURNAMENTPART3), suite non datée",
+      "source": "codes/blue-lock-rivals.html"
+    },
+    {
+      "slug": "anime-vanguards",
+      "game": "Anime Vanguards",
+      "kind": "update",
+      "title": "Prochaine mise à jour",
+      "status": "no-fixed-time",
+      "confirmed": false,
+      "watch": "Discord / X officiel",
+      "source": "codes/anime-vanguards.html"
+    },
+    {
+      "slug": "volleyball-legends",
+      "game": "Volleyball Legends",
+      "kind": "update",
+      "title": "Prochaine mise à jour",
+      "status": "no-fixed-time",
+      "confirmed": false,
+      "watch": "Discord officiel (annonces)",
+      "source": "codes/volleyball-legends.html"
+    },
+    {
+      "slug": "king-legacy",
+      "game": "King Legacy",
+      "kind": "update",
+      "title": "Prochaine mise à jour",
+      "status": "no-fixed-time",
+      "confirmed": false,
+      "watch": "Trello / Discord officiel",
+      "source": "codes/king-legacy.html"
+    },
+    {
+      "slug": "fisch",
+      "game": "Fisch",
+      "kind": "update",
+      "title": "Prochaine mise à jour",
+      "status": "no-fixed-time",
+      "confirmed": false,
+      "watch": "Trello / Discord officiel",
+      "source": "codes/fisch.html"
+    },
+    {
+      "slug": "world-fighters",
+      "game": "World Fighters",
+      "kind": "update",
+      "title": "Prochaine mise à jour",
+      "status": "no-fixed-time",
+      "confirmed": false,
+      "watch": "Discord officiel (salon codes)",
+      "source": "codes/world-fighters.html"
     }
-   },
-   "confirmed": true,
-   "reward": "Mutations & objets rares spawnés par les admins",
-   "source": "https://growagarden.fandom.com/wiki/Admin_Abuse"
-  },
-  {
-   "slug": "grow-a-garden",
-   "game": "Grow a Garden",
-   "kind": "update",
-   "title": "Mise à jour hebdomadaire",
-   "recurrence": {
-    "weekly": {
-     "dayUTC": 6,
-     "hourUTC": 14,
-     "minuteUTC": 0
-    }
-   },
-   "confirmed": true,
-   "reward": "Nouveau contenu (souvent le samedi ~14 h UTC)",
-   "source": "https://growagarden.fandom.com/wiki/Admin_Abuse"
-  },
-  {
-   "slug": "grow-a-garden-2",
-   "game": "Grow a Garden 2",
-   "kind": "restock",
-   "title": "Restock graines & gear",
-   "recurrence": {
-    "everyMinutes": 5,
-    "alignToClock": true
-   },
-   "confirmed": true,
-   "reward": "Nouvelle rotation de graines et de gear",
-   "source": "https://nerdschalk.com/grow-a-garden-2-shop-restock-times/"
-  },
-  {
-   "slug": "grow-a-garden-2",
-   "game": "Grow a Garden 2",
-   "kind": "restock",
-   "title": "Restock œufs",
-   "recurrence": {
-    "everyMinutes": 30,
-    "alignToClock": true
-   },
-   "confirmed": true,
-   "reward": "Nouveaux œufs en vente",
-   "source": "https://nerdschalk.com/grow-a-garden-2-shop-restock-times/"
-  },
-  {
-   "slug": "steal-a-brainrot",
-   "game": "Steal a Brainrot",
-   "kind": "admin-abuse",
-   "title": "Taco Tuesday (Admin Abuse)",
-   "recurrence": {
-    "weekly": {
-     "dayUTC": 2,
-     "hourUTC": 22,
-     "minuteUTC": 0,
-     "durationMinutes": 45
-    }
-   },
-   "confirmed": true,
-   "reward": "Brainrots rares & Lucky Blocks spawnés par SpyderSammy",
-   "source": "https://www.theclick.gg/steal-a-brainrot-admin-abuse-schedule/"
-  },
-  {
-   "slug": "steal-a-brainrot",
-   "game": "Steal a Brainrot",
-   "kind": "admin-abuse",
-   "title": "Saturday Admin Abuse",
-   "recurrence": {
-    "weekly": {
-     "dayUTC": 6,
-     "hourUTC": 19,
-     "minuteUTC": 0,
-     "durationMinutes": 45
-    }
-   },
-   "confirmed": true,
-   "reward": "Brainrots rares & traits exclusifs sur tous les serveurs",
-   "source": "https://www.theclick.gg/steal-a-brainrot-admin-abuse-schedule/"
-  },
-  {
-   "slug": "blox-fruits",
-   "game": "Blox Fruits",
-   "kind": "admin-abuse",
-   "title": "Admin abuse",
-   "status": "no-fixed-time",
-   "confirmed": false,
-   "watch": "Discord / X officiel du jeu",
-   "source": "codes/blox-fruits.html"
-  },
-  {
-   "slug": "blade-ball",
-   "game": "Blade Ball",
-   "kind": "admin-abuse",
-   "title": "Admin abuse",
-   "status": "no-fixed-time",
-   "confirmed": false,
-   "watch": "Discord officiel du jeu",
-   "source": "codes/blade-ball.html"
-  },
-  {
-   "slug": "blue-lock-rivals",
-   "game": "Blue Lock Rivals",
-   "kind": "update",
-   "title": "Prochaine mise à jour",
-   "status": "no-fixed-time",
-   "confirmed": false,
-   "watch": "Discord/X officiel — demi-finales déployées le 25 juil. (codes SEMIFINALS/WORLDTOURNAMENTPART3), suite non datée",
-   "source": "codes/blue-lock-rivals.html"
-  },
-  {
-   "slug": "anime-vanguards",
-   "game": "Anime Vanguards",
-   "kind": "update",
-   "title": "Prochaine mise à jour",
-   "status": "no-fixed-time",
-   "confirmed": false,
-   "watch": "Discord / X officiel",
-   "source": "codes/anime-vanguards.html"
-  },
-  {
-   "slug": "volleyball-legends",
-   "game": "Volleyball Legends",
-   "kind": "update",
-   "title": "Prochaine mise à jour",
-   "status": "no-fixed-time",
-   "confirmed": false,
-   "watch": "Discord officiel (annonces)",
-   "source": "codes/volleyball-legends.html"
-  },
-  {
-   "slug": "king-legacy",
-   "game": "King Legacy",
-   "kind": "update",
-   "title": "Prochaine mise à jour",
-   "status": "no-fixed-time",
-   "confirmed": false,
-   "watch": "Trello / Discord officiel",
-   "source": "codes/king-legacy.html"
-  },
-  {
-   "slug": "fisch",
-   "game": "Fisch",
-   "kind": "update",
-   "title": "Prochaine mise à jour",
-   "status": "no-fixed-time",
-   "confirmed": false,
-   "watch": "Trello / Discord officiel",
-   "source": "codes/fisch.html"
-  },
-  {
-   "slug": "world-fighters",
-   "game": "World Fighters",
-   "kind": "update",
-   "title": "Prochaine mise à jour",
-   "status": "no-fixed-time",
-   "confirmed": false,
-   "watch": "Discord officiel (salon codes)",
-   "source": "codes/world-fighters.html"
-  }
- ]
+  ]
 }
