@@ -201,6 +201,16 @@
       "groupId": 344908697,
       "note": "Jeu en forte croissance (~900K joueurs simultanés, 675M visites). Pas encore de système de codes au 2026-07-10 — surveiller l'ajout d'une zone de rédemption.",
       "checked": "2026-07-10"
+    },
+    "steal-an-egg": {
+      "id": 10563114921,
+      "groupId": 825735094,
+      "trello": {
+        "boardId": null,
+        "url": null,
+        "codes": "absent",
+        "checked": "2026-08-24"
+      }
     }
   },
   "snapshots": {
@@ -450,18 +460,18 @@
       "note0823": "Verifie 23/08 (allthings.how/Beebom/RoCodes/GamesRadar/Fossbytes/Twinfinite/Destructoid): UPDATE_83, MIKAGE_REVIVED, SCHOOL_SOON = set servi. Aucun changement."
     },
     "anime-vanguards": {
-      "lastChecked": "2026-08-23T05:00:00Z",
+      "lastChecked": "2026-08-24T05:00:00Z",
       "descLen": 288,
       "descExcerpt": "Reconciliation 16->6 actifs (GamesRadar+Beebom 17/08). Actifs: Miniupdate1,2BVisits(expire 23/08),Prepare,1DayDelay,25thHour,LetTheLarpingBegin. 13 anciens passes en expires + doublon corrige.",
       "knownCodes": [
         "Miniupdate1",
-        "2BVisits",
         "Prepare",
         "1DayDelay",
         "25thHour",
         "LetTheLarpingBegin"
       ],
-      "note0823": "Verifie 23/08 (PGG+Beebom 17/08 + GamesRadar 22/08): page servie a 6 actifs coherente (Miniupdate1/2BVisits/Prepare confirmes 3 sources; 1DayDelay/25thHour/LetTheLarpingBegin listes actifs Beebom). Conflit PGG (liste 13) vs Beebom (expire) tranche prudemment. Inchange ce run."
+      "note0823": "Verifie 23/08 (PGG+Beebom 17/08 + GamesRadar 22/08): page servie a 6 actifs coherente (Miniupdate1/2BVisits/Prepare confirmes 3 sources; 1DayDelay/25thHour/LetTheLarpingBegin listes actifs Beebom). Conflit PGG (liste 13) vs Beebom (expire) tranche prudemment. Inchange ce run.",
+      "note0824": "2BVisits expire 23/08 (GamesRadar confirme) -> retire de la liste active servie (6->5). Miniupdate1 encore liste actif par PGG malgre label 23/08 -> conserve par prudence."
     },
     "pet-simulator-99": {
       "lastChecked": "2026-07-23T05:00:00Z",
@@ -807,7 +817,7 @@
       "note1207": "Verifie 12/07 : toujours aucun code (Pro Game Guides : 'Are There Any?'). Page maintenue sans code."
     },
     "grow-a-garden-2": {
-      "lastChecked": "2026-08-20T05:00:00Z",
+      "lastChecked": "2026-08-24T05:00:00Z",
       "knownCodes": [
         "TEAMGREENBEAN",
         "WATERYOPLANTS"
@@ -816,13 +826,15 @@
       "officialSource": "web>=3",
       "descExcerpt": "TEAMGREENBEAN confirme par 5 sources. WATERYOPLANTS : 1 source.",
       "pending": [
-        "WATERYOPLANTS (1 source)",
-        "STARBUD (deja hors liste active : introuvable dans les sources)"
+        "FREESEED",
+        "STARBUD (deja hors liste active : introuvable dans les sources)",
+        "WATERYOPLANTS (1 source)"
       ],
       "note0722": "Verifie 22/07 : TEAMGREENBEAN toujours actif. Inchange.",
       "note0727": "Verifie 27/07 : sources coherentes, aucun changement de liste.",
       "note0731": "Verifie 31/07 (web >=3 sources) : aucun changement. blox-fruits 23-24, blade-ball 14, fisch 5, volleyball 3 (UPDATE_80/HIDARI_FINALLY/ENCHO_NERF), blue-lock 9, ALS inchange, AV inchange, GAG/GAG2 inchanges.",
-      "note0801": "Verifie 01/08 (web >=3 sources) : aucun changement de liste. blade-ball set G2A divergent non publie (prudence) ; volleyball Update 81/HIDARI_RETURNS non confirme a >=3 sources (liste UPDATE_80/HIDARI_FINALLY/ENCHO_NERF maintenue) ; anime-vanguards set RoCodes/Beebom (Cog5th/223/Liberation/DMCAFree...) en conflit persistant -> non applique."
+      "note0801": "Verifie 01/08 (web >=3 sources) : aucun changement de liste. blade-ball set G2A divergent non publie (prudence) ; volleyball Update 81/HIDARI_RETURNS non confirme a >=3 sources (liste UPDATE_80/HIDARI_FINALLY/ENCHO_NERF maintenue) ; anime-vanguards set RoCodes/Beebom (Cog5th/223/Liberation/DMCAFree...) en conflit persistant -> non applique.",
+      "note0824": "FREESEED annonce NOUVEAU par Beebom/G2A mais non confirme par recherche ciblee (4 actifs au 22/08 sans FREESEED). Conflit -> non publie (prudence), garde en attente."
     },
     "anime-rangers-x": {
       "lastChecked": "2026-07-30T05:00:00Z",
@@ -902,6 +914,13 @@
         "plsdevshovel"
       ],
       "pendingNote": "28/07 : conflit persistant. game.guide affiche 8 actifs (liste client-rendue non extractible), Pocket Gamer historiquement prudent. Page maintenue sur plsdevshovel seul (prudence). Resoudre via Discord officiel DIG."
+    },
+    "steal-an-egg": {
+      "lastChecked": "2026-08-24T05:00:00Z",
+      "descLen": 0,
+      "knownCodes": [],
+      "officialSource": "shout|description (aucun code)",
+      "descExcerpt": "Nouveau hit (~496K CCU, 284M visites, cree 25/07/2026). Aucun systeme de codes public (PGG 17/08 + description in-game + shout groupe null). Fiche codes-steal-an-egg.html creee ce jour."
     }
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",

@@ -4,6 +4,27 @@
 
 ---
 
+## 📌 Dernière brique — J16 (24 août 2026)
+
+**Trending re-scanné (web, multi-sources) :** découverte d'un **nouveau hit majeur non couvert** — **Steal An Egg** (créé le 25/07/2026, ~496K–724K joueurs simultanés selon les trackers, 284M visites, genre Simulation/Tycoon). Conforme à la règle « un vrai nouveau hit ≥4000 joueurs passe DEVANT l'evergreen », il a été fiché en priorité.
+
+**Brique réalisée (ÉTAPE 1, trending-first) :** nouvelle fiche **`codes-steal-an-egg.html`** (~1 650 mots FR).
+- **Honnêteté codes :** le jeu **n'a pas de système de codes public** (PGG 17/08 + description in-game + shout du groupe créateur = null). La page l'affiche clairement (« Aucun code public ») au lieu d'inventer — et explique où les codes apparaîtraient s'ils existaient.
+- **Intention ciblée distincte :** « codes Steal An Egg » / « Steal An Egg a-t-il des codes » (intention transactionnelle + réassurance), aucune cannibalisation (aucune page existante ne visait ce jeu).
+- **Contenu :** « C'est quoi », « Comment jouer » (biomes, gardiens, vitesse/treadmill, éclosion, revenu/s, fusion 3→1, mutations, vol PvP), <h3>Guide de progression</h3> avec 8 astuces, 2 vidéos réelles vérifiées oEmbed (CHALLS `8d7Qrz7jDrU`, Radex Tips `aTV1JJpHUXY`), « Où trouver les codes », À propos + 3 similaires, FAQ 4 Q. Schema Breadcrumb + FAQPage.
+- **Miniature réelle** tr.rbxcdn.com (universeId 10563114921 vérifié via games.roblox.com = « Steal An Egg »), SVG fallback créé.
+- **Maillage (anti-orphelin) :** carte `tous-les-codes.html` + objet `index.html` (GAMES) + `js/main.js` (GAMES_INDEX + ROBLOX_THUMBS + ROBLOX_UNIVERSE_IDS) + `sitemap.xml` + redirect `.htaccess`. **Jeu de la semaine (lundi)** pointé sur Steal An Egg.
+
+**Prochaine brique recommandée (J17), par ordre de priorité :**
+
+1. **Tier list Steal An Egg** (`tier-list/steal-an-egg.html`) : classement des **pets / œufs / biomes** par revenu-par-seconde (intention « meilleurs pets Steal An Egg », distincte de la fiche) → approfondit immédiatement le nouveau cluster porteur. Sourcer ≥2 (wiki + Beebom/PGG).
+2. **Guide complet Steal An Egg** (`guides/steal-an-egg.html`) : how-to progression (vitesse, biomes, fusion, mutations, PvP) — complète le cluster, relie fiche ↔ tier ↔ guide.
+3. Ficher **Anime Origins** (report du 23/08, à faire avec Chrome).
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
 ## 1. Décision stratégique validée
 
 Le mandat déclarait l'anglais en langue primaire, mais le site réel est **100 % français** (`html lang="fr"`, ~300 pages indexées, dossier `en/` réduit à 3 fichiers). Décision prise avec Peter : **rester français-first**. Raison SEO : la SERP Roblox anglophone est saturée d'acteurs très établis (Pro Game Guides, Beebom, Pocket Tactics, GamesRadar, Dexerto). Le français est un marché où ZoneBlox a déjà de l'autorité et bien moins de concurrence — c'est là que le ROI marginal est le plus élevé. L'anglais reste une phase ultérieure (via `/en/` + hreflang propre), pas une priorité 2026.
