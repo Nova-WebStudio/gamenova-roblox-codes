@@ -4,6 +4,17 @@ Règles et pièges à éviter, documentés à partir des erreurs réelles rencon
 
 ---
 
+## Date « Vérifié aujourd'hui » de l'accueil (index.html) — À FAIRE CHAQUE RUN
+
+Le hero de `index.html` affiche « Vérifié aujourd'hui · <date> ». Cette date est **codée en dur à DEUX endroits** et n'est PAS automatique — il faut la mettre à jour à chaque run quotidien, sinon elle reste figée (bug réel : bloquée sur « 23 juillet 2026 » pendant des semaines) :
+
+1. Le fallback visible : `<span id="todayDate">JJ mois AAAA</span>`
+2. La constante JS : `const TODAY = "JJ mois AAAA";` (sert aussi aux « vérifié aujourd'hui » des cartes)
+
+Les deux doivent porter la **date du run** (ex. `24 août 2026`). Vérifier après coup : `grep -c "23 juillet 2026" index.html` doit valoir 0, et `grep -o 'const TODAY = "[^"]*"' index.html` doit afficher la date du jour.
+
+---
+
 ## Encart « Prochains évènements & admin abuses » (accueil — demande de Peter, 24 juillet)
 
 Encart dynamique sur `index.html` (section `id="evenements"`, juste avant « Codes du jour »). Deux fichiers :

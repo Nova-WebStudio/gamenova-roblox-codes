@@ -36,6 +36,7 @@
 
 - **Jeu de la semaine (lundi) :** bannière `FEATURED-WEEK` d'`index.html` basculée de Grow a Garden 2 → **Steal An Egg** (le phénomène du moment), miniature réelle + blurb FR + boutons « Voir la fiche » / « Tous les codes ».
 - **Encart évènements :** `data/events.json` → `meta.updated` au 24/08/2026. Aucune date ponctuelle passée à purger, aucune heure d'admin abuse confirmée à promouvoir (honnêteté). `js/events.js` inchangé → pas de bump events.
+- **Date « Vérifié aujourd'hui » de l'accueil (correctif) :** la date du hero d'`index.html` était **figée au 23 juillet 2026** (codée en dur à 2 endroits : `<span id="todayDate">` + `const TODAY`). Corrigée au **24 août 2026** ; règle ajoutée à `CLAUDE.md` pour la mettre à jour à chaque run.
 - **UGC, tier lists, guides existants :** pas de changement requis ce run.
 
 ## (d) Fichiers touchés & QC
