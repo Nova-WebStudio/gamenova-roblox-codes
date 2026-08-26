@@ -4,6 +4,18 @@ Règles et pièges à éviter, documentés à partir des erreurs réelles rencon
 
 ---
 
+## Widget embeddable « Codes du jour » (data/codes.json + embed/) — À REGÉNÉRER CHAQUE RUN
+
+Le widget partenaire (`embed/codes.js`, page `embed/index.html`) lit `data/codes.json` pour afficher les codes à jour sur des sites tiers (backlink retour). **`data/codes.json` est GÉNÉRÉ, pas édité à la main** : après avoir mis à jour les codes du jour, relancer :
+
+```
+python3 tools/build_codes_json.py
+```
+
+Ça reparse toutes les pages `codes-<slug>.html` (codes actifs + date « Vérifié le ») et réécrit `data/codes.json`. Sinon le widget affiche des codes périmés. Vérifier après : `python3 -c "import json;json.load(open('data/codes.json'))"`. CORS déjà configuré dans `.htaccess` (Access-Control-Allow-Origin \* sur codes.json).
+
+---
+
 ## Date « Vérifié aujourd'hui » de l'accueil (index.html) — À FAIRE CHAQUE RUN
 
 Le hero de `index.html` affiche « Vérifié aujourd'hui · <date> ». Cette date est **codée en dur à DEUX endroits** et n'est PAS automatique — il faut la mettre à jour à chaque run quotidien, sinon elle reste figée (bug réel : bloquée sur « 23 juillet 2026 » pendant des semaines) :

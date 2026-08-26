@@ -43,6 +43,11 @@
   </FilesMatch>
   # HSTS : évite la redirection http->https aux visites suivantes
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  # Widget embeddable : codes.json lu depuis des sites tiers (CORS) + MAJ quotidienne (cache court)
+  <FilesMatch "codes\.json$">
+    Header set Access-Control-Allow-Origin "*"
+    Header set Cache-Control "public, max-age=1800, must-revalidate"
+  </FilesMatch>
 </IfModule>
 
 
