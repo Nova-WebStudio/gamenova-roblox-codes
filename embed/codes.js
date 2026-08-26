@@ -1,4 +1,4 @@
-/*! Zoneblox — widget "Codes du jour" embeddable.
+/*! Zoneblox \u2014 widget "Codes du jour" embeddable.
  * Usage : <script async src="https://zoneblox.com/embed/codes.js?game=blox-fruits"></script>
  * Affiche les codes a jour d'un jeu Roblox + lien retour vers Zoneblox.
  * Auto-contenu, sans dependance, styles inline (aucun conflit avec le site hote). */
@@ -33,16 +33,16 @@
   function shell(inner, name, verified, count) {
     var head =
       '<div style="display:flex;align-items:center;gap:10px;padding:12px 14px;background:linear-gradient(135deg,#7c3aed,#22d3ee)">'
-      + '<span style="font-size:1.1rem">🎁</span>'
+      + '<span style="font-size:1.1rem">\ud83c\udf81</span>'
       + '<strong style="font-size:1rem;color:#fff;flex:1">Codes ' + esc(name) + '</strong>'
       + (count != null ? '<span style="background:rgba(0,0,0,.25);color:#fff;font-size:.72rem;font-weight:700;padding:3px 9px;border-radius:20px">' + count + ' actifs</span>' : '')
       + '</div>';
     var foot =
       '<div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;'
       + 'padding:10px 14px;border-top:1px solid #2a2440;background:#0f0b1a">'
-      + '<span style="font-size:.72rem;color:#a79fc4">' + (verified ? "🔄 Vérifié le " + esc(verified) : "") + '</span>'
+      + '<span style="font-size:.72rem;color:#a79fc4">' + (verified ? "\ud83d\udd04 V\u00e9rifi\u00e9 le " + esc(verified) : "") + '</span>'
       + '<a href="' + BASE + '/codes-' + esc(slug) + '.html" target="_blank" rel="noopener" '
-      + 'style="font-size:.8rem;font-weight:700;color:#22d3ee;text-decoration:none">Tous les codes sur Zoneblox →</a>'
+      + 'style="font-size:.8rem;font-weight:700;color:#22d3ee;text-decoration:none">Tous les codes sur Zoneblox \u2192</a>'
       + '</div>';
     return head + '<div style="padding:10px 14px">' + inner + '</div>' + foot;
   }
@@ -50,19 +50,19 @@
   function copyBtn(code) {
     return '<button data-code="' + esc(code) + '" '
       + 'style="cursor:pointer;background:#211a38;border:1px solid #2a2440;color:#f4f2fb;font-size:.72rem;'
-      + 'font-weight:700;padding:5px 9px;border-radius:8px">📋</button>';
+      + 'font-weight:700;padding:5px 9px;border-radius:8px">\ud83d\udccb</button>';
   }
 
   function paint(game) {
     if (!game) {
       render(shell('<p style="margin:0;font-size:.85rem;color:#a79fc4">Codes indisponibles pour l\'instant. '
-        + '<a href="' + BASE + '/tous-les-codes.html" target="_blank" rel="noopener" style="color:#22d3ee;text-decoration:none">Voir tous les codes →</a></p>', slug || "Roblox"));
+        + '<a href="' + BASE + '/tous-les-codes.html" target="_blank" rel="noopener" style="color:#22d3ee;text-decoration:none">Voir tous les codes \u2192</a></p>', slug || "Roblox"));
       return;
     }
     var inner;
     if (!game.codes || !game.codes.length) {
-      inner = '<p style="margin:0;font-size:.85rem;color:#a79fc4">Aucun code actif confirmé pour le moment. '
-        + 'On vérifie chaque jour — reviens bientôt.</p>';
+      inner = '<p style="margin:0;font-size:.85rem;color:#a79fc4">Aucun code actif confirm\u00e9 pour le moment. '
+        + 'On v\u00e9rifie chaque jour \u2014 reviens bient\u00f4t.</p>';
     } else {
       inner = game.codes.map(function (c) {
         return '<div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #221c3a">'
@@ -77,12 +77,12 @@
       var b = e.target.closest ? e.target.closest("button[data-code]") : null;
       if (!b) return;
       var t = b.getAttribute("data-code");
-      try { navigator.clipboard.writeText(t); b.textContent = "✓"; setTimeout(function () { b.textContent = "📋"; }, 1200); } catch (x) {}
+      try { navigator.clipboard.writeText(t); b.textContent = "\u2713"; setTimeout(function () { b.textContent = "\ud83d\udccb"; }, 1200); } catch (x) {}
     });
   }
 
   // rendu provisoire
-  render(shell('<p style="margin:0;font-size:.82rem;color:#a79fc4">Chargement des codes…</p>', slug || "Roblox"));
+  render(shell('<p style="margin:0;font-size:.82rem;color:#a79fc4">Chargement des codes\u2026</p>', slug || "Roblox"));
 
   fetch(BASE + "/data/codes.json", { cache: "default" })
     .then(function (r) { return r.json(); })

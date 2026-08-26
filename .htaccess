@@ -49,6 +49,10 @@
     Header set Cache-Control "public, max-age=1800, must-revalidate"
   </FilesMatch>
 </IfModule>
+<IfModule mod_mime.c>
+  # Widget : force UTF-8 sur JS/JSON (rendu correct des accents/emojis sur sites tiers)
+  AddCharset utf-8 .js .json
+</IfModule>
 
 
 # ==== Migration URLs plates 2026-07-22 (301) ====
