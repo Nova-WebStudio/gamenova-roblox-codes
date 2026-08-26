@@ -380,7 +380,7 @@ const GAMES_INDEX = [{ name: "Anime Origins", slug: 'anime-origins', emoji: '⚔
 
 function gameResultHTML(g) {
   return `
-    <a class="search-result-item" href="/codes/${g.slug}.html">
+    <a class="search-result-item" href="/codes-${g.slug}.html">
       <img src="${ROBLOX_THUMBS[g.slug] || ('/images/games/' + g.slug + '.svg')}" alt="${g.name}" style="width:38px;height:38px;border-radius:7px;object-fit:cover;flex-shrink:0" onerror="this.onerror=null;this.src='/images/games/'+'${g.slug}'+'.svg'">
       <div>
         <div style="font-size:.88rem;font-weight:600;color:var(--text-primary)">${g.name}</div>
@@ -660,7 +660,7 @@ function initYouTubeVideos() {
   if (!grid) return;
   if (!YOUTUBE_API_KEY) return;
 
-  const m = location.pathname.match(/\/codes\/([a-z0-9-]+)\.html/i);
+  const m = location.pathname.match(/\/codes[-\/]([a-z0-9-]+)\.html/i);
   if (!m) return;
   const slug = m[1];
   const game = (GAMES_INDEX.find(g => g.slug === slug) || {}).name || slug.replace(/-/g, ' ');
@@ -762,7 +762,7 @@ function renderNewGames(){
       ? ('✅ ' + g.codes + ' code' + (g.codes>1?'s':'') + ' actif' + (g.codes>1?'s':''))
       : 'ℹ️ Pas de codes';
     const thumb = g.thumb || ('/images/games/' + g.slug + '.svg');
-    return '<a href="/codes/' + g.slug + '.html" class="game-card">'
+    return '<a href="/codes-' + g.slug + '.html" class="game-card">'
       + '<div class="game-card-thumb">'
       + '<img data-game="' + g.slug + '" src="' + thumb + '" onerror="this.onerror=null;this.src=\'/images/games/' + g.slug + '.svg\'" alt="' + esc(g.name) + '" loading="lazy" decoding="async" class="thumb-svg">'
       + '<span class="card-badge badge-hot">🆕 NOUVEAU</span>'

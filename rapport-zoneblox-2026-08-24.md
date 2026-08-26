@@ -35,7 +35,8 @@
 ## (c) Autres maintenances
 
 - **Jeu de la semaine (lundi) :** bannière `FEATURED-WEEK` d'`index.html` basculée de Grow a Garden 2 → **Steal An Egg** (le phénomène du moment), miniature réelle + blurb FR + boutons « Voir la fiche » / « Tous les codes ».
-- **Encart évènements :** `data/events.json` → `meta.updated` au 24/08/2026. Aucune date ponctuelle passée à purger, aucune heure d'admin abuse confirmée à promouvoir (honnêteté). `js/events.js` inchangé → pas de bump events.
+- **Encart évènements — RETIRÉ (demande de Peter en fin de run) :** la section `id="evenements"` et le script `js/events.js` ont été **supprimés d'`index.html`** (comptes à rebours restocks + entrées admin abuse/MAJ sans horaire officiel jugés inutiles). ÉTAPE 6bis désormais désactivée (note ajoutée à `CLAUDE.md`). Fichiers `data/events.json`/`js/events.js` laissés en place mais non chargés.
+- **Accueil — réorganisation :** l'encart « ⭐ Jeu de la semaine » a été remonté juste au-dessus de « ⚡ Codes du jour ».
 - **Date « Vérifié aujourd'hui » de l'accueil (correctif) :** la date du hero d'`index.html` était **figée au 23 juillet 2026** (codée en dur à 2 endroits : `<span id="todayDate">` + `const TODAY`). Corrigée au **24 août 2026** ; règle ajoutée à `CLAUDE.md` pour la mettre à jour à chaque run.
 - **UGC, tier lists, guides existants :** pas de changement requis ce run.
 

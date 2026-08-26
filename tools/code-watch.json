@@ -215,34 +215,34 @@
   },
   "snapshots": {
     "blox-fruits": {
-      "lastChecked": "2026-08-21T03:41:43Z",
+      "lastChecked": "2026-08-26T05:00:00Z",
       "descLen": 366,
       "descExcerpt": "24 codes actifs. Les agregateurs en listent 23 (SUB2GAMERROBOT_EXP1 non repris par tous).",
       "knownCodes": [
-        "SUB2GAMERROBOT_EXP1",
         "EASTEREXP",
-        "Starcodeheo",
-        "Sub2Fer999",
+        "LIGHTNINGABUSE",
         "SUB2GAMERROBOT_RESET1",
-        "Lightningabuse",
+        "SUB2GAMERROBOT_EXP1",
         "KITT_RESET",
         "Sub2UncleKizaru",
-        "fudd10_v2",
-        "Fudd10",
-        "Bignews",
-        "kittgaming",
-        "Sub2CaptainMaui",
-        "Enyu_is_Pro",
-        "Magicbus",
-        "JCWK",
-        "Bluxxy",
-        "TheGreatAce",
-        "Sub2OfficialNoobie",
-        "Sub2NoobMaster123",
+        "Starcodeheo",
         "Axiore",
+        "Bignews",
+        "Bluxxy",
+        "Enyu_is_Pro",
+        "Fudd10",
+        "Fudd10_v2",
+        "JCWK",
+        "Kittgaming",
+        "Magicbus",
+        "StrawHatMaine",
+        "Sub2CaptainMaui",
         "Sub2Daigrock",
+        "Sub2Fer999",
+        "Sub2NoobMaster123",
+        "Sub2OfficialNoobie",
         "TantaiGaming",
-        "StrawHatMaine"
+        "TheGreatAce"
       ],
       "note30": "Verifie 30/06 : 23 codes actifs (RoCodes/PCGamesN 28/06) = set Zoneblox inchange.",
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
@@ -256,10 +256,11 @@
       "note0722": "Verifie 22/07 : ~23 codes actifs, candidat 1LOSTADMIN (mention vague, a confirmer 3 sources). Liste inchangee.",
       "note0727": "Verifie 27/07 : sources coherentes, aucun changement de liste.",
       "note0731": "Verifie 31/07 (web >=3 sources) : aucun changement. blox-fruits 23-24, blade-ball 14, fisch 5, volleyball 3 (UPDATE_80/HIDARI_FINALLY/ENCHO_NERF), blue-lock 9, ALS inchange, AV inchange, GAG/GAG2 inchanges.",
-      "note0801": "Verifie 01/08 (web >=3 sources) : aucun changement de liste. blade-ball set G2A divergent non publie (prudence) ; volleyball Update 81/HIDARI_RETURNS non confirme a >=3 sources (liste UPDATE_80/HIDARI_FINALLY/ENCHO_NERF maintenue) ; anime-vanguards set RoCodes/Beebom (Cog5th/223/Liberation/DMCAFree...) en conflit persistant -> non applique."
+      "note0801": "Verifie 01/08 (web >=3 sources) : aucun changement de liste. blade-ball set G2A divergent non publie (prudence) ; volleyball Update 81/HIDARI_RETURNS non confirme a >=3 sources (liste UPDATE_80/HIDARI_FINALLY/ENCHO_NERF maintenue) ; anime-vanguards set RoCodes/Beebom (Cog5th/223/Liberation/DMCAFree...) en conflit persistant -> non applique.",
+      "note": "Inchange (PCGamesN 21/08 = liste servie, sauf Chandler=rien, exclu a raison)."
     },
     "grow-a-garden": {
-      "lastChecked": "2026-08-20T05:00:00Z",
+      "lastChecked": "2026-08-26T05:00:00Z",
       "descLen": 327,
       "descExcerpt": "2 codes actifs (RDCAward, BEANORLEAVE10), coherent avec les sources de juillet 2026.",
       "knownCodes": [
@@ -272,7 +273,7 @@
         "torigate (conflit PCGamesN/PGG actif vs Beebom expire)"
       ],
       "note0710": "Verifie 10/07: RDCAward/BEANORLEAVE10 coherents. Nouveau candidat TEAMGREENBEAN a rattacher au bon jeu (GaG ou GaG2) avant publication. Page inchangee.",
-      "note": "Verifie 11/07: liste de l'ORIGINAL inchangee (RDCAward etc.). TEAMGREENBEAN/WATERYOPLANTS appartiennent a Grow a Garden 2, PAS a l'original (confirme: codes non transferables entre les deux jeux).",
+      "note": "Confirme actif (Pocket Tactics/Pocket Gamer/Beebom). Inchange.",
       "note1207": "Verifie 12/07 : description in-game sans code, liste inchangee.",
       "note0718": "Aucun changement.",
       "note0719": "Verifie 19/07 : 2 actifs (RDCAward, BEANORLEAVE10), coherent. Aucun changement.",
@@ -283,13 +284,13 @@
       "officialSource": "web"
     },
     "steal-a-brainrot": {
-      "lastChecked": "2026-08-23T05:00:00Z",
+      "lastChecked": "2026-08-26T05:00:00Z",
       "descLen": 313,
       "descExcerpt": "Description in-game consultee, aucun code. 3 sources confirment : aucun code gratuit actif.",
       "knownCodes": [
         "BESTBRAINROTEVER"
       ],
-      "note": "BESTBRAINROTEVER confirme actif par GamesRadar, Beebom, PCGamesN, Dexerto, RoCodes, RBLXGUIDE (>=3 sources). Spawn du brainrot secret La Vacca Saturno Saturnita. Ajoute a la page servie ce run (0->1).",
+      "note": "Conflit persistant 1 vs 23 -> prudence, inchange.",
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
       "note0710": "Verifie 10/07: sources toujours en conflit (certaines '0 code', une autre '22 codes actifs' sans les lister). Prudence: page sans code maintenue.",
       "pending": [],
@@ -332,23 +333,25 @@
       "note0823": "Verifie 23/08 (Beebom/Pocket Tactics/GamesRadar): 4BVISITS/GIVEMELUCK/SERPENT/DUNGEONSRELEASE cites actifs; set servi (13 codes wheel-spins) stable, inchange par prudence."
     },
     "blue-lock-rivals": {
-      "lastChecked": "2026-08-23T05:00:00Z",
+      "lastChecked": "2026-08-26T05:00:00Z",
       "descLen": 313,
       "descExcerpt": "Page Zoneblox en avance sur Beebom (30/06). Actifs : NELSHIDOU, NEWCHEMSOON, DEMON.",
       "knownCodes": [
-        "SAEREWORK",
-        "HALFBAKED",
-        "RINSOON",
-        "SAERRY4DELAY"
+        "INSANETRAILERSOON",
+        "DESTROYERMODE",
+        "BIGTRAILERSOON",
+        "RINTODAY",
+        "FIXESLATERTODAY",
+        "SORRY4DELAY!!"
       ],
       "pending": [
         "Certaines sources ne listent que SEMIFINALS/WORLDTOURNAMENTPART3/NEWMAP comme actifs (les 6 anciens peut-etre expires) -> verifier au prochain run, page laissee a 9 par prudence (ne pas supprimer sans preuve)"
       ],
       "pendingNote": "Publies le 30/06 : GAGAREWORK/ADDRESSME/BEARCLAW confirmes par GamesRadar(29/06)+PGG(27/06)+PCGamer. Anciens NELEVENT/NEL2.0/MASSIVEUPDATE passes expires (GamesRadar 29/06).",
-      "officialSource": "ingame",
+      "officialSource": "trello",
       "note02": "Verifie 02/07 : PGG (MAJ 27/06) liste toujours GAGAREWORK/ADDRESSME/BEARCLAW en NEW/actif. Set prudent de 3 maintenu (conflit sur les anciens codes selon sources). Inchange.",
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "note": "+3 codes actifs 21/07 (QOLUPD, QUARTERFINALSOON, REBALANCES) confirmes Pocket Tactics/GamesRadar/PGG/allthings — 6 actifs.",
+      "note": "U20 Rin Rework 24/08 — 6 codes (PCGamesN+PCGamer+GamesRadar+PGG).",
       "note0718": "Beebom liste GAGAREWORK/ADDRESSME/BEARCLAW comme actifs alors que la page les a deja passes en expires -> conserve la version la plus recente.",
       "note0719": "Verifie 19/07 : 3 actifs (NELSHIDOU, NEWCHEMSOON, DEMON) = sources PGG/PCGamer/Beebom (maj 17/07). Aucun changement.",
       "note0727": "Verifie 27/07 : sources coherentes, aucun changement de liste.",
@@ -440,18 +443,18 @@
       "note0823": "Verifie 23/08 (GamesRadar/PGG/PCGamer): SCARLET (jusqu'a dec 2026), TemporarySubmarine (oct 2026), CARBON (no expiry) confirmes long-lived; RoamingFishAndWaterPark dans la liste active. Set servi (6) coherent, inchange."
     },
     "volleyball-legends": {
-      "lastChecked": "2026-08-23T05:00:00Z",
+      "lastChecked": "2026-08-26T05:00:00Z",
       "descLen": 293,
       "descExcerpt": "Update 80 (25/07) : rotation, seuls UPDATE_80/HIDARI_FINALLY/ENCHO_NERF actifs (Roonby+u7buy+nerdschalk).",
       "knownCodes": [
-        "UPDATE_83",
-        "MIKAGE_REVIVED",
-        "SCHOOL_SOON"
+        "UPDATE_84",
+        "SEASON_18",
+        "PIRATE_SZN"
       ],
       "pending": [],
       "note02": "MAJ 02/07 : update 76 -> 3 codes actifs (UPDATE_76/ENCHO_RETURNS/BALANCE_76). Anciens update 75/saison 16/Jungle expires (RoCodes+Beebom+GamesRadar 01-02/07). Page passee de 9 a 3.",
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
-      "note": "Update 79 : +UPDATE_79, SEASON_17, FESTIVAL_UPD (Roonby/Beebom/PGG/Fandom) — 6 actifs.",
+      "note": "Update 84 — rotation (GamesRadar+Beebom+Twinfinite+RoCodes).",
       "officialSource": "discord/aggregateurs",
       "note0718": "6 codes bascules en expires, 3 actifs restants.",
       "note0727": "Verifie 27/07 : sources coherentes, aucun changement de liste.",
@@ -460,18 +463,18 @@
       "note0823": "Verifie 23/08 (allthings.how/Beebom/RoCodes/GamesRadar/Fossbytes/Twinfinite/Destructoid): UPDATE_83, MIKAGE_REVIVED, SCHOOL_SOON = set servi. Aucun changement."
     },
     "anime-vanguards": {
-      "lastChecked": "2026-08-24T05:00:00Z",
+      "lastChecked": "2026-08-26T05:00:00Z",
       "descLen": 288,
       "descExcerpt": "Reconciliation 16->6 actifs (GamesRadar+Beebom 17/08). Actifs: Miniupdate1,2BVisits(expire 23/08),Prepare,1DayDelay,25thHour,LetTheLarpingBegin. 13 anciens passes en expires + doublon corrige.",
       "knownCodes": [
-        "Miniupdate1",
         "Prepare",
         "1DayDelay",
         "25thHour",
         "LetTheLarpingBegin"
       ],
       "note0823": "Verifie 23/08 (PGG+Beebom 17/08 + GamesRadar 22/08): page servie a 6 actifs coherente (Miniupdate1/2BVisits/Prepare confirmes 3 sources; 1DayDelay/25thHour/LetTheLarpingBegin listes actifs Beebom). Conflit PGG (liste 13) vs Beebom (expire) tranche prudemment. Inchange ce run.",
-      "note0824": "2BVisits expire 23/08 (GamesRadar confirme) -> retire de la liste active servie (6->5). Miniupdate1 encore liste actif par PGG malgre label 23/08 -> conserve par prudence."
+      "note0824": "2BVisits expire 23/08 (GamesRadar confirme) -> retire de la liste active servie (6->5). Miniupdate1 encore liste actif par PGG malgre label 23/08 -> conserve par prudence.",
+      "note": "Miniupdate1 expire 23/08 -> retire (GamesRadar+PocketTactics+PGG). 2BVisits deja expire."
     },
     "pet-simulator-99": {
       "lastChecked": "2026-07-23T05:00:00Z",
@@ -1002,5 +1005,6 @@
     "fruit-battlegrounds": "OPE V2 (800 gems, 20/08) cite par 1 source; paliers BIG1M170K!! etc. sans distinction actif/expire claire -> non publie (< 3 sources concordantes).",
     "anime-last-stand": "Newest DelaySorryals/ALSUPD2/BleachSS/HuntersMark/SaveRukia deja sur la page (update 26/07) -> pas de nouveau code confirme, inchange.",
     "a-prioriser-prochain-run": "Fruit Battlegrounds (paliers + OPE V2), Anime Last Stand (liste active exacte), Fisch (fluide), + long tail. Ficher Anime Origins & +1 Speed Keyboard Escape avec Chrome."
-  }
+  },
+  "meta": {}
 }

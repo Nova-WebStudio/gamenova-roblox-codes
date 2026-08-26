@@ -4,7 +4,30 @@
 
 ---
 
-## 📌 Dernière brique — J16 (24 août 2026)
+## 📌 Dernière brique — J17 (26 août 2026)
+
+**Trending re-scanné (web, multi-sources) :** leaders du moment vérifiés contre le catalogue — Murder Mystery 2 (~1M CCU, couvert), **Steal An Egg** (#1 trending, ~724K CCU, couvert), +1 Speed Keyboard Escape (~500K CCU, **déjà couvert** sous le slug FR `evasion-clavier`), Anime Expeditions (couvert). **Aucun nouveau hit ≥4000 non couvert** → on approfondit le cluster porteur (règle evergreen).
+
+**Brique réalisée (ÉTAPE 2bis / cluster Steal An Egg) :** nouvelle **`tier-list/steal-an-egg.html`** (~2 317 mots FR).
+- **Intention distincte (anti-cannibalisation) :** « steal an egg tier list » / « meilleur pet steal an egg » / « steal an egg best pets » — intention *classement*, distincte de la fiche codes (transactionnelle) du même jeu. Aucune tier list existante ne visait ce jeu.
+- **Contenu à information gain :** classement S/A/B **par revenu/seconde** (Unicorn Divine ~1 Md/s → Eternal dragons → paliers Legendary réalistes), **tableau meilleur pet par biome** (Forest→Cosmic), section début de partie, encart **honnêteté mutations** (multiplicateurs non publiés → renvoi à l'UI en jeu), section Rebirth, FAQ 5 Q. Schema **ItemList + BreadcrumbList + FAQPage**.
+- **EEAT/honnêteté :** byline « L'équipe Zoneblox » + politique éditoriale ; sources datées (**index communautaire IGN via timesaver.gg, relevé 21–24/08/2026** + corroboration bloxspot/stealthygaming/ldplayer/eldorado — ≥2 sources) ; distinction claire info officielle / valeurs communautaires / non publié ; note d'évolutivité (jeu très récent).
+- **Maillage (anti-orphelin) :** carte + entrée JSON-LD ItemList du hub `tier-list/index.html` (vraie miniature tr.rbxcdn.com), `sitemap-tier-list.xml` + `sitemap.xml`, **liens croisés** fiche `codes-steal-an-egg.html` (nouveau bandeau CTA `data-cta="guidelink"` + lien « jeux similaires ») ↔ tier list, bouton hero « Voir la fiche ».
+- **Bonus fiche :** ajout du bandeau CTA `data-cta="guidelink"` qui manquait sur `codes-steal-an-egg.html`.
+
+Le cluster Steal An Egg compte désormais : **fiche codes ✓ · tier list pets ✓** (reste : guide complet).
+
+**Prochaine brique recommandée (J18), par ordre de priorité :**
+
+1. **Guide complet Steal An Egg** (`guides/steal-an-egg.html`, gabarit `guides/blox-fruits.html`) : how-to progression (Speed/treadmill, ordre des biomes Forest→Cosmic, quand Rebirth, mutations, vol PvP) — 3ᵉ brique du cluster, relie fiche ↔ tier ↔ guide. Sourcer ≥2 (IGN + timesaver/Beebom).
+2. Ficher **Anime Origins** (report récurrent depuis le 23/08).
+3. **Value list** (Steal An Egg ou GAG2) uniquement si la maintenance des valeurs datées (≥2 sources) est tenable.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
+## 📌 Archive — J16 (24 août 2026)
 
 **Trending re-scanné (web, multi-sources) :** découverte d'un **nouveau hit majeur non couvert** — **Steal An Egg** (créé le 25/07/2026, ~496K–724K joueurs simultanés selon les trackers, 284M visites, genre Simulation/Tycoon). Conforme à la règle « un vrai nouveau hit ≥4000 joueurs passe DEVANT l'evergreen », il a été fiché en priorité.
 

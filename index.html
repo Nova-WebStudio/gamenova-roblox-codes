@@ -389,7 +389,7 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding:44px 0 30px;ba
     <span style="left:78%;top:38%;animation-delay:.9s">🎮</span>
   </div>
   <div class="wrap">
-    <span class="eyebrow"><span class="pulse"></span> Vérifié aujourd'hui · <span id="todayDate">24 août 2026</span></span>
+    <span class="eyebrow"><span class="pulse"></span> Vérifié aujourd'hui · <span id="todayDate">26 août 2026</span></span>
     <h1>Tous les codes <span class="grad-text">Roblox</span><br/>actifs, au même endroit</h1>
     <p class="lead">Cherche ton jeu, copie le code en un clic. Vérifiés à la main et mis à jour chaque jour.</p>
 
@@ -403,11 +403,11 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding:44px 0 30px;ba
 
     <div class="chips">
       <span class="lbl">Populaire :</span>
-      <a class="chip" href="codes/blox-fruits.html">Blox Fruits</a>
-      <a class="chip" href="codes/grow-a-garden-2.html">Grow a Garden 2</a>
-      <a class="chip" href="codes/shindo-life.html">Shindo Life</a>
-      <a class="chip" href="codes/blade-ball.html">Blade Ball</a>
-      <a class="chip" href="codes/pet-simulator-99.html">Pet Sim 99</a>
+      <a class="chip" href="codes-blox-fruits.html">Blox Fruits</a>
+      <a class="chip" href="codes-grow-a-garden-2.html">Grow a Garden 2</a>
+      <a class="chip" href="codes-shindo-life.html">Shindo Life</a>
+      <a class="chip" href="codes-blade-ball.html">Blade Ball</a>
+      <a class="chip" href="codes-pet-simulator-99.html">Pet Sim 99</a>
     </div>
 
     <div class="trust">
@@ -445,15 +445,6 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding:44px 0 30px;ba
 #evenements .zb-ev-note{color:var(--text-muted,#8888bb);font-size:.78rem;margin-top:16px;line-height:1.5}
 #evenements .zb-ev-empty{color:var(--text-muted,#8888bb)}
 </style>
-<section class="block wrap" id="evenements">
-  <div class="sec-head">
-    <div>
-      <h2>⏰ Prochains évènements &amp; admin abuses</h2>
-      <p>Comptes à rebours en direct des restocks et évènements confirmés. Les admin abuses sans horaire officiel sont listés avec l'endroit où les surveiller.</p>
-    </div>
-  </div>
-  <div id="eventsBox" aria-live="polite"><p class="zb-ev-empty">Chargement des évènements…</p></div>
-</section>
 
 <!-- ============ CODES DU JOUR ============ -->
 <!-- FEATURED-WEEK-START -->
@@ -629,11 +620,11 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding:44px 0 30px;ba
       </div>
       <div>
         <h4>Jeux populaires</h4>
-        <a href="codes/blox-fruits.html">Blox Fruits</a>
-        <a href="codes/pet-simulator-x.html">Pet Simulator X</a>
-        <a href="codes/adopt-me.html">Adopt Me!</a>
-        <a href="codes/shindo-life.html">Shindo Life</a>
-        <a href="codes/king-legacy.html">King Legacy</a>
+        <a href="codes-blox-fruits.html">Blox Fruits</a>
+        <a href="codes-pet-simulator-x.html">Pet Simulator X</a>
+        <a href="codes-adopt-me.html">Adopt Me!</a>
+        <a href="codes-shindo-life.html">Shindo Life</a>
+        <a href="codes-king-legacy.html">King Legacy</a>
       </div>
       <div>
         <h4>Parcourir</h4>
@@ -663,7 +654,7 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding:44px 0 30px;ba
 
 <script>
 /* ---------------- DATA ---------------- */
-const TODAY = "24 août 2026";
+const TODAY = "26 août 2026";
 
 
 
@@ -695,11 +686,11 @@ function renderToday(){
       </div>`).join('');
     return `<article class="code-card">
       <div class="top">
-        <a class="tn" href="codes/${g.slug}.html"><img data-game="${g.slug}" src="${g.thumb}" alt="Miniature ${g.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/images/games/${g.slug}.svg'"></a>
-        <div><h3><a href="codes/${g.slug}.html">${g.name}</a></h3><div class="sub">${g.codes.length} codes actifs · vérifié aujourd'hui</div></div>
+        <a class="tn" href="codes-${g.slug}.html"><img data-game="${g.slug}" src="${g.thumb}" alt="Miniature ${g.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/images/games/${g.slug}.svg'"></a>
+        <div><h3><a href="codes-${g.slug}.html">${g.name}</a></h3><div class="sub">${g.codes.length} codes actifs · vérifié aujourd'hui</div></div>
       </div>
       ${rows}
-      <a class="btn btn-ghost btn-sm" href="codes/${g.slug}.html" style="justify-content:center">Tous les codes →</a>
+      <a class="btn btn-ghost btn-sm" href="codes-${g.slug}.html" style="justify-content:center">Tous les codes →</a>
     </article>`;
   }).join('');
 }
@@ -739,14 +730,14 @@ function renderGrid(){
     const badge=g.tag==="hot"?`<span class="badge hot">🔥 POPULAIRE</span>`:g.tag==="new"?`<span class="badge new">🆕 NOUVEAU</span>`:"";
     const tier=g.tier?`<a class="btn btn-ghost btn-sm" href="tier-list/${g.slug}.html">📊 Tier</a>`:"";
     return `<article class="card">
-      <a class="thumb" href="codes/${g.slug}.html" aria-label="Codes ${g.name}"><img data-game="${g.slug}" src="${g.thumb}" alt="Miniature ${g.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/images/games/${g.slug}.svg'">${badge}</a>
+      <a class="thumb" href="codes-${g.slug}.html" aria-label="Codes ${g.name}"><img data-game="${g.slug}" src="${g.thumb}" alt="Miniature ${g.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/images/games/${g.slug}.svg'">${badge}</a>
       <div class="card-body">
-        <h3><a href="codes/${g.slug}.html">${g.name}</a></h3>
+        <h3><a href="codes-${g.slug}.html">${g.name}</a></h3>
         <span class="status ${s.cls}"><span class="d"></span>${s.txt}</span>
         <span class="date">Vérifié le ${g.date}</span>
         <p class="desc">${g.desc}</p>
         <div class="cta">
-          <a class="btn btn-primary btn-sm" href="codes/${g.slug}.html">🎁 Codes</a>
+          <a class="btn btn-primary btn-sm" href="codes-${g.slug}.html">🎁 Codes</a>
           ${tier}
         </div>
       </div>
@@ -758,7 +749,7 @@ function renderGrid(){
 function renderAZ(){
   const uniq=[...GAMES].sort((a,b)=>a.name.localeCompare(b.name,'fr'));
   $("#azCount").textContent=uniq.length;
-  $("#azLinks").innerHTML=uniq.map(g=>`<a href="codes/${g.slug}.html" data-az="${g.name.toLowerCase()}">Codes ${g.name}</a>`).join('');
+  $("#azLinks").innerHTML=uniq.map(g=>`<a href="codes-${g.slug}.html" data-az="${g.name.toLowerCase()}">Codes ${g.name}</a>`).join('');
 }
 
 /* ---------------- SEARCH / AUTOCOMPLETE ---------------- */
@@ -768,7 +759,7 @@ function buildSuggest(box,q){
   if(!list.length){box.innerHTML=`<div class="empty">Aucun jeu trouvé pour « ${q} »</div>`;box.classList.add('open');return;}
   box.innerHTML=list.map((g,i)=>{
     const s=statusInfo(g);
-    return `<a href="codes/${g.slug}.html" role="option"><span class="tn"><img data-game="${g.slug}" src="${g.thumb}" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/images/games/${g.slug}.svg'"></span><span><div>${g.name}</div><div class="meta">${s.txt} · ${g.cat}</div></span></a>`;
+    return `<a href="codes-${g.slug}.html" role="option"><span class="tn"><img data-game="${g.slug}" src="${g.thumb}" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/images/games/${g.slug}.svg'"></span><span><div>${g.name}</div><div class="meta">${s.txt} · ${g.cat}</div></span></a>`;
   }).join('');
   box.classList.add('open');
 }
@@ -885,6 +876,5 @@ $("#mobSearch")&&$("#mobSearch").addEventListener('input',e=>{currentQuery=e.tar
   setTimeout(apply,1500);
 })();
 </script>
-<script src="/js/events.js?v=1" defer></script>
 </body>
 </html>

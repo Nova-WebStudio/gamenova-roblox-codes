@@ -15,7 +15,13 @@ Les deux doivent porter la **date du run** (ex. `24 août 2026`). Vérifier apr�
 
 ---
 
-## Encart « Prochains évènements & admin abuses » (accueil — demande de Peter, 24 juillet)
+## ⛔ Encart « Prochains évènements & admin abuses » — RETIRÉ (demande de Peter, 24 août 2026)
+
+**Cet encart a été supprimé de l'accueil** : la section `id="evenements"` et le `<script src="/js/events.js">` ont été retirés d'`index.html`. Peter juge les comptes à rebours (restocks) inutiles, ainsi que les entrées admin abuse/MAJ sans horaire officiel. **Ne PAS réintroduire l'encart ni exécuter l'ÉTAPE 6bis** (maintenance `data/events.json`) tant que Peter ne le redemande pas. Les fichiers `data/events.json` et `js/events.js` sont laissés en place mais ne sont plus chargés. La doc historique ci-dessous est conservée pour référence uniquement.
+
+---
+
+## Encart « Prochains évènements & admin abuses » (accueil — demande de Peter, 24 juillet) — [HISTORIQUE, voir note ci-dessus]
 
 Encart dynamique sur `index.html` (section `id="evenements"`, juste avant « Codes du jour »). Deux fichiers :
 
