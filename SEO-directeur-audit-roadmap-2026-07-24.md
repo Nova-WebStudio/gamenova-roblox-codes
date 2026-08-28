@@ -4,7 +4,29 @@
 
 ---
 
-## 📌 Dernière brique — J17 (26 août 2026)
+## 📌 Dernière brique — J18 (28 août 2026)
+
+**Trending re-scanné (web, multi-sources) :** leaders vérifiés contre le catalogue — Murder Mystery 2 (~1M CCU, couvert), Grow a Garden (couvert), Steal a Brainrot (couvert), Brookhaven (couvert), **Animal Hospital** (~350K CCU, couvert), Anime Expeditions (couvert), Steal An Egg (couvert), GAG2 (couvert). **Aucun nouveau hit ≥4000 non couvert** → on termine le cluster porteur (règle evergreen).
+
+**Brique réalisée (ÉTAPE 2bis / cluster Steal An Egg — 3ᵉ et dernière pièce) :** nouveau **`guides/steal-an-egg.html`** (~2 140 mots FR, gabarit `guides/blox-fruits.html`).
+- **Intention distincte (anti-cannibalisation) :** « guide steal an egg » / « comment jouer steal an egg » / « comment augmenter vitesse » / « rebirth steal an egg » — intention *how-to*, distincte de la fiche codes (transactionnelle) et de la tier list (classement). Aucune page existante ne visait cette intention.
+- **Contenu à information gain :** TOC ancré 10 sections ; **table des 9 biomes et seuils de vitesse** (Forest→Cosmic : Lake 900 … Cosmic 700 M) ; treadmill vs base (piège classique), 10 trails ; reset œufs 5 min + fermeture 13 s ; gardiens = contrôles de vitesse ; pets (78, taille+mutations=revenu) ; outils de vol PvP (batte, piège à ours) ; **Rebirth** (+5 %/palier, vitesse 150 = ×2 mutation Legendary) ; ordre de progression optimal + erreurs classiques ; FAQ 6 Q. Schema **Article + BreadcrumbList + FAQPage**.
+- **EEAT/honnêteté :** byline « L'équipe Zoneblox » + politique éditoriale ; **2 sources datées** (All Things How / Sehaj Padda 16/08/2026 + Sportskeeda) ; encarts « valeurs communautaires susceptibles d'évoluer → vérifier en jeu » ; aucune valeur inventée.
+- **Maillage (anti-orphelin) :** carte hub `guides.html` (vraie miniature tr.rbxcdn.com), `sitemap-guides.xml` + `sitemap.xml` ; **liens croisés bidirectionnels** : fiche `codes-steal-an-egg.html` (bouton CTA `data-cta="guidelink"` → guide) ↔ guide ↔ tier list `tier-list/steal-an-egg.html` (bouton hero « Guide complet » ajouté).
+
+Le cluster Steal An Egg est désormais **COMPLET** : **fiche codes ✓ · tier list pets ✓ · guide complet ✓** (codes↔tier↔guide reliés dans les deux sens).
+
+**Prochaine brique recommandée (J19), par ordre de priorité :**
+
+1. **Ficher Anime Origins** (report récurrent depuis le 23/08) — vérifier éligibilité ≥4000, miniature réelle (Chrome/API), codes (≥3 sources ou officiel), guide 6 astuces + 2 vidéos oEmbed ; intégrer hub/sitemap/GAMES_INDEX. Élargit la couverture d'entités anime.
+2. **Value/trading list** (Steal An Egg pets ou GAG2 graines) uniquement si la maintenance quotidienne des valeurs datées (≥2 sources) est tenable ; sinon reporter.
+3. **Hub éditorial « Nouveaux jeux Roblox (2026) »** (intention *nouveauté* ≠ *popularité*) ciblant Animal Hospital, Steal An Egg, GAG2, Anime Expeditions — maillage transversal, complète le cluster hub.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
+## 📌 Archive — J17 (26 août 2026)
 
 **Trending re-scanné (web, multi-sources) :** leaders du moment vérifiés contre le catalogue — Murder Mystery 2 (~1M CCU, couvert), **Steal An Egg** (#1 trending, ~724K CCU, couvert), +1 Speed Keyboard Escape (~500K CCU, **déjà couvert** sous le slug FR `evasion-clavier`), Anime Expeditions (couvert). **Aucun nouveau hit ≥4000 non couvert** → on approfondit le cluster porteur (règle evergreen).
 

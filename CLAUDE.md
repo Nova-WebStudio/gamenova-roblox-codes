@@ -16,14 +16,13 @@ python3 tools/build_codes_json.py
 
 ---
 
-## Date « Vérifié aujourd'hui » de l'accueil (index.html) — À FAIRE CHAQUE RUN
+## ⛔ Encart « Vérifié aujourd'hui · <date> » de l'accueil — RETIRÉ (demande de Peter, 28 août 2026)
 
-Le hero de `index.html` affiche « Vérifié aujourd'hui · <date> ». Cette date est **codée en dur à DEUX endroits** et n'est PAS automatique — il faut la mettre à jour à chaque run quotidien, sinon elle reste figée (bug réel : bloquée sur « 23 juillet 2026 » pendant des semaines) :
+**Cet encart a été supprimé du hero de `index.html`.** Le `<span class="eyebrow">… Vérifié aujourd'hui · <span id="todayDate">…</span></span>`, la constante `const TODAY = "…"` et la ligne JS `$("#todayDate").textContent=TODAY;` ont tous été retirés. **Ne PAS réintroduire cet encart ni cette date** tant que Peter ne le redemande pas — il n'y a donc plus de date d'accueil à mettre à jour à chaque run. (La ligne « 🔄 Vérifié le » des pages codes reste, elle, à rafraîchir normalement.) La doc historique ci-dessous est conservée pour référence uniquement.
 
-1. Le fallback visible : `<span id="todayDate">JJ mois AAAA</span>`
-2. La constante JS : `const TODAY = "JJ mois AAAA";` (sert aussi aux « vérifié aujourd'hui » des cartes)
+### [HISTORIQUE] Date « Vérifié aujourd'hui » de l'accueil
 
-Les deux doivent porter la **date du run** (ex. `24 août 2026`). Vérifier après coup : `grep -c "23 juillet 2026" index.html` doit valoir 0, et `grep -o 'const TODAY = "[^"]*"' index.html` doit afficher la date du jour.
+Le hero affichait « Vérifié aujourd'hui · <date> », codée en dur à deux endroits (fallback `<span id="todayDate">` + `const TODAY`) et mise à jour à chaque run. Supprimé le 28/08/2026.
 
 ---
 
