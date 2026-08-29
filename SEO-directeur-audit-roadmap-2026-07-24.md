@@ -4,7 +4,31 @@
 
 ---
 
-## 📌 Dernière brique — J18 (28 août 2026)
+## 📌 Dernière brique — J19 (29 août 2026)
+
+**Codes (priorité) :** re-scan multi-sources (pcgamesn, gamesradar, progameguides, beebom, pcgamer) sur les jeux chauds — **tout stable, identique au 28/08**, aucun changement de codes appliqué. Blox Fruits (24, sync pcgamesn incl. Lightningabuse), Blue Lock Rivals (6, match PC Gamer), Volleyball Legends (3, match), GAG (2 actifs). Conflit GAG « torigate » (zoneblox=expiré vs 4 sites=actif) → gardé **expiré par prudence** (en attente, code cosmétique event que les sites laissent traîner). « Vérifié le » rafraîchi au **29 août** sur les **177 pages servies**.
+
+**Trending re-scanné :** leaders vérifiés contre le catalogue — aucun nouveau hit ≥4000 non couvert. On continue l'evergreen.
+
+**Brique réalisée (ÉTAPE 2bis / cluster Anime Origins — tier list) :** nouvelle **`tier-list/anime-origins.html`** (~1 910 mots FR).
+- **Intention distincte (anti-cannibalisation) :** « anime origins tier list » / « meilleures unités anime origins » — intention *classement*, distincte de la fiche codes (transactionnelle). Aucune page existante ne visait cette intention ; le report récurrent « ficher Anime Origins » (J17→J19) était **obsolète** : `codes-anime-origins.html` existe déjà (dans GAMES_INDEX, ~1 880 mots).
+- **Contenu à information gain :** classement complet **SS→C** (51 unités) recopié depuis Pocket Tactics ; write-ups FR détaillés des 13 unités SS+S ; section **meilleurs traits** (Immortal/Overseer/Rupture/Decay/Hustler/Looting/Scholar/Hawkeye) ; meilleure équipe + conseils débutants ; FAQ 5 Q. Schema **ItemList + BreadcrumbList + FAQPage** (3 blocs valides).
+- **EEAT/honnêteté :** byline « L'équipe Zoneblox » + politique éditoriale ; **source principale datée** Pocket Tactics (20/08/2026) **recoupée** avec Sportskeeda + Pro Game Guides ; caveat « noms d'unités variables selon les sites, vérifier en jeu » ; rien d'inventé (descriptions génériques là où pas de spécificité sourcée ; specifics Valcrad sourcés).
+- **Maillage (anti-orphelin) :** carte hub `tier-lists.html` (vraie miniature tr.rbxcdn.com), `sitemap-tier-list.xml` + `sitemap.xml` ; **lien croisé** fiche `codes-anime-origins.html` (bouton hero « 📊 Tier list Anime Origins ») ↔ tier list (bouton hero « 🎁 Voir les codes »).
+
+Cluster Anime Origins : **fiche codes ✓ · tier list ✓** · guide complet ✗ (candidat J20).
+
+**Prochaine brique recommandée (J20), par ordre de priorité :**
+
+1. **Guide complet `guides/anime-origins.html`** (gabarit `guides/blox-fruits.html`) — clôt le cluster Anime Origins (codes↔tier↔guide). Intention *how-to* (« comment jouer / farmer / évoluer / meilleure équipe Anime Origins ») distincte de la fiche codes et de la tier list. Relier hub `guides.html` + sitemaps + boutons croisés.
+2. **Value/trading list** (Steal An Egg pets ou GAG2 graines) uniquement si la maintenance quotidienne des valeurs datées (≥2 sources) est tenable.
+3. **Hub éditorial** enrichir « Nouveaux jeux Roblox (2026) » (Animal Hospital, Steal An Egg, GAG2, Anime Expeditions) — maillage transversal.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
+## 📌 Archive — J18 (28 août 2026)
 
 **Trending re-scanné (web, multi-sources) :** leaders vérifiés contre le catalogue — Murder Mystery 2 (~1M CCU, couvert), Grow a Garden (couvert), Steal a Brainrot (couvert), Brookhaven (couvert), **Animal Hospital** (~350K CCU, couvert), Anime Expeditions (couvert), Steal An Egg (couvert), GAG2 (couvert). **Aucun nouveau hit ≥4000 non couvert** → on termine le cluster porteur (règle evergreen).
 

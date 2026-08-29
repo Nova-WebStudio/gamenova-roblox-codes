@@ -897,8 +897,8 @@
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
   "lastRun": {
-    "date": "2026-08-28T05:00:00Z",
-    "note": "Run 2026-08-28: DECOUVERTE IMPORTANTE - l'arbre SERVI est bien les fichiers PLATS codes-<slug>.html (sitemap + .htaccess 301 de /codes/<slug>.html vers /codes-<slug>.html). Les fichiers codes/<slug>.html (sous-dossier) sont DEPRECATED/redirigés. Verif codes jeux chauds: Fisch -> ShootingStars expire (24/08 consensus pcgamer/gamesradar) retire, actifs = scarlet/TemporarySubmarine/CARBON (3). Blue Lock (6), Volleyball (UPDATE_84/SEASON_18/PIRATE_SZN), GAG (RDCAward/BEANORLEAVE10 confirmes actifs), Blade Ball (13), Blox Fruits (24 dont EASTEREXP), Anime Vanguards (4 servis - 12 codes PT en attente), Steal a Brainrot (1, conflit), Fruit BG (5, HIGHER1M120K en attente), King Legacy (7, RainbowDragon/2MFAV en attente) -> inchanges par prudence. verifDate rafraichi au 28 aout sur ces 10 pages servies. index.html TODAY -> 28 aout. codes.json regenere (1228 codes). Brique SEO: voir roadmap. .git/index.lock residuel BLOQUE le commit - Peter doit le supprimer manuellement (rm .git/index.lock)."
+    "date": "2026-08-29T05:00:00Z",
+    "note": "Run 2026-08-29: verif codes jeux chauds via pcgamesn/gamesradar/progameguides/beebom/pcgamer. TOUT STABLE = identique au 28/08. Blox Fruits (24 servis, incl. Lightningabuse - sync pcgamesn), Blue Lock Rivals (6: INSANETRAILERSOON/DESTROYERMODE/BIGTRAILERSOON/RINTODAY/FIXESLATERTODAY/SORRY4DELAY - match PC Gamer 28/08), Volleyball Legends (3: UPDATE_84/SEASON_18/PIRATE_SZN - match), GAG (2 actifs RDCAward/BEANORLEAVE10). CONFLIT GAG 'torigate': zoneblox=expire mais pcgamesn/gamesradar/progameguides/beebom listent actif (sites gardent codes cosmetiques perimes) -> garde EXPIRE par prudence (en attente). Aucun changement de codes applique. verifDate rafraichi au 29 aout sur 177 pages servies. Fruit BG/King Legacy/Fisch/Blade Ball/Anime Vanguards inchanges (pas d'info contradictoire)."
   },
   "_pending2026-07-18": [
     "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
@@ -976,6 +976,13 @@
     "a-prioriser-prochain-run": "Fruit Battlegrounds (paliers + OPE V2), Anime Last Stand (liste active exacte), Fisch (fluide), + long tail. Ficher Anime Origins & +1 Speed Keyboard Escape avec Chrome."
   },
   "meta": {
-    "updated": "2026-08-28T05:00:00Z"
+    "updated": "2026-08-29T05:00:00Z"
+  },
+  "_pending2026-08-29": {
+    "grow-a-garden": {
+      "candidate": "torigate",
+      "reward": "Whispering Torii",
+      "reason": "Conflit: liste zoneblox=expire vs 4 sites web=actif. Garde expire (prudence). A retester si GAG relance event Whispering Torii."
+    }
   }
 }
