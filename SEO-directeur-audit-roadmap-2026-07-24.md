@@ -4,7 +4,49 @@
 
 ---
 
-## 📌 Dernière brique — J19 (29 août 2026)
+## 📌 Dernière brique — J21 (31 août 2026)
+
+**Codes (priorité) :** re-scan multi-sources (progameguides, pcgamesn, pcgamer, gamesradar, beebom). **2 changements appliqués.** (1) **Blue Lock Rivals → 6 codes actifs devient 9** : ajout de **UBERSTAKEOVER, KINGNEXTWEEK, EGODEFENSE** (Pro Game Guides 29/08 liste les 9 actifs + confirmation multi-sources 30/08 ; les 6 anciens INSANETRAILERSOON/DESTROYERMODE/BIGTRAILERSOON/RINTODAY/FIXESLATERTODAY/SORRY4DELAY!! toujours actifs selon PGG). (2) **Anime Vanguards → renouvelé à 3 codes actifs** : anciens (Prepare, 1DayDelay, 25thHour, LetTheLarpingBegin) expirés ; nouveaux **Retribution, Wrath, MiniUpd2** (Holy Retribution, PGG 30/08 recoupé multi-sources ; compteur expirés 22→26). **Stables** : Blox Fruits (24 servis ; « Chandler » ignoré = donne 0 ; `1LOSTADMIN` **confirmé expiré** par PCGamesN → candidat retiré), GAG (RDCAward/BEANORLEAVE10 ; `torigate` conflit PGG actif vs Beebom expiré → gardé **expiré** par prudence), Steal a Brainrot (BESTBRAINROTEVER), Volleyball Legends (Update 85 inchangé). **Candidat en attente (prudence)** : Fisch `SkycrestNextWeek` (agrégateurs 30/08 mais GamesRadar 24/08 ne le liste pas → <3 sources nommées). « Vérifié le » rafraîchi au **31 août** sur les **177 pages servies**. Jeux chauds non re-vérifiés en profondeur ce run (stables au 30/08, à re-prioriser) : King Legacy, Anime Last Stand, Pet Simulator 99, Fruit Battlegrounds, World Fighters, Noob Incremental.
+
+**Trending re-scanné (lundi) :** leaders vérifiés — Steal An Egg #1 (~1,4M CCU), Murder Mystery 2, Brookhaven, Grow a Garden, Steal a Brainrot, +1 Speed Keyboard Escape (=`evasion-clavier`, couvert), Anime Expeditions (couvert). **Aucun nouveau hit ≥4000 non couvert** → evergreen. **Jeu de la semaine** maintenu sur **Steal An Egg** (toujours #1).
+
+**Brique réalisée (ÉTAPE 2bis / maintenance-fraîcheur cluster Volleyball Legends) :** **refonte de `tier-list/volleyball-legends.html`** (méta obsolète du 5 juin 2026 → 31 août 2026). Le cluster Volleyball Legends était déjà **complet** (codes ✓ · tier list ✓ · guide ✓, reliés dans les deux sens) — la reco J21 « créer la tier list » était donc caduque. À la place : **information gain** — ajout d'un **tier S+** avec les deux styles Secret de l'**Update 40** (**Hidari**, capacité « Lefty Arm » ; **Jinko**, all-rounder serve/spike 100 %+) que les concurrents classent désormais au sommet et qui manquaient à notre page ; réorganisation S+/S/A (Timeskip Hinto & Timeskip Kyamo remontés en S+ ; Taichou/Mikage/Kazana ajoutés en S ; Kisuki/Bakuri/Hirakumi en A), 2 nouveaux write-ups FR sourcés, **ItemList** mis à jour (Hidari/Jinko en tête), notice + date + og:description rafraîchis. **Sources (≥2, datées)** : Pocket Gamer (04/08) + findingDulcinea (méta sept. 2026, stats détaillées). **Anti-cannibalisation** : aucune nouvelle URL, page existante mise à jour (intention *classement* inchangée). **EEAT** : classement daté + « recoupé Pocket Gamer + findingDulcinea » + caveat évolutivité.
+
+**Prochaine brique recommandée (J22), par ordre de priorité :**
+
+1. **Guide how-to Volleyball Legends « comment obtenir les meilleurs styles / spins / pity »** — le guide existe mais peut être approfondi (mécaniques de spin, pity 200, 2× Secret le week-end, meilleurs styles par poste) : intention *how-to* distincte de la tier list. OU cluster **Anime Vanguards** (fiche codes très active « Holy Retribution ») : vérifier existence tier list/guide dédiés et compléter le maillon manquant.
+2. **Value/trading list** (Steal An Egg pets ou GAG2 graines) uniquement si la maintenance quotidienne des valeurs datées (≥2 sources) est tenable ; sinon reporter.
+3. **Hub éditorial** enrichir « Nouveaux jeux Roblox (2026) » (Steal An Egg, Animal Hospital, GAG2, Anime Expeditions) — maillage transversal.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
+## 📌 Archive — J20 (30 août 2026)
+
+**Codes (priorité) :** re-scan multi-sources (gamesradar, progameguides, beebom, pcgamer, pcgamesn, twinfinite, roonby, dexerto). **1 changement appliqué : Volleyball Legends → Update 85.** Nouveaux actifs **UPDATE_85 / SHIRO / BLOCKED** (confirmés ≥4 sources : gamesradar, progameguides, twinfinite, roonby « UPDATE 85 ») ; les anciens **UPDATE_84 / SEASON_18 / PIRATE_SZN** passés en expirés (compteur expirés 15→18, prose « Dernière mise à jour » au 30/08). Reste **stable** : Blue Lock Rivals (6 codes, match), Steal a Brainrot (BESTBRAINROTEVER confirmé actif gamesradar/dexerto/beebom), GAG (RDCAward/BEANORLEAVE10 actifs), Blox Fruits (24 servis, inchangé). **Candidats en attente (prudence)** : GAG `FREESEED` (rapporté glitché) ; Blox Fruits `1LOSTADMIN` (1 seule source) ; GAG `torigate` (report). « Vérifié le » rafraîchi au **30 août** sur les **177 pages servies** ; `data/codes.json` régénéré (177 jeux, 1228 codes).
+
+**Trending re-scanné :** leaders vérifiés (Steal An Egg #1 ~1,4M CCU, Murder Mystery 2, Brookhaven, Grow a Garden, +1 Speed Keyboard Escape [couvert = `evasion-clavier`], Anime Expeditions) — **aucun nouveau hit ≥4000 non couvert** → on clôt le cluster.
+
+**Brique réalisée (ÉTAPE 2bis / cluster Anime Origins — guide complet, 3ᵉ et dernière pièce) :** nouveau **`guides/anime-origins.html`** (~2 250 mots FR, gabarit `guides/anime-last-stand.html`).
+- **Intention distincte (anti-cannibalisation) :** « guide anime origins / comment évoluer / meilleure équipe / comment farmer » — intention *how-to*, distincte de la fiche codes (transactionnelle) et de la tier list (classement). Aucune page existante ne visait cette intention.
+- **Contenu à information gain :** TOC ancré 8 sections ; **ordre de progression optimal** (Story Normal→Hard→Legend Stages→Challenges→évolution→modes avancés) ; route d'évolution Vegita (Halo/Power Scouters + Remnants) ; **tableau équipe débutant** (6 rôles) ; **tableau priorités ressources** (Gems/Trait Rerolls/Stat Prisms/Remnants/Or/Fusion Cores) ; **tableau modes avancés** (Raids/Rifts/Infinite Mansion/World Bosses + point d'entrée) ; 8 erreurs à éviter ; FAQ 5 Q. Schema **Article + BreadcrumbList + FAQPage** (3 blocs valides).
+- **EEAT/honnêteté :** byline « L'équipe Zoneblox » + politique éditoriale ; **sources datées recoupées** (Pocket Tactics 20/08 + Pro Game Guides + Sportskeeda + guide débutant LDPlayer 26/08) ; encart « version fin août 2026, taux/récompenses évoluent → vérifier en jeu » ; rien d'inventé.
+- **Maillage (anti-orphelin) :** carte hub `guides.html` (`.card`) **et** `guides/index.html` (`.g-card` + ItemList position 45 + map CATS `anime`, vraie miniature tr.rbxcdn.com) ; `sitemap-guides.xml` + `sitemap.xml` ; **liens croisés bidirectionnels** : fiche `codes-anime-origins.html` (bouton hero « 📖 Guide complet ») + tier list `tier-list/anime-origins.html` (bouton hero « 📖 Guide complet ») → guide, et guide → codes + tier list (CTA + « articles liés »).
+
+Le cluster Anime Origins est désormais **COMPLET** : **fiche codes ✓ · tier list ✓ · guide complet ✓** (codes↔tier↔guide reliés dans les deux sens).
+
+**Prochaine brique recommandée (J21), par ordre de priorité :**
+
+1. **Cluster Volleyball Legends** — la fiche codes est très active (Update 85) mais le jeu n'a ni tier list ni guide complet dédiés. Créer **`tier-list/volleyball-legends.html`** (meilleurs personnages/styles, intention *classement* distincte de la fiche codes) ou le guide how-to ; fort trafic saisonnier. Sourcer ≥2 (gamesradar/progameguides/fandom).
+2. **Value/trading list** (Steal An Egg pets ou GAG2 graines) uniquement si la maintenance quotidienne des valeurs datées (≥2 sources) est tenable.
+3. **Hub éditorial** enrichir « Nouveaux jeux Roblox (2026) » (Animal Hospital, Steal An Egg, GAG2, Anime Expeditions) — maillage transversal.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
+## 📌 Archive — J19 (29 août 2026)
 
 **Codes (priorité) :** re-scan multi-sources (pcgamesn, gamesradar, progameguides, beebom, pcgamer) sur les jeux chauds — **tout stable, identique au 28/08**, aucun changement de codes appliqué. Blox Fruits (24, sync pcgamesn incl. Lightningabuse), Blue Lock Rivals (6, match PC Gamer), Volleyball Legends (3, match), GAG (2 actifs). Conflit GAG « torigate » (zoneblox=expiré vs 4 sites=actif) → gardé **expiré par prudence** (en attente, code cosmétique event que les sites laissent traîner). « Vérifié le » rafraîchi au **29 août** sur les **177 pages servies**.
 
