@@ -2,7 +2,8 @@
    Zoneblox – Main JavaScript (FR)
    ============================================================ */
 
-const ROBLOX_THUMBS = {'anime-origins': 'https://tr.rbxcdn.com/180DAY-921f16e3041d929ed22801e02394fad5/768/432/Image/Png/noFilter',
+const ROBLOX_THUMBS = {
+  'dungeon-quest-reborn': 'https://tr.rbxcdn.com/180DAY-70c1d4c8beaf4aa7f463b9556abfe4c9/480/270/Image/Webp/noFilter','anime-origins': 'https://tr.rbxcdn.com/180DAY-921f16e3041d929ed22801e02394fad5/768/432/Image/Png/noFilter',
   'grow-a-chicken-fighter': 'https://tr.rbxcdn.com/180DAY-8403e52cfc77a0fb4df895e64943deab/768/432/Image/Png/noFilter',
   'dig-and-clean': 'https://tr.rbxcdn.com/180DAY-1912ba1aee413f812eeb5cc59ba88416/768/432/Image/Png/noFilter',
   'fish-an-anime-rng': 'https://tr.rbxcdn.com/180DAY-93aa19d0ef92135a3bc924b7f7674e61/768/432/Image/Png/noFilter',
@@ -205,7 +206,8 @@ function initMobileNav() {
 }
 
 /* ---- Search index ---- */
-const GAMES_INDEX = [{ name: "Anime Origins", slug: 'anime-origins', emoji: '⚔️', codes: 9 },
+const GAMES_INDEX = [{ name: 'Dungeon Quest Reborn', slug: 'dungeon-quest-reborn', emoji: '⚔️', codes: 0 },
+{ name: "Anime Origins", slug: 'anime-origins', emoji: '⚔️', codes: 9 },
   { name: "Grow a Chicken Fighter", slug: 'grow-a-chicken-fighter', emoji: '🐔', codes: 4 },
   { name: "Dig and Clean", slug: 'dig-and-clean', emoji: '🧼', codes: 3 },
   { name: "Fish an Anime RNG", slug: 'fish-an-anime-rng', emoji: '🎣', codes: 5 },
@@ -445,7 +447,8 @@ function highlightNav() {
 }
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
-const ROBLOX_UNIVERSE_IDS = {'anime-origins': 8946565814,
+const ROBLOX_UNIVERSE_IDS = {
+  'dungeon-quest-reborn': 9931749389,'anime-origins': 8946565814,
   'grow-a-chicken-fighter': 10338952197,
   'dig-and-clean': 10475794799,
   'fish-an-anime-rng': 9582986239,

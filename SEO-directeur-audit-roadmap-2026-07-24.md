@@ -4,7 +4,27 @@
 
 ---
 
-## 📌 Dernière brique — J21 (31 août 2026)
+## 📌 Dernière brique — J22 (1 septembre 2026)
+
+**Codes (priorité) :** re-scan multi-sources (Beebom, PCGamesN, Pro Game Guides, PC Gamer, GamesRadar). **1 changement appliqué + 2 confirmations.** (1) **Blue Lock Rivals → 3 codes actifs** : les 6 codes du patch précédent (INSANETRAILERSOON, DESTROYERMODE, BIGTRAILERSOON, RINTODAY, FIXESLATERTODAY, SORRY4DELAY!!) ont **expiré** (Beebom màj 1ᵉʳ sept.) ; actifs = **UBERSTAKEOVER, KINGNEXTWEEK, EGODEFENSE** (prose + compteurs + JSON-LD corrigés sur `codes-blue-lock-rivals.html`). (2) **Volleyball Legends** confirmé à **UPDATE_85 / SHIRO / BLOCKED** (Beebom 1ᵉʳ sept.) — déjà à jour. (3) **Anime Vanguards** confirmé à **Retribution / Wrath / MiniUpd2** (PGG 30/08 + PC Gamer) — déjà à jour. **Stables** : Blox Fruits (24, PCGamesN), Grow a Garden (RDCAward/BEANORLEAVE10). **Candidat en attente (prudence)** : Steal a Brainrot `BESTBRAINROTEVER` — PCGamesN (31/08) affirme « aucun code », mais 3 sources l'ont confirmé actif le 30/08 → **gardé actif, à re-vérifier au prochain run**. « Vérifié le » rafraîchi au **1ᵉʳ septembre** + titres/H1 basculés en **(septembre 2026)** sur les **177 pages servies** ; `data/codes.json` régénéré (178 jeux avec DQR).
+
+**Trending re-scanné :** leaders vérifiés (Blox Fruits, Grow a Garden, Steal a Brainrot, Brookhaven, GAG2, Adopt Me, 99 Nights, Steal An Egg, Anime Expeditions) — tous couverts. **Nouveau hit détecté & fiché** : **Dungeon Quest Reborn** (~43,8K CCU, Action RPG, non couvert) → « totale » créée (voir ci-dessous). Aucun autre hit ≥4000 non couvert.
+
+**Brique réalisée (ÉTAPE 1 — nouveau jeu « la totale ») :** **Dungeon Quest Reborn** (universe 9931749389, groupe 496909722, ~43,8K joueurs). 3 pages créées : `codes-dungeon-quest-reborn.html` (~1 690 mots, état « aucun code » honnête et sourcé — le jeu n'a pas de système de codes, comme le Dungeon Quest original ; confirmé PGG + PCGamesN + Destructoid + All Things How ; 2 vidéos oEmbed vérifiées ItsChalls/Cocajola ; bandeau CTA guidelink), `tier-list/dungeon-quest-reborn.html` (armes & capacités : Eden's Vengeance/Reaper, EIR/IEF, Voidspire/Effigy/Hofund ; sources PGG + BloxRant) et `guides/dungeon-quest-reborn.html` (~1 680 mots, 8 sections : classes Mage→Guerrier, donjons+niveaux, leveling/leech, ordre game pass, armes, trading ; sources All Things How + PGG). **Intégration complète** : carte accueil (`GAMES`), `GAMES_INDEX`+`ROBLOX_THUMBS`+`ROBLOX_UNIVERSE_IDS` (main.js, cache **v=40→v=41** site-wide), carte `tous-les-codes.html` + hubs `tier-lists.html`/`guides.html` (vraies miniatures tr.rbxcdn), 4 sitemaps, SVG fallback, liens croisés codes↔tier↔guide. Vraie miniature `tr.rbxcdn.com/180DAY-70c1d4c8…` (768/432 hero, 480/270 cartes).
+
+**Brique SEO complémentaire (cluster Volleyball Legends — information gain) :** ajout d'une section **« Spins & système de pity »** au guide `guides/volleyball-legends.html` (mécaniques de pity 50/200/400, coûts de spins, stratégie 2× Luck, meilleurs styles), intention *how-to* distincte de la tier list, sourcée (Sportskeeda + Dot Esports + wiki VL). Guide passé de ~1 900 à ~2 200 mots, TOC + renumérotation propres, dateModified au 1ᵉʳ sept.
+
+**Prochaine brique recommandée (J23), par ordre de priorité :**
+
+1. **Cluster Dungeon Quest Reborn** — vérifier l'engagement (nouveau jeu très actif) et, si besoin, enrichir la tier list (armes par donjon) ou ajouter une page how-to « meilleur build Mage / Guerrier ». Surveiller l'apparition éventuelle de codes (Discord officiel).
+2. **Re-vérifier Steal a Brainrot** `BESTBRAINROTEVER` (conflit PCGamesN) et les jeux chauds non re-vérifiés en profondeur (King Legacy, Fisch, Fruit Battlegrounds, Anime Last Stand, Pet Simulator 99).
+3. **Value/trading list** (Steal An Egg pets ou GAG2 graines) uniquement si la maintenance quotidienne des valeurs datées (≥2 sources) est tenable.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
+## 📌 Archive — J21 (31 août 2026)
 
 **Codes (priorité) :** re-scan multi-sources (progameguides, pcgamesn, pcgamer, gamesradar, beebom). **2 changements appliqués.** (1) **Blue Lock Rivals → 6 codes actifs devient 9** : ajout de **UBERSTAKEOVER, KINGNEXTWEEK, EGODEFENSE** (Pro Game Guides 29/08 liste les 9 actifs + confirmation multi-sources 30/08 ; les 6 anciens INSANETRAILERSOON/DESTROYERMODE/BIGTRAILERSOON/RINTODAY/FIXESLATERTODAY/SORRY4DELAY!! toujours actifs selon PGG). (2) **Anime Vanguards → renouvelé à 3 codes actifs** : anciens (Prepare, 1DayDelay, 25thHour, LetTheLarpingBegin) expirés ; nouveaux **Retribution, Wrath, MiniUpd2** (Holy Retribution, PGG 30/08 recoupé multi-sources ; compteur expirés 22→26). **Stables** : Blox Fruits (24 servis ; « Chandler » ignoré = donne 0 ; `1LOSTADMIN` **confirmé expiré** par PCGamesN → candidat retiré), GAG (RDCAward/BEANORLEAVE10 ; `torigate` conflit PGG actif vs Beebom expiré → gardé **expiré** par prudence), Steal a Brainrot (BESTBRAINROTEVER), Volleyball Legends (Update 85 inchangé). **Candidat en attente (prudence)** : Fisch `SkycrestNextWeek` (agrégateurs 30/08 mais GamesRadar 24/08 ne le liste pas → <3 sources nommées). « Vérifié le » rafraîchi au **31 août** sur les **177 pages servies**. Jeux chauds non re-vérifiés en profondeur ce run (stables au 30/08, à re-prioriser) : King Legacy, Anime Last Stand, Pet Simulator 99, Fruit Battlegrounds, World Fighters, Noob Incremental.
 
