@@ -215,7 +215,7 @@
   },
   "snapshots": {
     "blox-fruits": {
-      "lastChecked": "2026-08-28T05:00:00Z",
+      "lastChecked": "2026-09-02T05:00:00Z",
       "descLen": 366,
       "descExcerpt": "24 codes actifs. Les agregateurs en listent 23 (SUB2GAMERROBOT_EXP1 non repris par tous).",
       "knownCodes": [
@@ -239,9 +239,9 @@
       "note": "Inchange (PCGamesN 21/08 = liste servie, sauf Chandler=rien, exclu a raison)."
     },
     "grow-a-garden": {
-      "lastChecked": "2026-08-28T05:00:00Z",
+      "lastChecked": "2026-09-02T05:00:00Z",
       "descLen": 327,
-      "descExcerpt": "2 codes actifs (RDCAward, BEANORLEAVE10), coherent avec les sources de juillet 2026.",
+      "descExcerpt": "2 actifs (RDCAward, BEANORLEAVE10). torigate: PCGamesN(29/08)+PGG le listent actif, Beebom expire -> CONFLIT, garde hors liste par prudence.",
       "knownCodes": [
         "RDCAward",
         "BEANORLEAVE10"
@@ -260,7 +260,7 @@
       "officialSource": "web"
     },
     "steal-a-brainrot": {
-      "lastChecked": "2026-08-28T05:00:00Z",
+      "lastChecked": "2026-09-02T05:00:00Z",
       "descLen": 313,
       "descExcerpt": "Description in-game consultee, aucun code. 3 sources confirment : aucun code gratuit actif.",
       "knownCodes": [
@@ -310,7 +310,7 @@
       "note0823": "Verifie 23/08 (Beebom/Pocket Tactics/GamesRadar): 4BVISITS/GIVEMELUCK/SERPENT/DUNGEONSRELEASE cites actifs; set servi (13 codes wheel-spins) stable, inchange par prudence."
     },
     "blue-lock-rivals": {
-      "lastChecked": "2026-08-31T05:00:00Z",
+      "lastChecked": "2026-09-02T05:00:00Z",
       "descLen": 0,
       "descExcerpt": "9 actifs (PGG 29/08 + agregat 30/08). Ajout UBERSTAKEOVER/KINGNEXTWEEK/EGODEFENSE aux 6 existants.",
       "knownCodes": [
@@ -327,9 +327,9 @@
       "officialSource": "twitter"
     },
     "anime-last-stand": {
-      "lastChecked": "2026-08-20T05:00:00Z",
+      "lastChecked": "2026-09-02T05:00:00Z",
       "descLen": 299,
-      "descExcerpt": "31 codes listes actifs sur la page ; les agregateurs n'en confirment que 4 recents.",
+      "descExcerpt": "38 codes listes actifs. Nouveaux vus le 01-02/09 (Beebom+PGG+Destructoid): MagicKnights!, ElfReincarnation! -> a verifier finement et ajouter au prochain run (edition d'une longue liste, prudence).",
       "knownCodes": [
         "ALSISBACK!",
         "NEWLEVELS??",
@@ -374,7 +374,8 @@
       "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
       "note": "Deja tous presents sur la page (21 codes). Aucun changement.",
       "pending": [
-        "Anciens codes World 3 (Update84!, THETIMEISNEAR, SUPERDELAY, HAPPYVALENTINESDAY...) : possiblement expires apres ALSUPD2 -> a elaguer avec confirmation en jeu"
+        "MagicKnights! (35 Rerolls/25 Perfect Stat Cubes/50 Stat Cubes) NOUVEAU",
+        "ElfReincarnation!"
       ],
       "officialSource": "trello",
       "note0718": "PRIORITE PROCHAIN RUN : ecart important a trancher (4 confirmes vs 31 publies).",
@@ -383,9 +384,9 @@
       "note0731": "Verifie 31/07 (web >=3 sources) : aucun changement. blox-fruits 23-24, blade-ball 14, fisch 5, volleyball 3 (UPDATE_80/HIDARI_FINALLY/ENCHO_NERF), blue-lock 9, ALS inchange, AV inchange, GAG/GAG2 inchanges."
     },
     "fisch": {
-      "lastChecked": "2026-08-28T05:00:00Z",
+      "lastChecked": "2026-09-02T05:00:00Z",
       "descLen": 320,
-      "descExcerpt": "6 actifs. SorryForShopShenanigans (150 Shady Scrip + Rainbow Totem, Shady Bazaar) publie le 01/08, confirme par Beebom(01/08)+Destructoid+Pocket Gamer+AllThings (>=3 sources).",
+      "descExcerpt": "3 actifs stables (scarlet, TemporarySubmarine, CARBON). Ancien candidat SkycrestNextWeek confirme EXPIRE (Beebom/Pocket Gamer 01/09) -> jamais publie, resolu.",
       "knownCodes": [
         "scarlet",
         "TemporarySubmarine",
@@ -403,7 +404,7 @@
       "note0823": "Verifie 23/08 (GamesRadar/PGG/PCGamer): SCARLET (jusqu'a dec 2026), TemporarySubmarine (oct 2026), CARBON (no expiry) confirmes long-lived; RoamingFishAndWaterPark dans la liste active. Set servi (6) coherent, inchange."
     },
     "volleyball-legends": {
-      "lastChecked": "2026-08-28T05:00:00Z",
+      "lastChecked": "2026-09-02T05:00:00Z",
       "descLen": 293,
       "descExcerpt": "Update 80 (25/07) : rotation, seuls UPDATE_80/HIDARI_FINALLY/ENCHO_NERF actifs (Roonby+u7buy+nerdschalk).",
       "knownCodes": [
@@ -422,7 +423,7 @@
       "note0823": "Verifie 23/08 (allthings.how/Beebom/RoCodes/GamesRadar/Fossbytes/Twinfinite/Destructoid): UPDATE_83, MIKAGE_REVIVED, SCHOOL_SOON = set servi. Aucun changement."
     },
     "anime-vanguards": {
-      "lastChecked": "2026-08-31T05:00:00Z",
+      "lastChecked": "2026-09-02T05:00:00Z",
       "descLen": 0,
       "descExcerpt": "Renouvele a 3 actifs (Holy Retribution, PGG 30/08). Anciens Prepare/1DayDelay/25thHour/LetTheLarpingBegin expires.",
       "knownCodes": [
@@ -442,7 +443,7 @@
       "pending": []
     },
     "king-legacy": {
-      "lastChecked": "2026-08-28T05:00:00Z",
+      "lastChecked": "2026-09-02T05:00:00Z",
       "descLen": 358,
       "descExcerpt": "DinoxLive/Peodiz/SKGames : conflit PGG vs PC Gamer + Pocket Tactics. Maintenus.",
       "knownCodes": [
@@ -464,18 +465,15 @@
       "note0722": "Verifie 22/07 : aucun nouveau code depuis ~4 mois (PC Gamer). RainbowDragon apparait comme ancien code actif chez certaines sources. Liste inchangee par prudence."
     },
     "fruit-battlegrounds": {
-      "lastChecked": "2026-08-28T05:00:00Z",
+      "lastChecked": "2026-09-02T05:00:00Z",
       "descLen": 314,
-      "descExcerpt": "+ OMGUPDATE22 (PGG, Pocket Tactics, Destructoid).",
+      "descExcerpt": "5 actifs. HIGHER1M120K (800 Gems) confirme NOUVEAU par Beebom(maj 01/09)+PocketTactics+PGG -> publie. OMGUPDATE22 passe expire (Beebom 01/09).",
       "knownCodes": [
-        "OMGUPDATE22",
+        "HIGHER1M120K",
         "YOO1M110K!",
         "BIGMILLIHUNNID!",
         "ITSTHEBILLION!",
         "CODEFIX"
-      ],
-      "pending": [
-        "HIGHER1M120K (800 Gems) donne NOUVEAU par PGG/PocketTactics agrege - a confirmer 2e source. OMGUPDATE22 non reconfirme."
       ],
       "note": "5 actifs confirmés par Pocket Tactics (17/07, source la plus récente). Aucun changement de liste.",
       "note0719": "Verifie 19/07 : OMGUPDATE22 confirme actif (sources July). Correction d'un compteur incoherent (intro/banner disaient 4 alors que 5 codes affiches et game-meta=5) -> aligne a 5. Zoneblox en retard sur les codes recents (BIG1M170K!! etc.) : reconciliation dediee au prochain run. Pas de changement de liste."
@@ -880,12 +878,24 @@
       "knownCodes": [],
       "officialSource": "shout|description (aucun code)",
       "descExcerpt": "Nouveau hit (~496K CCU, 284M visites, cree 25/07/2026). Aucun systeme de codes public (PGG 17/08 + description in-game + shout groupe null). Fiche codes-steal-an-egg.html creee ce jour."
+    },
+    "anime-astral-simulator": {
+      "lastChecked": "2026-09-02T06:00:00Z",
+      "knownCodesCount": 100,
+      "descExcerpt": "Page corrigee le 02/09 (signale par Peter): etait a 54 'actifs' dont la majorite EXPIRES + liste expiree vide. Reconstruite depuis PGG (maj 02/09, 100 actifs/68 inactifs), recoupe Beebom+PocketTactics (100 actifs, nouveaux 12.5FIXES/SORRYRELICS/UPDATE12/KAGUNES). Jeu qui garde ses codes actifs sur le long terme.",
+      "newest": [
+        "12.5FIXES",
+        "SORRYRELICS",
+        "MINI12.5",
+        "QUINQUE",
+        "2GACHAS"
+      ]
     }
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
   "lastRun": {
-    "date": "2026-08-31T05:00:00Z",
-    "note": "Run 2026-08-31 (lundi): verif multi-sources (progameguides, pcgamesn, pcgamer, gamesradar, beebom). 2 changements: Blue Lock Rivals 6->9 actifs (ajout UBERSTAKEOVER/KINGNEXTWEEK/EGODEFENSE, PGG 29/08 + agregat 30/08); Anime Vanguards renouvele a 3 actifs (Retribution/Wrath/MiniUpd2, Holy Retribution PGG 30/08; anciens Prepare/1DayDelay/25thHour/LetTheLarpingBegin expires, expires 22->26). Stables: Blox Fruits (24; 1LOSTADMIN confirme expire -> candidat retire), GAG (RDCAward/BEANORLEAVE10; torigate garde expire par prudence), Steal a Brainrot (BESTBRAINROTEVER), Volleyball Legends (Update 85 inchange). Candidat en attente: Fisch SkycrestNextWeek (<3 sources nommees; GamesRadar 24/08 ne le liste pas). verifDate rafraichi au 31 aout sur 177 pages. Brique SEO: refonte tier-list/volleyball-legends.html (meta Update 40: S+ Hidari/Jinko). Jeu de la semaine maintenu = Steal An Egg (#1)."
+    "date": "2026-09-02T05:00:00Z",
+    "note": "Run 2026-09-02 (mer): verif multi-sources (Beebom maj 01/09, PCGamesN, PGG, GamesRadar, PC Gamer). 1 changement applique: Fruit Battlegrounds -> HIGHER1M120K (800 Gems) publie (Beebom 01/09 NOUVEAU, recoupe PocketTactics/PGG), OMGUPDATE22 passe expire (5 actifs inchange, expires 6->7). Stables confirmes: Blox Fruits (24), Steal a Brainrot (1 BESTBRAINROTEVER), Anime Vanguards (3 Retribution/Wrath/MiniUpd2), Blue Lock Rivals (3), Volleyball Legends (3 UPDATE_85/SHIRO/BLOCKED), King Legacy (7), GAG (2). Fisch: candidat SkycrestNextWeek confirme EXPIRE -> resolu. Candidats en attente: Anime Last Stand MagicKnights!/ElfReincarnation! (verif fine au prochain run); GAG torigate (conflit). 'Verifie le' rafraichi au 2 septembre sur les 178 pages. data/codes.json regenere."
   },
   "_pending2026-07-18": [
     "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
@@ -986,6 +996,38 @@
     "fisch": {
       "candidate": "SkycrestNextWeek",
       "reason": "Cite par agregateurs (30/08) comme nouveau code actif, mais GamesRadar (24/08, autorite) ne le liste pas et <3 sources nommees. Garde hors liste par prudence; retester."
+    }
+  },
+  "_pending2026-09-02": {
+    "anime-last-stand": {
+      "candidates": [
+        "MagicKnights!",
+        "ElfReincarnation!"
+      ],
+      "reason": "Nouveaux codes vus Beebom/PGG/Destructoid 01-02/09; liste de 38 codes, ajout prudent au prochain run apres verif fine des recompenses."
+    },
+    "grow-a-garden": {
+      "candidate": "torigate",
+      "reason": "PCGamesN(29/08)+PGG actif vs Beebom expire -> conflit, garde hors liste par prudence."
+    }
+  },
+  "_audit2026-09-02": {
+    "note": "Audit des pages a beaucoup de codes actifs + liste expiree vide (signature 'jamais elaguee'), suite au signalement Anime Astral par Peter.",
+    "corrige": {
+      "anime-astral-simulator": "54 faux-actifs -> 100 actifs reels + 68 expires (PGG 02/09 + Beebom + PocketTactics)",
+      "doors": "31 -> 8 actifs (PGG 01/09); entrees non-redevables/streamers deplacees en expire",
+      "clover-retribution": "28 tous expires -> 14 actifs reels (Beebom 01/09)",
+      "dress-to-impress": "39 -> 32 actifs (Beebom 01/09): retire FACECARD/BADDIE4LIFE/CUPIDSCLOUD/2YEARS/2026BADDIES/2GETHER/RDC2025/B3APL4YS_D0L1E, ajout LANADOLLDRESS",
+      "anime-last-stand": "38 -> 41 (tous nos 38 encore actifs; ajout MagicKnights!/ElfReincarnation!/IsItReallyWeekly?!)"
+    },
+    "sansChangement_underlist": {
+      "dragon-blox": "82 chez nous vs ~116 actifs reels (jeu qui garde ses codes) -> sous-liste, non trompeur; a enrichir",
+      "brainrot-evolution": "24 vs ~86 actifs -> sous-liste, non trompeur; a enrichir"
+    },
+    "aVerifierProchainRun": {
+      "scroll-a-brainrot": "32 actifs, seule source datee = PocketTactics (mai 2026, perimee). Checkmark2/100klikes peut-etre expires. Pas de liste Sept fiable -> verifier au prochain run.",
+      "world-fighters": "24 actifs, sources fines/anciennes (~6 nommes recents). Risque de faux-actifs (codes UPDATE6/7/8). Verifier avec liste autoritaire.",
+      "heroes-battlegrounds": "21 actifs (codes !code mastery, souvent persistants). Sources fines. Verifier prudemment avant d'elaguer."
     }
   }
 }
