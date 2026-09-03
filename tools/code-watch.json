@@ -215,7 +215,7 @@
   },
   "snapshots": {
     "blox-fruits": {
-      "lastChecked": "2026-09-02T05:00:00Z",
+      "lastChecked": "2026-09-03T05:00:00Z",
       "descLen": 366,
       "descExcerpt": "24 codes actifs. Les agregateurs en listent 23 (SUB2GAMERROBOT_EXP1 non repris par tous).",
       "knownCodes": [
@@ -239,7 +239,7 @@
       "note": "Inchange (PCGamesN 21/08 = liste servie, sauf Chandler=rien, exclu a raison)."
     },
     "grow-a-garden": {
-      "lastChecked": "2026-09-02T05:00:00Z",
+      "lastChecked": "2026-09-03T05:00:00Z",
       "descLen": 327,
       "descExcerpt": "2 actifs (RDCAward, BEANORLEAVE10). torigate: PCGamesN(29/08)+PGG le listent actif, Beebom expire -> CONFLIT, garde hors liste par prudence.",
       "knownCodes": [
@@ -260,7 +260,7 @@
       "officialSource": "web"
     },
     "steal-a-brainrot": {
-      "lastChecked": "2026-09-02T05:00:00Z",
+      "lastChecked": "2026-09-03T05:00:00Z",
       "descLen": 313,
       "descExcerpt": "Description in-game consultee, aucun code. 3 sources confirment : aucun code gratuit actif.",
       "knownCodes": [
@@ -275,7 +275,8 @@
       "note1207": "Verifie 12/07 : sources toujours en conflit (22 codes vs 0). Page maintenue SANS code (prudence).",
       "note0719": "Verifie 19/07 : aucun code (le jeu n'en propose pas). Honnete, aucun changement.",
       "note0727": "Verifie 27/07 : sources toujours en conflit (0 vs 23 actifs). Page maintenue SANS code (prudence).",
-      "note0823": "Verifie 23/08: sources en conflit majeur (u7buy 1 code BESTBRAINROTEVER, autres 2 a 23). Prudence -> aucun code publie (etat inchange)."
+      "note0823": "Verifie 23/08: sources en conflit majeur (u7buy 1 code BESTBRAINROTEVER, autres 2 a 23). Prudence -> aucun code publie (etat inchange).",
+      "officialSource": "aggregators"
     },
     "blade-ball": {
       "lastChecked": "2026-08-28T05:00:00Z",
@@ -310,19 +311,13 @@
       "note0823": "Verifie 23/08 (Beebom/Pocket Tactics/GamesRadar): 4BVISITS/GIVEMELUCK/SERPENT/DUNGEONSRELEASE cites actifs; set servi (13 codes wheel-spins) stable, inchange par prudence."
     },
     "blue-lock-rivals": {
-      "lastChecked": "2026-09-02T05:00:00Z",
+      "lastChecked": "2026-09-03T05:00:00Z",
       "descLen": 0,
       "descExcerpt": "9 actifs (PGG 29/08 + agregat 30/08). Ajout UBERSTAKEOVER/KINGNEXTWEEK/EGODEFENSE aux 6 existants.",
       "knownCodes": [
         "UBERSTAKEOVER",
         "KINGNEXTWEEK",
-        "EGODEFENSE",
-        "INSANETRAILERSOON",
-        "DESTROYERMODE",
-        "BIGTRAILERSOON",
-        "RINTODAY",
-        "FIXESLATERTODAY",
-        "SORRY4DELAY!!"
+        "EGODEFENSE"
       ],
       "officialSource": "twitter"
     },
@@ -465,7 +460,7 @@
       "note0722": "Verifie 22/07 : aucun nouveau code depuis ~4 mois (PC Gamer). RainbowDragon apparait comme ancien code actif chez certaines sources. Liste inchangee par prudence."
     },
     "fruit-battlegrounds": {
-      "lastChecked": "2026-09-02T05:00:00Z",
+      "lastChecked": "2026-09-03T05:00:00Z",
       "descLen": 314,
       "descExcerpt": "5 actifs. HIGHER1M120K (800 Gems) confirme NOUVEAU par Beebom(maj 01/09)+PocketTactics+PGG -> publie. OMGUPDATE22 passe expire (Beebom 01/09).",
       "knownCodes": [
@@ -476,7 +471,8 @@
         "CODEFIX"
       ],
       "note": "5 actifs confirmés par Pocket Tactics (17/07, source la plus récente). Aucun changement de liste.",
-      "note0719": "Verifie 19/07 : OMGUPDATE22 confirme actif (sources July). Correction d'un compteur incoherent (intro/banner disaient 4 alors que 5 codes affiches et game-meta=5) -> aligne a 5. Zoneblox en retard sur les codes recents (BIG1M170K!! etc.) : reconciliation dediee au prochain run. Pas de changement de liste."
+      "note0719": "Verifie 19/07 : OMGUPDATE22 confirme actif (sources July). Correction d'un compteur incoherent (intro/banner disaient 4 alors que 5 codes affiches et game-meta=5) -> aligne a 5. Zoneblox en retard sur les codes recents (BIG1M170K!! etc.) : reconciliation dediee au prochain run. Pas de changement de liste.",
+      "officialSource": "aggregators"
     },
     "tower-defense-simulator": {
       "lastChecked": "2026-07-24T05:00:00Z",
@@ -893,10 +889,7 @@
     }
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
-  "lastRun": {
-    "date": "2026-09-02T05:00:00Z",
-    "note": "Run 2026-09-02 (mer): verif multi-sources (Beebom maj 01/09, PCGamesN, PGG, GamesRadar, PC Gamer). 1 changement applique: Fruit Battlegrounds -> HIGHER1M120K (800 Gems) publie (Beebom 01/09 NOUVEAU, recoupe PocketTactics/PGG), OMGUPDATE22 passe expire (5 actifs inchange, expires 6->7). Stables confirmes: Blox Fruits (24), Steal a Brainrot (1 BESTBRAINROTEVER), Anime Vanguards (3 Retribution/Wrath/MiniUpd2), Blue Lock Rivals (3), Volleyball Legends (3 UPDATE_85/SHIRO/BLOCKED), King Legacy (7), GAG (2). Fisch: candidat SkycrestNextWeek confirme EXPIRE -> resolu. Candidats en attente: Anime Last Stand MagicKnights!/ElfReincarnation! (verif fine au prochain run); GAG torigate (conflit). 'Verifie le' rafraichi au 2 septembre sur les 178 pages. data/codes.json regenere."
-  },
+  "lastRun": "2026-09-03T05:00:00Z",
   "_pending2026-07-18": [
     "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
     "blade-ball: SERPENT -> Beebom le dit expire, PT+GamesRadar actif, conserve actif",
@@ -1029,5 +1022,73 @@
       "world-fighters": "24 actifs, sources fines/anciennes (~6 nommes recents). Risque de faux-actifs (codes UPDATE6/7/8). Verifier avec liste autoritaire.",
       "heroes-battlegrounds": "21 actifs (codes !code mastery, souvent persistants). Sources fines. Verifier prudemment avant d'elaguer."
     }
-  }
+  },
+  "_sweep2026-09-03": {
+    "note": "Sweep 'verifier tous les jeux' (demande de Peter). En cours. Methode: comparaison liste active vs source datee (Beebom/PGG/PocketTactics/GamesRadar/RobloxDen).",
+    "corrige": {
+      "100-days-at-sea": "HERO expire -> CLASSES/DECORATE/20Pearls (3 actifs)",
+      "99-nights-in-the-forest": "+SURVIVOR (3)",
+      "all-star-tower-defense": "UpdateThisWeek expire -> 16 actifs (Beebom)",
+      "anime-battle-rng": "5/8 expires -> 35 actifs (RobloxDen)",
+      "driving-empire": "+RECORD +USA250Car (21) - garde ses codes long terme",
+      "royale-high": "0 actif (systeme de codes retire par le jeu en avril 2025)"
+    },
+    "verifie_ok_underlist": [
+      "a-dusty-trip",
+      "a-one-piece-game",
+      "anime-apocalypse(64 actifs pool)",
+      "anime-champions-simulator",
+      "anime-dimensions-simulator",
+      "anime-eternal(92 pool)",
+      "anime-expeditions(41 pool)",
+      "anime-origins",
+      "dragon-blox(116 pool)",
+      "brainrot-evolution(86 pool)"
+    ],
+    "a_verifier_fetch_dedie": [
+      "anime-adventures(source Sportskeeda perimee 2024)",
+      "anime-fighters / anime-fighting-simulator / anime-fighting-simulator-reborn (DESAMBIGUISATION de noms - risque)",
+      "anime-rangers-x (renomme Re:Rangers X)",
+      "anime-reversal (UPDATE6POINT5 peut-etre expire, UPDATE7 actif)",
+      "anime-rift-tower-defense",
+      "anime-rng",
+      "scroll-a-brainrot",
+      "world-fighters",
+      "heroes-battlegrounds"
+    ],
+    "restants_non_traites": "~90 jeux (de anime-souls-simulator-x a world-cup-album) - chaque page necessite un fetch autoritaire dedie; a poursuivre."
+  },
+  "catalogVerify": {
+    "fruit-battlegrounds": "2026-09-03",
+    "anime-astral-simulator": "2026-09-03",
+    "doors": "2026-09-03",
+    "clover-retribution": "2026-09-03",
+    "dress-to-impress": "2026-09-03",
+    "anime-last-stand": "2026-09-03",
+    "royale-high": "2026-09-03",
+    "100-days-at-sea": "2026-09-03",
+    "99-nights-in-the-forest": "2026-09-03",
+    "all-star-tower-defense": "2026-09-03",
+    "anime-battle-rng": "2026-09-03",
+    "driving-empire": "2026-09-03",
+    "blox-fruits": "2026-09-03",
+    "grow-a-garden": "2026-09-03",
+    "steal-a-brainrot": "2026-09-03",
+    "anime-vanguards": "2026-09-03",
+    "blue-lock-rivals": "2026-09-03",
+    "volleyball-legends": "2026-09-03",
+    "king-legacy": "2026-09-03",
+    "fisch": "2026-09-03",
+    "pet-simulator-99": "2026-09-03",
+    "dragon-blox": "2026-09-03",
+    "brainrot-evolution": "2026-09-03",
+    "a-dusty-trip": "2026-09-03",
+    "anime-apocalypse": "2026-09-03",
+    "anime-champions-simulator": "2026-09-03",
+    "anime-dimensions-simulator": "2026-09-03",
+    "anime-eternal": "2026-09-03",
+    "anime-expeditions": "2026-09-03",
+    "anime-origins": "2026-09-03"
+  },
+  "_catalogVerifyNote": "Suivi de la ROTATION quotidienne (ETAPE 2ter): date de derniere verif approfondie par slug. Les slugs ABSENTS de cet objet = jamais verifies en profondeur = priorite maximale du prochain lot. Jeux flagges 'a reverifier' laisses ABSENTS expres (a-one-piece-game, anime-adventures, anime-fighters, anime-fighting-simulator, anime-fighting-simulator-reborn, anime-rangers-x, anime-reversal, anime-rift-tower-defense, anime-rng, scroll-a-brainrot, world-fighters, heroes-battlegrounds)."
 }

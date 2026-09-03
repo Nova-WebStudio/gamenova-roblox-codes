@@ -4,6 +4,22 @@ Règles et pièges à éviter, documentés à partir des erreurs réelles rencon
 
 ---
 
+## 🔁 Rotation quotidienne de vérification des codes (ÉTAPE 2ter de la tâche) — `catalogVerify`
+
+Le run quotidien vérifie, en plus des `hotGames`, un **lot de 15-20 jeux non-hot** en rotation, pour que **chaque** `codes-<slug>.html` soit revérifié contre une source datée ~tous les 10 jours. Suivi dans `tools/code-watch.json` → objet **`catalogVerify`** = `{ "<slug>": "<ISO dernière vérif approfondie>" }`. Les slugs **absents** = jamais vérifiés = **priorité max** du prochain lot.
+
+Règles clés (voir le prompt de la tâche pour le détail) :
+- Source **datée du mois courant** via web_fetch/Chrome (pas un résumé de recherche : il ne donne presque jamais la liste complète).
+- ⚠️ **Désambiguïsation de nom obligatoire** avant d'éditer (« Anime Fighters » ≠ « Anime Fighting Simulator » ≠ « …Reborn » ; « Anime RNG » ≠ « Anime Battle RNG » ≠ « Anime RNG Defense »). Recouper au placeId/URL Roblox de notre page.
+- Beaucoup de jeux **gardent leurs codes longtemps** (simulateurs/RNG : 40-120 actifs) → un sous-listage n'est PAS une erreur ; ne retirer un code que sur **preuve d'expiration**. Cibles des faux-actifs : TD, events saisonniers, battle RNG.
+- **Prudence > exhaustivité** : mapping ambigu ou source unique/périmée → NE PAS toucher, noter « à revérifier ».
+- Pour le compteur « X codes actifs » du hero : **remplacement littéral exact**, jamais de regex global (sinon on écrase les compteurs cosmétiques des cartes RELATED/« jeux similaires »).
+- Après traitement (modifié OU confirmé OK) : `catalogVerify[slug]=<jour>`, rafraîchir « Vérifié le », et si codes changés → `python3 tools/build_codes_json.py`.
+
+Jeux laissés **absents exprès** (flaggés « à revérifier » le 03/09/2026) : a-one-piece-game, anime-adventures, anime-fighters, anime-fighting-simulator, anime-fighting-simulator-reborn, anime-rangers-x, anime-reversal, anime-rift-tower-defense, anime-rng, scroll-a-brainrot, world-fighters, heroes-battlegrounds.
+
+---
+
 ## Widget embeddable « Codes du jour » (data/codes.json + embed/) — À REGÉNÉRER CHAQUE RUN
 
 Le widget partenaire (`embed/codes.js`, page `embed/index.html`) lit `data/codes.json` pour afficher les codes à jour sur des sites tiers (backlink retour). **`data/codes.json` est GÉNÉRÉ, pas édité à la main** : après avoir mis à jour les codes du jour, relancer :
