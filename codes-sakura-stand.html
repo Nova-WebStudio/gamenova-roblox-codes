@@ -232,8 +232,8 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
         <div class="info">
           <h1>Codes Sakura Stand — septembre 2026</h1>
           <div class="meta">
-            <span class="pill ok"><span class="pulse"></span> 8 codes actifs</span>
-            <span class="pill">🔄 Vérifié le <strong id="verifDate" style="color:var(--text);margin-left:4px">3 septembre 2026</strong></span>
+            <span class="pill ok"><span class="pulse"></span> 2 codes actifs</span>
+            <span class="pill">🔄 Vérifié le <strong id="verifDate" style="color:var(--text);margin-left:4px">5 septembre 2026</strong></span>
             <span class="pill">✍️ Par <a href="/politique-editoriale.html" style="color:var(--text);font-weight:600;text-decoration:none">L'équipe Zoneblox</a></span>
             <span>🌸 Anime</span>
           </div>
@@ -250,7 +250,7 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
           <button class="btn btn-primary btn-sm" id="copyAll">📋 Tout copier</button>
         </div>
         <p class="sub">Cliquez sur un code pour le copier. Il sera collé tel quel dans le jeu.</p>
-        <div class="codes-list" id="activeList"><div class="code"><div class="val"><code>RTZREWORK</code><span class="new">NOUVEAU</span></div><div class="desc"><div class="reward">🎁 Récompenses gratuites</div></div><button class="copy" data-code="RTZREWORK">📋 Copier</button></div><div class="code"><div class="val"><code>JOJOMONTH</code><span class="new">NOUVEAU</span></div><div class="desc"><div class="reward">🎁 Récompenses gratuites</div></div><button class="copy" data-code="JOJOMONTH">📋 Copier</button></div><div class="code"><div class="val"><code>Touhou</code></div><div class="desc"><div class="reward">🎁 Récompenses gratuites</div></div><button class="copy" data-code="Touhou">📋 Copier</button></div><div class="code"><div class="val"><code>Flandre</code></div><div class="desc"><div class="reward">🎁 Récompenses gratuites</div></div><button class="copy" data-code="Flandre">📋 Copier</button></div><div class="code"><div class="val"><code>Scarlet</code></div><div class="desc"><div class="reward">🎁 Récompenses gratuites</div></div><button class="copy" data-code="Scarlet">📋 Copier</button></div><div class="code"><div class="val"><code>NoSleep40HoursGG</code></div><div class="desc"><div class="reward">🩸 50 Bloodstones</div></div><button class="copy" data-code="NoSleep40HoursGG">📋 Copier</button></div><div class="code"><div class="val"><code>Christmas2025!</code></div><div class="desc"><div class="reward">💰 2 500 Cash</div></div><button class="copy" data-code="Christmas2025!">📋 Copier</button></div><div class="code"><div class="val"><code>NewYear2026!</code></div><div class="desc"><div class="reward">🎟️ 500 Tokens</div></div><button class="copy" data-code="NewYear2026!">📋 Copier</button></div></div>
+        <div class="codes-list" id="activeList"><div class="code"><div class="val"><code>RTZREWORK</code><span class="new">NOUVEAU</span></div><div class="desc"><div class="reward">🎁 Récompenses gratuites</div></div><button class="copy" data-code="RTZREWORK">📋 Copier</button></div><div class="code"><div class="val"><code>JOJOMONTH</code><span class="new">NOUVEAU</span></div><div class="desc"><div class="reward">🎁 Récompenses gratuites</div></div><button class="copy" data-code="JOJOMONTH">📋 Copier</button></div></div>
       </section>
 
       <!-- Codes expirés -->
@@ -260,7 +260,7 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
         <div class="panel-head"><h2>💀 Codes expirés</h2></div>
         <p class="sub">On les garde pour référence — inutile de les essayer, ils ne fonctionnent plus.</p>
         <button class="toggle-exp" id="toggleExp" aria-expanded="false">▸ Afficher les codes expirés (6)</button>
-        <div class="expired" id="expiredList"></div>
+        <div class="expired" id="expiredList"><div class="code"><div class="val"><code>Touhou</code></div><div class="desc"><div class="tag">Expiré</div></div></div><div class="code"><div class="val"><code>Flandre</code></div><div class="desc"><div class="tag">Expiré</div></div></div><div class="code"><div class="val"><code>Scarlet</code></div><div class="desc"><div class="tag">Expiré</div></div></div><div class="code"><div class="val"><code>NoSleep40HoursGG</code></div><div class="desc"><div class="tag">Expiré</div></div></div><div class="code"><div class="val"><code>Christmas2025!</code></div><div class="desc"><div class="tag">Expiré</div></div></div><div class="code"><div class="val"><code>NewYear2026!</code></div><div class="desc"><div class="tag">Expiré</div></div></div></div>
       </section>
 
       <div class="ad ad-leader"><div><div class="lbl">Publicité</div>728 × 90</div></div>
@@ -330,7 +330,7 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
 
 <script>
 const ACTIVE=[{code:"RTZREWORK"},{code:"JOJOMONTH"},{code:"Touhou"},{code:"Flandre"},{code:"Scarlet"},{code:"NoSleep40HoursGG"},{code:"Christmas2025!"},{code:"NewYear2026!"}];
-const EXPIRED=[];
+const EXPIRED=["Touhou","Flandre","Scarlet","NoSleep40HoursGG","Christmas2025!","NewYear2026!"];
 const RELATED=[
   {n:"King Legacy",s:"9 codes actifs",c:["#ffbd4a","#ff6a3d"],i:"KL"},
   {n:"Fruit Battlegrounds",s:"7 codes actifs",c:["#ff5f80","#a05cff"],i:"FB"},
