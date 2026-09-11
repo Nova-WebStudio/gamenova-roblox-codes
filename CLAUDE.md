@@ -134,6 +134,20 @@ print('Manquants dans GAMES_INDEX:', ag - gi)
 
 ---
 
+## sitemap.xml — fraîcheur des `<lastmod>` (À REGÉNÉRER CHAQUE RUN)
+
+Les `<lastmod>` de `sitemap.xml` étaient figés (tous au 22/07/2026) alors que les pages codes sont revérifiées chaque jour → signal de fraîcheur perdu pour Google (problème identifié via Search Console, 11/09/2026). **`sitemap.xml` est désormais GÉNÉRÉ, pas édité à la main pour les dates** : après la MAJ des codes du jour, relancer :
+
+```
+python3 tools/build_sitemap.py
+```
+
+Le script **préserve le jeu d'URL, les `<priority>` et `<changefreq>`** existants et ne met à jour que les `<lastmod>`, avec cette priorité par page : (1) date « 🔄 Vérifié le » (`id="verifDate"`), (2) sinon « Mis à jour le … », (3) sinon mtime du fichier. Vérifier après : `python3 -c "import xml.dom.minidom as m; m.parse('sitemap.xml')"` (XML valide) et que le fichier finit par `</urlset>`. ⚠️ Quand on ajoute un nouveau jeu, ajouter d'abord son `<url>` au sitemap (comme aujourd'hui) PUIS relancer le script pour dater le `lastmod`.
+
+**Note :** `sitemap.xml` (plat, ~334 URLs) est la source unique et complète déclarée dans `robots.txt`. Les sous-sitemaps `sitemap-codes/pages/guides/tier-list/avatar.xml` ne sont référencés nulle part (orphelins) — ne pas les resoumettre dans Search Console. `sitemap-en.xml` a été vidé/retiré (pas de version EN).
+
+---
+
 ## Version cache JS
 
 La version actuelle est **`main.js?v=19`**. Cette version doit être identique dans TOUS les fichiers HTML.
