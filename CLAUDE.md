@@ -148,6 +148,18 @@ Le script **préserve le jeu d'URL, les `<priority>` et `<changefreq>`** existan
 
 ---
 
+## Libellé de mois SEO — synchro auto (`tools/sync_month.py`)
+
+Le `<head>` des pages codes affiche le mois courant à 3 endroits : `<title> (… <mois> <année>)`, `og:title`, et la `meta description` (« Codes X de <mois> <année>… »). Ces libellés dérivaient (title « septembre » vs description « août » constaté le 11/09/2026). **Script de synchro** (à lancer en début de mois, sans risque à chaque run) :
+
+```
+python3 tools/sync_month.py
+```
+
+Il met le mois/année courant dans title + og:title + meta description de **toutes** les pages `codes-*.html`, avec l'élision correcte (« de septembre » / « d'octobre » / « d'août »). Il ne touche QUE le `<head>` — jamais le corps, jamais les codes, jamais les dates « 🔄 Vérifié le » / « 🕐 Mis à jour le » (règle d'honnêteté préservée). Idempotent. Garde-fous : n'écrit pas une page qui ne finirait pas par `</html>` ou contiendrait un null byte.
+
+---
+
 ## Version cache JS
 
 La version actuelle est **`main.js?v=19`**. Cette version doit être identique dans TOUS les fichiers HTML.
