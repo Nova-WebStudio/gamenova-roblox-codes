@@ -232,8 +232,8 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
         <div class="info">
           <h1>Codes Jujutsu Shenanigans — septembre 2026</h1>
           <div class="meta">
-            <span class="pill ok"><span class="pulse"></span> 5 codes actifs</span>
-            <span class="pill">🔄 Vérifié le <strong id="verifDate" style="color:var(--text);margin-left:4px">3 septembre 2026</strong></span>
+            <span class="pill ok"><span class="pulse"></span> 1 code actif</span>
+            <span class="pill">🔄 Vérifié le <strong id="verifDate" style="color:var(--text);margin-left:4px">9 septembre 2026</strong></span>
             <span class="pill">✍️ Par <a href="/politique-editoriale.html" style="color:var(--text);font-weight:600;text-decoration:none">L'équipe Zoneblox</a></span>
             <span>🌀 Combat</span>
           </div>
@@ -250,15 +250,15 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
           <button class="btn btn-primary btn-sm" id="copyAll">📋 Tout copier</button>
         </div>
         <p class="sub">Cliquez sur un code pour le copier. Il sera collé tel quel dans le jeu.</p>
-        <div class="codes-list" id="activeList"><div class="code"><div class="val"><code>SLATECONCRETE</code><span class="new">NOUVEAU</span></div><div class="desc"><div class="reward">💵 100 Cash</div></div><button class="copy" data-code="SLATECONCRETE">📋 Copier</button></div><div class="code"><div class="val"><code>A7D2L26RNEPG74A3Q</code><span class="new">NOUVEAU</span></div><div class="desc"><div class="reward">🕺 Emote gratuite</div></div><button class="copy" data-code="A7D2L26RNEPG74A3Q">📋 Copier</button></div><div class="code"><div class="val"><code>X6X31F47UN8JM1NEP</code></div><div class="desc"><div class="reward">🏆 Succès « Nep »</div></div><button class="copy" data-code="X6X31F47UN8JM1NEP">📋 Copier</button></div><div class="code"><div class="val"><code>RIPBOWE</code></div><div class="desc"><div class="reward">🕺 Emote Bowedown gratuite</div></div><button class="copy" data-code="RIPBOWE">📋 Copier</button></div><div class="code"><div class="val"><code>67</code></div><div class="desc"><div class="reward">🕺 Emote « 67 »</div></div><button class="copy" data-code="67">📋 Copier</button></div></div>
+        <div class="codes-list" id="activeList"><div class="code"><div class="val"><code>A7D2L26RNEPG74A3Q</code><span class="new">NOUVEAU</span></div><div class="desc"><div class="reward">🕺 Emote gratuite</div></div><button class="copy" data-code="A7D2L26RNEPG74A3Q">📋 Copier</button></div></div>
       </section>
 
       <!-- Codes expirés -->
       <section class="panel" id="expires">
         <div class="panel-head"><h2>💀 Codes expirés</h2></div>
         <p class="sub">On les garde pour référence — inutile de les essayer, ils ne fonctionnent plus.</p>
-        <button class="toggle-exp" id="toggleExp" aria-expanded="false">▸ Afficher les codes expirés (6)</button>
-        <div class="expired" id="expiredList"></div>
+        <button class="toggle-exp" id="toggleExp" aria-expanded="false">▸ Afficher les codes expirés (4)</button>
+        <div class="expired" id="expiredList"><div class="code"><div class="val"><code>SLATECONCRETE</code></div><div class="desc"><div class="tag">Expiré</div></div></div><div class="code"><div class="val"><code>X6X31F47UN8JM1NEP</code></div><div class="desc"><div class="tag">Expiré</div></div></div><div class="code"><div class="val"><code>RIPBOWE</code></div><div class="desc"><div class="tag">Expiré</div></div></div><div class="code"><div class="val"><code>67</code></div><div class="desc"><div class="tag">Expiré</div></div></div></div>
       </section>
 
       <div class="ad ad-leader"><div><div class="lbl">Publicité</div>728 × 90</div></div>
@@ -326,8 +326,8 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
 <div class="toast" id="toast">Copié ✓</div>
 
 <script>
-const ACTIVE=[{code:"SLATECONCRETE"},{code:"A7D2L26RNEPG74A3Q"},{code:"X6X31F47UN8JM1NEP"},{code:"RIPBOWE"},{code:"67"}];
-const EXPIRED=[];
+const ACTIVE=[{code:"A7D2L26RNEPG74A3Q"}];
+const EXPIRED=[{code:"SLATECONCRETE"},{code:"X6X31F47UN8JM1NEP"},{code:"RIPBOWE"},{code:"67"}];
 const RELATED=[
   {n:"King Legacy",s:"9 codes actifs",c:["#ffbd4a","#ff6a3d"],i:"KL"},
   {n:"Fruit Battlegrounds",s:"7 codes actifs",c:["#ff5f80","#a05cff"],i:"FB"},

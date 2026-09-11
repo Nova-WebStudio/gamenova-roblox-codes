@@ -7,10 +7,27 @@
   RewriteRule ^ https://zoneblox.com%{REQUEST_URI} [L,R=301]
 </IfModule>
 
-# --- Redirection page doublon : Mini War -> Mini-Guerre (même jeu Roblox) ---
+# --- Migration & doublons : ancien schema /codes/... et pages /en/ (2026-09-11) ---
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteRule ^codes/mini-war\.html$ /codes/mini-guerre.html [R=301,L]
+
+  # Pages /en/ (aucune version EN officielle) -> equivalent FR / hub
+  RewriteRule ^en/guides/(.+)$ /guides/$1 [R=301,L]
+  RewriteRule ^en/tier-list/(.+)$ /tier-list/$1 [R=301,L]
+  RewriteRule ^en/codes/.*$ /tous-les-codes.html [R=301,L]
+  RewriteRule ^en(/.*)?$ / [R=301,L]
+
+  # Doublon Mini War -> Mini-Guerre (nouveau schema, sans double saut)
+  RewriteRule ^codes/mini-war\.html$ /codes-mini-guerre.html [R=301,L]
+
+  # Anciennes categories /codes/<cat>/ -> filtre du hub plat
+  RewriteRule ^codes/(anime|battle|horror|obby|rpg|simulator|tower-defense|tycoon)(/(index\.html)?)?$ /tous-les-codes.html?cat=$1 [R=301,L,NC]
+
+  # Ancien hub /codes/ et /codes/index.html -> hub plat
+  RewriteRule ^codes/(index\.html)?$ /tous-les-codes.html [R=301,L]
+
+  # Generique : tout ancien /codes/<slug>.html -> /codes-<slug>.html
+  RewriteRule ^codes/([a-z0-9-]+)\.html$ /codes-$1.html [R=301,L]
 </IfModule>
 
 # --- Compression ---

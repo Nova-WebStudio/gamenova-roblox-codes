@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Sitemap EN retire le 2026-09-11 : pas de version anglaise du site. Les URL /en/ sont redirigees (301) vers leur equivalent FR. Fichier a supprimer (git rm) et a retirer de Search Console. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://zoneblox.com/en/codes/paint-and-seek.html</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2026-06-25</lastmod></url>
-  <url><loc>https://zoneblox.com/en/guides/paint-and-seek.html</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-06-25</lastmod></url>
-  <url><loc>https://zoneblox.com/en/tier-list/paint-and-seek.html</loc><changefreq>weekly</changefreq><priority>0.7</priority><lastmod>2026-06-25</lastmod></url>
 </urlset>

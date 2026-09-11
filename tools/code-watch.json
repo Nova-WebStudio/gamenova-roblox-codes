@@ -889,7 +889,44 @@
   }
  },
  "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
- "lastRun": "2026-09-05T05:00:00Z",
+ "lastRun": {
+  "date": "2026-09-09",
+  "iso": "2026-09-09T05:10:00Z",
+  "hotGamesVerified": [
+   "blockspin",
+   "catch-a-monster",
+   "squid-game-x",
+   "100-days-at-sea",
+   "steal-an-egg",
+   "pet-simulator-99"
+  ],
+  "hotGamesChanged": [
+   "blockspin",
+   "catch-a-monster"
+  ],
+  "rotationVerified": [
+   "grand-piece-online",
+   "jujutsu-shenanigans",
+   "haze-piece",
+   "project-mugetsu",
+   "sailor-piece",
+   "peroxide",
+   "untitled-boxing-game",
+   "slap-battles"
+  ],
+  "rotationFixed": [
+   "grand-piece-online",
+   "jujutsu-shenanigans",
+   "haze-piece",
+   "project-mugetsu",
+   "sailor-piece",
+   "peroxide"
+  ],
+  "rotationARevoir": [
+   "sonic-speed-simulator",
+   "fire-force-online"
+  ]
+ },
  "_pending2026-07-18": [
   "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
   "blade-ball: SERPENT -> Beebom le dit expire, PT+GamesRadar actif, conserve actif",
@@ -1059,48 +1096,76 @@
   "restants_non_traites": "~90 jeux (de anime-souls-simulator-x a world-cup-album) - chaque page necessite un fetch autoritaire dedie; a poursuivre."
  },
  "catalogVerify": {
-  "fruit-battlegrounds": "2026-09-05",
-  "anime-astral-simulator": "2026-09-03",
-  "doors": "2026-09-03",
-  "clover-retribution": "2026-09-03",
-  "dress-to-impress": "2026-09-03",
-  "anime-last-stand": "2026-09-03",
-  "royale-high": "2026-09-03",
+  "fruit-battlegrounds": "2026-09-07",
+  "anime-astral-simulator": "2026-09-10",
+  "doors": "2026-09-10",
+  "clover-retribution": "2026-09-10",
+  "dress-to-impress": "2026-09-10",
+  "anime-last-stand": "2026-09-07",
+  "royale-high": "2026-09-10",
   "100-days-at-sea": "2026-09-03",
-  "99-nights-in-the-forest": "2026-09-03",
-  "all-star-tower-defense": "2026-09-03",
-  "anime-battle-rng": "2026-09-03",
-  "driving-empire": "2026-09-03",
+  "99-nights-in-the-forest": "2026-09-10",
+  "all-star-tower-defense": "2026-09-10",
+  "anime-battle-rng": "2026-09-10",
+  "driving-empire": "2026-09-10",
   "blox-fruits": "2026-09-03",
-  "grow-a-garden": "2026-09-03",
-  "steal-a-brainrot": "2026-09-03",
-  "anime-vanguards": "2026-09-03",
-  "blue-lock-rivals": "2026-09-03",
-  "volleyball-legends": "2026-09-03",
+  "grow-a-garden": "2026-09-07",
+  "steal-a-brainrot": "2026-09-07",
+  "anime-vanguards": "2026-09-07",
+  "blue-lock-rivals": "2026-09-07",
+  "volleyball-legends": "2026-09-07",
   "king-legacy": "2026-09-03",
   "fisch": "2026-09-03",
   "pet-simulator-99": "2026-09-03",
-  "dragon-blox": "2026-09-03",
+  "dragon-blox": "2026-09-10",
   "brainrot-evolution": "2026-09-03",
   "a-dusty-trip": "2026-09-03",
-  "anime-apocalypse": "2026-09-03",
-  "anime-champions-simulator": "2026-09-03",
-  "anime-dimensions-simulator": "2026-09-03",
-  "anime-eternal": "2026-09-03",
+  "anime-apocalypse": "2026-09-10",
+  "anime-champions-simulator": "2026-09-10",
+  "anime-dimensions-simulator": "2026-09-10",
+  "anime-eternal": "2026-09-10",
   "anime-expeditions": "2026-09-03",
-  "anime-origins": "2026-09-03",
+  "anime-origins": "2026-09-10",
   "jailbreak": "2026-09-05",
   "basketball-zero": "2026-09-05",
   "sakura-stand": "2026-09-05",
   "dandys-world": "2026-09-05",
   "arm-wrestle-simulator": "2026-09-05",
   "fish-it": "2026-09-05",
-  "bee-swarm-simulator": "2026-09-05",
+  "bee-swarm-simulator": "2026-09-07",
   "build-a-boat-for-treasure": "2026-09-05",
-  "bubble-gum-simulator-infinity": "2026-09-05",
+  "bubble-gum-simulator-infinity": "2026-09-07",
   "type-soul": "2026-09-05",
   "toilet-tower-defense": "2026-09-05",
-  "anime-defenders": "2026-09-05"
+  "anime-defenders": "2026-09-05",
+  "da-hood": "2026-09-07",
+  "shindo-life": "2026-09-07",
+  "arsenal": "2026-09-07",
+  "dragon-adventures": "2026-09-07",
+  "car-dealership-tycoon": "2026-09-07",
+  "garden-tower-defense": "2026-09-08",
+  "plants-vs-brainrots": "2026-09-08",
+  "grow-a-chicken-fighter": "2026-09-08",
+  "attack-on-titan-revolution": "2026-09-08",
+  "rivals": "2026-09-08",
+  "muscle-legends": "2026-09-08",
+  "skibidi-masters-tower-defense": "2026-09-08",
+  "grow-a-garden-2": "2026-09-08",
+  "knockout": "2026-09-08",
+  "character-rng": "2026-09-08",
+  "jules-rng": "2026-09-08",
+  "broken-blade": "2026-09-08",
+  "murder-mystery-2": "2026-09-08",
+  "ninja-legends": "2026-09-08",
+  "pet-simulator-x": "2026-09-08",
+  "grand-piece-online": "2026-09-09T05:10:00Z",
+  "jujutsu-shenanigans": "2026-09-09T05:10:00Z",
+  "haze-piece": "2026-09-09T05:10:00Z",
+  "project-mugetsu": "2026-09-09T05:10:00Z",
+  "sailor-piece": "2026-09-09T05:10:00Z",
+  "peroxide": "2026-09-09T05:10:00Z",
+  "untitled-boxing-game": "2026-09-09T05:10:00Z",
+  "slap-battles": "2026-09-09T05:10:00Z"
  },
  "_catalogVerifyNote": "Suivi de la ROTATION quotidienne (ETAPE 2ter): date de derniere verif approfondie par slug. Les slugs ABSENTS de cet objet = jamais verifies en profondeur = priorite maximale du prochain lot. Jeux flagges 'a reverifier' laisses ABSENTS expres (a-one-piece-game, anime-adventures, anime-fighters, anime-fighting-simulator, anime-fighting-simulator-reborn, anime-rangers-x, anime-reversal, anime-rift-tower-defense, anime-rng, scroll-a-brainrot, world-fighters, heroes-battlegrounds).",
  "_pending2026-09-05": {
@@ -1117,5 +1182,71 @@
    "grimoires-era (sources périmées juil/mai/fév)",
    "shindo-life (11 codes probablement périmés, aucun dans lot actif courant, pas de liste expirée propre)"
   ]
+ },
+ "_pending2026-09-07": {
+  "anime-last-stand": "19 codes déplacés en expirés (Roblox Den 7 sept. + PGG 1er sept. concordent inactif) ; 22 actifs restants confirmés Roblox Den. ~24 actifs supplémentaires listés par Roblox Den NON ajoutés (PGG les marque inactifs → conflit, prudence).",
+  "volleyball-legends": "Candidats UPDATE_86/HAKKA_RETURN/SPIKER vus dans agrégat de recherche mais NON confirmés par GamesRadar (Sep 3, qui liste toujours UPDATE_85/SHIRO/BLOCKED actifs) → non ajoutés, à revérifier.",
+  "fruit-battlegrounds": "2 actifs (HIGHER1M120K/YOO1M110K!) conservés ; agrégat de recherche ambigu (anciennes listes) → pas de changement.",
+  "da-hood": "CORRIGÉ 18→2 actifs (DOG/SHARK, 300k DHC ; PGG 3 sept. + Pocket Tactics 3 sept. concordent, 18 anciens tous listés expirés).",
+  "shindo-life": "CORRIGÉ 11→29 actifs (nos 11 tous périmés: Roblox Den + PGG concordent ; nouvelle liste = intersection PGG 1er sept. ∩ Roblox Den, 29 codes).",
+  "bubble-gum-simulator-infinity": "Typo corrigé ogbfs→ogbgs (Roblox Den + Insider Gaming) ; Hell/Heaven conservés (pas de liste expirée explicite) — à surveiller.",
+  "arsenal": "Confirmé OK — 5 actifs (codes cosmétiques permanents), sous-listage acceptable (agrégat: ~14 trackés).",
+  "dragon-adventures": "Confirmé OK — 6 actifs, sous-listage (11 trackés). Candidat DA7THBIRTHDAY2 (nouveau, 1 source) NON ajouté.",
+  "car-dealership-tycoon": "Confirmé OK — 14 actifs, sous-listage (23 trackés). Candidat AUTUMNSOON (nouveau) NON ajouté (<3 sources).",
+  "bee-swarm-simulator": "Confirmé OK — 17 actifs, aucun nouveau code depuis février (codes permanents).",
+  "grimoires-era": "À REVÉRIFIER — collision de nom (Era vs Legacy vs Era 2), sources muddled/périmées (Beebom fév. 2026). Non modifié.",
+  "pet-simulator-x": "À REVÉRIFIER EN PRIORITÉ — liste de 8 actifs suspecte/probablement périmée ; PocketGamer indique 0 code actif. Non modifié faute de liste expirée explicite ; vérifier Roblox Den au prochain run."
+ },
+ "_pending2026-09-08": {
+  "blade-ball": {
+   "code": "BATTLEROYALE",
+   "reason": "storm ticket; actif selon Pocket Tactics (1er sept) mais contesté entre sources",
+   "decision": "non publié (1 source fiable)"
+  },
+  "fruit-battlegrounds": {
+   "code": "EVENHIGHER!",
+   "reason": "800 gems; nouveau selon Pocket Tactics (4 sept) uniquement",
+   "decision": "non publié (source unique)"
+  },
+  "fisch": {
+   "code": "SkycrestIsInTheSky",
+   "reason": "confirmé EXPIRÉ par GamesRadar (7 sept) — ne pas ajouter",
+   "decision": "écarté (expiré)"
+  },
+  "volleyball-legends": {
+   "note": "ajout UPDATE_86/HAKKA_RETURN/SPIKER; UPDATE_85/SHIRO/BLOCKED expirés (PGG 5 sept)"
+  },
+  "anime-story-2": {
+   "reason": "17 codes de lancement (4000ccuomg, ty1k...) ; source liste 7 codes récents differents + 111 « working » non énumérés — frontière actif/expiré incertaine",
+   "decision": "à revérifier, page non touchée"
+  },
+  "pet-simulator-x": {
+   "reason": "8 codes fabriqués (FURRYFRIEND, DIAMONDS2026, PSWELCOME, HATCHMASTER...) absents des listes actif ET expiré de Pocket Gamer (1er sept)",
+   "decision": "RÉSOLU: retirés, page passée à 0 code actif honnête + vraie liste expirée PGG (44)"
+  },
+  "mad-city": {
+   "reason": "conflit : Roblox Den « 6 Working » vs Pocket Gamer « none » — prudence",
+   "decision": "à revérifier"
+  },
+  "grimoires-era": {
+   "reason": "pas de source datée septembre + risque de confusion Grimoires Era / Era 2 / Legacy",
+   "decision": "à revérifier"
+  }
+ },
+ "_pending2026-09-09": {
+  "jujutsu-shenanigans": "SLATECONCRETE en conflit (Beebom=expiré Sep1, PC Gamer=actif) -> retiré des actifs par prudence",
+  "catch-a-monster": "nexa (Sep4) mentionne par une source unique, non ajoute (PT Sep2 ne le liste pas)",
+  "squid-game-x": "UPDATE11RELEASE actif selon Roblox Den (source unique crowd) -> non ajoute, sous-listage OK",
+  "sonic-speed-simulator": "sources en conflit (0 vs 5 actifs) + version RE-RAN -> a revérifier avec liste complete",
+  "fire-force-online": "MAJ Sep2 a retire bcp de codes; statut REIGNITION/REIGNITION2/55KLIKES non confirme -> a revérifier"
+ },
+ "_pending2026-09-10": {
+  "_note": "Run 10/09. Sandbox bash indisponible (mount echoue) -> build_codes_json.py / node --check / scans git non executes. Editions faites via l'outil Edit (remplacement exact, sans null byte).",
+  "driving-empire": "CORRIGE 21->2 actifs (RECORD, USA250). 19 codes saisonniers passes expires (GamesRadar 2 sept + Pocket Gamer 5 sept concordent). Token 'USA250Car' corrige en 'USA250'. 2MLIKES/200KMEMBERS = conflit (GamesRadar actif vs PocketGamer expire) -> expires par prudence. codes.json A REGENERER.",
+  "dress-to-impress": "CORRIGE 32->27 actifs. LNY, LIONDANCER, BHM26, CH00P1E_1S_B4CK, C4LLMEHH4LEY passes expires (GamesRadar 2 sept les liste expires - events saisonniers passes). PROUD/CH00P1E_B4CK_AGA1N donnes actifs par GamesRadar mais 1 source -> non ajoutes (>=3 requis). Casse 'Vanillamace' conservee. codes.json A REGENERER.",
+  "anime-last-stand": "MagicKnights!/ElfReincarnation!/IsItReallyWeekly?! deja publies (22 actifs), confirmes actifs PGG + allthings.how sept 2026. Pending 09-02 RESOLU.",
+  "anime-expeditions": "A REVERIFIER - nos 10 codes (RELEASE/EA/EA+/AE#1/EXPEDITIONS/100mvisits/100K!/30KLIKES!/HAPPYBDAYCOOP/wfade) sans preuve d'expiration, mais GamesRadar/Dexerto (8 sept) listent des codes recents differents (Eclipse, 250klikes, 8thCompany, expirant 10-12 sept). Page NON modifiee, catalogVerify laisse au 09-03.",
+  "a-dusty-trip": "A REVERIFIER - sources en conflit (3 vs 0 actifs), pas de liste datee claire. Page NON modifiee, catalogVerify laisse au 09-03.",
+  "hotGames": "Verifies stables 10/09 (>=3 sources/officiel), AUCUN changement de codes: blox-fruits 24 (LIGHTNINGABUSE conflit + 1LOSTADMIN expire NON ajoutes), fisch 3 (SkycrestIsInTheSky conflit NON ajoute), blue-lock-rivals 4 (NELKING/NIKOSOON/UBERSMONTH/SORRYLOADING = PCGamer 10 sept), volleyball-legends 3 (UPDATE_86/HAKKA_RETURN/SPIKER = GamesRadar), anime-vanguards 3 (Retribution/Wrath/MiniUpd2), blade-ball 13, fruit-battlegrounds 2 (sous-listage OK), grow-a-garden 2, steal-a-brainrot 1 (conflit persistant), anime-last-stand 22. Dates 'Verifie le' rafraichies. king-legacy NON revérifié en profondeur ce run (date non touchee)."
  }
 }

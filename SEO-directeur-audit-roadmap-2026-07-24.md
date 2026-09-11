@@ -4,6 +4,92 @@
 
 ---
 
+## 📌 Dernière brique — J28 (9 septembre 2026)
+
+**Codes (PRIORITÉ — run dominé par 8 corrections de faux-actifs, dont 2 majeures) :**
+- **Sailor Piece (rotation, jamais vérifié)** : nos **16 « codes actifs » étaient TOUS périmés** — Pocket Tactics (7 sept.) ne liste plus que **TojiDanteUpdate + Weloveyou** en actifs et place explicitement nos 16 (KINGUPDATEHASARRIVED, RAIDUPDATENOW, GHOULUPDATE, MASTERY, RAIDS, 1B100/200/300MVISITS…) en expirés. Jeu one-piece à fort turnover. → **16→2**, 16 déplacés en expirés, compteur hero + `data/codes.json` corrigés. Correction d'honnêteté majeure.
+- **Catch a Monster (hotGame)** : liste ré-auditée contre Pocket Tactics (2 sept., liste expirée explicite) — **6 de nos 11 codes marqués expirés** (massglaw, crysting, graon, magmorus, moovik, danvok) + 5 autres (clacerglaw, cabshark, ungolem, LIVEXP, LIVECOIN) absents des actifs courants. → **11→9** codes courants (mutatebug, achievebug, turret, Oblivion, Plagcannon, Gearif, coin, xp, cam), 11 anciens en expirés. Jeu neuf à turnover rapide.
+- **Grand Piece Online (rotation)** : nos 3 codes (FREE_Drops3, FREE_EXP3, 5FREETAILORVOUCHERS_3) **tous listés expirés** par Pocket Tactics (2 sept.) → remplacés par **FREE_Drops6, ILOVEGPO_2**. 3→2.
+- **Peroxide (rotation)** : `YayAHalloweenUpdate` expiré (Pocket Gamer 5 sept.) + 4 codes courants manquants ajoutés → **4→7** (445kLikesYipee, 4thJuly2026, OneMillionPE, EgxcellentEggventure + TasteTheRainbow/440kLikes/The1HourOfDoomAndDespair conservés).
+- **Jujutsu Shenanigans (rotation)** : Beebom (1er sept.) place SLATECONCRETE/X6X31F47UN8JM1NEP/RIPBOWE/67 en expirés → **5→1** (A7D2L26RNEPG74A3Q). ⚠️ **SLATECONCRETE en conflit** (Beebom expiré vs PC Gamer actif) → retiré des actifs **par prudence**, consigné en `_pending`.
+- **Haze Piece (rotation)** : ajout du nouveau **ABYSSALCTHULHU** (5 race spins, PT 5 sept.) ; les 3 existants confirmés actifs. 3→4.
+- **Project Mugetsu (rotation)** : ajout de 3 codes courants confirmés PGG (1er sept.) **TheD1Gambler26, SUPPORTANIMEOVERSEAS, ProjectSoon** ; existants conservés. 4→7.
+- **Blockspin (hotGame)** : ajout **BLOCKSPIN_GRIPS_UPDATE + UNDER_THE_BARREL** (Pocket Gamer 5 sept.) ; nos 2 confirmés actifs. 2→4.
+
+**Confirmés stables / sous-listage acceptable :** Steal an Egg (0 — jamais de codes, Collect Rare Pets ; PCGamesN), Pet Simulator 99 (0 — merch codes only), Squid Game X (6 confirmés actifs Roblox Den 8 sept. ; UPDATE11RELEASE non ajouté, source unique crowd), 100 Days at Sea (3 exacts : CLASSES/DECORATE/20Pearls, GamesRadar/Dexerto 7 sept.), Untitled Boxing Game (nos 9 confirmés actifs Pocket Gamer 5 sept.), Slap Battles (Happy5lappiversary/spookyseason25 confirmés + 1x1x1x1x1x1 permanent).
+
+**⚠️ À revérifier au prochain run :** **sonic-speed-simulator** (conflit 0 vs 5 actifs + version « RE-RAN » → liste complète requise), **fire-force-online** (MAJ 2 sept. a retiré beaucoup de codes ; statut REIGNITION/REIGNITION2/55KLIKES non confirmé). `catalogVerify` mis à jour (8 slugs rotation), « Vérifié le » rafraîchi au **9 sept.** sur les pages traitées, `data/codes.json` régénéré (178 jeux, 1202 codes actifs).
+
+**Trending re-scanné :** leaders (Steal An Egg, Blox Fruits, Steal a Brainrot, Grow a Garden, Brookhaven, Murder Mystery 2, Adopt Me) — **tous couverts**. Aucun nouveau hit ≥4000 non couvert → evergreen.
+
+**Brique ÉTAPE 2bis (EEAT/honnêteté) :** conformément au précédent J26/J27, le run ayant été **majoritairement consommé par des corrections de faux-actifs prioritaires** (dont 2 majeures : Sailor Piece 16→2 et Catch a Monster 11→9), **la brique d'autorité du jour est cet assainissement de signaux de confiance** — retirer des codes morts/possiblement invalides améliore directement l'EEAT et évite de tromper l'utilisateur. **Aucune nouvelle URL créée** (choix honnête : les valeurs « meilleurs pets par revenu » de Steal an Egg **divergent entre sources** — Unicorn $1B/s vs Oni Tiger $600M/s — donc pas de tier list publiée sur des chiffres non concordants, plutôt que d'inventer un classement).
+
+**Prochaine brique recommandée (J29), par ordre de priorité :**
+
+1. **Tier list Steal an Egg — « meilleurs pets par revenu/biome »** : réconcilier ≥2 sources datées concordantes (games.gg / timesaver / joytify) sur les revenus/seconde AVANT de publier (les valeurs divergent aujourd'hui) ; cluster #1, vraie brique de contenu.
+2. **grimoires-era** — lever la collision de nom (placeId de `codes-grimoires-era.html`) puis élaguer contre une liste expirée propre (Roblox Den / Pocket Tactics).
+3. **anime-story-2** — récupérer liste active **et** expirée explicite (PGG « Worlds Collide » / Roblox Den) avant tout retrait (jeu qui garde beaucoup de codes).
+4. **sonic-speed-simulator / fire-force-online** — finir les 2 slugs laissés « à revérifier » ce run avec une liste complète datée.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
+## 📌 Archive — J27 (8 septembre 2026)
+
+**Codes (PRIORITÉ — 3 corrections majeures de faux-actifs) :**
+- **Garden Tower Defense (rotation, jamais vérifié)** : nos **19 codes tous périmés** — Pro Game Guides (5 sept.) les liste **tous en « Inactive »**, recoupé par la recherche datée du 7 sept. (seuls FANTASY + FRONTIER actifs). Ce TD fait tourner ses codes ~tous les 3 jours. → **19→2** (FANTASY 500 Seeds, FRONTIER 750 Seeds), les 19 déplacés en expirés, compteur hero corrigé, `data/codes.json` régénéré.
+- **Pet Simulator X (rotation, brique roadmap J27 #1 — EEAT/honnêteté)** : les **8 « codes actifs » étaient FABRIQUÉS** (FURRYFRIEND, SINGLESTRIKE, PET_SQUAD, BIGUPDATE, CRYSTALBOOST, DIAMONDS2026, PSWELCOME, HATCHMASTER) — **absents des listes actif ET expiré** de Pocket Gamer (1ᵉʳ sept., « no active codes »). Le jeu (GLITCH) n'a plus aucun code valide. → page passée honnêtement à **0 code actif** + chargement de la **vraie liste expirée** (44 codes PGG). Correction d'honnêteté majeure.
+- **Volleyball Legends (hotGame)** : rotation Update 86 — nos UPDATE_85/SHIRO/BLOCKED **expirés** (PGG 5 sept.) → nouveaux **UPDATE_86, HAKKA_RETURN, SPIKER** (PGG + agrégats datés). 3→3 (renouvelés), `data/codes.json` régénéré.
+
+**Confirmés stables / sous-listage acceptable (hotGames)** : Grow a Garden (RDCAward/BEANORLEAVE10 ; TEAMGREENBEAN écarté = code GAG **2**, piège de désambiguïsation), Blade Ball (13 confirmés Pocket Tactics 1er sept. ; BATTLEROYALE contesté → non ajouté), Anime Last Stand (22 confirmés Roblox Den 7 sept. + Beebom ; PGG outlier à 3), Blue Lock Rivals (4), Anime Vanguards (3), Fisch (3 ; **SkycrestIsInTheSky confirmé expiré** GamesRadar 7 sept.), Fruit Battlegrounds (2 ; EVENHIGHER! source unique → non ajouté), Blox Fruits (24), King Legacy (7), Tower Defense Simulator (2), Brainrot Evolution (24, tous confirmés Nerdschalk 5 sept.), Steal a Brainrot (1).
+
+**Rotation confirmés OK (jamais vérifiés, sous-listage acceptable)** : plants-vs-brainrots (5, Beebom 1er sept.), grow-a-chicken-fighter (4), attack-on-titan-revolution (21), rivals (8/9), muscle-legends (14), skibidi-masters-tower-defense (5, PGG garde tous les paliers), grow-a-garden-2 (3 exacts), knockout, character-rng, jules-rng, broken-blade, murder-mystery-2 (0, confirmé sans code depuis des années), ninja-legends.
+
+**⚠️ À revérifier au prochain run** : **grimoires-era** (collision Era/Era 2/Legacy, pas de source datée sept.), **anime-story-2** (17 codes de lancement ; frontière actif/expiré incertaine, 111 « working » non énumérés), **mad-city** (conflit Roblox Den « 6 working » vs Pocket Gamer « none »). `catalogVerify` mis à jour (14 slugs rotation + pet-simulator-x), « Vérifié le » rafraîchi au **8 sept.** sur les pages traitées.
+
+**Trending re-scanné (≥2 sources, rblxdb/rotrends 6 sept.) :** #1 Steal An Egg (~2,45M), Blox Fruits (~717K), Brookhaven, +1 Speed Keyboard Escape (`evasion-clavier`), Murder Mystery 2, Grow a Garden, Steal a Brainrot — **tous couverts**. Aucun nouveau hit ≥4000 non couvert → evergreen.
+
+**Brique ÉTAPE 2bis (EEAT/honnêteté) :** la correction Pet Simulator X (retrait de 8 codes fabriqués + rétablissement d'une liste expirée authentique sourcée) constitue la brique d'autorité du jour — elle assainit un signal de confiance critique (des codes inventés nuisent directement à l'EEAT et au classement). Le run ayant été majoritairement consommé par 3 corrections de faux-actifs (priorité absolue), aucune nouvelle URL n'a été créée (choix honnête vs. gonfler le nombre de pages).
+
+**Prochaine brique recommandée (J28), par ordre de priorité :**
+
+1. **grimoires-era** — lever la collision de nom (confronter au placeId Roblox de notre page : `codes-grimoires-era.html`) puis élaguer contre une source à liste expirée propre (Roblox Den / Pocket Tactics).
+2. **anime-story-2** — récupérer la liste active **et** expirée explicite (PGG « Worlds Collide » / Roblox Den) pour confirmer ou élaguer les 17 codes de lancement ; jeu qui garde beaucoup de codes → vérifier avant tout retrait.
+3. **Tier list Steal an Egg — enrichissement « meilleurs pets par revenu / par biome »** (≥2 sources datées) pour compléter le cluster n°1 (~2,45M joueurs) — vraie brique de contenu si aucun faux-actif prioritaire.
+4. **mad-city** — trancher le conflit Roblox Den vs Pocket Gamer avec une 3ᵉ source datée.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
+## 📌 Archive — J26 (7 septembre 2026)
+
+**Codes (PRIORITÉ — 4 corrections majeures de faux-actifs) :**
+- **Anime Last Stand (hotGame + brique roadmap J26 #1)** : liste de 41 codes ré-auditée contre Roblox Den (checké le 7 sept.) + Pro Game Guides (1er sept.). **19 codes déplacés en expirés** (ALSISBACK!, World3Patch2, WORLD3REBALANCE, StellarWorld, SorryForDelay1/2/3, HypeWorld3, ReleaseCode!, Update0, ALSUPD1/2, BleachSS, HuntersMark, SaveRukia, DelaySorryals, BalancePatch3/3.1, GACHIAKUTA!?, Update83! — aucun listé actif par les deux sources). **22 actifs conservés** (confirmés actifs par Roblox Den 7 sept. ; PGG en conflit → prudence, non retirés). ~24 actifs supplémentaires de Roblox Den NON ajoutés (PGG les marque inactifs). 41→22, compteur hero corrigé.
+- **Blue Lock Rivals (hotGame)** : rotation hebdo — UBERSTAKEOVER/KINGNEXTWEEK/EGODEFENSE **expirés** ; nouveaux **NELKING, NIKOSOON, UBERSMONTH, SORRYLOADING** (PGG màj 6 sept. + GamesRadar/Beebom/Pocket Gamer). 3→4.
+- **Da Hood (rotation)** : 18 codes **tous périmés** (PGG 3 sept. **et** Pocket Tactics 3 sept. concordent, seasonals 2024/2025) → remplacés par **DOG, SHARK** (300k DHC chacun, 2 sources tier-1). 18→2.
+- **Shindo Life (rotation)** : nos 11 codes **tous périmés** (Roblox Den + PGG concordent) → nouvelle liste **29 actifs** = intersection PGG (1er sept.) ∩ Roblox Den (TickDamageBugs!, FixingShindoBuggyTimes!, PatchUpdate249point5!, RELLGIFTbag!, RELLGIFTsc!…). 11→29.
+- **Bubble Gum Simulator Infinity** : typo corrigé `ogbfs`→`ogbgs` (Roblox Den + Insider Gaming).
+- **Confirmés stables (hotGames)** : Grow a Garden (RDCAward/BEANORLEAVE10, PCGamesN), Anime Vanguards (Retribution/Wrath/MiniUpd2), Volleyball Legends (UPDATE_85/SHIRO/BLOCKED, GamesRadar 3 sept. — candidats UPDATE_86/HAKKA_RETURN/SPIKER NON confirmés → non ajoutés), Steal a Brainrot (BESTBRAINROTEVER), Fruit Battlegrounds (2 actifs).
+- **Rotation confirmés OK (sous-listage acceptable)** : Arsenal (5, codes permanents), Dragon Adventures (6/11), Car Dealership Tycoon (14/23), Bee Swarm Simulator (17, aucun nouveau depuis février).
+- **⚠️ À revérifier au prochain run** : **pet-simulator-x** (liste de 8 actifs suspecte/probablement périmée ; PocketGamer indique 0 code actif — vérifier Roblox Den) ; **grimoires-era** (collision de nom Era/Legacy/Era 2, sources périmées). `data/codes.json` régénéré. « Vérifié le » rafraîchi au **7 sept.** sur les 178 pages.
+
+**Trending re-scanné (≥2 sources, rblxdb/blox-merch 7 sept.) :** #1 **Steal An Egg ~1,4M** (déjà Jeu de la semaine, inchangé), Blox Fruits, Rivals, Jujutsu Shenanigans, Steal a Brainrot, Adopt Me — **tous couverts**. Aucun nouveau hit ≥4000 non couvert → evergreen.
+
+**Brique ÉTAPE 2bis :** le run a été consommé par **4 corrections majeures de codes** (priorité absolue, qui prime sur la brique cluster). Brique EEAT/honnêteté réalisée : correction d'une ligne de changelog ALS rendue incohérente par le nettoyage (compteur historique redaté « à l'époque »). Le **Jeu de la semaine (lundi)** reste Steal An Egg (toujours #1, honnête de ne pas fabriquer un changement).
+
+**Prochaine brique recommandée (J27), par ordre de priorité :**
+
+1. **pet-simulator-x** — vérifier d'urgence contre Roblox Den (liste active/expirée explicite) : la liste actuelle (8 codes) semble périmée/fabriquée ; corriger honnêtement.
+2. **Tier list Steal an Egg — enrichissement « meilleurs pets par revenu / par biome »** (≥2 sources datées) pour compléter le cluster #1 (~1,4M joueurs).
+3. **Fish It / Type Soul** — compléter les listes actives (≥3 sources concordantes une fois les conflits levés).
+4. **grimoires-era** — lever la collision de nom (confronter au placeId Roblox de notre page) puis élaguer sur une source à liste expirée propre.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
 ## 📌 Dernière brique — J25 (5 septembre 2026)
 
 **Codes (priorité) — run supplémentaire (run du 04/09 manqué) :** re-scan des jeux chauds les plus volatils (Beebom/Dexerto/PCGamesN/Pocket Tactics/Pro Game Guides/GamesRadar, màj 1-4 sept.). **Confirmés inchangés :** Grow a Garden (2 : RDCAward/BEANORLEAVE10), Steal a Brainrot (1 : BESTBRAINROTEVER, Dexerto 1ᵉʳ sept.), Blue Lock Rivals (3 : UBERSTAKEOVER/KINGNEXTWEEK/EGODEFENSE), Volleyball Legends (3 : UPDATE_85/SHIRO/BLOCKED), Anime Vanguards (3 : Retribution/Wrath/MiniUpd2), Blade Ball (~24 trackés, sous-listage 13 OK, aucun expiré). **1 correction hotGame — Fruit Battlegrounds :** `BIGMILLIHUNNID!`, `ITSTHEBILLION!`, `CODEFIX` **passés expirés** (Pocket Tactics 4 sept., sweep d'expiration explicite ; absents des actifs PGG) → 5→**2 actifs** (HIGHER1M120K, YOO1M110K!) ; `EVENHIGHER!`/`OMGUPDATE22` **non ajoutés** (conflit / <3 sources). **Fisch** `SkycrestNextWeek` **non publié** (conflit Beebom actif vs autre expiré → prudence). `data/codes.json` régénéré (178 jeux, 1255 codes). « Vérifié le » rafraîchi au **5 sept.** sur toutes les pages traitées.
