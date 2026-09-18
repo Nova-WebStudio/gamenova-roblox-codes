@@ -6,7 +6,10 @@
     "https://www.svg.com/2254292/gta-6-launch-guide-release-date-preload-time-price-editions-platforms/",
     "https://screenrant.com/gta-6-official-second-trailer/",
     "https://www.shacknews.com/article/144160/gta-6-trailer-2",
-    "https://www.rockstargames.com/VI"
+    "https://www.rockstargames.com/VI",
+    "https://www.vice.com/en/article/gta-6-pre-order-bonuses-and-price-confirmed-all-ultimate-edition-rewards/",
+    "https://thepcenthusiast.com/gta-6-release-date-confirmed/",
+    "https://www.gtabase.com/gta-6/map/"
   ],
   "guides": [
     {
@@ -61,6 +64,162 @@
         {
           "q": "GTA 6 sortira-t-il sur PC ?",
           "a": "Pas de version PC officiellement confirmée au lancement. Rockstar sort souvent ses jeux sur PC plus tard, mais ce n'est pas annoncé — on ne l'affirme donc pas."
+        }
+      ]
+    },
+    {
+      "slug": "prix-editions",
+      "title": "GTA 6 : prix, éditions et précommandes",
+      "category": "Infos & preview",
+      "updated": "2026-09-18",
+      "intro": "Rockstar a confirmé le prix, les éditions et les précommandes de GTA 6. Voici ce qui est officiel au 18 septembre 2026 — sans rumeur.",
+      "sections": [
+        {
+          "h": "Deux éditions, deux prix",
+          "p": "GTA 6 se décline en deux éditions seulement : la Standard à 79,99 $ et l'Ultimate à 99,99 $ (prix confirmés par Rockstar en dollars US). Il n'y a pas d'édition Collector ni Spéciale."
+        },
+        {
+          "h": "Précommandes ouvertes depuis le 25 juin 2026",
+          "p": "Les précommandes ont ouvert le 25 juin 2026, près de cinq mois avant la sortie. Elles sont disponibles sur le Rockstar Store, le PlayStation Store et le Microsoft Store, ainsi que chez Amazon, Fnac, Micromania, GameStop et d'autres revendeurs selon les pays."
+        },
+        {
+          "h": "Le bonus de précommande : le pack Vintage City",
+          "p": "Quelle que soit l'édition, toute précommande donne droit au pack « Vintage City », débloqué au lancement le 19 novembre 2026."
+        },
+        {
+          "h": "Ce qu'ajoute l'édition Ultimate",
+          "p": "L'édition Ultimate (99,99 $) ajoute une série de récompenses bonus : véhicules, armes, et même deux missions annexes exclusives. La Standard (79,99 $) contient l'expérience solo complète avec Jason et Lucia."
+        },
+        {
+          "h": "Préchargement & format",
+          "p": "Le préchargement (pre-load) débute le 12 novembre 2026, une semaine avant la sortie. Côté physique, GTA 6 sort en « code-in-a-box » : la boîte contient un code, pas de disque — une décision qui a fait débat chez les collectionneurs."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Combien coûte GTA 6 ?",
+          "a": "79,99 $ pour l'édition Standard et 99,99 $ pour l'édition Ultimate (prix Rockstar en USD). Ce sont les deux seules éditions."
+        },
+        {
+          "q": "Quand ont ouvert les précommandes ?",
+          "a": "Le 25 juin 2026, sur le Rockstar Store, PlayStation Store, Microsoft Store et chez les revendeurs habituels."
+        },
+        {
+          "q": "Y a-t-il un bonus de précommande ?",
+          "a": "Oui : le pack « Vintage City », offert avec toute précommande, débloqué au lancement."
+        }
+      ]
+    },
+    {
+      "slug": "pc",
+      "title": "GTA 6 sur PC : ce qui est confirmé (et ce qui ne l'est pas)",
+      "category": "Infos & preview",
+      "updated": "2026-09-18",
+      "intro": "« GTA 6 sur PC » est l'une des questions les plus posées. Réponse honnête : au 18 septembre 2026, Rockstar n'a rien annoncé pour le PC. Voici le confirmé et le spéculatif.",
+      "sections": [
+        {
+          "h": "Au lancement : consoles uniquement",
+          "p": "La seule plateforme confirmée par Rockstar est la console : GTA 6 sort le 19 novembre 2026 sur PlayStation 5 et Xbox Series X|S. Aucune version PC n'accompagne ce lancement."
+        },
+        {
+          "h": "Aucune version PC officiellement annoncée",
+          "p": "À ce jour, Rockstar n'a communiqué ni version PC, ni fenêtre de sortie PC, ni le moindre détail technique PC. Toute « date PC » qui circule n'est pas officielle."
+        },
+        {
+          "h": "Pourquoi on l'attend quand même (spéculation)",
+          "p": "Historiquement, Rockstar sort ses jeux sur PC plus tard : GTA V est arrivé sur PC ~18 mois après les consoles, Red Dead Redemption 2 ~13 mois après. Sur cette base, des analystes tablent sur fin 2027 / début 2028 — mais c'est une estimation, pas une confirmation. On ne la présente donc pas comme un fait."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "GTA 6 sort-il sur PC le 19 novembre 2026 ?",
+          "a": "Non. Le lancement du 19 novembre 2026 concerne uniquement la PS5 et la Xbox Series X|S. Aucune version PC n'est annoncée à cette date."
+        },
+        {
+          "q": "Quand GTA 6 sortira-t-il sur PC ?",
+          "a": "Rockstar ne l'a pas annoncé. Les estimations d'analystes (fin 2027 / début 2028) reposent sur l'historique de la firme, pas sur une confirmation officielle."
+        }
+      ]
+    },
+    {
+      "slug": "carte-leonida",
+      "title": "GTA 6 : la carte de Leonida et Vice City",
+      "category": "Infos & preview",
+      "updated": "2026-09-18",
+      "intro": "Où se déroule GTA 6, quelles régions sont confirmées et quelle taille pour la carte ? Voici les éléments officiels sur le monde de Leonida — en écartant les fausses « cartes complètes » qui circulent.",
+      "sections": [
+        {
+          "h": "L'État de Leonida & Vice City",
+          "p": "GTA 6 se déroule dans l'État fictif de Leonida, inspiré de la Floride, avec pour cœur Vice City (la « Miami » de Rockstar) et ses rues néon."
+        },
+        {
+          "h": "Les régions confirmées",
+          "p": "Rockstar a officiellement confirmé plusieurs grandes régions de Leonida : Vice City, les Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia et le Mount Kalaga National Park."
+        },
+        {
+          "h": "Les quartiers de Vice City",
+          "p": "Des séquences officielles ont déjà nommé plusieurs quartiers de Vice City : la Ocean Beach strip, le bord de mer de Bayside et le district couvert de fresques de Stockyard. Vice City est présentée comme la plus grande ville jamais construite par Rockstar."
+        },
+        {
+          "h": "La taille de la carte (estimations)",
+          "p": "Selon les analyses, Vice City à elle seule ferait environ deux fois la taille de Los Santos, et la zone jouable de Leonida environ trois fois celle de Red Dead Redemption 2. Ce sont des estimations communautaires, pas des chiffres officiels."
+        },
+        {
+          "h": "⚠️ Attention aux fausses cartes",
+          "p": "Rockstar n'a PAS encore publié de carte du monde officielle. Toutes les « cartes complètes » qui circulent en ligne sont soit fan-made, soit issues de leaks — on ne les reprend pas et on ne les présente pas comme officielles."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Où se passe GTA 6 ?",
+          "a": "Dans l'État fictif de Leonida (inspiré de la Floride) et sa ville Vice City (inspirée de Miami)."
+        },
+        {
+          "q": "Quelles régions sont confirmées dans GTA 6 ?",
+          "a": "Vice City, les Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia et le Mount Kalaga National Park."
+        },
+        {
+          "q": "La carte de GTA 6 est-elle disponible ?",
+          "a": "Rockstar n'a pas publié de carte officielle. Les cartes complètes en ligne sont fan-made ou issues de leaks."
+        }
+      ]
+    },
+    {
+      "slug": "features-confirmees",
+      "title": "GTA 6 : les nouveautés et features confirmées",
+      "category": "Infos & preview",
+      "updated": "2026-09-18",
+      "intro": "Au-delà de l'histoire, plusieurs nouveautés de gameplay et de lancement ont été confirmées ou officiellement présentées pour GTA 6. Le point.",
+      "sections": [
+        {
+          "h": "Deux protagonistes jouables",
+          "p": "Pour la première fois dans la série principale, GTA 6 propose un duo jouable : Jason Duval et Lucia Caminos, dont on suit l'histoire commune."
+        },
+        {
+          "h": "Le plein d'essence devient une mécanique",
+          "p": "Le ravitaillement en carburant est présenté comme une vraie mécanique de gameplay : il faudra surveiller sa jauge d'essence, notamment avant les longs trajets."
+        },
+        {
+          "h": "Manettes DualSense en édition GTA VI",
+          "p": "Sony a annoncé deux manettes DualSense en édition limitée inspirées de GTA VI, sur l'esthétique de Vice City moderne, prévues pour accompagner la sortie du jeu."
+        },
+        {
+          "h": "Un lancement 100 % dématérialisé (côté disque)",
+          "p": "La version « boîte » de GTA 6 ne contient pas de disque mais un code à télécharger (« code-in-a-box »). C'est l'un des plus gros AAA à abandonner totalement le disque au lancement — un choix qui a fait réagir."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "GTA 6 a-t-il deux personnages jouables ?",
+          "a": "Oui : Jason et Lucia, une première pour la série principale."
+        },
+        {
+          "q": "Faut-il faire le plein d'essence dans GTA 6 ?",
+          "a": "Oui, le ravitaillement en carburant est confirmé comme une mécanique de gameplay à part entière."
+        },
+        {
+          "q": "La boîte de GTA 6 contient-elle un disque ?",
+          "a": "Non : c'est un « code-in-a-box » (un code à télécharger), sans disque physique."
         }
       ]
     }

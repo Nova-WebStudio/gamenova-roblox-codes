@@ -73,6 +73,9 @@ def header(active=""):
         + '<div class="nav-item"><a href="/games/aniimo/">Aniimo<span class="nav-caret">▾</span></a>'
           '<div class="nav-menu"><a href="/games/aniimo/codes/">🎁 Codes</a><a href="/games/aniimo/guides/">📖 Guides</a>'
           '<a href="/games/aniimo/tier-list/">📊 Tier list</a><a href="/games/aniimo/locations/">🗺️ Carte & lieux</a></div></div>'
+        + '<div class="nav-item"><a href="/games/gta-6/">GTA 6<span class="nav-caret">▾</span></a>'
+          '<div class="nav-menu"><a href="/games/gta-6/updates/">📰 Actualités</a><a href="/games/gta-6/guides/">📖 Infos & preview</a>'
+          '<a href="/games/gta-6/videos/">🎬 Trailers</a></div></div>'
         + '<a href="/games/"%s>Tous les jeux</a>' % ac("games")
         + '<a href="/avatar/"%s>Avatars</a>' % ac("avatars")
         + '<a href="/ugc-gratuits.html"%s>UGC gratuits</a>' % ac("ugc"))
@@ -83,6 +86,9 @@ def header(active=""):
         '<span class="mob-group">Aniimo</span>'
         '<a href="/games/aniimo/codes/">🎁 Codes</a><a href="/games/aniimo/guides/">📖 Guides</a>'
         '<a href="/games/aniimo/tier-list/">📊 Tier list</a><a href="/games/aniimo/locations/">🗺️ Carte & lieux</a>'
+        '<span class="mob-group">GTA 6</span>'
+        '<a href="/games/gta-6/updates/">📰 Actualités</a><a href="/games/gta-6/guides/">📖 Infos & preview</a>'
+        '<a href="/games/gta-6/videos/">🎬 Trailers</a>'
         '<span class="mob-group">Plus</span>'
         '<a href="/games/">Tous les jeux</a><a href="/avatar/">Avatars</a><a href="/ugc-gratuits.html">UGC gratuits</a>')
     return ('<header><div class="wrap"><nav class="nav" aria-label="Navigation principale">'
