@@ -603,26 +603,7 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding:44px 0 30px;ba
   </div>
 </section>
 
-<!-- ============ INDEX A-Z ============ -->
-<section class="block wrap">
-  <div class="sec-head">
-    <div>
-      <h2>🎮 Jeux disponibles</h2>
-      <p>Les codes des <span id="azCount">58</span> jeux suivis par Zoneblox, mis à jour chaque jour.</p>
-    </div>
-    <a class="more" href="/games/">Voir tous les jeux →</a>
-  </div>
-  <div class="az">
-    <div class="az-search">
-      <label class="search-input">
-        <span class="search-ico">🔍</span>
-        <input type="search" id="azSearch" placeholder="Filtrer la liste des jeux…" aria-label="Filtrer les jeux" autocomplete="off"/>
-      </label>
-    </div>
-    <div class="az-links" id="azLinks"></div>
-    <p class="az-empty" id="azEmpty" style="display:none">Aucun jeu ne correspond à ta recherche.</p>
-  </div>
-</section>
+<!-- INDEX A-Z retiré : doublon de /games/ (accueil allégé, sept. 2026) -->
 
 <!-- ============ FAQ ============ -->
 
@@ -795,7 +776,7 @@ function renderGrid(){
   const grid=$("#gameGrid");
   $("#countLabel").textContent=`${list.length} jeu${list.length>1?'x':''}`;
   if(!list.length){grid.innerHTML=`<div class="no-result">Aucun jeu ne correspond. <a href="#" style="color:var(--primary-2)" id="resetF">Réinitialiser</a></div>`;return;}
-  grid.innerHTML=list.map((g,i)=>{
+  grid.innerHTML=list.slice(0,24).map((g,i)=>{
     const s=statusInfo(g);
     const badge=g.tag==="hot"?`<span class="badge hot">🔥 POPULAIRE</span>`:g.tag==="new"?`<span class="badge new">🆕 NOUVEAU</span>`:"";
     const tier=g.tier?`<a class="btn btn-ghost btn-sm" href="tier-list/${g.slug}.html">📊 Tier</a>`:"";
@@ -813,10 +794,12 @@ function renderGrid(){
       </div>
     </article>`;
   }).join('');
+  if(list.length>24){grid.insertAdjacentHTML('beforeend','<a class="grid-more" href="/games/" style="grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:8px;padding:20px;border:1px dashed var(--border-strong);border-radius:16px;color:var(--text);font-weight:700;background:var(--surface);text-decoration:none;margin-top:4px">Voir les '+list.length+' jeux →</a>');}
 }
 
 /* ---------------- RENDER: A-Z ---------------- */
 function renderAZ(){
+  if(!document.getElementById('azLinks'))return;
   const uniq=[...GAMES].sort((a,b)=>a.name.localeCompare(b.name,'fr'));
   $("#azCount").textContent=uniq.length;
   $("#azLinks").innerHTML=uniq.map(g=>`<a href="codes-${g.slug}.html" data-az="${g.name.toLowerCase()}">Codes ${g.name}</a>`).join('');
@@ -900,7 +883,7 @@ $$('.q button').forEach(btn=>btn.addEventListener('click',()=>{
 }));
 
 // A-Z filter
-$("#azSearch").addEventListener('input',e=>{
+var _azS=$("#azSearch");if(_azS)_azS.addEventListener('input',e=>{
   const q=e.target.value.toLowerCase();let vis=0;
   $$('#azLinks a').forEach(a=>{const m=a.dataset.az.includes(q);a.classList.toggle('hide',!m);if(m)vis++;});
   $("#azEmpty").style.display=vis?'none':'block';
