@@ -21,7 +21,7 @@ import json, os, glob, html, datetime, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://zoneblox.com"
 GA = "G-FEL71QVHNL"
-CSSV = "1"
+CSSV = "2"
 FR_MONTHS = ["", "janvier", "février", "mars", "avril", "mai", "juin", "juillet",
              "août", "septembre", "octobre", "novembre", "décembre"]
 
@@ -198,7 +198,7 @@ def build_directory(games):
             "name": g["name"], "slug": g["slug"], "url": "/games/%s/" % g["slug"],
             "source": "standalone", "platforms": plats, "genres": genres,
             "updated": g.get("releaseDate", "0000-00-00"), "new": bool(g.get("isNew") or g.get("isFeatured")),
-            "thumb": None, "accent": g.get("accent", ["#7c5cff","#4d9bff"]),
+            "thumb": g.get("coverImage"), "accent": g.get("accent", ["#7c5cff","#4d9bff"]),
             "monogram": g.get("monogram", g["name"][:2].upper()), "cts": cts,
             "platformLabel": " · ".join(plats), "genreLabel": genres[0] if genres else "",
         })
@@ -273,8 +273,7 @@ def build_directory(games):
     roblox_count = sum(1 for e in entries if e["source"] == "roblox")
     def feat_roblox():
         return ('<a class="fcard" href="/tous-les-codes.html">'
-            '<div class="fimg" style="background:linear-gradient(135deg,#ff5f80,#a05cff)">'
-            '<span style="font-weight:900;font-size:2.2rem;color:#fff;letter-spacing:-1px">Roblox</span></div>'
+            '<div class="fimg"><img src="/images/cover-roblox.svg" alt="Roblox" loading="lazy" style="position:absolute;inset:0;width:100%%;height:100%%;object-fit:cover"></div>'
             '<div class="fbody"><h3>Roblox</h3>'
             '<span style="color:var(--muted);font-size:.85rem">Plateforme · %d jeux</span>'
             '<span class="ct-list"><span>Codes</span><span>Guides</span><span>Tier lists</span></span>'
@@ -289,14 +288,17 @@ def build_directory(games):
         a = g.get("accent", ["#7c5cff", "#4d9bff"])
         badge = ('<span class="badge" style="position:absolute;top:12px;left:12px;background:linear-gradient(100deg,#7c5cff,#4d9bff)">Nouveau</span>'
                  if (g.get("isNew") or g.get("isFeatured")) else "")
-        return ('<a class="fcard" href="/games/%s/">'
-            '<div class="fimg" style="background:linear-gradient(135deg,%s,%s)">%s'
-            '<span style="font-weight:900;font-size:2.2rem;color:#fff;letter-spacing:-1px">%s</span></div>'
+        cover = g.get("coverImage")
+        if cover:
+            fimg = '<div class="fimg">%s<img src="%s" alt="%s" loading="lazy" style="position:absolute;inset:0;width:100%%;height:100%%;object-fit:cover"></div>' % (badge, cover, e_att(g["name"]))
+        else:
+            fimg = '<div class="fimg" style="background:linear-gradient(135deg,%s,%s)">%s<span style="font-weight:900;font-size:2.2rem;color:#fff;letter-spacing:-1px">%s</span></div>' % (a[0], a[1], badge, e_att(g["name"]))
+        return ('<a class="fcard" href="/games/%s/">%s'
             '<div class="fbody"><h3>%s</h3>'
             '<span style="color:var(--muted);font-size:.85rem">%s · %s</span>'
             '<span class="ct-list">%s</span>'
             '<span class="btn btn-primary btn-sm" style="align-self:flex-start;margin-top:6px">Explorer %s →</span>'
-            '</div></a>') % (g["slug"], a[0], a[1], badge, e_att(g["name"]), e_att(g["name"]),
+            '</div></a>') % (g["slug"], fimg, e_att(g["name"]),
                              e_att(" · ".join(plats)), e_att(genres[0] if genres else ""), ctshtml, e_att(g["name"]))
     featured = feat_roblox() + "".join(feat_standalone(g) for g in games if g.get("isActive", True))
 
