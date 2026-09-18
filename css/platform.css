@@ -361,9 +361,9 @@ header .nav-links .nav-menu a:hover{background:var(--surface);color:var(--text)}
 .upd-src a{color:var(--primary-2)}
 
 /* ================= ACTUALITÉS : feed éditorial (.nx-*) ================= */
-.nx-hero{position:relative;border-radius:20px;overflow:hidden;margin-top:14px;min-height:clamp(200px,30vw,300px);display:flex;align-items:flex-end;isolation:isolate}
-.nx-hero-bg{position:absolute;inset:0;z-index:-2;background-image:var(--cover);background-size:cover;background-position:var(--covpos,center)}
-.nx-hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,11,22,.15),rgba(10,11,22,.55) 55%,rgba(10,11,22,.94))}
+.nx-hero{position:relative;border-radius:20px;overflow:hidden;margin-top:14px;min-height:clamp(200px,30vw,300px);display:flex;align-items:flex-end;background-image:linear-gradient(180deg,rgba(10,11,22,.2),rgba(10,11,22,.6) 55%,rgba(10,11,22,.95)),var(--cover,none);background-size:cover;background-position:var(--covpos,center);background-color:var(--surface)}
+.nx-hero-bg{display:none}
+.nx-hero--global{background:radial-gradient(1000px 420px at 18% -30%,rgba(124,92,255,.35),transparent),linear-gradient(120deg,#161a2e,#222a52)}
 .nx-hero-in{padding:26px 28px}
 .nx-eyebrow{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.12em;color:var(--primary-2);text-transform:uppercase}
 .nx-hero h1{font-size:clamp(1.7rem,4.5vw,2.6rem);line-height:1.05;margin:6px 0 8px}
