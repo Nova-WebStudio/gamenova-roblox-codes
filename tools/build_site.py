@@ -1125,15 +1125,15 @@ def build_updates(g, data):
             e_att(KIND.get(en.get("kind"), "Actu")), fr_date(en.get("date", "")),
             ('<span class="pill">Confiance : %s</span>' % e_att(en["confidence"])) if en.get("confidence") else "",
             e_att(en["title"]), e_att(en["summary"]), _sources_inline(en.get("sources", [])))
-    hero = ghero(g, "Actualités & mises à jour d'Aniimo",
+    hero = ghero(g, "Actualités &amp; mises à jour — %s" % e_att(g["name"]),
         '<span class="pill">🔄 Mis à jour le <strong style="color:var(--text);margin-left:4px">%s</strong></span>' % fr_date(data.get("updated", "")))
     body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Actualités", None)])
         + '<div class="layout"><div>' + hero + '<p class="prose" style="margin-top:18px">%s</p>' % e_att(data.get("intro", ""))
         + '<div class="upd-list">%s</div>' % items
         + '</div><aside class="side">%s</aside></div>' % related_box(g, "updates"))
     ld = [crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Actualités", "/games/%s/updates/" % slug)])]
-    htmlp = page("Actualités Aniimo — mises à jour & patch notes | Zoneblox",
-        "Le suivi des mises à jour, patchs et évènements d'Aniimo, vérifiés et sourcés — jamais d'annonce inventée.",
+    htmlp = page("Actualités %s — mises à jour & trailers | Zoneblox" % g["name"],
+        ("Le suivi des actualités, mises à jour et trailers de %s, vérifiés et sourcés — jamais d'annonce inventée." % g["name"])[:158],
         SITE + "/games/%s/updates/" % slug, body, active="games", extra_ld=ld)
     write("games/%s/updates/index.html" % slug, htmlp)
     return SITE + "/games/%s/updates/" % slug
