@@ -2,11 +2,30 @@
   "game": "aniimo",
   "updated": "2026-09-18",
   "sources": [
-    {"name": "BlueStacks — Starter Guide", "url": "https://www.bluestacks.com/blog/game-guides/aniimo-beta/ano-best-starter-aniimo-guide-en.html"},
-    {"name": "Mobalytics — Beginner Guide", "url": "https://mobalytics.gg/gamebase/guides/aniimo-beginner-guide"},
-    {"name": "GamingOnPhone — Starter", "url": "https://gamingonphone.com/guides/aniimo-guide-which-starter-aniimo-to-choose/"},
-    {"name": "Prima Games — Evolution", "url": "https://primagames.com/gaming/aniimo-evolution-guide-how-to-evolve-aniimo"},
-    {"name": "games.gg — Tier list & roles", "url": "https://games.gg/aniimo/guides/aniimo-tier-list-best-creatures-ranked-for-every-role/"}
+    {
+      "name": "BlueStacks — Starter Guide",
+      "url": "https://www.bluestacks.com/blog/game-guides/aniimo-beta/ano-best-starter-aniimo-guide-en.html"
+    },
+    {
+      "name": "Mobalytics — Beginner Guide",
+      "url": "https://mobalytics.gg/gamebase/guides/aniimo-beginner-guide"
+    },
+    {
+      "name": "GamingOnPhone — Starter",
+      "url": "https://gamingonphone.com/guides/aniimo-guide-which-starter-aniimo-to-choose/"
+    },
+    {
+      "name": "Prima Games — Evolution",
+      "url": "https://primagames.com/gaming/aniimo-evolution-guide-how-to-evolve-aniimo"
+    },
+    {
+      "name": "games.gg — Tier list & roles",
+      "url": "https://games.gg/aniimo/guides/aniimo-tier-list-best-creatures-ranked-for-every-role/"
+    },
+    "https://game8.co/games/Aniimo/archives/621092",
+    "https://mobalytics.gg/gamebase/guides/aniimo-leveling-guide",
+    "https://games.gg/aniimo/guides/aniimo-leveling-guide-fastest-ways-to-farm-exp/",
+    "https://gamerant.com/aniimo-how-to-evolve/"
   ],
   "guides": [
     {
@@ -16,22 +35,166 @@
       "updated": "2026-09-18",
       "intro": "Aniimo est un RPG en monde ouvert free-to-play centré sur la capture de créatures : tu incarnes un Pathfinder qui explore le continent d'Idyll, capture des Aniimo et fusionne avec eux (le « Twining »). Voici l'essentiel pour bien démarrer, basé sur des sources vérifiées.",
       "sections": [
-        {"h": "Fais le tutoriel puis suis l'histoire", "p": "Le tutoriel d'ouverture t'apprend la capture et t'introduit au Twining, la mécanique centrale du jeu. Enchaîne ensuite l'histoire principale et les premières quêtes : elles débloquent les systèmes importants et donnent de l'XP et des ressources pour monter ton équipe."},
-        {"h": "Choisir son starter (Helion ou Lunara)", "p": "Les deux starters confirmés par la communauté sont Helion (option offensive, efficace tout de suite) et Lunara (choix plus patient, sur le long terme). Surtout : le programme « welfare » de lancement te laisse choisir un Aniimo rare de forme Prismana en tant que Junior Wayfarer — c'est un choix plus important que le starter, car une forme rare est bien plus difficile à remplacer."},
-        {"h": "Comment capturer un Aniimo (jauge BREAK + Aniipod)", "p": "La capture repose sur deux choses : la jauge BREAK et le bon Aniipod. Attaque la créature jusqu'à briser sa jauge BREAK : une fois cassée, elle devient vulnérable et bien plus facile à capturer. Lance alors ton Aniipod."},
-        {"h": "Capture TOUT, pas seulement les créatures fortes", "p": "L'habitude n°1 en début de partie : capturer tout ce que tu croises. Chaque capture est une forme dans laquelle tu pourras twiner plus tard, et les doublons se convertissent en Experience Gems (pour monter d'autres Aniimo) ou s'échangent avec d'autres joueurs."},
-        {"h": "Les 5 rôles d'équipe", "p": "Chaque Aniimo a un rôle : DPS, Heal (soin), Support, Break, Regen. Une bonne équipe mélange au moins 3 rôles. Le rôle façonne les stats de base : le DPS mise sur l'ATK, le Break sur la jauge BREAK, le Heal sur les PV et la M.DEF, le Regen sur la REGEN."},
-        {"h": "Les 9 éléments et l'efficacité des types", "p": "Il y a 9 éléments : Feu, Eau, Herbe, Foudre, Glace, Terre, Vent, Lumière et Ténèbres. Une attaque inflige 1,6× de dégâts à l'élément qu'elle contre et 0,625× à celui qui lui résiste ; une créature à double type multiplie les deux effets. Compose ton équipe pour couvrir plusieurs éléments."},
-        {"h": "Le Twining : fusionner avec tes créatures", "p": "Le Twining te fait fusionner avec l'un de tes Aniimo : tu prends sa forme, ses compétences, son élément, sa mobilité et son trait. Comme Aniimo n'a pas de système de monture séparé, c'est aussi le Twining qui te sert à te déplacer — planer, plonger ou creuser selon la créature."},
-        {"h": "L'évolution (Lumin → Gamma → Nova)", "p": "L'évolution n'est pas automatique : elle se déclenche dans le menu Aniimo Management (icône en forme de chat avec des flèches vers le haut). Les stades sont Lumin, Gamma puis Nova. Les conditions varient (niveau requis, parfois objectifs ou missions à terminer) et l'évolution change les stats, les compétences et la forme que tu prends en twinant."},
-        {"h": "Lance ton Homeland (homestead) dès le jour 1", "p": "Le système de Homeland et de RV est très important : une fois ton campement lancé, tu accumules plus de ressources et tu accélères les activités qui prennent du temps. Commencer à le bâtir dès le premier jour te donne un énorme avantage sur un joueur qui s'y met plus tard."},
-        {"h": "Une bonne créature précoce : Pawney", "p": "Pawney tourne autour de son grappin, qui s'accroche aux murs, aux arbres et aux ennemis pour les tirer vers toi. Tirer un ennemi ainsi le met en état contrôlé, ce qui le rend bien plus facile à casser avec la compétence Shadow Cut : Pawney est ainsi l'un des Aniimo orientés Break les plus efficaces du début de jeu."}
+        {
+          "h": "Fais le tutoriel puis suis l'histoire",
+          "p": "Le tutoriel d'ouverture t'apprend la capture et t'introduit au Twining, la mécanique centrale du jeu. Enchaîne ensuite l'histoire principale et les premières quêtes : elles débloquent les systèmes importants et donnent de l'XP et des ressources pour monter ton équipe."
+        },
+        {
+          "h": "Choisir son starter (Helion ou Lunara)",
+          "p": "Les deux starters confirmés par la communauté sont Helion (option offensive, efficace tout de suite) et Lunara (choix plus patient, sur le long terme). Surtout : le programme « welfare » de lancement te laisse choisir un Aniimo rare de forme Prismana en tant que Junior Wayfarer — c'est un choix plus important que le starter, car une forme rare est bien plus difficile à remplacer."
+        },
+        {
+          "h": "Comment capturer un Aniimo (jauge BREAK + Aniipod)",
+          "p": "La capture repose sur deux choses : la jauge BREAK et le bon Aniipod. Attaque la créature jusqu'à briser sa jauge BREAK : une fois cassée, elle devient vulnérable et bien plus facile à capturer. Lance alors ton Aniipod."
+        },
+        {
+          "h": "Capture TOUT, pas seulement les créatures fortes",
+          "p": "L'habitude n°1 en début de partie : capturer tout ce que tu croises. Chaque capture est une forme dans laquelle tu pourras twiner plus tard, et les doublons se convertissent en Experience Gems (pour monter d'autres Aniimo) ou s'échangent avec d'autres joueurs."
+        },
+        {
+          "h": "Les 5 rôles d'équipe",
+          "p": "Chaque Aniimo a un rôle : DPS, Heal (soin), Support, Break, Regen. Une bonne équipe mélange au moins 3 rôles. Le rôle façonne les stats de base : le DPS mise sur l'ATK, le Break sur la jauge BREAK, le Heal sur les PV et la M.DEF, le Regen sur la REGEN."
+        },
+        {
+          "h": "Les 9 éléments et l'efficacité des types",
+          "p": "Il y a 9 éléments : Feu, Eau, Herbe, Foudre, Glace, Terre, Vent, Lumière et Ténèbres. Une attaque inflige 1,6× de dégâts à l'élément qu'elle contre et 0,625× à celui qui lui résiste ; une créature à double type multiplie les deux effets. Compose ton équipe pour couvrir plusieurs éléments."
+        },
+        {
+          "h": "Le Twining : fusionner avec tes créatures",
+          "p": "Le Twining te fait fusionner avec l'un de tes Aniimo : tu prends sa forme, ses compétences, son élément, sa mobilité et son trait. Comme Aniimo n'a pas de système de monture séparé, c'est aussi le Twining qui te sert à te déplacer — planer, plonger ou creuser selon la créature."
+        },
+        {
+          "h": "L'évolution (Lumin → Gamma → Nova)",
+          "p": "L'évolution n'est pas automatique : elle se déclenche dans le menu Aniimo Management (icône en forme de chat avec des flèches vers le haut). Les stades sont Lumin, Gamma puis Nova. Les conditions varient (niveau requis, parfois objectifs ou missions à terminer) et l'évolution change les stats, les compétences et la forme que tu prends en twinant."
+        },
+        {
+          "h": "Lance ton Homeland (homestead) dès le jour 1",
+          "p": "Le système de Homeland et de RV est très important : une fois ton campement lancé, tu accumules plus de ressources et tu accélères les activités qui prennent du temps. Commencer à le bâtir dès le premier jour te donne un énorme avantage sur un joueur qui s'y met plus tard."
+        },
+        {
+          "h": "Une bonne créature précoce : Pawney",
+          "p": "Pawney tourne autour de son grappin, qui s'accroche aux murs, aux arbres et aux ennemis pour les tirer vers toi. Tirer un ennemi ainsi le met en état contrôlé, ce qui le rend bien plus facile à casser avec la compétence Shadow Cut : Pawney est ainsi l'un des Aniimo orientés Break les plus efficaces du début de jeu."
+        }
       ],
       "faqs": [
-        {"q": "Aniimo est-il gratuit ?", "a": "Oui, Aniimo est un jeu free-to-play, disponible sur PC (Steam/Epic), PS5 et Xbox Series X|S depuis le 16 septembre 2026, et sur iOS/Android depuis le 23 septembre 2026."},
-        {"q": "Quel starter choisir dans Aniimo ?", "a": "Helion pour un profil offensif immédiat, Lunara pour un choix sur le long terme. Mais le choix vraiment déterminant est l'Aniimo rare de forme Prismana offert par le programme de lancement."},
-        {"q": "Comment capturer une créature ?", "a": "Attaque-la jusqu'à briser sa jauge BREAK, puis lance un Aniipod : une fois la jauge cassée, la créature est vulnérable et bien plus facile à capturer."},
-        {"q": "Comment évoluer un Aniimo ?", "a": "Via le menu Aniimo Management : l'évolution est manuelle et suit les stades Lumin, Gamma puis Nova, avec des conditions de niveau et parfois des objectifs à remplir."}
+        {
+          "q": "Aniimo est-il gratuit ?",
+          "a": "Oui, Aniimo est un jeu free-to-play, disponible sur PC (Steam/Epic), PS5 et Xbox Series X|S depuis le 16 septembre 2026, et sur iOS/Android depuis le 23 septembre 2026."
+        },
+        {
+          "q": "Quel starter choisir dans Aniimo ?",
+          "a": "Helion pour un profil offensif immédiat, Lunara pour un choix sur le long terme. Mais le choix vraiment déterminant est l'Aniimo rare de forme Prismana offert par le programme de lancement."
+        },
+        {
+          "q": "Comment capturer une créature ?",
+          "a": "Attaque-la jusqu'à briser sa jauge BREAK, puis lance un Aniipod : une fois la jauge cassée, la créature est vulnérable et bien plus facile à capturer."
+        },
+        {
+          "q": "Comment évoluer un Aniimo ?",
+          "a": "Via le menu Aniimo Management : l'évolution est manuelle et suit les stades Lumin, Gamma puis Nova, avec des conditions de niveau et parfois des objectifs à remplir."
+        }
+      ]
+    },
+    {
+      "slug": "evolution",
+      "title": "Guide de l'évolution Aniimo : Lumin, Gamma et Nova",
+      "category": "Progression",
+      "updated": "2026-09-18",
+      "intro": "Faire évoluer tes Aniimo débloque de meilleures stats, de nouvelles compétences et souvent une nouvelle apparence. Voici comment fonctionnent les stades Lumin → Gamma → Nova, où trouver les ressources d'évolution, et pourquoi l'évolution ne se déclenche jamais toute seule.",
+      "sections": [
+        {
+          "h": "Les trois stades : Lumin, Gamma, Nova",
+          "p": "La plupart des Aniimo suivent trois formes : le stade Lumin (forme de base), le stade Gamma (forme intermédiaire) et le stade Nova (forme finale). Attention : ce n'est pas universel. Certaines espèces n'ont que deux stades, d'autres n'évoluent pas du tout. Ne pars donc pas du principe que chaque créature ira jusqu'au Nova."
+        },
+        {
+          "h": "L'évolution n'est jamais automatique",
+          "p": "Rien n'évolue en arrière-plan pendant que tu joues. Il faut sélectionner l'Aniimo concerné et appuyer sur le bouton « Evolve », placé à côté du bouton « Level Up ». L'option est enfouie assez profondément dans les menus : beaucoup de joueurs passent leurs premières heures sans même la remarquer."
+        },
+        {
+          "h": "Des conditions qui varient selon la créature",
+          "p": "Les conditions d'évolution changent d'une espèce à l'autre. Parfois c'est simple — atteindre un certain niveau (par exemple Emberpup → Flameruff au niveau 12). Parfois c'est plus exigeant : débloquer certains talents passifs dans l'arbre de la créature avant de pouvoir évoluer. Quelques évolutions demandent même autre chose que du niveau : un choix de quête, un objet à collecter, un échange, ou plusieurs jours de temps réel. Un exemple précis : Hummin → Tuckin s'obtient en creusant (Dig) 20 secondes à l'entrée du Sanctum « Twisted Roots »."
+        },
+        {
+          "h": "Où trouver les pierres d'évolution",
+          "p": "Les pierres d'évolution (Evolution Stones) tombent en battant des Aniimo de stade Gamma et Nova. Autrement dit, les créatures que tu veux faire évoluer sont aussi celles que tu dois farmer : chasse les Gamma/Nova sauvages pour accumuler les matériaux nécessaires."
+        },
+        {
+          "h": "Faut-il évoluer le plus tôt possible ?",
+          "p": "Pas forcément. Comme certaines évolutions exigent des talents passifs débloqués au préalable, investis d'abord tes points de compétence intelligemment. Évoluer trop tôt sans avoir préparé l'arbre de talents peut te bloquer. Vérifie les conditions dans la fiche de la créature avant de dépenser tes ressources."
+        },
+        {
+          "h": "Variantes spéciales (Prismana, Umbral…)",
+          "p": "En plus des stades classiques, Aniimo propose des variantes spéciales de certaines créatures (par exemple les formes Prismana du programme de lancement). Ces variantes sont rares et suivent leurs propres règles. Leur liste exacte n'est pas encore totalement documentée de façon fiable : on ne détaille donc que ce qui est confirmé, et on complétera au fil des mises à jour."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Comment faire évoluer un Aniimo ?",
+          "a": "Sélectionne la créature, ouvre sa fiche et appuie sur le bouton « Evolve » à côté de « Level Up ». L'évolution n'est jamais automatique et demande de remplir les conditions propres à l'espèce (niveau, talents, objets ou quête)."
+        },
+        {
+          "q": "Pourquoi mon Aniimo n'évolue pas ?",
+          "a": "Soit les conditions ne sont pas remplies (niveau insuffisant, talent passif requis non débloqué, objet manquant), soit l'espèce n'a tout simplement pas de stade suivant. Vérifie les prérequis dans sa fiche."
+        },
+        {
+          "q": "Où trouver des pierres d'évolution ?",
+          "a": "En battant des Aniimo de stade Gamma et Nova : ils lâchent les Evolution Stones nécessaires. Farme les versions évoluées des créatures pour récupérer les matériaux."
+        }
+      ]
+    },
+    {
+      "slug": "farming-niveau",
+      "title": "Aniimo : farmer l'EXP et monter de niveau vite",
+      "category": "Progression",
+      "updated": "2026-09-18",
+      "intro": "Pour progresser vite dans Aniimo, il ne faut pas farmer une seule activité mais combiner plusieurs sources d'EXP. Voici les meilleures méthodes, l'ordre des priorités, et le plafond de niveau à connaître pour ne pas perdre ton temps.",
+      "sections": [
+        {
+          "h": "Combine plusieurs sources d'EXP",
+          "p": "La stratégie la plus efficace est de mélanger les activités plutôt que d'en répéter une seule. Commence chaque session par vérifier tes Activités quotidiennes et tes cours d'Elite Training, puis enchaîne sur les quêtes principales ou de Journey. En variant, tu accumules bien plus d'EXP à l'heure."
+        },
+        {
+          "h": "Activités quotidiennes : le meilleur ratio",
+          "p": "Les Activités quotidiennes rapportent jusqu'à environ 1 800 EXP et se bouclent en moins de 10 minutes par jour. C'est le meilleur rendement temps/EXP du jeu : à faire en priorité à chaque connexion."
+        },
+        {
+          "h": "Capture des Aniimo en continu",
+          "p": "Chaque capture d'un nouvel Aniimo donne entre 150 et 300 EXP. C'est un gain passif facile : attrape tout ce que tu croises en explorant, même les créatures que tu ne comptes pas garder."
+        },
+        {
+          "h": "Elite Training Core Course",
+          "p": "Les missions d'Elite Training (Core Course) peuvent rapporter jusqu'à 1 500 EXP par mission. À intégrer dans ta routine dès qu'elles sont disponibles."
+        },
+        {
+          "h": "Boss Alpha : vise le premier clear",
+          "p": "Sur les boss Alpha, la vraie valeur vient des bonus de premier passage (first-clear), nettement plus importants que les clears répétés. Priorise donc les boss Alpha que tu n'as pas encore battus plutôt que de refarmer les mêmes."
+        },
+        {
+          "h": "Débloque « Master Trainer » en premier",
+          "p": "Investis tes tout premiers points de compétence dans le talent « Master Trainer » de l'arbre de ton personnage. Il accorde environ +10 % d'expérience sur presque tout (capture et élimination d'ennemis compris) : c'est le multiplicateur à prendre avant le reste."
+        },
+        {
+          "h": "Le plafond dur : Student Level",
+          "p": "Si ta barre d'expérience arrête complètement de monter, c'est que tu as atteint un plafond fixé par ton Student Level. Aucun farm ne la fera bouger tant que tu n'as pas validé la « Promotion Assessment » correspondante. Pense donc à passer ces examens de promotion pour débloquer la suite."
+        },
+        {
+          "h": "Optimise ton itinéraire",
+          "p": "Plutôt que d'enchaîner des activités séparées, ramasse tout sur ton chemin pendant l'histoire : nouveaux Aniimo à capturer et Lumin Amber à collecter. Si un Pathfinder Challenge se trouve sur ta route, ne l'ignore pas — ils sont relativement faciles et rentables."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Quelle est la façon la plus rapide de monter de niveau dans Aniimo ?",
+          "a": "Combiner les Activités quotidiennes (jusqu'à ~1 800 EXP), la capture continue d'Aniimo (150-300 EXP/capture), l'Elite Training (jusqu'à 1 500 EXP) et les premiers clears de boss Alpha, tout en gardant le talent Master Trainer (+10 % EXP) débloqué en priorité."
+        },
+        {
+          "q": "Pourquoi mon EXP ne monte plus du tout ?",
+          "a": "Tu as atteint le plafond de ton Student Level. Valide la Promotion Assessment correspondante pour repousser le plafond — sans elle, aucun farm ne fera monter la barre."
+        },
+        {
+          "q": "Faut-il capturer les créatures faibles ?",
+          "a": "Oui : chaque capture donne 150-300 EXP quel que soit l'Aniimo. Attraper tout ce que tu croises est un gain d'EXP passif à ne pas négliger, en plus de compléter ta collection."
+        }
       ]
     }
   ]

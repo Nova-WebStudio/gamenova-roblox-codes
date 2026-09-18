@@ -2,35 +2,224 @@
   "game": "aniimo",
   "updated": "2026-09-18",
   "confidence": "MEDIUM",
-  "methodology": "Méta de lancement (septembre 2026), établie en croisant plusieurs classements communautaires anglophones (Game8, Pro Game Guides, games.gg, Mobi.gg). Le jeu vient de sortir : cette tier list est indicative et évoluera avec les rééquilibrages. Elle privilégie la polyvalence par rôle plutôt qu'une note absolue.",
+  "methodology": "Méta de lancement (septembre 2026), établie en croisant plusieurs classements communautaires anglophones (Game8 — mis à jour le 17 sept., Pro Game Guides, Mobi.gg, games.gg) et recoupée le 18 sept. 2026. Le jeu vient de sortir : cette tier list est indicative et évoluera avec les rééquilibrages. Elle privilégie la polyvalence par rôle plutôt qu'une note absolue.",
   "sources": [
-    {"name": "Game8 — Aniimo Tier List", "url": "https://game8.co/games/Aniimo/archives/621098"},
-    {"name": "Pro Game Guides — Aniimo Tier List", "url": "https://progameguides.com/tier-lists/aniimo-tier-list-best-aniimo-ranked/"},
-    {"name": "games.gg — Best creatures by role", "url": "https://games.gg/aniimo/guides/aniimo-tier-list-best-creatures-ranked-for-every-role/"},
-    {"name": "Gamezebo — Tier List", "url": "https://www.gamezebo.com/walkthroughs/aniimo-tier-list/"}
+    {
+      "name": "Game8 — Aniimo Tier List",
+      "url": "https://game8.co/games/Aniimo/archives/621098"
+    },
+    {
+      "name": "Pro Game Guides — Aniimo Tier List",
+      "url": "https://progameguides.com/tier-lists/aniimo-tier-list-best-aniimo-ranked/"
+    },
+    {
+      "name": "games.gg — Best creatures by role",
+      "url": "https://games.gg/aniimo/guides/aniimo-tier-list-best-creatures-ranked-for-every-role/"
+    },
+    {
+      "name": "Gamezebo — Tier List",
+      "url": "https://www.gamezebo.com/walkthroughs/aniimo-tier-list/"
+    },
+    {
+      "name": "game8.co",
+      "url": "https://game8.co/games/Aniimo/archives/618352"
+    },
+    {
+      "name": "mobalytics.gg",
+      "url": "https://mobalytics.gg/gamebase/guides/aniimo-elemental-type-damage-explained-chart"
+    },
+    {
+      "name": "www.videogameschronicle.com",
+      "url": "https://www.videogameschronicle.com/guide/aniimo-counters-all-elemental-types-strengths-and-weaknesses/"
+    },
+    {
+      "name": "primagames.com",
+      "url": "https://primagames.com/gaming/aniimo-element-type-chart-all-element-weaknesses-spatial-relations"
+    }
   ],
-  "roleColors": {"DPS": "#ff5f80", "Heal": "#35e0a1", "Support": "#4d9bff", "Break": "#ffbd4a", "Regen": "#9ff0c0"},
-  "elementsNote": "Aniimo repose sur 9 éléments. Un élément inflige 1,6× de dégâts à l'élément qu'il contre et 0,625× à celui qui lui résiste (les double-types cumulent). Le tableau de contres exact n'est pas encore documenté de façon fiable : on ne l'invente pas.",
+  "roleColors": {
+    "DPS": "#ff5f80",
+    "Heal": "#35e0a1",
+    "Support": "#4d9bff",
+    "Break": "#ffbd4a",
+    "Regen": "#9ff0c0"
+  },
+  "elementsNote": "Aniimo repose sur 9 éléments (Feu, Eau, Herbe, Foudre, Glace, Terre, Vent, Lumière, Ténèbres). Un élément inflige 1,6× de dégâts à celui qu'il contre et 0,625× à celui qui lui résiste (les double-types cumulent). Les contres ci-dessous sont recoupés sur plusieurs sources ; les relations de Terre, Vent, Lumière et Ténèbres ne sont pas encore toutes confirmées — on ne les invente pas.",
   "elements": [
-    {"name": "Feu", "icon": "🔥", "color": "#ff6a42"},
-    {"name": "Eau", "icon": "💧", "color": "#4d9bff"},
-    {"name": "Herbe", "icon": "🌿", "color": "#35e0a1"},
-    {"name": "Foudre", "icon": "⚡", "color": "#ffd23f"},
-    {"name": "Glace", "icon": "❄️", "color": "#7fe0ff"},
-    {"name": "Terre", "icon": "🪨", "color": "#c08a4a"},
-    {"name": "Vent", "icon": "🍃", "color": "#9ff0c0"},
-    {"name": "Lumière", "icon": "✨", "color": "#fff1a8"},
-    {"name": "Ténèbres", "icon": "🌑", "color": "#8b7bd8"}
+    {
+      "name": "Feu",
+      "icon": "🔥",
+      "color": "#ff6a42",
+      "strong": [
+        "Herbe",
+        "Glace"
+      ],
+      "weak": [
+        "Eau",
+        "Terre"
+      ]
+    },
+    {
+      "name": "Eau",
+      "icon": "💧",
+      "color": "#4d9bff",
+      "strong": [
+        "Feu",
+        "Terre"
+      ],
+      "weak": [
+        "Foudre",
+        "Herbe"
+      ]
+    },
+    {
+      "name": "Herbe",
+      "icon": "🌿",
+      "color": "#35e0a1",
+      "strong": [
+        "Eau",
+        "Terre"
+      ],
+      "weak": [
+        "Feu",
+        "Vent"
+      ]
+    },
+    {
+      "name": "Foudre",
+      "icon": "⚡",
+      "color": "#ffd23f",
+      "strong": [
+        "Eau",
+        "Vent"
+      ],
+      "weak": [
+        "Herbe"
+      ]
+    },
+    {
+      "name": "Glace",
+      "icon": "❄️",
+      "color": "#7fe0ff",
+      "strong": [
+        "Herbe",
+        "Vent"
+      ],
+      "weak": [
+        "Feu",
+        "Eau"
+      ]
+    },
+    {
+      "name": "Terre",
+      "icon": "🪨",
+      "color": "#c08a4a"
+    },
+    {
+      "name": "Vent",
+      "icon": "🍃",
+      "color": "#9ff0c0"
+    },
+    {
+      "name": "Lumière",
+      "icon": "✨",
+      "color": "#fff1a8"
+    },
+    {
+      "name": "Ténèbres",
+      "icon": "🌑",
+      "color": "#8b7bd8"
+    }
   ],
   "tiers": [
-    {"label": "S", "color": "#ff5f80", "note": "Les plus performants du lancement, toutes catégories.", "entries": ["Besauce", "Eklue", "Fulmintis", "Geoclaw", "Gracewing", "Helion", "Ignitis", "Inferlupa", "Leafy", "Luminelle", "Lunara", "Somniwing", "Stellarys", "Tubster"]},
-    {"label": "A", "color": "#ffbd4a", "note": "Excellents choix, très solides dans leur rôle.", "entries": ["Dreaple", "Fenmane", "Glacy", "Grizbo", "Helgon", "Melloblum", "Pawney", "Thornblade", "Wisptis"]}
+    {
+      "label": "S",
+      "color": "#ff5f80",
+      "note": "Les plus performants du lancement, toutes catégories.",
+      "entries": [
+        "Besauce",
+        "Eklue",
+        "Fulmintis",
+        "Geoclaw",
+        "Gracewing",
+        "Helion",
+        "Ignitis",
+        "Inferlupa",
+        "Leafy",
+        "Luminelle",
+        "Lunara",
+        "Somniwing",
+        "Stellarys",
+        "Tubster"
+      ]
+    },
+    {
+      "label": "A",
+      "color": "#ffbd4a",
+      "note": "Excellents choix, très solides dans leur rôle.",
+      "entries": [
+        "Dreaple",
+        "Fenmane",
+        "Glacy",
+        "Grizbo",
+        "Helgon",
+        "Melloblum",
+        "Pawney",
+        "Thornblade",
+        "Wisptis"
+      ]
+    }
   ],
   "rolePicks": [
-    {"role": "DPS", "picks": ["Stellarys", "Fulmintis", "Ignitis", "Coraliz"], "why": "Meilleurs profils de dégâts bruts pour nettoyer les combats et les boss."},
-    {"role": "Heal", "picks": ["Gracewing"], "why": "Considéré comme le meilleur soigneur de la méta : sa compétence Flutter Heal soigne les alliés même hors terrain quand ils utilisent une compétence, retire les debuffs et rend de l'EP."},
-    {"role": "Support", "picks": ["Luminelle", "Somniwing"], "why": "Somniwing apporte sommeil, vulnérabilité, soutien d'EP et une Energy Orb qui booste les dégâts ; sa compétence Ethereal Light Wave absorbe les projectiles ennemis."},
-    {"role": "Break", "picks": ["Inferlupa", "Pawney"], "why": "Spécialistes pour briser la jauge BREAK des cibles et faciliter les captures et les burst."},
-    {"role": "Regen", "picks": ["Somniwing", "Leafy"], "why": "Assurent l'entretien de l'équipe sur la durée."}
-  ]
+    {
+      "role": "DPS",
+      "picks": [
+        "Fulmintis",
+        "Ignitis",
+        "Stellarys"
+      ],
+      "why": "Meilleurs profils de dégâts bruts pour nettoyer combats et boss. Fulmintis affiche l'ATK de base la plus élevée des DPS (130), avec un kit axé coups critiques et attaques de lame soutenues."
+    },
+    {
+      "role": "Heal",
+      "picks": [
+        "Gracewing"
+      ],
+      "why": "Considéré comme le meilleur soigneur de la méta : soigne même les alliés hors terrain quand ils utilisent une compétence, retire les debuffs et rend de l'EP."
+    },
+    {
+      "role": "Support",
+      "picks": [
+        "Luminelle",
+        "Somniwing"
+      ],
+      "why": "Somniwing apporte sommeil, vulnérabilité, soutien d'EP et une Energy Orb qui booste les dégâts ; Luminelle renforce l'équipe et la survie."
+    },
+    {
+      "role": "Break",
+      "picks": [
+        "Inferlupa",
+        "Blazen",
+        "Pawney"
+      ],
+      "why": "Spécialistes pour briser la jauge BREAK des cibles et faciliter captures et burst. Blazen est cité comme l'un des meilleurs Break de la méta."
+    },
+    {
+      "role": "Regen",
+      "picks": [
+        "Somniwing",
+        "Leafy"
+      ],
+      "why": "Assurent l'entretien de l'équipe sur la durée."
+    }
+  ],
+  "prismanaBest": {
+    "note": "Meilleurs Aniimo Prismana (formes rares du programme de lancement) selon Game8 :",
+    "picks": [
+      "Blazen",
+      "Fenmane",
+      "Fulmintis",
+      "Glacy"
+    ]
+  }
 }

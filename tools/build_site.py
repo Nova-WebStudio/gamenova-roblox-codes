@@ -190,12 +190,27 @@ def elements_panel(data):
     els = data.get("elements", [])
     if not els:
         return ""
+    def mm(x):
+        s = x.get("strong"); w = x.get("weak")
+        if not s and not w:
+            return '<span class="el-mm el-tbc">contres à confirmer</span>'
+        out = ""
+        if s: out += '<span class="el-up">▲ fort : %s</span>' % e_att(" · ".join(s))
+        if w: out += '<span class="el-dn">▼ faible : %s</span>' % e_att(" · ".join(w))
+        return '<span class="el-mm">%s</span>' % out
     chips = "".join(
-        '<span class="el-chip" style="--c:%s"><span class="el-ico">%s</span>%s</span>'
-        % (e_att(x.get("color", "#7c5cff")), e_att(x.get("icon", "•")), e_att(x["name"])) for x in els)
-    note = ('<p class="sub" style="margin-top:10px">%s</p>' % e_att(data["elementsNote"])) if data.get("elementsNote") else ""
-    return ('<section class="panel"><div class="panel-head"><h2>🌈 Les %d éléments</h2></div>'
-            '<div class="el-grid">%s</div>%s</section>') % (len(els), chips, note)
+        '<div class="el-chip" style="--c:%s"><span class="el-top"><span class="el-ico">%s</span><strong>%s</strong></span>%s</div>'
+        % (e_att(x.get("color", "#7c5cff")), e_att(x.get("icon", "•")), e_att(x["name"]), mm(x)) for x in els)
+    note = ('<p class="sub" style="margin-top:12px">%s</p>' % e_att(data["elementsNote"])) if data.get("elementsNote") else ""
+    pb = data.get("prismanaBest")
+    prismana = ""
+    if pb and pb.get("picks"):
+        pills = "".join('<span class="pill" style="background:var(--surface-2)">%s</span>' % e_att(x) for x in pb["picks"])
+        prismana = ('<section class="panel"><div class="panel-head"><h2>💎 Meilleurs Aniimo Prismana</h2></div>'
+                    '<p class="sub">%s</p><div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px">%s</div></section>') % (
+                    e_att(pb.get("note", "")), pills)
+    return ('<section class="panel"><div class="panel-head"><h2>🌈 Les %d éléments &amp; leurs contres</h2></div>'
+            '<div class="el-grid">%s</div>%s</section>%s') % (len(els), chips, note, prismana)
 
 # ---------- helpers annuaire ----------
 FR_ABBR = {"janv.":1,"jan.":1,"févr.":2,"fév.":2,"mars":3,"avr.":4,"mai":5,"juin":6,
@@ -614,9 +629,14 @@ def related_box(g, current):
 def sources_html(sources):
     if not sources:
         return ""
+    def one(s):
+        if isinstance(s, str):
+            url = s; name = s.split("//")[-1].split("/")[0]
+        else:
+            url = s["url"]; name = s.get("name", s["url"])
+        return '<a href="%s" rel="nofollow noopener" target="_blank" style="color:var(--primary-2)">%s</a>' % (e_att(url), e_att(name))
     return ('<section class="panel"><h2>🔎 Sources</h2><p class="sub">Informations croisées entre plusieurs sources ; vérifie toujours en jeu.</p>'
-            '<div class="prose"><p>' + " · ".join('<a href="%s" rel="nofollow noopener" target="_blank" style="color:var(--primary-2)">%s</a>'
-            % (e_att(s["url"]), e_att(s.get("name", s["url"]))) for s in sources) + '</p></div></section>')
+            '<div class="prose"><p>' + " · ".join(one(s) for s in sources) + '</p></div></section>')
 
 # ---------- rendu : guides ----------
 def build_guides(g, data):

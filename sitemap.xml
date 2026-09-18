@@ -335,4 +335,14 @@
   <url><loc>https://zoneblox.com/meilleurs-jeux-roblox.html</loc><lastmod>2026-09-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://zoneblox.com/nouveaux-jeux-roblox.html</loc><lastmod>2026-09-18</lastmod><priority>0.8</priority></url>
   <url><loc>https://zoneblox.com/embed/</loc><lastmod>2026-09-18</lastmod><priority>0.6</priority></url>
+  <url>
+    <loc>https://zoneblox.com/games/aniimo/guides/evolution/</loc><lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://zoneblox.com/games/aniimo/guides/farming-niveau/</loc><lastmod>2026-09-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
