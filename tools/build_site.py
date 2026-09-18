@@ -21,7 +21,7 @@ import json, os, glob, html, datetime, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://zoneblox.com"
 GA = "G-FEL71QVHNL"
-CSSV = "3"
+CSSV = "4"
 FR_MONTHS = ["", "janvier", "février", "mars", "avril", "mai", "juin", "juillet",
              "août", "septembre", "octobre", "novembre", "décembre"]
 
@@ -147,6 +147,37 @@ def cover_html(game, cls="cover"):
 
 def e_att(s):
     return html.escape(str(s), quote=True) if s is not None else ""
+
+def ghero(g, h1_html, meta_html="", sub_html=""):
+    """Hero de page avec bannière image RÉELLE en fond (miniature du jeu) si disponible.
+    Retombe sur un hero uni si le jeu n'a pas de coverImage. Jamais de SVG en fond."""
+    ci = g.get("coverImage")
+    stock = g.get("stockBanner")  # image libre de droit (hotlink) — fallback si pas de cover jeu
+    src = ci or stock
+    if src:
+        pos = g.get("coverPosition", "center")
+        cls = " ghero--img"
+        style = ' style="--cover:url(%s);--covpos:%s"' % (e_att(src), e_att(pos))
+        bg = '<div class="ghero-bg" aria-hidden="true"></div>'
+    else:
+        cls = style = bg = ""
+    inner = "<h1>%s</h1>" % h1_html
+    if meta_html:
+        inner += '<div class="meta">%s</div>' % meta_html
+    inner += sub_html
+    return '<section class="ghero%s"%s>%s<div class="info">%s</div></section>' % (cls, style, bg, inner)
+
+def elements_panel(data):
+    """Légende visuelle des éléments (codée, sans photo). '' si absent."""
+    els = data.get("elements", [])
+    if not els:
+        return ""
+    chips = "".join(
+        '<span class="el-chip" style="--c:%s"><span class="el-ico">%s</span>%s</span>'
+        % (e_att(x.get("color", "#7c5cff")), e_att(x.get("icon", "•")), e_att(x["name"])) for x in els)
+    note = ('<p class="sub" style="margin-top:10px">%s</p>' % e_att(data["elementsNote"])) if data.get("elementsNote") else ""
+    return ('<section class="panel"><div class="panel-head"><h2>🌈 Les %d éléments</h2></div>'
+            '<div class="el-grid">%s</div>%s</section>') % (len(els), chips, note)
 
 # ---------- helpers annuaire ----------
 FR_ABBR = {"janv.":1,"jan.":1,"févr.":2,"fév.":2,"mars":3,"avr.":4,"mai":5,"juin":6,
@@ -589,18 +620,20 @@ def build_guides(g, data):
         art_ld = json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": gd["title"],
             "datePublished": gd.get("updated", data.get("updated", "")), "dateModified": gd.get("updated", data.get("updated", "")),
             "author": {"@type": "Organization", "name": "L'équipe Zoneblox"}}, ensure_ascii=False)
+        hero = ghero(g, e_att(gd["title"]),
+            '<span class="pill">📖 %s</span>'
+            '<span class="pill">🔄 Vérifié le <strong style="color:var(--text);margin-left:4px">%s</strong></span>'
+            '<span class="pill">✍️ Par <a href="/a-propos.html#editorial" style="color:var(--text)">L\'équipe Zoneblox</a></span>'
+            % (e_att(gd.get("category", "Guide")), fr_date(gd.get("updated", ""))))
         body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Guides", "/games/%s/guides/" % slug), (gd["title"], None)]) +
             '<div class="layout"><div>'
-            '<section class="ghero"><div class="info"><h1>%s</h1><div class="meta">'
-            '<span class="pill">📖 %s</span><span class="pill">🔄 Vérifié le <strong style="color:var(--text);margin-left:4px">%s</strong></span>'
-            '<span class="pill">✍️ Par <a href="/a-propos.html#editorial" style="color:var(--text)">L\'équipe Zoneblox</a></span></div></div></section>'
+            + hero +
             '<p class="prose" style="margin-top:18px">%s</p>'
             '%s'
             '%s'
             '%s'
             '</div><aside class="side">%s'
             '<div class="box"><h3>Sur cette page</h3><nav class="toc">%s</nav></div></aside></div>') % (
-            e_att(gd["title"]), e_att(gd.get("category", "Guide")), fr_date(gd.get("updated", "")),
             e_att(gd.get("intro", "")), secs,
             ('<section class="panel" id="faq"><h2>❓ Questions fréquentes</h2><div class="faq">%s</div></section>' % faq_html) if faqs else "",
             sources_html(data.get("sources", [])),
@@ -617,10 +650,11 @@ def build_guides(g, data):
     cards = "".join('<a class="gcard" href="/games/%s/guides/%s/"><div class="body"><h3>%s</h3>'
         '<span class="plat">%s</span><p>%s</p><div class="cta"><span class="btn btn-primary btn-sm">Lire →</span></div></div></a>'
         % (slug, gd["slug"], e_att(gd["title"]), e_att(gd.get("category", "Guide")), e_att(gd.get("intro", "")[:110] + "…")) for gd in guides)
+    hub_hero = ghero(g, "Guides %s" % e_att(g["name"]), "",
+        '<p class="prose" style="margin-top:8px">Nos guides pour débuter et progresser dans %s. '
+        'De nouveaux guides arrivent au fil des découvertes.</p>' % e_att(g["name"]))
     body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Guides", None)]) +
-        '<section class="ghero"><div class="info"><h1>Guides %s</h1><p class="prose" style="margin-top:8px">'
-        'Nos guides pour débuter et progresser dans %s. De nouveaux guides arrivent au fil des découvertes.</p></div></section>'
-        '<div class="grid-cards" style="margin-top:22px">%s</div>') % (e_att(g["name"]), e_att(g["name"]), cards)
+        hub_hero + '<div class="grid-cards" style="margin-top:22px">%s</div>') % cards
     ld = [crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Guides", "/games/%s/guides/" % slug)])]
     htmlp = page("Guides %s — débuter & progresser | Zoneblox" % g["name"],
         "Tous les guides Zoneblox pour %s : guide débutant, mécaniques, progression. Vérifiés et sourcés." % g["name"],
@@ -642,26 +676,30 @@ def build_tierlist(g, data):
             '<div><div style="display:flex;flex-wrap:wrap;gap:6px">%s</div>'
             '<p style="color:var(--muted);font-size:.82rem;margin-top:6px">%s</p></div></div>') % (
             e_att(t.get("color", "#7c5cff")), e_att(t["label"]), chips, e_att(t.get("note", "")))
-    roles_html = "".join('<div class="step"><div class="n" style="width:auto;padding:0 10px;font-size:.8rem">%s</div>'
-        '<h3 style="margin-top:8px">%s</h3><p>%s</p></div>' % (e_att(r["role"]), e_att(" · ".join(r["picks"])), e_att(r.get("why", "")))
+    rc = data.get("roleColors", {})
+    roles_html = "".join('<div class="step role-step" style="--c:%s"><div class="role-badge" style="background:%s">%s</div>'
+        '<h3 style="margin-top:10px">%s</h3><p>%s</p></div>' % (
+        e_att(rc.get(r["role"], "#7c5cff")), e_att(rc.get(r["role"], "#7c5cff")), e_att(r["role"]),
+        e_att(" · ".join(r["picks"])), e_att(r.get("why", "")))
         for r in data.get("rolePicks", []))
     entries = [x for t in data.get("tiers", []) for x in t.get("entries", [])]
     itemlist = json.dumps({"@context": "https://schema.org", "@type": "ItemList", "name": "Tier list %s" % g["name"],
         "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": x} for i, x in enumerate(entries)]}, ensure_ascii=False)
-    body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Tier list", None)]) +
-        '<div class="layout"><div>'
-        '<section class="ghero"><div class="info"><h1>Tier list %s : les meilleures créatures</h1><div class="meta">'
+    hero = ghero(g, "Tier list %s : les meilleures créatures" % e_att(g["name"]),
         '<span class="pill">🔄 Vérifié le <strong style="color:var(--text);margin-left:4px">%s</strong></span>'
-        '<span class="pill">✍️ L\'équipe Zoneblox</span></div></div></section>'
+        '<span class="pill">✍️ L\'équipe Zoneblox</span>' % fr_date(data.get("updated", "")))
+    body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Tier list", None)]) +
+        '<div class="layout"><div>' + hero +
         '<p class="prose" style="margin-top:18px">%s</p>'
         '<section class="panel"><div class="panel-head"><h2>🏆 Classement</h2></div>%s</section>'
+        '%s'
         '<section class="panel"><div class="panel-head"><h2>🎯 Meilleurs choix par rôle</h2></div>'
         '<p class="sub">Une bonne équipe mélange au moins 3 rôles (DPS, Heal, Support, Break, Regen).</p>'
         '<div class="steps">%s</div></section>'
         '%s'
         '</div><aside class="side">%s</aside></div>') % (
-        e_att(g["name"]), fr_date(data.get("updated", "")), e_att(data.get("methodology", "")),
-        tiers_html, roles_html, sources_html(data.get("sources", [])), related_box(g, "tier-list"))
+        e_att(data.get("methodology", "")), tiers_html, elements_panel(data),
+        roles_html, sources_html(data.get("sources", [])), related_box(g, "tier-list"))
     ld = [itemlist, crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Tier list", "/games/%s/tier-list/" % slug)])]
     htmlp = page("Tier list %s (%s %d) — meilleures créatures | Zoneblox" % (g["name"], FR_MONTHS[datetime.date.today().month], datetime.date.today().year),
         "Tier list %s : les meilleures créatures classées et les meilleurs choix par rôle, méta de lancement croisée entre plusieurs sources." % g["name"],
@@ -679,11 +717,11 @@ def build_videos(g, data):
         cards += ('<a class="gcard" href="%s" rel="nofollow noopener" target="_blank">%s<div class="body"><h3 style="font-size:1rem">%s</h3>'
             '<span class="plat">%s · YouTube</span><div class="cta"><span class="btn btn-primary btn-sm">Voir sur YouTube →</span></div></div></a>') % (
             e_att(v["url"]), img, e_att(v["title"]), e_att(v.get("language", "fr").upper()))
+    vhero = ghero(g, "Vidéos %s (français)" % e_att(g["name"]), "",
+        '<p class="prose" style="margin-top:8px">Une sélection de vidéos francophones utiles pour %s. %s</p>'
+        % (e_att(g["name"]), e_att(data.get("note", ""))))
     body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Vidéos", None)]) +
-        '<section class="ghero"><div class="info"><h1>Vidéos %s (français)</h1><p class="prose" style="margin-top:8px">'
-        'Une sélection de vidéos francophones utiles pour %s. %s</p></div></section>'
-        '<div class="grid-cards" style="margin-top:22px">%s</div>') % (
-        e_att(g["name"]), e_att(g["name"]), e_att(data.get("note", "")), cards)
+        vhero + '<div class="grid-cards" style="margin-top:22px">%s</div>') % cards
     ld = [crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Vidéos", "/games/%s/videos/" % slug)])]
     htmlp = page("Vidéos %s en français — guides & astuces | Zoneblox" % g["name"],
         "Les meilleures vidéos francophones pour %s : guides débutant, astuces et progression." % g["name"],
@@ -821,9 +859,85 @@ def _build_amap(mp):
         f'<div class="am-legend"><span class="am-legend-t">Calques :</span>{legend_chips}</div>'
         '</section>')
 
+ZONE_JS = """
+<script>
+(function(){
+  if(!document.querySelector('.zgrid')) return;
+  $$('.zchip').forEach(function(c){c.addEventListener('click',function(){
+    c.classList.toggle('off');var off=c.classList.contains('off');
+    $$('.zpin[data-type="'+c.dataset.type+'"]').forEach(function(p){p.style.display=off?'none':'';});
+  });});
+  $$('.zpin').forEach(function(p){p.addEventListener('click',function(e){
+    e.preventDefault();e.stopPropagation();
+    var open=p.classList.contains('open');
+    $$('.zpin.open').forEach(function(x){x.classList.remove('open');});
+    if(!open)p.classList.add('open');
+  });});
+  document.addEventListener('click',function(){$$('.zpin.open').forEach(function(x){x.classList.remove('open');});});
+  var lb=document.getElementById('zlb');
+  if(lb){var lbi=lb.querySelector('img');
+    $$('.zshot-img').forEach(function(im){im.addEventListener('click',function(){lbi.src=im.src;lbi.alt=im.alt;lb.hidden=false;});});
+    function close(){lb.hidden=true;lbi.src='';}
+    lb.addEventListener('click',close);
+    var cb=lb.querySelector('.zlb-close');if(cb)cb.addEventListener('click',function(e){e.stopPropagation();close();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  }
+})();
+</script>
+"""
+
+def _build_zones(data):
+    """Galerie de captures de zones annotées (image + pins), depuis data['zones']. '' si absent."""
+    zones = data.get("zones", [])
+    if not zones:
+        return ""
+    legend = data.get("legend", [])
+    color_by = {l["type"]: l for l in legend}
+    legend_chips = "".join(
+        f'<button class="zchip" data-type="{e_att(l["type"])}" style="--c:{e_att(l["color"])}">'
+        f'<span class="zico">{e_att(l["icon"])}</span>{e_att(l["label"])}</button>'
+        for l in legend)
+    zcards = ""
+    for z in zones:
+        pins = ""
+        for p in z.get("pins", []):
+            li = color_by.get(p["type"], {"icon": "•", "color": "#ffffff"})
+            pins += (f'<button class="zpin" data-type="{e_att(p["type"])}" '
+                     f'style="left:{p["x"]}%;top:{p["y"]}%;--c:{e_att(li["color"])}" '
+                     f'aria-label="{e_att(p["label"])}" title="{e_att(p["label"])}">'
+                     f'<span class="zpin-dot">{e_att(li["icon"])}</span>'
+                     f'<span class="zpin-label">{e_att(p["label"])}</span></button>')
+        meta = ""
+        if z.get("levelBand"):
+            meta += f'<span class="pill">📍 {e_att(z["levelBand"])}</span>'
+        if z.get("terrain"):
+            meta += f'<span class="pill">{e_att(z["terrain"])}</span>'
+        img = e_att(z.get("image", ""))
+        drop = e_att(z.get("image", "").replace("/images/", "images/"))
+        img_tag = (f'<img class="zshot-img" src="{img}" alt="Zone {e_att(z["name"])} — Aniimo" loading="lazy" '
+                   f'onerror="this.closest(&#39;.zshot&#39;).classList.add(&#39;noimg&#39;)">') if img else ""
+        cap = f'<figcaption>{e_att(z["intro"])}</figcaption>' if z.get("intro") else ""
+        zcards += (
+            f'<figure class="zshot" data-id="{e_att(z["id"])}">'
+            f'<div class="zshot-head"><h3>{e_att(z["name"])}</h3>{meta}</div>'
+            f'<div class="zshot-frame">{img_tag}'
+            f'<div class="zshot-ph"><span class="zshot-ph-ico">🖼️</span><strong>Capture à ajouter</strong>'
+            f'<span class="zshot-ph-sub">Dépose <code>{drop}</code></span></div>'
+            f'<div class="zpins">{pins}</div></div>{cap}</figure>')
+    return (
+        '<section class="panel"><div class="panel-head"><h2>🗺️ Zones d\'Idyll (captures annotées)</h2>'
+        '<span class="pill">Repères</span></div>'
+        f'<p class="sub">{e_att(data.get("zonesNote",""))}</p>'
+        f'<div class="zlegend"><span class="zlegend-t">Calques :</span>{legend_chips}</div>'
+        f'<div class="zgrid">{zcards}</div>'
+        '<div class="zlightbox" id="zlb" hidden><button class="zlb-close" aria-label="Fermer">✕</button><img alt=""></div>'
+        '</section>')
+
 def build_locations(g, data):
     slug = g["slug"]
-    map_section = _build_amap(data.get("map"))
+    # Cartes : on ne fabrique pas de carte maison ; on renvoie vers les cartes
+    # interactives des concurrents (section « Cartes datamine communautaires » plus bas).
+    map_section = ""
     poi = "".join('<span class="pill" style="background:var(--surface-2)">%s</span>' % e_att(x) for x in data.get("poiTypes", []))
     regions = "".join('<div style="background:var(--bg-2);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px">'
         '<div style="display:flex;flex-wrap:wrap;gap:8px;align-items:baseline"><h3 style="font-size:1.05rem">%s</h3>'
@@ -835,11 +949,12 @@ def build_locations(g, data):
     maps = "".join('<a class="gcard" href="%s" rel="nofollow noopener" target="_blank"><div class="body"><h3 style="font-size:1rem">%s</h3>'
         '<span class="plat">Carte interactive · externe</span><div class="cta"><span class="btn btn-primary btn-sm">Ouvrir la carte →</span></div></div></a>'
         % (e_att(m["url"]), e_att(m["name"])) for m in data.get("interactiveMaps", []))
+    loc_hero = ghero(g, "Carte & lieux d'%s : régions d'Idyll" % e_att(g["name"]),
+        '<span class="pill">🔄 Vérifié le <strong style="color:var(--text);margin-left:4px">%s</strong></span>'
+        '<span class="pill">✍️ L\'équipe Zoneblox</span>' % fr_date(data.get("updated", "")))
     body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Carte & lieux", None)]) +
         '<div class="layout"><div>'
-        '<section class="ghero"><div class="info"><h1>Carte & lieux d\'Aniimo : régions d\'Idyll</h1><div class="meta">'
-        '<span class="pill">🔄 Vérifié le <strong style="color:var(--text);margin-left:4px">%s</strong></span>'
-        '<span class="pill">✍️ L\'équipe Zoneblox</span></div></div></section>'
+        + loc_hero +
         '<p class="prose" style="margin-top:18px">%s</p>'
         '%s'
         '<section class="panel"><div class="panel-head"><h2>🌦️ Comment trouver une créature (spawns par conditions)</h2></div>'
@@ -854,12 +969,12 @@ def build_locations(g, data):
         '<div class="grid-cards">%s</div></section>'
         '%s'
         '</div><aside class="side">%s</aside></div>') % (
-        fr_date(data.get("updated", "")), e_att(data.get("overview", "")), map_section, e_att(data.get("spawnMechanic", "")),
+        e_att(data.get("overview", "")), map_section, e_att(data.get("spawnMechanic", "")),
         poi, regions, e_att(data.get("regionsNote", "")), maps, sources_html(data.get("sources", [])), related_box(g, "locations"))
     ld = [crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Carte & lieux", "/games/%s/locations/" % slug)])]
     htmlp = page("Carte & lieux Aniimo — régions d'Idyll & spawns | Zoneblox",
         "La carte d'Aniimo : carte interactive des régions d'Idyll, tranches de niveaux et mécanique de spawn (météo, jour/nuit), plus les meilleures cartes interactives pour trouver les créatures.",
-        SITE + "/games/%s/locations/" % slug, body, active="games", extra_ld=ld, extra_js=AMAP_JS)
+        SITE + "/games/%s/locations/" % slug, body, active="games", extra_ld=ld, extra_js=ZONE_JS)
     write("games/%s/locations/index.html" % slug, htmlp)
     return SITE + "/games/%s/locations/" % slug
 

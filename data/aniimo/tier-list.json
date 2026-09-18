@@ -9,6 +9,19 @@
     {"name": "games.gg — Best creatures by role", "url": "https://games.gg/aniimo/guides/aniimo-tier-list-best-creatures-ranked-for-every-role/"},
     {"name": "Gamezebo — Tier List", "url": "https://www.gamezebo.com/walkthroughs/aniimo-tier-list/"}
   ],
+  "roleColors": {"DPS": "#ff5f80", "Heal": "#35e0a1", "Support": "#4d9bff", "Break": "#ffbd4a", "Regen": "#9ff0c0"},
+  "elementsNote": "Aniimo repose sur 9 éléments. Un élément inflige 1,6× de dégâts à l'élément qu'il contre et 0,625× à celui qui lui résiste (les double-types cumulent). Le tableau de contres exact n'est pas encore documenté de façon fiable : on ne l'invente pas.",
+  "elements": [
+    {"name": "Feu", "icon": "🔥", "color": "#ff6a42"},
+    {"name": "Eau", "icon": "💧", "color": "#4d9bff"},
+    {"name": "Herbe", "icon": "🌿", "color": "#35e0a1"},
+    {"name": "Foudre", "icon": "⚡", "color": "#ffd23f"},
+    {"name": "Glace", "icon": "❄️", "color": "#7fe0ff"},
+    {"name": "Terre", "icon": "🪨", "color": "#c08a4a"},
+    {"name": "Vent", "icon": "🍃", "color": "#9ff0c0"},
+    {"name": "Lumière", "icon": "✨", "color": "#fff1a8"},
+    {"name": "Ténèbres", "icon": "🌑", "color": "#8b7bd8"}
+  ],
   "tiers": [
     {"label": "S", "color": "#ff5f80", "note": "Les plus performants du lancement, toutes catégories.", "entries": ["Besauce", "Eklue", "Fulmintis", "Geoclaw", "Gracewing", "Helion", "Ignitis", "Inferlupa", "Leafy", "Luminelle", "Lunara", "Somniwing", "Stellarys", "Tubster"]},
     {"label": "A", "color": "#ffbd4a", "note": "Excellents choix, très solides dans leur rôle.", "entries": ["Dreaple", "Fenmane", "Glacy", "Grizbo", "Helgon", "Melloblum", "Pawney", "Thornblade", "Wisptis"]}

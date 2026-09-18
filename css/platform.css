@@ -277,3 +277,52 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
 .am-chip:hover{border-color:var(--primary)}
 .am-chip.off{opacity:.42;text-decoration:line-through}
 .am-ico{font-size:.95rem}
+
+/* ---------- zones annotées : captures + pins ---------- */
+.zlegend{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 16px}
+.zlegend-t{color:var(--muted-2);font-size:.8rem;font-weight:600}
+.zchip{display:inline-flex;align-items:center;gap:6px;background:var(--surface-2);border:1px solid var(--border);border-left:3px solid var(--c,#fff);color:var(--text);border-radius:8px;padding:6px 11px;font-size:.82rem;font-weight:600;cursor:pointer;font-family:inherit;transition:.15s}
+.zchip:hover{border-color:var(--primary)}
+.zchip.off{opacity:.42;text-decoration:line-through}
+.zico{font-size:.95rem}
+.zgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.zshot{background:var(--bg-2);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin:0}
+.zshot-head{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:14px 16px 0}
+.zshot-head h3{font-size:1.1rem;margin-right:auto}
+.zshot-frame{position:relative;aspect-ratio:16/10;margin-top:12px;background:linear-gradient(135deg,#141a2e,#1c2340);overflow:hidden}
+.zshot-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;cursor:zoom-in;display:block}
+.zshot-ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;color:var(--muted);padding:16px}
+.zshot.noimg .zshot-img{display:none}
+.zshot:not(.noimg) .zshot-ph{display:none}
+.zshot-ph-ico{font-size:1.8rem}
+.zshot-ph strong{color:var(--text)}
+.zshot-ph-sub{font-size:.8rem}
+.zshot-ph code{background:var(--surface-2);border:1px solid var(--border);border-radius:6px;padding:2px 7px;font-size:.78rem;color:var(--text)}
+.zpins{position:absolute;inset:0;pointer-events:none}
+.zpin{position:absolute;transform:translate(-50%,-50%);pointer-events:auto;background:none;border:0;cursor:pointer;padding:0;font-family:inherit}
+.zpin-dot{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--c,#fff);color:#0a0b16;font-size:15px;box-shadow:0 3px 10px rgba(0,0,0,.55);border:2px solid rgba(255,255,255,.9);transition:transform .15s}
+.zpin:hover .zpin-dot{transform:scale(1.15)}
+.zpin-label{position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%);white-space:nowrap;background:rgba(10,11,22,.96);border:1px solid var(--border-strong);color:var(--text);font-size:.78rem;font-weight:600;padding:5px 9px;border-radius:8px;opacity:0;visibility:hidden;transition:.15s;pointer-events:none;z-index:5}
+.zpin.open .zpin-label,.zpin:hover .zpin-label{opacity:1;visibility:visible}
+.zshot figcaption{padding:12px 16px 16px;color:var(--muted);font-size:.9rem}
+.zlightbox{position:fixed;inset:0;z-index:300;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(4,5,12,.88);cursor:zoom-out;backdrop-filter:blur(4px)}
+.zlightbox[hidden]{display:none}
+.zlightbox img{max-width:100%;max-height:90vh;border-radius:12px;box-shadow:var(--shadow)}
+.zlb-close{position:absolute;top:16px;right:16px;width:42px;height:42px;border-radius:10px;background:var(--surface-2);border:1px solid var(--border-strong);color:#fff;font-size:1.1rem;cursor:pointer}
+
+/* ---------- hero avec bannière image réelle ---------- */
+.ghero--img{position:relative;isolation:isolate}
+.ghero--img .ghero-bg{position:absolute;inset:0;z-index:0;background-image:var(--cover);background-size:cover;background-position:var(--covpos,center);opacity:.30}
+.ghero--img::before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,var(--surface) 8%,rgba(18,20,39,.72) 55%,rgba(18,20,39,.30))}
+.ghero--img .info{position:relative;z-index:1}
+.ghero--img::after{opacity:.5}
+
+/* ---------- éléments (légende codée) ---------- */
+.el-grid{display:flex;flex-wrap:wrap;gap:10px}
+.el-chip{display:inline-flex;align-items:center;gap:8px;background:var(--bg-2);border:1px solid var(--border);border-left:4px solid var(--c,#7c5cff);border-radius:11px;padding:9px 14px;font-size:.9rem;font-weight:600;color:var(--text)}
+.el-ico{display:grid;place-items:center;width:26px;height:26px;border-radius:8px;background:color-mix(in srgb,var(--c,#7c5cff) 26%,transparent);font-size:1rem}
+@supports not (background:color-mix(in srgb,red,blue)){.el-ico{background:var(--surface-2)}}
+
+/* ---------- rôles colorés (tier list) ---------- */
+.role-step{border-top:3px solid var(--c,#7c5cff)}
+.role-badge{display:inline-block;padding:3px 12px;border-radius:999px;font-weight:800;font-size:.82rem;color:#0a0b16;letter-spacing:.02em}
