@@ -16,7 +16,8 @@
    ],
    "updated": "2026-09-16",
    "new": true,
-   "thumb": "/images/cover-aniimo.svg",
+   "thumb": "/images/hero-bg.webp",
+   "coverpos": "right center",
    "accent": [
     "#6a8bff",
     "#35e0a1"

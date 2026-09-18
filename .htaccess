@@ -51,7 +51,7 @@
   ExpiresByType image/x-icon            "access plus 1 year"
   ExpiresByType text/css                "access plus 1 year"
   ExpiresByType application/javascript  "access plus 1 year"
-  ExpiresByType text/html               "access plus 1 hour"
+  ExpiresByType text/html               "access plus 0 seconds"
 </IfModule>
 
 <IfModule mod_headers.c>
@@ -59,7 +59,7 @@
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
   <FilesMatch "\.html$">
-    Header set Cache-Control "public, max-age=3600, must-revalidate"
+    Header set Cache-Control "no-cache"
   </FilesMatch>
   # HSTS : évite la redirection http->https aux visites suivantes
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"

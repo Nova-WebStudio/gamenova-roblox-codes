@@ -198,7 +198,7 @@ def build_directory(games):
             "name": g["name"], "slug": g["slug"], "url": "/games/%s/" % g["slug"],
             "source": "standalone", "platforms": plats, "genres": genres,
             "updated": g.get("releaseDate", "0000-00-00"), "new": bool(g.get("isNew") or g.get("isFeatured")),
-            "thumb": g.get("coverImage"), "accent": g.get("accent", ["#7c5cff","#4d9bff"]),
+            "thumb": g.get("coverImage"), "coverpos": g.get("coverPosition"), "accent": g.get("accent", ["#7c5cff","#4d9bff"]),
             "monogram": g.get("monogram", g["name"][:2].upper()), "cts": cts,
             "platformLabel": " · ".join(plats), "genreLabel": genres[0] if genres else "",
         })
@@ -232,9 +232,10 @@ def build_directory(games):
         if e.get("new"): badge = '<span class="badge" style="background:linear-gradient(100deg,#7c5cff,#4d9bff)">Nouveau</span>'
         elif e.get("hot"): badge = '<span class="badge">🔥 Populaire</span>'
         if e["thumb"]:
-            thumb = ('<div class="thumb"><img src="%s" alt="Miniature %s" loading="lazy" decoding="async" '
+            posstyle = (' style="object-position:%s"' % e["coverpos"]) if e.get("coverpos") else ''
+            thumb = ('<div class="thumb"><img src="%s" alt="Miniature %s" loading="lazy" decoding="async"%s '
                      'onerror="this.onerror=null;this.src=\'/images/games/%s.svg\'">%s</div>' % (
-                     e["thumb"], e_att(e["name"]), e["slug"], badge))
+                     e["thumb"], e_att(e["name"]), posstyle, e["slug"], badge))
         else:
             a = e.get("accent", ["#7c5cff","#4d9bff"])
             thumb = ('<div class="thumb" style="background:linear-gradient(135deg,%s,%s);display:grid;place-items:center">'
@@ -273,7 +274,7 @@ def build_directory(games):
     roblox_count = sum(1 for e in entries if e["source"] == "roblox")
     def feat_roblox():
         return ('<a class="fcard" href="/tous-les-codes.html">'
-            '<div class="fimg"><img src="/images/cover-roblox.svg" alt="Roblox" loading="lazy" style="position:absolute;inset:0;width:100%%;height:100%%;object-fit:cover"></div>'
+            '<div class="fimg"><img src="/images/hero-bg.webp" alt="Roblox — jeux et codes" loading="lazy" style="position:absolute;inset:0;width:100%%;height:100%%;object-fit:cover;object-position:left center"></div>'
             '<div class="fbody"><h3>Roblox</h3>'
             '<span style="color:var(--muted);font-size:.85rem">Plateforme · %d jeux</span>'
             '<span class="ct-list"><span>Codes</span><span>Guides</span><span>Tier lists</span></span>'
@@ -289,8 +290,9 @@ def build_directory(games):
         badge = ('<span class="badge" style="position:absolute;top:12px;left:12px;background:linear-gradient(100deg,#7c5cff,#4d9bff)">Nouveau</span>'
                  if (g.get("isNew") or g.get("isFeatured")) else "")
         cover = g.get("coverImage")
+        pos = g.get("coverPosition", "center")
         if cover:
-            fimg = '<div class="fimg">%s<img src="%s" alt="%s" loading="lazy" style="position:absolute;inset:0;width:100%%;height:100%%;object-fit:cover"></div>' % (badge, cover, e_att(g["name"]))
+            fimg = '<div class="fimg">%s<img src="%s" alt="%s" loading="lazy" style="position:absolute;inset:0;width:100%%;height:100%%;object-fit:cover;object-position:%s"></div>' % (badge, cover, e_att(g["name"]), pos)
         else:
             fimg = '<div class="fimg" style="background:linear-gradient(135deg,%s,%s)">%s<span style="font-weight:900;font-size:2.2rem;color:#fff;letter-spacing:-1px">%s</span></div>' % (a[0], a[1], badge, e_att(g["name"]))
         return ('<a class="fcard" href="/games/%s/">%s'
