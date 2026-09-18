@@ -68,7 +68,7 @@ def header(active=""):
         for label, href, key in NAV_ITEMS)
     mobile = "".join('<a href="%s">%s</a>' % (href, label) for label, href, key in NAV_ITEMS)
     return ('<header><div class="wrap"><nav class="nav" aria-label="Navigation principale">'
-        '<a href="/" class="brand" aria-label="Zoneblox"><span class="logo">🎮</span>Zone<span>blox</span></a>'
+        '<a href="/" class="brand" aria-label="Zoneblox"><img src="/images/logo-zoneblox.png" alt="Zoneblox — codes Roblox &amp; more" style="height:40px;width:auto;display:block" onerror="this.onerror=null;this.outerHTML=&#39;<span class=&quot;logo&quot;>🎮</span>Zone<span>blox</span>&#39;"></a>'
         '<div class="nav-links">%s</div>'
         '<div class="nav-search"><label class="search-input"><span class="search-ico">🔍</span>'
         '<input type="search" placeholder="Rechercher un jeu…" aria-label="Rechercher"/></label></div>'
@@ -77,7 +77,7 @@ def header(active=""):
 
 def footer():
     return ('<footer><div class="wrap"><div class="foot-grid">'
-        '<div class="foot-brand"><a href="/" class="brand" aria-label="Zoneblox"><span class="logo">🎮</span>Zone<span>blox</span></a>'
+        '<div class="foot-brand"><a href="/" class="brand" aria-label="Zoneblox"><img src="/images/logo-zoneblox.png" alt="Zoneblox — codes Roblox &amp; more" style="height:40px;width:auto;display:block" onerror="this.onerror=null;this.outerHTML=&#39;<span class=&quot;logo&quot;>🎮</span>Zone<span>blox</span>&#39;"></a>'
         '<p>La plateforme gaming : codes, guides, tier lists, wikis et actus, vérifiés à la main et mis à jour chaque jour.</p></div>'
         '<div><h4>Explorer</h4><a href="/games/">Tous les jeux</a><a href="/tous-les-codes.html">Tous les codes</a><a href="/tier-lists.html">Tier lists</a><a href="/guides.html">Guides</a></div>'
         '<div><h4>Jeux</h4><a href="/games/aniimo/">Aniimo</a><a href="/tous-les-codes.html">Roblox</a></div>'
