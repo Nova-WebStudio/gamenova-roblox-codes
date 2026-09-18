@@ -55,22 +55,39 @@ def sec_head(icon, title, sub, more_href=None, more_txt=None):
 
 # ---------- sections ----------
 def s_actualites():
-    ents = sorted(A_updates.get("entries", []), key=lambda x: parse_iso(x.get("date","")), reverse=True)[:3]
-    KIND = {"event":"🎉 Évènement","update":"🆕 Mise à jour","patch":"🔧 Patch"}
+    # RÈGLE : un seul article par jeu (donc des jeux DIFFÉRENTS), trié du plus récent au plus ancien.
+    KIND = {"event":"🎉 Évènement","update":"🆕 Mise à jour","patch":"🔧 Patch",
+            "news":"📰 Actualité","trailer":"🎬 Trailer","announce":"📢 Annonce"}
     FRM = ["","janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]
     def frdate(iso):
         d = parse_iso(iso); return "%d %s %d" % (d.day, FRM[d.month], d.year)
-    cards = ""
-    for en in ents:
-        cards += ('<a class="pcard" href="/games/aniimo/updates/"><div class="ph">'
-            '<img src="/images/hero-bg.webp" alt="Aniimo" loading="lazy" style="object-position:right center">'
-            '<span class="tag" style="border:0;background:linear-gradient(100deg,#7c5cff,#4d9bff)">%s</span></div>'
-            '<div class="pb"><h3>%s</h3><span class="pmeta">Aniimo · %s</span>'
-            '<span class="pcta">Lire →</span></div></a>') % (
-            e(KIND.get(en.get("kind"),"Actu")), e(en.get("title","")), e(frdate(en.get("date",""))))
-    if not cards:
+    picks = []  # (game, entrée la plus récente) — UNE par jeu
+    for gp in sorted(glob.glob(P("data","games","*.json"))):
+        try: game = json.load(open(gp, encoding="utf-8"))
+        except Exception: continue
+        up = P("data", game.get("slug",""), "updates.json")
+        if not os.path.exists(up): continue
+        try: d = json.load(open(up, encoding="utf-8"))
+        except Exception: continue
+        ents = sorted(d.get("entries", []), key=lambda x: parse_iso(x.get("date","")), reverse=True)
+        if ents: picks.append((game, ents[0]))
+    picks.sort(key=lambda t: parse_iso(t[1].get("date","")), reverse=True)
+    picks = picks[:3]
+    if not picks:
         return None
-    return (sec_head("📰","Dernières actualités","Les dernières mises à jour et évènements, mis à jour automatiquement.",
+    cards = ""
+    for game, en in picks:
+        img = game.get("coverImage","/images/hero-bg.webp"); pos = game.get("coverPosition","center")
+        name = game.get("name", game.get("slug",""))
+        cards += ('<a class="pcard" href="/games/%s/updates/"><div class="ph">'
+            '<img src="%s" alt="Actualité %s" loading="lazy" style="object-position:%s" '
+            'onerror="this.onerror=null;this.src=\'/images/hero-bg.webp\'">'
+            '<span class="tag" style="border:0;background:linear-gradient(100deg,#7c5cff,#4d9bff)">%s</span></div>'
+            '<div class="pb"><h3>%s</h3><span class="pmeta">%s · %s</span>'
+            '<span class="pcta">Lire →</span></div></a>') % (
+            e(game.get("slug","")), e(img), e(name), e(pos),
+            e(KIND.get(en.get("kind"),"Actu")), e(en.get("title","")), e(name), e(frdate(en.get("date",""))))
+    return (sec_head("📰","Dernières actualités","La dernière actu de chaque jeu, mise à jour automatiquement.",
                      "/actualites/","Toutes les actus →")
             + '<div class="pgrid c3">%s</div>' % cards)
 
