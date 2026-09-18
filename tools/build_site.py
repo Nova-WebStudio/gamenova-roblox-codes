@@ -1028,6 +1028,13 @@ def write(rel, content):
     _written.append(rel)
 
 CREA_ROLE_COL = {"DPS": "#ff5f80", "Heal": "#35e0a1", "Support": "#4d9bff", "Break": "#ffbd4a", "Regen": "#9ff0c0"}
+ANIIMO_ELEM_BANNER = {"Feu": "feu", "Eau": "eau", "Herbe": "herbe", "Glace": "glace", "Foudre": "foudre"}
+def _crea_banner(c):
+    """Bannière d'ambiance ORIGINALE (par élément) ou l'image fournie (captures licenciées)."""
+    if c.get("image"):
+        return c["image"]
+    first = (c.get("element") or "").split("/")[0].strip()
+    return "/images/aniimo/banner-%s.svg" % ANIIMO_ELEM_BANNER.get(first, "idyll")
 def _crea_chips(c):
     out = ""
     if c.get("element"):
@@ -1058,7 +1065,8 @@ def build_creatures(g, data):
                 blocks += '<section class="panel"><div class="panel-head"><h2>%s</h2></div><p class="prose">%s</p></section>' % (label, e_att(c[key]))
         if c.get("elementNote"):
             blocks += '<section class="panel"><p class="sub">ⓘ %s</p></section>' % e_att(c["elementNote"])
-        hero = ghero(g, "%s — Aniimo" % e_att(c["name"]),
+        gc = dict(g); gc["coverImage"] = _crea_banner(c); gc["coverPosition"] = "center"
+        hero = ghero(gc, "%s — Aniimo" % e_att(c["name"]),
             _crea_chips(c) + conf + ('<span class="pill">🔄 Vérifié le <strong style="color:var(--text);margin-left:4px">%s</strong></span>' % fr_date(data.get("updated", ""))))
         body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Créatures", "/games/%s/creatures/" % slug), (c["name"], None)])
             + '<div class="layout"><div>' + hero + stats + blocks + sources_html(c.get("sources", []))
@@ -1073,7 +1081,8 @@ def build_creatures(g, data):
         '<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:6px">%s</div>'
         '<div class="cta"><span class="btn btn-primary btn-sm">Voir la fiche →</span></div></div></a>'
         % (slug, c["slug"], e_att(c["name"]), _crea_chips(c)) for c in cres)
-    hero = ghero(g, "Créatures d'Aniimo : base de données",
+    gi = dict(g); gi["coverImage"] = "/images/aniimo/banner-idyll.svg"; gi["coverPosition"] = "center"
+    hero = ghero(gi, "Créatures d'Aniimo : base de données",
         '<span class="pill">🔄 Vérifié le <strong style="color:var(--text);margin-left:4px">%s</strong></span><span class="pill">%d fiches</span>' % (fr_date(data.get("updated", "")), len(cres)))
     body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Créatures", None)])
         + hero + '<p class="prose" style="margin-top:18px">%s</p>' % e_att(data.get("intro", ""))
