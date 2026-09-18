@@ -139,7 +139,7 @@ def page(title, desc, canonical, body, active="", extra_ld=None, extra_js=""):
         '<meta property="og:url" content="%s" />\n'
         '<meta name="twitter:card" content="summary_large_image" />\n'
         '<meta name="theme-color" content="#0a0b16" />\n'
-        '%s\n<link rel="stylesheet" href="/css/platform.css?v=%s" />\n<link rel="stylesheet" href="/css/nav-fix.css?v=4" />\n%s</head>\n'
+        '%s\n<link rel="stylesheet" href="/css/platform.css?v=%s" />\n<link rel="stylesheet" href="/css/nav-fix.css?v=5" />\n%s</head>\n'
         '<body>\n<a href="#main" class="skip">Aller au contenu</a>\n%s\n<main id="main"><div class="wrap">\n%s\n</div></main>\n%s\n'
         '<div class="toast" id="toast">Copié ✓</div>\n%s\n</body>\n</html>\n') % (
         GA_SNIPPET, e(title), e(desc), canonical, e(title), e(desc), canonical,
