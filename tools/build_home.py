@@ -71,7 +71,7 @@ def s_actualites():
     if not cards:
         return None
     return (sec_head("📰","Dernières actualités","Les dernières mises à jour et évènements, mis à jour automatiquement.",
-                     "/games/aniimo/updates/","Toutes les actus →")
+                     "/actualites/","Toutes les actus →")
             + '<div class="pgrid c3">%s</div>' % cards)
 
 def gamecard(slug, aniimo=False):

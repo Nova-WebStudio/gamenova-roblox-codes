@@ -21,7 +21,7 @@ import json, os, glob, html, datetime, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://zoneblox.com"
 GA = "G-FEL71QVHNL"
-CSSV = "5"
+CSSV = "6"
 FR_MONTHS = ["", "janvier", "février", "mars", "avril", "mai", "juin", "juillet",
              "août", "septembre", "octobre", "novembre", "décembre"]
 
@@ -1115,35 +1115,222 @@ def _sources_inline(sources):
     return '<p class="upd-src">Sources : ' + " · ".join(
         '<a href="%s" rel="nofollow noopener" target="_blank">%s</a>' % (e_att(s), e_att(s.split("//")[-1].split("/")[0])) for s in sources) + '</p>'
 
+# ===================== ACTUALITÉS : feed éditorial (générique, data-driven) =====================
+_ALL_GAMES = []  # rempli par main() ; sert au module « Autres jeux »
+NEWS_KIND = {
+    "event": ("Événement", "#ff5f9e"), "update": ("Mise à jour", "#4d9bff"),
+    "patch": ("Patch", "#ffbd4a"), "news": ("Actualité", "#35e0a1"),
+    "trailer": ("Trailer", "#a05cff"), "announce": ("Annonce", "#7c5cff"),
+    "admin-abuse": ("Admin", "#ff5f80"),
+}
+SEC_LABEL = {"codes": "Codes", "guides": "Guides", "tier-list": "Tier list", "videos": "Vidéos",
+             "locations": "Carte", "creatures": "Créatures", "updates": "Actualités", "items": "Objets", "builds": "Équipes"}
+SEC_ICON = {"codes": "🎁", "guides": "📖", "tier-list": "📊", "videos": "🎬", "locations": "🗺️",
+            "creatures": "🐾", "updates": "📰", "items": "🎒", "builds": "🧩"}
+OFFICIAL_DOMAINS = ("ea.com", "rockstargames.com", "aniimo.com", "funplus.com", "pawprintstudio.com", "kingsglory")
+
+NEWS_JS = """
+<script>
+(function(){
+  var grid=document.getElementById('nxGrid'); if(!grid) return;
+  var cards=[].slice.call(grid.querySelectorAll('.nx-card'));
+  var empty=document.getElementById('nxEmpty'); var q='', f='all';
+  function apply(){var n=0;cards.forEach(function(c){var okF=f==='all'||c.getAttribute('data-kind')===f;var okQ=!q||(c.getAttribute('data-text')||'').indexOf(q)>=0;var show=okF&&okQ;c.style.display=show?'':'none';if(show)n++;});if(empty)empty.hidden=n>0;}
+  [].slice.call(document.querySelectorAll('.nx-fbtn')).forEach(function(b){b.addEventListener('click',function(){[].slice.call(document.querySelectorAll('.nx-fbtn')).forEach(function(x){x.classList.remove('active');});b.classList.add('active');f=b.getAttribute('data-f');apply();});});
+  var s=document.getElementById('nxSearch');if(s)s.addEventListener('input',function(){q=s.value.toLowerCase().trim();apply();});
+})();
+</script>
+"""
+
+def _news_kind(en): return NEWS_KIND.get(en.get("kind"), ("Actualité", "#35e0a1"))
+def _news_official(en):
+    for s in en.get("sources", []):
+        u = s if isinstance(s, str) else s.get("url", "")
+        if any(d in u for d in OFFICIAL_DOMAINS): return True
+    return False
+def _news_link(en):
+    for s in en.get("sources", []):
+        u = s if isinstance(s, str) else s.get("url", "")
+        if u: return u
+    return None
+def _news_img(g, en):
+    return en.get("image") or g.get("coverImage") or "/images/hero-bg.webp", en.get("coverPosition") or g.get("coverPosition", "center")
+def _news_trust(en):
+    bits = ""
+    if en.get("confidence") == "HIGH": bits += '<span class="nx-ok">✓ Vérifié</span>'
+    if _news_official(en): bits += '<span class="nx-src">Source officielle</span>'
+    return ('<div class="nx-trust">%s</div>' % bits) if bits else ""
+def _news_card(g, en, variant="grid", show_game=True):
+    label, color = _news_kind(en)
+    img, pos = _news_img(g, en)
+    link = _news_link(en); href = link or ("/games/%s/updates/" % g["slug"])
+    ext = ' rel="nofollow noopener" target="_blank"' if link else ""
+    cta = "Lire la source →" if link else "En savoir plus →"
+    gm = ('<span class="nx-game">%s</span>' % e_att(g["name"])) if show_game else ""
+    meta = '<span class="nx-cat" style="--c:%s">%s</span><span class="nx-when">%s%s</span>' % (
+        e_att(color), e_att(label), gm, e_att(fr_date(en.get("date", ""))))
+    alt = e_att("%s — %s" % (g["name"], en.get("title", "")))
+    ld = ' loading="eager" fetchpriority="high"' if variant == "featured" else ' loading="lazy"'
+    imgtag = '<img src="%s" alt="%s" style="object-position:%s"%s>' % (e_att(img), alt, e_att(pos), ld)
+    if variant == "featured":
+        return ('<a class="nx-feat" href="%s"%s><span class="nx-feat-img">%s</span>'
+                '<span class="nx-feat-body"><span class="nx-meta">%s</span><h3>%s</h3><p>%s</p>%s<span class="nx-cta">%s</span></span></a>') % (
+                href, ext, imgtag, meta, e_att(en["title"]), e_att(en.get("summary", "")), _news_trust(en), cta)
+    if variant == "mini":
+        return ('<a class="nx-mini" href="%s"%s><span class="nx-mini-img">%s</span>'
+                '<span class="nx-mini-body"><span class="nx-meta">%s</span><h4>%s</h4></span></a>') % (href, ext, imgtag, meta, e_att(en["title"]))
+    return ('<a class="nx-card" href="%s"%s data-kind="%s" data-text="%s"><span class="nx-card-img">%s</span>'
+            '<span class="nx-card-body"><span class="nx-meta">%s</span><h3>%s</h3><p>%s</p>%s</span></a>') % (
+            href, ext, e_att(en.get("kind", "")), e_att((en.get("title", "") + " " + en.get("summary", "")).lower()),
+            imgtag, meta, e_att(en["title"]), e_att(en.get("summary", "")), _news_trust(en))
+
+def _game_subnav(g, current):
+    out = ['<nav class="nx-subnav" aria-label="Sections du jeu"><div class="wrap">',
+           '<a href="/games/%s/">Hub</a>' % g["slug"]]
+    for ct in g.get("contentTypes", []):
+        if ct.get("status") != "available": continue
+        t = ct["type"]; lbl = ct.get("label") or SEC_LABEL.get(t, t.title())
+        out.append('<a href="/games/%s/%s/"%s>%s</a>' % (g["slug"], t, ' class="active"' if t == current else "", e_att(lbl)))
+    out.append('</div></nav>')
+    return "".join(out)
+
+def _game_sidebar(g):
+    links = ['<a href="/games/%s/"><span class="nx-ico">🏠</span>Hub %s</a>' % (g["slug"], e_att(g["name"]))]
+    for ct in g.get("contentTypes", []):
+        if ct.get("status") != "available": continue
+        t = ct["type"]; lbl = ct.get("label") or SEC_LABEL.get(t, t.title())
+        links.append('<a href="/games/%s/%s/"><span class="nx-ico">%s</span>%s</a>' % (g["slug"], t, SEC_ICON.get(t, "•"), e_att(lbl)))
+    sur = '<div class="box nx-box"><h3>Sur %s</h3><div class="nx-links">%s</div></div>' % (e_att(g["name"]), "".join(links))
+    others = [x for x in _ALL_GAMES if x.get("slug") != g["slug"] and x.get("isActive", True)]
+    others = sorted(others, key=lambda x: (not x.get("isFeatured"), x.get("name", "")))[:5]
+    ocards = "".join('<a class="nx-other" href="/games/%s/"><span class="nx-other-img" style="background-image:url(%s)"></span><span class="nx-other-n">%s</span></a>' % (
+        e_att(x["slug"]), e_att(x.get("coverImage", "/images/hero-bg.webp")), e_att(x.get("name", x["slug"]))) for x in others)
+    autres = ('<div class="box nx-box"><h3>Autres jeux</h3><div class="nx-others">%s</div></div>' % ocards) if ocards else ""
+    return sur + autres
+
+def _news_sections(g, entries, show_game=False):
+    """Corps éditorial commun (featured + minis + grille + updates + archives)."""
+    entries = sorted(entries, key=lambda x: x.get("date", ""), reverse=True)
+    featured = next((e for e in entries if e.get("featured")), (entries[0] if entries else None))
+    rest = [e for e in entries if e is not featured]
+    kinds = []
+    for e in entries:
+        k = e.get("kind")
+        if k and k not in kinds: kinds.append(k)
+    fbtns = '<button class="nx-fbtn active" data-f="all">Toutes</button>' + "".join(
+        '<button class="nx-fbtn" data-f="%s">%s</button>' % (e_att(k), e_att(NEWS_KIND.get(k, (k,))[0])) for k in kinds)
+    filterbar = ('<div class="nx-filter"><div class="nx-fbtns">%s</div>'
+                 '<label class="nx-search"><span>🔎</span><input type="search" id="nxSearch" placeholder="Rechercher…" aria-label="Rechercher dans les actualités"></label></div>') % fbtns
+    feat = ('<section class="nx-sec"><div class="nx-sec-head"><h2>🔥 À la une</h2></div>%s</section>' % _news_card(g, featured, "featured", show_game)) if featured else ""
+    minis = ('<div class="nx-minis">%s</div>' % "".join(_news_card(g, e, "mini", show_game) for e in rest[:3])) if rest else ""
+    grid = ""
+    if rest:
+        cards = "".join(_news_card(g, e, "grid", show_game) for e in rest[:18])
+        grid = ('<section class="nx-sec" id="nxGrid"><div class="nx-sec-head"><h2>📰 Dernières actualités</h2></div>'
+                '<div class="nx-grid">%s</div><p class="nx-empty" id="nxEmpty" hidden>Aucune actualité ne correspond à ta recherche.</p></section>') % cards
+    ups = [e for e in entries if e.get("kind") in ("update", "patch")]
+    upsec = ""
+    if ups:
+        rows = "".join('<a class="nx-uprow" href="%s"%s><span class="nx-upd">%s</span><span class="nx-upt">%s</span></a>' % (
+            (_news_link(e) or "#"), (' rel="nofollow noopener" target="_blank"' if _news_link(e) else ""),
+            e_att(fr_date(e.get("date", ""))), e_att(e["title"])) for e in ups[:6])
+        upsec = '<section class="nx-sec"><div class="nx-sec-head"><h2>🔧 Dernières mises à jour</h2></div><div class="nx-uplist">%s</div></section>' % rows
+    arch = ""
+    if len(entries) > 6:
+        from collections import OrderedDict
+        groups = OrderedDict()
+        for e in entries[6:]:
+            groups.setdefault(_month_label(e.get("date", "")), []).append(e)
+        blocks = ""
+        for m, es in groups.items():
+            rows = "".join('<a class="nx-arow" href="%s"%s><span class="nx-ad">%s</span><span class="nx-at">%s</span></a>' % (
+                (_news_link(e) or "#"), (' rel="nofollow noopener" target="_blank"' if _news_link(e) else ""),
+                e_att(fr_date(e.get("date", ""))), e_att(e["title"])) for e in es)
+            blocks += '<div class="nx-arch-grp"><h3>%s</h3>%s</div>' % (e_att(m), rows)
+        arch = '<section class="nx-sec"><div class="nx-sec-head"><h2>🗓️ Chronologie</h2></div>%s</section>' % blocks
+    return filterbar + feat + minis + grid + upsec + arch
+
+def _month_label(iso):
+    try:
+        y, m, d = [int(x) for x in iso.split("-")]
+        return "%s %d" % (FR_MONTHS[m].capitalize(), y)
+    except Exception:
+        return "Plus tôt"
+
 def build_updates(g, data):
     slug = g["slug"]
-    KIND = {"event": "🎉 Évènement", "update": "🆕 Mise à jour", "patch": "🔧 Patch", "admin-abuse": "🛠️ Admin"}
-    items = ""
-    for en in data.get("entries", []):
-        items += ('<article class="upd"><div class="upd-head"><span class="pill">%s</span>'
-            '<span class="pill">📅 %s</span>%s</div><h3>%s</h3><p class="prose">%s</p>%s</article>') % (
-            e_att(KIND.get(en.get("kind"), "Actu")), fr_date(en.get("date", "")),
-            ('<span class="pill">Confiance : %s</span>' % e_att(en["confidence"])) if en.get("confidence") else "",
-            e_att(en["title"]), e_att(en["summary"]), _sources_inline(en.get("sources", [])))
-    hero = ghero(g, "Actualités &amp; mises à jour — %s" % e_att(g["name"]),
-        '<span class="pill">🔄 Mis à jour le <strong style="color:var(--text);margin-left:4px">%s</strong></span>' % fr_date(data.get("updated", "")))
+    entries = data.get("entries", [])
+    img = g.get("coverImage", "/images/hero-bg.webp"); pos = g.get("coverPosition", "center")
+    kinds = []
+    for e in entries:
+        k = e.get("kind")
+        if k and k not in kinds: kinds.append(k)
+    hchips = "".join('<span class="nx-hchip">%s</span>' % e_att(NEWS_KIND.get(k, (k,))[0]) for k in kinds)
+    intro = data.get("intro") or ("Toutes les actualités, annonces, mises à jour et évènements de %s." % g["name"])
+    header = ('<header class="nx-hero" style="--cover:url(%s);--covpos:%s"><div class="nx-hero-bg" aria-hidden="true"></div>'
+              '<div class="nx-hero-in"><span class="nx-eyebrow">%s</span><h1>Actualités %s</h1><p>%s</p>'
+              '<div class="nx-hchips">%s</div></div></header>') % (
+              e_att(img), e_att(pos), e_att(g["name"].upper()), e_att(g["name"]), e_att(intro), hchips)
     body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Actualités", None)])
-        + '<div class="layout"><div>' + hero + '<p class="prose" style="margin-top:18px">%s</p>' % e_att(data.get("intro", ""))
-        + '<div class="upd-list">%s</div>' % items
-        + '</div><aside class="side">%s</aside></div>' % related_box(g, "updates"))
-    ld = [crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Actualités", "/games/%s/updates/" % slug)])]
-    htmlp = page("Actualités %s — mises à jour & trailers | Zoneblox" % g["name"],
-        ("Le suivi des actualités, mises à jour et trailers de %s, vérifiés et sourcés — jamais d'annonce inventée." % g["name"])[:158],
-        SITE + "/games/%s/updates/" % slug, body, active="games", extra_ld=ld)
+            + header + _game_subnav(g, "updates")
+            + '<div class="layout nx-layout"><div>' + _news_sections(g, entries, show_game=False)
+            + '</div><aside class="side">%s</aside></div>' % _game_sidebar(g))
+    items_ld = {"@context": "https://schema.org", "@type": "ItemList", "name": "Actualités %s" % g["name"],
+                "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": e["title"]} for i, e in enumerate(entries)]}
+    ld = [crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Actualités", "/games/%s/updates/" % slug)]),
+          json.dumps(items_ld, ensure_ascii=False)]
+    htmlp = page("Actualités %s : dernières nouvelles et mises à jour | Zoneblox" % g["name"],
+        ("Retrouve les dernières actualités, mises à jour, annonces et évènements de %s sur Zoneblox." % g["name"])[:158],
+        SITE + "/games/%s/updates/" % slug, body, active="games", extra_ld=ld, extra_js=NEWS_JS)
     write("games/%s/updates/index.html" % slug, htmlp)
     return SITE + "/games/%s/updates/" % slug
+
+def build_global_news(games):
+    """Page globale /actualites : agrège les actus de tous les jeux (badge jeu proéminent)."""
+    agg = []
+    for gg in games:
+        p = os.path.join(ROOT, "data", gg["slug"], "updates.json")
+        if not os.path.exists(p): continue
+        d = load_json(p)
+        for e in d.get("entries", []):
+            agg.append((gg, e))
+    if not agg:
+        return None
+    agg.sort(key=lambda t: t[1].get("date", ""), reverse=True)
+    featured_g, featured_e = agg[0]
+    rest = agg[1:]
+    feat = '<section class="nx-sec"><div class="nx-sec-head"><h2>🔥 À la une</h2></div>%s</section>' % _news_card(featured_g, featured_e, "featured", show_game=True)
+    cards = "".join(_news_card(gg, e, "grid", show_game=True) for gg, e in rest[:24])
+    grid = ('<section class="nx-sec" id="nxGrid"><div class="nx-sec-head"><h2>📰 Dernières actualités</h2></div>'
+            '<div class="nx-grid">%s</div><p class="nx-empty" id="nxEmpty" hidden>Aucune actualité ne correspond.</p></section>') % cards
+    header = ('<header class="nx-hero nx-hero--global"><div class="nx-hero-bg" aria-hidden="true" style="background:var(--grad-soft)"></div>'
+              '<div class="nx-hero-in"><span class="nx-eyebrow">ZONEBLOX</span><h1>Actualités jeux vidéo</h1>'
+              '<p>Les dernières actualités, mises à jour et trailers des jeux couverts par Zoneblox — Roblox, Aniimo, GTA 6, FC 27 et plus.</p></div></header>')
+    others = "".join('<a class="nx-other" href="/games/%s/updates/"><span class="nx-other-img" style="background-image:url(%s)"></span><span class="nx-other-n">%s</span></a>' % (
+        e_att(x["slug"]), e_att(x.get("coverImage", "/images/hero-bg.webp")), e_att(x.get("name", x["slug"]))) for x in games if x.get("isActive", True))
+    side = '<div class="box nx-box"><h3>Par jeu</h3><div class="nx-others">%s</div></div>' % others
+    body = (crumb_html([("Accueil", "/"), ("Actualités", None)]) + header
+            + '<div class="layout nx-layout"><div>' + feat + grid + '</div><aside class="side">%s</aside></div>' % side)
+    items_ld = {"@context": "https://schema.org", "@type": "ItemList", "name": "Actualités jeux vidéo — Zoneblox",
+                "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": e["title"]} for i, (gg, e) in enumerate(agg[:24])]}
+    ld = [crumb_ld([("Accueil", "/"), ("Actualités", "/actualites/")]), json.dumps(items_ld, ensure_ascii=False)]
+    htmlp = page("Actualités jeux vidéo — Roblox, Aniimo, GTA 6, FC 27 | Zoneblox",
+        "Toutes les actualités jeux vidéo de Zoneblox : dernières news, mises à jour et trailers pour Roblox, Aniimo, GTA 6, FC 27 et plus.",
+        SITE + "/actualites/", body, active="", extra_ld=ld, extra_js=NEWS_JS)
+    write("actualites/index.html", htmlp)
+    return SITE + "/actualites/"
 
 RENDERERS = {"codes": build_codes, "guides": build_guides, "tier-list": build_tierlist, "videos": build_videos, "locations": build_locations, "creatures": build_creatures, "updates": build_updates}
 
 def main():
+    global _ALL_GAMES
     games = [load_json(p) for p in sorted(glob.glob(os.path.join(ROOT, "data/games/*.json")))]
+    _ALL_GAMES = games
     urls = []
     urls.append(build_directory(games))
+    gn = build_global_news(games)
+    if gn:
+        urls.append(gn)
     for g in games:
         urls.append(build_hub(g))
         for ct in g["contentTypes"]:
