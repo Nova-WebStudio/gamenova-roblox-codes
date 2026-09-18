@@ -1,0 +1,3730 @@
+{
+ "generated": "2026-09-18",
+ "count": 174,
+ "games": [
+  {
+   "name": "Aniimo",
+   "slug": "aniimo",
+   "url": "/games/aniimo/",
+   "source": "standalone",
+   "platforms": [
+    "PC / Console",
+    "Mobile"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-09-16",
+   "new": true,
+   "thumb": null,
+   "accent": [
+    "#6a8bff",
+    "#35e0a1"
+   ],
+   "monogram": "AN",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "PC / Console · Mobile",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Search For The Needle",
+   "slug": "search-for-the-needle",
+   "url": "/codes-search-for-the-needle.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-09-17",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-19a201f37929cac782ac0b884693b6d7/768/432/Image/Png/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Dungeon Quest Reborn",
+   "slug": "dungeon-quest-reborn",
+   "url": "/codes-dungeon-quest-reborn.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-09-01",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-70c1d4c8beaf4aa7f463b9556abfe4c9/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Spin a Soccer Card",
+   "slug": "spin-a-soccer-card",
+   "url": "/codes-spin-a-soccer-card.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Sport"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-bf53b88875889ac2f4ac48047d017b4a/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Sport"
+  },
+  {
+   "name": "Merge a Nuke",
+   "slug": "merge-a-nuke",
+   "url": "/codes-merge-a-nuke.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-559508ad864c626f049ce0870d43665b/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "VV: ULTIMATUM",
+   "slug": "vv-ultimatum",
+   "url": "/codes-vv-ultimatum.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-a1d19383f4330a2b5e1902fdcc5f5171/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "FIFA Super Soccer",
+   "slug": "fifa-super-soccer",
+   "url": "/codes-fifa-super-soccer.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Sport"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-8dbf3df11aed03b0c733d41fda2bd3a4/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Sport"
+  },
+  {
+   "name": "Hypershot",
+   "slug": "hypershot",
+   "url": "/codes-hypershot.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-e640b4e4d607ef8db910b23b7adc09f4/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "BlockSpin",
+   "slug": "blockspin",
+   "url": "/codes-blockspin.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-d2785094a0b157d6fc654e7a3c53e5d9/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Run a Restaurant",
+   "slug": "run-a-restaurant",
+   "url": "/codes-run-a-restaurant.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tycoon"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-abe7f648884a7c427c69f828e51c65ce/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tycoon"
+  },
+  {
+   "name": "Squid Game X",
+   "slug": "squid-game-x",
+   "url": "/codes-squid-game-x.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-2264689de7f046b3c3df5e135abd5ffa/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Catch a Monster",
+   "slug": "catch-a-monster",
+   "url": "/codes-catch-a-monster.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-874bb92a4550696298e41ef059e6cb57/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Brainrot Evolution",
+   "slug": "brainrot-evolution",
+   "url": "/codes-brainrot-evolution.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-fc4ce9bf5f0886c17c472d7e9b291b2d/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "100 Days at Sea",
+   "slug": "100-days-at-sea",
+   "url": "/codes-100-days-at-sea.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-127dc5df1f7a770cc3831c5b4b23aaa0/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "A Dusty Trip",
+   "slug": "a-dusty-trip",
+   "url": "/codes-a-dusty-trip.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-c7bb56c7b813baf35d1a7335ec3e48fd/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "War Tycoon",
+   "slug": "war-tycoon",
+   "url": "/codes-war-tycoon.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tycoon"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-002e1c99ba576f8c2f015859e13c1d83/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tycoon"
+  },
+  {
+   "name": "Iron Soul: Dungeon",
+   "slug": "iron-soul-dungeon",
+   "url": "/codes-iron-soul-dungeon.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-6624e54164ae1e6a970c6ba71fb6776a/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Blox Monsters",
+   "slug": "blox-monsters",
+   "url": "/codes-blox-monsters.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-b5a0ea014346723cbbb5337ee7ba4ce5/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Car Crushers 2",
+   "slug": "car-crushers-2",
+   "url": "/codes-car-crushers-2.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-caf6bc510c2bc241535541c8c41ddcf7/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Steal a Fish",
+   "slug": "steal-a-fish",
+   "url": "/codes-steal-a-fish.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tycoon"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-ed927450771fe3f6c356b5aacbb5efeb/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tycoon"
+  },
+  {
+   "name": "Knockout",
+   "slug": "knockout",
+   "url": "/codes-knockout.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-f75a05b251c9fdb0c762a3bd997a2901/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "My Gym",
+   "slug": "my-gym",
+   "url": "/codes-my-gym.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tycoon"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-c128e1ea9f3b870b4f2202bcefdbed8d/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tycoon"
+  },
+  {
+   "name": "Untitled Tag Game",
+   "slug": "untitled-tag-game",
+   "url": "/codes-untitled-tag-game.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Obby"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-cd834c110aa147df9bc89a79fece32ea/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Obby"
+  },
+  {
+   "name": "BloxStrike",
+   "slug": "bloxstrike",
+   "url": "/codes-bloxstrike.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-38303ae0318ee323f54accc54d368609/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Twenty One",
+   "slug": "twenty-one",
+   "url": "/codes-twenty-one.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Horreur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-20b1ac2eb8792c3d1d2b51a02ce6582d/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Horreur"
+  },
+  {
+   "name": "Anime Astral Simulator",
+   "slug": "anime-astral-simulator",
+   "url": "/codes-anime-astral-simulator.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-779a6a4dd29ae6ddfa5c3e94b80c1735/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Anime Battle RNG",
+   "slug": "anime-battle-rng",
+   "url": "/codes-anime-battle-rng.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-35864a4019d8f2c8506d114fcf24fc9d/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Anime Fighters Simulator",
+   "slug": "anime-fighters",
+   "url": "/codes-anime-fighters.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-44435f032652f720d2760df1c023c472/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Anime Fighting Simulator",
+   "slug": "anime-fighting-simulator",
+   "url": "/codes-anime-fighting-simulator.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-7f8e62f51167c90177bdd9d4d9476e33/768/432/Image/Png/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Anime Reversal",
+   "slug": "anime-reversal",
+   "url": "/codes-anime-reversal.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-0c85047a311b57cf6204a6f08e8f703c/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "LOCKED",
+   "slug": "locked",
+   "url": "/codes-locked.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-d25adedff694e3710158bf33115397bf/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Defend ur base with anime",
+   "slug": "defend-ur-base-with-anime",
+   "url": "/codes-defend-ur-base-with-anime.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-5610a932c392b232214df24d7b73480d/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Anime RNG",
+   "slug": "anime-rng",
+   "url": "/codes-anime-rng.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-cb52cb46f7586ef2c76773ae5ca17e0b/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "UGC Limited",
+   "slug": "ugc-limited",
+   "url": "/codes-ugc-limited.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-4c03c829dd96b8bd973dab28a0dd7f8a/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Jujutsu Shenanigans",
+   "slug": "jujutsu-shenanigans",
+   "url": "/codes-jujutsu-shenanigans.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-e27277bbda2ba2efdb47a1863df2da3d/512/512/Image/Png/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Kick a Lucky Block",
+   "slug": "kick-a-lucky-block",
+   "url": "/codes-kick-a-lucky-block.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-3c320528b9f19497a76e238276cdeb53/512/512/Image/Png/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Dandy",
+   "slug": "dandys-world",
+   "url": "/codes-dandys-world.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-dd5fef14c5a000dba3bebfb71cf4ac64/512/512/Image/Png/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Slime RNG",
+   "slug": "slime-rng",
+   "url": "/codes-slime-rng.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-b3e07872193b7de060e80e2b300a94ca/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Survive Zombie Arena",
+   "slug": "survive-zombie-arena",
+   "url": "/codes-survive-zombie-arena.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-ccfc78577119d3c8ed223f580e05f222/512/512/Image/Png/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Attack on Titan Revolution",
+   "slug": "attack-on-titan-revolution",
+   "url": "/codes-attack-on-titan-revolution.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-b5b0d5438b8f70eca4dc9311ac541afc/512/512/Image/Png/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Broken Blade",
+   "slug": "broken-blade",
+   "url": "/codes-broken-blade.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-b4137b1c3b07478b27e38a7ee8356800/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Sailor Piece",
+   "slug": "sailor-piece",
+   "url": "/codes-sailor-piece.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-b405eb9a7be185d2a560f8857d82fec7/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Anime Apocalypse",
+   "slug": "anime-apocalypse",
+   "url": "/codes-anime-apocalypse.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-45c04a57026f120497361440a566ee2e/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Anime Eternal",
+   "slug": "anime-eternal",
+   "url": "/codes-anime-eternal.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-f755ba09b84bf157f5b4b35b6a8af4c0/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Universal Tower Defense X",
+   "slug": "universal-tower-defense-x",
+   "url": "/codes-universal-tower-defense-x.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-d7a465629ce61d0dff9fe7b5b11c7d03/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "DIG",
+   "slug": "dig",
+   "url": "/codes-dig.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-38334daf4b8073ee8d3d9976dfc7bfe8/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Sol",
+   "slug": "sols-rng",
+   "url": "/codes-sols-rng.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-8965d16c1ee802fff15f681cae4b413e/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Jule",
+   "slug": "jules-rng",
+   "url": "/codes-jules-rng.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-12b8494fea5bc9afb8a6807870080044/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Weapon RNG",
+   "slug": "weapon-rng",
+   "url": "/codes-weapon-rng.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-e88311c9f8c18aa08e132824c7fc7397/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Character RNG",
+   "slug": "character-rng",
+   "url": "/codes-character-rng.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-b34e867b2650f1ed95a063422864ddab/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Case Simulator RNG",
+   "slug": "case-simulator-rng",
+   "url": "/codes-case-simulator-rng.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-0529c461a1cee0b3f342b210bef02177/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Button RNG 2",
+   "slug": "button-rng-2",
+   "url": "/codes-button-rng-2.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-ca5bbbd2e2bc42d6d070b8f05ee992e4/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "RNG Heroes",
+   "slug": "rng-heroes",
+   "url": "/codes-rng-heroes.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-67d8d731787391608a925ccda724bfde/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Be a Fish Bait",
+   "slug": "be-a-fish-bait",
+   "url": "/codes-be-a-fish-bait.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-4002d607bf3b2f0415c5779ac5a87a34/768/432/Image/Png/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Fish It",
+   "slug": "fish-it",
+   "url": "/codes-fish-it.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-dfd35b1d04259ea9974c2ee8bcd9ed49/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Anime Spirits",
+   "slug": "anime-spirits",
+   "url": "/codes-anime-spirits.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-90d479b01af3f1ed17af3643f447e915/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Slap Battles",
+   "slug": "slap-battles",
+   "url": "/codes-slap-battles.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-01bb43634d02e38923c1543a029c95d5/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Forsaken",
+   "slug": "forsaken",
+   "url": "/codes-forsaken.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-242c4d76325c453886b3382d825eb71c/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Driving Empire",
+   "slug": "driving-empire",
+   "url": "/codes-driving-empire.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-134d852037dc6df76cd340199bc0eef7/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Évasion Clavier",
+   "slug": "evasion-clavier",
+   "url": "/codes-evasion-clavier.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Obby"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-82b559d4f2bd68f909d4b9bdd92d168e/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Obby"
+  },
+  {
+   "name": "Construire une Ferme d\\",
+   "slug": "ferme-d-anneaux",
+   "url": "/codes-ferme-d-anneaux.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-5c24b09b1d9bdfa44deadb955fd8d2fb/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Vendre des Citrons",
+   "slug": "vendre-des-citrons",
+   "url": "/codes-vendre-des-citrons.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tycoon"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-3bb611c1f3b4d5bfa396b1ae965134af/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tycoon"
+  },
+  {
+   "name": "World Fighters",
+   "slug": "world-fighters",
+   "url": "/codes-world-fighters.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-81425ab9ff608a7dbffc828b101e9583/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Noob Incremental",
+   "slug": "noob-incremental",
+   "url": "/codes-noob-incremental.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-8273fdf7d5a9074bc47861d7719c5392/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "My Gaming Cafe",
+   "slug": "my-gaming-cafe",
+   "url": "/codes-my-gaming-cafe.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tycoon"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-db6f62117bb769ae9f2a3ebe39e1f6c0/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tycoon"
+  },
+  {
+   "name": "Catch and Tame",
+   "slug": "catch-and-tame",
+   "url": "/codes-catch-and-tame.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-0d68f08d3dc380ca03a0159c40640463/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Build A Ring Farm",
+   "slug": "build-a-ring-farm",
+   "url": "/codes-build-a-ring-farm.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-5c24b09b1d9bdfa44deadb955fd8d2fb/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Anime Warriors III",
+   "slug": "anime-warriors-iii",
+   "url": "/codes-anime-warriors-iii.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-8d6f44923235ed0d52df201e13a77715/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Anime Squadron",
+   "slug": "anime-squadron",
+   "url": "/codes-anime-squadron.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tower Defense"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-08ea7a58db9a3d940ad2977ffa4b85ae/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tower Defense"
+  },
+  {
+   "name": "Anime Card Farm",
+   "slug": "anime-card-farm",
+   "url": "/codes-anime-card-farm.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-ddbb8f3b68bef5516e2b6365d0cd08c8/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Chicken Farm",
+   "slug": "chicken-farm",
+   "url": "/codes-chicken-farm.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-40884ecbf2fafe47e78befbff75cdef8/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "+1 Mine Per Click",
+   "slug": "1-mine-per-click",
+   "url": "/codes-1-mine-per-click.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-7e0a7a6a606be71764918483ef5a9084/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "World Cup Album",
+   "slug": "world-cup-album",
+   "url": "/codes-world-cup-album.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-42bab5b30fdcdf497550faf9ac97308e/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Storage Hunters Open World",
+   "slug": "storage-hunters-open-world",
+   "url": "/codes-storage-hunters-open-world.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tycoon"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-d399877b4e90fba495d22ee7e9c388b8/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tycoon"
+  },
+  {
+   "name": "+1 Magic Evolution",
+   "slug": "1-magic-evolution",
+   "url": "/codes-1-magic-evolution.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-23eaddae50b790b4f2d4daf6a405e805/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Evomon",
+   "slug": "evomon",
+   "url": "/codes-evomon.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-23453891da7f91db1080a51d401a5499/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Grow a Garden 2",
+   "slug": "grow-a-garden-2",
+   "url": "/codes-grow-a-garden-2.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-71ae7859135fc45f2a0e6d580572d5c0/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "+1 Aura Per Click",
+   "slug": "1-aura-per-click",
+   "url": "/codes-1-aura-per-click.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-70de23fcc43733d92dd473b176a7dfd1/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Anime Fighting Simulator Reborn",
+   "slug": "anime-fighting-simulator-reborn",
+   "url": "/codes-anime-fighting-simulator-reborn.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-ad195be47fec95664c1c3176235720b2/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Liminalité Invisible",
+   "slug": "liminalite-invisible",
+   "url": "/codes-liminalite-invisible.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Obby"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-3d5bc95ea145c6be0d992c91c173ef1e/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Obby"
+  },
+  {
+   "name": "Démonologie",
+   "slug": "demonologie",
+   "url": "/codes-demonologie.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-4a405de12e9812c5b154529146d0ea13/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Mini-Guerre",
+   "slug": "mini-guerre",
+   "url": "/codes-mini-guerre.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tycoon"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-c60de7bb9807464a0564c898db8d8e62/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tycoon"
+  },
+  {
+   "name": "Cliqueur Phonk",
+   "slug": "cliqueur-phonk",
+   "url": "/codes-cliqueur-phonk.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-ae08f34ff73b587272264895a4e43bae/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Arène de Sniper",
+   "slug": "arene-de-sniper",
+   "url": "/codes-arene-de-sniper.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-e59b96a0c52acd94af855698abc72767/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Tour Needoh",
+   "slug": "tour-needoh",
+   "url": "/codes-tour-needoh.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Obby"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-709282c91d3fb74801b493d7987004b3/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Obby"
+  },
+  {
+   "name": "Blox Fruits",
+   "slug": "blox-fruits",
+   "url": "/codes-blox-fruits.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-e1ce51abae5188805c3fee78ec7f4d08/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Pet Simulator X",
+   "slug": "pet-simulator-x",
+   "url": "/codes-pet-simulator-x.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-a7bb14d2b3dbf586e67ba2ac7a0c3dc7/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Adopt Me!",
+   "slug": "adopt-me",
+   "url": "/codes-adopt-me.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-ef30533fcd5e71af2468030ffa6c176a/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Shindo Life",
+   "slug": "shindo-life",
+   "url": "/codes-shindo-life.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://t3.rbxcdn.com/180DAY-3b2ec062707376a89a223ea44c20d408",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "King Legacy",
+   "slug": "king-legacy",
+   "url": "/codes-king-legacy.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-505d0cc614022636a562fd3ff8808ba0/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Murder Mystery 2",
+   "slug": "murder-mystery-2",
+   "url": "/codes-murder-mystery-2.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-5ba706807447783862364dfef7a465ff/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Fruit Battlegrounds",
+   "slug": "fruit-battlegrounds",
+   "url": "/codes-fruit-battlegrounds.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-6688078543e2f947bf998f31c4601037/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Anime Adventures",
+   "slug": "anime-adventures",
+   "url": "/codes-anime-adventures.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-b630f8fd329cf5f0c9b57451f4c1f47a",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Rivals",
+   "slug": "rivals",
+   "url": "/codes-rivals.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-27507ba164fae9b46c68047d34d0078b/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Brookhaven 🏡RP",
+   "slug": "brookhaven",
+   "url": "/codes-brookhaven.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-5e77d217cbda7ba5941840cfa3ab8c36/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Royale High",
+   "slug": "royale-high",
+   "url": "/codes-royale-high.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-1c63d3971f06391b08a95400cdf2bb78/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Encounters",
+   "slug": "encounters",
+   "url": "/codes-encounters.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-024bcafc4df055789126ae841598d15d/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Tower of Hell",
+   "slug": "tower-of-hell",
+   "url": "/codes-tower-of-hell.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Obby"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-20a372111085c33de1e64004e4dca1d8/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Obby"
+  },
+  {
+   "name": "Work at a Pizza Place",
+   "slug": "work-at-a-pizza-place",
+   "url": "/codes-work-at-a-pizza-place.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tycoon"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-3504f0abedb16721aec2f8fcc0da4e2e/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tycoon"
+  },
+  {
+   "name": "Grow a Garden",
+   "slug": "grow-a-garden",
+   "url": "/codes-grow-a-garden.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-028e7742f4ef789f654bf0dd91502b41/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Blade Ball",
+   "slug": "blade-ball",
+   "url": "/codes-blade-ball.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-aa0679c96e6ce33f961087cebcc07ce6/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Anime Defenders",
+   "slug": "anime-defenders",
+   "url": "/codes-anime-defenders.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-c5a2289b4baf7194add46247482074d7/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Toilet Tower Defense",
+   "slug": "toilet-tower-defense",
+   "url": "/codes-toilet-tower-defense.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-5a9d6ca7af3e521497366c956bbbea05/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Pet Simulator 99",
+   "slug": "pet-simulator-99",
+   "url": "/codes-pet-simulator-99.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-b7b8ad3ad6f4103c91efc25da7bc1118/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Bee Swarm Simulator",
+   "slug": "bee-swarm-simulator",
+   "url": "/codes-bee-swarm-simulator.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-315e29556054777604420711cb64f0b6/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Anime Vanguards",
+   "slug": "anime-vanguards",
+   "url": "/codes-anime-vanguards.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-cb38398e8a1315ca4046f168c7504d6b/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Arsenal",
+   "slug": "arsenal",
+   "url": "/codes-arsenal.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-fd5d29ef7df403915891862d02ae09bb/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Jailbreak",
+   "slug": "jailbreak",
+   "url": "/codes-jailbreak.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-fef285ce1b8ac805b17da2a4f998ccec/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "BedWars",
+   "slug": "bedwars",
+   "url": "/codes-bedwars.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-9e34b6ee9e93b7840f82d1381d14c641/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Fisch",
+   "slug": "fisch",
+   "url": "/codes-fisch.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-0b48b36aaaebb05f29da4beb58790100/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Dress to Impress",
+   "slug": "dress-to-impress",
+   "url": "/codes-dress-to-impress.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-62de69073c3ab87818fa79cd9d34006b/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Da Hood",
+   "slug": "da-hood",
+   "url": "/codes-da-hood.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-655a8b7fc990b48f595db9bcfd7ea70b/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Bubble Gum Simulator Infinity",
+   "slug": "bubble-gum-simulator-infinity",
+   "url": "/codes-bubble-gum-simulator-infinity.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-7c76a88ace2e799826837aee08875eec/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Blue Lock Rivals",
+   "slug": "blue-lock-rivals",
+   "url": "/codes-blue-lock-rivals.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-6c3d95dac7c3d279e20cfa9ef1b27ba5/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Volleyball Legends",
+   "slug": "volleyball-legends",
+   "url": "/codes-volleyball-legends.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-572cf4e9e5cec5dd45074a98fa143ca0/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Steal An Egg",
+   "slug": "steal-an-egg",
+   "url": "/codes-steal-an-egg.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-08-24",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-79e666901b2c722b06310d267bc6c152/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Steal a Brainrot",
+   "slug": "steal-a-brainrot",
+   "url": "/codes-steal-a-brainrot.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-64170d84ffa0cba4ee5af8bd1cd2df66/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Build a Boat for Treasure",
+   "slug": "build-a-boat-for-treasure",
+   "url": "/codes-build-a-boat-for-treasure.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tycoon"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-1ca8115eb50594d19be488f3d22ac54e/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tycoon"
+  },
+  {
+   "name": "Anime Last Stand",
+   "slug": "anime-last-stand",
+   "url": "/codes-anime-last-stand.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-b3d29df4d10633c51bd9d2a5b6585bde/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "99 Nights in the Forest",
+   "slug": "99-nights-in-the-forest",
+   "url": "/codes-99-nights-in-the-forest.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-c5215eabc21f46723f0084f99bb7622c/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Plants Vs Brainrots",
+   "slug": "plants-vs-brainrots",
+   "url": "/codes-plants-vs-brainrots.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-2ac6fe0e69b8567ab69bc3ca5a2482a0/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Dead Rails",
+   "slug": "dead-rails",
+   "url": "/codes-dead-rails.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-da525289338642275e4838a07d685e93/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Jujutsu Infinite",
+   "slug": "jujutsu-infinite",
+   "url": "/codes-jujutsu-infinite.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-243b2323af958a373c24bb885e2986b5/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Anime Reborn",
+   "slug": "anime-reborn",
+   "url": "/codes-anime-reborn.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-8b81be86b8e67cbc4db3d07b846ad7c1/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Untitled Boxing Game",
+   "slug": "untitled-boxing-game",
+   "url": "/codes-untitled-boxing-game.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-5e814dc6b0ad9489cc40c4dbf9bb7d96/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Type Soul",
+   "slug": "type-soul",
+   "url": "/codes-type-soul.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-8a0cfb06021a3b7813f79e9f9e6eb1b1/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Basketball Zero",
+   "slug": "basketball-zero",
+   "url": "/codes-basketball-zero.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-0d7d35bbb03eca85b0bfcb0076a0435a/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Haze Piece",
+   "slug": "haze-piece",
+   "url": "/codes-haze-piece.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-41212ff0c4a4a7105b2e1605f3666243/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "All Star Tower Defense",
+   "slug": "all-star-tower-defense",
+   "url": "/codes-all-star-tower-defense.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-9fbd50db5a51699b733c9529ee542d19/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Anime Champions Simulator",
+   "slug": "anime-champions-simulator",
+   "url": "/codes-anime-champions-simulator.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-9d4be137161ea266ba1c2c6f28832e21/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Animal Hospital",
+   "slug": "animal-hospital",
+   "url": "/codes-animal-hospital.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Horreur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-db27bdc698b088f2d8352327f7dc64f6/480/270/Image/Png/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Horreur"
+  },
+  {
+   "name": "Demonology",
+   "slug": "demonology",
+   "url": "/codes-demonology.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Horreur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-2651cff28f8766658687d6df2067bf03/480/270/Image/Png/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Horreur"
+  },
+  {
+   "name": "Sonic Speed Simulator",
+   "slug": "sonic-speed-simulator",
+   "url": "/codes-sonic-speed-simulator.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-82939a396600a61e4abadd92664f8d83/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Tower Defense Simulator",
+   "slug": "tower-defense-simulator",
+   "url": "/codes-tower-defense-simulator.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-f4a7603e22db5d7a43e966fe145a96e1/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Project Slayers",
+   "slug": "project-slayers",
+   "url": "/codes-project-slayers.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-612b92100da817e8dc2bb8fd35ce117e/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "The Strongest Battlegrounds",
+   "slug": "the-strongest-battlegrounds",
+   "url": "/codes-the-strongest-battlegrounds.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-c947df5b221c30672c3591247a8c6495/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "SpongeBob Tower Defense",
+   "slug": "spongebob-tower-defense",
+   "url": "/codes-spongebob-tower-defense.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-c3a62fcdf7e0a60cd52456d65f267689/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Garden Tower Defense",
+   "slug": "garden-tower-defense",
+   "url": "/codes-garden-tower-defense.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-ad6eccabf36c9174c02fed274ca4b5a9/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Heroes Battlegrounds",
+   "slug": "heroes-battlegrounds",
+   "url": "/codes-heroes-battlegrounds.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-05b3d7fb729835a6f28de0067fac79cd/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Mad City: Chapter 2",
+   "slug": "mad-city",
+   "url": "/codes-mad-city.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-e03eb43e97fb7031d8187b808fd7ff27/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Combat Warriors",
+   "slug": "combat-warriors",
+   "url": "/codes-combat-warriors.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-a631d6d73730a77f93b02eb3b0e8b06c/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Survive the Killer",
+   "slug": "survive-the-killer",
+   "url": "/codes-survive-the-killer.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Combat"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-4f30b695e340b41799ff15643fff9795/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Combat"
+  },
+  {
+   "name": "Clover Retribution",
+   "slug": "clover-retribution",
+   "url": "/codes-clover-retribution.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-d99b5a21020011e2bef430a352b3fa4b/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Project Mugetsu",
+   "slug": "project-mugetsu",
+   "url": "/codes-project-mugetsu.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-45c83a7355a6e29a684259c12859f40e/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Dragon Blox",
+   "slug": "dragon-blox",
+   "url": "/codes-dragon-blox.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-87109cd7f93a982280ded36484b331f4/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Grand Piece Online",
+   "slug": "grand-piece-online",
+   "url": "/codes-grand-piece-online.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-5dfa86c9bab8fb4f1641f42ce7b55c17/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Muscle Legends",
+   "slug": "muscle-legends",
+   "url": "/codes-muscle-legends.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Sport"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-3a8fdfdb456058592c8a64bef231c27a/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Sport"
+  },
+  {
+   "name": "Peroxide",
+   "slug": "peroxide",
+   "url": "/codes-peroxide.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-be9eec5f81d445dea3b3e0971411dd2b/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Anime Dimensions Simulator",
+   "slug": "anime-dimensions-simulator",
+   "url": "/codes-anime-dimensions-simulator.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-cd6f5a5f32c24fc32e1813f8213338da/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Car Dealership Tycoon",
+   "slug": "car-dealership-tycoon",
+   "url": "/codes-car-dealership-tycoon.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tycoon"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-2f49b71e385206d055e54562a79f4b81/512/512/Image/Png/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tycoon"
+  },
+  {
+   "name": "Dragon Adventures",
+   "slug": "dragon-adventures",
+   "url": "/codes-dragon-adventures.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-be3b9158d0827a1a5f9ac66c51888b26/512/512/Image/Png/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Evade",
+   "slug": "evade",
+   "url": "/codes-evade.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-bf95a86e5f5e37bf61a5f33401e95deb/512/512/Image/Png/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Grimoires Era",
+   "slug": "grimoires-era",
+   "url": "/codes-grimoires-era.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-4ecd0b70b1defc6a712348e3c0230be2/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "PLS DONATE",
+   "slug": "pls-donate",
+   "url": "/codes-pls-donate.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tycoon"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-a8c2faf226f0d89bed86a7d5e9683789/512/512/Image/Png/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tycoon"
+  },
+  {
+   "name": "Pressure",
+   "slug": "pressure",
+   "url": "/codes-pressure.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Horreur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-5b1179410249512e675aafa90e4fe1e0/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Horreur"
+  },
+  {
+   "name": "Restaurant Tycoon 3",
+   "slug": "restaurant-tycoon-3",
+   "url": "/codes-restaurant-tycoon-3.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tycoon"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-5537cbddeaee05dea19e0cbf8f452353/512/512/Image/Png/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tycoon"
+  },
+  {
+   "name": "Ro-Ghoul",
+   "slug": "ro-ghoul",
+   "url": "/codes-ro-ghoul.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-114fec0205e2c92fd880fd3aa95777dd/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Wizard Alchemy",
+   "slug": "wizard-alchemy",
+   "url": "/codes-wizard-alchemy.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-9446c5c0b8ba7bdc6ed1ed6de1ed5c7a/512/512/Image/Png/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Scroll a Brainrot",
+   "slug": "scroll-a-brainrot",
+   "url": "/codes-scroll-a-brainrot.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-73e66eb0f5210e6f36122f97eb56087e/500/280/Image/Jpeg/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Spin a Brainrot",
+   "slug": "spin-a-brainrot",
+   "url": "/codes-spin-a-brainrot.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-7eaffb90de4c49dfd86ff4c518e7a12a/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Doors",
+   "slug": "doors",
+   "url": "/codes-doors.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Horreur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-09f0d9b97f35839568ec129016b18485/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Horreur"
+  },
+  {
+   "name": "Be a Brainrot",
+   "slug": "be-a-brainrot",
+   "url": "/codes-be-a-brainrot.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-c41e9a9b4678a149f1fc9f9f6a737d9e/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Anime Story 2",
+   "slug": "anime-story-2",
+   "url": "/codes-anime-story-2.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-30f248b0e384d42583a14688f1df6bf8/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Anime Rift Tower Defense",
+   "slug": "anime-rift-tower-defense",
+   "url": "/codes-anime-rift-tower-defense.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-000826b5aefec382cc3367192cdb5c2f/768/432/Image/Png/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Anime Rangers X",
+   "slug": "anime-rangers-x",
+   "url": "/codes-anime-rangers-x.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tower Defense"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-4d28b5df1bb5f24b2662f5fc0e04ac0a/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tower Defense"
+  },
+  {
+   "name": "A One Piece Game",
+   "slug": "a-one-piece-game",
+   "url": "/codes-a-one-piece-game.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-8d99b87bcd9b6754aab0c1ab5fe3e56e/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Sakura Stand",
+   "slug": "sakura-stand",
+   "url": "/codes-sakura-stand.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-a955d8e774a7f959d3b736311a6fee60/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Untitled Attack on Titan",
+   "slug": "untitled-attack-on-titan",
+   "url": "/codes-untitled-attack-on-titan.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-52684c00ebe2aadf3de4eeaf4eb435d2/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Ninja Legends",
+   "slug": "ninja-legends",
+   "url": "/codes-ninja-legends.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-0616aa68474d2273776bf20eed8a8df4/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Arm Wrestle Simulator",
+   "slug": "arm-wrestle-simulator",
+   "url": "/codes-arm-wrestle-simulator.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-46cf8a65c2fb8f84e09934980e504b69/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Strongman Simulator",
+   "slug": "strongman-simulator",
+   "url": "/codes-strongman-simulator.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-2a05a4eb85791b120cd6aae26dac0724/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Anime Souls Simulator X",
+   "slug": "anime-souls-simulator-x",
+   "url": "/codes-anime-souls-simulator-x.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-cb95adeca9ea0a7700c5f437a3f1c668/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Fire Force Online",
+   "slug": "fire-force-online",
+   "url": "/codes-fire-force-online.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-b35c5d95e2eda5a074b499caabe5f779/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "Skibidi Masters Tower Defense",
+   "slug": "skibidi-masters-tower-defense",
+   "url": "/codes-skibidi-masters-tower-defense.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Tower Defense"
+   ],
+   "updated": "2026-07-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-648b86bc997457836bbb16eb5cdad65e/480/270/Image/Webp/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Tower Defense"
+  }
+ ]
+}

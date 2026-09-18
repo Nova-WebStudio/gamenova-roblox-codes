@@ -121,7 +121,7 @@ def page(title, desc, canonical, body, active="", extra_ld=None, extra_js=""):
         '<meta property="og:url" content="%s" />\n'
         '<meta name="twitter:card" content="summary_large_image" />\n'
         '<meta name="theme-color" content="#0a0b16" />\n'
-        '%s\n<link rel="stylesheet" href="/css/platform.css?v=%s" />\n%s</head>\n'
+        '%s\n<link rel="stylesheet" href="/css/platform.css?v=%s" />\n<link rel="stylesheet" href="/css/nav-fix.css?v=1" />\n%s</head>\n'
         '<body>\n<a href="#main" class="skip">Aller au contenu</a>\n%s\n<main id="main"><div class="wrap">\n%s\n</div></main>\n%s\n'
         '<div class="toast" id="toast">Copié ✓</div>\n%s\n</body>\n</html>\n') % (
         GA_SNIPPET, e(title), e(desc), canonical, e(title), e(desc), canonical,
@@ -145,37 +145,185 @@ def cover_html(game, cls="cover"):
             '<span style="font-weight:900;font-size:2rem;color:#fff;letter-spacing:-1px">%s</span></div>') % (
             cls, e(a[0]), e(a[1]), e(game.get("monogram", game["name"][:2].upper())))
 
+def e_att(s):
+    return html.escape(str(s), quote=True) if s is not None else ""
+
+# ---------- helpers annuaire ----------
+FR_ABBR = {"janv.":1,"jan.":1,"févr.":2,"fév.":2,"mars":3,"avr.":4,"mai":5,"juin":6,
+           "juil.":7,"juill.":7,"août":8,"aout":8,"sept.":9,"sep.":9,"oct.":10,"nov.":11,"déc.":12,"dec.":12}
+def fr_abbr_to_iso(s):
+    m = re.match(r"(\d{1,2})\s+([A-Za-zéûôàè.]+)\s+(\d{4})", (s or "").strip())
+    if not m: return "0000-00-00"
+    d, mon, y = m.groups()
+    mo = FR_ABBR.get(mon.lower(), 0)
+    return "%04d-%02d-%02d" % (int(y), mo, int(d))
+
+KNOWN_GENRES = ["Simulateur","Anime","Combat","RPG","Tycoon","Tower Defense","Sport","Obby","Horreur","Aventure","Stratégie"]
+def derive_genres(genre_str):
+    g = (genre_str or "").lower()
+    found = [k for k in KNOWN_GENRES if k.lower() in g]
+    return found or ([genre_str] if genre_str else [])
+
+def platforms_of_standalone(game):
+    labels = " ".join(game.get("platforms", [])).lower()
+    out = []
+    if any(k in labels for k in ["pc","steam","epic","playstation","ps5","xbox","console","switch"]): out.append("PC / Console")
+    if any(k in labels for k in ["ios","android","mobile"]): out.append("Mobile")
+    return out or ["PC / Console"]
+
+def load_roblox_games():
+    h = open(os.path.join(ROOT, "index.html"), encoding="utf-8").read()
+    i = h.find("const GAMES = [")
+    if i == -1: return []
+    i += len("const GAMES = ")
+    depth = 0
+    for k in range(i, len(h)):
+        if h[k] == "[": depth += 1
+        elif h[k] == "]":
+            depth -= 1
+            if depth == 0:
+                return json.loads(h[i:k+1])
+    return []
+
 # ---------- rendu : annuaire /games/ ----------
 def build_directory(games):
-    cards = []
-    # carte plateforme Roblox (vertical existant, 178 jeux) -> hub plat existant
-    cards.append('<a class="gcard" href="/tous-les-codes.html">'
-        '<div class="thumb" style="background:linear-gradient(135deg,#ff5f80,#a05cff);display:grid;place-items:center">'
-        '<span style="font-weight:900;font-size:2rem;color:#fff">RB</span>'
-        '<span class="badge">Plateforme</span></div>'
-        '<div class="body"><h3>Roblox</h3><span class="plat">178+ jeux · codes</span>'
-        '<p>Codes, tier lists et guides pour Blox Fruits, Grow a Garden, Steal a Brainrot et 175+ autres jeux Roblox.</p>'
-        '<div class="cta"><span class="btn btn-primary btn-sm">Explorer →</span></div></div></a>')
+    entries = []
+    # jeux standalone (data/games/*.json) — mis en avant
     for g in games:
-        if not g.get("isActive", True):
-            continue
-        badge = "Nouveau" if g.get("isFeatured") else "Jeu"
-        cards.append('<a class="gcard" href="/games/%s/">%s'
-            '<div class="badge" style="position:absolute;top:10px;left:10px">%s</div>'
-            '<div class="body"><h3>%s</h3><span class="plat">%s · %s</span><p>%s</p>'
-            '<div class="cta"><span class="btn btn-primary btn-sm">Voir le hub →</span></div></div></a>' % (
-            g["slug"], cover_html(g, "thumb"), badge, e(g["name"]),
-            e(g.get("platformLabel", "")), e(g.get("genre", "")), e(g.get("shortDescription", ""))))
+        if not g.get("isActive", True): continue
+        plats = platforms_of_standalone(g)
+        genres = derive_genres(g.get("genre", ""))
+        cts = [ct["label"] for ct in g.get("contentTypes", []) if ct["status"] == "available"] or ["Hub"]
+        entries.append({
+            "name": g["name"], "slug": g["slug"], "url": "/games/%s/" % g["slug"],
+            "source": "standalone", "platforms": plats, "genres": genres,
+            "updated": g.get("releaseDate", "0000-00-00"), "new": bool(g.get("isNew") or g.get("isFeatured")),
+            "thumb": None, "accent": g.get("accent", ["#7c5cff","#4d9bff"]),
+            "monogram": g.get("monogram", g["name"][:2].upper()), "cts": cts,
+            "platformLabel": " · ".join(plats), "genreLabel": genres[0] if genres else "",
+        })
+    # jeux Roblox (const GAMES d'index.html)
+    for g in load_roblox_games():
+        cts = ["Codes"] + (["Tier list"] if g.get("tier") else [])
+        entries.append({
+            "name": g["name"], "slug": g["slug"], "url": "/codes-%s.html" % g["slug"],
+            "source": "roblox", "platforms": ["Roblox"], "genres": [g.get("cat","")],
+            "updated": fr_abbr_to_iso(g.get("date","")), "new": g.get("tag") == "new",
+            "hot": g.get("tag") == "hot", "thumb": g.get("thumb"), "cts": cts,
+            "platformLabel": "Roblox", "genreLabel": g.get("cat",""),
+        })
+
+    # options de filtres (uniquement ce qui existe réellement)
+    plat_present = []
+    for p in ["Roblox", "PC / Console", "Mobile"]:
+        if any(p in e["platforms"] for e in entries): plat_present.append(p)
+    genre_present = sorted({g for e in entries for g in e["genres"] if g})
+
+    def card(e):
+        low_name = e["name"].lower().replace('"', "")
+        dp = "|".join(p.lower() for p in e["platforms"])
+        dg = "|".join(g.lower() for g in e["genres"] if g)
+        badge = ""
+        if e.get("new"): badge = '<span class="badge" style="background:linear-gradient(100deg,#7c5cff,#4d9bff)">Nouveau</span>'
+        elif e.get("hot"): badge = '<span class="badge">🔥 Populaire</span>'
+        if e["thumb"]:
+            thumb = ('<div class="thumb"><img src="%s" alt="Miniature %s" loading="lazy" decoding="async" '
+                     'onerror="this.onerror=null;this.src=\'/images/games/%s.svg\'">%s</div>' % (
+                     e["thumb"], e_att(e["name"]), e["slug"], badge))
+        else:
+            a = e.get("accent", ["#7c5cff","#4d9bff"])
+            thumb = ('<div class="thumb" style="background:linear-gradient(135deg,%s,%s);display:grid;place-items:center">'
+                     '<span style="font-weight:900;font-size:1.9rem;color:#fff">%s</span>%s</div>' % (
+                     a[0], a[1], e.get("monogram","?"), badge))
+        cts = "".join("<span>%s</span>" % e_att(c) for c in e["cts"])
+        return ('<a class="gcard" data-name="%s" data-platform="%s" data-genre="%s" data-updated="%s" data-new="%d" href="%s">'
+                '%s<div class="body"><h3>%s</h3><span class="plat">%s · %s</span>'
+                '<span class="cts">%s</span>'
+                '<div class="cta"><span class="btn btn-primary btn-sm">Explorer →</span></div></div></a>') % (
+                e_att(low_name), dp, dg, e["updated"], 1 if e.get("new") else 0, e["url"],
+                thumb, e_att(e["name"]), e_att(e["platformLabel"]), e_att(e["genreLabel"]), cts)
+
+    cards = "".join(card(e) for e in entries)
+
+    def chips(group_id, values):
+        out = ['<button class="chip active" data-val="all">Tous</button>']
+        for v in values:
+            out.append('<button class="chip" data-val="%s">%s</button>' % (e_att(v.lower()), e_att(v)))
+        return '<div class="chips" id="%s">%s</div>' % (group_id, "".join(out))
+
+    toolbar = (
+        '<div class="dir-toolbar">'
+        '<div class="dir-search"><span class="search-ico" aria-hidden="true">🔍</span>'
+        '<label for="gameSearch" class="skip">Rechercher un jeu</label>'
+        '<input id="gameSearch" type="search" placeholder="Blox Fruits, Aniimo, GTA 6…" autocomplete="off"></div>'
+        '<div class="filter-row">'
+        '<div class="filter-group"><span class="flabel">Plateforme</span>%s</div>'
+        '<div class="filter-group"><span class="flabel">Genre</span>%s</div>'
+        '<div class="dir-sort"><label for="sortSel">Trier :</label>'
+        '<select id="sortSel"><option value="recent">Récemment mis à jour</option>'
+        '<option value="az">A → Z</option></select></div>'
+        '</div></div>') % (chips("platChips", plat_present), chips("genreChips", genre_present))
+
     body = (crumb_html([("Accueil", "/"), ("Jeux", None)]) +
-        '<section class="ghero"><div class="info"><h1>Tous les jeux couverts par Zoneblox</h1>'
-        '<p class="prose" style="margin-top:8px">Codes, guides, tier lists et actus, jeu par jeu. '
-        'Roblox reste au cœur de Zoneblox, et de nouveaux jeux rejoignent la plateforme.</p></div></section>'
-        '<div class="grid-cards" style="margin-top:24px">' + "".join(cards) + '</div>')
-    ld = [crumb_ld([("Accueil", "/"), ("Jeux", "/games/")])]
-    htmlp = page("Tous les jeux — Codes, guides & tier lists | Zoneblox",
-        "L'annuaire des jeux couverts par Zoneblox : codes, guides, tier lists et actualités pour Roblox, Aniimo et bientôt d'autres jeux.",
-        SITE + "/games/", body, active="games", extra_ld=ld)
+        '<section class="ghero"><div class="info"><h1>Tous les jeux</h1>'
+        '<p class="prose" style="margin-top:8px">Découvre les jeux couverts par Zoneblox : codes, guides, tier lists, '
+        'bases de données et actualités. Roblox reste au cœur de la plateforme, et de nouveaux jeux la rejoignent.</p></div></section>'
+        + toolbar +
+        '<p class="dir-count" id="dirCount" aria-live="polite"></p>'
+        '<div class="grid-cards" id="gamesGrid">' + cards + '</div>'
+        '<div class="empty-state" id="emptyState" hidden>Aucun jeu ne correspond à ta recherche. '
+        '<button class="chip" onclick="location.reload()">Réinitialiser</button></div>')
+
+    itemlist = json.dumps({"@context": "https://schema.org", "@type": "ItemList",
+        "name": "Jeux couverts par Zoneblox", "numberOfItems": len(entries),
+        "itemListElement": [{"@type": "ListItem", "position": i+1, "name": e["name"], "url": SITE + e["url"]}
+                            for i, e in enumerate(entries)]}, ensure_ascii=False)
+    ld = [itemlist, crumb_ld([("Accueil", "/"), ("Jeux", "/games/")])]
+
+    dir_js = r"""<script>
+(function(){
+  var grid=document.getElementById('gamesGrid');if(!grid)return;
+  var cards=[].slice.call(grid.children);
+  var search=document.getElementById('gameSearch');
+  var countEl=document.getElementById('dirCount');
+  var empty=document.getElementById('emptyState');
+  var sortSel=document.getElementById('sortSel');
+  var state={q:'',plat:'all',genre:'all',sort:'recent'};
+  function group(id,key){var g=document.getElementById(id);if(!g)return;
+    g.addEventListener('click',function(ev){var c=ev.target.closest('.chip');if(!c)return;
+      [].forEach.call(g.querySelectorAll('.chip'),function(x){x.classList.remove('active')});
+      c.classList.add('active');state[key]=c.dataset.val;apply();});}
+  group('platChips','plat');group('genreChips','genre');
+  if(search)search.addEventListener('input',function(){state.q=search.value.trim().toLowerCase();apply();});
+  if(sortSel)sortSel.addEventListener('change',function(e){state.sort=e.target.value;apply();});
+  function apply(){
+    var vis=0;
+    cards.forEach(function(c){
+      var okQ=!state.q||c.dataset.name.indexOf(state.q)>-1;
+      var okP=state.plat==='all'||c.dataset.platform.split('|').indexOf(state.plat)>-1;
+      var okG=state.genre==='all'||c.dataset.genre.split('|').indexOf(state.genre)>-1;
+      var show=okQ&&okP&&okG;c.classList.toggle('hide',!show);if(show)vis++;
+    });
+    var sorted=cards.slice().sort(function(a,b){
+      if(state.sort==='recent')return (b.dataset.updated||'').localeCompare(a.dataset.updated||'')||a.dataset.name.localeCompare(b.dataset.name);
+      return a.dataset.name.localeCompare(b.dataset.name);
+    });
+    sorted.forEach(function(c){grid.appendChild(c);});
+    if(countEl)countEl.textContent=vis+' jeu'+(vis>1?'x':'')+' trouvé'+(vis>1?'s':'');
+    if(empty)empty.hidden=vis>0;
+  }
+  apply();
+})();
+</script>"""
+
+    htmlp = page("Jeux vidéo : codes, guides, tier lists & actualités | Zoneblox",
+        "L'annuaire des jeux couverts par Zoneblox : recherche et filtres pour trouver les codes, guides et tier lists de Roblox, Aniimo et d'autres jeux.",
+        SITE + "/games/", body, active="games", extra_ld=ld, extra_js=dir_js)
     write("games/index.html", htmlp)
+
+    # index JSON réutilisable (recherche globale future)
+    write("data/games-index.json", json.dumps({"generated": datetime.date.today().isoformat(),
+        "count": len(entries), "games": entries}, ensure_ascii=False, indent=1))
     return SITE + "/games/"
 
 # ---------- rendu : hub d'un jeu ----------
@@ -362,7 +510,7 @@ def write(rel, content):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         f.write(content)
-    assert content.rstrip().endswith("</html>") or rel.endswith(".xml"), "sortie tronquée: " + rel
+    assert content.rstrip().endswith("</html>") or rel.endswith((".xml", ".json")), "sortie tronquée: " + rel
     assert content.count("\x00") == 0, "null byte: " + rel
     _written.append(rel)
 

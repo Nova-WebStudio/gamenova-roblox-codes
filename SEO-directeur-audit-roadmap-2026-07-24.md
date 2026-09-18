@@ -4,7 +4,30 @@
 
 ---
 
-## 📌 Dernière brique — J30 (17 septembre 2026)
+## 📌 Dernière brique — J31 (18 septembre 2026)
+
+**Codes (PRIORITÉ) — 2 corrections réelles + hotGames + 11 jeux de rotation vérifiés :**
+- **Be a Fish Bait (rotation, jamais vérifié — correction majeure de faux-actifs)** : nos **8 « codes actifs » étaient TOUS périmés** (BAITAURA, 4000LIKES, 2500CCU, 2000/1500/1000/500LIKES, OFFICIAL) — Pro Game Guides (1er sept.) les liste explicitement en « Inactive ». Remplacés par les **2 vrais actifs HOOLALALA + SHARDS** (PGG + PC Gamer + Beebom). 8→2, 8 déplacés en expirés, compteur hero + body 8→2.
+- **Anime Card Farm (rotation, jamais vérifié)** : notre page affichait **0 code** alors que 4 sont actifs (Dexerto 10 sept. + PGG 1er sept. concordants) → ajout **BRUTALCOMEBACK!, PRODUCTION!, TRAITS!, POTIONS** (TRADING! écarté = source unique Dexerto), compteur 0→4.
+- **hotGames confirmés stables** (« Vérifié le » rafraîchi au 18 sept.) : Grow a Garden (2 exacts — FREESEED/STORY/STARBUD = PGG seul le 17/09 → en `_pending` ; torigate reste expiré car Beebom+PCGamesN concordants), Steal a Brainrot (1), Blue Lock Rivals (3 exacts — SORRYFORNIKODELAY vu en snippet mais absent de la table active PGG → prudence), Volleyball Legends (3), Fisch (3), Anime Vanguards (8).
+- **Rotation confirmés OK (jamais vérifiés, sous-listage acceptable)** : wizard-alchemy (10/10 actifs confirmés), anime-stars (6/6 actifs, Dexerto 2-3 sept.), dig (1 exact, PocketGamer 12 sept.), search-for-the-needle (2 exacts WEATHER/PETS), evomon (4/4 actifs, PGG), encounters (IKES=515 cristaux confirmé RobloxDen), steal-a-fish (ADMINFISH confirmé), dungeon-quest-reborn (0 = pas de système de codes, confirmé), kick-a-lucky-block (0 = pas de système de codes, confirmé). `catalogVerify` mis à jour (11 slugs), « Vérifié le » au 18 sept.
+- **⚠️ À revérifier au prochain run :** **grimoires-era** (aucune source datée 2026 fiable — PCGamesN=2024 périmé ; 4ᵉ report), **bloxstrike** (codes à usages limités MICHAELSRETURN/HAPPYBDAYYUUTO non confirmables sans risque ; SUPERSOAKED probablement expiré), **be-a-brainrot** (conflit : « aucun code actif » vs BRAINROT/RELEASE affichés), **catch-and-tame** (page vide mais ~36 codes actifs — à ENRICHIR), **button-rng-2** (page vide ; pas de liste datée sept. 2026).
+
+**Trending re-scanné (rblxdb/roblox charts 16 sept.) :** #1 Steal An Egg (~1,7M, couvert), leaders evergreen (Grow a Garden, Brookhaven, Rivals, 99 Nights) tous couverts. Aucun nouveau hit ≥4000 non couvert détecté ce run.
+
+**BRIQUE ÉTAPE 2bis = approfondissement du cluster « Search For The Needle » (hit ~38K CCU couvert par sa page codes au J30, mais orphelin de cluster).** → Création de **`guides/search-for-the-needle.html`** (~1 690 mots FR) : intention how-to distincte (« guide / comment jouer / meilleures classes / comment avoir des gemmes / pets ») **≠** l'intention transactionnelle de la page codes → **aucune cannibalisation**. Contenu sourcé ≥2 (Pocket Tactics 17 sept. + Pro Game Guides/games.gg guides débutant & tier list des classes) : boucle de jeu, améliorations Main (Hold/Speed/Grasp) + sac, 8 classes (Pack Mule, Hay Merchant, Forkmaster, Demolitionist, Drone Specialist, Ultimate Farmer…), gemmes, pets (Cow/Dog), 6 astuces, FAQ 4 Q. **EEAT/honnêteté** : byline « L'équipe Zoneblox » + lien politique éditoriale + note d'évolutivité + renvoi wiki officiel ; aucun chiffre inventé. **Schema** Article + BreadcrumbList + FAQPage. **Maillage (anti-orphelin)** : vraie miniature tr.rbxcdn.com, carte hub `guides.html`, `<url>` sitemap.xml, **liens croisés codes ↔ guide** (bouton hero du guide + ajout du bandeau CTA `data-cta="guidelink"` manquant sur la page codes → 📖 Guide complet + 📊 Tier lists). Cache JS inchangé (js/main.js non modifié → reste v=42).
+
+**Prochaine brique recommandée (J32), par ordre de priorité :**
+
+1. **Tier list Search For The Needle** (`tier-list/search-for-the-needle.html`) : classement des 8 classes (S/A/B) sourcé ≥2 (games.gg + wiki) — complète le cluster SFTN (codes ✓ · guide ✓ · tier ✗) ; relier codes ↔ guide ↔ tier + carte hub tier-lists. Ajouter aussi 2 vidéos oEmbed au guide/codes SFTN quand l'accès YouTube est disponible.
+2. **catch-and-tame** : page vide alors que ~36 codes actifs existent (PC Gamer/PGG 8 sept.) — compléter proprement (≥3 sources datées) + regen codes.json.
+3. **grimoires-era** — lever enfin la collision de nom via placeId puis élaguer contre une liste expirée datée (4 reports).
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
+## 📌 Archive — J30 (17 septembre 2026)
 
 ✅ **Sandbox bash de nouveau disponible** → `build_codes_json.py`, `build_sitemap.py`, `node --check`, `git` opérationnels. Régénérations faites ce run.
 
