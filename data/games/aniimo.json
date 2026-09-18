@@ -1,0 +1,33 @@
+{
+  "slug": "aniimo",
+  "name": "Aniimo",
+  "platform": "standalone",
+  "platformLabel": "Multi-plateforme",
+  "publisher": "FunPlus",
+  "developer": null,
+  "genre": "RPG open-world de capture de créatures",
+  "shortDescription": "RPG en monde ouvert où l'on capture et fusionne avec des créatures Aniimo à travers le continent d'Idyll.",
+  "description": "Aniimo est un RPG free-to-play en monde ouvert centré sur la capture de créatures : tu incarnes un Pathfinder dont le but est de capturer, élever et fusionner avec les créatures « Aniimo » en explorant le continent d'Idyll. Le jeu propose un système de codes cadeaux à échanger en jeu.",
+  "releaseDate": "2026-09-16",
+  "releaseNote": "Sortie le 16 septembre 2026 sur PC, PlayStation 5 et Xbox Series X|S ; versions iOS et Android le 23 septembre 2026.",
+  "platforms": ["PC (Steam & Epic)", "PlayStation 5", "Xbox Series X|S", "iOS", "Android"],
+  "status": "released",
+  "officialWebsite": "https://funplus.com/games/aniimo/",
+  "monogram": "AN",
+  "accent": ["#6a8bff", "#35e0a1"],
+  "coverImage": null,
+  "isFeatured": true,
+  "isActive": true,
+  "sourcesNote": "Données de jeu vérifiées via sources officielles et éditoriales (FunPlus, Game8, Pro Game Guides, Beebom, Destructoid, Insider Gaming) au 17 septembre 2026.",
+  "contentTypes": [
+    { "type": "codes",      "label": "Codes",          "icon": "🎁", "status": "available", "blurb": "Codes cadeaux actifs et récompenses, vérifiés." },
+    { "type": "guides",     "label": "Guides",         "icon": "📖", "status": "soon",      "blurb": "Guides débutant, progression et mécaniques." },
+    { "type": "tier-list",  "label": "Tier list",      "icon": "📊", "status": "soon",      "blurb": "Classement des meilleures créatures." },
+    { "type": "creatures",  "label": "Créatures",      "icon": "🐾", "status": "soon",      "blurb": "Base de données des Aniimo : stats, obtention, évolution." },
+    { "type": "items",      "label": "Objets",         "icon": "🎒", "status": "soon",      "blurb": "Objets, ressources et où les trouver." },
+    { "type": "locations",  "label": "Lieux",          "icon": "🗺️", "status": "soon",      "blurb": "Régions d'Idyll et créatures disponibles." },
+    { "type": "builds",     "label": "Équipes",        "icon": "🧩", "status": "soon",      "blurb": "Compositions d'équipe et synergies." },
+    { "type": "updates",    "label": "Mises à jour",   "icon": "🔄", "status": "soon",      "blurb": "Patch notes et nouveautés." },
+    { "type": "news",       "label": "Actualités",     "icon": "📰", "status": "soon",      "blurb": "Annonces et actualités Aniimo." }
+  ]
+}

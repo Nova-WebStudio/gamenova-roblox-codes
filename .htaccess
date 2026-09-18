@@ -26,6 +26,9 @@
   # Ancien hub /codes/ et /codes/index.html -> hub plat
   RewriteRule ^codes/(index\.html)?$ /tous-les-codes.html [R=301,L]
 
+  # Page codes supprimee (aucun codes-paint-and-seek.html) -> guide equivalent, evite un 301 vers 404
+  RewriteRule ^codes/paint-and-seek\.html$ /guides/paint-and-seek.html [R=301,L]
+
   # Generique : tout ancien /codes/<slug>.html -> /codes-<slug>.html
   RewriteRule ^codes/([a-z0-9-]+)\.html$ /codes-$1.html [R=301,L]
 </IfModule>

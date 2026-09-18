@@ -401,11 +401,13 @@
   "volleyball-legends": {
    "lastChecked": "2026-09-02T05:00:00Z",
    "descLen": 293,
-   "descExcerpt": "Update 80 (25/07) : rotation, seuls UPDATE_80/HIDARI_FINALLY/ENCHO_NERF actifs (Roonby+u7buy+nerdschalk).",
+   "descExcerpt": "Update 87 (14/09) : rotation, seuls UPDATE_87/RONIN_RETURN/KATANA actifs (GamesRadar 14/09 + RoCodes + Roonby). UPDATE_86/HAKKA_RETURN/SPIKER expires.",
+   "lastChecked15": "2026-09-15T05:00:00Z",
+   "note0915": "CHANGEMENT 15/09 : Update 87. Actifs UPDATE_87/RONIN_RETURN/KATANA (GamesRadar 14/09 explicite + RoCodes/Roonby). UPDATE_86/HAKKA_RETURN/SPIKER passes expires. 3->3 (rotation). codes.json A REGENERER (bash down).",
    "knownCodes": [
-    "UPDATE_84",
-    "SEASON_18",
-    "PIRATE_SZN"
+    "UPDATE_87",
+    "RONIN_RETURN",
+    "KATANA"
    ],
    "note02": "MAJ 02/07 : update 76 -> 3 codes actifs (UPDATE_76/ENCHO_RETURNS/BALANCE_76). Anciens update 75/saison 16/Jungle expires (RoCodes+Beebom+GamesRadar 01-02/07). Page passee de 9 a 3.",
    "note0706": "Verifie 06/07 : codes coherents avec sources July 2026, aucun changement.",
@@ -420,11 +422,12 @@
   "anime-vanguards": {
    "lastChecked": "2026-09-02T05:00:00Z",
    "descLen": 0,
-   "descExcerpt": "Renouvele a 3 actifs (Holy Retribution, PGG 30/08). Anciens Prepare/1DayDelay/25thHour/LetTheLarpingBegin expires.",
+   "descExcerpt": "CHANGEMENT 15/09 : renouvele a 3 actifs Assault/SummerLeaving/AnniNextHopefully (GamesRadar 14/09 explicite + PocketGamer/PCGamesN/Beebom). MiniUpd2/Wrath/Retribution passes expires. codes.json A REGENERER.",
+   "note0915": "Rotation 15/09. GamesRadar 14/09 liste MiniUpd2/Wrath/Retribution EXPIRES et Assault/SummerLeaving/AnniNextHopefully actifs. Prepare listee active par GamesRadar mais laissee EXPIREE par prudence (conflit avec note anterieure). 3->3.",
    "knownCodes": [
-    "Retribution",
-    "Wrath",
-    "MiniUpd2"
+    "Assault",
+    "SummerLeaving",
+    "AnniNextHopefully"
    ],
    "officialSource": "discord"
   },
@@ -1096,7 +1099,18 @@
   "restants_non_traites": "~90 jeux (de anime-souls-simulator-x a world-cup-album) - chaque page necessite un fetch autoritaire dedie; a poursuivre."
  },
  "catalogVerify": {
-  "fruit-battlegrounds": "2026-09-07",
+  "universal-tower-defense-x": "2026-09-15",
+  "spongebob-tower-defense": "2026-09-15",
+  "weapon-rng": "2026-09-15",
+  "anime-spirits": "2026-09-15",
+  "slime-rng": "2026-09-15",
+  "rng-heroes": "2026-09-15",
+  "anime-squadron": "2026-09-15",
+  "blox-monsters": "2026-09-15",
+  "case-simulator-rng": "2026-09-15",
+  "survive-the-killer": "2026-09-15",
+  "blade-ball": "2026-09-15",
+  "fruit-battlegrounds": "2026-09-15",
   "anime-astral-simulator": "2026-09-10",
   "doors": "2026-09-10",
   "clover-retribution": "2026-09-10",
@@ -1108,14 +1122,14 @@
   "all-star-tower-defense": "2026-09-10",
   "anime-battle-rng": "2026-09-10",
   "driving-empire": "2026-09-10",
-  "blox-fruits": "2026-09-03",
-  "grow-a-garden": "2026-09-07",
-  "steal-a-brainrot": "2026-09-07",
-  "anime-vanguards": "2026-09-07",
-  "blue-lock-rivals": "2026-09-07",
-  "volleyball-legends": "2026-09-07",
+  "blox-fruits": "2026-09-15",
+  "grow-a-garden": "2026-09-15",
+  "steal-a-brainrot": "2026-09-15",
+  "anime-vanguards": "2026-09-15",
+  "blue-lock-rivals": "2026-09-15",
+  "volleyball-legends": "2026-09-15",
   "king-legacy": "2026-09-03",
-  "fisch": "2026-09-03",
+  "fisch": "2026-09-15",
   "pet-simulator-99": "2026-09-03",
   "dragon-blox": "2026-09-10",
   "brainrot-evolution": "2026-09-03",
@@ -1165,7 +1179,33 @@
   "sailor-piece": "2026-09-09T05:10:00Z",
   "peroxide": "2026-09-09T05:10:00Z",
   "untitled-boxing-game": "2026-09-09T05:10:00Z",
-  "slap-battles": "2026-09-09T05:10:00Z"
+  "slap-battles": "2026-09-09T05:10:00Z",
+  "project-slayers": "2026-09-12",
+  "ro-ghoul": "2026-09-12",
+  "dead-rails": "2026-09-12",
+  "combat-warriors": "2026-09-12",
+  "forsaken": "2026-09-12",
+  "the-strongest-battlegrounds": "2026-09-12",
+  "sols-rng": "2026-09-12",
+  "bedwars": "2026-09-12",
+  "fire-force-online": "2026-09-17",
+  "jujutsu-infinite": "2026-09-17",
+  "evade": "2026-09-17",
+  "mad-city": "2026-09-17",
+  "car-crushers-2": "2026-09-17",
+  "anime-story-2": "2026-09-17",
+  "restaurant-tycoon-3": "2026-09-17",
+  "war-tycoon": "2026-09-17",
+  "untitled-attack-on-titan": "2026-09-17",
+  "pressure": "2026-09-17",
+  "sonic-speed-simulator": "2026-09-17",
+  "strongman-simulator": "2026-09-17",
+  "anime-souls-simulator-x": "2026-09-17",
+  "anime-warriors-iii": "2026-09-17",
+  "adopt-me": "2026-09-17",
+  "brookhaven": "2026-09-17",
+  "tower-of-hell": "2026-09-17",
+  "work-at-a-pizza-place": "2026-09-17"
  },
  "_catalogVerifyNote": "Suivi de la ROTATION quotidienne (ETAPE 2ter): date de derniere verif approfondie par slug. Les slugs ABSENTS de cet objet = jamais verifies en profondeur = priorite maximale du prochain lot. Jeux flagges 'a reverifier' laisses ABSENTS expres (a-one-piece-game, anime-adventures, anime-fighters, anime-fighting-simulator, anime-fighting-simulator-reborn, anime-rangers-x, anime-reversal, anime-rift-tower-defense, anime-rng, scroll-a-brainrot, world-fighters, heroes-battlegrounds).",
  "_pending2026-09-05": {
@@ -1248,5 +1288,29 @@
   "anime-expeditions": "A REVERIFIER - nos 10 codes (RELEASE/EA/EA+/AE#1/EXPEDITIONS/100mvisits/100K!/30KLIKES!/HAPPYBDAYCOOP/wfade) sans preuve d'expiration, mais GamesRadar/Dexerto (8 sept) listent des codes recents differents (Eclipse, 250klikes, 8thCompany, expirant 10-12 sept). Page NON modifiee, catalogVerify laisse au 09-03.",
   "a-dusty-trip": "A REVERIFIER - sources en conflit (3 vs 0 actifs), pas de liste datee claire. Page NON modifiee, catalogVerify laisse au 09-03.",
   "hotGames": "Verifies stables 10/09 (>=3 sources/officiel), AUCUN changement de codes: blox-fruits 24 (LIGHTNINGABUSE conflit + 1LOSTADMIN expire NON ajoutes), fisch 3 (SkycrestIsInTheSky conflit NON ajoute), blue-lock-rivals 4 (NELKING/NIKOSOON/UBERSMONTH/SORRYLOADING = PCGamer 10 sept), volleyball-legends 3 (UPDATE_86/HAKKA_RETURN/SPIKER = GamesRadar), anime-vanguards 3 (Retribution/Wrath/MiniUpd2), blade-ball 13, fruit-battlegrounds 2 (sous-listage OK), grow-a-garden 2, steal-a-brainrot 1 (conflit persistant), anime-last-stand 22. Dates 'Verifie le' rafraichies. king-legacy NON revérifié en profondeur ce run (date non touchee)."
+ },
+ "_pending2026-09-12": {
+  "_note": "Run 12/09 (samedi). Sandbox bash TOUJOURS indisponible (mount Plan9 echoue, bug Windows update du 8 sept) -> build_codes_json.py / build_sitemap.py / sync_month.py / node --check / git NON executes. Toutes editions via l'outil Edit (remplacement exact, 0 null byte). AUCUN code change ce run -> codes.json/sitemap non impactes par un changement de codes ; seules des dates 'Verifie le' ont ete rafraichies (sitemap lastmod a regenerer quand bash revient).",
+  "hotGames": "Verifies stables 12/09 (>=3 sources web datees sept 2026), AUCUN changement de codes: volleyball-legends 3 (UPDATE_86/HAKKA_RETURN/SPIKER confirmes GamesRadar; UPDATE_85/SHIRO/BLOCKED tjs en conflit -> non ajoutes), blue-lock-rivals 4 (NELKING/NIKOSOON/UBERSMONTH/SORRYLOADING = PCGamer 11 sept), anime-vanguards 3 (Retribution/Wrath/MiniUpd2 ; Retribution expire 14 sept mais encore actif), fruit-battlegrounds 2 (sous-listage OK, agregats muddled), fisch 3 (scarlet/TemporarySubmarine/CARBON ; SkycrestIsInTheSky tjs expire, HarpoonGunsNextWeek/OllieAndFinWhale = source unique non ajoutes), blade-ball 13 (sous-listage OK, pas de nouveau code), anime-last-stand 22 (liste active = surensemble de la liste source, aucune expiration). Dates 'Verifie le' rafraichies sur ces pages (+ blox-fruits/grow-a-garden/steal-a-brainrot parcourus stables).",
+  "rotation_confirmes_ok": "8 jeux non-hot verifies OK (source datee sept) + 'Verifie le' au 12/09 + catalogVerify MAJ: project-slayers (0 actif, honnete = consensus; 1 source isolee '6 working' ecartee), ro-ghoul (5, sous-listage de ~18 trackes, codes long-lived), dead-rails (0, AUCUN systeme de codes - confirme multi-sources), combat-warriors (0, codes rares/expirent en jours, aucun actif surface), forsaken (0, AUCUN systeme de codes - Alpha), the-strongest-battlegrounds (0, 'codes' = Sound IDs payants, pas de codes-recompense), sols-rng (8, sous-listage de ~14), bedwars (0, AUCUN systeme de redemption).",
+  "rotation_a_reverifier": {
+   "sonic-speed-simulator": "CONFLIT persistant 0 (PT/Beebom 2 sept) vs 5 (Roblox Den 5 sept) + confusion version RE-RAN. Page non touchee.",
+   "mad-city": "CONFLIT 0 (Pocket Gamer 7 sept) vs 6 (Roblox Den) ; notre page = 6 (codes Mad City historiquement permanents). Non touchee par prudence.",
+   "fire-force-online": "COLLISION DE NOM Fire Force Online vs Fire Force Reignition (traitees comme 1 jeu par certaines sources) + donnees contradictoires (LONGAWAITEDUPDATE liste actif ET retire le 2 sept). Desambiguisation requise. Non touchee.",
+   "anime-reborn": "SOUS-LISTE: notre page a 0 actif mais sources (findingdulcinea/fossbytes/tryhardguides 9 sept) confirment ~10 actifs (domainexpansion!/PATCH/Podcastgang!!...). Jeu a rotation rapide. A completer proprement (>=3 sources par code + regen codes.json) quand bash revient -> non ajoute a l'aveugle.",
+   "jujutsu-infinite": "SOUS-LISTE: notre page a 0 actif ; HELLO_JJI/400K_SUBS confirmes >=3 sources (GamesRadar/PocketGamer/PCGamesN/Beebom/PGG) mais codes tres volatils (duree ~jours, actifs 1-9 sept, statut 12 sept incertain). A completer avec regen codes.json quand bash revient.",
+   "dig": "COLLISION DE NOM: resultats contamines par 'Dig and Clean' (jeu different, codes UPDATE1/2/3/SECRET10). Liste DIG propre non isolee. Page non touchee."
+  }
+ },
+ "_pending2026-09-15": {
+  "_note": "Run 15/09 (mardi). Sandbox bash TOUJOURS indisponible (mount Plan9 echoue, bug Windows update 8 sept) -> build_codes_json.py / build_sitemap.py / sync_month.py / node --check / git NON executes. Editions via l'outil Edit (remplacement exact, 0 null byte). DES CODES ONT CHANGE ce run (volleyball-legends, anime-vanguards, anime-squadron) -> data/codes.json A REGENERER quand bash revient (python3 tools/build_codes_json.py) + sitemap lastmod.",
+  "hotGames": "volleyball-legends CHANGE: Update 87, actifs UPDATE_87/RONIN_RETURN/KATANA (GamesRadar 14/09 explicite + RoCodes + Roonby); UPDATE_86/HAKKA_RETURN/SPIKER expires (3->3). anime-vanguards CHANGE: actifs Assault/SummerLeaving/AnniNextHopefully (GamesRadar 14/09 + PocketGamer/PCGamesN/Beebom); MiniUpd2/Wrath/Retribution expires (3->3). Prepare listee active par GamesRadar mais laissee expiree (prudence). blue-lock-rivals INCHANGE (4: NELKING/NIKOSOON/UBERSMONTH/SORRYLOADING = PocketGamer 12/09 servie; set NIKOHERE/GATEKEEPOVER/QOLNEXTWEEK!/SORRYFORNIKODELAY vu en snippet de recherche NON confirme sur page datee -> prudence, en attente). fisch 3 (LittleBudlingUpdate = event deja expire 14/09, non ajoute). blade-ball 13 (aucun nouveau code). fruit-battlegrounds 2 (sous-listage OK). blox-fruits 24, grow-a-garden 2, steal-a-brainrot 1 (stables). king-legacy/pet-simulator-99 non reverifies en profondeur (dates non touchees).",
+  "rotation_confirmes_ok": "10 jeux non-hot traites + 'Verifie le' au 15/09 + catalogVerify MAJ. universal-tower-defense-x (OK sous-listage; DESAMBIGUISATION: notre page = 'Universal Tower Defense Z' anime-univers - codes ArrancarSupremacy!/DBSUpdPatch!/Wano confirmes actifs par Insider Gaming/RoCodes UTD-Z ; PCGamesN 'Universal Tower Defense' = AUTRE jeu (codes hiver, mars 2026) - NE PAS confondre), spongebob-tower-defense (2, GetGudKid confirme actif, sous-listage), weapon-rng (4 UPD6/WEAREBACK/UPD4/GRAVEYARD tous confirmes actifs Roblox Den 14/09, 0 expire; sous-listage de 10), anime-spirits (6, tous confirmes actifs parmi 102 - Pocket Gamer 13/09, sous-listage), slime-rng (11, tous confirmes actifs parmi 22 - 13/09, sous-listage), rng-heroes (2, EasyPotions confirme actif parmi 21, sous-listage), blox-monsters (5, tous confirmes actifs parmi 15 - Insider Gaming 2/09, 0 expire), case-simulator-rng (1 60KLIKES, sous-listage, UPGRADER nouveau non ajoute <3 sources), survive-the-killer (0 actif = HONNETE, confirme 0 code par PocketTactics/Beebom/RobloxDen).",
+  "rotation_CHANGE": "anime-squadron CORRIGE 8->5 actifs. Nos 8 codes (UPD0.5!/Eclipse!/LongMaintenance!/Tysm60kCCU!/50kCCU!/10MilVisits!/Yokoso!/EverythingIsPartOfMyPlan!) etaient des faux-actifs (codes lancement, jeu now Update 4.0). GamesRadar 7/09 liste explicitement 5 de nos 8 en EXPIRES + les 3 autres = codes launch absents de la liste active courante -> tous passes expires. Nouvelle liste active = 10KCCUTHANKS!/CrystalCompensation/UPD4.0!/ThePowerToProtect!/TheCalamity! (GamesRadar 7/09, corrobore PGG UPD4.0). Compteur hero 8->5, changelog MAJ. codes.json A REGENERER.",
+  "rotation_a_reverifier": {
+   "anime-stars": "COLLISION DE NOM/VERSION: notre page = SRRYRIMULE/3KLIKES/1MVISITS/UPDATE1/UPDATE05/ACCESSORIES (codes launch-era). Sources 'Anime Stars' courantes (Dexerto/PGG/Beebom 12/09) = jeu now Update 3.5/4, 4MVISITS, aucun de nos codes dans la liste active NI dans une liste expiree claire. Risque confusion Anime Stars / Anime Stars Simulator / Anime Astral Simulator. Page NON touchee, date NON rafraichie -> desambiguiser via placeId au prochain run.",
+   "evomon": "Nos 4 (SeasonComing/20KMEMBERS/20000LIKES/30K-LIKES, codes milestone) NON confirmes ni dans les 21 actifs (GamesRadar/Pocket Tactics 09) ni en expires clairs. Pas de preuve d'expiration mais pas de confirmation non plus -> date NON rafraichie, a confirmer via liste complete.",
+   "catch-and-tame": "SOUS-LISTE MAJEURE: notre page affiche 'Aucun code' mais 36 codes actifs existent (PC Gamer/PocketTactics/PGG 8/09; MOUNTAINUPDATE/CLOUDUPDATE = plus surs). A COMPLETER proprement (>=3 sources par code + regen codes.json) quand bash revient. Non ajoute a l'aveugle (plusieurs codes 'statut incertain'). Page NON touchee, date NON rafraichie."
+  }
  }
 }

@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://zoneblox.com/sitemap.xml
+Sitemap: https://zoneblox.com/sitemap-games.xml

@@ -4,7 +4,66 @@
 
 ---
 
-## 📌 Dernière brique — J28 (9 septembre 2026)
+## 📌 Dernière brique — J30 (17 septembre 2026)
+
+✅ **Sandbox bash de nouveau disponible** → `build_codes_json.py`, `build_sitemap.py`, `node --check`, `git` opérationnels. Régénérations faites ce run.
+
+**Codes (PRIORITÉ) — 6 corrections/rotations réelles + 18 jeux de rotation vérifiés :**
+- **Blue Lock Rivals (hotGame)** : rotation Niko — nos 4 codes (NELKING/NIKOSOON/UBERSMONTH/SORRYLOADING) désormais TOUS en « Inactive » chez Pro Game Guides (15 sept.). Remplacés par **NIKOHERE/GATEKEEPOVER/QOLNEXTWEEK!** (PGG + GamesRadar 14 sept.), 4 anciens déplacés en expirés, compteur 4→3, changelog corrigé. (La confirmation attendue au J29 est faite.)
+- **Blox Fruits (hotGame)** : `Lightningabuse` déplacé en expiré (Beebom 13 sept. explicite). 24→23.
+- **Anime Vanguards (hotGame)** : ajout de 5 actifs confirmés (Pocket Tactics 16 sept. + GamesRadar) — MiniUpd2, Wrath, Retribution, 1DayDelay, 25thHour. 3→8.
+- **Fire Force Online (rotation, laissé « à revérifier » au J28)** : nos 3 codes (REIGNITION/REIGNITION2/55KLIKES) **tous listés expirés** par Roblox Den (vérif du jour). Remplacés par **MOREFRAMES** (page Roblox officielle) **+ LEAKPATCHED** (≥2 sources) ; ENDGATEKEEP tenu en attente (source unique). 3→2.
+- **Jujutsu Infinite (rotation)** : notre page affichait 0 code alors que **HELLO_JJI** (50 Spins) est actif (PGG 15 sept. « Active (1) » — les 400K_SUBS/JUDGEMAN_REWORK/JUDGE_SOON vus en snippet sont en réalité INACTIFS, piège de conflit évité). 0→1.
+- **Evade (rotation)** : notre page affichait 0 code alors que **HAPPY4THBIRTHDAYEVADE** (40 Points) est actif (GamesRadar/PGG/PocketTactics 8 sept.). 0→1.
+
+**hotGames confirmés stables (sous-listage acceptable, « Vérifié le » rafraîchi au 17 sept.) :** Grow a Garden (2), Steal a Brainrot (1), Blade Ball (13), Volleyball Legends (⚠️ 3 exacts — GamesRadar 14 sept. place UPDATE_86/HAKKA_RETURN/SPIKER/UPDATE_85/SHIRO/BLOCKED en EXPIRÉS, ne pas les rajouter ; snippet de recherche trompeur), Fisch (3 exacts — LittleBudlingUpdate confirmé expiré 14 sept.).
+
+**Rotation confirmés OK (jamais vérifiés, sous-listage acceptable)** : mad-city (6), car-crushers-2 (6), anime-story-2 (17/111), restaurant-tycoon-3 (11/36), war-tycoon (4), untitled-attack-on-titan (6, dont 390k = palier le plus récent), pressure (4), sonic-speed-simulator (8), strongman-simulator (8), anime-souls-simulator-x (3), anime-warriors-iii (0 = pas de système de codes), adopt-me / brookhaven / tower-of-hell / work-at-a-pizza-place (0 = jamais de codes). `catalogVerify` mis à jour (18 slugs), « Vérifié le » au 17 sept.
+
+**⚠️ À revérifier au prochain run :** **grimoires-era** (collision Era / Era 2 / Legacy / Clover — sources datées sept. portent sur d'autres jeux ; désambiguïser via placeId avant tout retrait — 3ᵉ run consécutif de report).
+
+**Trending re-scanné (rblxdb/rolimons 14-17 sept.) :** leaders evergreen couverts. **1 gros hit NON couvert traité** : **Search For The Needle** (~38K joueurs en simultané, pic 85K ; universeId 10756011174 ; Garage Games ; sorti le 23/08). → **BRIQUE ÉTAPE 2bis = création de page ÉTAPE 1** : nouvelle page `codes-search-for-the-needle.html` (1857 mots FR, vraie miniature tr.rbxcdn.com, codes **WEATHER**/**PETS** actifs + ALIEN expiré vérifiés GamesRadar 17 sept., description/mécaniques développées, 6 astuces, FAQ 4 Q, About). Intention distincte (transaction « codes <jeu> »), aucune cannibalisation (aucune page existante). Intégrée partout : carte `index.html` (const GAMES), carte `tous-les-codes.html`, `GAMES_INDEX`+`ROBLOX_THUMBS`+`ROBLOX_UNIVERSE_IDS` (js/main.js, node --check OK), `<url>` sitemap.xml, `data/codes.json` régénéré (179 jeux, 1181 codes). Cache JS bumpé **v=41 → v=42** sur 341 fichiers. ⚠️ Pas de vidéos oEmbed (accès YouTube refusé dans le run non-interactif) — à compléter ; pas encore de guide/tier-list dédiés SFTN.
+
+**Prochaine brique recommandée (J31), par ordre de priorité :**
+
+1. **Compléter Search For The Needle** : ajouter 2 vidéos oEmbed vérifiées quand l'accès YouTube est disponible + créer `tier-list/search-for-the-needle.html` (classes) et/ou `guides/search-for-the-needle.html`, puis lier codes ↔ guide ↔ tier.
+2. **catch-and-tame** (flaggé J28/J29) : notre page affiche « aucun code » alors que ~36 codes existent (PC Gamer/PGG) — compléter proprement + regen codes.json.
+3. **grimoires-era** — lever enfin la collision de nom (placeId) puis élaguer contre une liste expirée datée.
+4. Autre hit trending à surveiller : **Jump for Animals** (~60K, flaggé J29) — créer sa page si momentum confirmé.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
+## 📌 Archive — J29 (15 septembre 2026)
+
+⚠️ **Contexte technique :** sandbox bash toujours indisponible (bug Windows update du 8 sept.) → `build_codes_json.py` / `build_sitemap.py` / `sync_month.py` / `node --check` / `git` **non exécutables**. Toutes les éditions faites via l'outil Edit (remplacement exact, 0 null byte). **`data/codes.json` et les `lastmod` du sitemap sont à régénérer dès le retour de bash** (des codes ont changé ce run).
+
+**Codes (PRIORITÉ — run dominé par 3 rotations/corrections de faux-actifs) :**
+- **Volleyball Legends (hotGame)** : rotation Update 87 — UPDATE_86/HAKKA_RETURN/SPIKER **expirés** (GamesRadar 14 sept. explicite), remplacés par **UPDATE_87/RONIN_RETURN/KATANA** (GamesRadar + RoCodes + Roonby). 3→3.
+- **Anime Vanguards (hotGame)** : rotation — MiniUpd2/Wrath/Retribution **expirés** (GamesRadar 14 sept.), remplacés par **Assault/SummerLeaving/AnniNextHopefully** (GamesRadar + PocketGamer + PCGamesN + Beebom). 3→3.
+- **Anime Squadron (rotation, jamais vérifié — correction majeure de faux-actifs)** : nos **8 « codes actifs » étaient tous périmés** (codes de lancement UPD0.5!/Yokoso!/50kCCU!/10MilVisits!… ; jeu désormais à l'Update 4.0). GamesRadar (7 sept.) liste explicitement 5 des 8 en expirés + les 3 autres absents de la liste active. → **8→5** (10KCCUTHANKS!/CrystalCompensation/UPD4.0!/ThePowerToProtect!/TheCalamity!), 8 déplacés en expirés, compteur hero + changelog corrigés.
+
+**Confirmés stables / sous-listage acceptable :** Blue Lock Rivals (4 : NELKING/NIKOSOON/UBERSMONTH/SORRYLOADING = PocketGamer 12 sept. servie ; set NIKOHERE/GATEKEEPOVER/QOLNEXTWEEK!/SORRYFORNIKODELAY vu en snippet de recherche mais **non confirmé sur une page datée** → prudence, en attente), Fisch (3 ; LittleBudlingUpdate = code d'event déjà expiré 14 sept., non ajouté), Blade Ball (13), Fruit Battlegrounds (2), Blox Fruits (24), Grow a Garden (2), Steal a Brainrot (1). **Rotation confirmés OK (jamais vérifiés)** : universal-tower-defense-x (⚠️ = « Universal Tower Defense **Z** » anime, à ne pas confondre avec le « Universal Tower Defense » de PCGamesN = autre jeu), spongebob-tower-defense (2), weapon-rng (4, Roblox Den 14 sept. 0 expiré), anime-spirits (6/102), slime-rng (11/22), rng-heroes (2/21), blox-monsters (5/15, Insider Gaming 0 expiré), case-simulator-rng (1), survive-the-killer (0 = honnête, confirmé multi-sources).
+
+**⚠️ À revérifier au prochain run :** **anime-stars** (collision de nom/version : nos codes launch-era ≠ liste active courante Update 3.5/4 ; désambiguïser via placeId), **evomon** (nos 4 codes milestone ni confirmés ni infirmés), **catch-and-tame** (notre page affiche « aucun code » mais **36 codes actifs existent** — PC Gamer/PGG 8 sept. — à compléter proprement + regen codes.json quand bash revient).
+
+**Trending re-scanné (rblxdb/roblox charts, 7 sept.) :** #1 **Steal An Egg** (~1,4M, **couvert**), leaders evergreen tous couverts. **2 nouveaux hits NON couverts détectés** : **Jump for Animals** (~60K CCU, live 12 août) et **Search For The Needle** (~36K, 23 août) → candidats prioritaires pour une nouvelle page (ÉTAPE 1) **dès le retour de bash** (thumbnail API + sitemap + codes.json + QC requis).
+
+**Brique ÉTAPE 2bis (EEAT/honnêteté) :** conformément aux runs J26–J28 et vu l'indisponibilité de bash, la brique d'autorité du jour est **l'assainissement des signaux de confiance** (correction Anime Squadron 8→5 faux-actifs + 2 rotations hotGames). **Aucune nouvelle URL créée** : bash étant indisponible, créer une page sans régénérer sitemap/codes.json ni passer le QC serait un demi-travail (choix honnête vs. gonfler le nombre de pages).
+
+**Prochaine brique recommandée (J30), par ordre de priorité :**
+
+1. **Créer les pages des 2 nouveaux hits** — **Jump for Animals** et **Search For The Needle** (≥4000 joueurs, momentum réel, non couverts) selon ÉTAPE 1 (thumbnail tr.rbxcdn.com, ≥1200 mots, intégrations complètes + sitemap + codes.json) **dès que bash est rétabli**.
+2. **catch-and-tame** — compléter la page (aujourd'hui vide) avec la liste active réelle (≥3 sources datées : PC Gamer/PGG/Pocket Tactics 8 sept.) + regen codes.json.
+3. **Tier list Steal an Egg** — « meilleurs pets par revenu/biome » (réconcilier ≥2 sources datées concordantes avant publication ; cluster #1).
+4. **anime-stars / evomon** — finir les 2 slugs « à revérifier » avec liste complète datée + désambiguïsation placeId.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen. (Jump for Animals / Search For The Needle = à traiter en priorité dès bash rétabli.)
+
+---
+
+## 📌 Archive — J28 (9 septembre 2026)
 
 **Codes (PRIORITÉ — run dominé par 8 corrections de faux-actifs, dont 2 majeures) :**
 - **Sailor Piece (rotation, jamais vérifié)** : nos **16 « codes actifs » étaient TOUS périmés** — Pocket Tactics (7 sept.) ne liste plus que **TojiDanteUpdate + Weloveyou** en actifs et place explicitement nos 16 (KINGUPDATEHASARRIVED, RAIDUPDATENOW, GHOULUPDATE, MASTERY, RAIDS, 1B100/200/300MVISITS…) en expirés. Jeu one-piece à fort turnover. → **16→2**, 16 déplacés en expirés, compteur hero + `data/codes.json` corrigés. Correction d'honnêteté majeure.
