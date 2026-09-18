@@ -1,0 +1,38 @@
+{
+  "game": "aniimo",
+  "updated": "2026-09-18",
+  "sources": [
+    {"name": "BlueStacks — Starter Guide", "url": "https://www.bluestacks.com/blog/game-guides/aniimo-beta/ano-best-starter-aniimo-guide-en.html"},
+    {"name": "Mobalytics — Beginner Guide", "url": "https://mobalytics.gg/gamebase/guides/aniimo-beginner-guide"},
+    {"name": "GamingOnPhone — Starter", "url": "https://gamingonphone.com/guides/aniimo-guide-which-starter-aniimo-to-choose/"},
+    {"name": "Prima Games — Evolution", "url": "https://primagames.com/gaming/aniimo-evolution-guide-how-to-evolve-aniimo"},
+    {"name": "games.gg — Tier list & roles", "url": "https://games.gg/aniimo/guides/aniimo-tier-list-best-creatures-ranked-for-every-role/"}
+  ],
+  "guides": [
+    {
+      "slug": "debutant",
+      "title": "Guide débutant Aniimo : bien commencer",
+      "category": "Débutant",
+      "updated": "2026-09-18",
+      "intro": "Aniimo est un RPG en monde ouvert free-to-play centré sur la capture de créatures : tu incarnes un Pathfinder qui explore le continent d'Idyll, capture des Aniimo et fusionne avec eux (le « Twining »). Voici l'essentiel pour bien démarrer, basé sur des sources vérifiées.",
+      "sections": [
+        {"h": "Fais le tutoriel puis suis l'histoire", "p": "Le tutoriel d'ouverture t'apprend la capture et t'introduit au Twining, la mécanique centrale du jeu. Enchaîne ensuite l'histoire principale et les premières quêtes : elles débloquent les systèmes importants et donnent de l'XP et des ressources pour monter ton équipe."},
+        {"h": "Choisir son starter (Helion ou Lunara)", "p": "Les deux starters confirmés par la communauté sont Helion (option offensive, efficace tout de suite) et Lunara (choix plus patient, sur le long terme). Surtout : le programme « welfare » de lancement te laisse choisir un Aniimo rare de forme Prismana en tant que Junior Wayfarer — c'est un choix plus important que le starter, car une forme rare est bien plus difficile à remplacer."},
+        {"h": "Comment capturer un Aniimo (jauge BREAK + Aniipod)", "p": "La capture repose sur deux choses : la jauge BREAK et le bon Aniipod. Attaque la créature jusqu'à briser sa jauge BREAK : une fois cassée, elle devient vulnérable et bien plus facile à capturer. Lance alors ton Aniipod."},
+        {"h": "Capture TOUT, pas seulement les créatures fortes", "p": "L'habitude n°1 en début de partie : capturer tout ce que tu croises. Chaque capture est une forme dans laquelle tu pourras twiner plus tard, et les doublons se convertissent en Experience Gems (pour monter d'autres Aniimo) ou s'échangent avec d'autres joueurs."},
+        {"h": "Les 5 rôles d'équipe", "p": "Chaque Aniimo a un rôle : DPS, Heal (soin), Support, Break, Regen. Une bonne équipe mélange au moins 3 rôles. Le rôle façonne les stats de base : le DPS mise sur l'ATK, le Break sur la jauge BREAK, le Heal sur les PV et la M.DEF, le Regen sur la REGEN."},
+        {"h": "Les 9 éléments et l'efficacité des types", "p": "Il y a 9 éléments : Feu, Eau, Herbe, Foudre, Glace, Terre, Vent, Lumière et Ténèbres. Une attaque inflige 1,6× de dégâts à l'élément qu'elle contre et 0,625× à celui qui lui résiste ; une créature à double type multiplie les deux effets. Compose ton équipe pour couvrir plusieurs éléments."},
+        {"h": "Le Twining : fusionner avec tes créatures", "p": "Le Twining te fait fusionner avec l'un de tes Aniimo : tu prends sa forme, ses compétences, son élément, sa mobilité et son trait. Comme Aniimo n'a pas de système de monture séparé, c'est aussi le Twining qui te sert à te déplacer — planer, plonger ou creuser selon la créature."},
+        {"h": "L'évolution (Lumin → Gamma → Nova)", "p": "L'évolution n'est pas automatique : elle se déclenche dans le menu Aniimo Management (icône en forme de chat avec des flèches vers le haut). Les stades sont Lumin, Gamma puis Nova. Les conditions varient (niveau requis, parfois objectifs ou missions à terminer) et l'évolution change les stats, les compétences et la forme que tu prends en twinant."},
+        {"h": "Lance ton Homeland (homestead) dès le jour 1", "p": "Le système de Homeland et de RV est très important : une fois ton campement lancé, tu accumules plus de ressources et tu accélères les activités qui prennent du temps. Commencer à le bâtir dès le premier jour te donne un énorme avantage sur un joueur qui s'y met plus tard."},
+        {"h": "Une bonne créature précoce : Pawney", "p": "Pawney tourne autour de son grappin, qui s'accroche aux murs, aux arbres et aux ennemis pour les tirer vers toi. Tirer un ennemi ainsi le met en état contrôlé, ce qui le rend bien plus facile à casser avec la compétence Shadow Cut : Pawney est ainsi l'un des Aniimo orientés Break les plus efficaces du début de jeu."}
+      ],
+      "faqs": [
+        {"q": "Aniimo est-il gratuit ?", "a": "Oui, Aniimo est un jeu free-to-play, disponible sur PC (Steam/Epic), PS5 et Xbox Series X|S depuis le 16 septembre 2026, et sur iOS/Android depuis le 23 septembre 2026."},
+        {"q": "Quel starter choisir dans Aniimo ?", "a": "Helion pour un profil offensif immédiat, Lunara pour un choix sur le long terme. Mais le choix vraiment déterminant est l'Aniimo rare de forme Prismana offert par le programme de lancement."},
+        {"q": "Comment capturer une créature ?", "a": "Attaque-la jusqu'à briser sa jauge BREAK, puis lance un Aniipod : une fois la jauge cassée, la créature est vulnérable et bien plus facile à capturer."},
+        {"q": "Comment évoluer un Aniimo ?", "a": "Via le menu Aniimo Management : l'évolution est manuelle et suit les stades Lumin, Gamma puis Nova, avec des conditions de niveau et parfois des objectifs à remplir."}
+      ]
+    }
+  ]
+}

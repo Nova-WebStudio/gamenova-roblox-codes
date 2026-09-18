@@ -1,0 +1,23 @@
+{
+  "game": "aniimo",
+  "updated": "2026-09-18",
+  "confidence": "MEDIUM",
+  "methodology": "Méta de lancement (septembre 2026), établie en croisant plusieurs classements communautaires anglophones (Game8, Pro Game Guides, games.gg, Mobi.gg). Le jeu vient de sortir : cette tier list est indicative et évoluera avec les rééquilibrages. Elle privilégie la polyvalence par rôle plutôt qu'une note absolue.",
+  "sources": [
+    {"name": "Game8 — Aniimo Tier List", "url": "https://game8.co/games/Aniimo/archives/621098"},
+    {"name": "Pro Game Guides — Aniimo Tier List", "url": "https://progameguides.com/tier-lists/aniimo-tier-list-best-aniimo-ranked/"},
+    {"name": "games.gg — Best creatures by role", "url": "https://games.gg/aniimo/guides/aniimo-tier-list-best-creatures-ranked-for-every-role/"},
+    {"name": "Gamezebo — Tier List", "url": "https://www.gamezebo.com/walkthroughs/aniimo-tier-list/"}
+  ],
+  "tiers": [
+    {"label": "S", "color": "#ff5f80", "note": "Les plus performants du lancement, toutes catégories.", "entries": ["Besauce", "Eklue", "Fulmintis", "Geoclaw", "Gracewing", "Helion", "Ignitis", "Inferlupa", "Leafy", "Luminelle", "Lunara", "Somniwing", "Stellarys", "Tubster"]},
+    {"label": "A", "color": "#ffbd4a", "note": "Excellents choix, très solides dans leur rôle.", "entries": ["Dreaple", "Fenmane", "Glacy", "Grizbo", "Helgon", "Melloblum", "Pawney", "Thornblade", "Wisptis"]}
+  ],
+  "rolePicks": [
+    {"role": "DPS", "picks": ["Stellarys", "Fulmintis", "Ignitis", "Coraliz"], "why": "Meilleurs profils de dégâts bruts pour nettoyer les combats et les boss."},
+    {"role": "Heal", "picks": ["Gracewing"], "why": "Considéré comme le meilleur soigneur de la méta : sa compétence Flutter Heal soigne les alliés même hors terrain quand ils utilisent une compétence, retire les debuffs et rend de l'EP."},
+    {"role": "Support", "picks": ["Luminelle", "Somniwing"], "why": "Somniwing apporte sommeil, vulnérabilité, soutien d'EP et une Energy Orb qui booste les dégâts ; sa compétence Ethereal Light Wave absorbe les projectiles ennemis."},
+    {"role": "Break", "picks": ["Inferlupa", "Pawney"], "why": "Spécialistes pour briser la jauge BREAK des cibles et faciliter les captures et les burst."},
+    {"role": "Regen", "picks": ["Somniwing", "Leafy"], "why": "Assurent l'entretien de l'équipe sur la durée."}
+  ]
+}

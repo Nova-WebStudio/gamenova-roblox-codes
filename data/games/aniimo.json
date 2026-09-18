@@ -40,15 +40,22 @@
       "type": "guides",
       "label": "Guides",
       "icon": "📖",
-      "status": "soon",
+      "status": "available",
       "blurb": "Guides débutant, progression et mécaniques."
     },
     {
       "type": "tier-list",
       "label": "Tier list",
       "icon": "📊",
-      "status": "soon",
+      "status": "available",
       "blurb": "Classement des meilleures créatures."
+    },
+    {
+      "type": "videos",
+      "label": "Vidéos",
+      "icon": "🎬",
+      "status": "available",
+      "blurb": "Vidéos francophones : guides et astuces."
     },
     {
       "type": "creatures",

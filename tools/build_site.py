@@ -548,6 +548,149 @@ def build_codes(g, data):
     write("games/%s/codes/index.html" % slug, htmlp)
     return SITE + "/games/%s/codes/" % slug
 
+# ---------- rendu : liens croisés (maillage interne) ----------
+def related_box(g, current):
+    links = ['<a href="/games/%s/">🏠 Hub %s</a>' % (g["slug"], e_att(g["name"]))]
+    icons = {"codes": "🎁", "guides": "📖", "tier-list": "📊", "videos": "🎬", "creatures": "🐾"}
+    for ct in g.get("contentTypes", []):
+        if ct["type"] == current or ct["status"] != "available":
+            continue
+        links.append('<a href="/games/%s/%s/">%s %s</a>' % (g["slug"], ct["type"], icons.get(ct["type"], "•"), e_att(ct["label"])))
+    if current != "videos" and any(ct["type"] == "videos" and ct["status"] == "available" for ct in g.get("contentTypes", [])):
+        pass
+    items = "".join('<a href="%s"><span class="tn" style="background:var(--grad)">→</span><span><div class="rn">%s</div></span></a>'
+                    % (re.search(r'href="([^"]+)"', l).group(1), re.sub(r"<[^>]+>", "", l)) for l in links)
+    return '<div class="box"><h3>Aussi sur %s</h3><div class="related">%s</div></div>' % (e_att(g["name"]), items)
+
+def sources_html(sources):
+    if not sources:
+        return ""
+    return ('<section class="panel"><h2>🔎 Sources</h2><p class="sub">Informations croisées entre plusieurs sources ; vérifie toujours en jeu.</p>'
+            '<div class="prose"><p>' + " · ".join('<a href="%s" rel="nofollow noopener" target="_blank" style="color:var(--primary-2)">%s</a>'
+            % (e_att(s["url"]), e_att(s.get("name", s["url"]))) for s in sources) + '</p></div></section>')
+
+# ---------- rendu : guides ----------
+def build_guides(g, data):
+    slug = g["slug"]
+    guides = data.get("guides", [])
+    urls = []
+    # pages articles
+    for gd in guides:
+        gs = gd["slug"]
+        toc = "".join('<a href="#%s">%s</a>' % (i, e_att(s["h"])) for i, s in
+                      [("s%d" % k, s) for k, s in enumerate(gd.get("sections", []))])
+        secs = "".join('<section class="panel"><h2 id="s%d">%s</h2><p class="prose">%s</p></section>'
+                       % (k, e_att(s["h"]), e_att(s["p"])) for k, s in enumerate(gd.get("sections", [])))
+        faqs = gd.get("faqs", [])
+        faq_html = "".join('<div class="q"><button aria-expanded="false"><span>%s</span><span class="plus">+</span></button>'
+            '<div class="a"><p>%s</p></div></div>' % (e_att(f["q"]), e_att(f["a"])) for f in faqs)
+        faq_ld = json.dumps({"@context": "https://schema.org", "@type": "FAQPage",
+            "mainEntity": [{"@type": "Question", "name": f["q"], "acceptedAnswer": {"@type": "Answer", "text": f["a"]}} for f in faqs]}, ensure_ascii=False)
+        art_ld = json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": gd["title"],
+            "datePublished": gd.get("updated", data.get("updated", "")), "dateModified": gd.get("updated", data.get("updated", "")),
+            "author": {"@type": "Organization", "name": "L'équipe Zoneblox"}}, ensure_ascii=False)
+        body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Guides", "/games/%s/guides/" % slug), (gd["title"], None)]) +
+            '<div class="layout"><div>'
+            '<section class="ghero"><div class="info"><h1>%s</h1><div class="meta">'
+            '<span class="pill">📖 %s</span><span class="pill">🔄 Vérifié le <strong style="color:var(--text);margin-left:4px">%s</strong></span>'
+            '<span class="pill">✍️ Par <a href="/a-propos.html#editorial" style="color:var(--text)">L\'équipe Zoneblox</a></span></div></div></section>'
+            '<p class="prose" style="margin-top:18px">%s</p>'
+            '%s'
+            '%s'
+            '%s'
+            '</div><aside class="side">%s'
+            '<div class="box"><h3>Sur cette page</h3><nav class="toc">%s</nav></div></aside></div>') % (
+            e_att(gd["title"]), e_att(gd.get("category", "Guide")), fr_date(gd.get("updated", "")),
+            e_att(gd.get("intro", "")), secs,
+            ('<section class="panel" id="faq"><h2>❓ Questions fréquentes</h2><div class="faq">%s</div></section>' % faq_html) if faqs else "",
+            sources_html(data.get("sources", [])),
+            related_box(g, "guides"), toc)
+        ld = [art_ld, crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Guides", "/games/%s/guides/" % slug), (gd["title"], "/games/%s/guides/%s/" % (slug, gs))])]
+        if faqs:
+            ld.append(faq_ld)
+        htmlp = page("%s | Zoneblox" % gd["title"],
+            e(gd.get("intro", ""))[:158],
+            SITE + "/games/%s/guides/%s/" % (slug, gs), body, active="games", extra_ld=ld)
+        write("games/%s/guides/%s/index.html" % (slug, gs), htmlp)
+        urls.append(SITE + "/games/%s/guides/%s/" % (slug, gs))
+    # hub guides
+    cards = "".join('<a class="gcard" href="/games/%s/guides/%s/"><div class="body"><h3>%s</h3>'
+        '<span class="plat">%s</span><p>%s</p><div class="cta"><span class="btn btn-primary btn-sm">Lire →</span></div></div></a>'
+        % (slug, gd["slug"], e_att(gd["title"]), e_att(gd.get("category", "Guide")), e_att(gd.get("intro", "")[:110] + "…")) for gd in guides)
+    body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Guides", None)]) +
+        '<section class="ghero"><div class="info"><h1>Guides %s</h1><p class="prose" style="margin-top:8px">'
+        'Nos guides pour débuter et progresser dans %s. De nouveaux guides arrivent au fil des découvertes.</p></div></section>'
+        '<div class="grid-cards" style="margin-top:22px">%s</div>') % (e_att(g["name"]), e_att(g["name"]), cards)
+    ld = [crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Guides", "/games/%s/guides/" % slug)])]
+    htmlp = page("Guides %s — débuter & progresser | Zoneblox" % g["name"],
+        "Tous les guides Zoneblox pour %s : guide débutant, mécaniques, progression. Vérifiés et sourcés." % g["name"],
+        SITE + "/games/%s/guides/" % slug, body, active="games", extra_ld=ld)
+    write("games/%s/guides/index.html" % slug, htmlp)
+    urls.append(SITE + "/games/%s/guides/" % slug)
+    return urls
+
+# ---------- rendu : tier list ----------
+def build_tierlist(g, data):
+    slug = g["slug"]
+    tiers_html = ""
+    for t in data.get("tiers", []):
+        chips = "".join('<span class="pill" style="background:var(--surface-2)">%s</span>' % e_att(x) for x in t.get("entries", []))
+        tiers_html += ('<div style="display:flex;gap:14px;align-items:flex-start;background:var(--bg-2);border:1px solid var(--border);'
+            'border-radius:14px;padding:14px;margin-bottom:12px">'
+            '<span style="flex:none;width:52px;height:52px;border-radius:12px;background:%s;display:grid;place-items:center;'
+            'font-weight:900;font-size:1.5rem;color:#0a0b16">%s</span>'
+            '<div><div style="display:flex;flex-wrap:wrap;gap:6px">%s</div>'
+            '<p style="color:var(--muted);font-size:.82rem;margin-top:6px">%s</p></div></div>') % (
+            e_att(t.get("color", "#7c5cff")), e_att(t["label"]), chips, e_att(t.get("note", "")))
+    roles_html = "".join('<div class="step"><div class="n" style="width:auto;padding:0 10px;font-size:.8rem">%s</div>'
+        '<h3 style="margin-top:8px">%s</h3><p>%s</p></div>' % (e_att(r["role"]), e_att(" · ".join(r["picks"])), e_att(r.get("why", "")))
+        for r in data.get("rolePicks", []))
+    entries = [x for t in data.get("tiers", []) for x in t.get("entries", [])]
+    itemlist = json.dumps({"@context": "https://schema.org", "@type": "ItemList", "name": "Tier list %s" % g["name"],
+        "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": x} for i, x in enumerate(entries)]}, ensure_ascii=False)
+    body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Tier list", None)]) +
+        '<div class="layout"><div>'
+        '<section class="ghero"><div class="info"><h1>Tier list %s : les meilleures créatures</h1><div class="meta">'
+        '<span class="pill">🔄 Vérifié le <strong style="color:var(--text);margin-left:4px">%s</strong></span>'
+        '<span class="pill">✍️ L\'équipe Zoneblox</span></div></div></section>'
+        '<p class="prose" style="margin-top:18px">%s</p>'
+        '<section class="panel"><div class="panel-head"><h2>🏆 Classement</h2></div>%s</section>'
+        '<section class="panel"><div class="panel-head"><h2>🎯 Meilleurs choix par rôle</h2></div>'
+        '<p class="sub">Une bonne équipe mélange au moins 3 rôles (DPS, Heal, Support, Break, Regen).</p>'
+        '<div class="steps">%s</div></section>'
+        '%s'
+        '</div><aside class="side">%s</aside></div>') % (
+        e_att(g["name"]), fr_date(data.get("updated", "")), e_att(data.get("methodology", "")),
+        tiers_html, roles_html, sources_html(data.get("sources", [])), related_box(g, "tier-list"))
+    ld = [itemlist, crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Tier list", "/games/%s/tier-list/" % slug)])]
+    htmlp = page("Tier list %s (%s %d) — meilleures créatures | Zoneblox" % (g["name"], FR_MONTHS[datetime.date.today().month], datetime.date.today().year),
+        "Tier list %s : les meilleures créatures classées et les meilleurs choix par rôle, méta de lancement croisée entre plusieurs sources." % g["name"],
+        SITE + "/games/%s/tier-list/" % slug, body, active="games", extra_ld=ld)
+    write("games/%s/tier-list/index.html" % slug, htmlp)
+    return SITE + "/games/%s/tier-list/" % slug
+
+# ---------- rendu : vidéos ----------
+def build_videos(g, data):
+    slug = g["slug"]
+    cards = ""
+    for v in data.get("videos", []):
+        thumb = "https://i.ytimg.com/vi/%s/hqdefault.jpg" % v["youtubeId"] if v.get("youtubeId") else ""
+        img = ('<div class="thumb"><img src="%s" alt="%s" loading="lazy"><span class="badge">▶ %s</span></div>' % (thumb, e_att(v["title"]), e_att(v.get("category", "Vidéo")))) if thumb else ""
+        cards += ('<a class="gcard" href="%s" rel="nofollow noopener" target="_blank">%s<div class="body"><h3 style="font-size:1rem">%s</h3>'
+            '<span class="plat">%s · YouTube</span><div class="cta"><span class="btn btn-primary btn-sm">Voir sur YouTube →</span></div></div></a>') % (
+            e_att(v["url"]), img, e_att(v["title"]), e_att(v.get("language", "fr").upper()))
+    body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Vidéos", None)]) +
+        '<section class="ghero"><div class="info"><h1>Vidéos %s (français)</h1><p class="prose" style="margin-top:8px">'
+        'Une sélection de vidéos francophones utiles pour %s. %s</p></div></section>'
+        '<div class="grid-cards" style="margin-top:22px">%s</div>') % (
+        e_att(g["name"]), e_att(g["name"]), e_att(data.get("note", "")), cards)
+    ld = [crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Vidéos", "/games/%s/videos/" % slug)])]
+    htmlp = page("Vidéos %s en français — guides & astuces | Zoneblox" % g["name"],
+        "Les meilleures vidéos francophones pour %s : guides débutant, astuces et progression." % g["name"],
+        SITE + "/games/%s/videos/" % slug, body, active="games", extra_ld=ld)
+    write("games/%s/videos/index.html" % slug, htmlp)
+    return SITE + "/games/%s/videos/" % slug
+
 # ---------- IO ----------
 _written = []
 def write(rel, content):
@@ -559,7 +702,7 @@ def write(rel, content):
     assert content.count("\x00") == 0, "null byte: " + rel
     _written.append(rel)
 
-RENDERERS = {"codes": build_codes}
+RENDERERS = {"codes": build_codes, "guides": build_guides, "tier-list": build_tierlist, "videos": build_videos}
 
 def main():
     games = [load_json(p) for p in sorted(glob.glob(os.path.join(ROOT, "data/games/*.json")))]
@@ -573,7 +716,8 @@ def main():
             renderer = RENDERERS.get(ct["type"])
             data_path = os.path.join(ROOT, "data", g["slug"], ct["type"] + ".json")
             if renderer and os.path.exists(data_path):
-                urls.append(renderer(g, load_json(data_path)))
+                res = renderer(g, load_json(data_path))
+                urls += res if isinstance(res, list) else [res]
     # sitemap dédié /games/
     today = datetime.date.today().isoformat()
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',

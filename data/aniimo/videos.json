@@ -1,0 +1,12 @@
+{
+  "game": "aniimo",
+  "updated": "2026-09-18",
+  "note": "Sélection de vidéos francophones trouvées via recherche le 18 septembre 2026. Nous ne les intégrons pas en lecteur intégré (non vérifiées via oEmbed) : chaque carte renvoie directement à la vidéo sur YouTube. Les chaînes appartiennent à leurs créateurs.",
+  "videos": [
+    {"title": "Aniimo : 22 ASTUCES que tu dois savoir pour bien commencer", "youtubeId": "mVUS9OxfmyA", "url": "https://www.youtube.com/watch?v=mVUS9OxfmyA", "language": "fr", "category": "Débutant"},
+    {"title": "Aniimo — N'oubliez pas cela le Jour 1 : astuces pour bien débuter (Guide FR)", "youtubeId": "kk_HyPYRU9w", "url": "https://www.youtube.com/watch?v=kk_HyPYRU9w", "language": "fr", "category": "Débutant"},
+    {"title": "12 astuces à connaître — Aniimo Guide Débutant", "youtubeId": "q6sCY8RBoYo", "url": "https://www.youtube.com/watch?v=q6sCY8RBoYo", "language": "fr", "category": "Astuces"},
+    {"title": "3 astuces pour bien débuter : choix starter, Prismana & rôles", "youtubeId": "rcMpVgivTnk", "url": "https://www.youtube.com/watch?v=rcMpVgivTnk", "language": "fr", "category": "Débutant"},
+    {"title": "Mes conseils pour progresser rapidement — Guide débutant FR", "youtubeId": "j32tErrJQ3I", "url": "https://www.youtube.com/watch?v=j32tErrJQ3I", "language": "fr", "category": "Progression"}
+  ]
+}
