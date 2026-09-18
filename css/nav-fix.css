@@ -1,35 +1,33 @@
 /* ZoneBlox — Correctif de navigation (chargé en dernier, surcharge le CSS inline).
-   Objectif : la barre de nav reste TOUJOURS visible et utilisable, quelle que
-   soit la largeur d'écran et quel que soit le nombre d'entrées (accueil vs pages
-   internes). Corrige la « zone morte » 720–1000px où les liens étaient rognés. */
+   v2. Objectif : la barre de nav ne se chevauche/rogne JAMAIS, à toute largeur.
+   Principe : la recherche disparaît tôt pour laisser la place aux 7 entrées ;
+   en dessous, on bascule sur le menu burger. flex-wrap sert de filet de sécurité. */
 
-/* La nav peut passer sur 2 lignes plutôt que de rogner les entrées.
-   Espacement légèrement compacté pour tenir sur une ligne sur la plupart
-   des écrans portables. */
 header .nav{
   flex-wrap:wrap;
   height:auto;
   min-height:66px;
   row-gap:6px;
   padding:6px 0;
-  gap:12px;
+  gap:10px;
 }
 header .nav-links{
   flex-wrap:wrap;
   row-gap:4px;
   margin-left:4px;
   gap:2px;
+  min-width:0;
 }
-header .nav-links a{white-space:nowrap;padding:8px 11px;font-size:.92rem;}
+header .nav-links a{white-space:nowrap;padding:8px 10px;font-size:.9rem;}
 
-/* La recherche n'est pas essentielle : on la masque avant que ça ne serre trop,
-   ce qui laisse la place aux entrées de menu. */
-@media (max-width:1000px){
+/* La recherche n'est pas essentielle : on la masque tôt pour éviter tout
+   chevauchement des onglets sur les écrans intermédiaires. */
+@media (max-width:1080px){
   header .nav-search{display:none;}
 }
 
-/* Vrai mobile : menu burger. Le menu déroulant reprend toutes les entrées. */
-@media (max-width:720px){
+/* En dessous, la place manque pour 7 onglets : menu burger. */
+@media (max-width:880px){
   header .nav-links{display:none;}
   header .burger{display:block;}
   header .nav{flex-wrap:nowrap;}

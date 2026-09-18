@@ -267,3 +267,11 @@ Pour chaque fichier HTML modifié, vérifier :
 | Nav active correcte | `grep 'class="active"' <fichier>` |
 | data-cta="guidelink" | `grep 'data-cta="guidelink"' <fichier>` (codes pages seulement) |
 | Pas de null bytes | `python3 -c "print(open('<f>','rb').read().count(b'\x00'))"` |
+
+---
+
+## 🎨 Préférences design (Peter) — plateforme multigaming
+
+- **Visuels : PHOTO de préférence.** Pour les couvertures de jeux (cartes featured `/games/`, cartes d'accueil, hero), Peter préfère de **vraies images photo** plutôt que des monogrammes texte (« AN », « RB ») ou des illustrations SVG abstraites. ⚠️ Ne pas hotlinker de visuels officiels copyrightés (Aniimo/Roblox) : utiliser des **images libres de droit** (banques type Unsplash/Pexels, licences libres) téléchargées et hébergées localement dans `images/`, ou des captures/rendus qu'on a le droit d'utiliser. En attendant de vraies photos, des SVG originaux servent de fallback (`images/cover-aniimo.svg`, `images/cover-roblox.svg`).
+- **Barre de nav** : ne jamais laisser les onglets se chevaucher/rogner. Correctif dans `css/nav-fix.css` (recherche masquée ≤1080px, burger ≤880px). **Toujours bumper `nav-fix.css?v=N` ET `platform.css?v=N`** après édition de ces CSS, sinon le cache navigateur sert l'ancienne version (bug de chevauchement constaté).
+- Header uniforme sur toutes les pages (logo image réel + 7 entrées : Accueil · Jeux · Tous les codes · Tier lists · Guides · Avatars · UGC gratuits). « À propos » vit dans le footer, pas dans la nav.
