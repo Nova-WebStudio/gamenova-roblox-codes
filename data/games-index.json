@@ -1,6 +1,6 @@
 {
  "generated": "2026-09-18",
- "count": 175,
+ "count": 176,
  "games": [
   {
    "name": "Aniimo",
@@ -34,6 +34,34 @@
    ],
    "platformLabel": "PC / Console · Mobile",
    "genreLabel": "RPG"
+  },
+  {
+   "name": "FC 27",
+   "slug": "fc-27",
+   "url": "/games/fc-27/",
+   "source": "standalone",
+   "platforms": [
+    "PC / Console"
+   ],
+   "genres": [
+    "Sport"
+   ],
+   "updated": "2026-09-25",
+   "new": true,
+   "thumb": "/images/fc-27/banner.svg",
+   "coverpos": "center",
+   "accent": [
+    "#0a7d3f",
+    "#eafff2"
+   ],
+   "monogram": "FC",
+   "cts": [
+    "Actualités",
+    "Infos & preview",
+    "Trailers"
+   ],
+   "platformLabel": "PC / Console",
+   "genreLabel": "Sport"
   },
   {
    "name": "GTA 6",

@@ -1,0 +1,27 @@
+{
+  "game": "fc-27",
+  "updated": "2026-09-18",
+  "intro": "Le suivi de l'actualité officielle d'EA Sports FC 27 : sortie, éditions, cover stars et trailers. Uniquement du confirmé.",
+  "entries": [
+    {
+      "date": "2026-09-25",
+      "kind": "event",
+      "title": "Sortie mondiale d'EA Sports FC 27",
+      "summary": "EA Sports FC 27 sort le 25 septembre 2026 sur PS5, PS4, Xbox Series, Xbox One, PC, Switch et Switch 2. Accès anticipé dès le 18 septembre (Ultimate/Ultimate Plus), essai 10 h via EA Play et démo gratuite « FC 27 Lite » au lancement.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://www.ea.com/games/ea-sports-fc/fc-27/news/fc-27-editions-and-release-dates"
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "kind": "update",
+      "title": "Reveal Trailer & cover stars : Mbappé et Bellingham",
+      "summary": "EA a dévoilé le trailer de révélation de FC 27 le 23 juillet 2026, présentant « The Grounds », les améliorations de gameplay et la FUT Gallery. Kylian Mbappé (Standard) et Jude Bellingham (avec Mbappé sur l'Ultimate Plus) sont les cover stars.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://news.ea.com/press-releases/press-releases-details/2026/Kylian-Mbapp-and-Jude-Bellingham-Welcome-You-to-EA-SPORTS-FC-27-Launching-Worldwide-on-September-25/default.aspx"
+      ]
+    }
+  ]
+}
