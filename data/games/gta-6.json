@@ -1,0 +1,66 @@
+{
+  "slug": "gta-6",
+  "name": "GTA 6",
+  "platform": "standalone",
+  "platformLabel": "PS5 · Xbox Series",
+  "publisher": "Rockstar Games",
+  "developer": "Rockstar Games",
+  "genre": "Action-aventure / Open world",
+  "shortDescription": "Le prochain Grand Theft Auto, attendu le 19 novembre 2026, dans l'État de Leonida (Vice City).",
+  "description": "Grand Theft Auto VI est le prochain opus de la saga de Rockstar Games. Le jeu se déroule dans l'État fictif de Leonida (la « Floride » de Rockstar) et sa ville phare, Vice City, et suit deux protagonistes, Jason et Lucia. Sur Zoneblox, on suit son actualité et ce qui est officiellement confirmé — sans spéculation déguisée en fait. Codes, guides de gameplay et tier lists arriveront à la sortie du jeu.",
+  "releaseDate": "2026-11-19",
+  "releaseNote": "Sortie prévue le 19 novembre 2026 sur PlayStation 5 et Xbox Series X|S. (Après plusieurs reports : d'abord 2025, puis 26 mai 2026, enfin 19 novembre 2026.)",
+  "platforms": [
+    "PlayStation 5",
+    "Xbox Series X|S"
+  ],
+  "status": "upcoming",
+  "officialWebsite": "https://www.rockstargames.com/VI",
+  "monogram": "G6",
+  "accent": [
+    "#ff5f9e",
+    "#39e6ff"
+  ],
+  "coverImage": "/images/gta-6/banner.svg",
+  "coverPosition": "center",
+  "isFeatured": true,
+  "isActive": true,
+  "sourcesNote": "Informations vérifiées via sources presse et officielles (Rockstar Games, Beebom, SVG, Shacknews, ScreenRant) au 18 septembre 2026. Jeu non sorti : seuls les éléments confirmés sont présentés comme faits.",
+  "contentTypes": [
+    {
+      "type": "updates",
+      "label": "Actualités",
+      "icon": "📰",
+      "status": "available",
+      "blurb": "Date de sortie, trailers, annonces officielles."
+    },
+    {
+      "type": "guides",
+      "label": "Infos & preview",
+      "icon": "📖",
+      "status": "available",
+      "blurb": "Ce qu'on sait : date, lieu, personnages, histoire."
+    },
+    {
+      "type": "videos",
+      "label": "Trailers",
+      "icon": "🎬",
+      "status": "available",
+      "blurb": "Les trailers officiels de Rockstar."
+    },
+    {
+      "type": "codes",
+      "label": "Codes",
+      "icon": "🎁",
+      "status": "soon",
+      "blurb": "À la sortie du jeu (le cas échéant)."
+    },
+    {
+      "type": "tier-list",
+      "label": "Tier list",
+      "icon": "📊",
+      "status": "soon",
+      "blurb": "À la sortie du jeu."
+    }
+  ]
+}

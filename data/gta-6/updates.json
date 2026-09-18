@@ -1,0 +1,39 @@
+{
+  "game": "gta-6",
+  "updated": "2026-09-18",
+  "intro": "Le suivi de l'actualité officielle de GTA 6 : date de sortie, trailers et annonces de Rockstar. Aucune rumeur présentée comme un fait.",
+  "entries": [
+    {
+      "date": "2026-11-19",
+      "kind": "event",
+      "title": "Date de sortie confirmée : 19 novembre 2026",
+      "summary": "Après plusieurs reports (d'abord 2025, puis 26 mai 2026), Rockstar a fixé la sortie de GTA 6 au 19 novembre 2026 sur PlayStation 5 et Xbox Series X|S. C'est la date actuellement verrouillée.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://www.svg.com/2254292/gta-6-launch-guide-release-date-preload-time-price-editions-platforms/",
+        "https://beebom.com/gta-6/"
+      ]
+    },
+    {
+      "date": "2025-05-06",
+      "kind": "update",
+      "title": "Trailer 2 dévoilé — Vice City et l'État de Leonida",
+      "summary": "Rockstar a publié le second trailer de GTA 6, centré sur Jason et Lucia et sur le décor de Vice City / Leonida, tout en présentant plusieurs seconds rôles.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://screenrant.com/gta-6-official-second-trailer/",
+        "https://www.shacknews.com/article/144160/gta-6-trailer-2"
+      ]
+    },
+    {
+      "date": "2023-12-05",
+      "kind": "update",
+      "title": "Trailer 1 : annonce officielle de Grand Theft Auto VI",
+      "summary": "Rockstar a officialisé GTA VI avec un premier trailer d'1 min 31, révélant le retour à Vice City et la protagoniste Lucia.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://www.rockstargames.com/VI"
+      ]
+    }
+  ]
+}

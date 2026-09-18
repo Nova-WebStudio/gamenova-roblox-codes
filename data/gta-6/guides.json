@@ -1,0 +1,68 @@
+{
+  "game": "gta-6",
+  "updated": "2026-09-18",
+  "sources": [
+    "https://beebom.com/gta-6/",
+    "https://www.svg.com/2254292/gta-6-launch-guide-release-date-preload-time-price-editions-platforms/",
+    "https://screenrant.com/gta-6-official-second-trailer/",
+    "https://www.shacknews.com/article/144160/gta-6-trailer-2",
+    "https://www.rockstargames.com/VI"
+  ],
+  "guides": [
+    {
+      "slug": "tout-ce-quon-sait",
+      "title": "GTA 6 : tout ce qu'on sait (date, lieu, personnages)",
+      "category": "Infos & preview",
+      "updated": "2026-09-18",
+      "intro": "Grand Theft Auto VI est l'un des jeux les plus attendus de la décennie. Voici, sans spéculation déguisée en fait, ce qui est officiellement confirmé au 18 septembre 2026 : date de sortie, lieu, personnages, histoire et plateformes. On distingue clairement le confirmé de l'incertain.",
+      "sections": [
+        {
+          "h": "Date de sortie : 19 novembre 2026",
+          "p": "GTA 6 est attendu le 19 novembre 2026 sur PlayStation 5 et Xbox Series X|S. C'est le résultat de plusieurs reports : le Trailer 1 visait 2025, puis la date est passée au 26 mai 2026, avant un dernier report au 19 novembre 2026 (annoncé juste avant le Trailer 2)."
+        },
+        {
+          "h": "Le lieu : l'État de Leonida & Vice City",
+          "p": "Le jeu se déroule dans l'État fictif de Leonida — la version « Floride » de Rockstar — dont la ville phare est Vice City. Le monde inclut des clubs, des marécages, des autoroutes, un arrière-pays rural et des villes satellites : une carte présentée comme la plus grande et la plus détaillée de la série."
+        },
+        {
+          "h": "Les personnages : Jason & Lucia",
+          "p": "Pour la première fois, GTA propose un duo de protagonistes jouables : Jason Duval, ancien militaire qui travaille pour un cartel local, et Lucia Caminos, qui sort tout juste de prison. Leur relation façon « Bonnie & Clyde » est au cœur du jeu."
+        },
+        {
+          "h": "L'histoire",
+          "p": "D'après le site officiel de Rockstar, l'intrigue démarre après « un casse facile qui tourne mal », lançant Jason et Lucia sur un chemin violent vers leur liberté."
+        },
+        {
+          "h": "Le casting secondaire (Trailer 2)",
+          "p": "Le second trailer a présenté plusieurs seconds rôles : Cal Hampton (ami de Jason), la « légende de Vice City » Boobie Ike, le gangster et producteur Dre'Quan Priest, les créatrices virales Bae-Luxe et Roxy (« Real Dimez »), le braqueur expérimenté Raul Bautista et le passeur Brian."
+        },
+        {
+          "h": "Plateformes (et le cas PC)",
+          "p": "Au lancement, GTA 6 est confirmé sur PS5 et Xbox Series X|S. Une version PC n'a PAS été officiellement confirmée pour le lancement : historiquement, Rockstar sort ses jeux sur PC plus tard, mais tant que ce n'est pas annoncé, on ne l'affirme pas."
+        },
+        {
+          "h": "Ce qui reste de la spéculation",
+          "p": "Beaucoup d'éléments qui circulent (carte exacte, prix, contenu du mode en ligne, features précises) ne sont PAS officiellement confirmés. On ne les présente pas comme des faits : on attend les annonces de Rockstar."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Quelle est la date de sortie de GTA 6 ?",
+          "a": "Le 19 novembre 2026, sur PlayStation 5 et Xbox Series X|S, après plusieurs reports (2025 → 26 mai 2026 → 19 novembre 2026)."
+        },
+        {
+          "q": "Où se passe GTA 6 ?",
+          "a": "Dans l'État fictif de Leonida (la « Floride » de Rockstar) et sa ville Vice City, avec clubs, marécages, autoroutes et villes satellites."
+        },
+        {
+          "q": "Qui sont les personnages de GTA 6 ?",
+          "a": "Deux protagonistes jouables : Jason Duval (ex-militaire) et Lucia Caminos (sortie de prison), dans une dynamique de duo criminel."
+        },
+        {
+          "q": "GTA 6 sortira-t-il sur PC ?",
+          "a": "Pas de version PC officiellement confirmée au lancement. Rockstar sort souvent ses jeux sur PC plus tard, mais ce n'est pas annoncé — on ne l'affirme donc pas."
+        }
+      ]
+    }
+  ]
+}

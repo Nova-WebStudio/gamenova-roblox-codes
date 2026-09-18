@@ -1,0 +1,21 @@
+{
+  "game": "gta-6",
+  "updated": "2026-09-18",
+  "note": "Les trailers officiels de Rockstar Games. On renvoie vers les vidéos sur YouTube ; les chaînes appartiennent à Rockstar Games.",
+  "videos": [
+    {
+      "title": "Grand Theft Auto VI — Trailer 1 (officiel)",
+      "youtubeId": "g7jtqwUi9U0",
+      "url": "https://www.youtube.com/watch?v=g7jtqwUi9U0",
+      "language": "en",
+      "category": "Trailer officiel"
+    },
+    {
+      "title": "Grand Theft Auto VI — Trailer 2 (officiel)",
+      "youtubeId": "yAi0MYo5Mzw",
+      "url": "https://www.youtube.com/watch?v=yAi0MYo5Mzw",
+      "language": "en",
+      "category": "Trailer officiel"
+    }
+  ]
+}

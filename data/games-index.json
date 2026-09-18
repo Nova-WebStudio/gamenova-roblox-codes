@@ -1,6 +1,6 @@
 {
  "generated": "2026-09-18",
- "count": 174,
+ "count": 175,
  "games": [
   {
    "name": "Aniimo",
@@ -34,6 +34,34 @@
    ],
    "platformLabel": "PC / Console · Mobile",
    "genreLabel": "RPG"
+  },
+  {
+   "name": "GTA 6",
+   "slug": "gta-6",
+   "url": "/games/gta-6/",
+   "source": "standalone",
+   "platforms": [
+    "PC / Console"
+   ],
+   "genres": [
+    "Aventure"
+   ],
+   "updated": "2026-11-19",
+   "new": true,
+   "thumb": "/images/gta-6/banner.svg",
+   "coverpos": "center",
+   "accent": [
+    "#ff5f9e",
+    "#39e6ff"
+   ],
+   "monogram": "G6",
+   "cts": [
+    "Actualités",
+    "Infos & preview",
+    "Trailers"
+   ],
+   "platformLabel": "PC / Console",
+   "genreLabel": "Aventure"
   },
   {
    "name": "Search For The Needle",
