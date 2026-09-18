@@ -346,3 +346,16 @@ header .nav-links .nav-menu a:hover{background:var(--surface);color:var(--text)}
 .el-up{color:var(--green)}
 .el-dn{color:var(--red)}
 .el-tbc{color:var(--muted-2);font-style:italic}
+
+/* ---------- fiches créatures ---------- */
+.cstats{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px}
+.cstat{background:var(--bg-2);border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center}
+.cstat span{display:block;color:var(--muted-2);font-size:.72rem;text-transform:uppercase;letter-spacing:.04em}
+.cstat strong{font-size:1.25rem;color:var(--text)}
+/* ---------- actualités / updates ---------- */
+.upd-list{display:flex;flex-direction:column;gap:14px;margin-top:6px}
+.upd{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px 20px}
+.upd-head{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px}
+.upd h3{font-size:1.15rem;margin-bottom:6px}
+.upd-src{margin-top:10px;font-size:.8rem;color:var(--muted-2)}
+.upd-src a{color:var(--primary-2)}

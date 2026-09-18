@@ -61,7 +61,7 @@
       "type": "creatures",
       "label": "Créatures",
       "icon": "🐾",
-      "status": "soon",
+      "status": "available",
       "blurb": "Base de données des Aniimo : stats, obtention, évolution."
     },
     {
@@ -89,7 +89,7 @@
       "type": "updates",
       "label": "Mises à jour",
       "icon": "🔄",
-      "status": "soon",
+      "status": "available",
       "blurb": "Patch notes et nouveautés."
     },
     {

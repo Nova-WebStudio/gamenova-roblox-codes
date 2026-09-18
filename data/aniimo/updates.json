@@ -1,0 +1,40 @@
+{
+  "game": "aniimo",
+  "updated": "2026-09-18",
+  "intro": "Le suivi des mises à jour, patchs et évènements d'Aniimo. On ne publie que ce qui est confirmé par une source (notice officielle, patch notes, presse spécialisée) — jamais d'annonce inventée.",
+  "entries": [
+    {
+      "date": "2026-09-16",
+      "kind": "event",
+      "title": "Lancement mondial d'Aniimo",
+      "summary": "Aniimo est sorti le 16 septembre 2026 sur PC (Steam/Epic), PlayStation 5 et Xbox Series X|S (iOS/Android le 23 septembre). La notice d'ouverture a fixé les horaires de serveurs par région et lancé deux évènements du jour 1 : « Set Out, Pathfinder! » (échelle de connexion / check-in) et « Prismana Promise » (une forme Prismana gratuite d'un Aniimo de ton choix).",
+      "confidence": "HIGH",
+      "sources": [
+        "https://www.aniimoverse.com/blog",
+        "https://aniimotools.dev/patch-notes/"
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "kind": "update",
+      "title": "Nouvelles créatures au lancement",
+      "summary": "Trois nouvelles créatures rejoignent Aniimo au lancement — Squarrel, Squashel et Sparkelf — accompagnées de cinq nouvelles formes Prismana.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://aniimotools.dev/articles/",
+        "https://www.aniimoverse.com/blog"
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "kind": "patch",
+      "title": "Patch v1.0.3535596.0 — corrections de lancement",
+      "summary": "Le premier patch corrige des problèmes de dégâts, de déconnexions et d'interface : écrans noirs, entrée Steam, « red glow », dégâts de PNJ manquants et progression perdue. Une mise à jour a aussi levé des blocages de progression dans « Stars and the Knight » et les premières quêtes d'histoire, avec des optimisations visuelles.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://aniimotools.dev/patch-notes/",
+        "https://himeb.com/en/aniimo-bug-troubleshooting/"
+      ]
+    }
+  ]
+}

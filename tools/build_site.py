@@ -615,7 +615,7 @@ def build_codes(g, data):
 # ---------- rendu : liens croisés (maillage interne) ----------
 def related_box(g, current):
     links = ['<a href="/games/%s/">🏠 Hub %s</a>' % (g["slug"], e_att(g["name"]))]
-    icons = {"codes": "🎁", "guides": "📖", "tier-list": "📊", "videos": "🎬", "creatures": "🐾"}
+    icons = {"codes": "🎁", "guides": "📖", "tier-list": "📊", "videos": "🎬", "creatures": "🐾", "locations": "🗺️", "updates": "📰"}
     for ct in g.get("contentTypes", []):
         if ct["type"] == current or ct["status"] != "available":
             continue
@@ -1027,7 +1027,97 @@ def write(rel, content):
     assert content.count("\x00") == 0, "null byte: " + rel
     _written.append(rel)
 
-RENDERERS = {"codes": build_codes, "guides": build_guides, "tier-list": build_tierlist, "videos": build_videos, "locations": build_locations}
+CREA_ROLE_COL = {"DPS": "#ff5f80", "Heal": "#35e0a1", "Support": "#4d9bff", "Break": "#ffbd4a", "Regen": "#9ff0c0"}
+def _crea_chips(c):
+    out = ""
+    if c.get("element"):
+        out += '<span class="pill">%s</span>' % e_att(c["element"])
+    else:
+        out += '<span class="pill" style="opacity:.75">Élément à confirmer</span>'
+    if c.get("role"):
+        out += '<span class="pill" style="background:%s;color:#0a0b16;border:0">%s</span>' % (e_att(CREA_ROLE_COL.get(c["role"], "#7c5cff")), e_att(c["role"]))
+    if c.get("stage"):
+        out += '<span class="pill">%s</span>' % e_att(c["stage"])
+    if c.get("tier"):
+        out += '<span class="pill">Tier %s</span>' % e_att(c["tier"])
+    return out
+
+def build_creatures(g, data):
+    slug = g["slug"]; urls = []
+    cres = data.get("creatures", [])
+    for c in cres:
+        cs = c["slug"]
+        conf = ('<span class="pill">Confiance : %s</span>' % e_att(c["confidence"])) if c.get("confidence") else ""
+        stats = ""
+        if c.get("stats"):
+            rows = "".join('<div class="cstat"><span>%s</span><strong>%s</strong></div>' % (e_att(k), e_att(v)) for k, v in c["stats"].items())
+            stats = '<section class="panel"><div class="panel-head"><h2>📊 Stats de base</h2></div><div class="cstats">%s</div></section>' % rows
+        blocks = ""
+        for label, key in [("🎯 Obtention", "obtention"), ("🧬 Évolution", "evolution"), ("⭐ Utilité", "utilite")]:
+            if c.get(key):
+                blocks += '<section class="panel"><div class="panel-head"><h2>%s</h2></div><p class="prose">%s</p></section>' % (label, e_att(c[key]))
+        if c.get("elementNote"):
+            blocks += '<section class="panel"><p class="sub">ⓘ %s</p></section>' % e_att(c["elementNote"])
+        hero = ghero(g, "%s — Aniimo" % e_att(c["name"]),
+            _crea_chips(c) + conf + ('<span class="pill">🔄 Vérifié le <strong style="color:var(--text);margin-left:4px">%s</strong></span>' % fr_date(data.get("updated", ""))))
+        body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Créatures", "/games/%s/creatures/" % slug), (c["name"], None)])
+            + '<div class="layout"><div>' + hero + stats + blocks + sources_html(c.get("sources", []))
+            + '</div><aside class="side">%s</aside></div>' % related_box(g, "creatures"))
+        ld = [crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Créatures", "/games/%s/creatures/" % slug), (c["name"], "/games/%s/creatures/%s/" % (slug, cs))])]
+        htmlp = page("%s Aniimo — élément, rôle, obtention & évolution | Zoneblox" % c["name"],
+            ("%s dans Aniimo : élément, rôle, comment l'obtenir, évolution et utilité. Fiche vérifiée et sourcée." % c["name"])[:158],
+            SITE + "/games/%s/creatures/%s/" % (slug, cs), body, active="games", extra_ld=ld)
+        write("games/%s/creatures/%s/index.html" % (slug, cs), htmlp)
+        urls.append(SITE + "/games/%s/creatures/%s/" % (slug, cs))
+    cards = "".join('<a class="gcard" href="/games/%s/creatures/%s/"><div class="body"><h3 style="font-size:1.05rem">%s</h3>'
+        '<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:6px">%s</div>'
+        '<div class="cta"><span class="btn btn-primary btn-sm">Voir la fiche →</span></div></div></a>'
+        % (slug, c["slug"], e_att(c["name"]), _crea_chips(c)) for c in cres)
+    hero = ghero(g, "Créatures d'Aniimo : base de données",
+        '<span class="pill">🔄 Vérifié le <strong style="color:var(--text);margin-left:4px">%s</strong></span><span class="pill">%d fiches</span>' % (fr_date(data.get("updated", "")), len(cres)))
+    body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Créatures", None)])
+        + hero + '<p class="prose" style="margin-top:18px">%s</p>' % e_att(data.get("intro", ""))
+        + '<section class="panel"><div class="grid-cards">%s</div>%s</section>' % (cards, ('<p class="sub" style="margin-top:12px">%s</p>' % e_att(data["note"])) if data.get("note") else ""))
+    ld = [crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Créatures", "/games/%s/creatures/" % slug)]),
+          json.dumps({"@context": "https://schema.org", "@type": "ItemList", "name": "Créatures Aniimo",
+              "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": c["name"]} for i, c in enumerate(cres)]}, ensure_ascii=False)]
+    htmlp = page("Créatures Aniimo — base de données (élément, rôle, évolution) | Zoneblox",
+        "La base de créatures Aniimo : élément, rôle, obtention et évolution des meilleurs Aniimo, vérifiés et sourcés.",
+        SITE + "/games/%s/creatures/" % slug, body, active="games", extra_ld=ld)
+    write("games/%s/creatures/index.html" % slug, htmlp)
+    urls.append(SITE + "/games/%s/creatures/" % slug)
+    return urls
+
+def _sources_inline(sources):
+    if not sources:
+        return ""
+    return '<p class="upd-src">Sources : ' + " · ".join(
+        '<a href="%s" rel="nofollow noopener" target="_blank">%s</a>' % (e_att(s), e_att(s.split("//")[-1].split("/")[0])) for s in sources) + '</p>'
+
+def build_updates(g, data):
+    slug = g["slug"]
+    KIND = {"event": "🎉 Évènement", "update": "🆕 Mise à jour", "patch": "🔧 Patch", "admin-abuse": "🛠️ Admin"}
+    items = ""
+    for en in data.get("entries", []):
+        items += ('<article class="upd"><div class="upd-head"><span class="pill">%s</span>'
+            '<span class="pill">📅 %s</span>%s</div><h3>%s</h3><p class="prose">%s</p>%s</article>') % (
+            e_att(KIND.get(en.get("kind"), "Actu")), fr_date(en.get("date", "")),
+            ('<span class="pill">Confiance : %s</span>' % e_att(en["confidence"])) if en.get("confidence") else "",
+            e_att(en["title"]), e_att(en["summary"]), _sources_inline(en.get("sources", [])))
+    hero = ghero(g, "Actualités & mises à jour d'Aniimo",
+        '<span class="pill">🔄 Mis à jour le <strong style="color:var(--text);margin-left:4px">%s</strong></span>' % fr_date(data.get("updated", "")))
+    body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Actualités", None)])
+        + '<div class="layout"><div>' + hero + '<p class="prose" style="margin-top:18px">%s</p>' % e_att(data.get("intro", ""))
+        + '<div class="upd-list">%s</div>' % items
+        + '</div><aside class="side">%s</aside></div>' % related_box(g, "updates"))
+    ld = [crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Actualités", "/games/%s/updates/" % slug)])]
+    htmlp = page("Actualités Aniimo — mises à jour & patch notes | Zoneblox",
+        "Le suivi des mises à jour, patchs et évènements d'Aniimo, vérifiés et sourcés — jamais d'annonce inventée.",
+        SITE + "/games/%s/updates/" % slug, body, active="games", extra_ld=ld)
+    write("games/%s/updates/index.html" % slug, htmlp)
+    return SITE + "/games/%s/updates/" % slug
+
+RENDERERS = {"codes": build_codes, "guides": build_guides, "tier-list": build_tierlist, "videos": build_videos, "locations": build_locations, "creatures": build_creatures, "updates": build_updates}
 
 def main():
     games = [load_json(p) for p in sorted(glob.glob(os.path.join(ROOT, "data/games/*.json")))]
