@@ -21,7 +21,7 @@ import json, os, glob, html, datetime, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://zoneblox.com"
 GA = "G-FEL71QVHNL"
-CSSV = "4"
+CSSV = "5"
 FR_MONTHS = ["", "janvier", "février", "mars", "avril", "mai", "juin", "juillet",
              "août", "septembre", "octobre", "novembre", "décembre"]
 
@@ -63,10 +63,28 @@ NAV_ITEMS = [
 ]
 
 def header(active=""):
-    links = "".join(
-        '<a href="%s"%s>%s</a>' % (href, ' class="active"' if key == active else "", label)
-        for label, href, key in NAV_ITEMS)
-    mobile = "".join('<a href="%s">%s</a>' % (href, label) for label, href, key in NAV_ITEMS)
+    def ac(key):
+        return ' class="active"' if key == active else ""
+    links = (
+        '<a href="/"%s>Accueil</a>' % ac("home")
+        + ('<div class="nav-item"><a href="/tous-les-codes.html"%s>Roblox<span class="nav-caret">▾</span></a>'
+           '<div class="nav-menu"><a href="/tous-les-codes.html">🎁 Tous les codes</a>'
+           '<a href="/tier-lists.html">📊 Tier lists</a><a href="/guides.html">📖 Guides</a></div></div>' % ac("codes"))
+        + '<div class="nav-item"><a href="/games/aniimo/">Aniimo<span class="nav-caret">▾</span></a>'
+          '<div class="nav-menu"><a href="/games/aniimo/codes/">🎁 Codes</a><a href="/games/aniimo/guides/">📖 Guides</a>'
+          '<a href="/games/aniimo/tier-list/">📊 Tier list</a><a href="/games/aniimo/locations/">🗺️ Carte & lieux</a></div></div>'
+        + '<a href="/games/"%s>Tous les jeux</a>' % ac("games")
+        + '<a href="/avatar/"%s>Avatars</a>' % ac("avatars")
+        + '<a href="/ugc-gratuits.html"%s>UGC gratuits</a>' % ac("ugc"))
+    mobile = (
+        '<a href="/">Accueil</a>'
+        '<span class="mob-group">Roblox</span>'
+        '<a href="/tous-les-codes.html">🎁 Tous les codes</a><a href="/tier-lists.html">📊 Tier lists</a><a href="/guides.html">📖 Guides</a>'
+        '<span class="mob-group">Aniimo</span>'
+        '<a href="/games/aniimo/codes/">🎁 Codes</a><a href="/games/aniimo/guides/">📖 Guides</a>'
+        '<a href="/games/aniimo/tier-list/">📊 Tier list</a><a href="/games/aniimo/locations/">🗺️ Carte & lieux</a>'
+        '<span class="mob-group">Plus</span>'
+        '<a href="/games/">Tous les jeux</a><a href="/avatar/">Avatars</a><a href="/ugc-gratuits.html">UGC gratuits</a>')
     return ('<header><div class="wrap"><nav class="nav" aria-label="Navigation principale">'
         '<a href="/" class="brand" aria-label="Zoneblox"><img src="/images/logo-zoneblox.png" alt="Zoneblox — codes Roblox &amp; more" style="height:40px;width:auto;display:block" onerror="this.onerror=null;this.outerHTML=&#39;<span class=&quot;logo&quot;>🎮</span>Zone<span>blox</span>&#39;"></a>'
         '<div class="nav-links">%s</div>'
