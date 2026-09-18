@@ -202,9 +202,14 @@ def build_directory(games):
             "monogram": g.get("monogram", g["name"][:2].upper()), "cts": cts,
             "platformLabel": " · ".join(plats), "genreLabel": genres[0] if genres else "",
         })
+    # types de contenu réellement présents (pour badges data-driven)
+    guide_slugs = {os.path.basename(p)[:-5] for p in glob.glob(os.path.join(ROOT, "guides", "*.html"))}
+    tier_slugs = {os.path.basename(p)[:-5] for p in glob.glob(os.path.join(ROOT, "tier-list", "*.html"))}
     # jeux Roblox (const GAMES d'index.html)
     for g in load_roblox_games():
-        cts = ["Codes"] + (["Tier list"] if g.get("tier") else [])
+        cts = ["Codes"]
+        if g["slug"] in guide_slugs: cts.append("Guides")
+        if g.get("tier") or g["slug"] in tier_slugs: cts.append("Tier list")
         entries.append({
             "name": g["name"], "slug": g["slug"], "url": "/codes-%s.html" % g["slug"],
             "source": "roblox", "platforms": ["Roblox"], "genres": [g.get("cat","")],
@@ -264,10 +269,46 @@ def build_directory(games):
         '<option value="az">A → Z</option></select></div>'
         '</div></div>') % (chips("platChips", plat_present), chips("genreChips", genre_present))
 
+    # ---- Section "À découvrir" (featured : Roblox + jeux standalone) ----
+    roblox_count = sum(1 for e in entries if e["source"] == "roblox")
+    def feat_roblox():
+        return ('<a class="fcard" href="/tous-les-codes.html">'
+            '<div class="fimg" style="background:linear-gradient(135deg,#ff5f80,#a05cff)">'
+            '<span style="font-weight:900;font-size:2.2rem;color:#fff;letter-spacing:-1px">Roblox</span></div>'
+            '<div class="fbody"><h3>Roblox</h3>'
+            '<span style="color:var(--muted);font-size:.85rem">Plateforme · %d jeux</span>'
+            '<span class="ct-list"><span>Codes</span><span>Guides</span><span>Tier lists</span></span>'
+            '<span class="btn btn-primary btn-sm" style="align-self:flex-start;margin-top:6px">Explorer Roblox →</span>'
+            '</div></a>') % roblox_count
+    def feat_standalone(g):
+        plats = platforms_of_standalone(g); genres = derive_genres(g.get("genre", ""))
+        avail = [ct["label"] for ct in g.get("contentTypes", []) if ct["status"] == "available"]
+        soon = [ct["label"] for ct in g.get("contentTypes", []) if ct["status"] == "soon"][:2]
+        ctshtml = ("".join("<span>%s</span>" % e_att(c) for c in avail) +
+                   "".join('<span style="opacity:.5">%s · bientôt</span>' % e_att(c) for c in soon))
+        a = g.get("accent", ["#7c5cff", "#4d9bff"])
+        badge = ('<span class="badge" style="position:absolute;top:12px;left:12px;background:linear-gradient(100deg,#7c5cff,#4d9bff)">Nouveau</span>'
+                 if (g.get("isNew") or g.get("isFeatured")) else "")
+        return ('<a class="fcard" href="/games/%s/">'
+            '<div class="fimg" style="background:linear-gradient(135deg,%s,%s)">%s'
+            '<span style="font-weight:900;font-size:2.2rem;color:#fff;letter-spacing:-1px">%s</span></div>'
+            '<div class="fbody"><h3>%s</h3>'
+            '<span style="color:var(--muted);font-size:.85rem">%s · %s</span>'
+            '<span class="ct-list">%s</span>'
+            '<span class="btn btn-primary btn-sm" style="align-self:flex-start;margin-top:6px">Explorer %s →</span>'
+            '</div></a>') % (g["slug"], a[0], a[1], badge, e_att(g["name"]), e_att(g["name"]),
+                             e_att(" · ".join(plats)), e_att(genres[0] if genres else ""), ctshtml, e_att(g["name"]))
+    featured = feat_roblox() + "".join(feat_standalone(g) for g in games if g.get("isActive", True))
+
     body = (crumb_html([("Accueil", "/"), ("Jeux", None)]) +
         '<section class="ghero"><div class="info"><h1>Tous les jeux</h1>'
-        '<p class="prose" style="margin-top:8px">Découvre les jeux couverts par Zoneblox : codes, guides, tier lists, '
-        'bases de données et actualités. Roblox reste au cœur de la plateforme, et de nouveaux jeux la rejoignent.</p></div></section>'
+        '<p class="prose" style="margin-top:8px">Explore les jeux suivis par Zoneblox et découvre, pour chacun, '
+        'ses codes, guides, tier lists, bases de données et actualités.</p></div></section>'
+        '<div style="margin-top:26px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap">'
+        '<h2 style="font-size:1.4rem">🔥 À découvrir</h2>'
+        '<span style="color:var(--muted-2);font-size:.85rem">Sélection Zoneblox</span></div>'
+        '<div class="featured-grid">' + featured + '</div>'
+        '<h2 style="font-size:1.4rem;margin-top:36px;margin-bottom:4px">🎮 Le catalogue complet</h2>'
         + toolbar +
         '<p class="dir-count" id="dirCount" aria-live="polite"></p>'
         '<div class="grid-cards" id="gamesGrid">' + cards + '</div>'
