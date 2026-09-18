@@ -73,9 +73,9 @@
     },
     {
       "type": "locations",
-      "label": "Lieux",
+      "label": "Carte & lieux",
       "icon": "🗺️",
-      "status": "soon",
+      "status": "available",
       "blurb": "Régions d'Idyll et créatures disponibles."
     },
     {

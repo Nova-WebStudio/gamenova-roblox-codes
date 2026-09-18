@@ -1,0 +1,24 @@
+{
+  "game": "aniimo",
+  "updated": "2026-09-18",
+  "continent": "Idyll",
+  "overview": "Le monde d'Aniimo, le continent d'Idyll, est découpé en régions nommées (environ 14 à 16 selon les sources), chacune avec son climat, son terrain et sa population de créatures. Chaque région a sa propre tranche de niveaux, des régions de départ (Lv. 5) jusqu'à l'extrémité du continent (Lv. 60). En version 1.0, deux grandes zones sont jouables : les Breezy Plains et les Whisperwake Isles.",
+  "spawnMechanic": "Point crucial : les spawns ne sont PAS fixes, ils dépendent de l'environnement. Les Aniimo apparaissent selon la région, la météo, les phénomènes et l'heure du jour. Une même région n'a donc pas une seule table de spawn : certaines créatures ne sortent que le jour, d'autres uniquement la nuit, et d'autres seulement sous la pluie, l'orage, la neige ou le phénomène Prismana Flow. Pour trouver une créature précise, il faut réunir la bonne région ET les bonnes conditions.",
+  "poiTypes": ["Aniimo sauvages", "Coffres", "Œufs", "Aniipods", "Sanctums", "Blooms", "Lumin Amber", "Boss Alpha & Omega", "Transporteurs (voyage rapide)"],
+  "regions": [
+    {"name": "The Breezy Plains", "levelBand": "Lv. 5 (départ)", "terrain": "Plaines herbeuses", "notes": "Première région explorée dans Idyll. On y trouve des Aniimo variés, des Alpha Aniimo, des Pathfinder Challenges et des Lumin Ambers."},
+    {"name": "Whisperwake Isles", "terrain": "Îles / côtier", "notes": "Deuxième grande zone jouable en version 1.0."}
+  ],
+  "regionsNote": "Les autres régions (jusqu'à ~14-16 au total, terrains variés : forêt, hauteurs, terrasses rocheuses, neige) sont dévoilées au fil de la progression. Cette liste sera complétée à mesure que les informations se confirment.",
+  "interactiveMaps": [
+    {"name": "Game8 — Full Interactive Map", "url": "https://game8.co/games/Aniimo/archives/618730"},
+    {"name": "questlog.gg — Aniimo Interactive Map", "url": "https://questlog.gg/aniimo/en/map"},
+    {"name": "MetaBot.GG — Idyll World Map", "url": "https://metabot.gg/en/aniimo/map"},
+    {"name": "AniimoVerse — Interactive Map", "url": "https://www.aniimoverse.com/map"}
+  ],
+  "sources": [
+    {"name": "Game8 — Interactive Map", "url": "https://game8.co/games/Aniimo/archives/618730"},
+    {"name": "Mobalytics — Full Map and Locations", "url": "https://mobalytics.gg/gamebase/guides/aniimo-map"},
+    {"name": "aniimogame.net — Map Guide", "url": "https://aniimogame.net/map-guide/"}
+  ]
+}

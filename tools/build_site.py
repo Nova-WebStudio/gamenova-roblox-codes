@@ -691,6 +691,47 @@ def build_videos(g, data):
     write("games/%s/videos/index.html" % slug, htmlp)
     return SITE + "/games/%s/videos/" % slug
 
+# ---------- rendu : carte & lieux ----------
+def build_locations(g, data):
+    slug = g["slug"]
+    poi = "".join('<span class="pill" style="background:var(--surface-2)">%s</span>' % e_att(x) for x in data.get("poiTypes", []))
+    regions = "".join('<div style="background:var(--bg-2);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px">'
+        '<div style="display:flex;flex-wrap:wrap;gap:8px;align-items:baseline"><h3 style="font-size:1.05rem">%s</h3>'
+        '%s%s</div><p style="color:var(--muted);font-size:.9rem;margin-top:6px">%s</p></div>' % (
+        e_att(r["name"]),
+        ('<span class="pill">📍 %s</span>' % e_att(r["levelBand"])) if r.get("levelBand") else "",
+        ('<span class="pill">%s</span>' % e_att(r["terrain"])) if r.get("terrain") else "",
+        e_att(r.get("notes", ""))) for r in data.get("regions", []))
+    maps = "".join('<a class="gcard" href="%s" rel="nofollow noopener" target="_blank"><div class="body"><h3 style="font-size:1rem">%s</h3>'
+        '<span class="plat">Carte interactive · externe</span><div class="cta"><span class="btn btn-primary btn-sm">Ouvrir la carte →</span></div></div></a>'
+        % (e_att(m["url"]), e_att(m["name"])) for m in data.get("interactiveMaps", []))
+    body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Carte & lieux", None)]) +
+        '<div class="layout"><div>'
+        '<section class="ghero"><div class="info"><h1>Carte & lieux d\'Aniimo : régions d\'Idyll</h1><div class="meta">'
+        '<span class="pill">🔄 Vérifié le <strong style="color:var(--text);margin-left:4px">%s</strong></span>'
+        '<span class="pill">✍️ L\'équipe Zoneblox</span></div></div></section>'
+        '<p class="prose" style="margin-top:18px">%s</p>'
+        '<section class="panel"><div class="panel-head"><h2>🌦️ Comment trouver une créature (spawns par conditions)</h2></div>'
+        '<p class="prose">%s</p></section>'
+        '<section class="panel"><div class="panel-head"><h2>📌 Ce que la carte recense</h2></div>'
+        '<div style="display:flex;flex-wrap:wrap;gap:6px">%s</div></section>'
+        '<section class="panel"><div class="panel-head"><h2>🗺️ Régions connues</h2></div>%s'
+        '<p class="sub" style="margin-top:6px">%s</p></section>'
+        '<section class="panel"><div class="panel-head"><h2>🧭 Cartes interactives (spawns de créatures)</h2></div>'
+        '<p class="sub">Pour l\'emplacement exact des créatures, coffres et boss, ces cartes interactives communautaires sont les plus complètes. '
+        'Zoneblox ne les copie pas : on te renvoie directement vers ces outils.</p>'
+        '<div class="grid-cards">%s</div></section>'
+        '%s'
+        '</div><aside class="side">%s</aside></div>') % (
+        fr_date(data.get("updated", "")), e_att(data.get("overview", "")), e_att(data.get("spawnMechanic", "")),
+        poi, regions, e_att(data.get("regionsNote", "")), maps, sources_html(data.get("sources", [])), related_box(g, "locations"))
+    ld = [crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Carte & lieux", "/games/%s/locations/" % slug)])]
+    htmlp = page("Carte & lieux Aniimo — régions d'Idyll & spawns | Zoneblox",
+        "La carte d'Aniimo : régions d'Idyll, tranches de niveaux et mécanique de spawn (météo, jour/nuit), plus les meilleures cartes interactives pour trouver les créatures.",
+        SITE + "/games/%s/locations/" % slug, body, active="games", extra_ld=ld)
+    write("games/%s/locations/index.html" % slug, htmlp)
+    return SITE + "/games/%s/locations/" % slug
+
 # ---------- IO ----------
 _written = []
 def write(rel, content):
@@ -702,7 +743,7 @@ def write(rel, content):
     assert content.count("\x00") == 0, "null byte: " + rel
     _written.append(rel)
 
-RENDERERS = {"codes": build_codes, "guides": build_guides, "tier-list": build_tierlist, "videos": build_videos}
+RENDERERS = {"codes": build_codes, "guides": build_guides, "tier-list": build_tierlist, "videos": build_videos, "locations": build_locations}
 
 def main():
     games = [load_json(p) for p in sorted(glob.glob(os.path.join(ROOT, "data/games/*.json")))]
