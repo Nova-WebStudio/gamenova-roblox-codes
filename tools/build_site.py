@@ -21,7 +21,7 @@ import json, os, glob, html, datetime, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://zoneblox.com"
 GA = "G-FEL71QVHNL"
-CSSV = "2"
+CSSV = "3"
 FR_MONTHS = ["", "janvier", "février", "mars", "avril", "mai", "juin", "juillet",
              "août", "septembre", "octobre", "novembre", "décembre"]
 
@@ -692,8 +692,138 @@ def build_videos(g, data):
     return SITE + "/games/%s/videos/" % slug
 
 # ---------- rendu : carte & lieux ----------
+AMAP_JS = """
+<script>
+(function(){
+  var svg=document.getElementById('amSvg'); if(!svg) return;
+  var canvas=document.getElementById('amCanvas');
+  var VBW=1000, VBH=680;
+  var st={k:1,x:0,y:0};
+  function clamp(v,a,b){return Math.max(a,Math.min(b,v));}
+  function apply(){
+    st.k=clamp(st.k,1,6);
+    st.x=clamp(st.x,(1-st.k)*VBW,0);
+    st.y=clamp(st.y,(1-st.k)*VBH,0);
+    canvas.setAttribute('transform','translate('+st.x+' '+st.y+') scale('+st.k+')');
+  }
+  function toVB(e){var r=svg.getBoundingClientRect();return {x:(e.clientX-r.left)/r.width*VBW,y:(e.clientY-r.top)/r.height*VBH};}
+  svg.addEventListener('wheel',function(e){e.preventDefault();var p=toVB(e);var f=e.deltaY<0?1.18:1/1.18;var nk=clamp(st.k*f,1,6);var r=nk/st.k;st.x=p.x-r*(p.x-st.x);st.y=p.y-r*(p.y-st.y);st.k=nk;apply();},{passive:false});
+  var drag=null,moved=false;
+  svg.addEventListener('pointerdown',function(e){drag={x:e.clientX,y:e.clientY,ox:st.x,oy:st.y};moved=false;try{svg.setPointerCapture(e.pointerId);}catch(_){}svg.classList.add('am-grab');});
+  svg.addEventListener('pointermove',function(e){if(!drag)return;if(Math.abs(e.clientX-drag.x)+Math.abs(e.clientY-drag.y)>4)moved=true;var r=svg.getBoundingClientRect();st.x=drag.ox+(e.clientX-drag.x)/r.width*VBW;st.y=drag.oy+(e.clientY-drag.y)/r.height*VBH;apply();});
+  function endDrag(){drag=null;svg.classList.remove('am-grab');}
+  svg.addEventListener('pointerup',endDrag);svg.addEventListener('pointercancel',endDrag);
+  function byId(id){return document.getElementById(id);}
+  function on(id,fn){var b=byId(id);if(b)b.addEventListener('click',fn);}
+  on('amIn',function(){st.k=clamp(st.k*1.3,1,6);apply();});
+  on('amOut',function(){st.k=clamp(st.k/1.3,1,6);apply();});
+  on('amReset',function(){st={k:1,x:0,y:0};apply();sel(null);});
+  on('amFull',function(){var w=svg.closest('.am-panel');var rq=w.requestFullscreen||w.webkitRequestFullscreen;if(!document.fullscreenElement&&rq){rq.call(w);}else if(document.exitFullscreen){document.exitFullscreen();}});
+  var det=byId('amDetail');
+  var ICO={};$$('.am-chip').forEach(function(c){ICO[c.dataset.type]=c.querySelector('.am-ico').textContent+' '+c.textContent.trim();});
+  function regionCard(el){
+    var poi=(el.dataset.poi||'').split(',').filter(Boolean);
+    var chips=poi.map(function(t){return '<span class="am-dchip">'+(ICO[t]||t)+'</span>';}).join('');
+    return '<div class="am-dhead"><h3>'+el.dataset.name+'</h3>'+
+      (el.dataset.level?'<span class="pill">📍 '+el.dataset.level+'</span>':'')+
+      (el.dataset.terrain?'<span class="pill">'+el.dataset.terrain+'</span>':'')+'</div>'+
+      '<p>'+el.dataset.spawn+'</p>'+
+      (chips?'<div class="am-dpoi"><span class="am-dpoi-t">Repères présents</span>'+chips+'</div>':'')+
+      '<p class="am-dnote">Positions schématiques — pour l\\'emplacement exact, voir les cartes datamine plus bas.</p>';
+  }
+  function sel(el){
+    $$('.am-region').forEach(function(r){r.classList.toggle('sel',r===el);});
+    if(!el){det.innerHTML='<div class="am-detail-empty"><strong>Clique sur une région</strong><span>ou choisis-la ci-dessus pour voir ses créatures et repères.</span></div>';return;}
+    det.innerHTML=regionCard(el);
+  }
+  $$('.am-region').forEach(function(r){r.addEventListener('click',function(){if(moved)return;sel(r);});});
+  function center(id){
+    var el=svg.querySelector('.am-region[data-id="'+id+'"]');if(!el)return;
+    var b=el.getBBox();var cx=b.x+b.width/2,cy=b.y+b.height/2;
+    st.k=2.2;st.x=VBW/2-st.k*cx;st.y=VBH/2-st.k*cy;apply();sel(el);
+  }
+  $$('.am-jump').forEach(function(j){j.addEventListener('click',function(){center(j.dataset.id);});});
+  $$('.am-chip').forEach(function(c){c.addEventListener('click',function(){
+    c.classList.toggle('off');var off=c.classList.contains('off');
+    $$('.am-poi[data-type="'+c.dataset.type+'"]').forEach(function(p){p.style.display=off?'none':'';});
+  });});
+  var sb=byId('amSearch');
+  if(sb){sb.addEventListener('input',function(){var q=sb.value.toLowerCase().trim();$$('.am-jump').forEach(function(j){j.style.display=j.textContent.toLowerCase().indexOf(q)>=0?'':'none';});});
+  sb.addEventListener('keydown',function(e){if(e.key==='Enter'){var v=$$('.am-jump').find(function(j){return j.style.display!=='none';});if(v)center(v.dataset.id);}});}
+  apply();
+})();
+</script>
+"""
+
+def _build_amap(mp):
+    """Construit la section 'carte interactive' à partir de data['map']. Retourne '' si absent."""
+    if not mp:
+        return ""
+    color_by = {l["type"]: l for l in mp.get("legend", [])}
+    reg_svg = ""
+    for r in mp.get("regions", []):
+        lb = r.get("label", {"x": 0, "y": 0})
+        reg_svg += (
+            f'<path class="am-region" data-id="{e_att(r["id"])}" data-name="{e_att(r["name"])}" '
+            f'data-level="{e_att(r.get("levelBand",""))}" data-terrain="{e_att(r.get("terrain",""))}" '
+            f'data-spawn="{e_att(r.get("spawn",""))}" data-poi="{e_att(",".join(r.get("poi",[])))}" '
+            f'd="{e_att(r["path"])}" fill="{e_att(r["color"])}"></path>'
+            f'<text class="am-rlabel" x="{lb["x"]}" y="{lb["y"]}">{e_att(r["name"])}</text>'
+            f'<text class="am-rsub" x="{lb["x"]}" y="{lb["y"]+20}">{e_att(r.get("levelBand",""))}</text>')
+    un_svg = ""
+    for u in mp.get("unmapped", []):
+        lb = u.get("label", {"x": 0, "y": 0})
+        un_svg += (f'<path class="am-unmapped" d="{e_att(u["path"])}"></path>'
+                   f'<text class="am-ulabel" x="{lb["x"]}" y="{lb["y"]}">{e_att(u["text"])}</text>')
+    mk_svg = ""
+    for m in mp.get("markers", []):
+        li = color_by.get(m["type"], {"icon": "•", "color": "#ffffff"})
+        mk_svg += (f'<g class="am-poi" data-type="{e_att(m["type"])}" transform="translate({m["x"]},{m["y"]})">'
+                   f'<title>{e_att(m.get("label",""))}</title>'
+                   f'<circle class="am-poi-dot" r="14" fill="{e_att(li["color"])}"></circle>'
+                   f'<text class="am-poi-ico" y="1">{e_att(li["icon"])}</text></g>')
+    legend_chips = "".join(
+        f'<button class="am-chip" data-type="{e_att(l["type"])}" style="--c:{e_att(l["color"])}">'
+        f'<span class="am-ico">{e_att(l["icon"])}</span>{e_att(l["label"])}</button>'
+        for l in mp.get("legend", []))
+    jump_chips = "".join(
+        f'<button class="am-jump" data-id="{e_att(r["id"])}">{e_att(r["name"])}</button>'
+        for r in mp.get("regions", []))
+    svg = (
+        f'<svg id="amSvg" viewBox="{e_att(mp.get("viewBox","0 0 1000 680"))}" preserveAspectRatio="xMidYMid meet" '
+        'role="img" aria-label="Carte schématique du continent d&#39;Idyll">'
+        '<defs><radialGradient id="amSea" cx="50%" cy="38%" r="85%">'
+        '<stop offset="0" stop-color="#12305e"></stop><stop offset="1" stop-color="#0a1730"></stop></radialGradient></defs>'
+        '<g id="amCanvas">'
+        '<rect x="-300" y="-300" width="1600" height="1280" fill="url(#amSea)"></rect>'
+        f'<path class="am-land" d="{e_att(mp.get("land",""))}"></path>'
+        f'{un_svg}{reg_svg}{mk_svg}'
+        '</g></svg>')
+    return (
+        '<section class="panel am-panel"><div class="panel-head"><h2>🗺️ Carte interactive d\'Idyll</h2>'
+        '<span class="pill">Schématique</span></div>'
+        f'<p class="sub">{e_att(mp.get("note",""))}</p>'
+        '<div class="am-tools">'
+        '<label class="am-search"><span>🔎</span><input id="amSearch" type="search" placeholder="Chercher une région…" aria-label="Chercher une région"></label>'
+        f'<div class="am-jumps">{jump_chips}</div></div>'
+        '<div class="am-wrap"><div class="am-stage">'
+        f'{svg}'
+        '<div class="am-ctrl">'
+        '<button class="am-btn" id="amIn" aria-label="Zoom avant" title="Zoom avant">+</button>'
+        '<button class="am-btn" id="amOut" aria-label="Zoom arrière" title="Zoom arrière">−</button>'
+        '<button class="am-btn" id="amReset" aria-label="Réinitialiser la vue" title="Réinitialiser">⟳</button>'
+        '<button class="am-btn" id="amFull" aria-label="Plein écran" title="Plein écran">⛶</button></div>'
+        '<div class="am-hint-badge">Glisse pour te déplacer · molette pour zoomer · clique une région</div>'
+        '</div>'
+        '<aside class="am-detail" id="amDetail"><div class="am-detail-empty">'
+        '<strong>Clique sur une région</strong><span>ou choisis-la ci-dessus pour voir ses créatures et repères.</span>'
+        '</div></aside></div>'
+        f'<div class="am-legend"><span class="am-legend-t">Calques :</span>{legend_chips}</div>'
+        '</section>')
+
 def build_locations(g, data):
     slug = g["slug"]
+    map_section = _build_amap(data.get("map"))
     poi = "".join('<span class="pill" style="background:var(--surface-2)">%s</span>' % e_att(x) for x in data.get("poiTypes", []))
     regions = "".join('<div style="background:var(--bg-2);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px">'
         '<div style="display:flex;flex-wrap:wrap;gap:8px;align-items:baseline"><h3 style="font-size:1.05rem">%s</h3>'
@@ -711,24 +841,25 @@ def build_locations(g, data):
         '<span class="pill">🔄 Vérifié le <strong style="color:var(--text);margin-left:4px">%s</strong></span>'
         '<span class="pill">✍️ L\'équipe Zoneblox</span></div></div></section>'
         '<p class="prose" style="margin-top:18px">%s</p>'
+        '%s'
         '<section class="panel"><div class="panel-head"><h2>🌦️ Comment trouver une créature (spawns par conditions)</h2></div>'
         '<p class="prose">%s</p></section>'
         '<section class="panel"><div class="panel-head"><h2>📌 Ce que la carte recense</h2></div>'
         '<div style="display:flex;flex-wrap:wrap;gap:6px">%s</div></section>'
         '<section class="panel"><div class="panel-head"><h2>🗺️ Régions connues</h2></div>%s'
         '<p class="sub" style="margin-top:6px">%s</p></section>'
-        '<section class="panel"><div class="panel-head"><h2>🧭 Cartes interactives (spawns de créatures)</h2></div>'
+        '<section class="panel"><div class="panel-head"><h2>🧭 Cartes datamine communautaires (spawns exacts)</h2></div>'
         '<p class="sub">Pour l\'emplacement exact des créatures, coffres et boss, ces cartes interactives communautaires sont les plus complètes. '
         'Zoneblox ne les copie pas : on te renvoie directement vers ces outils.</p>'
         '<div class="grid-cards">%s</div></section>'
         '%s'
         '</div><aside class="side">%s</aside></div>') % (
-        fr_date(data.get("updated", "")), e_att(data.get("overview", "")), e_att(data.get("spawnMechanic", "")),
+        fr_date(data.get("updated", "")), e_att(data.get("overview", "")), map_section, e_att(data.get("spawnMechanic", "")),
         poi, regions, e_att(data.get("regionsNote", "")), maps, sources_html(data.get("sources", [])), related_box(g, "locations"))
     ld = [crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Carte & lieux", "/games/%s/locations/" % slug)])]
     htmlp = page("Carte & lieux Aniimo — régions d'Idyll & spawns | Zoneblox",
-        "La carte d'Aniimo : régions d'Idyll, tranches de niveaux et mécanique de spawn (météo, jour/nuit), plus les meilleures cartes interactives pour trouver les créatures.",
-        SITE + "/games/%s/locations/" % slug, body, active="games", extra_ld=ld)
+        "La carte d'Aniimo : carte interactive des régions d'Idyll, tranches de niveaux et mécanique de spawn (météo, jour/nuit), plus les meilleures cartes interactives pour trouver les créatures.",
+        SITE + "/games/%s/locations/" % slug, body, active="games", extra_ld=ld, extra_js=AMAP_JS)
     write("games/%s/locations/index.html" % slug, htmlp)
     return SITE + "/games/%s/locations/" % slug
 

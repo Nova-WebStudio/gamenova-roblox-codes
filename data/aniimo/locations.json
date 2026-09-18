@@ -5,6 +5,60 @@
   "overview": "Le monde d'Aniimo, le continent d'Idyll, est découpé en régions nommées (environ 14 à 16 selon les sources), chacune avec son climat, son terrain et sa population de créatures. Chaque région a sa propre tranche de niveaux, des régions de départ (Lv. 5) jusqu'à l'extrémité du continent (Lv. 60). En version 1.0, deux grandes zones sont jouables : les Breezy Plains et les Whisperwake Isles.",
   "spawnMechanic": "Point crucial : les spawns ne sont PAS fixes, ils dépendent de l'environnement. Les Aniimo apparaissent selon la région, la météo, les phénomènes et l'heure du jour. Une même région n'a donc pas une seule table de spawn : certaines créatures ne sortent que le jour, d'autres uniquement la nuit, et d'autres seulement sous la pluie, l'orage, la neige ou le phénomène Prismana Flow. Pour trouver une créature précise, il faut réunir la bonne région ET les bonnes conditions.",
   "poiTypes": ["Aniimo sauvages", "Coffres", "Œufs", "Aniipods", "Sanctums", "Blooms", "Lumin Amber", "Boss Alpha & Omega", "Transporteurs (voyage rapide)"],
+  "map": {
+    "viewBox": "0 0 1000 680",
+    "note": "Carte schématique originale Zoneblox du continent d'Idyll : positions indicatives, pas à l'échelle. Les régions et les repères sont placés à titre illustratif — pour les coordonnées exactes des spawns de créatures, coffres et boss, utilise les cartes datamine communautaires listées plus bas.",
+    "land": "M120,190 C185,95 345,75 470,115 C565,80 700,92 785,175 C905,225 935,365 850,470 C825,565 690,615 560,592 C470,632 330,622 250,560 C140,520 80,400 112,300 C96,252 100,220 120,190 Z",
+    "regions": [
+      {
+        "id": "breezy",
+        "name": "The Breezy Plains",
+        "levelBand": "Lv. 5 (départ)",
+        "terrain": "Plaines herbeuses",
+        "color": "#5fbf86",
+        "path": "M175,250 C230,205 345,205 405,250 C455,292 445,385 382,415 C310,448 218,436 178,382 C147,342 147,292 175,250 Z",
+        "label": {"x": 292, "y": 330},
+        "poi": ["wild", "alpha", "challenge", "lumin", "transporter"],
+        "spawn": "Première région d'Idyll. Aniimo variés selon la météo et l'heure ; on y croise des Alpha Aniimo, des Pathfinder Challenges et des Lumin Ambers.",
+        "verified": true
+      },
+      {
+        "id": "whisperwake",
+        "name": "Whisperwake Isles",
+        "levelBand": "à confirmer",
+        "terrain": "Îles / côtier",
+        "color": "#3aa6c9",
+        "path": "M600,430 C665,408 745,420 775,462 C805,504 762,565 690,564 C628,568 578,522 590,470 C593,455 596,442 600,430 Z",
+        "label": {"x": 686, "y": 494},
+        "poi": ["wild", "transporter"],
+        "spawn": "Deuxième grande zone jouable en version 1.0 (archipel côtier). Population de créatures et conditions précises à confirmer.",
+        "verified": true
+      }
+    ],
+    "unmapped": [
+      {
+        "path": "M472,116 C575,86 705,96 786,176 C888,222 918,330 862,420 C826,368 764,330 694,330 C662,308 660,256 620,244 C560,222 520,180 476,152 C462,138 464,122 472,116 Z",
+        "label": {"x": 700, "y": 235},
+        "text": "Régions à venir · Lv. 15–60 (non cartographiées)"
+      }
+    ],
+    "markers": [
+      {"type": "transporter", "x": 300, "y": 320, "region": "breezy", "label": "Transporteur (voyage rapide)"},
+      {"type": "wild", "x": 258, "y": 300, "region": "breezy", "label": "Aniimo sauvages (variés)"},
+      {"type": "alpha", "x": 352, "y": 278, "region": "breezy", "label": "Alpha Aniimo (mini-boss)"},
+      {"type": "challenge", "x": 238, "y": 366, "region": "breezy", "label": "Pathfinder Challenge"},
+      {"type": "lumin", "x": 342, "y": 372, "region": "breezy", "label": "Lumin Amber (ressource)"},
+      {"type": "wild", "x": 676, "y": 486, "region": "whisperwake", "label": "Aniimo sauvages (côtiers)"},
+      {"type": "transporter", "x": 712, "y": 508, "region": "whisperwake", "label": "Transporteur (voyage rapide)"}
+    ],
+    "legend": [
+      {"type": "wild", "label": "Aniimo sauvages", "icon": "🐾", "color": "#5fbf86"},
+      {"type": "alpha", "label": "Boss Alpha", "icon": "⚔️", "color": "#ff5f80"},
+      {"type": "challenge", "label": "Pathfinder Challenges", "icon": "🚩", "color": "#4d9bff"},
+      {"type": "lumin", "label": "Lumin Amber", "icon": "🔶", "color": "#ffd54a"},
+      {"type": "transporter", "label": "Transporteurs", "icon": "🧭", "color": "#35e0a1"}
+    ]
+  },
   "regions": [
     {"name": "The Breezy Plains", "levelBand": "Lv. 5 (départ)", "terrain": "Plaines herbeuses", "notes": "Première région explorée dans Idyll. On y trouve des Aniimo variés, des Alpha Aniimo, des Pathfinder Challenges et des Lumin Ambers."},
     {"name": "Whisperwake Isles", "terrain": "Îles / côtier", "notes": "Deuxième grande zone jouable en version 1.0."}
