@@ -471,6 +471,23 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding:44px 0 30px;ba
   <div style="display:grid;grid-template-columns:1.7fr 1fr;gap:16px"><a href="/guides/blox-fruits.html" style="position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:300px;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.08)"><img src="https://tr.rbxcdn.com/180DAY-e1ce51abae5188805c3fee78ec7f4d08/480/270/Image/Webp/noFilter" alt="Blox Fruits : le guide complet pour progresser" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,8,16,.15) 30%,rgba(7,8,16,.92))"></div><div style="position:relative;padding:22px"><span style="font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#4d9bff">Guide · Roblox</span><h3 style="font-size:1.5rem;line-height:1.15;margin:6px 0 6px;color:#fff">Blox Fruits : le guide complet pour progresser</h3><p style="color:#c7cbe6;font-size:.92rem;margin:0">Races, fruits, façons de farmer vite et méthodes pour débloquer les meilleures capacités.</p></div></a><div style="display:flex;flex-direction:column;gap:16px"><a href="/games/aniimo/" style="display:flex;gap:0;background:#121427;border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;min-height:92px;transition:.15s" onmouseover="this.style.borderColor='#7c5cff'" onmouseout="this.style.borderColor='rgba(255,255,255,.08)'"><img src="/images/hero-bg.webp" alt="Aniimo" loading="lazy" style="object-position:right center;width:82px;flex:none;object-fit:cover;align-self:stretch"><span style="padding:12px 14px;display:flex;flex-direction:column;justify-content:center"><span style="font-size:.68rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#4d9bff">Nouveau · Aniimo</span><span style="font-weight:600;font-size:.95rem;color:#eef0ff;line-height:1.25">Aniimo : codes cadeaux vérifiés & hub dédié</span></span></a><a href="/codes-search-for-the-needle.html" style="display:flex;gap:0;background:#121427;border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;min-height:92px;transition:.15s" onmouseover="this.style.borderColor='#7c5cff'" onmouseout="this.style.borderColor='rgba(255,255,255,.08)'"><img src="https://tr.rbxcdn.com/180DAY-19a201f37929cac782ac0b884693b6d7/768/432/Image/Png/noFilter" alt="Search For The Needle : codes du moment" loading="lazy" style="width:82px;flex:none;object-fit:cover"><span style="padding:12px 14px;display:flex;flex-direction:column;justify-content:center"><span style="font-size:.68rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#4d9bff">Codes · Roblox</span><span style="font-weight:600;font-size:.95rem;color:#eef0ff;line-height:1.25">Search For The Needle : codes du moment</span></span></a><a href="/guides/anime-vanguards.html" style="display:flex;gap:0;background:#121427;border:1px solid rgba(255,255,255,.08);border-radius:14px;overflow:hidden;min-height:92px;transition:.15s" onmouseover="this.style.borderColor='#7c5cff'" onmouseout="this.style.borderColor='rgba(255,255,255,.08)'"><img src="https://tr.rbxcdn.com/180DAY-cb38398e8a1315ca4046f168c7504d6b/480/270/Image/Webp/noFilter" alt="Anime Vanguards : débuter & meilleures unités" loading="lazy" style="width:82px;flex:none;object-fit:cover"><span style="padding:12px 14px;display:flex;flex-direction:column;justify-content:center"><span style="font-size:.68rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#4d9bff">Guide · Roblox</span><span style="font-weight:600;font-size:.95rem;color:#eef0ff;line-height:1.25">Anime Vanguards : débuter & meilleures unités</span></span></a></div></div>
 </section>
 
+<style>
+.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.news-card{display:flex;flex-direction:column;background:#121427;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden;transition:.15s;color:inherit;text-decoration:none}
+.news-card:hover{border-color:#7c5cff;transform:translateY(-3px)}
+.news-thumb{position:relative;aspect-ratio:16/9;overflow:hidden;background:#191c33}
+.news-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.news-tag{position:absolute;top:10px;left:10px;background:rgba(10,11,22,.82);border:1px solid rgba(255,255,255,.16);font-size:.7rem;font-weight:700;padding:3px 9px;border-radius:999px;color:#fff}
+.news-body{padding:12px 14px}
+.news-body h3{font-size:1.02rem;margin:0 0 3px;line-height:1.25}
+.news-date{color:#9aa0c6;font-size:.8rem}
+</style>
+<!-- ============ DERNIÈRES MISES À JOUR ============ -->
+<section class="block wrap" id="derniers-articles">
+  <div class="sec-head"><div><h2>🗞️ Dernières mises à jour</h2><p>Le dernier contenu vérifié pour chaque jeu — clique l'image pour l'ouvrir.</p></div><a class="more" href="/games/">Voir tous les jeux →</a></div>
+  <div class="news-grid" id="latestGrid"></div>
+</section>
+
 <!-- ============ CHOISIS TON JEU (multigaming) ============ -->
 <section class="block wrap" id="platforms-pick">
   <div class="sec-head"><div><h2>🧭 Explorer les jeux</h2><p>Zoneblox n'est pas que Roblox : codes, guides et tier lists pour plusieurs jeux. Clique pour explorer.</p></div><a class="btn btn-ghost btn-sm" href="/games/" style="white-space:nowrap">Tous les jeux →</a></div>
@@ -789,6 +806,18 @@ function renderGrid(){
 }
 
 /* ---------------- RENDER: A-Z ---------------- */
+function renderLatest(){
+  var grid=document.getElementById('latestGrid'); if(!grid)return;
+  var M={'janv.':1,'févr.':2,'mars':3,'avr.':4,'mai':5,'juin':6,'juil.':7,'août':8,'sept.':9,'oct.':10,'nov.':11,'déc.':12};
+  function ts(d){var m=(d||'').match(/(\d{1,2})\s+(\S+)\s+(\d{4})/);if(!m)return 0;return new Date(+m[3],(M[m[2]]||1)-1,+m[1]).getTime();}
+  var list=[...GAMES].sort(function(a,b){return ts(b.date)-ts(a.date);}).slice(0,9);
+  grid.innerHTML=list.map(function(g){
+    return '<a class="news-card" href="codes-'+g.slug+'.html" aria-label="Codes '+g.name+'">'+
+      '<div class="news-thumb"><img src="'+g.thumb+'" alt="Miniature '+g.name+'" loading="lazy" decoding="async" onerror="this.onerror=null;this.src=\'/images/games/'+g.slug+'.svg\'"><span class="news-tag">🎁 Codes</span></div>'+
+      '<div class="news-body"><h3>'+g.name+'</h3><span class="news-date">Mis à jour le '+g.date+'</span></div></a>';
+  }).join('');
+}
+
 function renderAZ(){
   if(!document.getElementById('azLinks'))return;
   const uniq=[...GAMES].sort((a,b)=>a.name.localeCompare(b.name,'fr'));
@@ -889,7 +918,7 @@ $("#burger").addEventListener('click',()=>{
 $$('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>{$("#mobileMenu").classList.remove('open');$("#burger").textContent='☰';}));
 
 /* ---------------- INIT ---------------- */
-renderToday();renderCats();renderGrid();renderAZ();
+renderToday();renderCats();renderGrid();renderLatest();renderAZ();
 wireSearch('#navSearch','#navSuggest');
 wireSearch('#heroSearch','#heroSuggest');
 $("#mobSearch")&&$("#mobSearch").addEventListener('input',e=>{currentQuery=e.target.value;renderGrid();$$('#navSearch,#heroSearch').forEach(o=>o.value=e.target.value);});
