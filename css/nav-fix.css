@@ -34,7 +34,10 @@ header .nav-links a{white-space:nowrap;padding:8px 10px;font-size:.9rem;}
 }
 
 /* Menu mobile déroulant : lisible et cliquable */
-header .mobile-menu.open{display:flex;}
+@media (max-width:880px){
+  header .mobile-menu{display:none;flex-direction:column;gap:4px;padding:10px 0 16px;border-top:1px solid var(--border,rgba(255,255,255,.10))}
+  header .mobile-menu.open{display:flex}
+}
 header .mobile-menu a{padding:12px 10px;border-radius:10px;}
 header .mobile-menu a:hover{background:var(--surface-2,#191c33);color:var(--text,#eef0ff);}
 
