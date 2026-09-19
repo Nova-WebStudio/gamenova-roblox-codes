@@ -4,6 +4,27 @@
 
 ---
 
+## 📌 Dernière brique — J32 (19 septembre 2026)
+
+**Codes (PRIORITÉ) — hotGames + rotation, plusieurs corrections réelles de faux-actifs :**
+- **hotGames (7 vérifiés, 3 modifiés)** : Anime Last Stand **22→3 actifs** (Destructoid 15 sept. + Pro Game Guides 1er sept. concordants : seuls MagicKnights!, ElfReincarnation!, IsItReallyWeekly?! actifs ; Beebom = outlier périmé écarté) → 19 codes déplacés en expirés ; King Legacy **7→9** (+RainbowDragon, +2MFAV, confirmés Pocket Tactics 18 sept. + PC Gamer) ; Blade Ball **13→15** (+GOODVSEVIL, +DUNGEONSRELEASE, GamesRadar 18 sept. + Beebom concordants ; SERPENT gardé malgré conflit GR actif/Beebom expiré = source récente prioritaire). Blox Fruits (23), Grow a Garden (2), Steal a Brainrot (1), Fruit Battlegrounds (2) confirmés stables, « Vérifié le » au 19 sept.
+- **Rotation (jamais vérifiés — 5 traités, 6 flaggés)** : **Iron Soul Dungeon** correction MAJEURE — nos 11 « actifs » TOUS périmés (Pocket Tactics 12 sept. + Beebom 18 sept. concordants) → rebâtie sur les 23 actifs confirmés par les 2 sources (11→23) ; **Bloxstrike** SUPERSOAKED périmé (Beebom) → +MICHAELSRETURN/HAPPYBDAYYUUTO/LORE/RIANOMINATED2026 (1→4) ; **Catch and Tame** page vide → +PLUSHIECODE +FISHINGCLAW (Pocket Tactics 15 sept., 0→2) ; **Dig and Clean** +UPDATE3 (3→4) ; **Fish an Anime RNG** confirmé OK (sous-listage). `catalogVerify` MAJ (5 slugs).
+- **À revérifier** (source unique/ambiguë) : grimoires-era (Era vs Era 2), twenty-one (19995 vs 1999), survive-zombie-arena, spin-a-brainrot, be-a-brainrot (conflit « aucun code » vs BRAINROT/RELEASE), button-rng-2.
+
+**BRIQUE ÉTAPE 2bis = clôture du cluster « Search For The Needle » (codes ✓ · guide ✓ · tier ✗ → ✓).** Création de **`tier-list/search-for-the-needle.html`** (~2 320 mots FR) : classement des 10 classes S→D (Ultimate Farmer, The Chosen One, Demolitionist, Drone Specialist, Forkmaster, Pack Mule, Hay Merchant, Hoover, Prospector, Starter) avec taux de drop, explications, stratégie Gems, conseils débutants, FAQ 6 Q. Intention *classement* distincte du guide *how-to* et des codes *transactionnels* → **aucune cannibalisation**. Sourcé ≥2 datés : **Beebom (11 sept.)** + **games.gg (14 sept.)** ; « The Chosen One » & « Hoover » attribués explicitement à games.gg (plus récent), aucune valeur inventée. **EEAT** : byline « L'équipe Zoneblox » + politique éditoriale ; note d'évolutivité + renvoi menu Classes en jeu. **Schema** ItemList (10) + BreadcrumbList + FAQPage. **Maillage (anti-orphelin)** : vraie miniature tr.rbxcdn.com (réutilisée de la page codes), carte hub `tier-lists.html`, `<url>` sitemap.xml, **liens croisés codes ↔ guide ↔ tier** (bouton CTA guidelink de la page codes + bouton hero du guide pointent désormais vers la tier list dédiée). Cache JS inchangé (v=42).
+
+**Trending re-scanné :** leaders evergreen tous couverts ; aucun nouveau hit ≥4000 non couvert détecté ce run.
+
+**Prochaine brique recommandée (J33), par ordre de priorité :**
+
+1. **Ajouter 2 vidéos oEmbed vérifiées** au guide et/ou à la page codes Search For The Needle (cluster complet mais sans vidéo) — enrichit l'EEAT et l'information gain.
+2. **Value/trading list** (GAG pets ou Blox Fruits) uniquement si la maintenance quotidienne des valeurs (≥2 sources datées) est tenable.
+3. **Enrichir la verticale Aniimo** (nouvelle fiche créature/objet ou guide d'intention) via les JSON de `data/aniimo/` puis build_site.py.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
 ## 📌 Dernière brique — J31 (18 septembre 2026)
 
 **Codes (PRIORITÉ) — 2 corrections réelles + hotGames + 11 jeux de rotation vérifiés :**

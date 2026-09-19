@@ -893,39 +893,41 @@
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
   "lastRun": {
-    "date": "2026-09-18",
-    "iso": "2026-09-18T05:00:00Z",
+    "date": "2026-09-19",
+    "iso": "2026-09-19T05:00:00Z",
     "hotGamesVerified": [
       "grow-a-garden",
       "steal-a-brainrot",
-      "blue-lock-rivals",
-      "volleyball-legends",
-      "fisch",
-      "anime-vanguards"
+      "blox-fruits",
+      "blade-ball",
+      "king-legacy",
+      "fruit-battlegrounds",
+      "anime-last-stand"
     ],
-    "hotGamesChanged": [],
+    "hotGamesChanged": [
+      "blade-ball",
+      "king-legacy",
+      "anime-last-stand"
+    ],
     "rotationVerified": [
-      "wizard-alchemy",
-      "anime-stars",
-      "dig",
-      "search-for-the-needle",
-      "evomon",
-      "encounters",
-      "steal-a-fish",
-      "dungeon-quest-reborn",
-      "kick-a-lucky-block",
-      "anime-card-farm",
-      "be-a-fish-bait"
+      "dig-and-clean",
+      "iron-soul-dungeon",
+      "bloxstrike",
+      "catch-and-tame",
+      "fish-an-anime-rng"
     ],
     "rotationChanged": [
-      "anime-card-farm",
-      "be-a-fish-bait"
+      "dig-and-clean",
+      "iron-soul-dungeon",
+      "bloxstrike",
+      "catch-and-tame"
     ],
     "rotationARevoir": [
       "grimoires-era",
-      "bloxstrike",
+      "twenty-one",
+      "survive-zombie-arena",
+      "spin-a-brainrot",
       "be-a-brainrot",
-      "catch-and-tame",
       "button-rng-2"
     ]
   },
@@ -1005,7 +1007,7 @@
     "a-prioriser-prochain-run": "Fruit Battlegrounds (paliers + OPE V2), Anime Last Stand (liste active exacte), Fisch (fluide), + long tail. Ficher Anime Origins & +1 Speed Keyboard Escape avec Chrome."
   },
   "meta": {
-    "updated": "2026-09-18T05:00:00Z"
+    "updated": "2026-09-19T05:00:00Z"
   },
   "_pending2026-08-29": {
     "grow-a-garden": {
@@ -1215,7 +1217,12 @@
     "dungeon-quest-reborn": "2026-09-18T05:00:00Z",
     "kick-a-lucky-block": "2026-09-18T05:00:00Z",
     "anime-card-farm": "2026-09-18T05:00:00Z",
-    "be-a-fish-bait": "2026-09-18T05:00:00Z"
+    "be-a-fish-bait": "2026-09-18T05:00:00Z",
+    "dig-and-clean": "2026-09-19",
+    "iron-soul-dungeon": "2026-09-19",
+    "bloxstrike": "2026-09-19",
+    "catch-and-tame": "2026-09-19",
+    "fish-an-anime-rng": "2026-09-19"
   },
   "_catalogVerifyNote": "Suivi de la ROTATION quotidienne (ETAPE 2ter): date de derniere verif approfondie par slug. Les slugs ABSENTS de cet objet = jamais verifies en profondeur = priorite maximale du prochain lot. Jeux flagges 'a reverifier' laisses ABSENTS expres (a-one-piece-game, anime-adventures, anime-fighters, anime-fighting-simulator, anime-fighting-simulator-reborn, anime-rangers-x, anime-reversal, anime-rift-tower-defense, anime-rng, scroll-a-brainrot, world-fighters, heroes-battlegrounds).",
   "_pending2026-09-05": {
@@ -1337,5 +1344,13 @@
       "STARBUD (PGG seul)",
       "torigate (PGG actif MAIS Beebom+PCGamesN=expiré -> gardé expiré/absent)"
     ]
+  },
+  "_rotationARevoir2026-09-19": {
+    "grimoires-era": "PCGamesN périmé (2024); ambiguïté Grimoires Era vs Era 2 — Fandom non recoupé. Ne pas toucher.",
+    "twenty-one": "Sources: WEAREBACK4MORE/FAST3R/TWENTY_ONE_1999 (3 actifs) mais nos codes = THANKSFOR12MVISITS + TWENTY_ONE_19995 (19995 vs 1999 ambigu). Source unique (résumé). À recouper.",
+    "survive-zombie-arena": "Nos codes GALACTIC/Zombies non confirmés; source cite FACTIONS/FRONTIER + 4 nouveaux (Sep15) sans liste expirés explicite. À recouper.",
+    "spin-a-brainrot": "Pas de liste datée trouvée (résumé). Halloween/HalloweenDice suspects mais sans preuve d'expiration. À recouper (insider-gaming).",
+    "be-a-brainrot": "Beebom dit AUCUN code publié; notre page affiche BRAINROT/RELEASE — conflit + risque d'homonymie brainrot. Ne pas toucher, recouper.",
+    "button-rng-2": "Page à 0 code; sources citent qq codes (RobloxDen/BloxDrip) sans liste Sept claire. À recouper."
   }
 }
