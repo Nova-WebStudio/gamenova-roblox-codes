@@ -6,10 +6,10 @@
   "publisher": "EA Sports (Electronic Arts)",
   "developer": "EA Vancouver / EA Romania",
   "genre": "Football / Sport",
-  "shortDescription": "EA Sports FC 27, le jeu de football d'EA, sorti le 25 septembre 2026, avec le nouveau mode « The Grounds ».",
-  "description": "EA Sports FC 27 est l'édition 2026 du jeu de football d'Electronic Arts (successeur de la série FIFA). Sorti le 25 septembre 2026, il introduit un nouveau mode social « The Grounds », des changements de gameplay (corners, dribble, défense), un mode Carrière retravaillé et de nouvelles fonctionnalités Ultimate Team. Sur Zoneblox : actualités, nouveautés et trailers officiels vérifiés.",
+  "shortDescription": "EA Sports FC 27, le jeu de football d'EA — sortie mondiale le 25 septembre 2026 (accès anticipé en cours), avec le nouveau mode « The Grounds ».",
+  "description": "EA Sports FC 27 est l'édition 2026 du jeu de football d'Electronic Arts (successeur de la série FIFA). Attendu en sortie mondiale le 25 septembre 2026 — l'accès anticipé a débuté le 18 septembre pour les éditions Ultimate et Ultimate Plus — il introduit un nouveau mode social « The Grounds », des changements de gameplay (corners, dribble, défense), un mode Carrière retravaillé et de nouvelles fonctionnalités Ultimate Team. Sur Zoneblox : actualités, nouveautés et trailers officiels vérifiés.",
   "releaseDate": "2026-09-25",
-  "releaseNote": "Sortie mondiale le 25 septembre 2026. Accès anticipé jusqu'à 7 jours (dès le 18 septembre) pour les éditions Ultimate et Ultimate Plus ; essai 10 h via EA Play ; démo gratuite « FC 27 Lite » au lancement.",
+  "releaseNote": "Sortie mondiale le 25 septembre 2026. Accès anticipé en cours (jusqu'à 7 jours, dès le 18 septembre) pour les éditions Ultimate et Ultimate Plus ; essai 10 h via EA Play ; démo gratuite « FC 27 Lite » au lancement.",
   "platforms": [
     "PlayStation 5",
     "PlayStation 4",
@@ -19,7 +19,7 @@
     "Nintendo Switch",
     "Nintendo Switch 2"
   ],
-  "status": "released",
+  "status": "upcoming",
   "officialWebsite": "https://www.ea.com/games/ea-sports-fc/fc-27",
   "monogram": "FC",
   "accent": [
@@ -30,7 +30,7 @@
   "coverPosition": "center",
   "isFeatured": true,
   "isActive": true,
-  "sourcesNote": "Informations vérifiées via EA Sports (site officiel & communiqués), Gaming Bible, Athlon, Bleacher Report et Wikipedia au 18 septembre 2026.",
+  "sourcesNote": "Informations vérifiées via EA Sports (site officiel & communiqués), FUT.GG, GamesHub, Gaming Bible, Athlon, Bleacher Report et Wikipedia au 19 septembre 2026. Accès anticipé Ultimate/Ultimate Plus ouvert depuis le 18 septembre ; sortie mondiale confirmée le 25 septembre 2026.",
   "contentTypes": [
     {
       "type": "updates",

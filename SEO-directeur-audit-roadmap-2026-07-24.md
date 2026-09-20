@@ -4,6 +4,28 @@
 
 ---
 
+## 📌 Dernière brique — J33 (20 septembre 2026)
+
+**Codes (PRIORITÉ) — hotGames + rotation, plusieurs corrections réelles de faux-actifs :**
+- **hotGames (15 vérifiés, 5 modifiés)** : Steal a Brainrot **1→0** (BESTBRAINROTEVER périmé — Pocket Tactics 1er sept. + GamesRadar/PCGamesN concordants « aucun code actif ») ; Merge a Nuke **3→2** (UPDATE2 & ATOMIC périmés, +DELAY — Pocket Tactics 16 sept.) ; Defend Ur Base With Anime **5→8** (nos 5 anciens périmés, rebâtie sur les 8 actifs Beebom 1er sept. : UPDATE11/BLUE/GOALKEEPER/UPDATE10/DIOBOSS/TRAVELLINGMERCHANT/LUCKYSPINS/FLEXAVATARS) ; VV Ultimatum **1→6** (Pocket Tactics 18 sept.) ; Run a Restaurant **1→2** (+FISHIES, sources datées 20 sept.). Confirmés stables (« Vérifié le » au 20 sept.) : Grow a Garden (2), Tower Defense Simulator (2), World Fighters (24), Brainrot Evolution (24/88), Noob Incremental (11), FIFA Super Soccer (WorldCupSecret), Hypershot (ONEBILLION), Spin a Soccer Card (0, STAR-STORM en attente), Animal Hospital (0 = pas de système de codes), Sakura Stand (2).
+- **Rotation (18 slugs — 3 modifiés, 11 confirmés OK, 4 à revérifier)** : **Anime Expeditions** correction MAJEURE — nos 10 « actifs » TOUS périmés (Pocket Tactics 15 sept.) → rebâtie sur les 7 actifs (restartsorry!/fastrestart!/Eclipse/250klikes/8thCompany/SummerSiege/LighthingGod) ; **Basketball Zero** nos 4 (IZURE/15IZURE/TATLISV2/15TATLISV2) périmés (Pocket Tactics 19 sept.) → SCARYMONSTER + 15SCARYMONSTER (4→2) ; **Anime Defenders** page vide → 12 actifs (Pocket Tactics + aggregat concordants, 0→12). Confirmés OK : sakura-stand, dandys-world, a-dusty-trip, arm-wrestle-simulator, arsenal, bubble-gum-simulator-infinity, dragon-adventures, jailbreak (2 codes YouTube confirmés PT 18 sept. — aggregat trompeur écarté), bee-swarm-simulator, build-a-boat-for-treasure, shindo-life. `catalogVerify` MAJ (14 slugs).
+- **À revérifier** : toilet-tower-defense (collision Toilet VERSE / original), fish-it (conflit DIVING actif PT vs notre historique + source 18j, codes rapides), type-soul (source unique fast-expiring), da-hood (DOG/SHARK absents des listes actives mais pas de preuve propre).
+
+**BRIQUE ÉTAPE 2bis = clôture du cluster « Plants vs Brainrots » (codes ✓ · tier ✓ · guide ✗ → ✓).** Le jeu est un des plus gros hits de sept. 2026 (croissance x2 plusieurs semaines, ~916K CCU, 3ᵉ le plus joué) mais son cluster était orphelin de guide. Création de **`guides/plants-vs-brainrots.html`** (~1 484 mots FR) : découverte, boucle planter-défendre-encaisser, meilleures plantes (Cactus/Sunflower/Dragon Fruit/Strawberry ; top-tier Shroombino/Tomatrio/Commando Apple/King Limone), Brainrots en revenu passif, Fusion/Rebirth/Mutations (Gold x2, Diamond x3, Frozen x4, Neon x4,5), réglages Auto-Sell & Equip Best, 6 astuces, FAQ 4 Q. Intention *how-to* distincte des codes (transactionnel) et de la tier list (classement) → **aucune cannibalisation**. Sourcé ≥2 datés : **games.gg/gam3s.gg** (guide débutant & « how to make money fast ») + **Plants vs Brainrots Wiki (Fandom, Mechanics)** + **Sportskeeda**. **EEAT** : byline « L'équipe Zoneblox » + politique éditoriale + note d'évolutivité + renvoi wiki/Discord officiels ; aucune valeur inventée. **Schema** Article + BreadcrumbList + FAQPage. **Maillage (anti-orphelin)** : vraie miniature tr.rbxcdn.com (réutilisée de la page codes), carte hub `guides.html`, `<url>` sitemap.xml, **liens croisés codes ↔ tier ↔ guide** (guide → codes+tier ; codes → guide+tier ; tier → guide). Cache JS inchangé (v=42).
+
+**Trending re-scanné (rblxdb/games.gg 16-20 sept.) :** #1 Steal An Egg (~1,7M), leaders (Blox Fruits, Rivals, Jujutsu Shenanigans, Steal a Brainrot, Grow a Garden, Plants vs Brainrots) tous couverts. Aucun nouveau hit ≥4000 non couvert détecté ce run.
+
+**Prochaine brique recommandée (J34), par ordre de priorité :**
+
+1. **Ajouter 2 vidéos oEmbed vérifiées** aux clusters Plants vs Brainrots et/ou Search For The Needle (guides sans vidéo) — dès que l'accès oEmbed YouTube est disponible (bloqué en run non-interactif : endpoint hors provenance).
+2. **Guide complet pour un autre top hit sans guide** (ex. vérifier la couverture des tops trending), intention how-to distincte + maillage codes↔tier↔guide.
+3. **Ajouter le bandeau CTA `data-cta="guidelink"`** manquant sur `codes-plants-vs-brainrots.html` (template ancien) pour homogénéiser le maillage codes→guide/tier.
+4. **Enrichir la verticale Aniimo** (fiche créature/objet ou guide d'intention) via les JSON de `data/aniimo/` puis build_site.py, si ≥2 sources fiables disponibles.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
 ## 📌 Dernière brique — J32 (19 septembre 2026)
 
 **Codes (PRIORITÉ) — hotGames + rotation, plusieurs corrections réelles de faux-actifs :**

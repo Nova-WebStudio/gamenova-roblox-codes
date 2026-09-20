@@ -1,8 +1,19 @@
 {
   "game": "fc-27",
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "intro": "Le suivi de l'actualité officielle d'EA Sports FC 27 : sortie, éditions, cover stars et trailers. Uniquement du confirmé.",
   "entries": [
+    {
+      "date": "2026-09-18",
+      "kind": "event",
+      "title": "Accès anticipé ouvert : jusqu'à 7 jours avant la sortie",
+      "summary": "L'accès anticipé d'EA Sports FC 27 est ouvert depuis le 18 septembre 2026 pour les éditions Ultimate et Ultimate Plus (jusqu'à 7 jours avant la sortie mondiale du 25 septembre) ; les membres EA Play Pro sur PC disposent aussi du jeu complet en avance. La Web App Ultimate Team a ouvert le 16 septembre. La sortie standard pour tous reste fixée au 25 septembre 2026.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://www.ea.com/games/ea-sports-fc/fc-27/news/fc-27-editions-and-release-dates",
+        "https://www.fut.gg/news/ea-fc-27-release-date-early-access-times-us/"
+      ]
+    },
     {
       "date": "2026-09-25",
       "kind": "event",
