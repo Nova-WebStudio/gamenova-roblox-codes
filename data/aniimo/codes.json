@@ -1,6 +1,6 @@
 {
   "game": "aniimo",
-  "lastChecked": "2026-09-18",
+  "lastChecked": "2026-09-21",
   "updated": "2026-09-18",
   "redeem": {
     "intro": "Les codes Aniimo se saisissent directement en jeu, dans les paramètres du compte.",
@@ -13,17 +13,83 @@
     ]
   },
   "active": [
-    {"code": "ANIIMOGIFT", "reward": "10 Glimmer, 20 000 Credits, 10 Growth Flowers et 5 Aniipod Pro", "added": "2026-09-16", "verified": "2026-09-18", "new": false},
-    {"code": "Aniimo2026", "reward": "1× Œuf SUSUTA (prix spécial), 2× Aniipod Ultra et 200× Glimmer", "added": "2026-09-16", "verified": "2026-09-18", "new": false},
-    {"code": "aniimolaunch2026", "reward": "50 Glimmer, 5 Growth Flowers et 5 Aniipod Pro", "added": "2026-09-16", "verified": "2026-09-18", "new": true},
-    {"code": "aniimoopenworld", "reward": "10 000 Credits et 5 Aniipod", "added": "2026-09-16", "verified": "2026-09-18", "new": true},
-    {"code": "twinewithaniimo", "reward": "10 000 Credits et 5 Aniipod", "added": "2026-09-16", "verified": "2026-09-18", "new": true},
-    {"code": "aniimotogether", "reward": "Récompenses gratuites (Glimmer / Credits) — détail exact non confirmé", "added": "2026-09-16", "verified": "2026-09-18", "new": true},
-    {"code": "aniimowelcome", "reward": "Récompenses gratuites (Glimmer / Credits) — détail exact non confirmé", "added": "2026-09-16", "verified": "2026-09-18", "new": true},
-    {"code": "aniimoidyll", "reward": "Récompenses gratuites (Glimmer / Credits) — détail exact non confirmé", "added": "2026-09-16", "verified": "2026-09-18", "new": true},
-    {"code": "anyoneaniimo", "reward": "Récompenses gratuites (Glimmer / Credits) — détail exact non confirmé", "added": "2026-09-16", "verified": "2026-09-18", "new": true},
-    {"code": "aniimobonus", "reward": "Récompenses gratuites (Glimmer / Credits) — détail exact non confirmé", "added": "2026-09-16", "verified": "2026-09-18", "new": true},
-    {"code": "aniimoparty", "reward": "Récompenses gratuites (Glimmer / Credits) — détail exact non confirmé", "added": "2026-09-16", "verified": "2026-09-18", "new": true}
+    {
+      "code": "ANIIMOGIFT",
+      "reward": "10 Glimmer, 20 000 Credits, 10 Growth Flowers et 5 Aniipod Pro",
+      "added": "2026-09-16",
+      "verified": "2026-09-21",
+      "new": false
+    },
+    {
+      "code": "Aniimo2026",
+      "reward": "1× Œuf SUSUTA (prix spécial), 2× Aniipod Ultra et 200× Glimmer",
+      "added": "2026-09-16",
+      "verified": "2026-09-21",
+      "new": false
+    },
+    {
+      "code": "aniimolaunch2026",
+      "reward": "50 Glimmer, 5 Growth Flowers et 5 Aniipod Pro",
+      "added": "2026-09-16",
+      "verified": "2026-09-21",
+      "new": true
+    },
+    {
+      "code": "aniimoopenworld",
+      "reward": "10 000 Credits et 5 Aniipod",
+      "added": "2026-09-16",
+      "verified": "2026-09-21",
+      "new": true
+    },
+    {
+      "code": "twinewithaniimo",
+      "reward": "10 000 Credits et 5 Aniipod",
+      "added": "2026-09-16",
+      "verified": "2026-09-21",
+      "new": true
+    },
+    {
+      "code": "aniimotogether",
+      "reward": "Récompenses gratuites (Glimmer / Credits) — détail exact non confirmé",
+      "added": "2026-09-16",
+      "verified": "2026-09-21",
+      "new": true
+    },
+    {
+      "code": "aniimowelcome",
+      "reward": "Récompenses gratuites (Glimmer / Credits) — détail exact non confirmé",
+      "added": "2026-09-16",
+      "verified": "2026-09-21",
+      "new": true
+    },
+    {
+      "code": "aniimoidyll",
+      "reward": "Récompenses gratuites (Glimmer / Credits) — détail exact non confirmé",
+      "added": "2026-09-16",
+      "verified": "2026-09-21",
+      "new": true
+    },
+    {
+      "code": "anyoneaniimo",
+      "reward": "Récompenses gratuites (Glimmer / Credits) — détail exact non confirmé",
+      "added": "2026-09-16",
+      "verified": "2026-09-21",
+      "new": true
+    },
+    {
+      "code": "aniimobonus",
+      "reward": "Récompenses gratuites (Glimmer / Credits) — détail exact non confirmé",
+      "added": "2026-09-16",
+      "verified": "2026-09-21",
+      "new": true
+    },
+    {
+      "code": "aniimoparty",
+      "reward": "Récompenses gratuites (Glimmer / Credits) — détail exact non confirmé",
+      "added": "2026-09-16",
+      "verified": "2026-09-18",
+      "new": true
+    }
   ],
   "expired": [],
   "note": "11 codes actifs vérifiés au 18 septembre 2026 en croisant plusieurs sources. Pour 6 d'entre eux, la récompense exacte n'est pas confirmée de façon fiable : le code fonctionne, mais on n'invente pas le détail du butin. Les « Squad Codes » d'Aniimo sont différents : ce sont des codes d'invitation à 6 caractères pour l'évènement web « Aniimo Together » (jusqu'au 27 septembre 2026), pas des codes de récompense classiques — on ne les liste donc pas ici.",
@@ -36,10 +102,25 @@
     "https://progameguides.com/codes/aniimo-codes/"
   ],
   "faqs": [
-    {"q": "Quels sont les codes Aniimo actifs en septembre 2026 ?", "a": "Au 18 septembre 2026, 11 codes sont actifs : ANIIMOGIFT, Aniimo2026, aniimolaunch2026, aniimoopenworld, twinewithaniimo, aniimotogether, aniimowelcome, aniimoidyll, anyoneaniimo, aniimobonus et aniimoparty. Les récompenses vont du Glimmer aux Credits, Aniipod et Growth Flowers."},
-    {"q": "Comment échanger un code dans Aniimo ?", "a": "Ouvre les Paramètres, va dans l'onglet Compte, clique sur « Gift Code Redemption », saisis le code en respectant la casse, valide, puis réclame les récompenses dans ta boîte de réception en jeu."},
-    {"q": "Pourquoi mon code Aniimo ne fonctionne pas ?", "a": "Le plus souvent le code est mal saisi (la casse compte) ou a expiré. Utilise le bouton Copier pour éviter les fautes, et vérifie qu'il figure dans la liste des codes actifs ci-dessus. Un code n'est utilisable qu'une fois par compte."},
-    {"q": "À quoi sert le Glimmer dans Aniimo ?", "a": "Le Glimmer est la meilleure monnaie premium : il s'échange contre des Aniipod Ultra, du Primegy (endurance quotidienne) et des objets de personnalisation. Les codes en donnant beaucoup (comme Aniimo2026) sont donc à prioriser."},
-    {"q": "Qu'est-ce qu'un Squad Code dans Aniimo ?", "a": "Un Squad Code est un code d'invitation à 6 caractères pour l'évènement web « Aniimo Together » (jusqu'au 27 septembre 2026), où jusqu'à 6 joueurs rejoignent la même escouade. C'est distinct des codes cadeaux classiques."}
+    {
+      "q": "Quels sont les codes Aniimo actifs en septembre 2026 ?",
+      "a": "Au 18 septembre 2026, 11 codes sont actifs : ANIIMOGIFT, Aniimo2026, aniimolaunch2026, aniimoopenworld, twinewithaniimo, aniimotogether, aniimowelcome, aniimoidyll, anyoneaniimo, aniimobonus et aniimoparty. Les récompenses vont du Glimmer aux Credits, Aniipod et Growth Flowers."
+    },
+    {
+      "q": "Comment échanger un code dans Aniimo ?",
+      "a": "Ouvre les Paramètres, va dans l'onglet Compte, clique sur « Gift Code Redemption », saisis le code en respectant la casse, valide, puis réclame les récompenses dans ta boîte de réception en jeu."
+    },
+    {
+      "q": "Pourquoi mon code Aniimo ne fonctionne pas ?",
+      "a": "Le plus souvent le code est mal saisi (la casse compte) ou a expiré. Utilise le bouton Copier pour éviter les fautes, et vérifie qu'il figure dans la liste des codes actifs ci-dessus. Un code n'est utilisable qu'une fois par compte."
+    },
+    {
+      "q": "À quoi sert le Glimmer dans Aniimo ?",
+      "a": "Le Glimmer est la meilleure monnaie premium : il s'échange contre des Aniipod Ultra, du Primegy (endurance quotidienne) et des objets de personnalisation. Les codes en donnant beaucoup (comme Aniimo2026) sont donc à prioriser."
+    },
+    {
+      "q": "Qu'est-ce qu'un Squad Code dans Aniimo ?",
+      "a": "Un Squad Code est un code d'invitation à 6 caractères pour l'évènement web « Aniimo Together » (jusqu'au 27 septembre 2026), où jusqu'à 6 joueurs rejoignent la même escouade. C'est distinct des codes cadeaux classiques."
+    }
   ]
 }

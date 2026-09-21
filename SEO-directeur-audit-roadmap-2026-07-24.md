@@ -4,6 +4,28 @@
 
 ---
 
+## 📌 Dernière brique — J34 (21 septembre 2026)
+
+**Codes (PRIORITÉ) — hotGames + rotation, corrections réelles de faux-actifs :**
+- **hotGames (12 vérifiés, 1 modifié)** : **Anime Vanguards 8→3** — Pro Game Guides (18 sept.) ne liste que 4 actifs et marque MiniUpd2/Wrath/Retribution comme inactifs → retrait de MiniUpd2, Wrath, Retribution, 1DayDelay, 25thHour (déjà présents en expirés) ; actifs conservés : Assault, SummerLeaving, AnniNextHopefully (confirmés PT 16 sept. + PGG 18 sept.). Confirmés stables (« Vérifié le » au 21 sept.) : Blade Ball (15, = GamesRadar 18 sept.), Blue Lock Rivals (3, GamesRadar 14 sept. ; SNUFFYSOON/BUGFIXES/UBERSCONTINUES/SORRYFORNIKODELAY en attente), Volleyball Legends (3, GamesRadar 14 sept. ; UPDATE_88/GET_SLIMED/XP_BOOST en attente), King Legacy (8 ; <3LEEPUNGG en attente), Fruit Battlegrounds (2, sous-listage de ~45 codes milestone), Grow a Garden (2), Steal a Brainrot (0), Pet Simulator 99 (0 = merch only), Steal an Egg (0 = pas de système de codes), Catch a Monster (8, sous-listage, jeu neuf sans expiration), Squid Game X (5 ; UPDATE11RELEASE en attente).
+- **Rotation (16 slugs — 4 modifiés, 5 confirmés OK, 7 à revérifier)** : **Garden Tower Defense 2→0** (FANTASY/FRONTIER expirés — PGG 19 sept. explicite inactifs ; TRIANGLE/SNIPER en attente car source unique) ; **Grow a Garden 2 3→4** (+FREESEED confirmé PC Gamer + Pocket Tactics + GamesRadar) ; **Knockout 8→7** (CIRCUSEVENT retiré le 2 sept. → expirés) ; **Be a Brainrot 2→0** (faux-actifs BRAINROT/RELEASE — Beebom : « aucun code publié à ce jour ») ; confirmés OK : plants-vs-brainrots (5, evergreen), rivals (8, sous-listage evergreen), da-hood (DOG/SHARK confirmés actifs Pocket Gamer — lève le flag J33), toilet-tower-defense (0 = jeu original supprimé de Roblox), murder-mystery-2 (0 = plus de codes depuis des années). `catalogVerify` MAJ (9 slugs).
+- **À revérifier / à enrichir** : fish-it (page vide mais ~45 codes actifs — enrichissement à faire, fast-expiry), type-soul (page vide, codes actifs existants, fast-expiry), anime-reborn (page vide, ~10 codes actifs, fast-expiry), skibidi-masters-tower-defense (source unique périmée Sept 3, codes milestone ambigus), grimoires-era (collision de noms Era/Legacy/Clover, aucune source datée 2026 — 5e report), character-rng (Sept 9 : 7 actifs sans liste vs nos 10, « RNGHeroSquad » possiblement mal mappé), button-rng-2 (sources périmées juil/août + collision RNG).
+
+**BRIQUE ÉTAPE 2bis = homogénéisation du maillage du cluster « Plants vs Brainrots » (top-5 hit, ~916K CCU).** Ajout du **bandeau CTA `data-cta="guidelink"`** manquant sur `codes-plants-vs-brainrots.html` (page au template ancien), pointant vers les pages dédiées `/guides/plants-vs-brainrots.html` (📖 Guide complet) et `/tier-list/plants-vs-brainrots.html` (📊 Tier list). Le cluster était complet (codes ✓ · guide ✓ · tier ✓) mais la page codes n'avait aucun lien sortant vers ses pages sœurs → maillage désormais bidirectionnel (codes → guide+tier, guide → codes+tier, tier → codes+guide). **Anti-cannibalisation** : aucun nouveau contenu créé, uniquement du maillage interne à ancres distinctes. **Effet SEO** : consolide le cluster et redistribue l'equity de la page codes (la plus visitée du cluster) vers le guide et la tier list. Cache JS inchangé.
+
+**Trending re-scanné (rblxdb / roblox charts, sem. du 13-21 sept.) :** leaders (Steal an Egg ~1,7M, Steal a Brainrot, Blox Fruits, Grow a Garden, Plants vs Brainrots, 99 Nights, Sailor Piece, Forsaken, Knockout) tous couverts au catalogue. Aucun nouveau hit ≥4000 non couvert détecté ce run.
+
+**Prochaine brique recommandée (J35), par ordre de priorité :**
+
+1. **Enrichir `codes-fish-it.html`** (page vide alors que ~45 codes actifs existent — PC Gamer + Insider Gaming + Roblox Den) : reconstruire la liste active avec cross-check ≥3 sources datées + regen codes.json. Fort impact (grosse page potentielle actuellement vide). Idem `codes-type-soul.html` et `codes-anime-reborn.html` si le temps le permet (fast-expiry, sourcer prudemment).
+2. **Généraliser le bandeau CTA `data-cta="guidelink"`** aux pages codes de hits qui ont déjà guide+tier mais pas le bandeau (seulement 11/179 pages l'ont) — cibler en priorité les hotGames.
+3. **Lever la collision `grimoires-era`** via le placeId de notre page (Era vs Legacy vs Clover) puis élaguer contre une liste datée (6e report).
+4. **Enrichir la verticale Aniimo** (fiche créature/objet ou guide d'intention) via les JSON de `data/aniimo/` puis build_site.py, si ≥2 sources fiables.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
 ## 📌 Dernière brique — J33 (20 septembre 2026)
 
 **Codes (PRIORITÉ) — hotGames + rotation, plusieurs corrections réelles de faux-actifs :**
