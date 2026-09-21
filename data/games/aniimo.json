@@ -24,7 +24,7 @@
     "#6a8bff",
     "#35e0a1"
   ],
-  "coverImage": "/images/hero-bg.webp",
+  "coverImage": "/images/aniimo-cover.webp",
   "isFeatured": true,
   "isActive": true,
   "sourcesNote": "Données de jeu vérifiées via sources officielles et éditoriales (FunPlus, Game8, Pro Game Guides, Beebom, Destructoid, Insider Gaming) au 17 septembre 2026.",
@@ -100,5 +100,6 @@
       "blurb": "Annonces et actualités Aniimo."
     }
   ],
-  "coverPosition": "right center"
+  "coverPosition": "center",
+  "coverCredit": "Capture in-game — © Pawprint Studio"
 }

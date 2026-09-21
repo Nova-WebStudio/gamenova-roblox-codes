@@ -43,8 +43,8 @@ A_tier = load("tier-list.json"); A_codes = load("codes.json"); A_videos = load("
 # ---------- helpers de rendu (réutilisent les classes .pcard existantes) ----------
 def gimg(slug, label, aniimo=False):
     if aniimo:
-        return ('<div class="ph"><img src="/images/hero-bg.webp" alt="Aniimo" loading="lazy" '
-                'style="object-position:right center"><span class="tag">%s</span></div>') % e(label)
+        return ('<div class="ph"><img src="/images/aniimo-cover.webp" alt="Aniimo" loading="lazy" '
+                'style="object-position:center"><span class="tag">%s</span></div>') % e(label)
     g = GBY.get(slug); thumb = g["thumb"] if g else ""
     return ('<div class="ph"><img src="%s" alt="Miniature %s" loading="lazy" decoding="async" '
             'onerror="this.onerror=null;this.src=\'/images/games/%s.svg\'"><span class="tag">%s</span></div>') % (
