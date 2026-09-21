@@ -115,3 +115,28 @@ Run quotidien automatique. Priorité respectée : **vérification des codes d'ab
 **Pour publier** : dans le dossier GameNova, lance
 `git add -A && git commit -m "MAJ Zoneblox du jour" && git push origin main`.
 Hostinger déploie automatiquement après le push.
+
+---
+
+## (g) Vérification export Search Console — « Page avec redirection » (162 pages)
+
+**Fichier analysé** : `zoneblox.com-Coverage-Drilldown-2026-09-21.zip` (problème = *Page avec redirection*, tendance 40 → 162 pages de juin à sept.).
+
+**Décomposition des 162 URL** : 106 vieux `/codes/<slug>.html`, 78 variantes `www.`, 14 `/tier-list/…` (variantes www), 6 `/codes/?cat=…` / `?q=…`, racines de dossiers `/codes/ /guides/ /tier-list/ /`.
+
+**Diagnostic — l'essentiel du rapport est NORMAL et bénin.** « Page avec redirection » n'est pas une erreur : Google signale qu'une URL redirige (301) et indexe la cible. Ces redirections sont le résultat **attendu** de deux chantiers volontaires :
+- la migration du 11 sept. `codes/<slug>.html` → `codes-<slug>.html` (301 corrects),
+- la canonicalisation `www` → non-www et `http` → https.
+
+Vérifs faites : le **sitemap.xml est propre** (format `codes-<slug>.html`, 0 vieux `/codes/`, 0 `?cat=`, 0 `www`), et **js/main.js génère déjà le bon format** `/codes-`. Le compteur grossit simplement parce que Google accumule d'anciennes URL en mémoire ; il se stabilisera/décroîtra. **Aucune action requise pour ces cas.**
+
+**MAIS 2 vrais bugs trouvés et corrigés ce run :**
+
+1. **Redirections cassées (301 → 404)** — `codes/clean-the-supermarket.html` et `codes/drain-the-lake.html` tombaient sur la règle générique `codes/<slug>.html → codes-<slug>.html`, or ces pages `codes-*.html` **n'existent pas** (ces 3 jeux — + `paint-and-seek` — n'ont qu'un guide, pas de page codes). Correctif `.htaccess` : ajout de 2 règles spécifiques (comme celle déjà présente pour paint-and-seek) redirigeant vers `/guides/<slug>.html`.
+2. **20 liens internes** (pages servies) pointaient vers `/codes/<slug>.html` pour ces 3 jeux sans page codes → repointés : boutons « Codes » des guides `clean-the-supermarket`, `drain-the-lake`, `paint-and-seek` → `/tous-les-codes.html` ; cross-links de `tier-list/paint-and-seek.html` → `/guides/paint-and-seek.html`. Plus aucun lien vers une URL qui redirige/404 dans les pages servies (hors vieux dossier `codes/` qui redirige de toute façon).
+
+**Note** : les 3 fichiers résiduels `en/…` existent encore physiquement mais sont déjà redirigés en 301 par `.htaccess` (aucun impact) — Peter peut les supprimer pour faire propre.
+
+**Recommandation** : dans Search Console, pour le problème « Page avec redirection », inutile de lancer « Valider la correction » sur les URL de migration/www (comportement normal). Les 2 bugs 301→404 ci-dessus, eux, valaient le correctif. Pour réduire le volume à terme, on peut à un prochain run nettoyer les liens internes restants **dans les vieux fichiers `codes/*.html`** (1199 liens) — sans effet SEO (ils redirigent) mais bon pour la cohérence.
+
+**Fichiers modifiés (correctif GSC)** : `.htaccess`, `guides/clean-the-supermarket.html`, `guides/drain-the-lake.html`, `guides/paint-and-seek.html`, `tier-list/paint-and-seek.html`. QC : fin `</html>` OK, 0 null byte, `<div>` équilibrés, `node --check js/main.js` OK.
