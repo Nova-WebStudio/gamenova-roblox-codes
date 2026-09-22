@@ -4,6 +4,7 @@
 
 const ROBLOX_THUMBS = {
   'ride-a-pet': 'https://tr.rbxcdn.com/180DAY-3ffbd41c5b51c95ae19350431588608e/768/432/Image/Png/noFilter',
+  '1-loot-to-forge': 'https://tr.rbxcdn.com/180DAY-82066d8599c04685dafed829784abc81/768/432/Image/Png/noFilter',
   'slayers-2': 'https://tr.rbxcdn.com/180DAY-dba4c44c1db70a2c2ef8fbe97580c662/768/432/Image/Png/noFilter',
   'illegal-soccer': 'https://tr.rbxcdn.com/180DAY-e7aae66394912b42be832bf6b8dfe84f/768/432/Image/Png/noFilter',
   'search-for-the-needle': 'https://tr.rbxcdn.com/180DAY-19a201f37929cac782ac0b884693b6d7/768/432/Image/Png/noFilter',
@@ -211,6 +212,7 @@ function initMobileNav() {
 
 /* ---- Search index ---- */
 const GAMES_INDEX = [{ name: 'Ride A Pet', slug: 'ride-a-pet', emoji: '🐶', codes: 0 },
+  { name: '+1 Loot To Forge', slug: '1-loot-to-forge', emoji: '⚒️', codes: 2 },
   { name: 'Slayers 2', slug: 'slayers-2', emoji: '⚔️', codes: 2 },
   { name: 'Illegal Soccer', slug: 'illegal-soccer', emoji: '⚽', codes: 0 },
 { name: 'Search For The Needle', slug: 'search-for-the-needle', emoji: '🪡', codes: 2 },
@@ -457,6 +459,7 @@ function highlightNav() {
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
   'ride-a-pet': 10035204815,
+  '1-loot-to-forge': 10684750879,
   'slayers-2': 5595353122,
   'illegal-soccer': 10155360168,
   'search-for-the-needle': 10756011174,

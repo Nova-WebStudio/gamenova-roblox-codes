@@ -1,6 +1,6 @@
 {
  "generated": "2026-09-22",
- "count": 179,
+ "count": 180,
  "games": [
   {
    "name": "Aniimo",
@@ -92,6 +92,29 @@
    "genreLabel": "Aventure"
   },
   {
+   "name": "+1 Loot To Forge",
+   "slug": "1-loot-to-forge",
+   "url": "/codes-1-loot-to-forge.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-09-22",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-82066d8599c04685dafed829784abc81/768/432/Image/Png/noFilter",
+   "cts": [
+    "Codes",
+    "Guides",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
    "name": "Slayers 2",
    "slug": "slayers-2",
    "url": "/codes-slayers-2.html",
@@ -107,7 +130,9 @@
    "hot": true,
    "thumb": "https://tr.rbxcdn.com/180DAY-dba4c44c1db70a2c2ef8fbe97580c662/768/432/Image/Png/noFilter",
    "cts": [
-    "Codes"
+    "Codes",
+    "Guides",
+    "Tier list"
    ],
    "platformLabel": "Roblox",
    "genreLabel": "RPG"
@@ -128,7 +153,9 @@
    "hot": true,
    "thumb": "https://tr.rbxcdn.com/180DAY-3ffbd41c5b51c95ae19350431588608e/768/432/Image/Png/noFilter",
    "cts": [
-    "Codes"
+    "Codes",
+    "Guides",
+    "Tier list"
    ],
    "platformLabel": "Roblox",
    "genreLabel": "Simulateur"
@@ -149,7 +176,9 @@
    "hot": true,
    "thumb": "https://tr.rbxcdn.com/180DAY-e7aae66394912b42be832bf6b8dfe84f/768/432/Image/Png/noFilter",
    "cts": [
-    "Codes"
+    "Codes",
+    "Guides",
+    "Tier list"
    ],
    "platformLabel": "Roblox",
    "genreLabel": "Sport"
@@ -2106,7 +2135,8 @@
    "thumb": "https://tr.rbxcdn.com/180DAY-5ba706807447783862364dfef7a465ff/500/280/Image/Jpeg/noFilter",
    "cts": [
     "Codes",
-    "Guides"
+    "Guides",
+    "Tier list"
    ],
    "platformLabel": "Roblox",
    "genreLabel": "Combat"
