@@ -4,6 +4,30 @@
 
 ---
 
+## 📌 Dernière brique — J35 (22 septembre 2026)
+
+**Codes (PRIORITÉ) — hotGames + rotation, 3 corrections/enrichissements réels :**
+- **hotGames (8 vérifiés, 1 modifié)** : **Fisch 3→4** (+MarianaIsGoingCrazy, confirmé par Beebom + Pocket Gamer + Destructoid, 3 sources ; LittleBudlingUpdate écarté = conflit Beebom/PG actifs vs Destructoid 21 sept. expiré ; PeaceLoveUnityRespect Beebom seul). Confirmés stables (« Vérifié le » au 22 sept.) : Grow a Garden (2, = PC Gamer/Beebom), Steal a Brainrot (0, sources concordantes « aucun code »), Blox Fruits (23, set perenne stable), Anime Last Stand (3 exacts, = PGG 1er sept. ; SaveRukia/WORLD3REBALANCE en inactifs PGG), Tower Defense Simulator (2 ; CHRISTMAS2025 = Beebom seul, PCGamesN périmé → non publié), World Fighters (24, sur-listé vs sources → OK), Hypershot (ONEBILLION conservé ; conflit Pocket Tactics « 0 actif » vs agrégat).
+- **Rotation (15 slugs — 3 modifiés, 7 confirmés OK, 5 à revérifier)** : **Grand Piece Online 2→3** (FREE_Drops6+ILOVEGPO_2 expirés → ILOVEGPO_3+FREE_Drops7+FREE_EXP6, Destructoid 21 sept. + agrégat Sep 15) ; **Haze Piece 4→20** (HAZEPIECE23+GROUPONLY expirés ; reconstruite sur l'intersection PGG∩Beebom 1er sept. de 20 actifs) ; **Fish It 0→14** (page vide enrichie — intersection PC Gamer 5 sept. ∩ agrégat Sep 17, hors codes déjà expirés chez nous). Confirmés OK : jujutsu-shenanigans (1 exact), project-mugetsu (7, sous-listé/53 actifs), car-dealership-tycoon (14, sous-listé), muscle-legends (14), ninja-legends (8, sous-listé), attack-on-titan-revolution (21), jules-rng (16, sous-listé). `catalogVerify` MAJ (15 slugs + 8 hotGames).
+- **À revérifier** : type-soul (désaccord massif PGG 64 actifs vs Beebom 7 → page laissée vide, prudence), sailor-piece (nouveaux codes update Sep 13 possibles ; nos 2 peut-être expirés), character-rng (collision Character/Heroes/Defeat Anime RNG), grow-a-chicken-fighter (nouveaux codes Sep 18-19 non nommés), broken-blade (ENDLESSTOWER Sep 1 non confirmé récent ; ABYSSSEAL expiré 21 sept).
+
+**BRIQUE ÉTAPE 2bis = généralisation du bandeau CTA `data-cta="guidelink"` aux hotGames (roadmap J35 priorité #2).** Ajout du bandeau sur **13 pages codes de hotGames** qui avaient déjà guide + tier list dédiés mais aucun lien sortant vers eux : blox-fruits, grow-a-garden, steal-a-brainrot, blade-ball, blue-lock-rivals, anime-last-stand, fisch, volleyball-legends, anime-vanguards, king-legacy, tower-defense-simulator, 100-days-at-sea, animal-hospital. Le bandeau pointe vers `/guides/<slug>.html` (📖 Guide complet) et `/tier-list/<slug>.html` (📊 Tier list). **Effet SEO** : maillage codes→guide/tier désormais bidirectionnel sur les 13 plus gros clusters ; les pages codes (les plus visitées) redistribuent leur equity vers guides et tier lists. La couverture du bandeau parmi les hotGames passe de 3/29 à 16/29. **Anti-cannibalisation** : aucun nouveau contenu, uniquement du maillage interne à ancres distinctes. Idempotent (insertion avant `<!-- Intro courte SEO -->`, une seule occurrence par page). Cache JS inchangé.
+
+**Volet éditorial (GTA 6 / FC 27 / Aniimo) :** GTA 6 — date 19 nov. 2026 confirmée et stable dans `data/games/gta-6.json` ; actualités récentes (2e trailer, pré-co, poursuites police, PS5/Xbox only) déjà couvertes, rien de neuf majeur. FC 27 — **sortie mondiale dans 3 jours (25 sept.)**, accès anticipé live depuis le 18 sept. : déjà documenté avec sources dans `data/fc-27/updates.json` (MAJ 19 sept., confiance HIGH). **Aucune nouvelle information suffisamment importante à publier aujourd'hui** ; aucun contenu de remplissage créé.
+
+**Trending re-scanné (rotrends/robloxden/games.gg, sem. 16-22 sept.) :** #1 Steal An Egg (~1,7M), leaders (Grow a Garden, Brookhaven, Blox Fruits, 99 Nights, Steal a Brainrot, Murder Mystery 2, Adopt Me) tous couverts au catalogue. Aucun nouveau hit ≥4000 non couvert détecté ce run.
+
+**Prochaine brique recommandée (J36), par ordre de priorité :**
+
+1. **Poursuivre la généralisation du bandeau CTA `data-cta="guidelink"`** aux pages codes non-hotGames qui ont déjà guide + tier (ex. plants-vs-brainrots vérifié, autres clusters complets) — maillage à fort ROI, ~11/179 pages seulement l'avaient avant J35.
+2. **Enrichir `codes-type-soul.html`** proprement : trancher le désaccord PGG (64) vs Beebom (7) via une 3e source datée + le Trello/Discord officiel ; reconstruire prudemment (fast-expiry).
+3. **Revérifier sailor-piece** (2XLUCKMASTERYEVENT/HUGEBUGFIX/MAINTENANCE, Sep 13) et **grow-a-chicken-fighter** (codes Sep 18-19) via sources datées propres.
+4. **Enrichir la verticale Aniimo** (fiche créature/objet ou guide d'intention) via les JSON de `data/aniimo/` puis build_site.py, si ≥2 sources fiables.
+
+⚠️ Règle permanente : re-scan trending d'abord ; si un nouveau hit Roblox ≥4000 joueurs apparaît, il passe devant l'evergreen.
+
+---
+
 ## 📌 Dernière brique — J34 (21 septembre 2026)
 
 **Codes (PRIORITÉ) — hotGames + rotation, corrections réelles de faux-actifs :**

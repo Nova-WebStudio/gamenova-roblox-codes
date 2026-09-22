@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-21",
- "count": 176,
+ "generated": "2026-09-22",
+ "count": 179,
  "games": [
   {
    "name": "Aniimo",
@@ -90,6 +90,69 @@
    ],
    "platformLabel": "PC / Console",
    "genreLabel": "Aventure"
+  },
+  {
+   "name": "Slayers 2",
+   "slug": "slayers-2",
+   "url": "/codes-slayers-2.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "RPG"
+   ],
+   "updated": "2026-09-21",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-dba4c44c1db70a2c2ef8fbe97580c662/768/432/Image/Png/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "RPG"
+  },
+  {
+   "name": "Ride A Pet",
+   "slug": "ride-a-pet",
+   "url": "/codes-ride-a-pet.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-09-21",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-3ffbd41c5b51c95ae19350431588608e/768/432/Image/Png/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Illegal Soccer",
+   "slug": "illegal-soccer",
+   "url": "/codes-illegal-soccer.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Sport"
+   ],
+   "updated": "2026-09-21",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-e7aae66394912b42be832bf6b8dfe84f/768/432/Image/Png/noFilter",
+   "cts": [
+    "Codes"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Sport"
   },
   {
    "name": "Search For The Needle",

@@ -215,7 +215,7 @@
   },
   "snapshots": {
     "blox-fruits": {
-      "lastChecked": "2026-09-03T05:00:00Z",
+      "lastChecked": "2026-09-22T05:00:00Z",
       "descLen": 366,
       "descExcerpt": "24 codes actifs. Les agregateurs en listent 23 (SUB2GAMERROBOT_EXP1 non repris par tous).",
       "knownCodes": [
@@ -239,7 +239,7 @@
       "note": "Inchange (PCGamesN 21/08 = liste servie, sauf Chandler=rien, exclu a raison)."
     },
     "grow-a-garden": {
-      "lastChecked": "2026-09-03T05:00:00Z",
+      "lastChecked": "2026-09-22T05:00:00Z",
       "descLen": 327,
       "descExcerpt": "2 actifs (RDCAward, BEANORLEAVE10). torigate: PCGamesN(29/08)+PGG le listent actif, Beebom expire -> CONFLIT, garde hors liste par prudence.",
       "knownCodes": [
@@ -260,7 +260,7 @@
       "officialSource": "web"
     },
     "steal-a-brainrot": {
-      "lastChecked": "2026-09-03T05:00:00Z",
+      "lastChecked": "2026-09-22T05:00:00Z",
       "descLen": 313,
       "descExcerpt": "Description in-game consultee, aucun code. 3 sources confirment : aucun code gratuit actif.",
       "knownCodes": [
@@ -322,7 +322,7 @@
       "officialSource": "twitter"
     },
     "anime-last-stand": {
-      "lastChecked": "2026-09-02T05:00:00Z",
+      "lastChecked": "2026-09-22T05:00:00Z",
       "descLen": 299,
       "descExcerpt": "38 codes listes actifs. Nouveaux vus le 01-02/09 (Beebom+PGG+Destructoid): MagicKnights!, ElfReincarnation! -> a verifier finement et ajouter au prochain run (edition d'une longue liste, prudence).",
       "knownCodes": [
@@ -379,10 +379,11 @@
       "note0731": "Verifie 31/07 (web >=3 sources) : aucun changement. blox-fruits 23-24, blade-ball 14, fisch 5, volleyball 3 (UPDATE_80/HIDARI_FINALLY/ENCHO_NERF), blue-lock 9, ALS inchange, AV inchange, GAG/GAG2 inchanges."
     },
     "fisch": {
-      "lastChecked": "2026-09-02T05:00:00Z",
+      "lastChecked": "2026-09-22T05:00:00Z",
       "descLen": 320,
       "descExcerpt": "3 actifs stables (scarlet, TemporarySubmarine, CARBON). Ancien candidat SkycrestNextWeek confirme EXPIRE (Beebom/Pocket Gamer 01/09) -> jamais publie, resolu.",
       "knownCodes": [
+        "MarianaIsGoingCrazy",
         "scarlet",
         "TemporarySubmarine",
         "CARBON"
@@ -478,7 +479,7 @@
       "officialSource": "aggregators"
     },
     "tower-defense-simulator": {
-      "lastChecked": "2026-07-24T05:00:00Z",
+      "lastChecked": "2026-09-22T05:00:00Z",
       "descLen": 1080,
       "descExcerpt": "2 codes confirmes (Pocket Tactics 10/07, Dexerto 06/07, Roblox Den).",
       "knownCodes": [
@@ -490,7 +491,7 @@
       "note1207": "CHANGEMENT 12/07 : 0 -> 2 codes actifs (1MILCOMMUNITY, 2MILLION) confirmes par Pro Game Guides + Pocket Tactics (10/07) + PCGamesN (06/07). CHRISTMAS2025 / NOTESLA? en conflit entre sources -> non publies (prudence)."
     },
     "world-fighters": {
-      "lastChecked": "2026-07-24T05:00:00Z",
+      "lastChecked": "2026-09-22T05:00:00Z",
       "descLen": 290,
       "descExcerpt": "-3 expires (WOOGARPP, LASTSHUTDOWN, SRRY5SHUTDOWSERVANT) / +8 nouveaux (vague UPDATE8-10).",
       "knownCodes": [
@@ -621,7 +622,7 @@
       ]
     },
     "hypershot": {
-      "lastChecked": "2026-07-14T05:00:00Z",
+      "lastChecked": "2026-09-22T05:00:00Z",
       "descLen": 306,
       "knownCodes": [
         "ONEBILLION"
@@ -893,50 +894,49 @@
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
   "lastRun": {
-    "date": "2026-09-21",
-    "iso": "2026-09-21T05:00:00Z",
+    "date": "2026-09-22",
+    "iso": "2026-09-22T05:00:00Z",
     "hotGamesVerified": [
-      "blade-ball",
-      "blue-lock-rivals",
-      "pet-simulator-99",
-      "squid-game-x",
-      "catch-a-monster",
-      "steal-an-egg",
-      "anime-vanguards",
-      "fruit-battlegrounds",
-      "volleyball-legends",
-      "king-legacy",
       "grow-a-garden",
-      "steal-a-brainrot"
+      "steal-a-brainrot",
+      "blox-fruits",
+      "anime-last-stand",
+      "tower-defense-simulator",
+      "fisch",
+      "world-fighters",
+      "hypershot"
     ],
     "hotGamesChanged": [
-      "anime-vanguards"
+      "fisch"
     ],
     "rotationVerified": [
-      "plants-vs-brainrots",
-      "rivals",
-      "da-hood",
-      "toilet-tower-defense",
-      "murder-mystery-2",
-      "garden-tower-defense",
-      "grow-a-garden-2",
-      "knockout",
-      "be-a-brainrot"
-    ],
-    "rotationChanged": [
-      "garden-tower-defense",
-      "grow-a-garden-2",
-      "knockout",
-      "be-a-brainrot"
-    ],
-    "rotationARevoir": [
       "fish-it",
       "type-soul",
-      "skibidi-masters-tower-defense",
-      "grimoires-era",
+      "grand-piece-online",
+      "haze-piece",
+      "jujutsu-shenanigans",
+      "project-mugetsu",
+      "sailor-piece",
       "character-rng",
-      "anime-reborn",
-      "button-rng-2"
+      "car-dealership-tycoon",
+      "muscle-legends",
+      "ninja-legends",
+      "attack-on-titan-revolution",
+      "jules-rng",
+      "grow-a-chicken-fighter",
+      "broken-blade"
+    ],
+    "rotationChanged": [
+      "grand-piece-online",
+      "haze-piece",
+      "fish-it"
+    ],
+    "rotationARevoir": [
+      "type-soul",
+      "sailor-piece",
+      "character-rng",
+      "grow-a-chicken-fighter",
+      "broken-blade"
     ]
   },
   "_pending2026-07-18": [
@@ -1124,21 +1124,21 @@
     "doors": "2026-09-10",
     "clover-retribution": "2026-09-10",
     "dress-to-impress": "2026-09-10",
-    "anime-last-stand": "2026-09-07",
+    "anime-last-stand": "2026-09-22T05:00:00Z",
     "royale-high": "2026-09-10",
     "100-days-at-sea": "2026-09-03",
     "99-nights-in-the-forest": "2026-09-10",
     "all-star-tower-defense": "2026-09-10",
     "anime-battle-rng": "2026-09-10",
     "driving-empire": "2026-09-10",
-    "blox-fruits": "2026-09-15",
-    "grow-a-garden": "2026-09-15",
-    "steal-a-brainrot": "2026-09-15",
+    "blox-fruits": "2026-09-22T05:00:00Z",
+    "grow-a-garden": "2026-09-22T05:00:00Z",
+    "steal-a-brainrot": "2026-09-22T05:00:00Z",
     "anime-vanguards": "2026-09-15",
     "blue-lock-rivals": "2026-09-15",
     "volleyball-legends": "2026-09-15",
     "king-legacy": "2026-09-03",
-    "fisch": "2026-09-15",
+    "fisch": "2026-09-22T05:00:00Z",
     "pet-simulator-99": "2026-09-03",
     "dragon-blox": "2026-09-10",
     "brainrot-evolution": "2026-09-03",
@@ -1154,38 +1154,38 @@
     "sakura-stand": "2026-09-20T05:00:00Z",
     "dandys-world": "2026-09-20T05:00:00Z",
     "arm-wrestle-simulator": "2026-09-20T05:00:00Z",
-    "fish-it": "2026-09-05",
+    "fish-it": "2026-09-22T05:00:00Z",
     "bee-swarm-simulator": "2026-09-20T05:00:00Z",
     "build-a-boat-for-treasure": "2026-09-20T05:00:00Z",
     "bubble-gum-simulator-infinity": "2026-09-20T05:00:00Z",
-    "type-soul": "2026-09-05",
+    "type-soul": "2026-09-22T05:00:00Z",
     "toilet-tower-defense": "2026-09-21",
     "anime-defenders": "2026-09-20T05:00:00Z",
     "da-hood": "2026-09-21",
     "shindo-life": "2026-09-20T05:00:00Z",
     "arsenal": "2026-09-20T05:00:00Z",
     "dragon-adventures": "2026-09-20T05:00:00Z",
-    "car-dealership-tycoon": "2026-09-07",
+    "car-dealership-tycoon": "2026-09-22T05:00:00Z",
     "garden-tower-defense": "2026-09-21",
     "plants-vs-brainrots": "2026-09-21",
-    "grow-a-chicken-fighter": "2026-09-08",
-    "attack-on-titan-revolution": "2026-09-08",
+    "grow-a-chicken-fighter": "2026-09-22T05:00:00Z",
+    "attack-on-titan-revolution": "2026-09-22T05:00:00Z",
     "rivals": "2026-09-21",
-    "muscle-legends": "2026-09-08",
+    "muscle-legends": "2026-09-22T05:00:00Z",
     "skibidi-masters-tower-defense": "2026-09-08",
     "grow-a-garden-2": "2026-09-21",
     "knockout": "2026-09-21",
-    "character-rng": "2026-09-08",
-    "jules-rng": "2026-09-08",
-    "broken-blade": "2026-09-08",
+    "character-rng": "2026-09-22T05:00:00Z",
+    "jules-rng": "2026-09-22T05:00:00Z",
+    "broken-blade": "2026-09-22T05:00:00Z",
     "murder-mystery-2": "2026-09-21",
-    "ninja-legends": "2026-09-08",
+    "ninja-legends": "2026-09-22T05:00:00Z",
     "pet-simulator-x": "2026-09-08",
-    "grand-piece-online": "2026-09-09T05:10:00Z",
-    "jujutsu-shenanigans": "2026-09-09T05:10:00Z",
-    "haze-piece": "2026-09-09T05:10:00Z",
-    "project-mugetsu": "2026-09-09T05:10:00Z",
-    "sailor-piece": "2026-09-09T05:10:00Z",
+    "grand-piece-online": "2026-09-22T05:00:00Z",
+    "jujutsu-shenanigans": "2026-09-22T05:00:00Z",
+    "haze-piece": "2026-09-22T05:00:00Z",
+    "project-mugetsu": "2026-09-22T05:00:00Z",
+    "sailor-piece": "2026-09-22T05:00:00Z",
     "peroxide": "2026-09-09T05:10:00Z",
     "untitled-boxing-game": "2026-09-09T05:10:00Z",
     "slap-battles": "2026-09-09T05:10:00Z",
@@ -1231,7 +1231,10 @@
     "bloxstrike": "2026-09-19",
     "catch-and-tame": "2026-09-19",
     "fish-an-anime-rng": "2026-09-19",
-    "be-a-brainrot": "2026-09-21"
+    "be-a-brainrot": "2026-09-21",
+    "tower-defense-simulator": "2026-09-22T05:00:00Z",
+    "world-fighters": "2026-09-22T05:00:00Z",
+    "hypershot": "2026-09-22T05:00:00Z"
   },
   "_catalogVerifyNote": "Suivi de la ROTATION quotidienne (ETAPE 2ter): date de derniere verif approfondie par slug. Les slugs ABSENTS de cet objet = jamais verifies en profondeur = priorite maximale du prochain lot. Jeux flagges 'a reverifier' laisses ABSENTS expres (a-one-piece-game, anime-adventures, anime-fighters, anime-fighting-simulator, anime-fighting-simulator-reborn, anime-rangers-x, anime-reversal, anime-rift-tower-defense, anime-rng, scroll-a-brainrot, world-fighters, heroes-battlegrounds).",
   "_pending2026-09-05": {
@@ -1391,5 +1394,22 @@
     "volleyball-legends": "UPDATE_88/GET_SLIMED/XP_BOOST (source unique 21 sept.; nos 3 confirmés GamesRadar 14 sept.)",
     "king-legacy": "<3LEEPUNGG (Pocket Tactics 18 sept., source unique)",
     "anime-vanguards": "100thTournament (PGG 18 sept. seul; a servi de base au passage 8->3 par retrait des expirés)"
+  },
+  "_pending2026-09-22": {
+    "tower-defense-simulator": "CHRISTMAS2025 listé actif par Beebom (Sep 1, 1 source; PCGamesN périmé 2024) - non publié, garde 2 actifs",
+    "hypershot": "Conflit: Pocket Tactics (Sep 15) dit 0 actif (ONEBILLION+THANKSGIVING expirés) vs agrégat (Insider/PocketGamer/RobloxDen) ONEBILLION+THANKSGIVING actifs - ONEBILLION conservé, THANKSGIVING non ajouté",
+    "fisch": "PeaceLoveUnityRespect (Beebom seul); LittleBudlingUpdate (Beebom+PocketGamer actifs mais Destructoid Sep21 expiré -> non ajouté). MarianaIsGoingCrazy publié (3 sources).",
+    "muscle-legends": "bossstrike/bossguard (agrégat Sep 17, 1 source résumé) - non publiés",
+    "attack-on-titan-revolution": "LIKES1M400K (nouveau milestone, agrégat) - candidat non ajouté faute de liste datée propre",
+    "ninja-legends": "legendaryninja500/SKYBLADES10K/SILENTSHADOWS1000/INNERPEACE5K (agrégat Sep 17) - candidats, nos 8 confirmés actifs",
+    "car-dealership-tycoon": "VACATION/STYLE/SEPTEMBER (~22 actifs selon sources vs nos 14) - enrichissement possible, aucun de nos 14 prouvé expiré",
+    "jules-rng": "ARC6/Blessing4All (candidats agrégat) - nos 16 non contredits"
+  },
+  "_rotationARevoir2026-09-22": {
+    "type-soul": "Désaccord massif des sources: PGG (Sep 1) liste 64 actifs vs Beebom (Sep 18) 7 actifs. Page laissée vide (prudence) - reconstruction non fiable.",
+    "sailor-piece": "Update récent: nouveaux codes 2XLUCKMASTERYEVENT/HUGEBUGFIX/MAINTENANCE (Sep 13); nos TojiDanteUpdate/Weloveyou possiblement expirés (fast-expiry + reset MAJ). Non modifié faute de liste datée propre par source.",
+    "character-rng": "Collision de noms sévère: Character RNG vs Heroes RNG vs RNG Heroes vs Defeat Anime RNG. RobloxDen 7 actifs vs nos 10. Non modifié.",
+    "grow-a-chicken-fighter": "Fast-expiry: nouveaux codes Sep 18-19 (charm dust/amber shards) non nommés dans les sources agrégées; nos 4 non contredits. Non modifié.",
+    "broken-blade": "ABYSSSEAL expiré 21 sept; ENDLESSTOWER (Sep 1, limité 70k) non confirmé récent -> non ajouté. Nos 11 milestone non prouvés expirés."
   }
 }

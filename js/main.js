@@ -3,6 +3,9 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+  'ride-a-pet': 'https://tr.rbxcdn.com/180DAY-3ffbd41c5b51c95ae19350431588608e/768/432/Image/Png/noFilter',
+  'slayers-2': 'https://tr.rbxcdn.com/180DAY-dba4c44c1db70a2c2ef8fbe97580c662/768/432/Image/Png/noFilter',
+  'illegal-soccer': 'https://tr.rbxcdn.com/180DAY-e7aae66394912b42be832bf6b8dfe84f/768/432/Image/Png/noFilter',
   'search-for-the-needle': 'https://tr.rbxcdn.com/180DAY-19a201f37929cac782ac0b884693b6d7/768/432/Image/Png/noFilter',
   'dungeon-quest-reborn': 'https://tr.rbxcdn.com/180DAY-70c1d4c8beaf4aa7f463b9556abfe4c9/480/270/Image/Webp/noFilter','anime-origins': 'https://tr.rbxcdn.com/180DAY-921f16e3041d929ed22801e02394fad5/768/432/Image/Png/noFilter',
   'grow-a-chicken-fighter': 'https://tr.rbxcdn.com/180DAY-8403e52cfc77a0fb4df895e64943deab/768/432/Image/Png/noFilter',
@@ -207,7 +210,10 @@ function initMobileNav() {
 }
 
 /* ---- Search index ---- */
-const GAMES_INDEX = [{ name: 'Search For The Needle', slug: 'search-for-the-needle', emoji: '🪡', codes: 2 },
+const GAMES_INDEX = [{ name: 'Ride A Pet', slug: 'ride-a-pet', emoji: '🐶', codes: 0 },
+  { name: 'Slayers 2', slug: 'slayers-2', emoji: '⚔️', codes: 2 },
+  { name: 'Illegal Soccer', slug: 'illegal-soccer', emoji: '⚽', codes: 0 },
+{ name: 'Search For The Needle', slug: 'search-for-the-needle', emoji: '🪡', codes: 2 },
   { name: 'Dungeon Quest Reborn', slug: 'dungeon-quest-reborn', emoji: '⚔️', codes: 0 },
 { name: "Anime Origins", slug: 'anime-origins', emoji: '⚔️', codes: 9 },
   { name: "Grow a Chicken Fighter", slug: 'grow-a-chicken-fighter', emoji: '🐔', codes: 4 },
@@ -450,6 +456,9 @@ function highlightNav() {
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
+  'ride-a-pet': 10035204815,
+  'slayers-2': 5595353122,
+  'illegal-soccer': 10155360168,
   'search-for-the-needle': 10756011174,
   'dungeon-quest-reborn': 9931749389,'anime-origins': 8946565814,
   'grow-a-chicken-fighter': 10338952197,
