@@ -894,49 +894,41 @@
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
   "lastRun": {
-    "date": "2026-09-22",
-    "iso": "2026-09-22T05:00:00Z",
+    "date": "2026-09-23",
+    "iso": "2026-09-23T05:00:00Z",
     "hotGamesVerified": [
       "grow-a-garden",
       "steal-a-brainrot",
-      "blox-fruits",
-      "anime-last-stand",
-      "tower-defense-simulator",
-      "fisch",
-      "world-fighters",
-      "hypershot"
+      "volleyball-legends",
+      "blue-lock-rivals",
+      "anime-vanguards",
+      "fruit-battlegrounds",
+      "squid-game-x"
     ],
     "hotGamesChanged": [
-      "fisch"
+      "volleyball-legends",
+      "anime-vanguards"
     ],
     "rotationVerified": [
-      "fish-it",
-      "type-soul",
-      "grand-piece-online",
-      "haze-piece",
-      "jujutsu-shenanigans",
-      "project-mugetsu",
-      "sailor-piece",
-      "character-rng",
-      "car-dealership-tycoon",
-      "muscle-legends",
-      "ninja-legends",
-      "attack-on-titan-revolution",
-      "jules-rng",
-      "grow-a-chicken-fighter",
-      "broken-blade"
+      "blockspin",
+      "illegal-soccer",
+      "defend-ur-base-with-anime",
+      "merge-a-nuke",
+      "1-aura-per-click",
+      "grimoires-era",
+      "locked",
+      "my-gym",
+      "catch-a-monster",
+      "fifa-super-soccer"
     ],
-    "rotationChanged": [
-      "grand-piece-online",
-      "haze-piece",
-      "fish-it"
-    ],
+    "rotationChanged": [],
     "rotationARevoir": [
-      "type-soul",
-      "sailor-piece",
-      "character-rng",
-      "grow-a-chicken-fighter",
-      "broken-blade"
+      "grimoires-era",
+      "locked",
+      "my-gym",
+      "catch-a-monster",
+      "fifa-super-soccer",
+      "blue-lock-rivals"
     ]
   },
   "_pending2026-07-18": [
@@ -1015,7 +1007,7 @@
     "a-prioriser-prochain-run": "Fruit Battlegrounds (paliers + OPE V2), Anime Last Stand (liste active exacte), Fisch (fluide), + long tail. Ficher Anime Origins & +1 Speed Keyboard Escape avec Chrome."
   },
   "meta": {
-    "updated": "2026-09-19T05:00:00Z"
+    "updated": "2026-09-23T05:00:00Z"
   },
   "_pending2026-08-29": {
     "grow-a-garden": {
@@ -1119,7 +1111,7 @@
     "case-simulator-rng": "2026-09-15",
     "survive-the-killer": "2026-09-15",
     "blade-ball": "2026-09-15",
-    "fruit-battlegrounds": "2026-09-15",
+    "fruit-battlegrounds": "2026-09-23",
     "anime-astral-simulator": "2026-09-10",
     "doors": "2026-09-10",
     "clover-retribution": "2026-09-10",
@@ -1132,11 +1124,11 @@
     "anime-battle-rng": "2026-09-10",
     "driving-empire": "2026-09-10",
     "blox-fruits": "2026-09-22T05:00:00Z",
-    "grow-a-garden": "2026-09-22T05:00:00Z",
-    "steal-a-brainrot": "2026-09-22T05:00:00Z",
-    "anime-vanguards": "2026-09-15",
-    "blue-lock-rivals": "2026-09-15",
-    "volleyball-legends": "2026-09-15",
+    "grow-a-garden": "2026-09-23",
+    "steal-a-brainrot": "2026-09-23",
+    "anime-vanguards": "2026-09-23",
+    "blue-lock-rivals": "2026-09-23",
+    "volleyball-legends": "2026-09-23",
     "king-legacy": "2026-09-03",
     "fisch": "2026-09-22T05:00:00Z",
     "pet-simulator-99": "2026-09-03",
@@ -1234,7 +1226,13 @@
     "be-a-brainrot": "2026-09-21",
     "tower-defense-simulator": "2026-09-22T05:00:00Z",
     "world-fighters": "2026-09-22T05:00:00Z",
-    "hypershot": "2026-09-22T05:00:00Z"
+    "hypershot": "2026-09-22T05:00:00Z",
+    "squid-game-x": "2026-09-23",
+    "blockspin": "2026-09-23",
+    "illegal-soccer": "2026-09-23",
+    "defend-ur-base-with-anime": "2026-09-23",
+    "merge-a-nuke": "2026-09-23",
+    "1-aura-per-click": "2026-09-23"
   },
   "_catalogVerifyNote": "Suivi de la ROTATION quotidienne (ETAPE 2ter): date de derniere verif approfondie par slug. Les slugs ABSENTS de cet objet = jamais verifies en profondeur = priorite maximale du prochain lot. Jeux flagges 'a reverifier' laisses ABSENTS expres (a-one-piece-game, anime-adventures, anime-fighters, anime-fighting-simulator, anime-fighting-simulator-reborn, anime-rangers-x, anime-reversal, anime-rift-tower-defense, anime-rng, scroll-a-brainrot, world-fighters, heroes-battlegrounds).",
   "_pending2026-09-05": {
@@ -1411,5 +1409,15 @@
     "character-rng": "Collision de noms sévère: Character RNG vs Heroes RNG vs RNG Heroes vs Defeat Anime RNG. RobloxDen 7 actifs vs nos 10. Non modifié.",
     "grow-a-chicken-fighter": "Fast-expiry: nouveaux codes Sep 18-19 (charm dust/amber shards) non nommés dans les sources agrégées; nos 4 non contredits. Non modifié.",
     "broken-blade": "ABYSSSEAL expiré 21 sept; ENDLESSTOWER (Sep 1, limité 70k) non confirmé récent -> non ajouté. Nos 11 milestone non prouvés expirés."
+  },
+  "_rotationARevoir2026-09-23": {
+    "grimoires-era": "Sources datées introuvables (Fandom/PGG périmés fév-août) — garder les 11 codes, revérifier via wiki Fandom.",
+    "locked": "Ambiguïté LOCKED vs LOCKED 2 : jeux de codes différents (nos codes WATCHTOWER/MALICIAFOUL… vs SORR4DELAYS/LORENZOUPDATE côté LOCKED 2). Désambiguïser au placeId.",
+    "my-gym": "Nom ambigu (My Gym vs Run a Gym vs Gym League vs Ultimate Gym Game) — pas de liste datée fiable pour NOTRE jeu.",
+    "catch-a-monster": "Sources contradictoires/périmées (PCGamesN mars 2026 ; nouveaux codes stowerbug/stellawolf/nexa en source unique). Vérifié récemment (21/09) — attendre 2 sources concordantes fraîches.",
+    "fifa-super-soccer": "Codes-nom bestfootball/fifasupersoccer : Insider Gaming (2 sept) les dit actifs, mais notre page (vérif 20/09, plus récente) les a déjà classés expirés. Conflit non résolu — ne pas réactiver sans preuve."
+  },
+  "_pending2026-09-23": {
+    "grow-a-garden": "FREESEED (event The Hunt: Roblox 20) listé par Pro Game Guides (17 sept) en source UNIQUE → surveillance, pas encore publié (règle 2 sources). STORY/STARBUD (PGG, récompenses graines) suspects/périmés, ignorés. torigate reste expiré (2 sources)."
   }
 }

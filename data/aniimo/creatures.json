@@ -1,159 +1,175 @@
 {
-  "game": "aniimo",
-  "updated": "2026-09-18",
-  "intro": "Base de créatures Aniimo : chaque Aniimo a un élément (parmi 9) et un rôle (parmi 5 : DPS, Heal, Support, Break, Regen). On ne publie ici que des fiches dont les informations sont recoupées ; les champs incertains sont signalés « à confirmer » plutôt qu'inventés.",
-  "note": "Le jeu compte ~90-100 Aniimo au total. Cette base couvre d'abord les créatures les plus utiles et les mieux documentées (starters + méta S). Elle s'étoffera à mesure que les données se confirment.",
-  "creatures": [
-    {
-      "slug": "helion",
-      "name": "Helion",
-      "element": "Lumière",
-      "role": "DPS",
-      "stage": "Lumin (starter)",
-      "tier": "S",
-      "confidence": "HIGH",
-      "obtention": "Starter : à choisir tout au début du jeu (alternative à Lunara).",
-      "evolution": "Évolue en Soleon (« Helios' Judgment ») en activant son Ultime ; il reste sous forme évoluée jusqu'à la fin du combat.",
-      "utilite": "DPS de mêlée : regroupe les ennemis puis les fait exploser avec des combos burst.",
-      "stats": {
-        "PV": 100,
-        "ATK": 116,
-        "BREAK": 64,
-        "P.DEF": 72,
-        "M.DEF": 72,
-        "REGEN": 90
-      },
-      "sources": [
-        "https://game8.co/games/Aniimo/archives/618059",
-        "https://mobi.gg/en/tips/aniimo-starter-lunara-or-helion/",
-        "https://games.gg/aniimo/guides/aniimo-helion-vs-lunara/"
-      ]
-    },
-    {
-      "slug": "lunara",
-      "name": "Lunara",
-      "element": "Lumière",
-      "role": "DPS",
-      "stage": "Lumin (starter)",
-      "tier": "S",
-      "confidence": "HIGH",
-      "obtention": "Starter : à choisir tout au début du jeu (alternative à Helion).",
-      "evolution": "Évolue en Fennelun (« Selene's Judgment ») en activant son Ultime ; reste évoluée jusqu'à la fin du combat.",
-      "utilite": "DPS à distance : harcèle (kite), applique des debuffs et se soigne via ses dégâts. Mêmes stats de base que Helion, style de jeu différent.",
-      "stats": {
-        "PV": 100,
-        "ATK": 116,
-        "BREAK": 64,
-        "P.DEF": 72,
-        "M.DEF": 72,
-        "REGEN": 90
-      },
-      "sources": [
-        "https://game8.co/games/Aniimo/archives/618059",
-        "https://mobi.gg/en/tips/aniimo-starter-lunara-or-helion/"
-      ]
-    },
-    {
-      "slug": "fulmintis",
-      "name": "Fulmintis",
-      "element": "Foudre",
-      "role": "DPS",
-      "stage": "Nova",
-      "tier": "S",
-      "confidence": "HIGH",
-      "obtention": "S'obtient en faisant éclore l'« Incredible Fulmintis Egg », gagné en atteignant le niveau 10 du Companion Handbook.",
-      "evolution": "Forme Nova (stade final).",
-      "utilite": "Meilleur DPS de la méta de lancement : ATK de base la plus élevée (130), kit axé coups critiques et attaques de lame soutenues.",
-      "stats": {
-        "ATK": 130
-      },
-      "sources": [
-        "https://game8.co/games/Aniimo/archives/622500",
-        "https://game8.co/games/Aniimo/archives/621098"
-      ]
-    },
-    {
-      "slug": "inferlupa",
-      "name": "Inferlupa",
-      "element": "Feu / Ténèbres",
-      "role": "Break",
-      "stage": "Nova",
-      "tier": "S",
-      "confidence": "HIGH",
-      "obtention": "Uniquement par évolution (ne se capture pas directement).",
-      "evolution": "Se débloque via Flameruff : il faut compléter la quête annexe « Journey: Warrior » à Beast Fang Ridge pour ouvrir la branche d'évolution.",
-      "utilite": "Spécialiste du Break : brise la jauge BREAK des cibles pour faciliter captures et burst d'équipe.",
-      "sources": [
-        "https://game8.co/games/Aniimo/archives/621580",
-        "https://game8.co/games/Aniimo/archives/621098"
-      ]
-    },
-    {
-      "slug": "gracewing",
-      "name": "Gracewing",
-      "element": null,
-      "role": "Heal",
-      "stage": "Évolution",
-      "tier": "S",
-      "confidence": "MEDIUM",
-      "obtention": "S'obtient par évolution (à partir de Flutternym).",
-      "evolution": "Évolue depuis Flutternym.",
-      "utilite": "Considéré comme le meilleur soigneur de la méta : soigne même les alliés hors terrain quand ils utilisent une compétence, retire les debuffs et rend de l'EP.",
-      "elementNote": "Élément non confirmé de façon fiable — à préciser.",
-      "sources": [
-        "https://game8.co/games/Aniimo/archives/621098",
-        "https://mobalytics.gg/gamebase/guides/aniimo-best-early-team"
-      ]
-    },
-    {
-      "slug": "somniwing",
-      "name": "Somniwing",
-      "element": null,
-      "role": "Support",
-      "stage": "—",
-      "tier": "S",
-      "confidence": "MEDIUM",
-      "obtention": "Voir la base communautaire pour l'emplacement exact (non confirmé ici).",
-      "evolution": "N'a pas d'évolution.",
-      "utilite": "Support/Regen : applique sommeil et vulnérabilité, soutient l'EP et pose une Energy Orb qui booste les dégâts alliés.",
-      "elementNote": "Élément non confirmé de façon fiable — à préciser.",
-      "sources": [
-        "https://game8.co/games/Aniimo/archives/621098"
-      ]
-    },
-    {
-      "slug": "glacy",
-      "name": "Glacy",
-      "element": "Glace",
-      "role": "Heal",
-      "stage": "Évolution",
-      "tier": "A",
-      "confidence": "MEDIUM",
-      "obtention": "Par évolution en chaîne depuis Skippy.",
-      "evolution": "Skippy → Pranky (niveau 12) → Glacy (niveau 20, avec 3× Wave Stones).",
-      "utilite": "Soigneur solide pour débuter, à sortir quand l'équipe encaisse.",
-      "elementNote": "Élément Glace probable (nom + chaîne d'évolution) — à confirmer.",
-      "sources": [
-        "https://mobalytics.gg/gamebase/guides/aniimo-best-early-team",
-        "https://games.gg/aniimo/guides/aniimo-best-teams/"
-      ]
-    },
-    {
-      "slug": "turbo",
-      "name": "Turbo",
-      "element": "Vent",
-      "role": "Support",
-      "stage": "Évolution",
-      "tier": "A",
-      "confidence": "MEDIUM",
-      "obtention": "Par évolution depuis Nimbi.",
-      "evolution": "Nimbi → Turbo (niveau 21, avec 3× Gust Stones).",
-      "utilite": "Support/buff de dégâts : sa compétence « Nimbi Burst » applique un bonus de dégâts à l'équipe, à lancer en ouverture de combat.",
-      "elementNote": "Élément Vent probable (Gust Stones) — à confirmer.",
-      "sources": [
-        "https://mobalytics.gg/gamebase/guides/aniimo-best-early-team",
-        "https://games.gg/aniimo/guides/aniimo-best-teams/"
-      ]
-    }
-  ]
+ "game": "aniimo",
+ "updated": "2026-09-23",
+ "intro": "Base de créatures Aniimo : chaque Aniimo a un élément (parmi 9) et un rôle (parmi 5 : DPS, Heal, Support, Break, Regen). On ne publie ici que des fiches dont les informations sont recoupées ; les champs incertains sont signalés « à confirmer » plutôt qu'inventés.",
+ "note": "Le jeu compte ~90-100 Aniimo au total. Cette base couvre d'abord les créatures les plus utiles et les mieux documentées (starters + méta S). Elle s'étoffera à mesure que les données se confirment.",
+ "creatures": [
+  {
+   "slug": "helion",
+   "name": "Helion",
+   "element": "Lumière",
+   "role": "DPS",
+   "stage": "Lumin (starter)",
+   "tier": "S",
+   "confidence": "HIGH",
+   "obtention": "Starter : à choisir tout au début du jeu (alternative à Lunara).",
+   "evolution": "Évolue en Soleon (« Helios' Judgment ») en activant son Ultime ; il reste sous forme évoluée jusqu'à la fin du combat.",
+   "utilite": "DPS de mêlée : regroupe les ennemis puis les fait exploser avec des combos burst.",
+   "stats": {
+    "PV": 100,
+    "ATK": 116,
+    "BREAK": 64,
+    "P.DEF": 72,
+    "M.DEF": 72,
+    "REGEN": 90
+   },
+   "sources": [
+    "https://game8.co/games/Aniimo/archives/618059",
+    "https://mobi.gg/en/tips/aniimo-starter-lunara-or-helion/",
+    "https://games.gg/aniimo/guides/aniimo-helion-vs-lunara/"
+   ]
+  },
+  {
+   "slug": "lunara",
+   "name": "Lunara",
+   "element": "Lumière",
+   "role": "DPS",
+   "stage": "Lumin (starter)",
+   "tier": "S",
+   "confidence": "HIGH",
+   "obtention": "Starter : à choisir tout au début du jeu (alternative à Helion).",
+   "evolution": "Évolue en Fennelun (« Selene's Judgment ») en activant son Ultime ; reste évoluée jusqu'à la fin du combat.",
+   "utilite": "DPS à distance : harcèle (kite), applique des debuffs et se soigne via ses dégâts. Mêmes stats de base que Helion, style de jeu différent.",
+   "stats": {
+    "PV": 100,
+    "ATK": 116,
+    "BREAK": 64,
+    "P.DEF": 72,
+    "M.DEF": 72,
+    "REGEN": 90
+   },
+   "sources": [
+    "https://game8.co/games/Aniimo/archives/618059",
+    "https://mobi.gg/en/tips/aniimo-starter-lunara-or-helion/"
+   ]
+  },
+  {
+   "slug": "fulmintis",
+   "name": "Fulmintis",
+   "element": "Foudre",
+   "role": "DPS",
+   "stage": "Nova",
+   "tier": "S",
+   "confidence": "HIGH",
+   "obtention": "S'obtient en faisant éclore l'« Incredible Fulmintis Egg », gagné en atteignant le niveau 10 du Companion Handbook.",
+   "evolution": "Forme Nova (stade final).",
+   "utilite": "Meilleur DPS de la méta de lancement : ATK de base la plus élevée (130), kit axé coups critiques et attaques de lame soutenues.",
+   "stats": {
+    "ATK": 130
+   },
+   "sources": [
+    "https://game8.co/games/Aniimo/archives/622500",
+    "https://game8.co/games/Aniimo/archives/621098"
+   ]
+  },
+  {
+   "slug": "inferlupa",
+   "name": "Inferlupa",
+   "element": "Feu / Ténèbres",
+   "role": "Break",
+   "stage": "Nova",
+   "tier": "S",
+   "confidence": "HIGH",
+   "obtention": "Uniquement par évolution (ne se capture pas directement).",
+   "evolution": "Se débloque via Flameruff : il faut compléter la quête annexe « Journey: Warrior » à Beast Fang Ridge pour ouvrir la branche d'évolution.",
+   "utilite": "Spécialiste du Break : brise la jauge BREAK des cibles pour faciliter captures et burst d'équipe.",
+   "sources": [
+    "https://game8.co/games/Aniimo/archives/621580",
+    "https://game8.co/games/Aniimo/archives/621098"
+   ]
+  },
+  {
+   "slug": "gracewing",
+   "name": "Gracewing",
+   "element": null,
+   "role": "Heal",
+   "stage": "Évolution",
+   "tier": "S",
+   "confidence": "MEDIUM",
+   "obtention": "S'obtient par évolution (à partir de Flutternym).",
+   "evolution": "Évolue depuis Flutternym.",
+   "utilite": "Considéré comme le meilleur soigneur de la méta : soigne même les alliés hors terrain quand ils utilisent une compétence, retire les debuffs et rend de l'EP.",
+   "elementNote": "Élément non confirmé de façon fiable — à préciser.",
+   "sources": [
+    "https://game8.co/games/Aniimo/archives/621098",
+    "https://mobalytics.gg/gamebase/guides/aniimo-best-early-team"
+   ]
+  },
+  {
+   "slug": "somniwing",
+   "name": "Somniwing",
+   "element": null,
+   "role": "Support",
+   "stage": "—",
+   "tier": "S",
+   "confidence": "MEDIUM",
+   "obtention": "Voir la base communautaire pour l'emplacement exact (non confirmé ici).",
+   "evolution": "N'a pas d'évolution.",
+   "utilite": "Support/Regen : applique sommeil et vulnérabilité, soutient l'EP et pose une Energy Orb qui booste les dégâts alliés.",
+   "elementNote": "Élément non confirmé de façon fiable — à préciser.",
+   "sources": [
+    "https://game8.co/games/Aniimo/archives/621098"
+   ]
+  },
+  {
+   "slug": "glacy",
+   "name": "Glacy",
+   "element": "Glace",
+   "role": "Heal",
+   "stage": "Évolution",
+   "tier": "A",
+   "confidence": "MEDIUM",
+   "obtention": "Par évolution en chaîne depuis Skippy.",
+   "evolution": "Skippy → Pranky (niveau 12) → Glacy (niveau 20, avec 3× Wave Stones).",
+   "utilite": "Soigneur solide pour débuter, à sortir quand l'équipe encaisse.",
+   "elementNote": "Élément Glace probable (nom + chaîne d'évolution) — à confirmer.",
+   "sources": [
+    "https://mobalytics.gg/gamebase/guides/aniimo-best-early-team",
+    "https://games.gg/aniimo/guides/aniimo-best-teams/"
+   ]
+  },
+  {
+   "slug": "turbo",
+   "name": "Turbo",
+   "element": "Vent",
+   "role": "Support",
+   "stage": "Évolution",
+   "tier": "A",
+   "confidence": "MEDIUM",
+   "obtention": "Par évolution depuis Nimbi.",
+   "evolution": "Nimbi → Turbo (niveau 21, avec 3× Gust Stones).",
+   "utilite": "Support/buff de dégâts : sa compétence « Nimbi Burst » applique un bonus de dégâts à l'équipe, à lancer en ouverture de combat.",
+   "elementNote": "Élément Vent probable (Gust Stones) — à confirmer.",
+   "sources": [
+    "https://mobalytics.gg/gamebase/guides/aniimo-best-early-team",
+    "https://games.gg/aniimo/guides/aniimo-best-teams/"
+   ]
+  },
+  {
+   "slug": "prismana-glynsera",
+   "name": "Prismana Glynsera",
+   "element": "Lumière / Glace",
+   "role": "DPS",
+   "stage": "Nova",
+   "tier": "A",
+   "confidence": "HIGH",
+   "obtention": "Aniimo spécial de la Saison 1, capturable uniquement pendant l'événement Vein Abundance (21 → 27 septembre 2026). Apparaît à Beast Fang Ridge lorsqu'un Prismana Flow se déclenche.",
+   "evolution": "Forme Prismana de Glynsera (variante événementielle du stade Nova).",
+   "utilite": "Aniimo DPS événementiel à double typage Lumière/Glace ; disponibilité limitée dans le temps pendant la rotation Prismana de la Saison 1.",
+   "sources": [
+    "https://game8.co/games/Aniimo/archives/621751",
+    "https://mobalytics.gg/gamebase/guides/aniimo-prismana-guide"
+   ]
+  }
+ ]
 }
