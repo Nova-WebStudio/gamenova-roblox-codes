@@ -1,218 +1,295 @@
 {
- "_comment": "Mémoire éditoriale persistante de ZoneBlox (spec V2, section 7). Chaque sujet suit le lifecycle DETECTED->VERIFIED->PUBLISHED->UPDATED->EVERGREEN->ARCHIVED. Statuts: DISCOVERED, MONITOR, VERIFIED, MUST_PUBLISH, PUBLISHED, UPDATE_REQUIRED, UPDATED, EVERGREEN, IGNORED, EXPIRED. Le trendScore (0-100) sert UNIQUEMENT à prioriser le travail interne, ce n'est pas une mesure scientifique.",
- "version": 1,
- "created": "2026-09-22",
- "meta": {
-  "updated": "2026-09-23T05:00:00Z",
-  "lastRun": "2026-09-22-soir",
-  "runType": "editorial-intelligence (off-cycle ~18h45) + totale +1 Loot To Forge (~19h)"
- },
- "topics": [
-  {
-   "id": "1-loot-to-forge-launch",
-   "jeu": "+1 Loot To Forge",
-   "sujet": "Nouveau simulateur de forge en forte croissance (cluster complet créé)",
-   "categorie": "new-game",
-   "premiereDetection": "2026-09-22",
-   "derniereVerification": "2026-09-22",
-   "statut": "PUBLISHED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "API Roblox (games/thumbnails/universes) + description in-game",
-    "https://www.destructoid.com/1-loot-to-forge-codes/",
-    "https://tryhardguides.com/1-loot-to-forge-codes/",
-    "https://1loottoforge.wiki/",
-    "https://www.sportskeeda.com/roblox-news/1-loot-forge-a-beginner-s-guide"
-   ],
-   "sourceOriginale": "Demande de Peter (URL Roblox) + API Roblox",
-   "potentielSEO": "eleve",
-   "trendScore": 82,
-   "pagesZoneblox": [
-    "codes-1-loot-to-forge.html",
-    "tier-list/1-loot-to-forge.html",
-    "guides/1-loot-to-forge.html"
-   ],
-   "articleCree": true,
-   "url": "/codes-1-loot-to-forge.html",
-   "prochaineAction": "MONITOR : surveiller le prochain code de palier (40000CCU probable) et l'ajouter ; suivre les patchs (après RACES du 20 sept.). Revérifier les codes ~tous les 10 jours (rotation).",
-   "notes": "Good Bro Studio, place 118805555015549, universe 10684750879, group 828376264. ~30k CCU, ~11M visites, 656k favoris, créé 12/08/2026. Cluster « totale » créé le 22/09 : codes (2 actifs 30000CCU/20000CCU), tier list (priorités — pas d'armes inventées, stats en aperçu live), guide complet (2 vidéos oEmbed vérifiées). Intégré : GAMES_INDEX/ROBLOX_THUMBS/ROBLOX_UNIVERSE_IDS (main.js), const GAMES (index.html), tous-les-codes/tier-lists/guides, sitemap, régénérations OK."
+  "_comment": "Mémoire éditoriale persistante de ZoneBlox (spec V2, section 7). Chaque sujet suit le lifecycle DETECTED->VERIFIED->PUBLISHED->UPDATED->EVERGREEN->ARCHIVED. Statuts: DISCOVERED, MONITOR, VERIFIED, MUST_PUBLISH, PUBLISHED, UPDATE_REQUIRED, UPDATED, EVERGREEN, IGNORED, EXPIRED. Le trendScore (0-100) sert UNIQUEMENT à prioriser le travail interne, ce n'est pas une mesure scientifique.",
+  "version": 1,
+  "created": "2026-09-22",
+  "meta": {
+    "updated": "2026-09-24T05:00:00Z",
+    "lastRun": "2026-09-24-05h",
+    "runType": "full maintenance + editorial (05h)"
   },
-  {
-   "id": "fc27-launch-2026",
-   "jeu": "EA Sports FC 27",
-   "sujet": "Sortie mondiale + contenu de lancement (Ones to Watch, TOTW 1-2, Destined for Glory)",
-   "categorie": "release",
-   "premiereDetection": "2026-09-18",
-   "derniereVerification": "2026-09-22",
-   "statut": "EVERGREEN",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "https://www.ea.com/games/ea-sports-fc/fc-27/news/pitch-notes-fc27-launch-update",
-    "https://dotesports.com/ea-sports-fc/guides/ea-sports-fc-27-launch-update-patch-notes",
-    "https://www.ea.com/games/ea-sports-fc/fc-27/news/fc-27-editions-and-release-dates"
-   ],
-   "sourceOriginale": "EA Sports (officiel)",
-   "potentielSEO": "eleve",
-   "trendScore": 88,
-   "pagesZoneblox": [
-    "data/fc-27/updates.json",
-    "data/fc-27/guides.json",
-    "data/games/(fc-27 evergreen)"
-   ],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "Au run 05h post-lancement (26 sept.): détailler Season 1 Ones to Watch (17 sept.->22 oct.), Destined for Glory (démarre 25 sept., Mbappé en tête: Rogers, Fernandes, Isak, Mbeumo), TOTW 1-2, SBC/Objectifs d'accès anticipé. Vérifier notes des tops joueurs à J0.",
-   "notes": "Accès anticipé Ultimate/Ultimate+/EA Play depuis le 18 sept. Lancement standard le 25 sept. (J-3). Déjà couvert en HIGH dans data/fc-27/updates.json ; enrichissement de détail promo à faire une fois le contenu live."
-  },
-  {
-   "id": "gta6-release-nov19",
-   "jeu": "GTA 6",
-   "sujet": "Date de sortie 19 nov. 2026 (evergreen) + marketing pré-lancement",
-   "categorie": "release/marketing",
-   "premiereDetection": "2026-05",
-   "derniereVerification": "2026-09-23",
-   "statut": "EVERGREEN",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "https://www.rockstargames.com/newswire",
-    "https://www.gamespot.com/articles/gta-6-is-taking-over-miami-one-airlifted-letter-at-a-time/",
-    "https://www.gtabase.com/grand-theft-auto-6/"
-   ],
-   "sourceOriginale": "Rockstar Games (officiel)",
-   "potentielSEO": "eleve",
-   "trendScore": 84,
-   "pagesZoneblox": [
-    "data/games/gta-6.json"
-   ],
-   "articleCree": false,
-   "url": "/games/gta-6.html",
-   "prochaineAction": "MONITOR. Page evergreen à jour sur la date (19 nov.), plateformes (PS5/Xbox Series only), 2e trailer, pré-co. Nouveaux items mineurs NON encore reflétés (voir notes) — faible valeur joueur, ne pas créer d'URL, éventuellement ligne 'actus' au run 05h si section news ajoutée.",
-   "notes": "Sortie 19 nov. 2026 toujours confirmée (reveal Netflix 21 sept, ~27 min de gameplay near-final). Actus marketing (DualSense édition GTA VI, système de relation Lucia/Jason, NDA cast) = faible valeur joueur → evergreen inchangé, MONITOR."
-  },
-  {
-   "id": "aniimo-codes-sep2026",
-   "jeu": "Aniimo",
-   "sujet": "Codes actifs + nouvelle créature Prismana Glynsera",
-   "categorie": "codes/content",
-   "premiereDetection": "2026-09-16",
-   "derniereVerification": "2026-09-23",
-   "statut": "UPDATED",
-   "importance": "moyenne",
-   "confiance": "HIGH (codes) / MOYENNE (détail butin de 6 codes)",
-   "sources": [
-    "https://game8.co/games/Aniimo/archives/624090",
-    "https://beebom.com/aniimo-codes/",
-    "https://www.destructoid.com/aniimo-codes/",
-    "https://www.pcgamer.com/games/rpg/aniimo-codes/",
-    "https://www.gamesradar.com/games/rpg/aniimo-codes/"
-   ],
-   "sourceOriginale": "game8 / agrégat médias",
-   "potentielSEO": "moyen",
-   "trendScore": 58,
-   "pagesZoneblox": [
-    "data/aniimo/codes.json",
-    "data/aniimo/creatures.json",
-    "games/aniimo/codes/"
-   ],
-   "articleCree": true,
-   "url": "/games/aniimo/codes/",
-   "prochaineAction": "Au run 05h: (1) rafraîchir lastChecked->jour + passer les 9 flags 'new':true (datés du 16 sept., périmés) à false; (2) ajouter la créature Prismana Glynsera (MAJ 17 sept.) à creatures.json — absente actuellement (8 créatures listées); puis python3 tools/build_site.py. Aucun code à changer (set 11 confirmé stable).",
-   "notes": "Badges new périmés remis à false ; créature Prismana Glynsera (event Vein Abundance 21-27 sept) ajoutée à creatures.json. build_site relancé."
-  },
-  {
-   "id": "steal-a-brainrot-spawn-codes",
-   "jeu": "Steal a Brainrot",
-   "sujet": "Codes de spawn éphémères (BESTBRAINROTEVER / saturn)",
-   "categorie": "codes",
-   "premiereDetection": "2026-09-22",
-   "derniereVerification": "2026-09-22",
-   "statut": "MONITOR",
-   "importance": "basse",
-   "confiance": "FAIBLE",
-   "sources": [
-    "https://www.gamesradar.com/games/simulation/roblox-steal-a-brainrot-codes/",
-    "https://www.pcgamesn.com/steal-a-brainrot/codes"
-   ],
-   "sourceOriginale": "agrégat médias (conflit)",
-   "potentielSEO": "faible",
-   "trendScore": 30,
-   "pagesZoneblox": [
-    "codes-steal-a-brainrot.html"
-   ],
-   "articleCree": true,
-   "url": "/codes-steal-a-brainrot.html",
-   "prochaineAction": "NE PAS PUBLIER. Ces codes 'spawn' font apparaître un brainrot sur le tapis rouge et expirent en quelques heures; sources en conflit (1 source dit 23 codes, d'autres 'un seul actif'). Cible connue de faux-actifs. Rester à 0 actif tant qu'un set durable n'est pas confirmé par >=2 sources concordantes.",
-   "notes": "Page ZoneBlox à 0 actif (décision run 05h 22 sept., sources concordantes). Kill switch éditorial appliqué."
-  },
-  {
-   "id": "roblox-everywhere-2026",
-   "jeu": "Roblox (plateforme)",
-   "sujet": "Roblox Everywhere — jeux distribués comme apps autonomes",
-   "categorie": "platform",
-   "premiereDetection": "2026-09-11",
-   "derniereVerification": "2026-09-22",
-   "statut": "MONITOR",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "https://kotaku.com/the-most-viral-roblox-games-are-about-to-break-containment-2000733606"
-   ],
-   "sourceOriginale": "Roblox (annonce 11 sept.)",
-   "potentielSEO": "moyen (angle explicatif)",
-   "trendScore": 55,
-   "pagesZoneblox": [],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "MONITOR. Sujet 'meta/plateforme' — pertinent pour un article explicatif si la fonctionnalité se déploie réellement côté joueurs. Pas d'intention de recherche forte à ce stade. Réévaluer si un jeu couvert par ZoneBlox sort en app autonome.",
-   "notes": "Annoncé le 11 sept.: option pour les créateurs de publier leurs jeux en apps autonomes (mobile/PC/consoles), Roblox fournissant la techno sous-jacente."
-  },
-  {
-   "id": "steal-an-egg-leader",
-   "jeu": "Steal An Egg",
-   "sujet": "#1 Roblox par joueurs simultanés (~1,7M, pic 24h 2,3M)",
-   "categorie": "trend",
-   "premiereDetection": "2026-08-24",
-   "derniereVerification": "2026-09-22",
-   "statut": "EVERGREEN",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "https://rblxdb.com/charts/most-played",
-    "https://rotrends.com/top-roblox-games"
-   ],
-   "sourceOriginale": "rblxdb / rotrends",
-   "potentielSEO": "moyen",
-   "trendScore": 60,
-   "pagesZoneblox": [
-    "codes-steal-an-egg.html",
-    "hotGames"
-   ],
-   "articleCree": true,
-   "url": "/codes-steal-an-egg.html",
-   "prochaineAction": "Couvert (hotGames). Surveiller ajout d'un système de codes (absent au 24 août). Pas d'action.",
-   "notes": "Reste #1. Set 'no-fixed-time' codes: aucun code de récompense confirmé."
-  },
-  {
-   "id": "roblox-fall-games-2026",
-   "jeu": "Roblox (plateforme)",
-   "sujet": "Roblox Fall Games 2026 — 6 nouveaux jeux (Showdown FPS anime, Monster in the Mansion, GOAT Football League, Nemesis, Fossil Force, Caramel)",
-   "categorie": "nouveaux jeux / plateforme",
-   "premiereDetection": "2026-09-23",
-   "derniereVerification": "2026-09-23",
-   "statut": "MONITOR",
-   "importance": "moyenne",
-   "sources": [
-    "https://about.roblox.com/newsroom/2026/09/roblox-fall-games-preview",
-    "https://www.sportskeeda.com/roblox-news/news-all-new-roblox-fall-games-lineup-2026"
-   ],
-   "confiance": "HIGH (annonce officielle Roblox)",
-   "potentielSEO": "À évaluer par jeu — Showdown (FPS anime) le plus prometteur pour un cluster codes/guide si traction réelle.",
-   "trendScore": "~55/100 (fraîcheur+officiel, mais traction joueur & intention SEO encore non prouvées)",
-   "pagesZoneblox": [],
-   "prochaineAction": "Surveiller CCU/visites via rotrends/robloxden ; si un titre décolle (≥ seuil hit) et a des codes réels → page principale + codes, pas de cluster prématuré (mode conquête)."
-  }
- ]
+  "topics": [
+    {
+      "id": "1-loot-to-forge-launch",
+      "jeu": "+1 Loot To Forge",
+      "sujet": "Nouveau simulateur de forge en forte croissance (cluster complet créé)",
+      "categorie": "new-game",
+      "premiereDetection": "2026-09-22",
+      "derniereVerification": "2026-09-22",
+      "statut": "PUBLISHED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "API Roblox (games/thumbnails/universes) + description in-game",
+        "https://www.destructoid.com/1-loot-to-forge-codes/",
+        "https://tryhardguides.com/1-loot-to-forge-codes/",
+        "https://1loottoforge.wiki/",
+        "https://www.sportskeeda.com/roblox-news/1-loot-forge-a-beginner-s-guide"
+      ],
+      "sourceOriginale": "Demande de Peter (URL Roblox) + API Roblox",
+      "potentielSEO": "eleve",
+      "trendScore": 82,
+      "pagesZoneblox": [
+        "codes-1-loot-to-forge.html",
+        "tier-list/1-loot-to-forge.html",
+        "guides/1-loot-to-forge.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-1-loot-to-forge.html",
+      "prochaineAction": "MONITOR : surveiller le prochain code de palier (40000CCU probable) et l'ajouter ; suivre les patchs (après RACES du 20 sept.). Revérifier les codes ~tous les 10 jours (rotation).",
+      "notes": "Good Bro Studio, place 118805555015549, universe 10684750879, group 828376264. ~30k CCU, ~11M visites, 656k favoris, créé 12/08/2026. Cluster « totale » créé le 22/09 : codes (2 actifs 30000CCU/20000CCU), tier list (priorités — pas d'armes inventées, stats en aperçu live), guide complet (2 vidéos oEmbed vérifiées). Intégré : GAMES_INDEX/ROBLOX_THUMBS/ROBLOX_UNIVERSE_IDS (main.js), const GAMES (index.html), tous-les-codes/tier-lists/guides, sitemap, régénérations OK."
+    },
+    {
+      "id": "fc27-launch-2026",
+      "jeu": "EA Sports FC 27",
+      "sujet": "Sortie mondiale + contenu de lancement (Ones to Watch, TOTW 1-2, Destined for Glory)",
+      "categorie": "release",
+      "premiereDetection": "2026-09-18",
+      "derniereVerification": "2026-09-24",
+      "statut": "EVERGREEN",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "https://www.ea.com/games/ea-sports-fc/fc-27/news/pitch-notes-fc27-launch-update",
+        "https://dotesports.com/ea-sports-fc/guides/ea-sports-fc-27-launch-update-patch-notes",
+        "https://www.ea.com/games/ea-sports-fc/fc-27/news/fc-27-editions-and-release-dates"
+      ],
+      "sourceOriginale": "EA Sports (officiel)",
+      "potentielSEO": "eleve",
+      "trendScore": 88,
+      "pagesZoneblox": [
+        "data/fc-27/updates.json",
+        "data/fc-27/guides.json",
+        "data/games/(fc-27 evergreen)"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "Run 05h 26 sept (post-lancement): détailler Season 1 Ones to Watch, Destined for Glory, TOTW 1-2, SBC/Objectifs d'accès, The Grounds, Manager Career. Vérifier notes des tops joueurs à J0. UPDATE data/fc-27/updates.json (pas de nouvelle URL).",
+      "notes": "Accès anticipé Ultimate/Ultimate+/EA Play depuis le 18 sept. Lancement standard le 25 sept. (J-3). Déjà couvert en HIGH dans data/fc-27/updates.json ; enrichissement de détail promo à faire une fois le contenu live. | 24/09 (J-1): lancement PC 24 sept 23h UTC, standard mondial 25 sept. Nouveautés confirmées: The Grounds (open-world Clubs/street, 3 districts), plus gros update Manager Career depuis des années, FC 27 Lite (préview gratuite au lancement). Cover: Mbappé (Standard/Ultimate), Mbappé + Bellingham (Ultimate Plus). Détail Season 1/OTW/TOTW/SBC → run 05h du 26 sept (contenu live)."
+    },
+    {
+      "id": "gta6-release-nov19",
+      "jeu": "GTA 6",
+      "sujet": "Date de sortie 19 nov. 2026 (evergreen) + marketing pré-lancement",
+      "categorie": "release/marketing",
+      "premiereDetection": "2026-05",
+      "derniereVerification": "2026-09-23",
+      "statut": "EVERGREEN",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "https://www.rockstargames.com/newswire",
+        "https://www.gamespot.com/articles/gta-6-is-taking-over-miami-one-airlifted-letter-at-a-time/",
+        "https://www.gtabase.com/grand-theft-auto-6/"
+      ],
+      "sourceOriginale": "Rockstar Games (officiel)",
+      "potentielSEO": "eleve",
+      "trendScore": 84,
+      "pagesZoneblox": [
+        "data/games/gta-6.json"
+      ],
+      "articleCree": false,
+      "url": "/games/gta-6.html",
+      "prochaineAction": "MONITOR. Page evergreen à jour sur la date (19 nov.), plateformes (PS5/Xbox Series only), 2e trailer, pré-co. Nouveaux items mineurs NON encore reflétés (voir notes) — faible valeur joueur, ne pas créer d'URL, éventuellement ligne 'actus' au run 05h si section news ajoutée.",
+      "notes": "Sortie 19 nov. 2026 toujours confirmée (reveal Netflix 21 sept, ~27 min de gameplay near-final). Actus marketing (DualSense édition GTA VI, système de relation Lucia/Jason, NDA cast) = faible valeur joueur → evergreen inchangé, MONITOR."
+    },
+    {
+      "id": "aniimo-codes-sep2026",
+      "jeu": "Aniimo",
+      "sujet": "Codes actifs + nouvelle créature Prismana Glynsera",
+      "categorie": "codes/content",
+      "premiereDetection": "2026-09-16",
+      "derniereVerification": "2026-09-23",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH (codes) / MOYENNE (détail butin de 6 codes)",
+      "sources": [
+        "https://game8.co/games/Aniimo/archives/624090",
+        "https://beebom.com/aniimo-codes/",
+        "https://www.destructoid.com/aniimo-codes/",
+        "https://www.pcgamer.com/games/rpg/aniimo-codes/",
+        "https://www.gamesradar.com/games/rpg/aniimo-codes/"
+      ],
+      "sourceOriginale": "game8 / agrégat médias",
+      "potentielSEO": "moyen",
+      "trendScore": 58,
+      "pagesZoneblox": [
+        "data/aniimo/codes.json",
+        "data/aniimo/creatures.json",
+        "games/aniimo/codes/"
+      ],
+      "articleCree": true,
+      "url": "/games/aniimo/codes/",
+      "prochaineAction": "Au run 05h: (1) rafraîchir lastChecked->jour + passer les 9 flags 'new':true (datés du 16 sept., périmés) à false; (2) ajouter la créature Prismana Glynsera (MAJ 17 sept.) à creatures.json — absente actuellement (8 créatures listées); puis python3 tools/build_site.py. Aucun code à changer (set 11 confirmé stable).",
+      "notes": "Badges new périmés remis à false ; créature Prismana Glynsera (event Vein Abundance 21-27 sept) ajoutée à creatures.json. build_site relancé."
+    },
+    {
+      "id": "steal-a-brainrot-spawn-codes",
+      "jeu": "Steal a Brainrot",
+      "sujet": "Codes de spawn éphémères (BESTBRAINROTEVER / saturn)",
+      "categorie": "codes",
+      "premiereDetection": "2026-09-22",
+      "derniereVerification": "2026-09-22",
+      "statut": "MONITOR",
+      "importance": "basse",
+      "confiance": "FAIBLE",
+      "sources": [
+        "https://www.gamesradar.com/games/simulation/roblox-steal-a-brainrot-codes/",
+        "https://www.pcgamesn.com/steal-a-brainrot/codes"
+      ],
+      "sourceOriginale": "agrégat médias (conflit)",
+      "potentielSEO": "faible",
+      "trendScore": 30,
+      "pagesZoneblox": [
+        "codes-steal-a-brainrot.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-steal-a-brainrot.html",
+      "prochaineAction": "NE PAS PUBLIER. Ces codes 'spawn' font apparaître un brainrot sur le tapis rouge et expirent en quelques heures; sources en conflit (1 source dit 23 codes, d'autres 'un seul actif'). Cible connue de faux-actifs. Rester à 0 actif tant qu'un set durable n'est pas confirmé par >=2 sources concordantes.",
+      "notes": "Page ZoneBlox à 0 actif (décision run 05h 22 sept., sources concordantes). Kill switch éditorial appliqué."
+    },
+    {
+      "id": "roblox-everywhere-2026",
+      "jeu": "Roblox (plateforme)",
+      "sujet": "Roblox Everywhere — jeux distribués comme apps autonomes",
+      "categorie": "platform",
+      "premiereDetection": "2026-09-11",
+      "derniereVerification": "2026-09-22",
+      "statut": "MONITOR",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "https://kotaku.com/the-most-viral-roblox-games-are-about-to-break-containment-2000733606"
+      ],
+      "sourceOriginale": "Roblox (annonce 11 sept.)",
+      "potentielSEO": "moyen (angle explicatif)",
+      "trendScore": 55,
+      "pagesZoneblox": [],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "MONITOR. Sujet 'meta/plateforme' — pertinent pour un article explicatif si la fonctionnalité se déploie réellement côté joueurs. Pas d'intention de recherche forte à ce stade. Réévaluer si un jeu couvert par ZoneBlox sort en app autonome.",
+      "notes": "Annoncé le 11 sept.: option pour les créateurs de publier leurs jeux en apps autonomes (mobile/PC/consoles), Roblox fournissant la techno sous-jacente."
+    },
+    {
+      "id": "steal-an-egg-leader",
+      "jeu": "Steal An Egg",
+      "sujet": "#1 Roblox par joueurs simultanés (~1,7M, pic 24h 2,3M)",
+      "categorie": "trend",
+      "premiereDetection": "2026-08-24",
+      "derniereVerification": "2026-09-22",
+      "statut": "EVERGREEN",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "https://rblxdb.com/charts/most-played",
+        "https://rotrends.com/top-roblox-games"
+      ],
+      "sourceOriginale": "rblxdb / rotrends",
+      "potentielSEO": "moyen",
+      "trendScore": 60,
+      "pagesZoneblox": [
+        "codes-steal-an-egg.html",
+        "hotGames"
+      ],
+      "articleCree": true,
+      "url": "/codes-steal-an-egg.html",
+      "prochaineAction": "Couvert (hotGames). Surveiller ajout d'un système de codes (absent au 24 août). Pas d'action.",
+      "notes": "Reste #1. Set 'no-fixed-time' codes: aucun code de récompense confirmé."
+    },
+    {
+      "id": "roblox-fall-games-2026",
+      "jeu": "Roblox (plateforme)",
+      "sujet": "Roblox Fall Games 2026 — 6 nouveaux jeux (Showdown FPS anime, Monster in the Mansion, GOAT Football League, Nemesis, Fossil Force, Caramel)",
+      "categorie": "nouveaux jeux / plateforme",
+      "premiereDetection": "2026-09-23",
+      "derniereVerification": "2026-09-24",
+      "statut": "MONITOR",
+      "importance": "moyenne",
+      "sources": [
+        "https://about.roblox.com/newsroom/2026/09/roblox-fall-games-preview",
+        "https://www.sportskeeda.com/roblox-news/news-all-new-roblox-fall-games-lineup-2026"
+      ],
+      "confiance": "HIGH (annonce officielle Roblox)",
+      "potentielSEO": "À évaluer par jeu — Showdown (FPS anime) le plus prometteur pour un cluster codes/guide si traction réelle.",
+      "trendScore": "~35/100 (traction joueur faible)",
+      "pagesZoneblox": [],
+      "prochaineAction": "MONITOR. Showdown (Anime FPS Jutsu Shooter, SuperGaming) ~240 CCU au 7 sept = PAS de hit → NE PAS créer de page (kill switch). Réévaluer si un titre du lot dépasse un seuil de hit réel + a des codes.",
+      "notes": " | 24/09: vérif traction — Showdown ~240 joueurs simultanés (bloxsniper/mmo-population), très faible. Aucun des 6 titres ne justifie une page. Grow a Garden/Steal a Brainrot dominent toujours (déjà couverts)."
+    },
+    {
+      "id": "anime-reborn-codes-sep2026",
+      "jeu": "Anime Reborn",
+      "sujet": "Ajout de 3 codes actifs (page passée de 0 à 3)",
+      "categorie": "codes",
+      "premiereDetection": "2026-09-24",
+      "derniereVerification": "2026-09-24",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "https://fossbytes.com/roblox-new-anime-reborn-codes/",
+        "https://www.pockettactics.com/anime-reborn/codes"
+      ],
+      "sourceOriginale": "Fossbytes (1 sept) + Pocket Tactics",
+      "potentielSEO": "moyen",
+      "trendScore": 55,
+      "pagesZoneblox": [
+        "codes-anime-reborn.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-anime-reborn.html",
+      "prochaineAction": "Rotation ~10j. Surveiller nouveaux codes (TD, ~10 actifs chez les trackers). Envisager d'ajouter d'autres codes confirmés 2 sources.",
+      "notes": "AJOUT domainexpansion! (NEW), Crystals, PATCH — 2 sources concordantes. Page était vide (0 actif)."
+    },
+    {
+      "id": "survive-zombie-arena-codes-sep2026",
+      "jeu": "Survive Zombie Arena",
+      "sujet": "Expansion des codes actifs (2 → 11)",
+      "categorie": "codes",
+      "premiereDetection": "2026-09-24",
+      "derniereVerification": "2026-09-24",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "https://www.gamesradar.com/games/survival/survive-zombie-arena-codes/",
+        "https://www.pockettactics.com/survive-zombie-arena-codes"
+      ],
+      "sourceOriginale": "GamesRadar (14 sept) + agrégat trackers",
+      "potentielSEO": "moyen",
+      "trendScore": 52,
+      "pagesZoneblox": [
+        "codes-survive-zombie-arena.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-survive-zombie-arena.html",
+      "prochaineAction": "Rotation ~10j. Codes conflictuels (NODELAYSWAG/TUNDRASZN/BOSSRUSH... GR=expirés, agrégat=actifs) à retrancher si confirmés.",
+      "notes": "AJOUT 9 codes (FACTIONS,FRONTIER neufs + QolSwag,Viciboy,Pirate,Swaggin,Iron,DELAY,UPDATEDAYSWAG). Nectarforge Studios, update Frontier War."
+    },
+    {
+      "id": "catch-a-monster-new-codes",
+      "jeu": "Catch a Monster",
+      "sujet": "Nouveaux codes actifs à ajouter (stowerbug/stellawolf/nexa)",
+      "categorie": "codes",
+      "premiereDetection": "2026-09-24",
+      "derniereVerification": "2026-09-24",
+      "statut": "UPDATE_REQUIRED",
+      "importance": "basse",
+      "confiance": "MOYENNE",
+      "sources": [
+        "https://www.pockettactics.com/catch-a-monster-codes",
+        "https://fossbytes.com/catch-a-monster-codes/",
+        "https://tryhardguides.com/catch-a-monster-codes/"
+      ],
+      "sourceOriginale": "agrégat trackers sept 2026",
+      "potentielSEO": "faible",
+      "trendScore": 38,
+      "pagesZoneblox": [
+        "codes-catch-a-monster.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-catch-a-monster.html",
+      "prochaineAction": "Prochain run: ajouter stowerbug (2k tower gems + task points), stellawolf (task points), nexa (1 Star Lantern Egg) après confirmation 2 sources + récompenses exactes. Nos 9 codes gardés (pas de preuve d'expiration).",
+      "notes": "Flaggé à revérifier. Page à 9 actifs, nouveaux codes non encore intégrés (prudence: récompenses à confirmer)."
+    }
+  ]
 }

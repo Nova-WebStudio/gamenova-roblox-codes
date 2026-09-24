@@ -894,41 +894,49 @@
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
   "lastRun": {
-    "date": "2026-09-23",
-    "iso": "2026-09-23T05:00:00Z",
+    "date": "2026-09-24",
+    "iso": "2026-09-24T05:00:00Z",
     "hotGamesVerified": [
       "grow-a-garden",
       "steal-a-brainrot",
-      "volleyball-legends",
-      "blue-lock-rivals",
-      "anime-vanguards",
-      "fruit-battlegrounds",
-      "squid-game-x"
+      "blade-ball",
+      "anime-last-stand",
+      "blox-fruits",
+      "king-legacy",
+      "fisch"
     ],
-    "hotGamesChanged": [
-      "volleyball-legends",
-      "anime-vanguards"
-    ],
+    "hotGamesChanged": [],
     "rotationVerified": [
-      "blockspin",
-      "illegal-soccer",
-      "defend-ur-base-with-anime",
-      "merge-a-nuke",
-      "1-aura-per-click",
+      "slayers-2",
+      "anime-rangers-x",
+      "pls-donate",
+      "spin-a-brainrot",
+      "anime-reborn",
+      "a-one-piece-game",
+      "anime-adventures",
       "grimoires-era",
       "locked",
-      "my-gym",
       "catch-a-monster",
-      "fifa-super-soccer"
+      "ride-a-pet",
+      "world-cup-album",
+      "storage-hunters-open-world",
+      "untitled-tag-game",
+      "survive-zombie-arena"
     ],
-    "rotationChanged": [],
+    "rotationChanged": [
+      "anime-reborn",
+      "survive-zombie-arena"
+    ],
     "rotationARevoir": [
+      "spin-a-brainrot",
+      "a-one-piece-game",
       "grimoires-era",
       "locked",
-      "my-gym",
       "catch-a-monster",
+      "world-cup-album",
+      "untitled-tag-game",
       "fifa-super-soccer",
-      "blue-lock-rivals"
+      "blade-ball"
     ]
   },
   "_pending2026-07-18": [
@@ -1232,7 +1240,22 @@
     "illegal-soccer": "2026-09-23",
     "defend-ur-base-with-anime": "2026-09-23",
     "merge-a-nuke": "2026-09-23",
-    "1-aura-per-click": "2026-09-23"
+    "1-aura-per-click": "2026-09-23",
+    "slayers-2": "2026-09-24",
+    "anime-rangers-x": "2026-09-24",
+    "pls-donate": "2026-09-24",
+    "spin-a-brainrot": "2026-09-24",
+    "anime-reborn": "2026-09-24",
+    "a-one-piece-game": "2026-09-24",
+    "anime-adventures": "2026-09-24",
+    "grimoires-era": "2026-09-24",
+    "locked": "2026-09-24",
+    "catch-a-monster": "2026-09-24",
+    "ride-a-pet": "2026-09-24",
+    "world-cup-album": "2026-09-24",
+    "storage-hunters-open-world": "2026-09-24",
+    "untitled-tag-game": "2026-09-24",
+    "survive-zombie-arena": "2026-09-24"
   },
   "_catalogVerifyNote": "Suivi de la ROTATION quotidienne (ETAPE 2ter): date de derniere verif approfondie par slug. Les slugs ABSENTS de cet objet = jamais verifies en profondeur = priorite maximale du prochain lot. Jeux flagges 'a reverifier' laisses ABSENTS expres (a-one-piece-game, anime-adventures, anime-fighters, anime-fighting-simulator, anime-fighting-simulator-reborn, anime-rangers-x, anime-reversal, anime-rift-tower-defense, anime-rng, scroll-a-brainrot, world-fighters, heroes-battlegrounds).",
   "_pending2026-09-05": {
@@ -1419,5 +1442,24 @@
   },
   "_pending2026-09-23": {
     "grow-a-garden": "FREESEED (event The Hunt: Roblox 20) listé par Pro Game Guides (17 sept) en source UNIQUE → surveillance, pas encore publié (règle 2 sources). STORY/STARBUD (PGG, récompenses graines) suspects/périmés, ignorés. torigate reste expiré (2 sources)."
+  },
+  "_rotationARevoir2026-09-24": {
+    "blade-ball": "GOODVSEVIL/DUNGEONSRELEASE: Pocket Tactics (22/09) les classe expirés, GamesRadar (18/09) actifs. Conflit → gardés. BATTLEROYALE conflit inverse → non ajouté.",
+    "catch-a-monster": "Nouveaux codes stowerbug (2k tower gems)/stellawolf/nexa (1 Star Lantern Egg) actifs sur PocketTactics/Fossbytes/TryHardGuides sept 2026 → À AJOUTER au prochain run avec 2 sources + récompenses exactes. Nos 9 codes gardés (pas de preuve d'expiration).",
+    "a-one-piece-game": "Renommé Re:AOPG. Codes ont dérivé (Sea3IsBack!!, 5kLikes, SunGodLuffy!...). Nos 8 codes gardés, désambiguïser + 2 sources fraîches avant édition.",
+    "locked": "LOCKED (Blue Lock original, codes WATCHTOWER/MALICIAFOUL...) vs LOCKED:2 (rework). Trackers migrent vers LOCKED:2 & Keep the Door Locked. Nos 4 codes gardés, source datée du LOCKED original introuvable.",
+    "grimoires-era": "Sources datées introuvables (PocketGamer juil, Beebom fév = Grimoires Era 2). 11 codes gardés.",
+    "untitled-tag-game": "Sources indiquent 4 codes actifs mais liste non fournie par les résumés. Page à 0 → obtenir la liste exacte (Beebom/PocketTactics) au prochain run.",
+    "spin-a-brainrot": "AdminAbuse (2 potions divine luck) en source unique Insider Gaming. Nos 4 codes (10KLikes/2MVisits/Halloween/HalloweenDice) gardés.",
+    "world-cup-album": "2 jeux homonymes (2026 World Cup Sticker Album vs 2026 Soccer WC Sticker Album). Code 7kLikes source unique. Page à 0 → désambiguïser au placeId avant ajout."
+  },
+  "_notes2026-09-24": {
+    "anime-reborn": "AJOUT 3 codes actifs (domainexpansion!, Crystals, PATCH) — 2 sources: Fossbytes (1 sept) + Pocket Tactics. Page passée de 0 à 3.",
+    "survive-zombie-arena": "AJOUT 9 codes (FACTIONS,FRONTIER,QolSwag,Viciboy,Pirate,Swaggin,Iron,DELAY,UPDATEDAYSWAG) — GamesRadar (14 sept) + agrégat trackers. Page 2→11. Codes conflictuels (NODELAYSWAG/TUNDRASZN/BOSSRUSH... GR=expirés) non ajoutés.",
+    "ride-a-pet": "Aucun système de codes (confirmé multi-sources). Page à 0 OK.",
+    "storage-hunters-open-world": "Aucun menu de codes en jeu (confirmé multi-sources). Page à 0 OK.",
+    "anime-adventures": "Jeu retiré via DMCA (Gamefam/Crunchyroll), original privé. Seul APRILFOOLS (niv.20+) cité actif. Page laissée en l'état.",
+    "slayers-2": "2 codes actifs confirmés exacts (SkillTreeReset exp. 28/09, Release26) — Dexerto/TheTechBasket.",
+    "anime-rangers-x": "Renommé Re:Rangers X (mars 2026). TD avec ~106 codes actifs → sous-listage OK. HopeForRRX présent. Envisager MonkeyKing/BeachTime + note de renommage."
   }
 }

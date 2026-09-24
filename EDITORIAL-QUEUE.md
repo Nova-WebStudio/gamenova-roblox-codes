@@ -2,71 +2,77 @@
 
 > Mémoire éditoriale opérationnelle (spec V2, section 7). Mise à jour à chaque run.
 > Détail sourcé complet dans `tools/editorial-intelligence.json`.
-> **Dernière MAJ : 2026-09-23 ~05h30 (run 05h — full maintenance)**
+> **Dernière MAJ : 2026-09-24 ~05h30 (run 05h — full maintenance)**
 
-## ✅ FAIT CE MATIN (run 05h 2026-09-23)
+## ✅ FAIT CE MATIN (run 05h 2026-09-24)
 
-- **Codes hotGames** vérifiés (7) : grow-a-garden, steal-a-brainrot, volleyball-legends, blue-lock-rivals, anime-vanguards, fruit-battlegrounds, squid-game-x.
-  - **volleyball-legends** — MODIFIÉ : Update 88 fait tourner la liste. Actifs = UPDATE_88, GET_SLIMED (5 Lucky Style Spins), XP_BOOST (potion 2x XP) ; UPDATE_87/RONIN_RETURN/KATANA passés en expirés. Sources : Beebom (19 sept) + Roonby/GamesRadar (Update 88).
-  - **anime-vanguards** — MODIFIÉ : ajout de **100thTournament** (100 Trait Rerolls, niv. 10) → 4 codes actifs. Sources : Pro Game Guides (18 sept) + agrégat GamesRadar/Pocket Tactics. MiniUpd2 laissé inactif (listé inactif par PGG).
-  - grow-a-garden / steal-a-brainrot / fruit-battlegrounds / squid-game-x / blue-lock-rivals : inchangés, « Vérifié le » rafraîchi.
-- **Rotation** (10 pages) : blockspin, illegal-soccer, defend-ur-base-with-anime, merge-a-nuke, 1-aura-per-click **confirmées à jour** (date rafraîchie). grimoires-era, locked, my-gym, catch-a-monster, fifa-super-soccer laissées **à revérifier** (voir plus bas).
-- **Aniimo** — UPDATE appliqué : badges `new` périmés (9) remis à `false`, `lastChecked`→23 sept, et créature **Prismana Glynsera** (Nova, Lumière/Glace, DPS ; event Vein Abundance 21→27 sept, Beast Fang Ridge) ajoutée à `creatures.json`. `build_site.py` relancé.
+- **Codes hotGames** vérifiés (7) : grow-a-garden, steal-a-brainrot, blade-ball, anime-last-stand, blox-fruits, king-legacy, fisch. **Aucun changement de codes** (tous des keeps prudents, dates « Vérifié le » rafraîchies).
+  - grow-a-garden : RDCAward + BEANORLEAVE10 confirmés (Beebom 1 sept + PGG 17 sept). FREESEED/STORY/STARBUD restent **source unique PGG** → non publiés. torigate en conflit (PGG actif ≠ Beebom expiré) → non ajouté.
+  - anime-last-stand : 3 codes confirmés exacts par 2 sources (PGG + Beebom).
+  - blade-ball : GOODVSEVIL/DUNGEONSRELEASE en **conflit** (Pocket Tactics 22/09 = expirés ; GamesRadar 18/09 = actifs) → gardés, à revérifier. BATTLEROYALE (conflit inverse) non ajouté.
+  - blox-fruits, king-legacy, fisch : sets stables/evergreen, aucune preuve d'expiration.
+- **Rotation** (15 pages) :
+  - **anime-reborn** — ✏️ MODIFIÉ : page passée de **0 à 3 codes** (domainexpansion!, Crystals, PATCH). 2 sources : Fossbytes (1 sept) + Pocket Tactics.
+  - **survive-zombie-arena** — ✏️ MODIFIÉ : **2 → 11 codes** (ajout FACTIONS, FRONTIER, QolSwag, Viciboy, Pirate, Swaggin, Iron, DELAY, UPDATEDAYSWAG). Source : GamesRadar (14 sept) + agrégat trackers.
+  - **slayers-2** confirmé exact (SkillTreeReset exp. 28/09, Release26).
+  - **pls-donate** (stable, 7 codes), **anime-rangers-x** (renommé Re:Rangers X, ~106 codes actifs → sous-listage OK), **ride-a-pet** / **storage-hunters-open-world** (aucun système de codes — 0 actif correct), **anime-adventures** (retiré via DMCA, original privé) : confirmés, dates rafraîchies.
+  - Laissés « à revérifier » : spin-a-brainrot, a-one-piece-game (Re:AOPG), grimoires-era, locked, catch-a-monster, world-cup-album, untitled-tag-game (voir plus bas).
 
 ---
 
 ## 🔥 URGENT
 
-_(rien)_ — aucune information ne justifie une modification urgente supplémentaire.
+_(rien)_ — aucune information ne justifie de modification urgente supplémentaire.
 
 ---
 
 ## 🟢 À PUBLIER
 
-_(rien)_ — kill switch éditorial appliqué. Aucun sujet ne réunit confirmation solide + valeur joueur nette + absence de page équivalente. « 2 excellents articles > 20 faibles ».
+_(rien)_ — kill switch éditorial appliqué. Aucun nouveau jeu ne réunit traction réelle + codes réels + absence de page. « 2 excellents > 20 faibles ».
 
 ---
 
 ## 🛠️ À METTRE À JOUR
 
-- **FC 27 — contenu de lancement** · importance haute · statut EVERGREEN→UPDATE post-J0
-  - Sortie **25 sept.** (J-2 aujourd'hui). Action au **run 05h du 26 sept.** (post-sortie) : détailler Season 1 Ones to Watch, **Destined for Glory** (Mbappé + Rogers, Fernandes, Isak, Mbeumo), TOTW 1-2, SBC/Objectifs d'accès anticipé ; vérifier les notes des tops joueurs à J0.
-  - URL : `data/fc-27/updates.json` — **UPDATE**, pas de nouvelle URL. Ne rien détailler de spéculatif avant que le contenu soit live.
+- **catch-a-monster** · basse · statut UPDATE_REQUIRED
+  - Ajouter **stowerbug** (2k tower gems + task points), **stellawolf** (task points), **nexa** (1 Star Lantern Egg) après confirmation 2 sources + récompenses exactes (PocketTactics/Fossbytes/TryHardGuides sept 2026). Nos 9 codes actuels gardés (pas de preuve d'expiration).
+- **FC 27 — contenu de lancement** · haute · EVERGREEN→UPDATE post-J0
+  - Lancement PC **24 sept 23h UTC**, standard mondial **25 sept**. Action au **run 05h du 26 sept.** (contenu live) : Season 1 Ones to Watch, **Destined for Glory**, TOTW 1-2, SBC/Objectifs d'accès, **The Grounds** (open-world), Manager Career (gros update), FC 27 Lite. Vérifier notes des tops joueurs à J0. URL : `data/fc-27/updates.json` — **UPDATE**, pas de nouvelle URL.
+- **untitled-tag-game** · basse : sources indiquent 4 codes actifs mais liste non fournie ; page à 0 → obtenir la liste exacte (Beebom/PocketTactics) au prochain run.
 
 ---
 
 ## 🟡 À PRÉPARER / SURVEILLER (tendances)
 
-- **Roblox Fall Games 2026** (annonce officielle) · statut MONITOR · trendScore ~55/100
-  - 6 nouveaux jeux : **Showdown** (FPS anime), Monster in the Mansion (co-op horror), GOAT Football League, Nemesis, Fossil Force, Caramel.
-  - Décision : NE PAS créer de page prématurément (mode conquête). Surveiller CCU/visites (rotrends/robloxden). Si un titre décolle **et** a des codes réels → page principale + codes d'abord. Showdown = candidat le plus prometteur.
-- **GTA 6** · EVERGREEN · MONITOR : sortie **19 nov. 2026** toujours confirmée (reveal Netflix 21 sept, ~27 min gameplay near-final). Actus marketing (DualSense édition GTA VI, système relation Lucia/Jason, NDA cast) = faible valeur joueur → evergreen inchangé.
-- **Roblox Everywhere** (annonce plateforme 11 sept.) · MONITOR : attendre déploiement joueur réel / intention de recherche avérée.
+- **Roblox Fall Games 2026** · MONITOR · trendScore ~35/100 (revu à la baisse)
+  - **Showdown (Anime FPS Jutsu Shooter, SuperGaming) ~240 CCU** au 7 sept = PAS un hit. Kill switch → **ne PAS créer de page**. Réévaluer si un titre décolle réellement + a des codes.
+- **RELL Seas** (jeu à venir, ~380k favoris pré-lancement, pas de date) · MONITOR : surveiller l'annonce d'une date de sortie.
+- **GTA 6** · EVERGREEN · MONITOR : sortie **19 nov. 2026** toujours confirmée. Actus marketing = faible valeur joueur → evergreen inchangé.
+- **Roblox Everywhere** (annonce 11 sept.) · MONITOR : attendre déploiement joueur réel.
 
 ---
 
 ## 👀 À REVÉRIFIER (codes — mappings/sources ambigus)
 
-- **fifa-super-soccer** — codes-nom `bestfootball`/`fifasupersoccer` : Insider Gaming (2 sept) les dit actifs, mais notre page (vérif 20/09, plus récente) les a **déjà classés expirés**. Conflit non résolu → ne pas réactiver sans preuve fraîche ×2 sources.
-- **catch-a-monster** — sources périmées (PCGamesN mars 2026) / nouveaux codes `stowerbug`/`stellawolf`/`nexa` en source unique. Attendre 2 sources concordantes datées.
-- **locked** — ambiguïté **LOCKED vs LOCKED 2** : jeux de codes différents. Désambiguïser au placeId avant toute édition.
-- **my-gym** — nom ambigu (My Gym vs Run a Gym vs Gym League vs Ultimate Gym Game) : pas de liste datée fiable pour NOTRE jeu.
-- **grimoires-era** — sources datées introuvables (Fandom/PGG périmés) ; garder les 11 codes, revérifier via wiki Fandom.
-- **blue-lock-rivals** — codes rotant tous les ~2 j ; snapshots sources divergents (Beebom 5 sept ≠ pcgamer 20 sept ≠ notre page 21 sept). Nos 3 codes gardés (pas de preuve d'expiration) — recouper au prochain run avec source datée ≥ 21 sept.
+- **blade-ball** — GOODVSEVIL / DUNGEONSRELEASE : Pocket Tactics (22/09) = expirés, GamesRadar (18/09) = actifs. Conflit non résolu → gardés. BATTLEROYALE non ajouté (conflit inverse).
+- **a-one-piece-game** — renommé **Re:AOPG** ; codes ont dérivé (Sea3IsBack!!, 5kLikes, SunGodLuffy!…). Nos 8 codes gardés ; désambiguïser + 2 sources fraîches avant édition.
+- **locked** — **LOCKED** (Blue Lock original : WATCHTOWER, MALICIAFOUL, 45KFAVS, 25MILVISITS) vs **LOCKED:2** (rework) vs Keep the Door Locked. Trackers migrent vers LOCKED:2 → source datée du LOCKED original introuvable. 4 codes gardés.
+- **grimoires-era** — sources datées introuvables (PocketGamer juil, Beebom fév = Grimoires Era 2). 11 codes gardés.
+- **spin-a-brainrot** — AdminAbuse (2 potions divine luck) en source unique. Nos 4 codes gardés.
+- **world-cup-album** — 2 jeux homonymes (2026 World Cup Sticker Album vs 2026 Soccer WC Sticker Album). Code 7kLikes source unique. Désambiguïser au placeId avant tout ajout (page à 0).
+- **fifa-super-soccer** — name-codes bestfootball/fifasupersoccer : conflit Insider Gaming (actif) ≠ notre page (expiré). Non revérifié aujourd'hui, flag maintenu.
 - **type-soul** / **sailor-piece** / **character-rng** / **broken-blade** — voir `_rotationARevoir` antérieurs.
 
-**Candidats en attente** (`_pending2026-09-23`) : Grow a Garden **FREESEED** (event The Hunt: Roblox 20, source unique PGG 17 sept → surveillance). STORY/STARBUD (PGG, récompenses graines) suspects → ignorés.
+---
+
+## 📅 PRIORITÉS DEMAIN (run 05h — 2026-09-25, vendredi)
+
+1. **Codes** (priorité absolue) : hotGames (rotation : anime-vanguards, blue-lock-rivals, volleyball-legends, fruit-battlegrounds, squid-game-x + pet-simulator-99 / tower-defense-simulator) + lot de rotation (prioriser slugs jamais vérifiés restants : clickers FR 1-magic-evolution/1-mine-per-click, demonologie/demonology, arene-de-sniper, my-gym…).
+2. **catch-a-monster** : ajouter les 3 nouveaux codes après confirmation 2 sources.
+3. **untitled-tag-game** : récupérer la liste des 4 codes actifs.
+4. **FC 27** : (26 sept sera le gros UPDATE post-lancement — préparer). Vendredi : vérifier réception J0 (game live depuis 25 sept).
+5. **Régénération** ordre : build_site → build_home → build_codes_json (codes changés aujourd'hui) → build_sitemap.
 
 ---
 
-## 📅 PRIORITÉS DEMAIN (run 05h — 2026-09-24, jeudi)
-
-1. **Codes** (priorité absolue) : hotGames + lot de rotation. Prioriser les slugs **jamais vérifiés** restants (clickers 1-magic-evolution/1-mine-per-click, animal-hospital, noob-incremental non-tracés…) et trancher les « à revérifier » (fifa-super-soccer name-codes, catch-a-monster, locked/LOCKED 2).
-2. **Trend detector** : re-scan Roblox Fall Games (Showdown surtout) — vérifier traction CCU/visites.
-3. **Directeur SEO** : poursuivre la généralisation du bandeau CTA `data-cta="guidelink"` aux pages codes non-hotGames à cluster complet.
-4. **FC 27** : préparer le gros UPDATE post-lancement pour le run du 26 sept.
-5. **Régénération** ordre : build_site → build_home → (si codes changés) build_codes_json → build_sitemap.
-
----
-
-_Sujets obsolètes retirés : bloc « FAIT CE SOIR » du 22/09 (+1 Loot To Forge, cluster publié — archivé dans editorial-intelligence.json)._
+_Sujets obsolètes retirés : bloc « FAIT CE MATIN » du 23/09 (archivé dans editorial-intelligence.json)._
