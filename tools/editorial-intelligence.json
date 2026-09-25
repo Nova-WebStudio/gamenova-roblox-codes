@@ -3,8 +3,8 @@
   "version": 1,
   "created": "2026-09-22",
   "meta": {
-    "updated": "2026-09-24T05:00:00Z",
-    "lastRun": "2026-09-24-05h",
+    "updated": "2026-09-25T05:00:00Z",
+    "lastRun": "2026-09-25-05h",
     "runType": "full maintenance + editorial (05h)"
   },
   "topics": [
@@ -44,7 +44,7 @@
       "sujet": "Sortie mondiale + contenu de lancement (Ones to Watch, TOTW 1-2, Destined for Glory)",
       "categorie": "release",
       "premiereDetection": "2026-09-18",
-      "derniereVerification": "2026-09-24",
+      "derniereVerification": "2026-09-25",
       "statut": "EVERGREEN",
       "importance": "haute",
       "confiance": "HIGH",
@@ -63,8 +63,8 @@
       ],
       "articleCree": false,
       "url": null,
-      "prochaineAction": "Run 05h 26 sept (post-lancement): détailler Season 1 Ones to Watch, Destined for Glory, TOTW 1-2, SBC/Objectifs d'accès, The Grounds, Manager Career. Vérifier notes des tops joueurs à J0. UPDATE data/fc-27/updates.json (pas de nouvelle URL).",
-      "notes": "Accès anticipé Ultimate/Ultimate+/EA Play depuis le 18 sept. Lancement standard le 25 sept. (J-3). Déjà couvert en HIGH dans data/fc-27/updates.json ; enrichissement de détail promo à faire une fois le contenu live. | 24/09 (J-1): lancement PC 24 sept 23h UTC, standard mondial 25 sept. Nouveautés confirmées: The Grounds (open-world Clubs/street, 3 districts), plus gros update Manager Career depuis des années, FC 27 Lite (préview gratuite au lancement). Cover: Mbappé (Standard/Ultimate), Mbappé + Bellingham (Ultimate Plus). Détail Season 1/OTW/TOTW/SBC → run 05h du 26 sept (contenu live)."
+      "prochaineAction": "Run 05h 26 sept (J+1, contenu live): UPDATE data/fc-27/updates.json avec le contenu de lancement confirmé (voir notes). Pas de nouvelle URL.",
+      "notes": "Accès anticipé Ultimate/Ultimate+/EA Play depuis le 18 sept. Lancement standard le 25 sept. (J-3). Déjà couvert en HIGH dans data/fc-27/updates.json ; enrichissement de détail promo à faire une fois le contenu live. | 24/09 (J-1): lancement PC 24 sept 23h UTC, standard mondial 25 sept. Nouveautés confirmées: The Grounds (open-world Clubs/street, 3 districts), plus gros update Manager Career depuis des années, FC 27 Lite (préview gratuite au lancement). Cover: Mbappé (Standard/Ultimate), Mbappé + Bellingham (Ultimate Plus). Détail Season 1/OTW/TOTW/SBC → run 05h du 26 sept (contenu live). | 25/09 (J0): LANCEMENT MONDIAL confirmé. Contenu day-one capté (Operation Sports/EA Pitch Notes 25 sept): Ultimate Team — Season 1 Ones to Watch (18 sept) + Destined for Glory (25 sept, joueurs votés), chimie Icons/Heroes réduite (+1 Ligue/+1 Nation, Icons 88 OVR min), 15 promos sur l'année (vs 26 sur FC26), nouveaux formats de packs (Mini 3/Small 6/Large 9/Jumbo 24/Giant 32), récompenses Rivals/Champions/Squad Battles améliorées, Div 6 requirement retiré, TOTW hebdo voté par la communauté. The Grounds (hub open-world, système d'archétypes AXP+Grounds Coins, thèmes UCL/Halloween). Manager Career (gros update). FC 27 Lite gratuit au lancement. => à détailler dans updates.json au run du 26."
     },
     {
       "id": "gta6-release-nov19",
@@ -72,7 +72,7 @@
       "sujet": "Date de sortie 19 nov. 2026 (evergreen) + marketing pré-lancement",
       "categorie": "release/marketing",
       "premiereDetection": "2026-05",
-      "derniereVerification": "2026-09-23",
+      "derniereVerification": "2026-09-25",
       "statut": "EVERGREEN",
       "importance": "haute",
       "confiance": "HIGH",
@@ -90,7 +90,7 @@
       "articleCree": false,
       "url": "/games/gta-6.html",
       "prochaineAction": "MONITOR. Page evergreen à jour sur la date (19 nov.), plateformes (PS5/Xbox Series only), 2e trailer, pré-co. Nouveaux items mineurs NON encore reflétés (voir notes) — faible valeur joueur, ne pas créer d'URL, éventuellement ligne 'actus' au run 05h si section news ajoutée.",
-      "notes": "Sortie 19 nov. 2026 toujours confirmée (reveal Netflix 21 sept, ~27 min de gameplay near-final). Actus marketing (DualSense édition GTA VI, système de relation Lucia/Jason, NDA cast) = faible valeur joueur → evergreen inchangé, MONITOR."
+      "notes": "Sortie 19 nov. 2026 toujours confirmée (reveal Netflix 21 sept, ~27 min de gameplay near-final). Actus marketing (DualSense édition GTA VI, système de relation Lucia/Jason, NDA cast) = faible valeur joueur → evergreen inchangé, MONITOR. | 25/09: sortie 19 nov. 2026 toujours confirmée (multi-sources). Aucune actu à valeur joueur nouvelle. Evergreen inchangé, MONITOR."
     },
     {
       "id": "aniimo-codes-sep2026",
@@ -98,8 +98,8 @@
       "sujet": "Codes actifs + nouvelle créature Prismana Glynsera",
       "categorie": "codes/content",
       "premiereDetection": "2026-09-16",
-      "derniereVerification": "2026-09-23",
-      "statut": "UPDATED",
+      "derniereVerification": "2026-09-25",
+      "statut": "EVERGREEN",
       "importance": "moyenne",
       "confiance": "HIGH (codes) / MOYENNE (détail butin de 6 codes)",
       "sources": [
@@ -119,8 +119,8 @@
       ],
       "articleCree": true,
       "url": "/games/aniimo/codes/",
-      "prochaineAction": "Au run 05h: (1) rafraîchir lastChecked->jour + passer les 9 flags 'new':true (datés du 16 sept., périmés) à false; (2) ajouter la créature Prismana Glynsera (MAJ 17 sept.) à creatures.json — absente actuellement (8 créatures listées); puis python3 tools/build_site.py. Aucun code à changer (set 11 confirmé stable).",
-      "notes": "Badges new périmés remis à false ; créature Prismana Glynsera (event Vein Abundance 21-27 sept) ajoutée à creatures.json. build_site relancé."
+      "prochaineAction": "MONITOR. 11 codes stables. aniimofreetoplay (Beebom seul, absent de Destructoid 24 sept) = source unique -> NON ajouté. Event Aniimo Together se termine le 27 sept: revérifier codes/nouvelle créature après cette date.",
+      "notes": "Badges new périmés remis à false ; créature Prismana Glynsera (event Vein Abundance 21-27 sept) ajoutée à creatures.json. build_site relancé. | 25/09: 11 codes inchangés (concordance ANIIMOGIFT+Aniimo2026 sur Beebom+Destructoid). aniimofreetoplay non ajouté (1 source). lastChecked data/aniimo/codes.json rafraîchi. Aucune nouvelle créature confirmée."
     },
     {
       "id": "steal-a-brainrot-spawn-codes",
@@ -128,7 +128,7 @@
       "sujet": "Codes de spawn éphémères (BESTBRAINROTEVER / saturn)",
       "categorie": "codes",
       "premiereDetection": "2026-09-22",
-      "derniereVerification": "2026-09-22",
+      "derniereVerification": "2026-09-25",
       "statut": "MONITOR",
       "importance": "basse",
       "confiance": "FAIBLE",
@@ -290,6 +290,45 @@
       "url": "/codes-catch-a-monster.html",
       "prochaineAction": "Prochain run: ajouter stowerbug (2k tower gems + task points), stellawolf (task points), nexa (1 Star Lantern Egg) après confirmation 2 sources + récompenses exactes. Nos 9 codes gardés (pas de preuve d'expiration).",
       "notes": "Flaggé à revérifier. Page à 9 actifs, nouveaux codes non encore intégrés (prudence: récompenses à confirmer)."
+    },
+    {
+      "id": "code-maintenance-2026-09-25",
+      "jeu": "Multi (maintenance codes)",
+      "sujet": "Run 05h 25 sept — rotation + hotGames: 8 pages avec vrais changements de codes",
+      "categorie": "codes/maintenance",
+      "premiereDetection": "2026-09-25",
+      "derniereVerification": "2026-09-25",
+      "statut": "UPDATED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "Pocket Tactics",
+        "Pro Game Guides",
+        "Beebom",
+        "GamesRadar",
+        "PC Gamer",
+        "Dexerto",
+        "Fossbytes",
+        "RobloxDen"
+      ],
+      "sourceOriginale": "agrégat médias (2 sources min par changement)",
+      "potentielSEO": "maintien fraîcheur/autorité",
+      "trendScore": "n/a",
+      "pagesZoneblox": [
+        "codes-blue-lock-rivals.html",
+        "codes-fruit-battlegrounds.html",
+        "codes-catch-a-monster.html",
+        "codes-untitled-tag-game.html",
+        "codes-100-days-at-sea.html",
+        "codes-skibidi-masters-tower-defense.html",
+        "codes-peroxide.html",
+        "codes-my-gym.html",
+        "codes-anime-apocalypse.html"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "Voir _rotationARevoir2026-09-25 dans code-watch.json (all-star-tower-defense +4 codes 2e source, anime-apocalypse codes en conflit, skibidi 130KLIKES/candidats). Prochaine rotation: grosses listes non vérifiées (astral, dragon-blox, battle-rng, brainrot-evolution, clover-retribution).",
+      "notes": "Changements: blue-lock-rivals (3 codes tournés), fruit-battlegrounds (+2), catch-a-monster (+2), untitled-tag-game (0->3), 100-days-at-sea (3->0 expirés), skibidi (5->6), peroxide (7->2), my-gym (3->2), anime-apocalypse (15->2 page périmée nettoyée). Tous ≥2 sources. Total site: 1222 codes actifs / 183 jeux."
     }
   ]
 }
