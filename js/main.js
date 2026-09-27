@@ -3,13 +3,13 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
-  'steal-from-the-rich': '/images/games/steal-from-the-rich.svg',
-  'ride-a-pet': '/images/games/ride-a-pet.svg',
-  '1-loot-to-forge': '/images/games/1-loot-to-forge.svg',
-  'slayers-2': '/images/games/slayers-2.svg',
-  'illegal-soccer': '/images/games/illegal-soccer.svg',
-  'search-for-the-needle': '/images/games/search-for-the-needle.svg',
-  'dungeon-quest-reborn': '/images/games/dungeon-quest-reborn.svg','anime-origins': 'https://tr.rbxcdn.com/180DAY-08bf47e71d016cba2881cf9d67114527/768/432/Image/Webp/noFilter',
+  'steal-from-the-rich': 'https://tr.rbxcdn.com/180DAY-f0d48e412752a29559548cc0b80e3887/768/432/Image/Webp/noFilter',
+  'ride-a-pet': 'https://tr.rbxcdn.com/180DAY-3ffbd41c5b51c95ae19350431588608e/768/432/Image/Webp/noFilter',
+  '1-loot-to-forge': 'https://tr.rbxcdn.com/180DAY-82066d8599c04685dafed829784abc81/768/432/Image/Webp/noFilter',
+  'slayers-2': 'https://tr.rbxcdn.com/180DAY-dba4c44c1db70a2c2ef8fbe97580c662/768/432/Image/Webp/noFilter',
+  'illegal-soccer': 'https://tr.rbxcdn.com/180DAY-e7aae66394912b42be832bf6b8dfe84f/768/432/Image/Webp/noFilter',
+  'search-for-the-needle': 'https://tr.rbxcdn.com/180DAY-19a201f37929cac782ac0b884693b6d7/768/432/Image/Webp/noFilter',
+  'dungeon-quest-reborn': 'https://tr.rbxcdn.com/180DAY-70c1d4c8beaf4aa7f463b9556abfe4c9/768/432/Image/Webp/noFilter','anime-origins': 'https://tr.rbxcdn.com/180DAY-08bf47e71d016cba2881cf9d67114527/768/432/Image/Webp/noFilter',
   'grow-a-chicken-fighter': 'https://tr.rbxcdn.com/180DAY-8403e52cfc77a0fb4df895e64943deab/768/432/Image/Webp/noFilter',
   'dig-and-clean': 'https://tr.rbxcdn.com/180DAY-1912ba1aee413f812eeb5cc59ba88416/768/432/Image/Webp/noFilter',
   'fish-an-anime-rng': 'https://tr.rbxcdn.com/180DAY-ec9205660a2677cf225c249a16440ae6/768/432/Image/Webp/noFilter',
