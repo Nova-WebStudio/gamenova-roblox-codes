@@ -893,7 +893,7 @@
   }
  },
  "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
- "lastRun": "2026-09-25-05h",
+ "lastRun": "2026-09-27",
  "_pending2026-07-18": [
   "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
   "blade-ball: SERPENT -> Beebom le dit expire, PT+GamesRadar actif, conserve actif",
@@ -970,8 +970,8 @@
   "a-prioriser-prochain-run": "Fruit Battlegrounds (paliers + OPE V2), Anime Last Stand (liste active exacte), Fisch (fluide), + long tail. Ficher Anime Origins & +1 Speed Keyboard Escape avec Chrome."
  },
  "meta": {
-  "updated": "2026-09-25T05:00:00Z",
-  "lastRun": "2026-09-25-05h"
+  "updated": "2026-09-27T05:00:00Z",
+  "lastRun": "2026-09-27-05h"
  },
  "_pending2026-08-29": {
   "grow-a-garden": {
@@ -1074,32 +1074,32 @@
   "blox-monsters": "2026-09-15",
   "case-simulator-rng": "2026-09-15",
   "survive-the-killer": "2026-09-15",
-  "blade-ball": "2026-09-15",
-  "fruit-battlegrounds": "2026-09-25",
+  "blade-ball": "2026-09-26",
+  "fruit-battlegrounds": "2026-09-27",
   "anime-astral-simulator": "2026-09-10",
-  "doors": "2026-09-10",
+  "doors": "2026-09-27",
   "clover-retribution": "2026-09-10",
   "dress-to-impress": "2026-09-10",
-  "anime-last-stand": "2026-09-22T05:00:00Z",
-  "royale-high": "2026-09-10",
+  "anime-last-stand": "2026-09-26",
+  "royale-high": "2026-09-27",
   "100-days-at-sea": "2026-09-25",
-  "99-nights-in-the-forest": "2026-09-10",
-  "all-star-tower-defense": "2026-09-25",
+  "99-nights-in-the-forest": "2026-09-27",
+  "all-star-tower-defense": "2026-09-26",
   "anime-battle-rng": "2026-09-10",
   "driving-empire": "2026-09-10",
-  "blox-fruits": "2026-09-22T05:00:00Z",
-  "grow-a-garden": "2026-09-23",
-  "steal-a-brainrot": "2026-09-23",
+  "blox-fruits": "2026-09-26",
+  "grow-a-garden": "2026-09-27",
+  "steal-a-brainrot": "2026-09-27",
   "anime-vanguards": "2026-09-25",
-  "blue-lock-rivals": "2026-09-25",
-  "volleyball-legends": "2026-09-25",
-  "king-legacy": "2026-09-03",
-  "fisch": "2026-09-22T05:00:00Z",
+  "blue-lock-rivals": "2026-09-27",
+  "volleyball-legends": "2026-09-27",
+  "king-legacy": "2026-09-26",
+  "fisch": "2026-09-26",
   "pet-simulator-99": "2026-09-25",
   "dragon-blox": "2026-09-10",
   "brainrot-evolution": "2026-09-03",
   "a-dusty-trip": "2026-09-20T05:00:00Z",
-  "anime-apocalypse": "2026-09-25",
+  "anime-apocalypse": "2026-09-27",
   "anime-champions-simulator": "2026-09-10",
   "anime-dimensions-simulator": "2026-09-10",
   "anime-eternal": "2026-09-10",
@@ -1144,7 +1144,7 @@
   "sailor-piece": "2026-09-22T05:00:00Z",
   "peroxide": "2026-09-25",
   "untitled-boxing-game": "2026-09-25",
-  "slap-battles": "2026-09-09T05:10:00Z",
+  "slap-battles": "2026-09-27",
   "project-slayers": "2026-09-12",
   "ro-ghoul": "2026-09-12",
   "dead-rails": "2026-09-12",
@@ -1445,5 +1445,37 @@
  "_pending2026-09-25": {
   "grosses-listes-non-verifiees": "anime-astral-simulator(100), dragon-blox(82), anime-battle-rng(35), brainrot-evolution(24), clover-retribution(14): NON reverifiees ce run (sous-listage stable, pas de preuve d'expiration). Prioriser un echantillon au prochain run.",
   "catalogVerify-anciens": "Prochains slugs les plus anciens a verifier: brainrot-evolution, doors, dress-to-impress, royale-high, slap-battles, 99-nights-in-the-forest, anime-battle-rng, driving-empire, dragon-blox, anime-champions-simulator."
+ },
+ "_rotationARevoir2026-09-26": {
+  "blade-ball": "DUNGEONSRELEASE = conflit (PT 22 sept expiré vs GamesRadar 18 sept + Beebom actif) -> gardé actif. BATTLEROYALE non ajoute (PT+Beebom actif MAIS GamesRadar 18 sept expiré = conflit).",
+  "anime-apocalypse": "PGG 24 sept liste TRANSCENDENT + INVASION actifs (NEW). Non ajoutes ce run : une seule source fraiche chargee (PT/insider/beebom 404 ou conflit). A ajouter au prochain run si 2e source fraiche confirme. SUBARU/WORLDBOSS/HOTFIXESARECUTE = conflit avec Beebom 13 sept expiré.",
+  "grow-a-garden": "PGG liste FREESEED/STORY/STARBUD/torigate en plus de nos 2 (RDCAward,BEANORLEAVE10). Source unique (Beebom ne les liste pas / torigate en conflit) -> non ajoutes.",
+  "all-star-tower-defense": "game11 = 1 source (PT 21 sept) seulement, non ajoute. CTA guidelink absent de la page (pre-existant) -> a ajouter (guide/tier list).",
+  "blox-fruits": "LIGHTNINGABUSE = 1 source (PT 18 sept), non ajoute. Nos codes sub (Starcodeheo, Sub2Fer999...) = superset stable, gardes.",
+  "fisch": "MarianaIsGoingCrazy = actif Beebom 19 sept, absent PT 22 sept -> garde (pas de preuve d'expiration 2 sources).",
+  "small-rotation-non-verifiees": "doors/99-nights-in-the-forest/royale-high/slap-battles/dress-to-impress : sources fraiches introuvables ce run (pockettactics 404, pcgamesn/PGG perimes 2024-2025). verifDate NON rafraichi (honnetete). Priorite prochain run avec URL a jour.",
+  "grosses-listes": "anime-battle-rng(35), dragon-blox(82), brainrot-evolution(24), clover-retribution(14), dress-to-impress(27) : sous-listage stable, verif approfondie reportee."
+ },
+ "_notes2026-09-27": {
+  "blue-lock-rivals": "UPDATE: SNUFFYSOON/BUGFIXES/UBERSCONTINUES expirés (2 sources fraîches: Beebom 26 + PGG 26). AJOUT SNUFFYUPD/NEWMASTER/UBERSVOTE/WSNUFFY (Beebom 26 + PGG 26). Page 3->4. GamesRadar 21 + Fossbytes 20 = listes périmées (minoritaires).",
+  "doors": "UPDATE: SIX2025/5B/THEHUNT/4B expirés (2 sources: PT 25 + Beebom 14). AJOUT du set evergreen confirmé par PT+Beebom (18 codes créateurs à 5 Knobs + FE4R_RBX/3rd/CHEDDAR BALLS + Stardust: CRUSADERS/VOCAB HAVOC/RAGDOLL COMBAT/PATHSWAP/JUMP OVER THE BRICK). Page 8->30. 777 gardé (conflit PT actif 25 vs Beebom expiré 14, PT + récent). /E FREE (PT seul) non ajouté.",
+  "anime-apocalypse": "AJOUT TRANSCENDENT/INVASION/SUBARU/WORLDBOSS/GUILDBATTLES (2 sources: PGG 24 + GamesRadar 21). JOHNNY/STEELRIDER gardés. Page 2->7. HOTFIXESARECUTE = PGG seul -> non ajouté. Conflit Beebom 13 sept périmé = minoritaire, ignoré.",
+  "slap-battles": "EXPIRATION: 1x1x1x1x1x1/Happy5lappiversary/spookyseason25 -> 0 actif. 2 sources concordantes (Dexerto 14 + Pocket Gamer 5) = AUCUN code actif; Happy5lappiversary expiré confirmé par les deux. Page 3->0.",
+  "grow-a-garden": "Aucun changement. RDCAward + BEANORLEAVE10 = superset stable (Pocket Gamer 5 sept + Beebom 1 sept concordants). torigate confirmé expiré 2 sources. Date rafraîchie.",
+  "steal-a-brainrot": "Aucun changement. BESTBRAINROTEVER seul actif (Dexerto 1 + GamesRadar 3 concordants). Date rafraîchie.",
+  "fruit-battlegrounds": "Aucun changement. EVENHIGHER!/OMGUPDATE22/HIGHER1M120K/YOO1M110K! = match exact PT 22 sept (source la plus récente). Beebom 1 sept périmée. Date rafraîchie.",
+  "volleyball-legends": "Aucun changement. UPDATE_88/GET_SLIMED/XP_BOOST = match exact GamesRadar 21 sept. Date rafraîchie.",
+  "99-nights-in-the-forest": "Aucun changement de code. forestwakesup26 + afterparty confirmés actifs (GamesRadar 21 + PC Gamer 22). SURVIVOR non listé par les 2 sources fraîches mais AUCUNE preuve d expiration -> gardé (à surveiller). Date rafraîchie.",
+  "royale-high": "0 actif CORRECT: Royale High n a pas de système de codes de récompense classique (confirmé, aucune source ne liste de code actif). Date rafraîchie.",
+  "aniimo": "data/aniimo/codes.json: aniimoparty EXPIRÉ (Beebom 25 + GamesRadar 23), AJOUT aniimofreetoplay (Beebom 25 + GamesRadar 23). Récompenses confirmées 2 sources pour aniimotogether/aniimoidyll/aniimowelcome/twinewithaniimo/anyoneaniimo/aniimobonus/aniimolaunch2026. 11 actifs. Aniimo2026 reward en conflit -> inchangé."
+ },
+ "_rotationARevoir2026-09-27": {
+  "blue-lock-rivals": "Récompenses en conflit entre Beebom et PGG pour NEWMASTER (10/10 vs 5/5) et UBERSVOTE (Flows vs Spins) -> libellés neutres. Reverifier au prochain run (jeu à rotation très rapide, codes quasi quotidiens).",
+  "doors": "777 = conflit (PT 25 actif vs Beebom 14 expiré) -> gardé actif (PT + récent). Reverifier. Reward SCREECHSUCKS en conflit (PT 50 / Beebom 25) laissé tel quel.",
+  "anime-apocalypse": "HOTFIXESARECUTE = 1 source (PGG 24) -> non ajouté, candidat 2e source. Reverifier SUBARU/WORLDBOSS/GUILDBATTLES (récompenses PGG seul, existence 2 sources).",
+  "99-nights-in-the-forest": "SURVIVOR non confirmé par 2 sources fraîches (ni actif ni expiré) -> gardé sans preuve, à surveiller. AWARDWINNER_YAY (GamesRadar seul) et \"yay fishing\" (2 sources mais méthode spéciale via pêche, pas code standard) -> non ajoutés, à trancher.",
+  "aniimo": "4 nouveaux codes Beebom-seul (aniimonow/anywhereaniimo/anythinganiimo/aniimazingfroyo US-exclusive) NON ajoutés (1 source). Aniimo2026 reward: Destructoid=oeuf SUSUTA+Aniipod Ultra+200 Glimmer vs Beebom/GamesRadar=20 Glimmer -> conflit, inchangé.",
+  "dress-to-impress": "27 codes (verifDate 7 sept) NON revérifiés ce run (scope) -> PRIORITÉ prochain run (liste rotative, 20 j d ancienneté). Date NON rafraîchie (honnêteté).",
+  "grosses-listes": "anime-astral-simulator(100), dragon-blox(82), anime-battle-rng(35), brainrot-evolution(24), clover-retribution(14): sous-listage stable, vérif approfondie toujours reportée."
  }
 }

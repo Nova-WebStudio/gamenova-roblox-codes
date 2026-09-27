@@ -2,80 +2,69 @@
 
 > Mémoire éditoriale opérationnelle (spec V2, section 7). Mise à jour à chaque run.
 > Détail sourcé complet dans `tools/editorial-intelligence.json` et `tools/code-watch.json`.
-> **Dernière MAJ : 2026-09-25 ~05h30 (run 05h — full maintenance)**
+> **Dernière MAJ : 2026-09-27 ~05h30 (run 05h — full maintenance dimanche)**
 
-## ✅ FAIT CE MATIN (run 05h 2026-09-25)
+## ✅ FAIT CE MATIN (run 05h 2026-09-27)
 
-- **Codes hotGames** vérifiés (7) : anime-vanguards, blue-lock-rivals, volleyball-legends, fruit-battlegrounds, squid-game-x, pet-simulator-99, tower-defense-simulator.
-  - **blue-lock-rivals** — ✏️ MODIFIÉ : les codes ont tourné. NIKOHERE/GATEKEEPOVER/QOLNEXTWEEK! → expirés ; ajout **SNUFFYSOON, BUGFIXES, UBERSCONTINUES** (2 sources : PC Gamer 21 sept + Beebom 19 sept qui marque les 3 anciens expirés). Reste 3 actifs.
-  - **fruit-battlegrounds** — ✏️ MODIFIÉ : ajout **EVENHIGHER! + OMGUPDATE22** (800 gemmes, 2 sources : Pocket Tactics + Pro Game Guides 22 sept). HIGHER1M120K/YOO1M110K! gardés. Page 2→4.
-  - anime-vanguards (4), volleyball-legends (3), squid-game-x (6), pet-simulator-99 (0, correct), tower-defense-simulator (2) : **aucun changement** (keeps prudents), dates « Vérifié le » rafraîchies.
-- **Traitements queue de la veille** :
-  - **catch-a-monster** — ✏️ MODIFIÉ : ajout **stowerbug** (2k tower gems + points de tâche) + **stellawolf** (points de tâche), 2 sources (Pocket Tactics 16 sept + Fossbytes 20 sept). **nexa** non confirmé → abandonné. Page 9→11.
-  - **untitled-tag-game** — ✏️ MODIFIÉ : ajout **roblox_rtc** (500)/**thankyou** (500)/**bombplushie** (250), code+récompense concordants Beebom + RobloxDen. seeyousoon/happyholidays (récompenses en conflit) + sorry (non confirmé) laissés. Page 0→3.
-- **Rotation** (10 pages non-hot vérifiées) :
-  - **100-days-at-sea** — ✏️ MODIFIÉ : CLASSES/DECORATE/20Pearls expirés (2 sources : Dexerto + PGG). Page 3→0. (SKELLY 1 source + conflit → non ajouté.)
-  - **skibidi-masters-tower-defense** — ✏️ MODIFIÉ : SUMMER2026/ROYAL/125KLIKES/120KLIKES expirés (Beebom+PGG) ; 130KLIKES retiré (conflit tranché sur source récente PGG). Ajout 135/140/145/150KLIKES + FREETRAIT + POTIONS (2 sources). Page 5→6.
-  - **peroxide** — ✏️ MODIFIÉ : 7 anciens codes expirés (4 confirmés PT+PGG, 3 événementiels périmés). Ajout **StayHydrated + JesterMiniUpdate** (2 sources). Page 7→2.
-  - **my-gym** — ✏️ MODIFIÉ : 1MVISITS/Boxing expirés (Beebom+TryHardGuides). Ajout **Update**, ILiked gardé. Page 3→2.
-  - **anime-apocalypse** — ✏️ MODIFIÉ (nettoyage majeur) : page **totalement périmée** (15 vieux codes event). Ajout **JOHNNY + STEELRIDER** (actifs confirmés PT ET Beebom). Page 15→2.
-  - **untitled-boxing-game** (9, sous-listage stable), **pet-simulator-x** (0, correct), **all-star-tower-defense** (16, tous actifs) : confirmés, dates rafraîchies.
-- **Aniimo** : 11 codes stables (concordance Beebom+Destructoid). aniimofreetoplay = source unique → non ajouté. lastChecked rafraîchi. Aucune nouvelle créature.
-- **GTA 6** : sortie 19 nov. 2026 toujours confirmée → evergreen inchangé (MONITOR).
-- **FC 27** : ✅ **LANCEMENT MONDIAL confirmé (25 sept)**. Contenu day-one capté (voir À METTRE À JOUR).
-- **Régénération** : build_site → build_home → build_codes_json (**1222 codes actifs / 183 jeux**) → build_sitemap (381 URLs). **QC OK** (node --check, JSON, sitemap, HTML intègres, comptes exacts).
+- **Codes — 4 pages modifiées (2 sources indépendantes minimum)** :
+  - **blue-lock-rivals** — ✏️ ROTATION : SNUFFYSOON/BUGFIXES/UBERSCONTINUES **expirés**, remplacés par **SNUFFYUPD/NEWMASTER/UBERSVOTE/WSNUFFY** (Beebom 26 + Pro Game Guides 26 concordants ; GamesRadar 21 / Fossbytes 20 = listes périmées, minoritaires). Page 3 → 4.
+  - **doors** — ✏️ NETTOYAGE + COMPLÉTION : **SIX2025/5B/THEHUNT/4B expirés** (Pocket Tactics 25 + Beebom 14), et **ajout du set evergreen** confirmé par les 2 sources (18 codes créateurs/streamers à 5 Knobs + FE4R_RBX/3rd/CHEDDAR BALLS + codes Stardust). Page 8 → **30**. 777 gardé (conflit, PT récent le donne actif).
+  - **anime-apocalypse** — ✏️ AJOUT : **TRANSCENDENT/INVASION/SUBARU/WORLDBOSS/GUILDBATTLES** (PGG 24 + GamesRadar 21). Page 2 → **7**. HOTFIXESARECUTE (PGG seul) non ajouté.
+  - **slap-battles** — ✏️ EXPIRATION : les 3 codes (1x1x1x1x1x1/Happy5lappiversary/spookyseason25) passés expirés. **Aucun code actif** confirmé par Dexerto 14 + Pocket Gamer 5. Page 3 → **0**.
+- **Codes — 6 pages « aucun changement », date « Vérifié le » rafraîchie (2 sources concordantes)** : grow-a-garden (RDCAward/BEANORLEAVE10), steal-a-brainrot (BESTBRAINROTEVER), fruit-battlegrounds (4, match PT 22), volleyball-legends (3, match GamesRadar 21), 99-nights-in-the-forest (3 ; SURVIVOR non confirmé mais aucune preuve d'expiration → gardé, à surveiller), royale-high (0, pas de système de codes).
+- **Aniimo (data-driven)** — ✏️ `data/aniimo/codes.json` : **aniimoparty expiré** (Beebom 25 + GamesRadar 23), **aniimofreetoplay ajouté** (2 sources) ; **7 récompenses désormais confirmées** par 2 sources (aniimotogether, aniimoidyll, aniimowelcome, twinewithaniimo, anyoneaniimo, aniimobonus, aniimolaunch2026). 11 codes actifs.
+- **all-star-tower-defense** — ✏️ ajout du bandeau **CTA `data-cta="guidelink"`** manquant (📖 Guides + 📊 Tier list ASTD) → conformité section 28.
+- **Régénération** ordre respecté : build_site → build_home → build_codes_json (**1250 codes actifs / 184 jeux**, +25 net) → build_sitemap (383 URLs). **QC OK** (node --check main.js/events.js, tous JSON valides, sitemaps XML valides, pages éditées : fin `</html>`, 0 null byte, div équilibrés, badges/compteurs cohérents, CTA unique).
 
 ---
 
 ## 🔥 URGENT
 
-_(rien)_ — aucune information ne justifie de modification urgente supplémentaire.
+- **GTA 6** · le **29 sept** : reveal **Game Informer CONFIRMÉ** (couverture 14 pages, 12 nouveaux screenshots, détails devs Rockstar — multi-sources). Dès la parution → **UPDATE de la page evergreen GTA 6** (screenshots + détails concrets), **PAS de nouvelle URL**. Rien à publier avant (pas de contenu concret publié).
 
 ---
 
 ## 🟢 À PUBLIER
 
-_(rien)_ — kill switch éditorial appliqué. Aucun nouveau jeu ne réunit traction réelle + codes réels + absence de page. Grow a Garden / Steal a Brainrot dominent toujours (déjà couverts). « 2 excellents > 20 faibles ».
+_(rien)_ — kill switch éditorial appliqué. Grow a Garden / Steal a Brainrot dominent (déjà couverts). Aucun nouveau jeu ne réunit traction réelle + codes réels + absence de page. « 2 excellents > 20 faibles ».
 
 ---
 
 ## 🛠️ À METTRE À JOUR
 
-- **FC 27 — contenu de lancement** · haute · EVERGREEN→UPDATE post-J0 · **ACTION AU RUN 05h DU 26 SEPT (J+1)**
-  - Jeu **live mondial depuis le 25 sept**. UPDATE `data/fc-27/updates.json` (pas de nouvelle URL) avec : Season 1 **Ones to Watch** (18 sept) + **Destined for Glory** (25 sept, joueurs votés) ; chimie **Icons/Heroes réduite** (+1 Ligue/+1 Nation, Icons 88 OVR min) ; **15 promos/an** (vs 26) ; nouveaux **formats de packs** (Mini/Small/Large/Jumbo/Giant) ; récompenses **Rivals/Champions/Squad Battles** améliorées (Div 6 retiré, TOTW hebdo voté) ; **The Grounds** (hub open-world, archétypes AXP+Grounds Coins) ; **Manager Career** (gros update) ; **FC 27 Lite** gratuit. Vérifier notes des tops joueurs à J+1.
-- **all-star-tower-defense** · basse : ajouter **ReturnOfTheLobbies, ALateSummerAwaits, AwesomeBeginnerCode, game11** (vus actifs sur Pocket Tactics 21 sept) après confirmation 2e source.
+- **dress-to-impress** · moyenne : 27 codes non revérifiés depuis le 7 sept (liste rotative, 20 j) → **priorité codes du prochain run** (date volontairement NON rafraîchie).
+- **anime-apocalypse** · basse : ajouter **HOTFIXESARECUTE** si une 2e source fraîche le confirme (PGG seul le liste).
+- **99-nights-in-the-forest** · basse : trancher **AWARDWINNER_YAY** (GamesRadar seul) et **« yay fishing »** (2 sources mais méthode spéciale via pêche, pas un code standard) ; **SURVIVOR** à surveiller (non confirmé par 2 sources fraîches, mais pas de preuve d'expiration).
 
 ---
 
 ## 🟡 À PRÉPARER / SURVEILLER (tendances)
 
-- **GTA 6** · EVERGREEN · MONITOR : sortie **19 nov. 2026** confirmée. Actus marketing = faible valeur joueur → evergreen inchangé.
-- **RELL Seas** (jeu à venir, pas de date) · MONITOR : surveiller l'annonce d'une date de sortie.
-- **Roblox Everywhere** (annonce 11 sept.) · MONITOR : attendre déploiement joueur réel.
-- **Roblox Fall Games 2026** · MONITOR · trendScore ~35/100 : Showdown ~240 CCU = pas un hit. Kill switch → **ne PAS créer de page**. Réévaluer si un titre décolle + a des codes.
-- **Aniimo** · event **Aniimo Together se termine le 27 sept** : revérifier codes + nouvelle créature après cette date.
+- **GTA 6** · sortie **19 nov. 2026** confirmée (Zelnick, pas de report). Marketing = faible valeur joueur → evergreen inchangé sauf reveal du 29 sept (ci-dessus).
+- **FC 27** · post-lancement (J+2) : pas de promo/SBC concrète nouvelle depuis le lancement du 25. Suivre les 1res promos Saison 1 (**Destined for Glory** hebdo, **TOTW votés**) et notes des tops joueurs.
+- **Aniimo** · event web **Aniimo Together** se termine le **27 sept** (squad codes) ; les codes cadeaux restent actifs. Surveiller nouvelle créature / patch après l'event. 4 codes Beebom-seul (aniimonow/anywhereaniimo/anythinganiimo/aniimazingfroyo) en attente d'une 2e source.
+- **blue-lock-rivals** · rotation très rapide (codes quasi quotidiens) → revérifier chaque run. Récompenses NEWMASTER/UBERSVOTE en conflit entre sources (libellés neutres en place).
+- **RELL Seas** / **Roblox Everywhere** / **Roblox Fall Games 2026** · MONITOR : pas de titre qui décolle avec des codes réels → kill switch, pas de page.
 
 ---
 
-## 👀 À REVÉRIFIER (codes — mappings/sources ambigus)
+## 👀 À REVÉRIFIER (codes — conflits / sources à retrouver)
 
-- **anime-apocalypse** — codes en **conflit** non ajoutés : TRANSCENDENT/INVASION/HOTFIXESONCEAGAIN/SUBARU/WORLDBOSS/ZOLTRAAK/HOTFIXESARECUTE (PT 21 sept = actifs vs Beebom 13 sept = expirés). Revérifier au prochain run.
-- **skibidi-masters-tower-defense** — 130KLIKES (conflit tranché en faveur de PGG=expiré) ; candidats EPISODE81/160KLIKES/155KLIKES/LEAGUES/TRADEPLAZA/50MVISITS/100KLIKES (PGG) à confirmer 2e source.
-- **anime-vanguards** — Pocket Tactics liste ~18 codes que PGG+GamesRadar classent expirés (liste PT périmée) → non ajoutés ; 100thTournament = source récente unique (PGG 22 sept), gardé.
-- **arene-de-sniper** — Sniper Arena a des codes (Dexerto.fr/PocketTactics) mais **mapping placeId ambigu** vs notre page à 0 → désambiguïser avant tout ajout.
-- **Grosses listes NON revérifiées ce run** (sous-listage stable, pas de preuve d'expiration) : anime-astral-simulator (100), dragon-blox (82), anime-battle-rng (35), brainrot-evolution (24), clover-retribution (14) → échantillon prioritaire au prochain run.
-- **Reports antérieurs toujours en attente** : blade-ball (GOODVSEVIL/DUNGEONSRELEASE conflit), a-one-piece-game/Re:AOPG, locked/LOCKED:2, grimoires-era, spin-a-brainrot, world-cup-album, fifa-super-soccer. (Détail dans `_rotationARevoir` de code-watch.json.)
+- **doors** : 777 (conflit PT actif 25 vs Beebom expiré 14) ; reward SCREECHSUCKS en conflit (PT 50 / Beebom 25).
+- **anime-apocalypse** : SUBARU/WORLDBOSS/GUILDBATTLES (existence 2 sources OK ; récompenses PGG seul).
+- **Petites rotations** encore à faire avec URL à jour : slap-battles OK ce run ; restent **grosses listes** (anime-astral-simulator 100, dragon-blox 82, anime-battle-rng 35, brainrot-evolution 24, clover-retribution 14) → sous-listage stable, échantillon prioritaire.
+- **Reports antérieurs toujours en attente** : a-one-piece-game/Re:AOPG, locked/LOCKED:2, grimoires-era, spin-a-brainrot, world-cup-album, fifa-super-soccer, arene-de-sniper (mapping placeId). (Détail dans `_rotationARevoir` de code-watch.json.)
 
 ---
 
-## 📅 PRIORITÉS DEMAIN (run 05h — 2026-09-26, samedi)
+## 📅 PRIORITÉS DEMAIN (run 05h — 2026-09-28, lundi)
 
-1. **FC 27 (J+1)** — **priorité éditoriale** : UPDATE `data/fc-27/updates.json` avec le contenu de lancement live (Ones to Watch, Destined for Glory, TOTW, SBC/Objectifs d'accès, The Grounds, Manager Career, chimie/packs). Vérifier notes des tops joueurs.
-2. **Codes** (priorité absolue) : hotGames (rotation : grow-a-garden, steal-a-brainrot, blade-ball, anime-last-stand, blox-fruits, king-legacy, fisch) + lot de rotation prioritaire = **grosses listes non vérifiées** (échantillon : anime-battle-rng, brainrot-evolution, dragon-blox) + slugs anciens (doors, dress-to-impress, royale-high, slap-battles, 99-nights-in-the-forest).
-3. **all-star-tower-defense** : ajouter les 4 nouveaux codes après 2e source.
-4. **anime-apocalypse** : trancher le conflit sur les 7 codes en attente.
+1. **Codes** (priorité absolue) : hotGames (grow-a-garden, steal-a-brainrot, blade-ball, anime-last-stand, anime-vanguards, volleyball-legends, fruit-battlegrounds, **blue-lock-rivals** = rotation rapide) + **dress-to-impress** (prioritaire, non fait ce run).
+2. **GTA 6** : le reveal Game Informer est le **29** (pas le 28) → préparer le canevas d'UPDATE evergreen ; rien à publier avant.
+3. **Aniimo** : vérifier fin d'event Aniimo Together (créature/patch) + 2e source pour les 4 codes Beebom-seul.
+4. **LUNDI = Jeu de la semaine** : mettre à jour le bloc `<!-- FEATURED-WEEK-START/END -->` avec le jeu #1 des tendances présent au catalogue (`date +%u == 1`).
 5. **Régénération** ordre : build_site → build_home → build_codes_json (si codes changés) → build_sitemap.
 
 ---
 
-_Sujets obsolètes retirés : bloc « FAIT CE MATIN » du 24/09 (archivé dans editorial-intelligence.json). Rappel : pour publier, git add/commit/push manuel (voir rapport)._
+_Sujets obsolètes retirés : bloc « FAIT CE MATIN » du 26/09 (archivé dans editorial-intelligence.json → topic code-maintenance-2026-09-26). Rappel : pour publier, git add/commit/push manuel (voir rapport)._

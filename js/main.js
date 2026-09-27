@@ -3,6 +3,7 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+  'steal-from-the-rich': 'https://tr.rbxcdn.com/180DAY-f0d48e412752a29559548cc0b80e3887/768/432/Image/Png/noFilter',
   'ride-a-pet': 'https://tr.rbxcdn.com/180DAY-3ffbd41c5b51c95ae19350431588608e/768/432/Image/Png/noFilter',
   '1-loot-to-forge': 'https://tr.rbxcdn.com/180DAY-82066d8599c04685dafed829784abc81/768/432/Image/Png/noFilter',
   'slayers-2': 'https://tr.rbxcdn.com/180DAY-dba4c44c1db70a2c2ef8fbe97580c662/768/432/Image/Png/noFilter',
@@ -211,7 +212,8 @@ function initMobileNav() {
 }
 
 /* ---- Search index ---- */
-const GAMES_INDEX = [{ name: 'Ride A Pet', slug: 'ride-a-pet', emoji: '🐶', codes: 0 },
+const GAMES_INDEX = [{ name: 'Steal From The Rich', slug: 'steal-from-the-rich', emoji: '💰', codes: 0 },
+{ name: 'Ride A Pet', slug: 'ride-a-pet', emoji: '🐶', codes: 0 },
   { name: '+1 Loot To Forge', slug: '1-loot-to-forge', emoji: '⚒️', codes: 2 },
   { name: 'Slayers 2', slug: 'slayers-2', emoji: '⚔️', codes: 2 },
   { name: 'Illegal Soccer', slug: 'illegal-soccer', emoji: '⚽', codes: 0 },
@@ -458,6 +460,7 @@ function highlightNav() {
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
+  'steal-from-the-rich': 10753751277,
   'ride-a-pet': 10035204815,
   '1-loot-to-forge': 10684750879,
   'slayers-2': 5595353122,

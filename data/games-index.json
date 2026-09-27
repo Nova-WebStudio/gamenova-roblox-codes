@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-25",
- "count": 180,
+ "generated": "2026-09-27",
+ "count": 181,
  "games": [
   {
    "name": "Aniimo",
@@ -90,6 +90,28 @@
    ],
    "platformLabel": "PC / Console",
    "genreLabel": "Aventure"
+  },
+  {
+   "name": "Steal From The Rich",
+   "slug": "steal-from-the-rich",
+   "url": "/codes-steal-from-the-rich.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-09-26",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-f0d48e412752a29559548cc0b80e3887/768/432/Image/Png/noFilter",
+   "cts": [
+    "Codes",
+    "Guides"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
   },
   {
    "name": "+1 Loot To Forge",

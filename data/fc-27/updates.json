@@ -1,8 +1,39 @@
 {
   "game": "fc-27",
-  "updated": "2026-09-19",
+  "updated": "2026-09-26",
   "intro": "Le suivi de l'actualité officielle d'EA Sports FC 27 : sortie, éditions, cover stars et trailers. Uniquement du confirmé.",
   "entries": [
+    {
+      "date": "2026-09-25",
+      "kind": "update",
+      "title": "Ultimate Team : Saison 1 « Ones to Watch » et refonte de FUT au lancement",
+      "summary": "Au lancement (25 sept.), la Saison 1 d'Ultimate Team démarre sur le thème Ones to Watch (17 sept. → 22 oct. 2026) : les cartes OTW s'obtiennent via le Season Pass, des DCE (SBC) et des objectifs, dès l'accès anticipé. FUT est profondément remanié : la distinction Commun/Rare disparaît et les packs sont renommés par taille (Mini, Small, Large, Jumbo, Giant). La chimie des Icônes passe à un OVR de base de 88, chimie pleine en position, +1 à chaque Ligue et contribution Nation réduite de +2 à +1 ; les Héros voient leur contribution Ligue réduite de +2 à +1. Le nombre maximal de PlayStyles+ passe de 5 à 3 et un nouveau palier « Hall of FUT » fait son apparition.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://www.ea.com/games/ea-sports-fc/fc-27/news/pitch-notes-fc27-launch-update"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "kind": "update",
+      "title": "Récompenses FUT revues : Rivals, Champions, Squad Battles et TOTW voté",
+      "summary": "EA augmente nettement les récompenses de fin de match : Division Rivals et Champions rapportent « plusieurs fois plus » de pièces qu'en FC 26, et Squad Battles est aussi rehaussé. Les Season Points rapportent 15 à 100 par match éligible, jusqu'à 850 par jour. Côté Champions, l'exigence de Division 6 est retirée pour la qualification, les finales à 15 matchs reviennent et les CQP se gagnent via Rivals et Squad Battles ; tous les packs de récompense sont échangeables au lancement. Le Team of the Week est désormais voté par la communauté (un joueur par semaine pour les six premières équipes) : le vote ouvre le mardi et se ferme le lundi.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://www.ea.com/games/ea-sports-fc/fc-27/news/pitch-notes-fc27-launch-update"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "kind": "update",
+      "title": "The Grounds, Destined for Glory et nouveautés Career au lancement",
+      "summary": "The Grounds, le hub open-world de FC 27, est disponible sur PS5, Xbox Series, Switch 2 et PC ; son premier Club Tournament est un événement 11v11 en Classic Stadium (les Amps se rafraîchissent régulièrement mais n'accordent pas de PlayStyle+ au lancement). Côté Ultimate Team, la campagne Destined for Glory sort 15 joueurs dans son escouade chaque semaine. En Career, la Saison 1 ajoute de nouvelles Icônes jouables (Kaká, Antonio Di Natale, Alessandro Del Piero, Raúl, Robin van Persie) et un mode Manager Live avec des « Creator Challenges » créés par les joueurs.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://www.ea.com/games/ea-sports-fc/fc-27/news/pitch-notes-fc27-launch-update",
+        "https://athlonsports.com/sports-video-games/ea-fc-27-season-1-roadmap"
+      ]
+    },
     {
       "date": "2026-09-18",
       "kind": "event",
