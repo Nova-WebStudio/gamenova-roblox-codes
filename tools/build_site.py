@@ -21,7 +21,7 @@ import json, os, glob, html, datetime, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://zoneblox.com"
 GA = "G-FEL71QVHNL"
-CSSV = "7"
+CSSV = "8"
 FR_MONTHS = ["", "janvier", "février", "mars", "avril", "mai", "juin", "juillet",
              "août", "septembre", "octobre", "novembre", "décembre"]
 
@@ -136,7 +136,22 @@ def crumb_ld(items):
     return json.dumps({"@context": "https://schema.org", "@type": "BreadcrumbList",
                        "itemListElement": el}, ensure_ascii=False)
 
+def _short_title(t):
+    if not t or len(t)<=65: return t
+    core=t.split('| Zoneblox')[0].rstrip() if '| Zoneblox' in t else t
+    for sep in [' — ',' – ',' - ',' : ']:
+        if sep in core: core=core.split(sep)[0].strip(); break
+    cand=core+' | Zoneblox'
+    if len(cand)<=65: return cand
+    core=core[:65-len(' | Zoneblox')].rsplit(' ',1)[0].rstrip(' -–—:,')
+    return core+' | Zoneblox'
+
+def _short_desc(d):
+    if not d or len(d)<=158: return d
+    return d[:156].rsplit(' ',1)[0].rstrip(' ,;:–—-')
+
 def page(title, desc, canonical, body, active="", extra_ld=None, extra_js=""):
+    title=_short_title(title); desc=_short_desc(desc)
     ld = ""
     for block in (extra_ld or []):
         ld += '<script type="application/ld+json">%s</script>\n' % block
@@ -151,7 +166,7 @@ def page(title, desc, canonical, body, active="", extra_ld=None, extra_js=""):
         '<meta property="og:url" content="%s" />\n'
         '<meta name="twitter:card" content="summary_large_image" />\n'
         '<meta name="theme-color" content="#0a0b16" />\n'
-        '%s\n<link rel="stylesheet" href="/css/platform.css?v=%s" />\n<link rel="stylesheet" href="/css/nav-fix.css?v=5" />\n%s</head>\n'
+        '%s\n<link rel="stylesheet" href="/css/platform.css?v=%s" />\n<link rel="stylesheet" href="/css/nav-fix.css?v=6" />\n%s</head>\n'
         '<body>\n<a href="#main" class="skip">Aller au contenu</a>\n%s\n<main id="main"><div class="wrap">\n%s\n</div></main>\n%s\n'
         '<div class="toast" id="toast">Copié ✓</div>\n%s\n</body>\n</html>\n') % (
         GA_SNIPPET, e(title), e(desc), canonical, e(title), e(desc), canonical,
