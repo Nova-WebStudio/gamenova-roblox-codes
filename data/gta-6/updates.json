@@ -1,6 +1,6 @@
 {
   "game": "gta-6",
-  "updated": "2026-09-18",
+  "updated": "2026-10-01",
   "intro": "Le suivi de l'actualité officielle de GTA 6 : date de sortie, trailers et annonces de Rockstar. Aucune rumeur présentée comme un fait.",
   "entries": [
     {
@@ -12,6 +12,17 @@
       "sources": [
         "https://www.svg.com/2254292/gta-6-launch-guide-release-date-preload-time-price-editions-platforms/",
         "https://beebom.com/gta-6/"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "kind": "update",
+      "title": "Dossier Game Informer : nouveaux détails et screenshots",
+      "summary": "Le numéro de Game Informer consacré à GTA 6 (sorti le 29 septembre 2026) dévoile un dossier de 14 pages avec une douzaine de nouveaux screenshots et des interviews de Rockstar. Y sont confirmés un système météo avancé et l'ambition d'un monde (Miami / État de Leonida) le plus réaliste et fidèle possible. Aucune nouvelle date : la sortie reste fixée au 19 novembre 2026.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://www.pushsquare.com/news/2026/09/gta-6-fronts-next-game-informer-cover-with-new-info-and-screenshots",
+        "https://techwiser.com/gta-6-game-informer-cover-story/"
       ]
     },
     {

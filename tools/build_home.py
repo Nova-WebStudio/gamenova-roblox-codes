@@ -129,7 +129,7 @@ def s_guides():
 
 def s_codes():
     cards = ('<a class="pcard" href="/games/aniimo/codes/">%s<div class="pb"><h3>Aniimo</h3>'
-             '<span class="codes-n">11 codes actifs</span><span class="pmeta">🔄 Vérifié le 18 sept. 2026</span>'
+             '<span class="codes-n">11 codes actifs</span><span class="pmeta">🔄 Vérifié le 28 sept. 2026</span>'
              '<span class="pcta">Voir les codes →</span></div></a>') % gimg(None,"Codes",True)
     withcodes = sorted([g for g in GAMES if g.get("count",0) > 0], key=lambda g: parse_fr(g.get("date","")), reverse=True)[:7]
     for g in withcodes:
