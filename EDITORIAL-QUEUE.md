@@ -2,65 +2,62 @@
 
 > Mémoire éditoriale opérationnelle (spec V2, section 7). Mise à jour à chaque run.
 > Détail sourcé complet dans `tools/editorial-intelligence.json` et `tools/code-watch.json`.
-> **Dernière MAJ : 2026-10-12 (slot 05h — full maintenance, lundi)**
+> **Dernière MAJ : 2026-10-12 (run 05h + session interactive Peter : 3 jeux + Halloween)**
 
-## ✅ FAIT CE RUN (2026-10-12)
+## ✅ FAIT — SESSION INTERACTIVE 2026-10-12 (3 jeux + Halloween)
 
-- **Codes hot — 5 vérifiés, 1 publication** :
-  - **volleyball-legends** : 🔥 **UPDATE 91 (Instant Replay) PUBLIÉ**. Actifs = **UPDATE_91 / REPLAYS / MVP** ; l'ancien set Update 90 (UPDATE_90, SKELETON_BUNDLE, JINX, SLOT_REWORK) passe **expiré**. Base : **2 sources fraîches concordantes = Roonby (10/10) + Dexerto (11/10)** (Dexerto marque explicitement Update 90 expiré ; rotation conforme au pattern documenté du jeu). RobloxDen 10/10 = check antérieur au drop.
-  - **anime-vanguards** : 8 codes INCHANGÉS confirmés Pockettactics 10/10 (2ndAnniDay2-6 + Assault + SummerLeaving + AnniNextHopefully). **Pas de 2ndAnniDay7**, événement anniversaire non confirmé terminé → aucune suppression. verifDate 12/10.
-  - **blue-lock-rivals** : set actuel (DONREVAMP/SENDOUNEXT/ACEEATER) confirmé **toujours actif** (RobloxDen 10/10 + Pockettactics 04/10). verifDate 12/10.
-  - **grow-a-garden / steal-a-brainrot** : vérifiés 11/10 (hier), stables → non reverifiés en profondeur.
-- **Rotation — 1 expiration propre** :
-  - **dragon-adventures** : **SeasonXP passé expiré** (RobloxDen 10/10 + Pockettactics 24/08 = 2 sources indépendantes « expiré », aucune source « actif »). 5 codes restants confirmés actifs (JUSTYBLOX/AESUBREALM/FLUFFY/GALIFRAN/SHAMEWING). Incohérence pré-existante du compteur « expirés » corrigée au passage.
-  - **arm-wrestle-simulator** : Celebration + brainrot confirmés actifs RobloxDen 10/10 → verifDate 12/10.
-- **Éditorial** : GTA 6 = Trailer 3 « imminent / extended look ce mois-ci » amplifié (TheGamePost, Player.one) mais **AUCUNE confirmation officielle Rockstar Newswire** → reste RUMEUR, 19 nov 2026 tenu. FC 27 = Destined for Glory probablement live, Future Stars estimée (non confirmée EA). Aniimo = « plus gros update depuis le lancement » + hotfix rapportés, stats combat Irisalis **toujours non publiées** → MONITOR. Roblox = viral du moment (**Steal An Egg**) déjà couvert, **aucun breakout neuf**.
-- **Régénération** (build_site → build_codes_json → build_home → build_sitemap) + QC complet : voir rapport du jour.
+- **Anime Zero — NOUVEAU CLUSTER publié** : `codes-anime-zero.html` (25 codes, ≥2 sources : Pocket Tactics 9/10 + Dexerto 8/10 + igeeksblog) + `guides/anime-zero.html` (guide débutant) + SVG fallback. Intégration complète (GAMES, GAMES_INDEX, ROBLOX_THUMBS, hub codes, hub guides, sitemap, liens croisés). Miniature rbxcdn réelle. Jeu en dev actif.
+- **Dandy's World — refresh** : ICHOR confirmé actif (samlover 2/10), verifDate → 12/10. SPOOKYSEASON expiré (non ajouté). RESEARCHMOBILE = candidat mono-source.
+- **Slayers 2 — ⚠️ CONFLIT** : roonby 7/10 (12 actifs) vs Pocket Tactics 12/10 (aucun actif / wipe probable). Kill switch, aucun changement, à trancher au prochain run (3ᵉ source).
+- **Audit Halloween** : blade-ball a déjà SPOOKYSEASON ; événements Halloween en cours (Steal a Brainrot Haunted Fuse/Phoenix = pas un code, Adopt Me/Brookhaven sans codes) mais aucun code Halloween neuf confirmé à ajouter. Candidats mono-source rejetés (FREEOCTOBLOCK777, saturn).
+
+## ✅ FAIT — RUN 05h 2026-10-12
+
+- **volleyball-legends** : UPDATE 91 publié (UPDATE_91/REPLAYS/MVP ; ancien set Update 90 expiré). **dragon-adventures** : SeasonXP expiré. Re-vérifs : anime-vanguards, blue-lock-rivals, arm-wrestle-simulator. GTA 6 Trailer 3 = rumeur non confirmée (19 nov tenu). FC 27 / Aniimo : MONITOR.
 
 ---
 
 ## 🔥 URGENT
 
-- **GTA 6** — veille **annonce officielle Rockstar Newswire** (Trailer 3 / extended look donnés « imminents » par plusieurs médias, **non confirmés officiellement**) d'ici la sortie du **19 nov 2026**. UPDATE evergreen uniquement, jamais de nouvelle URL. Séparer CONFIRMÉ / RAPPORTÉ / RUMEUR. Ignorer les titres « trailer 3 is here » tant qu'absents du Newswire officiel.
+- **GTA 6** — veille **Rockstar Newswire officiel** (Trailer 3 « imminent » rapporté, non confirmé) d'ici le **19 nov 2026**. UPDATE evergreen uniquement, jamais de nouvelle URL. Séparer CONFIRMÉ / RAPPORTÉ / RUMEUR.
+- **Slayers 2** — trancher le conflit roonby (actif) vs Pocket Tactics (wipe) avec une 3ᵉ source fraîche. Possible shutdown à confirmer avant tout retrait de codes.
 
 ## 🟢 À PUBLIER
 
-_(rien)_ — kill switch maintenu. « 2 excellents > 20 faibles ». La seule publication réunissant traction réelle + sources suffisantes ce run était VL Update 91 → déjà faite.
+_(rien)_ — kill switch maintenu.
 
 ## 🛠️ À METTRE À JOUR
 
-- **blue-lock-rivals — drop hebdo candidat** : **EPICSENDOU / ONEMOREWEEK / NELAIKUNEXT** = Dexerto 11/10 **seul** (qui marque aussi DONREVAMP/SENDOUNEXT/ACEEATER expirés, en **conflit** avec RobloxDen 10/10 qui les donne actifs). Ajouter uniquement après **2ᵉ source fraîche**.
-- **anime-defenders** : RobloxDen 11/10 marque **MEMBEREREBREWRERES + incredibilli expirés** (notre page les a actifs) et liste de nouveaux (SKILLTRESS/MEGAUPD/RAIDSAREBACK) → **mono-source**, divergence non tranchée, verifDate NON bumpé. 2ᵉ source requise avant tout retrait/ajout.
-- **FC 27 — Destined for Glory / Future Stars** : brique data-driven mesurée. **Sources EA officielles uniquement (ea.com / Pitch Notes)** — Future Stars estimée ~9 oct, Ultimate Scream ~23 oct (non confirmés). Ne pas publier de squads leakés.
-- **da-hood** : candidats PVP / BUFF / WORLDCUP26 (Pockettactics 23/09, mono-source) → besoin 2ᵉ source fraîche. DOG/SHARK confirmés actifs.
-- **blox-fruits** : candidat LIGHTNINGABUSE (mono-source) → 2ᵉ source avant ajout.
-- **Aniimo _Irisalis_** : ajouter à `data/aniimo/creatures.json` **uniquement quand les stats de combat seront publiées**. Ne rien inventer.
-- **⚠️ DÉCISION PETER — grosses listes gonflées** (anime-astral-simulator 100, dragon-blox 82, anime-battle-rng 35, verifDate 10/09) : trim non prouvable, non revérifiées. Peter doit trancher : rebuild autour du set vérifié-actif, ou maintien.
+- **blue-lock-rivals — drop hebdo** : EPICSENDOU / ONEMOREWEEK / NELAIKUNEXT = Dexerto 11/10 seul (en conflit avec RobloxDen 10/10). 2ᵉ source fraîche requise.
+- **anime-defenders** : RobloxDen 11/10 marque MEMBEREREBREWRERES + incredibilli expirés + nouveaux (SKILLTRESS/MEGAUPD/RAIDSAREBACK). Mono-source → 2ᵉ source.
+- **Dandy's World — RESEARCHMOBILE** (skin Rodger) : candidat mono-source (samlover) → ajouter après 2ᵉ source.
+- **FC 27** : promo live (Destined for Glory / Future Stars estimée) via **ea.com / Pitch Notes uniquement**.
+- **da-hood** (PVP/BUFF/WORLDCUP26) & **blox-fruits** (LIGHTNINGABUSE) : mono-source → 2ᵉ source.
+- **Aniimo _Irisalis_** : ajouter aux data `creatures.json` uniquement quand les stats combat seront publiées.
+- **⚠️ DÉCISION PETER — grosses listes gonflées** (anime-astral-simulator 100, dragon-blox 82, anime-battle-rng 35) : rebuild autour du set vérifié-actif, ou maintien ?
 
 ## 🟡 À PRÉPARER / SURVEILLER
 
-- **Jeu de la semaine (§30)** : ⚠️ **les marqueurs `<!-- FEATURED-WEEK-START/END -->` n'existent pas dans le code** (ni dans index.html ni dans build_home.py). Bloc non modifiable sans ajout structurel risqué. **Recommandation jeu #1 présent au catalogue : Steal An Egg** (viral oct. 2026, hotGames, page codes existante). → **Peter : confirmer le mécanisme / ajouter les marqueurs** pour que ce soit automatisable.
-- **Steal a Brainrot — angle guide Halloween** : secret **Phoenix** via machine **Haunted Fuse** (MAJ Halloween) — pas un code. Guide « comment obtenir Phoenix » si traction confirmée (2 sources).
-- **volleyball-legends** : surveiller Update 92 ; vérifier l'**expiration réelle** de l'Update 90 via 2ᵉ source (publiée sur base Roonby+Dexerto + pattern du jeu).
-- **anime-expeditions** : candidats UPD 3.5 (Bossrush/Hellfire/Update3/RDC26 — RobloxDen 02/10 en « Check », pas frais). Attendre 2 sources fiables fraîches.
-- **Nouveaux jeux Roblox** : aucun breakout neuf (viraux « steal » déjà couverts). Continuer la veille.
-- **CTA §28** : plusieurs pages codes sans `data-cta="guidelink"` (ex. dragon-adventures, arm-wrestle-simulator) — pré-existant, non régressif → pass dédié à prévoir.
+- **Anime Zero** : surveiller nouveaux codes (jeu en dev actif) ; créer une **tier list** quand des données d'unités fiables seront sourcées ; 2ᵉ guide forte intention si traction. Renseigner `ROBLOX_UNIVERSE_IDS['anime-zero']` si l'API Roblox redevient joignable.
+- **Steal a Brainrot — guide Halloween** : secret **Phoenix** via **Haunted Fuse** (événement Halloween) — pas un code. Angle guide « comment obtenir Phoenix » si traction (2 sources).
+- **Jeu de la semaine (§30)** : ⚠️ marqueurs `<!-- FEATURED-WEEK-START/END -->` **absents du code**. Non modifié (pas d'édition structurelle risquée). Recommandation : **Steal An Egg** (#1 viral). À Peter : confirmer le mécanisme / ajouter les marqueurs.
+- **CTA §28** : plusieurs pages codes (gabarit anime-eternal, dont la nouvelle anime-zero) sans bandeau `data-cta="guidelink"` — maillage assuré via sidebar + liens in-text. Pass CTA dédié à prévoir.
 
-## 👀 À REVÉRIFIER (conflits/divergences non tranchés)
+## 👀 À REVÉRIFIER (conflits non tranchés)
 
-- **blue-lock-rivals** : conflit Dexerto 11/10 (ancien set expiré + nouveau drop) vs RobloxDen 10/10 (ancien set actif) → set actuel maintenu, nouveau drop en attente 2ᵉ source.
-- **anime-defenders** : expiration MEMBEREREBREWRERES/incredibilli + nouveaux SKILLTRESS/MEGAUPD/RAIDSAREBACK (RobloxDen 11/10 seul).
-- **fisch — MarianaIsGoingCrazy** : absent de Pockettactics 07/10 mais pas de preuve d'expiration → conservé.
-- Conflits antérieurs toujours ouverts : basketball-zero, spongebob-tower-defense, anime-dimensions-simulator, blade-ball (SERPENT), a-one-piece-game, grimoires-era, anime-squadron, clover-retribution (13), anime-stars.
-- **Rotation en retard** (verifDate anciens, sources agrégateurs périmées) : anime-astral-simulator, anime-battle-rng, dragon-blox (listes gonflées — décision Peter), dungeon-quest-reborn, dig-and-clean, iron-soul-dungeon, bloxstrike, catch-and-tame, fish-an-anime-rng.
+- **slayers-2** : roonby 7/10 (actif) vs Pocket Tactics 12/10 (wipe) — 3ᵉ source.
+- **blue-lock-rivals**, **anime-defenders** : nouveaux drops mono-source.
+- **fisch** (MarianaIsGoingCrazy), conflits antérieurs : basketball-zero, blade-ball (SERPENT), anime-squadron, clover-retribution, etc.
+- **Rotation en retard** : anime-astral-simulator, anime-battle-rng, dragon-blox (listes gonflées), dungeon-quest-reborn, dig-and-clean, iron-soul-dungeon, bloxstrike, catch-and-tame.
 
-## 📅 PRIORITÉS PROCHAIN RUN (2026-10-12 15h → puis 22h)
+## 📅 PRIORITÉS PROCHAIN RUN
 
-1. **Codes hot** (priorité absolue) : blue-lock-rivals (**2ᵉ source EPICSENDOU/ONEMOREWEEK/NELAIKUNEXT**), volleyball-legends (Update 92 ? expiration Update 90 confirmée ?), anime-vanguards (fin anniversaire / 2ndAnniDay7 ?), grow-a-garden, steal-a-brainrot.
-2. **Candidats à confirmer (2ᵉ source)** : anime-defenders (MEMBEREREBREWRERES/incredibilli expirés + SKILLTRESS/MEGAUPD/RAIDSAREBACK), da-hood PVP/BUFF/WORLDCUP26, blox-fruits LIGHTNINGABUSE.
-3. **GTA 6** : veille Rockstar Newswire officiel (rumeur Trailer 3 renforcée). **FC 27** : promo live via ea.com uniquement. **Aniimo** : publication stats Irisalis.
-4. **§30 jeu de la semaine** : décision Peter sur les marqueurs manquants.
+1. **Codes hot** : blue-lock-rivals (2ᵉ source drop), volleyball-legends (Update 92), anime-vanguards, grow-a-garden, steal-a-brainrot.
+2. **Slayers 2** : trancher le conflit (3ᵉ source / shutdown ?).
+3. **Anime Zero** : surveiller drops (jeu en dev actif).
+4. **Candidats 2ᵉ source** : anime-defenders, da-hood, blox-fruits, Dandy's World RESEARCHMOBILE.
+5. **GTA 6** Newswire · **FC 27** ea.com · **Aniimo** stats Irisalis · **§30** décision Peter.
 
 ---
 
-_Note : bloc « jeu de la semaine » (spec §30) non modifié — marqueurs absents du code (voir § À PRÉPARER). Pour publier : dans le dossier GameNova, lance `git add -A && git commit -m "MAJ Zoneblox du jour" && git push origin main`. Hostinger déploie automatiquement après le push._
+_Pour publier : dans le dossier GameNova, `git add -A && git commit -m "MAJ Zoneblox" && git push origin main`. Hostinger déploie après le push. (Si `.git/index.lock` bloque : `del ".git\index.lock"` puis relance.)_

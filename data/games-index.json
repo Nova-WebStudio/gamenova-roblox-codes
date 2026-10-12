@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-12",
- "count": 181,
+ "count": 182,
  "games": [
   {
    "name": "Aniimo",
@@ -90,6 +90,28 @@
    ],
    "platformLabel": "PC / Console",
    "genreLabel": "Aventure"
+  },
+  {
+   "name": "Anime Zero",
+   "slug": "anime-zero",
+   "url": "/codes-anime-zero.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-10-12",
+   "new": false,
+   "hot": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-4929be2006b388c566fe3dd12c876694/768/432/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Guides"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
   },
   {
    "name": "Steal From The Rich",

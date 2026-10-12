@@ -3,6 +3,7 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+  'anime-zero': 'https://tr.rbxcdn.com/180DAY-4929be2006b388c566fe3dd12c876694/768/432/Image/Webp/noFilter',
   'steal-from-the-rich': 'https://tr.rbxcdn.com/180DAY-f0d48e412752a29559548cc0b80e3887/768/432/Image/Webp/noFilter',
   'ride-a-pet': 'https://tr.rbxcdn.com/180DAY-3ffbd41c5b51c95ae19350431588608e/768/432/Image/Webp/noFilter',
   '1-loot-to-forge': 'https://tr.rbxcdn.com/180DAY-82066d8599c04685dafed829784abc81/768/432/Image/Webp/noFilter',
@@ -212,7 +213,8 @@ function initMobileNav() {
 }
 
 /* ---- Search index ---- */
-const GAMES_INDEX = [{ name: 'Steal From The Rich', slug: 'steal-from-the-rich', emoji: '💰', codes: 0 },
+const GAMES_INDEX = [{ name: 'Anime Zero', slug: 'anime-zero', emoji: '⚔️', codes: 25 },
+{ name: 'Steal From The Rich', slug: 'steal-from-the-rich', emoji: '💰', codes: 0 },
 { name: 'Ride A Pet', slug: 'ride-a-pet', emoji: '🐶', codes: 0 },
   { name: '+1 Loot To Forge', slug: '1-loot-to-forge', emoji: '⚒️', codes: 2 },
   { name: 'Slayers 2', slug: 'slayers-2', emoji: '⚔️', codes: 2 },

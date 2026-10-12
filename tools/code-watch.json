@@ -1109,7 +1109,7 @@
   "jailbreak": "2026-10-07",
   "basketball-zero": "2026-10-08T05:00:00Z",
   "sakura-stand": "2026-10-08T05:00:00Z",
-  "dandys-world": "2026-10-07",
+  "dandys-world": "2026-10-12",
   "arm-wrestle-simulator": "2026-10-12",
   "fish-it": "2026-09-22T05:00:00Z",
   "bee-swarm-simulator": "2026-10-08T05:00:00Z",
@@ -1213,7 +1213,8 @@
   "storage-hunters-open-world": "2026-09-24",
   "untitled-tag-game": "2026-09-25",
   "survive-zombie-arena": "2026-09-24",
-  "my-gym": "2026-09-25"
+  "my-gym": "2026-09-25",
+  "anime-zero": "2026-10-12"
  },
  "_catalogVerifyNote": "Suivi de la ROTATION quotidienne (ETAPE 2ter): date de derniere verif approfondie par slug. Les slugs ABSENTS de cet objet = jamais verifies en profondeur = priorite maximale du prochain lot. Jeux flagges 'a reverifier' laisses ABSENTS expres (a-one-piece-game, anime-adventures, anime-fighters, anime-fighting-simulator, anime-fighting-simulator-reborn, anime-rangers-x, anime-reversal, anime-rift-tower-defense, anime-rng, scroll-a-brainrot, world-fighters, heroes-battlegrounds).",
  "_pending2026-09-05": {
@@ -1711,5 +1712,12 @@
    "blox-fruits LIGHTNINGABUSE (mono-source)",
    "anime-defenders: expiration MEMBEREREBREWRERES/incredibilli + SKILLTRESS/MEGAUPD/RAIDSAREBACK (RobloxDen 11/10 seul)"
   ]
+ },
+ "_session2026-10-12_interactive": {
+  "run": "session interactive Peter (apres run 05h): 3 jeux + audit Halloween",
+  "anime-zero": "NOUVEAU CLUSTER cree: codes-anime-zero.html (25 codes actifs, 2+ sources Pockettactics 9/10 + Dexerto 8/10 + igeeksblog) + guides/anime-zero.html + svg fallback. Integre: index.html GAMES, js GAMES_INDEX+ROBLOX_THUMBS, tous-les-codes carte, guides carte, sitemap. Miniature rbxcdn 4929be... Place 114574503491412. Jeu en dev actif.",
+  "dandys-world": "ICHOR confirme actif (samlover 2/10). SPOOKYSEASON EXPIRE (pas ajoute). RESEARCHMOBILE (skin Rodger) candidat mono-source (samlover) -> non ajoute. verifDate->12/10.",
+  "slayers-2": "CONFLIT non tranche: roonby 7/10 liste 12 codes actifs (dont nos SkillTreeReset/Release26 + Roguelike/RoguelikeRaceReset/M1LL1ON/ANIM4L/SPINS50/BREATHRESET/ARTRESET/EVILARTSPINS/POINTSRESET/SORRYFORSHUTDOWN) MAIS Pockettactics 12/10 dit AUCUN code actif (tous expires, indice shutdown via SORRYFORSHUTDOWN). Kill switch: AUCUN changement, verifDate NON bumpe. A retrancher au prochain run (3e source).",
+  "halloween": "Audit cible top ~13 jeux: blade-ball a deja SPOOKYSEASON (actif). bee-swarm/TDS/pet-sim-99/adopt-me/brookhaven: aucun nouveau code Halloween (adopt-me/brookhaven/pet-sim-99 sans codes). blox-fruits/grow-a-garden/steal-a-brainrot/arsenal verifies <4j. Candidats mono-source rejetes: steal-a-brainrot FREEOCTOBLOCK777 (robloxtools seul; OCTOBLOCK555 expire chez timesaver 8/10), saturn (non confirme). Evenements Halloween actifs mais peu de codes neufs."
  }
 }
