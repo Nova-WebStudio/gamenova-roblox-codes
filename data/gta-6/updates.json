@@ -1,6 +1,6 @@
 {
   "game": "gta-6",
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "intro": "Le suivi de l'actualité officielle de GTA 6 : date de sortie, trailers et annonces de Rockstar. Aucune rumeur présentée comme un fait.",
   "entries": [
     {
@@ -23,6 +23,17 @@
       "sources": [
         "https://www.pushsquare.com/news/2026/09/gta-6-fronts-next-game-informer-cover-with-new-info-and-screenshots",
         "https://techwiser.com/gta-6-game-informer-cover-story/"
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "kind": "update",
+      "title": "Netflix « An Extended Look » : 27 minutes de gameplay officiel",
+      "summary": "Le 27 août 2026, Rockstar Games et Netflix ont diffusé « Grand Theft Auto VI: An Extended Look », 27 minutes d'images de jeu capturées sur PS5 — le plus long aperçu officiel à ce jour. On y voit des séquences cinématiques et de gameplay avec Jason et Lucia dans l'État de Leonida (Miami), Netflix bénéficiant d'une exclusivité de six heures avant YouTube. Sortie maintenue au 19 novembre 2026.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://variety.com/2026/tv/news/gta-6-netflix-trailer-extended-look-release-1236845475/",
+        "https://www.pcgamer.com/news/live/grand-theft-auto-6-reveal-live-coverage-breaking-down-the-netflix-extended-look-event/"
       ]
     },
     {

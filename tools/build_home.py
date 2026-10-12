@@ -128,9 +128,17 @@ def s_guides():
             + '<div class="pgrid c4">%s</div>' % cards)
 
 def s_codes():
+    _ac = A_codes.get("active", []) if isinstance(A_codes, dict) else []
+    _an_n = len(_ac) if _ac else 15
+    _REV_ABBR = {v: k for k, v in FR_ABBR.items()}
+    try:
+        _y, _m, _d = [int(x) for x in A_codes.get("lastChecked", "").split("-")]
+        _an_date = "%d %s %d" % (_d, _REV_ABBR.get(_m, "oct."), _y)
+    except Exception:
+        _an_date = "5 oct. 2026"
     cards = ('<a class="pcard" href="/games/aniimo/codes/">%s<div class="pb"><h3>Aniimo</h3>'
-             '<span class="codes-n">11 codes actifs</span><span class="pmeta">🔄 Vérifié le 28 sept. 2026</span>'
-             '<span class="pcta">Voir les codes →</span></div></a>') % gimg(None,"Codes",True)
+             '<span class="codes-n">%d codes actifs</span><span class="pmeta">🔄 Vérifié le %s</span>'
+             '<span class="pcta">Voir les codes →</span></div></a>') % (gimg(None,"Codes",True), _an_n, _an_date)
     withcodes = sorted([g for g in GAMES if g.get("count",0) > 0], key=lambda g: parse_fr(g.get("date","")), reverse=True)[:7]
     for g in withcodes:
         cards += ('<a class="pcard" href="/codes-%s.html">%s<div class="pb"><h3>%s</h3>'

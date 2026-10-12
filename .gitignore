@@ -25,3 +25,4 @@ _integrate.py
 # Fichier temporaire de surveillance (ne pas commiter)
 tools/_api_tmp.json
 n
+_to_delete/
