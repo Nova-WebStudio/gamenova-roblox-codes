@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-18",
- "count": 182,
+ "count": 187,
  "games": [
   {
    "name": "Aniimo",
@@ -90,6 +90,116 @@
    ],
    "platformLabel": "PC / Console",
    "genreLabel": "Aventure"
+  },
+  {
+   "name": "Anime Dice",
+   "slug": "anime-dice",
+   "url": "/codes-anime-dice.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-10-18",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-c841a50796d0f42b95b04cdef502686f/768/432/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Guides"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "+1 Stone Skipping",
+   "slug": "1-stone-skipping",
+   "url": "/codes-1-stone-skipping.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-10-18",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-1b1da4aa7462531147766cfb28cac349/768/432/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Guides"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Chop A Forest",
+   "slug": "chop-a-forest",
+   "url": "/codes-chop-a-forest.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-10-18",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-8fb6a0b3bec88c2829032d4c582ca3f8/768/432/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Guides"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Sell Fries",
+   "slug": "sell-fries",
+   "url": "/codes-sell-fries.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Aventure"
+   ],
+   "updated": "2026-10-18",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-1758b810e514dbb280bc5e68b71c6eed/768/432/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Guides"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Aventure"
+  },
+  {
+   "name": "Tap Simulator REBORN",
+   "slug": "tap-simulator-reborn",
+   "url": "/codes-tap-simulator-reborn.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-10-18",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-85e032d7838fdead27e9664de41730ba/768/432/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Guides"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
   },
   {
    "name": "Anime Zero",
