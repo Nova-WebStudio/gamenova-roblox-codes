@@ -2,62 +2,60 @@
 
 > Mémoire éditoriale opérationnelle (spec V2, section 7). Mise à jour à chaque run.
 > Détail sourcé complet dans `tools/editorial-intelligence.json` et `tools/code-watch.json`.
-> **Dernière MAJ : 2026-10-12 (run 05h + session interactive Peter : 3 jeux + Halloween)**
+> **Dernière MAJ : 2026-10-18 (run 05h — dimanche)**
 
-## ✅ FAIT — SESSION INTERACTIVE 2026-10-12 (3 jeux + Halloween)
+## ✅ FAIT — RUN 05h 2026-10-18
 
-- **Anime Zero — NOUVEAU CLUSTER publié** : `codes-anime-zero.html` (25 codes, ≥2 sources : Pocket Tactics 9/10 + Dexerto 8/10 + igeeksblog) + `guides/anime-zero.html` (guide débutant) + SVG fallback. Intégration complète (GAMES, GAMES_INDEX, ROBLOX_THUMBS, hub codes, hub guides, sitemap, liens croisés). Miniature rbxcdn réelle. Jeu en dev actif.
-- **Dandy's World — refresh** : ICHOR confirmé actif (samlover 2/10), verifDate → 12/10. SPOOKYSEASON expiré (non ajouté). RESEARCHMOBILE = candidat mono-source.
-- **Slayers 2 — ⚠️ CONFLIT** : roonby 7/10 (12 actifs) vs Pocket Tactics 12/10 (aucun actif / wipe probable). Kill switch, aucun changement, à trancher au prochain run (3ᵉ source).
-- **Audit Halloween** : blade-ball a déjà SPOOKYSEASON ; événements Halloween en cours (Steal a Brainrot Haunted Fuse/Phoenix = pas un code, Adopt Me/Brookhaven sans codes) mais aucun code Halloween neuf confirmé à ajouter. Candidats mono-source rejetés (FREEOCTOBLOCK777, saturn).
-
-## ✅ FAIT — RUN 05h 2026-10-12
-
-- **volleyball-legends** : UPDATE 91 publié (UPDATE_91/REPLAYS/MVP ; ancien set Update 90 expiré). **dragon-adventures** : SeasonXP expiré. Re-vérifs : anime-vanguards, blue-lock-rivals, arm-wrestle-simulator. GTA 6 Trailer 3 = rumeur non confirmée (19 nov tenu). FC 27 / Aniimo : MONITOR.
+- **🔥 Blue Lock Rivals RÉSOLU (URGENT de longue date).** Preuve d'expiration enfin réunie : l'ancien set de la page (**DONREVAMP / SENDOUNEXT / ACEEATER**) est **expiré selon 3 sources fraîches indépendantes** (Dexerto 18/10 + Twinfinite 17/10 + Pro Game Guides 11/10). **Nouveau set publié** : **NELAIKU** (5 Spins + 5 Flows), **HALLOWEEN** (5 Spins), **WSNAKE** (5 Flows), **SORRYFORDELAYAIKU** (5 Spins) — **double-confirmés par les 2 sources les plus fraîches** (Dexerto 18/10 + Twinfinite 17/10), récompenses concordantes. **EPICSENDOU / ONEMOREWEEK / NELAIKUNEXT NON publiés** : conflit (Dexerto 18/10 = expirés vs Twinfinite/GamesRadar/PGG = actifs) → kill switch sur ces 3. Page, `const ACTIVE`, compteur (4), liste expirés (+3) et « Mis à jour le » synchronisés.
+- **Hot games stables (inchangés)** : **steal-a-brainrot** (BESTBRAINROTEVER, Dexerto 12/10 « no new codes »), **volleyball-legends** (UPDATE_91/REPLAYS/MVP, samlover 13/10), **anime-vanguards** (Dexerto ne liste plus les 2ndAnniDay* mais **aucune preuve fraîche d'expiration** → kill switch), **grow-a-garden** (RDCAward/BEANORLEAVE10 ; jeu réputé faux-codes, source faible, pas de preuve d'expiration).
+- **Rotation — 5 jeux vérifiés** (catalogVerify → 18/10) : build-a-boat-for-treasure, fish-it, type-soul, jujutsu-shenanigans, murder-mystery-2. **Tous inchangés** (sources stale ou conflit → kill switch ; MM2 & type-soul correctement vides ; GPO & da-hood non re-vérifiés ce run).
+- **Conflit fish-an-anime-rng recroisé** : 3 voies divergentes (Dexerto 05/10 ≠ destructoid 04/10 ≠ page/pcgamesn stale) → **kill switch maintenu**.
+- **Régénération + QC** : `build_site` + `build_home` + `build_codes_json` + `build_sitemap` OK. QC vert (voir rapport).
 
 ---
 
 ## 🔥 URGENT
 
-- **GTA 6** — veille **Rockstar Newswire officiel** (Trailer 3 « imminent » rapporté, non confirmé) d'ici le **19 nov 2026**. UPDATE evergreen uniquement, jamais de nouvelle URL. Séparer CONFIRMÉ / RAPPORTÉ / RUMEUR.
-- **Slayers 2** — trancher le conflit roonby (actif) vs Pocket Tactics (wipe) avec une 3ᵉ source fraîche. Possible shutdown à confirmer avant tout retrait de codes.
+- **GTA 6** — Aucune news officielle nouvelle (recherche = rehash de rumeurs de délai). Statut inchangé : **release 19/11/2026** (MONITOR evergreen) + Netflix « Extended Look » (EVERGREEN). Séparer CONFIRMÉ / RAPPORTÉ / RUMEUR. UPDATE evergreen uniquement. À surveiller : à ~1 mois du lancement, les confirmations pré-lancement Newswire vont arriver.
 
 ## 🟢 À PUBLIER
 
-_(rien)_ — kill switch maintenu.
+_(rien)_ — qualité > quantité, kill switch maintenu sur tous les conflits. Aucun nouveau jeu Roblox avec preuve d'intérêt multi-source cette nuit.
 
 ## 🛠️ À METTRE À JOUR
 
-- **blue-lock-rivals — drop hebdo** : EPICSENDOU / ONEMOREWEEK / NELAIKUNEXT = Dexerto 11/10 seul (en conflit avec RobloxDen 10/10). 2ᵉ source fraîche requise.
-- **anime-defenders** : RobloxDen 11/10 marque MEMBEREREBREWRERES + incredibilli expirés + nouveaux (SKILLTRESS/MEGAUPD/RAIDSAREBACK). Mono-source → 2ᵉ source.
-- **Dandy's World — RESEARCHMOBILE** (skin Rodger) : candidat mono-source (samlover) → ajouter après 2ᵉ source.
-- **FC 27** : promo live (Destined for Glory / Future Stars estimée) via **ea.com / Pitch Notes uniquement**.
-- **da-hood** (PVP/BUFF/WORLDCUP26) & **blox-fruits** (LIGHTNINGABUSE) : mono-source → 2ᵉ source.
-- **Aniimo _Irisalis_** : ajouter aux data `creatures.json` uniquement quand les stats combat seront publiées.
-- **⚠️ DÉCISION PETER — grosses listes gonflées** (anime-astral-simulator 100, dragon-blox 82, anime-battle-rng 35) : rebuild autour du set vérifié-actif, ou maintien ?
+- **fish-an-anime-rng — conflit 3 voies non tranché.** Page = 1000MEMBERS/2kCCU/1kLIKES/ANGELIA/EXODIA (seul pcgamesn stale « août » les soutient). Dexerto 05/10 = set 100 % différent (Starfall/15MVISITS/Luther/Halloween/35KLIKES) ; destructoid 04/10 = encore un autre set. Seul **35KLIKES** est double-confirmé (Dexerto+destructoid) mais absent de la page. **2 sources fraîches concordantes requises** sur un set remplaçant avant réécriture destructive.
+- **type-soul — opportunité.** Page vide alors qu'Insider Gaming (04/10) liste ~55 codes. Mais méga-liste **sans récompenses par code** + dates incohérentes → impossible de peupler (anti-invention). Besoin de 2-3 sources propres **avec récompenses** pour publier un set fiable.
+- **build-a-boat-for-treasure** : Dexerto 10/10 marque **fuzzy friend** + **Lurking Legend** expirés (codes légacy/permanents, **1 seule source**) → 2ᵉ source requise avant retrait. Inchangé.
+- **noob-incremental — MUST_UPDATE (report).** Set actif double-confirmé (Dexerto 10/10 + RobloxDen 15/10). Rewrite reporté : nécessite récompenses fiables par code + resync `#activeList` **et** `const ACTIVE` **et** compteur **et** « Mis à jour le ».
+- **bloxstrike** / **catch-and-tame** : non re-vérifiés ce run (priorité BLR). Conflits toujours ouverts, 2ᵉ source fiable requise.
+- **fifa-super-soccer** / **iron-soul-dungeon** / **anime-expeditions** / **anime-defenders** / **dig-and-clean** : candidats mono-source, 2ᵉ/3ᵉ source requise.
+- **8 pages à liste vide** (`100-days-at-sea`, `basketball-zero`, `be-a-brainrot`, `encounters`, `garden-tower-defense`, `pet-simulator-x`, `royale-high`, `slap-battles`) : revue éditoriale (republier un set fiable là où il en existe un).
 
-## 🟡 À PRÉPARER / SURVEILLER
+## 🟡 À PRÉPARER / DÉCISION PETER
 
-- **Anime Zero** : surveiller nouveaux codes (jeu en dev actif) ; créer une **tier list** quand des données d'unités fiables seront sourcées ; 2ᵉ guide forte intention si traction. Renseigner `ROBLOX_UNIVERSE_IDS['anime-zero']` si l'API Roblox redevient joignable.
-- **Steal a Brainrot — guide Halloween** : secret **Phoenix** via **Haunted Fuse** (événement Halloween) — pas un code. Angle guide « comment obtenir Phoenix » si traction (2 sources).
-- **Jeu de la semaine (§30)** : ⚠️ marqueurs `<!-- FEATURED-WEEK-START/END -->` **absents du code**. Non modifié (pas d'édition structurelle risquée). Recommandation : **Steal An Egg** (#1 viral). À Peter : confirmer le mécanisme / ajouter les marqueurs.
-- **CTA §28** : plusieurs pages codes (gabarit anime-eternal, dont la nouvelle anime-zero) sans bandeau `data-cta="guidelink"` — maillage assuré via sidebar + liens in-text. Pass CTA dédié à prévoir.
+- **⚠️ Naming FC 27 vs FC 26** : le titre EA live = **FC 26** (promo **Ultimate Scream** / Halloween en cours, source officielle ea.com). Les pages « FC 27 » devraient probablement cibler **FC 26**. **Bloque la couverture Ultimate Scream.** À trancher par Peter.
+- **🆕 FC 26 Ultimate Scream (Halloween)** : promo confirmée officiellement (ea.com + fut.gg + sportskeeda). Opportunité SEO saisonnière réelle → **UPDATE page evergreen FC** (pas de création) **une fois le naming tranché**. MONITOR en attendant.
+- **Jeu de la semaine (§30)** : marqueurs `<!-- FEATURED-WEEK-START/END -->` **absents du code**. À Peter : confirmer le mécanisme / ajouter les marqueurs.
+- **⚠️ Grosses listes gonflées** (anime-astral-simulator ~100, dragon-blox ~82, anime-battle-rng ~35) : rebuild autour du set vérifié-actif, ou maintien ? Décision Peter. Rotation en retard (~38 j, depuis 09/10).
+- **Dette technique copyAll** : `const ACTIVE` diverge de la liste visible sur plusieurs pages (fish-an-anime-rng, bloxstrike, catch-and-tame…). Synchroniser à chaque édition, ou supprimer la duplication (le widget `data/codes.json` lit la liste visible).
 
 ## 👀 À REVÉRIFIER (conflits non tranchés)
 
-- **slayers-2** : roonby 7/10 (actif) vs Pocket Tactics 12/10 (wipe) — 3ᵉ source.
-- **blue-lock-rivals**, **anime-defenders** : nouveaux drops mono-source.
-- **fisch** (MarianaIsGoingCrazy), conflits antérieurs : basketball-zero, blade-ball (SERPENT), anime-squadron, clover-retribution, etc.
-- **Rotation en retard** : anime-astral-simulator, anime-battle-rng, dragon-blox (listes gonflées), dungeon-quest-reborn, dig-and-clean, iron-soul-dungeon, bloxstrike, catch-and-tame.
+- **Codes** : fish-an-anime-rng (3 voies), bloxstrike, catch-and-tame, iron-soul-dungeon, anime-expeditions, anime-defenders, dig-and-clean, fifa-super-soccer, vv-ultimatum, spin-a-soccer-card ; build-a-boat (fuzzy friend / Lurking Legend : 2ᵉ source) ; BLR (EPICSENDOU/ONEMOREWEEK/NELAIKUNEXT : re-trancher).
+- **Rotation en retard** : anime-astral-simulator, anime-battle-rng, dragon-blox (listes gonflées, ~38 j) ; shindo-life, toilet-tower-defense, da-hood, grand-piece-online, fish-it (set complet).
 
-## 📅 PRIORITÉS PROCHAIN RUN
+## 📅 PRIORITÉS PROCHAIN RUN (15h / 22h / 05h 19/10 — lundi = Jeu de la semaine)
 
-1. **Codes hot** : blue-lock-rivals (2ᵉ source drop), volleyball-legends (Update 92), anime-vanguards, grow-a-garden, steal-a-brainrot.
-2. **Slayers 2** : trancher le conflit (3ᵉ source / shutdown ?).
-3. **Anime Zero** : surveiller drops (jeu en dev actif).
-4. **Candidats 2ᵉ source** : anime-defenders, da-hood, blox-fruits, Dandy's World RESEARCHMOBILE.
-5. **GTA 6** Newswire · **FC 27** ea.com · **Aniimo** stats Irisalis · **§30** décision Peter.
+1. **⚠️ LUNDI 19/10 = Jeu de la semaine (§30)** — MAIS marqueurs `<!-- FEATURED-WEEK-START/END -->` absents : vérifier/ajouter le mécanisme avant de toucher (décision Peter en attente). Ne rien casser.
+2. **Hot games** : re-trancher BLR (EPICSENDOU/ONEMOREWEEK/NELAIKUNEXT), re-vérifier steal-a-brainrot, grow-a-garden, anime-vanguards (2ndAnniDay*), volleyball-legends.
+3. **fish-an-anime-rng** : 2 sources fraîches concordantes → valider/réécrire (page très probablement périmée).
+4. **type-soul** : trouver 2-3 sources avec récompenses → peupler la page vide si fiable.
+5. **bloxstrike** / **catch-and-tame** : 2ᵉ source fiable → trancher.
+6. **noob-incremental** : exécuter le rewrite MUST_UPDATE une fois les récompenses sourcées.
+7. **Rotation suite** : grosses listes gonflées + jamais/anciennement vérifiés (shindo-life, grand-piece-online, da-hood, fish-it set complet).
+8. **FC 26 Ultimate Scream** (si naming tranché) · **GTA 6** Newswire (confirmations pré-lancement) · **Aniimo** codes (surveiller aniimazingfroyo).
 
 ---
 
-_Pour publier : dans le dossier GameNova, `git add -A && git commit -m "MAJ Zoneblox" && git push origin main`. Hostinger déploie après le push. (Si `.git/index.lock` bloque : `del ".git\index.lock"` puis relance.)_
+_Pour publier : dans le dossier GameNova, lance `git add -A && git commit -m "MAJ Zoneblox du jour" && git push origin main`. Hostinger déploie automatiquement après le push. (Si `.git/index.lock` bloque : `del ".git\index.lock"` puis relance.)_
