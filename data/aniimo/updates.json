@@ -1,6 +1,6 @@
 {
   "game": "aniimo",
-  "updated": "2026-09-18",
+  "updated": "2026-10-18",
   "intro": "Le suivi des mises à jour, patchs et évènements d'Aniimo. On ne publie que ce qui est confirmé par une source (notice officielle, patch notes, presse spécialisée) — jamais d'annonce inventée.",
   "entries": [
     {
@@ -34,6 +34,60 @@
       "sources": [
         "https://aniimotools.dev/patch-notes/",
         "https://himeb.com/en/aniimo-bug-troubleshooting/"
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "kind": "patch",
+      "title": "Hotfix du 17 octobre — boost d'EXP du Carnet de compagnons",
+      "summary": "Un nouveau build (1.0.3743667) lance, à partir du 19 octobre, un boost d'EXP du Carnet de compagnons pour les niveaux inférieurs à 70, et corrige des ralentissements de menu sur console, des surnoms d'Aniimo décalés dans Operation: Egg Heist et des icônes anormales.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://aniimotools.dev/patch-notes/"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "update",
+      "featured": true,
+      "title": "Mise à jour du 15 octobre (1.019) — Home Season, tenue Batlock Holmes & correctifs",
+      "summary": "La mise à jour 1.019 lance une période de boost de la Home Season (taux de mutation accrus pour le Radis Rosée-de-Lune et le Piment Lune Croissante, plus de points Lune des Moissons) et ouvre l'étape « Harvest Gathering » le 20 octobre. Une nouvelle tenue de chasse sur le thème chauve-souris, « Batlock Holmes », arrive en boutique le 16 octobre. Au menu également : sept correctifs (clipping de jupe sur le set « Forest of Butterfly Dreams », lag en Entraînement d'élite, statue de sparkelf invisible à Horizon Square, porte verrouillée dans Operation: Egg Heist, image de la forme Prismana Inferlupa, etc.).",
+      "confidence": "HIGH",
+      "sources": [
+        "https://mp1st.com/title-updates-and-patches/aniimo-update-1-019-released-on-october-15",
+        "https://aniimotools.dev/patch-notes/"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "kind": "event",
+      "title": "Événements d'octobre : Vein Abundance (Inferlupa) & Prismana Carnival",
+      "summary": "La rotation Vein Abundance met en avant la forme Prismana Inferlupa du 12 au 18 octobre, suivie du Prismana Carnival du 19 au 25 octobre. En parallèle tournent Eggceleration (par créneaux de quelques jours), Glamour Star (9–15 puis 23–29 octobre), « Who's That Aniimo ? » et l'Idyll Ecological Investigation (16–22 octobre). Le Journey Handbook et Journey Moments se poursuivent jusqu'au 28 octobre.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://insider-gaming.com/complete-aniimo-roadmap-all-september-october-events/",
+        "https://aniimotools.dev/patch-notes/"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "kind": "patch",
+      "title": "Fin septembre : Frostburst Punk, Erlath dans Egg Heist & des dizaines de correctifs",
+      "summary": "Deux builds (1.0.3616231 le 29/09 puis 1.0.3629693 le 30/09) ajoutent le set « Frostburst Punk » (680 Cristaux Lumin) et l'apparence « Forest of Butterfly Dreams » en boutique, font passer Irisalis à 5 préréglages de Transmog, intègrent Erlath à Operation: Egg Heist et corrigent au total plus de 50 bugs (textures floues sur Irisalis/Grizbo/Luminelle/Sherro, blocage de progression « Come to My World », Alpha Umbral Stellarys dans Egg Heist, etc.).",
+      "confidence": "HIGH",
+      "sources": [
+        "https://aniimotools.dev/patch-notes/"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "update",
+      "title": "Patch v1.1 + sortie mobile : Irisalis, Holo-Battle Interlink & Chaos Mode",
+      "summary": "Huit jours après le lancement, Aniimo déploie son premier gros contenu : la créature légendaire Irisalis (via l'événement Legendary Journey, du 25 septembre au 10 décembre), le mode coopératif hebdomadaire Holo-Battle Interlink et le Chaos Mode d'Operation: Egg Heist (24 septembre). La version mobile iOS/Android sort le 23 septembre, accompagnée des événements Glamour Star, Aniimo Discovery et Vein Abundance, ainsi que de nombreuses améliorations de confort (durée des Blooms portée à 3 min, limite d'achat 99→100, options de voix/traduction du chat).",
+      "confidence": "HIGH",
+      "sources": [
+        "https://mein-mmo.de/en/aniimo-brings-the-first-new-monster-with-the-new-patch-just-8-days-after-release,1589156/",
+        "https://aniimotools.dev/patch-notes/"
       ]
     }
   ]
