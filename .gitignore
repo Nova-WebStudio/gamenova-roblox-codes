@@ -26,3 +26,7 @@ _integrate.py
 tools/_api_tmp.json
 n
 _to_delete/
+
+# Python
+__pycache__/
+*.pyc

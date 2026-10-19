@@ -48,6 +48,8 @@ GA_SNIPPET = ("<script>\nwindow.dataLayer=window.dataLayer||[];function gtag(){d
     "['scroll','mousemove','touchstart','click','keydown'].forEach(function(ev){window.addEventListener(ev,g,{once:true,passive:true});});\n"
     "setTimeout(g,5000);})();\n</script>") % (GA, GA)
 
+ADS_SNIPPET = ('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8248911805859229" crossorigin="anonymous"></script>')
+
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com" />'
     '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />'
     '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />')
@@ -169,7 +171,7 @@ def page(title, desc, canonical, body, active="", extra_ld=None, extra_js=""):
         '%s\n<link rel="stylesheet" href="/css/platform.css?v=%s" />\n<link rel="stylesheet" href="/css/nav-fix.css?v=6" />\n%s</head>\n'
         '<body>\n<a href="#main" class="skip">Aller au contenu</a>\n%s\n<main id="main"><div class="wrap">\n%s\n</div></main>\n%s\n'
         '<div class="toast" id="toast">Copié ✓</div>\n%s\n</body>\n</html>\n') % (
-        GA_SNIPPET, e(title), e(desc), canonical, e(title), e(desc), canonical,
+        ADS_SNIPPET + "\n" + GA_SNIPPET, e(title), e(desc), canonical, e(title), e(desc), canonical,
         FONTS, CSSV, ld, header(active), body, footer(), COMMON_JS + extra_js)
 
 COMMON_JS = ("<script>\nconst $=(s,c=document)=>c.querySelector(s);const $$=(s,c=document)=>[...c.querySelectorAll(s)];\n"
