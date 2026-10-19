@@ -893,7 +893,7 @@
     }
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
-  "lastRun": "2026-10-18T05:00:00Z",
+  "lastRun": "2026-10-19T05:00:00Z",
   "_pending2026-07-18": [
     "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
     "blade-ball: SERPENT -> Beebom le dit expire, PT+GamesRadar actif, conserve actif",
@@ -1116,13 +1116,13 @@
     "build-a-boat-for-treasure": "2026-10-18T05:00:00Z",
     "bubble-gum-simulator-infinity": "2026-10-08T05:00:00Z",
     "type-soul": "2026-10-18T05:00:00Z",
-    "toilet-tower-defense": "2026-09-21",
+    "toilet-tower-defense": "2026-10-19",
     "anime-defenders": "2026-10-15",
-    "da-hood": "2026-09-21",
-    "shindo-life": "2026-09-20T05:00:00Z",
+    "da-hood": "2026-10-19",
+    "shindo-life": "2026-10-19",
     "arsenal": "2026-10-08T05:00:00Z",
     "dragon-adventures": "2026-10-12",
-    "car-dealership-tycoon": "2026-09-22T05:00:00Z",
+    "car-dealership-tycoon": "2026-10-19",
     "garden-tower-defense": "2026-09-21",
     "plants-vs-brainrots": "2026-10-11",
     "grow-a-chicken-fighter": "2026-09-22T05:00:00Z",
@@ -1138,7 +1138,7 @@
     "murder-mystery-2": "2026-10-18T05:00:00Z",
     "ninja-legends": "2026-09-22T05:00:00Z",
     "pet-simulator-x": "2026-09-25",
-    "grand-piece-online": "2026-09-22T05:00:00Z",
+    "grand-piece-online": "2026-10-19",
     "jujutsu-shenanigans": "2026-10-18T05:00:00Z",
     "haze-piece": "2026-09-22T05:00:00Z",
     "project-mugetsu": "2026-09-22T05:00:00Z",
@@ -1845,5 +1845,21 @@
       "fc-26": "Promo Ultimate Scream (Halloween) live/a venir - source officielle ea.com + fut.gg + sportskeeda. Opportunite editoriale reelle MAIS naming FC27/FC26 non tranche (decision Peter). MONITOR, pas de creation.",
       "aniimo": "codes.json verifie au run precedent (17/10, 15 codes). Non re-verifie en profondeur ce run."
     }
+  },
+  "_notes2026-10-19": {
+    "run": "05h FULL (lundi). Jeu de la semaine: marqueurs <!-- FEATURED-WEEK-START/END --> TOUJOURS ABSENTS du code (index.html et tous HTML) -> etape §30 non executable, decision Peter en attente. Aucune modification (ne rien casser).",
+    "hot_games": "0 edition. Tous defendables vs sources fraiches: blue-lock-rivals (page = set actif Dexerto 18/10 NELAIKU/HALLOWEEN/WSNAKE/SORRYFORDELAYAIKU; EPICSENDOU/ONEMOREWEEK/NELAIKUNEXT confirmes EXPIRES par Dexerto -> page correcte, inchangee), steal-a-brainrot (BESTBRAINROTEVER, Dexerto 12/10), volleyball-legends (UPDATE_91/REPLAYS/MVP, samlover 13/10), anime-vanguards (8 codes confirmes actifs par samlover 12/10; candidats 2ndAnniDay1/Prepare/1DayDelay/25thHour NON ajoutes - 1 source), anime-last-stand (3 codes confirmes actifs par pockettactics 03/10), grow-a-garden (RDCAward/BEANORLEAVE10; roonby 08/10 liste FREESEED/torigate SANS recompenses -> non ajoutes, jeu reput faux-codes), fisch (page 4 codes defendables; Dexerto FR stale 04/09 = 3 codes permanents + pas de code Halloween; FischFright2026 flotte chez roonby SANS confirmation propre -> non ajoute).",
+    "rotation_verifies": {
+      "shindo-life": "Page (13 chips) = sous-ensemble confirme ACTIF par beebom 01/10 (36 codes). Aucune preuve d'expiration -> inchange. Candidat: etendre avec 2e source (beebom liste 4 NEW + autres).",
+      "grand-piece-online": "CANDIDAT MUST_UPDATE (2 sources, besoin 3e). Dexerto 18/10 = FREE_Drops8/ILOVEGPO_3/ANOTHER3FREETAILORVOUCHERS!/5FREETAILORVOUCHERS_2 actifs. g2a 01/10 = 8 codes TOUS actifs (accumulateur non teste, fiabilite moyenne). CONCORDANTS sur FREE_Drops8 + 5FREETAILORVOUCHERS_2 (recompenses identiques) -> ajout possible des 2 sources atteignent le seuil de 3. FREE_Drops7/FREE_EXP6 (page): conflit (g2a=actifs, Dexerto=non listes) -> PAS de retrait (pas de preuve d'expiration). ILOVEGPO_3 double-confirme.",
+      "da-hood": "CONFLIT + candidat. MACRO! (1M DHC) + ETERNAL (500K DHC) = ACTIFS par 2 sources fraiches concordantes (robloxden 18/10 + progameguides 12/10) -> ajout possible si 3e source. DOG/SHARK (page): CONFLIT 3 voies (robloxden 18/10=EXPIRES vs progameguides 12/10 + allthings 19/09=ACTIFS) -> KILL SWITCH, pas de retrait. bluestacks/digitalcitizen = stale inexploitables.",
+      "toilet-tower-defense": "Page VIDE. ATTENTION: nerdschalk liste des codes 'Toilet VERSE Tower Defense' (40KLIKES/RAFINHA/saito*) = JEU DIFFERENT (clone), PAS le Toilet Tower Defense original (notre slug). NE PAS cross-peupler. Verifier le vrai TTD original (souvent 0 code) avant de toucher.",
+      "car-dealership-tycoon": "14 codes de voitures majoritairement permanents (ZOOMZOOM/MAZDASPEED/etc.). Stable, inchange."
+    },
+    "gta6": "Release 19/11/2026 CONFIRME par Rockstar Newswire officiel. Chatter 'Extended Look ce mois' + 'trailer decembre 25 ans' = marketing pre-lancement / RUMEUR (incoherent avec sortie 19/11). Aucun changement de date -> page evergreen correcte, MONITOR.",
+    "fc26": "Ultimate Scream (Scream Team 2 + Halloween Puzzle Crafting) LIVE, confirme ea.com officiel. BLOQUE par decision Peter (naming FC27 vs FC26). MONITOR.",
+    "aniimo": "15 codes actifs (lastChecked 17/10). khelnow 04/10 reconfirme le set. Aucun code nouveau/expire cette nuit. Update 1.019 (15/10) deja captee hier. Inchange.",
+    "trends": "Pas de nouveau jeu Roblox avec preuve multi-source d'interet + codes reels cette nuit. A MONITOR (snapshot rblxstat 19/10): Facecard: Makeup Showdown, Ride a Dino, [SHINJI] Legends Battlegrounds, Break and Steal an Egg (meta vol d'oeufs). Compteurs rblxstat peu fiables -> besoin signaux croises avant page.",
+    "candidats_prochain_run": "GPO (3e source -> ajouter FREE_Drops8 + 5FREETAILORVOUCHERS_2) ; Da Hood (3e source -> ajouter MACRO!/ETERNAL ; retrancher DOG/SHARK) ; noob-incremental (rewrite reporte) ; fish-an-anime-rng (conflit 3 voies) ; type-soul (page vide, besoin sources avec recompenses)."
   }
 }
