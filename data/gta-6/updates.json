@@ -1,6 +1,6 @@
 {
   "game": "gta-6",
-  "updated": "2026-10-02",
+  "updated": "2026-10-20",
   "intro": "Le suivi de l'actualité officielle de GTA 6 : date de sortie, trailers et annonces de Rockstar. Aucune rumeur présentée comme un fait.",
   "entries": [
     {
@@ -12,6 +12,17 @@
       "sources": [
         "https://www.svg.com/2254292/gta-6-launch-guide-release-date-preload-time-price-editions-platforms/",
         "https://beebom.com/gta-6/"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "event",
+      "title": "Launch Trailer (Trailer 3) : le trailer de lancement est là",
+      "summary": "Le 15 octobre 2026, Rockstar Games a publié sans préavis le Launch Trailer de GTA 6 (souvent appelé Trailer 3) sur ses réseaux officiels — environ 90 secondes capturées intégralement en jeu sur PlayStation 5. La date de sortie du 19 novembre 2026 y est réaffirmée. C'est le dernier grand temps fort marketing avant le lancement.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://rockstarintel.com/gta-6-launch-trailer-released/",
+        "https://www.ghacks.net/2026/10/16/rockstar-releases-the-gta-6-launch-trailer-ahead-of-the-november-19-console-release/"
       ]
     },
     {

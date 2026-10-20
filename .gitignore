@@ -30,3 +30,4 @@ _to_delete/
 # Python
 __pycache__/
 *.pyc
+deploy-log.txt
