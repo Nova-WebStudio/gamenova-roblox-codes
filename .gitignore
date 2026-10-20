@@ -31,3 +31,4 @@ _to_delete/
 __pycache__/
 *.pyc
 deploy-log.txt
+disavow*.txt

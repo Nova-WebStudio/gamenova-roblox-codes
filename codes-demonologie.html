@@ -194,6 +194,8 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
 <meta name="twitter:title" content="Codes Démonologie (octobre 2026) | Zoneblox" />
 <meta name="twitter:description" content="Tous les codes Démonologie actifs, vérifiés à la main et mis à jour chaque jour. Copie chaque code en un clic et découvre comment les utiliser en jeu." />
 <meta name="twitter:image" content="https://tr.rbxcdn.com/180DAY-2651cff28f8766658687d6df2067bf03/768/432/Image/Webp/noFilter" />
+<!-- ZB-SEO-LD -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://zoneblox.com/codes-demonologie.html", "url": "https://zoneblox.com/codes-demonologie.html", "name": "Codes Démonologie (octobre 2026) | Zoneblox", "inLanguage": "fr-FR", "dateModified": "2026-10-19", "isPartOf": {"@type": "WebSite", "name": "ZoneBlox", "url": "https://zoneblox.com/"}}]}</script>
 </head>
 <body>
 <a href="#main" class="skip">Aller au contenu</a>
@@ -295,7 +297,7 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
       <div class="ad ad-rect"><div><div class="lbl">Publicité</div>300 × 250</div></div>
       <div class="box">
         <h3>Jeux similaires</h3>
-        <div class="related" id="relatedGames"></div>
+        <div class="related" id="relatedGames"><a href="/codes-king-legacy.html"><span class="tn" style="background:linear-gradient(135deg,#ffbd4a,#ff6a3d)">KL</span><span><div class="rn">King Legacy</div><div class="rs">9 codes actifs</div></span></a><a href="/codes-fruit-battlegrounds.html"><span class="tn" style="background:linear-gradient(135deg,#ff5f80,#a05cff)">FB</span><span><div class="rn">Fruit Battlegrounds</div><div class="rs">7 codes actifs</div></span></a><a href="/codes-haze-piece.html"><span class="tn" style="background:linear-gradient(135deg,#4dd0ff,#4d6bff)">HP</span><span><div class="rn">Haze Piece</div><div class="rs">3 codes actifs</div></span></a></div>
       </div>
     </aside>
   </div>
@@ -309,7 +311,7 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
         <a href="index.html" class="brand" aria-label="Zoneblox"><img src="images/logo-zoneblox.png" alt="Zoneblox — codes Roblox &amp; more" style="height:40px;width:auto;display:block" onerror="this.onerror=null;this.outerHTML='<span class=&quot;logo&quot;>🎮</span>Zone<span>blox</span>'"></a>
         <p>Les meilleurs codes Roblox, vérifiés à la main et mis à jour chaque jour.</p>
       </div>
-      <div><h4>Jeux populaires</h4><a href="#">Blox Fruits</a><a href="#">Pet Simulator X</a><a href="#">Shindo Life</a><a href="#">King Legacy</a></div>
+      <div><h4>Jeux populaires</h4><a href="/codes-blox-fruits.html">Blox Fruits</a><a href="/codes-pet-simulator-x.html">Pet Simulator X</a><a href="/codes-shindo-life.html">Shindo Life</a><a href="/codes-king-legacy.html">King Legacy</a></div>
       <div><h4>Parcourir</h4><a href="tous-les-codes.html">Tous les codes</a><a href="tier-lists.html">Tier lists</a><a href="ugc-gratuits.html">UGC gratuits</a></div>
       <div><h4>Site</h4><a href="a-propos.html">À propos</a><a href="a-propos.html#editorial">Politique éditoriale</a><a href="a-propos.html">Confidentialité</a><a href="a-propos.html#contact">Contact</a></div>
     </div>
@@ -325,11 +327,7 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
 <script>
 const ACTIVE=[];
 const EXPIRED=[];
-const RELATED=[
-  {n:"King Legacy",s:"9 codes actifs",c:["#ffbd4a","#ff6a3d"],i:"KL"},
-  {n:"Fruit Battlegrounds",s:"7 codes actifs",c:["#ff5f80","#a05cff"],i:"FB"},
-  {n:"Haze Piece",s:"3 codes actifs",c:["#4dd0ff","#4d6bff"],i:"HP"}
-];
+const RELATED=[{n:"King Legacy",s:"9 codes actifs",c:["#ffbd4a","#ff6a3d"],i:"KL",u:"/codes-king-legacy.html"}, {n:"Fruit Battlegrounds",s:"7 codes actifs",c:["#ff5f80","#a05cff"],i:"FB",u:"/codes-fruit-battlegrounds.html"}, {n:"Haze Piece",s:"3 codes actifs",c:["#4dd0ff","#4d6bff"],i:"HP",u:"/codes-haze-piece.html"}];
 
 const $=(s,c=document)=>c.querySelector(s);const $$=(s,c=document)=>[...c.querySelectorAll(s)];
 function toast(m){const t=$("#toast");t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),1600);}
@@ -343,7 +341,7 @@ function fb(text,cb){const t=document.createElement('textarea');t.value=text;t.s
 
 
 // related
-$("#relatedGames").innerHTML=RELATED.map(r=>`<a href="#"><span class="tn" style="background:linear-gradient(135deg,${r.c[0]},${r.c[1]})">${r.i}</span><span><div class="rn">${r.n}</div><div class="rs">${r.s}</div></span></a>`).join('');
+$("#relatedGames").innerHTML=RELATED.map(r=>`<a href="${r.u||'/tous-les-codes.html'}"><span class="tn" style="background:linear-gradient(135deg,${r.c[0]},${r.c[1]})">${r.i}</span><span><div class="rn">${r.n}</div><div class="rs">${r.s}</div></span></a>`).join('');
 
 // copy handlers
 document.addEventListener('click',e=>{

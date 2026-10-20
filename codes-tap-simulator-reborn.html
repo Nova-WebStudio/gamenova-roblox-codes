@@ -194,6 +194,8 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
 <meta name="twitter:title" content="Codes Tap Simulator REBORN (octobre 2026) | Zoneblox" />
 <meta name="twitter:description" content="Y a-t-il des codes Tap Simulator REBORN ? Statut vérifié chaque jour (fonction codes bientôt active) + guide débutant : taper, faire éclore des œufs, rebirth et débloquer des îles." />
 <meta name="twitter:image" content="https://tr.rbxcdn.com/180DAY-85e032d7838fdead27e9664de41730ba/768/432/Image/Webp/noFilter" />
+<!-- ZB-SEO-LD -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://zoneblox.com/codes-tap-simulator-reborn.html", "url": "https://zoneblox.com/codes-tap-simulator-reborn.html", "name": "Codes Tap Simulator REBORN (octobre 2026) | Zoneblox", "inLanguage": "fr-FR", "dateModified": "2026-10-19", "isPartOf": {"@type": "WebSite", "name": "ZoneBlox", "url": "https://zoneblox.com/"}}]}</script>
 </head>
 <body>
 <a href="#main" class="skip">Aller au contenu</a>
@@ -286,7 +288,7 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
       <div class="ad ad-rect"><div><div class="lbl">Publicité</div>300 × 250</div></div>
       <div class="box">
         <h3>Jeux similaires</h3>
-        <div class="related" id="relatedGames"></div>
+        <div class="related" id="relatedGames"><a href="/tous-les-codes.html"><span class="tn" style="background:linear-gradient(135deg,#7c5cff,#4d9bff)">TS</span><span><div class="rn">Tapping Simulator</div><div class="rs">Simulateur</div></span></a><a href="/tous-les-codes.html"><span class="tn" style="background:linear-gradient(135deg,#35e0a1,#2f9bd6)">CS</span><span><div class="rn">Clicker Simulator</div><div class="rs">Simulateur</div></span></a><a href="/codes-pet-simulator-99.html"><span class="tn" style="background:linear-gradient(135deg,#ff5f80,#a05cff)">PS</span><span><div class="rn">Pet Simulator 99</div><div class="rs">Codes actifs</div></span></a></div>
       </div>
     </aside>
   </div>
@@ -300,7 +302,7 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
         <a href="index.html" class="brand" aria-label="Zoneblox"><img src="images/logo-zoneblox.png" alt="Zoneblox — codes Roblox &amp; more" style="height:40px;width:auto;display:block" onerror="this.onerror=null;this.outerHTML='<span class=&quot;logo&quot;>🎮</span>Zone<span>blox</span>'"></a>
         <p>Les meilleurs codes Roblox, vérifiés à la main et mis à jour chaque jour.</p>
       </div>
-      <div><h4>Jeux populaires</h4><a href="#">Blox Fruits</a><a href="#">Pet Simulator X</a><a href="#">Shindo Life</a><a href="#">King Legacy</a></div>
+      <div><h4>Jeux populaires</h4><a href="/codes-blox-fruits.html">Blox Fruits</a><a href="/codes-pet-simulator-x.html">Pet Simulator X</a><a href="/codes-shindo-life.html">Shindo Life</a><a href="/codes-king-legacy.html">King Legacy</a></div>
       <div><h4>Parcourir</h4><a href="tous-les-codes.html">Tous les codes</a><a href="tier-lists.html">Tier lists</a><a href="ugc-gratuits.html">UGC gratuits</a></div>
       <div><h4>Site</h4><a href="a-propos.html">À propos</a><a href="a-propos.html#editorial">Politique éditoriale</a><a href="a-propos.html">Confidentialité</a><a href="a-propos.html#contact">Contact</a></div>
     </div>
@@ -316,11 +318,7 @@ footer{border-top:1px solid var(--border);padding:40px 0 30px;background:var(--b
 <script>
 const ACTIVE=[];
 const EXPIRED=[];
-const RELATED=[
-  {n:"Tapping Simulator",s:"Simulateur",c:["#7c5cff","#4d9bff"],i:"TS"},
-  {n:"Clicker Simulator",s:"Simulateur",c:["#35e0a1","#2f9bd6"],i:"CS"},
-  {n:"Pet Simulator 99",s:"Codes actifs",c:["#ff5f80","#a05cff"],i:"PS"}
-];
+const RELATED=[{n:"Tapping Simulator",s:"Simulateur",c:["#7c5cff","#4d9bff"],i:"TS",u:"/tous-les-codes.html"}, {n:"Clicker Simulator",s:"Simulateur",c:["#35e0a1","#2f9bd6"],i:"CS",u:"/tous-les-codes.html"}, {n:"Pet Simulator 99",s:"Codes actifs",c:["#ff5f80","#a05cff"],i:"PS",u:"/codes-pet-simulator-99.html"}];
 
 const $=(s,c=document)=>c.querySelector(s);const $$=(s,c=document)=>[...c.querySelectorAll(s)];
 function toast(m){const t=$("#toast");t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),1600);}
@@ -334,7 +332,7 @@ function fb(text,cb){const t=document.createElement('textarea');t.value=text;t.s
 
 
 // related
-$("#relatedGames").innerHTML=RELATED.map(r=>`<a href="#"><span class="tn" style="background:linear-gradient(135deg,${r.c[0]},${r.c[1]})">${r.i}</span><span><div class="rn">${r.n}</div><div class="rs">${r.s}</div></span></a>`).join('');
+$("#relatedGames").innerHTML=RELATED.map(r=>`<a href="${r.u||'/tous-les-codes.html'}"><span class="tn" style="background:linear-gradient(135deg,${r.c[0]},${r.c[1]})">${r.i}</span><span><div class="rn">${r.n}</div><div class="rs">${r.s}</div></span></a>`).join('');
 
 // copy handlers
 document.addEventListener('click',e=>{

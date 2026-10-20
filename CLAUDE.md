@@ -276,3 +276,21 @@ Pour chaque fichier HTML modifié, vérifier :
 - **Pour ajouter une vraie photo dédiée à un jeu** : déposer un fichier bitmap (`.webp`/`.jpg`/`.png`) **libre de droit** dans `images/` (⚠️ jamais de hotlink ni de visuel officiel copyrighté), puis renseigner `coverImage`/`coverPosition` dans le JSON du jeu et régénérer (`python3 tools/build_site.py`). ⚠️ Mes outils ne peuvent PAS télécharger d'images binaires externes → c'est Peter qui fournit les photos, ou on réutilise un asset local existant / une miniature `tr.rbxcdn.com`.
 - **Barre de nav** : ne jamais laisser les onglets se chevaucher/rogner. Correctif dans `css/nav-fix.css` (recherche masquée ≤1080px, burger ≤880px). **Toujours bumper `nav-fix.css?v=N` ET `platform.css?v=N`** après édition de ces CSS, sinon le cache navigateur sert l'ancienne version (bug de chevauchement constaté).
 - Header uniforme sur toutes les pages (logo image réel + 7 entrées : Accueil · Jeux · Tous les codes · Tier lists · Guides · Avatars · UGC gratuits). « À propos » vit dans le footer, pas dans la nav.
+
+## 🎯 Stratégie SEO & classement (ajout 2026-10-20 — voir doc stratégie)
+
+**Constat (DataForSEO) :** le site plafonne page 4-10 ; le frein est l'AUTORITÉ (backlinks toxiques) et l'INDEXATION (l'accueil capte des requêtes dues aux pages profondes), pas le contenu. Objectif : faire ranker les pages `codes-<slug>.html`, pas l'accueil.
+
+À appliquer à CHAQUE run, et à toute nouvelle page / édition :
+
+1. **Priorisation des jeux par la DONNÉE, pas que la « tendance ».** Avant d'ajouter/pousser un jeu, estimer le **volume de recherche FR** + la **difficulté** (via DataForSEO si dispo). Viser le long-tail « codes <jeu> » (faible difficulté, winnable). **Ne JAMAIS cibler** les têtes « code roblox » / « code robux » / « robux gratuit » (dominées par les géants + intention arnaque, mauvais pour AdSense).
+
+2. **Données structurées obligatoires sur chaque page codes.** Un bloc JSON-LD `<!-- ZB-SEO-LD -->` avec `@graph` = `WebPage` (avec `dateModified`) + `ItemList` des codes actifs. Les 190 pages l'ont déjà ; **le maintenir** sur toute nouvelle page et resynchroniser `dateModified` quand les codes changent réellement (jamais sinon). `dateModified` = date « Mis à jour le » de la page.
+
+3. **Maillage interne = priorité.** La section « Jeux similaires » (`#relatedGames`) ET le footer « Jeux populaires » doivent contenir de **VRAIS liens** `/codes-<slug>.html` (pré-rendus en **statique**, crawlables), **jamais `href="#"`**. Chaque page codes doit lier son cluster (guide + tier list) et quelques jeux proches.
+
+4. **La fraîcheur est l'avantage décisif** : « Mis à jour le » visible + `dateModified` du schema synchronisés. C'est ce qui bat les concurrents stale.
+
+5. **Backlinks toxiques (spam score 53/100).** Le désaveu est géré **manuellement par Peter** (fichier `disavow-*.txt`, soumis en Search Console). Le run ne crée JAMAIS de liens douteux ; il peut citer des sources fiables.
+
+6. **Verticale jeux mobiles / gacha** (Genshin Impact, Honkai Star Rail, Zenless, Wuthering Waves — même modèle « codes par patch ») = **phase 2, UNIQUEMENT sur feu vert explicite de Peter.** Ne pas ouvrir cette verticale de sa propre initiative (ne pas diluer l'autorité Roblox tant que les fondations ne sont pas stabilisées).
