@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-21",
- "count": 187,
+ "count": 192,
  "games": [
   {
    "name": "Aniimo",
@@ -90,6 +90,121 @@
    ],
    "platformLabel": "PC / Console",
    "genreLabel": "Aventure"
+  },
+  {
+   "name": "Ride a Dino",
+   "slug": "ride-a-dino",
+   "url": "/codes-ride-a-dino.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-10-21",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-f8fecae0178a0050091a98a328c31ef4/768/432/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Guides",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "+1 Assassin Leveling",
+   "slug": "1-assassin-leveling",
+   "url": "/codes-1-assassin-leveling.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-10-21",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-ea4e60e626388a7b28472db2de1dfbd2/768/432/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Guides",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "+1 Money Per Click",
+   "slug": "1-money-per-click",
+   "url": "/codes-1-money-per-click.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-10-21",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-5a80f4f442272cce1d9decd9486f88da/768/432/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Guides",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "+1 Aura for Anime",
+   "slug": "1-aura-for-anime",
+   "url": "/codes-1-aura-for-anime.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-10-21",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-7330ed30f62c61185c0fe796f31c8c84/768/432/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Guides",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
+  },
+  {
+   "name": "+1 Haki Evolution",
+   "slug": "1-haki-evolution",
+   "url": "/codes-1-haki-evolution.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-10-21",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-a8c2d2666997e03b8905b4a9a325de21/768/432/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Guides",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
   },
   {
    "name": "Anime Dice",

@@ -3,6 +3,11 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+  'ride-a-dino': 'https://tr.rbxcdn.com/180DAY-f8fecae0178a0050091a98a328c31ef4/768/432/Image/Webp/noFilter',
+  '1-assassin-leveling': 'https://tr.rbxcdn.com/180DAY-ea4e60e626388a7b28472db2de1dfbd2/768/432/Image/Webp/noFilter',
+  '1-money-per-click': 'https://tr.rbxcdn.com/180DAY-5a80f4f442272cce1d9decd9486f88da/768/432/Image/Webp/noFilter',
+  '1-aura-for-anime': 'https://tr.rbxcdn.com/180DAY-7330ed30f62c61185c0fe796f31c8c84/768/432/Image/Webp/noFilter',
+  '1-haki-evolution': 'https://tr.rbxcdn.com/180DAY-a8c2d2666997e03b8905b4a9a325de21/768/432/Image/Webp/noFilter',
   'anime-zero': 'https://tr.rbxcdn.com/180DAY-4929be2006b388c566fe3dd12c876694/768/432/Image/Webp/noFilter',
   'steal-from-the-rich': 'https://tr.rbxcdn.com/180DAY-f0d48e412752a29559548cc0b80e3887/768/432/Image/Webp/noFilter',
   'ride-a-pet': 'https://tr.rbxcdn.com/180DAY-3ffbd41c5b51c95ae19350431588608e/768/432/Image/Webp/noFilter',
@@ -213,7 +218,12 @@ function initMobileNav() {
 }
 
 /* ---- Search index ---- */
-const GAMES_INDEX = [{ name: 'Anime Zero', slug: 'anime-zero', emoji: '⚔️', codes: 25 },
+const GAMES_INDEX = [{ name: 'Ride a Dino', slug: 'ride-a-dino', emoji: '🦕', codes: 0 },
+{ name: '+1 Assassin Leveling', slug: '1-assassin-leveling', emoji: '🗡️', codes: 4 },
+{ name: '+1 Money Per Click', slug: '1-money-per-click', emoji: '💸', codes: 1 },
+{ name: '+1 Aura for Anime', slug: '1-aura-for-anime', emoji: '🌀', codes: 0 },
+{ name: '+1 Haki Evolution', slug: '1-haki-evolution', emoji: '🏝️', codes: 0 },
+{ name: 'Anime Zero', slug: 'anime-zero', emoji: '⚔️', codes: 25 },
 { name: 'Steal From The Rich', slug: 'steal-from-the-rich', emoji: '💰', codes: 0 },
 { name: 'Ride A Pet', slug: 'ride-a-pet', emoji: '🐶', codes: 0 },
   { name: '+1 Loot To Forge', slug: '1-loot-to-forge', emoji: '⚒️', codes: 2 },
@@ -462,6 +472,11 @@ function highlightNav() {
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
+  'ride-a-dino': 10758824872,
+  '1-assassin-leveling': 10767824942,
+  '1-money-per-click': 10766212164,
+  '1-aura-for-anime': 10226261982,
+  '1-haki-evolution': 10768561721,
   'steal-from-the-rich': 10753751277,
   'ride-a-pet': 10035204815,
   '1-loot-to-forge': 10684750879,
