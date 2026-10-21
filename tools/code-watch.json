@@ -893,7 +893,7 @@
   }
  },
  "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
- "lastRun": "2026-10-20T05:00:00Z",
+ "lastRun": "2026-10-21T05:00:00Z",
  "_pending2026-07-18": [
   "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
   "blade-ball: SERPENT -> Beebom le dit expire, PT+GamesRadar actif, conserve actif",
@@ -1132,7 +1132,7 @@
   "skibidi-masters-tower-defense": "2026-09-25",
   "grow-a-garden-2": "2026-09-21",
   "knockout": "2026-09-21",
-  "character-rng": "2026-09-22T05:00:00Z",
+  "character-rng": "2026-10-21",
   "jules-rng": "2026-09-22T05:00:00Z",
   "broken-blade": "2026-09-22T05:00:00Z",
   "murder-mystery-2": "2026-10-18T05:00:00Z",
@@ -1885,5 +1885,7 @@
   "gta6": "UPDATE evergreen: Launch Trailer (Trailer 3) publie 15/10 ajoute a data/gta-6/updates.json (RockstarINTEL 15/10 + gHacks 16/10). Release 19/11/2026 reaffirmee. Pas de video ajoutee (ID YouTube officiel non verifie -> anti-invention).",
   "fc26": "Bloque decision naming FC27 vs FC26 (titre EA live=FC26, promos Festival of Football/Halloween Puzzle Crafting en cours). MONITOR.",
   "regeneration": "build_codes_json + build_site + build_home + build_sitemap lances. QC OK (main.js, JSON, sitemap, pages editees)."
- }
+ },
+ "_notes2026-10-21": {"run": "05h mercredi (fired ~05:10 CEST)", "codes_edits": "3 editions propres multi-sources non destructives: anime-vanguards +2ndAnniDay1 (100 trait rerolls; samlover 11/10 + roonby 13/10; Prepare maintenu expire); da-hood +PRESIDENT/PVP/BUFF (500K DHC ch.; TechWiser 12/10 + NerdSchalk); rivals -SORRY (expire: Insider Gaming + absent Roonby 06/10). ACTIVE/compteur/JSON-LD/numberOfItems resync, dates MAJ+Verifie, divs equilibres.", "hotGames": "Re-verifies sans edition (defendables): grand-piece-online (4; conflit tailor-vouchers persiste Dexerto 18/10 vs Destructoid/PGG -> non ajoutes), steal-a-brainrot (BESTBRAINROTEVER, Dexerto 12/10 'no new'), blue-lock-rivals (page recente conservee; dexerto.fr 02/10 plus ancienne), grow-a-garden (RDCAward/BEANORLEAVE10, reput faux-codes), fisch (4; FischFright3 event 17/10 sans code propre -> surveiller), haze-piece (20; PHANTOMSHIP/OKUCHI roonby seule, pockettactics ne confirme pas -> non ajoutes). 'Verifie le' rafraichi.", "killswitch": "grimoires-era: conflit 3 voies NON tranche -> AUCUNE edition. PocketGamer 03/10 (REVAMPSOON!/25SPINS!/2025BOOSTS!/CLOVER) vs games.gg 03/10 (NEXTCHAPTER!/MINING!/UPDATE0.6!/SYSTEMREWORK!) vs page (11 codes tous expires). Set de remplacement non confirmable -> date Verifie NON rafraichie, flag rebuild source officielle.", "rotation": "character-rng CONFIRME inchange (10/10 match thespike 06/09) -> catalogVerify 21/10. knockout/anime-battle-rng/garden-tower-defense = FLAGS (sources stale ou conflit), aucune edition, dates NON rafraichies.", "news": "GTA6 stable (preload 12/11 + launch trailer 15/10 deja evergreen; rien de neuf 20->21/10). FC26 naming tjs bloque (decision Peter). Aniimo data fraiche (lastChecked 17/10, updates 1.019/1.022 couverts).", "regen": "build_site+build_home+build_codes_json (1317 codes/191 jeux)+build_sitemap (396 URLs). QC OK.", "cache": "Note CLAUDE.md 'main.js?v=19' OBSOLETE: site a v47 (171 HTML), 3 stragglers v43 (tous /avatar/ off-limits). Pages codes ne referencent pas main.js?v=. CSS/main.js non modifies -> pas de bump."},
+ "_rotationARevoir2026-10-21": {"knockout": "dexerto 13/08 stale; actifs confirmes = EMPERORRETURNS/THANKSFORPLAYING seulement; PUNCHMONKEY expire (1 source). 2e source fraiche requise pour elaguer.", "anime-battle-rng": "liste gonflee 35, verif 10/09. nerdschalk 06/08 marque expires SMALLFIXESS/3MVISIT/SUMMER/DESTRUCTIONKING/GIVEMEROCK/NEWTRAITS/D3MONS (1 source stale). 2e source requise.", "garden-tower-defense": "page vide. Conflit tryhardguides='gtd' vs dexerto.fr 04/09 (DAILY/AUTOPLAY/MEDUSA/BOUNCE/CLAN/BASE/HYDRO/SURGE/CLUSTERPLANT/VIRIDIAN). Aucune concordance -> rien publier."}
 }

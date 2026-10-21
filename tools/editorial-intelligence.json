@@ -4,7 +4,7 @@
  "created": "2026-09-22",
  "meta": {
   "updated": "2026-10-19",
-  "lastRun": "2026-10-20T05:00:00Z",
+  "lastRun": "2026-10-21",
   "runType": "05h-full-maintenance (lundi)",
   "note": "Run 05h lundi 19/10: 0 edition de code (tous hot games + rotation defendables ou conflits non tranches). Candidats near-ready a 2 sources (besoin 3e): GPO (FREE_Drops8 + 5FREETAILORVOUCHERS_2) et Da Hood (MACRO!/ETERNAL). Jeu de la semaine §30 non executable (marqueurs FEATURED-WEEK absents, decision Peter). GTA6 19/11 confirme Newswire. FC26 Ultimate Scream LIVE mais bloque (naming FC27/FC26).",
   "lastUpdate": "2026-10-16T05:30:00Z",
@@ -1431,6 +1431,41 @@
    "url": "",
    "prochaineAction": "Rotation suite (grimoires-era rebuild, inflated lists Peter). Candidats: haze-piece PHANTOMSHIP/OKUCHI, rivals SORRY retrait.",
    "notes": "3 editions codes (GPO, DaHood, AnimeVanguards) + GTA6 evergreen. 11 jeux re-verifies. Hot games defendables. Regeneration + QC OK."
+  },
+  {
+   "id": "maint-2026-10-21",
+   "jeu": "Multi (maintenance codes)",
+   "sujet": "Run 05h full 21/10 (mercredi)",
+   "categorie": "maintenance",
+   "premiereDetection": "2026-10-21",
+   "derniereVerification": "2026-10-21",
+   "statut": "UPDATED",
+   "importance": "NORMALE",
+   "confiance": "HAUTE",
+   "sources": [
+    "samlover",
+    "roonby",
+    "TechWiser",
+    "NerdSchalk",
+    "Insider Gaming",
+    "Dexerto",
+    "PocketGamer",
+    "games.gg",
+    "thespike",
+    "pockettactics"
+   ],
+   "sourceOriginale": "run",
+   "potentielSEO": "-",
+   "trendScore": 0,
+   "pagesZoneblox": [
+    "/codes-anime-vanguards.html",
+    "/codes-da-hood.html",
+    "/codes-rivals.html"
+   ],
+   "articleCree": true,
+   "url": "",
+   "prochaineAction": "grimoires-era rebuild (source officielle, conflit 3 voies); knockout/anime-battle-rng 2e source pour pruner; garden-tower-defense conflit non tranche; FC26 naming (Peter).",
+   "notes": "3 editions propres: AV +2ndAnniDay1, DaHood +PRESIDENT/PVP/BUFF, Rivals -SORRY. grimoires-era KILL SWITCH (conflit 3 voies). 6 hot games + character-rng re-verifies sans edition. GTA6/Aniimo stables. build x4 + QC OK (1317 codes/396 URLs)."
   }
  ]
 }
