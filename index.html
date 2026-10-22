@@ -728,7 +728,7 @@ function wireSearch(inputSel,boxSel){
   });
   inp.addEventListener('focus',()=>buildSuggest(box,inp.value));
   inp.addEventListener('keydown',e=>{
-    if(e.key==="Enter"){e.preventDefault();box.classList.remove('open');document.getElementById('populaires').scrollIntoView({behavior:'smooth'});}
+    if(e.key==="Enter"){e.preventDefault();const _f=box.querySelector('a[href]');if(_f){window.location.href=_f.getAttribute('href');return;}box.classList.remove('open');}
     if(e.key==="Escape"){box.classList.remove('open');}
   });
   document.addEventListener('click',e=>{if(!box.contains(e.target)&&e.target!==inp)box.classList.remove('open');});
@@ -750,7 +750,7 @@ function jumpToGame(name){
   $$('#navSearch,#heroSearch,#mobSearch').forEach(o=>o&&(o.value=name));
   $$('.fbtn').forEach(b=>b.classList.toggle('active',b.dataset.f==="all"));
   
-  document.getElementById('populaires').scrollIntoView({behavior:'smooth'});
+  (document.getElementById('populaires')||document.body).scrollIntoView({behavior:'smooth'});
   toast(`Filtré sur « ${name} »`);
 }
 
@@ -762,12 +762,12 @@ document.addEventListener('click',e=>{
   const cat=e.target.closest('[data-cat]');
   if(cat){e.preventDefault();currentFilter=cat.dataset.cat;currentQuery="";$$('#navSearch,#heroSearch,#mobSearch').forEach(o=>o&&(o.value=""));
     $$('.fbtn').forEach(b=>b.classList.toggle('active',b.dataset.f===cat.dataset.cat));
-    document.getElementById('populaires').scrollIntoView({behavior:'smooth'});return;}
+    (document.getElementById('populaires')||document.body).scrollIntoView({behavior:'smooth'});return;}
   if(e.target.id==="resetF"){e.preventDefault();currentFilter="all";currentQuery="";$$('#navSearch,#heroSearch,#mobSearch').forEach(o=>o&&(o.value=""));$$('.fbtn').forEach(b=>b.classList.toggle('active',b.dataset.f==="all"));}
 });
 
 // Filtres
-$("#filters").addEventListener('click',e=>{
+var _flt=$("#filters");if(_flt)_flt.addEventListener('click',e=>{
   const b=e.target.closest('.fbtn');if(!b)return;
   currentFilter=b.dataset.f;
   $$('.fbtn').forEach(x=>x.classList.toggle('active',x===b));
