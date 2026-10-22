@@ -3,12 +3,12 @@
  "version": 1,
  "created": "2026-09-22",
  "meta": {
-  "updated": "2026-10-19",
-  "lastRun": "2026-10-21",
-  "runType": "05h-full-maintenance (lundi)",
-  "note": "Run 05h lundi 19/10: 0 edition de code (tous hot games + rotation defendables ou conflits non tranches). Candidats near-ready a 2 sources (besoin 3e): GPO (FREE_Drops8 + 5FREETAILORVOUCHERS_2) et Da Hood (MACRO!/ETERNAL). Jeu de la semaine §30 non executable (marqueurs FEATURED-WEEK absents, decision Peter). GTA6 19/11 confirme Newswire. FC26 Ultimate Scream LIVE mais bloque (naming FC27/FC26).",
+  "updated": "2026-10-22",
+  "lastRun": "2026-10-22",
+  "runType": "05h-full-maintenance (jeudi)",
+  "note": "Run 05h jeudi 22/10: 1 édition propre (knockout 7->2, 2 sources d'expiration). 6 hot games confirmés + verifDate rafraîchie. Kill switch maintenu: grimoires-era (conflit 3 voies), anime-battle-rng (source stale syndiquée, pas 2 indépendantes), aniimo-froyo (1 source fraîche d'expiration vs 1 stale active), GAG FREESEED/torigate. GTA6 19/11 préchargement 12/11 confirmé, rien de neuf. FC26 naming toujours bloqué (décision Peter). Pas de nouveau jeu multi-source + codes réels cette nuit.",
   "lastUpdate": "2026-10-16T05:30:00Z",
-  "topicsCount": 51
+  "topicsCount": 54
  },
  "topics": [
   {
@@ -161,7 +161,7 @@
    "sujet": "Date de sortie 19 nov. 2026 (evergreen) + marketing pré-lancement",
    "categorie": "release/marketing",
    "premiereDetection": "2026-05",
-   "derniereVerification": "2026-10-20",
+   "derniereVerification": "2026-10-22",
    "statut": "UPDATED",
    "importance": "haute",
    "confiance": "HIGH",
@@ -187,7 +187,7 @@
    "sujet": "Codes actifs + nouvelle créature Prismana Glynsera",
    "categorie": "codes/content",
    "premiereDetection": "2026-09-16",
-   "derniereVerification": "2026-10-20",
+   "derniereVerification": "2026-10-22",
    "statut": "EVERGREEN",
    "importance": "moyenne",
    "confiance": "HIGH (codes) / MOYENNE (détail butin de 6 codes)",
@@ -1216,7 +1216,7 @@
    "sujet": "Promo Ultimate Scream (Halloween) + Scream Team 2",
    "categorie": "FUT / promo saisonniere",
    "premiereDetection": "2026-10-18",
-   "derniereVerification": "2026-10-19",
+   "derniereVerification": "2026-10-22",
    "statut": "MONITOR",
    "importance": "moyenne-haute",
    "confiance": "haute",
@@ -1378,7 +1378,7 @@
    "sujet": "Page codes tres probablement perimee (conflit 3 voies)",
    "categorie": "codes",
    "premiereDetection": "2026-10-20",
-   "derniereVerification": "2026-10-20",
+   "derniereVerification": "2026-10-22",
    "statut": "UPDATE_REQUIRED",
    "importance": "HAUTE",
    "confiance": "FAIBLE",
@@ -1396,7 +1396,7 @@
    "articleCree": false,
    "url": "/codes-grimoires-era.html",
    "prochaineAction": "Rebuild via source officielle (Trello/Discord Grimoires Era). Ne rien editer tant que 2 sources fiables ne concordent pas.",
-   "notes": "CONFLIT: PocketGamer (REVAMPSOON!/25SPINS!/2025BOOSTS!/CLOVER) vs games.gg (NEXTCHAPTER!/MINING!/UPDATE0.6!/SYSTEMREWORK!) vs page (11 codes, aucun commun). KILL SWITCH."
+   "notes": "CONFLIT: PocketGamer (REVAMPSOON!/25SPINS!/2025BOOSTS!/CLOVER) vs games.gg (NEXTCHAPTER!/MINING!/UPDATE0.6!/SYSTEMREWORK!) vs page (11 codes, aucun commun). KILL SWITCH. | 22/10: conflit persiste (PocketGamer stale 11/2025 vs Games.gg sans récompenses). Kill switch."
   },
   {
    "id": "maint-2026-10-20",
@@ -1466,6 +1466,65 @@
    "url": "",
    "prochaineAction": "grimoires-era rebuild (source officielle, conflit 3 voies); knockout/anime-battle-rng 2e source pour pruner; garden-tower-defense conflit non tranche; FC26 naming (Peter).",
    "notes": "3 editions propres: AV +2ndAnniDay1, DaHood +PRESIDENT/PVP/BUFF, Rivals -SORRY. grimoires-era KILL SWITCH (conflit 3 voies). 6 hot games + character-rng re-verifies sans edition. GTA6/Aniimo stables. build x4 + QC OK (1317 codes/396 URLs)."
+  },
+  {
+   "id": "knockout-prune-2026-10-22",
+   "jeu": "Knockout",
+   "sujet": "Prune liste gonflée: 7->2 codes actifs",
+   "categorie": "codes-maintenance",
+   "premiereDetection": "2026-10-21",
+   "derniereVerification": "2026-10-22",
+   "statut": "UPDATED",
+   "importance": "moyenne",
+   "confiance": "HIGH",
+   "sources": [
+    "Dexerto (13/08)",
+    "Nerdschalk (23/09)"
+   ],
+   "sourceOriginale": "Rotation / queue",
+   "potentielSEO": "honnêteté liste codes (anti faux-actifs)",
+   "trendScore": 0,
+   "pagesZoneblox": [
+    "codes-knockout.html",
+    "tous-les-codes.html",
+    "js/main.js (GAMES_INDEX)"
+   ],
+   "articleCree": false,
+   "url": "https://zoneblox.com/codes-knockout.html",
+   "prochaineAction": "Surveiller CORALCRUSHER (nerdschalk seul, sans récompense) -> 2e source avant ajout.",
+   "notes": "CRABRAVE/SOCIALHUB/PUNCHMONKEY/DOOMSDAY/ADMINABUSE = expirés confirmés par 2 sources concordantes. Gardé EMPERORRETURNS + THANKSFORPLAYING. numberOfItems/ItemList/counter/GAMES_INDEX/hub resynchronisés."
+  },
+  {
+   "id": "run-2026-10-22-05h",
+   "jeu": "(run log)",
+   "sujet": "Run 05h full (jeudi 22/10) - 1 prune propre (knockout) + 6 hot confirmés, kill switch sur 4 conflits",
+   "categorie": "run-log",
+   "premiereDetection": "2026-10-22",
+   "derniereVerification": "2026-10-22",
+   "statut": "PUBLISHED",
+   "importance": "moyenne",
+   "confiance": "HIGH",
+   "sources": [
+    "Dexerto",
+    "Nerdschalk",
+    "Roonby",
+    "PocketTactics",
+    "PocketGamer",
+    "Samlover",
+    "mein-mmo",
+    "khelnow"
+   ],
+   "sourceOriginale": "Run planifié 05h",
+   "potentielSEO": "fraîcheur + honnêteté listes",
+   "trendScore": 0,
+   "pagesZoneblox": [
+    "codes-knockout.html (prune 7->2)",
+    "+6 verifDate: blox-fruits, grow-a-garden, steal-a-brainrot, blue-lock-rivals, anime-vanguards, fisch"
+   ],
+   "articleCree": false,
+   "url": "",
+   "prochaineAction": "15h/22h: grimoires-era source officielle; anime-battle-rng 2e source FRAÎCHE (non syndiquée); aniimo-froyo 2e source expiration; GTA6 Newswire préchargement; FC26 naming (Peter).",
+   "notes": "Codes: knockout prune (2 sources). Confirmés sans édition: anime-vanguards (Roonby 13/10), fisch (source contradictoire), steal-a-brainrot (Dexerto 12/10), grow-a-garden (2 sources), blox-fruits (PT 16/10), blue-lock-rivals (sources + anciennes que page). Kill switch: grimoires-era (conflit 3 voies), anime-battle-rng (source stale syndiquée), aniimo-froyo (1 source fraîche expiration), grow-a-garden FREESEED/torigate. GTA6/FC26/Aniimo: rien de neuf actionnable. Pas de nouveau jeu avec preuve multi-source + codes réels cette nuit."
   }
  ]
 }
