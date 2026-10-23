@@ -1,0 +1,59 @@
+{
+  "game": "the-hollow",
+  "updated": "2026-10-23",
+  "intro": "Le suivi de l'événement Halloween The Hollow de Roblox, du teaser à la fermeture. On s'en tient aux dates et faits confirmés par Roblox et la presse ; aucune rumeur présentée comme un fait.",
+  "entries": [
+    {
+      "date": "2026-11-02",
+      "kind": "event",
+      "title": "Fermeture de l'événement (2 novembre, midi PST)",
+      "summary": "The Hollow ferme ses portes le 2 novembre 2026 à midi PST (21 h en France). Après la finale du 31 octobre, les joueurs peuvent continuer à récupérer les récompenses jusqu'à cette fermeture.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://gamesbeat.com/?p=337339",
+        "https://www.roblox.com/games/116463962153167/The-Hollow"
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "kind": "event",
+      "title": "Finale en direct le soir d'Halloween",
+      "summary": "Une finale en direct est prévue le matin du 31 octobre 2026 (heure du Pacifique). C'est le point culminant des neuf nuits de l'événement ; la collecte des récompenses reste possible ensuite jusqu'à la fermeture.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://gamesbeat.com/?p=337339"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "kind": "event",
+      "title": "Ouverture de The Hollow (22 octobre)",
+      "summary": "L'événement ouvre le 22 octobre 2026 à 14 h PST (23 h en France). Les abonnés Roblox Plus bénéficient d'un accès anticipé au hub dès midi PST et reçoivent un cadre et un fond de profil exclusifs (conservés après l'événement) ainsi qu'un lanceur d'objets pour offrir des cadeaux pendant l'événement.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://gamesbeat.com/?p=337339",
+        "https://www.roblox.com/games/116463962153167/The-Hollow"
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "kind": "teaser",
+      "title": "Deuxième teaser : « You've met them before. But not like this. »",
+      "summary": "Le 10 octobre 2026, Roblox tease l'événement avec la phrase « Vous les avez déjà rencontrés. Mais pas comme ça. », laissant entendre le retour de monstres connus d'autres expériences dans un même lieu.",
+      "confidence": "MEDIUM",
+      "sources": [
+        "https://timesaver.gg/blog/roblox-the-hollow-event-games"
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "kind": "teaser",
+      "title": "Premiers indices sur un événement Halloween",
+      "summary": "Fin septembre 2026, Roblox commence à laisser entendre l'arrivée d'un événement Halloween à l'échelle de la plateforme, avant de le baptiser The Hollow.",
+      "confidence": "MEDIUM",
+      "sources": [
+        "https://timesaver.gg/blog/roblox-the-hollow-event-games"
+      ]
+    }
+  ]
+}

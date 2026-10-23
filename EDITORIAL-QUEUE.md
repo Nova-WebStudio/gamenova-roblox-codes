@@ -2,7 +2,7 @@
 
 > Mémoire éditoriale opérationnelle (spec V2, section 7). Mise à jour à chaque run.
 > Détail sourcé complet dans `tools/editorial-intelligence.json` et `tools/code-watch.json`.
-> **Dernière MAJ : 2026-10-22 (run 05h — jeudi)**
+> **Dernière MAJ : 2026-10-23 (ajout 3 jeux — The Hollow, Bike Universe, DON'T SPLASH)**
 
 ## ✅ FAIT — RUN 05h 2026-10-22
 
@@ -12,6 +12,18 @@
 - **KILL SWITCH maintenu** : grimoires-era (conflit 3 voies, PocketGamer stale 11/2025 vs Games.gg sans récompenses — date NON rafraîchie), anime-battle-rng (nerdschalk = allthings.how = même contenu syndiqué Aug 6, 1 source stale dupliquée), aniimo-froyo (mein-mmo 09/10 expiré vs khelnow 04/10 actif = 1 source fraîche d'expiration), grow-a-garden FREESEED/torigate (1 source / conflit).
 - **GTA 6 / FC 26 / Aniimo** : aucun changement actionnable (voir sections rapport).
 - **Régénération** : build_site + build_home + build_codes_json (**1317 codes / 196 jeux**) + build_sitemap (**411 URLs**). **QC OK** (node main.js, JSON ×5, sitemap XML, `</html>`, 0 null byte, divs équilibrés, knockout ACTIVE=counter=ItemList=GAMES_INDEX=hub=2).
+
+---
+
+## ✅ FAIT — 2026-10-23 (demande Peter : 3 jeux, build data-driven)
+
+Trois nouveaux jeux ajoutés via le système standalone (`data/games/<slug>.json` + `data/<slug>/`), builds + QC OK, **non poussés** :
+
+- **The Hollow** (`/games/the-hollow/`) — cluster complet : hub + suivi d'événement (5 entrées datées) + 3 guides (dates/participation, récompenses/objets avatar, 9 expériences participantes). Événement Halloween officiel Roblox, 22/10→02/11. Sources : GamesBeat + page officielle Roblox. Mis en avant (homepage). Pas de codes (événement à quêtes).
+- **Bike Universe** (`/games/bike-universe/`) — hub + guide de démarrage (vélos, argent, astuces). **Couverture tierce quasi nulle** → contenu basé sur la description officielle, aucune donnée inventée. Non featured. À surveiller / enrichir si le jeu monte. Pas de codes connus.
+- **DON'T SPLASH** (`/games/dont-splash/`) — hub + guide débutant (survie au son, poolrooms, objets). Mécaniques recoupées via description officielle + guides communautaires (FreshGameRadar, DONT SPLASH Wiki), détails spécifiques signalés comme communautaires. Non featured. Pas de codes connus.
+
+Vraies miniatures `tr.rbxcdn.com` (og:image) utilisées comme cover. games-index 192→195. sitemap-games.xml 40→52 URLs (référencé dans robots.txt). Maillage auto : /games/, homepage (The Hollow), sidebars standalone. QC : `</html>`, 0 null byte, divs équilibrés, JSON-LD valides, node main.js OK, GA4 + nav présents.
 
 ---
 

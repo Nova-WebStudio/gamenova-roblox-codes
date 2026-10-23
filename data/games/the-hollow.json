@@ -1,0 +1,45 @@
+{
+  "slug": "the-hollow",
+  "name": "The Hollow",
+  "platform": "standalone",
+  "platformLabel": "Roblox",
+  "publisher": "Roblox",
+  "developer": "Roblox (Roblox Presents)",
+  "genre": "Événement Halloween / Survie",
+  "shortDescription": "L'événement Halloween 2026 de Roblox : neuf nuits de survie dans un hub hanté, du 22 octobre au 2 novembre, avec des objets avatar à débloquer via des quêtes.",
+  "description": "The Hollow (« Le gouffre » en français) est l'événement Halloween 2026 à l'échelle de la plateforme Roblox, organisé par Roblox lui-même (groupe Roblox Presents). Pendant neuf nuits, les monstres de plusieurs expériences d'horreur populaires se retrouvent dans un même hub hanté : chaque jour, un nouveau labyrinthe ouvre et un monstre différent traque les joueurs, qui cherchent des indices tout en l'évitant. En accomplissant des quêtes, on gagne des objets avatar (UGC) exclusifs et limités. Il n'y a pas de codes à échanger : les récompenses s'obtiennent en jouant. Sur Zoneblox, on suit l'événement avec ce qui est officiellement confirmé, en distinguant le confirmé du rapporté.",
+  "releaseDate": "2026-10-22",
+  "releaseNote": "Événement limité : ouverture le 22 octobre 2026 (14 h PST / 23 h en France), finale en direct le 31 octobre, fermeture le 2 novembre 2026 à midi PST. Les abonnés Roblox Plus ont un accès anticipé au hub dès midi PST le 22 octobre.",
+  "platforms": [
+    "Roblox — PC, Console, Mobile, Tablette"
+  ],
+  "status": "released",
+  "officialWebsite": "https://www.roblox.com/games/116463962153167/The-Hollow",
+  "monogram": "TH",
+  "accent": [
+    "#6b2fb3",
+    "#ff7a1a"
+  ],
+  "coverImage": "https://tr.rbxcdn.com/180DAY-2f366237b26c984e3cf714d716a09099/500/280/Image/Jpeg/noFilter",
+  "coverPosition": "center",
+  "isFeatured": true,
+  "isNew": true,
+  "isActive": true,
+  "sourcesNote": "Informations vérifiées via la page officielle de l'expérience Roblox et la presse (GamesBeat) au 23 octobre 2026. La liste des neuf expériences participantes est rapportée par GamesBeat ; Roblox n'a pas publié de liste unique officielle. Événement en cours : seuls les éléments confirmés sont présentés comme faits.",
+  "contentTypes": [
+    {
+      "type": "updates",
+      "label": "Suivi de l'événement",
+      "icon": "📰",
+      "status": "available",
+      "blurb": "Chronologie officielle : teasers, ouverture, finale, fermeture."
+    },
+    {
+      "type": "guides",
+      "label": "Guides",
+      "icon": "📖",
+      "status": "available",
+      "blurb": "Dates, comment participer, récompenses et expériences participantes."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "slug": "bike-universe",
+  "name": "Bike Universe",
+  "platform": "standalone",
+  "platformLabel": "Roblox",
+  "publisher": "Bike Universe",
+  "developer": "Bike Universe (groupe Roblox)",
+  "genre": "Course / Monde ouvert",
+  "shortDescription": "Jeu Roblox de vélo en monde ouvert : roule, débloque des vélos, gagne de l'argent avec des figures et fais la course avec tes amis.",
+  "description": "Bike Universe est un jeu Roblox de vélo en monde ouvert : on roule librement sur la carte, on débloque différents types de vélos (tout-terrain, électriques, à pédales), on gagne de l'argent en roulant, en enchaînant des wheelies et des figures, on règle et personnalise son vélo, et on fait la course avec ses amis. Le jeu se joue sur ordinateur, console, mobile et tablette. Sur Zoneblox, on couvre Bike Universe avec prudence : le jeu est récent et peu documenté par des sources tierces, on s'appuie donc d'abord sur la description officielle du jeu.",
+  "releaseDate": "2026-10-23",
+  "releaseNote": "Jeu Roblox jouable sur ordinateur, console, mobile et tablette. Thème Halloween en cours au moment de la rédaction.",
+  "platforms": [
+    "Roblox — PC, Console, Mobile, Tablette"
+  ],
+  "status": "released",
+  "officialWebsite": "https://www.roblox.com/games/98628861455414/Bike-Universe",
+  "monogram": "BU",
+  "accent": [
+    "#1fb6a6",
+    "#7be37a"
+  ],
+  "coverImage": "https://tr.rbxcdn.com/180DAY-464a688fa0cd7826ded7e63f1a831296/500/280/Image/Jpeg/noFilter",
+  "coverPosition": "center",
+  "isFeatured": false,
+  "isNew": true,
+  "isActive": true,
+  "sourcesNote": "Contenu basé sur la description officielle du jeu sur Roblox au 23 octobre 2026. Couverture tierce limitée : aucune donnée inventée (pas de codes, pas de statistiques non vérifiées). Page à enrichir si le jeu gagne en popularité.",
+  "contentTypes": [
+    {
+      "type": "guides",
+      "label": "Guides",
+      "icon": "📖",
+      "status": "available",
+      "blurb": "Guide de démarrage : vélos, argent et astuces."
+    }
+  ]
+}

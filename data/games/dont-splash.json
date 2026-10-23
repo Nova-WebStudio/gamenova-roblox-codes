@@ -1,0 +1,38 @@
+{
+  "slug": "dont-splash",
+  "name": "DON'T SPLASH",
+  "platform": "standalone",
+  "platformLabel": "Roblox",
+  "publisher": "slo7th",
+  "developer": "@slo7th",
+  "genre": "Horreur / Survie",
+  "shortDescription": "Jeu d'horreur Roblox dans des poolrooms inondés : une entité aveugle te traque au bruit de l'eau. Ne fais pas d'éclaboussure.",
+  "description": "DON'T SPLASH (« Ne pas éclabousser ») est un jeu d'horreur et de survie Roblox de @slo7th, à l'ambiance liminale « poolrooms » (couloirs et piscines inondés). Le principe : une entité aveugle te traque au son, surtout le bruit de l'eau. Traverser en éclaboussant, sauter ou sprinter révèle ta position ; il faut avancer calmement vers la sortie. Sur Zoneblox, on décrit les mécaniques vérifiées ; les détails précis (objets, valves) proviennent de guides communautaires et sont signalés comme tels.",
+  "releaseDate": "2026-10-23",
+  "releaseNote": "Jeu Roblox jouable sur ordinateur, console et mobile. Cosmétiques d'Halloween en cours au moment de la rédaction (ils ne changent pas les règles de bruit).",
+  "platforms": [
+    "Roblox — PC, Console, Mobile"
+  ],
+  "status": "released",
+  "officialWebsite": "https://www.roblox.com/games/119958473240233/DONT-SPLASH",
+  "monogram": "DS",
+  "accent": [
+    "#0e3a6b",
+    "#30c6e0"
+  ],
+  "coverImage": "https://tr.rbxcdn.com/180DAY-a7d2be4b4c25e2d44a6c48edbb42286a/500/280/Image/Jpeg/noFilter",
+  "coverPosition": "center",
+  "isFeatured": false,
+  "isNew": true,
+  "isActive": true,
+  "sourcesNote": "Mécaniques recoupées via la description officielle du jeu et des guides communautaires (FreshGameRadar, DONT SPLASH Wiki) au 23 octobre 2026. Les détails spécifiques (objets, valves) viennent de ces guides communautaires et sont présentés comme tels. Aucun code inventé.",
+  "contentTypes": [
+    {
+      "type": "guides",
+      "label": "Guides",
+      "icon": "📖",
+      "status": "available",
+      "blurb": "Guide débutant : survie au son, détection et progression."
+    }
+  ]
+}

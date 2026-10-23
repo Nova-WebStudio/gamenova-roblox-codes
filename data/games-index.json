@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-22",
- "count": 192,
+ "generated": "2026-10-23",
+ "count": 195,
  "games": [
   {
    "name": "Aniimo",
@@ -34,6 +34,60 @@
    ],
    "platformLabel": "PC / Console · Mobile",
    "genreLabel": "RPG"
+  },
+  {
+   "name": "Bike Universe",
+   "slug": "bike-universe",
+   "url": "/games/bike-universe/",
+   "source": "standalone",
+   "platforms": [
+    "PC / Console",
+    "Mobile"
+   ],
+   "genres": [
+    "Course / Monde ouvert"
+   ],
+   "updated": "2026-10-23",
+   "new": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-464a688fa0cd7826ded7e63f1a831296/500/280/Image/Jpeg/noFilter",
+   "coverpos": "center",
+   "accent": [
+    "#1fb6a6",
+    "#7be37a"
+   ],
+   "monogram": "BU",
+   "cts": [
+    "Guides"
+   ],
+   "platformLabel": "PC / Console · Mobile",
+   "genreLabel": "Course / Monde ouvert"
+  },
+  {
+   "name": "DON'T SPLASH",
+   "slug": "dont-splash",
+   "url": "/games/dont-splash/",
+   "source": "standalone",
+   "platforms": [
+    "PC / Console",
+    "Mobile"
+   ],
+   "genres": [
+    "Horreur"
+   ],
+   "updated": "2026-10-23",
+   "new": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-a7d2be4b4c25e2d44a6c48edbb42286a/500/280/Image/Jpeg/noFilter",
+   "coverpos": "center",
+   "accent": [
+    "#0e3a6b",
+    "#30c6e0"
+   ],
+   "monogram": "DS",
+   "cts": [
+    "Guides"
+   ],
+   "platformLabel": "PC / Console · Mobile",
+   "genreLabel": "Horreur"
   },
   {
    "name": "FC 27",
@@ -90,6 +144,34 @@
    ],
    "platformLabel": "PC / Console",
    "genreLabel": "Aventure"
+  },
+  {
+   "name": "The Hollow",
+   "slug": "the-hollow",
+   "url": "/games/the-hollow/",
+   "source": "standalone",
+   "platforms": [
+    "PC / Console",
+    "Mobile"
+   ],
+   "genres": [
+    "Événement Halloween / Survie"
+   ],
+   "updated": "2026-10-22",
+   "new": true,
+   "thumb": "https://tr.rbxcdn.com/180DAY-2f366237b26c984e3cf714d716a09099/500/280/Image/Jpeg/noFilter",
+   "coverpos": "center",
+   "accent": [
+    "#6b2fb3",
+    "#ff7a1a"
+   ],
+   "monogram": "TH",
+   "cts": [
+    "Suivi de l'événement",
+    "Guides"
+   ],
+   "platformLabel": "PC / Console · Mobile",
+   "genreLabel": "Événement Halloween / Survie"
   },
   {
    "name": "Ride a Dino",

@@ -1,0 +1,52 @@
+{
+  "game": "bike-universe",
+  "updated": "2026-10-23",
+  "sources": [
+    "https://www.roblox.com/games/98628861455414/Bike-Universe"
+  ],
+  "guides": [
+    {
+      "slug": "guide-demarrage",
+      "title": "Bike Universe : guide de démarrage (vélos, argent, astuces)",
+      "category": "Guide débutant",
+      "updated": "2026-10-23",
+      "intro": "Tu débutes sur Bike Universe ? Voici l'essentiel pour bien commencer : comment gagner de l'argent, débloquer de nouveaux vélos, personnaliser ta monture et progresser. On s'appuie sur la description officielle du jeu ; on évite toute donnée non vérifiée (prix exacts, noms de vélos précis) tant qu'elle n'est pas confirmée.",
+      "sections": [
+        {
+          "h": "Le principe du jeu",
+          "p": "Bike Universe est un jeu de vélo en monde ouvert : tu roules librement sur la carte, tu enchaînes des figures et tu fais la course. L'objectif à long terme est de gagner de l'argent pour débloquer des vélos de plus en plus performants et personnaliser ta monture. Le jeu se joue au clavier/souris sur PC, à la manette sur console et au tactile sur mobile et tablette."
+        },
+        {
+          "h": "Gagner de l'argent efficacement",
+          "p": "D'après la description du jeu, l'argent se gagne en roulant, en réalisant des wheelies (rouler sur la roue arrière) et en enchaînant des figures. Le réflexe utile : ne pas rouler « à vide ». Essaie de garder un wheelie ou un combo de figures le plus longtemps possible pendant tes déplacements, plutôt que de rouler normalement d'un point à un autre."
+        },
+        {
+          "h": "Débloquer et choisir ses vélos",
+          "p": "Le jeu propose plusieurs types de vélos — tout-terrain, électriques et à pédales — à débloquer avec l'argent gagné. Chaque type a sa logique : les vélos électriques misent sur la vitesse de pointe, les tout-terrain sur la polyvalence sur terrain accidenté. Investis d'abord dans un vélo qui t'aide à gagner plus vite (vitesse ou maniabilité), puis vise les montures plus chères une fois ta source de revenus stable."
+        },
+        {
+          "h": "Régler et personnaliser son vélo",
+          "p": "Bike Universe permet d'ajuster et de personnaliser son vélo. Prends le temps d'explorer les réglages disponibles : au-delà du style, ils peuvent influencer le ressenti (accélération, contrôle). Personnaliser sa monture fait aussi partie du plaisir du jeu et aide à se repérer en course."
+        },
+        {
+          "h": "Faire la course avec ses amis",
+          "p": "Le jeu met en avant la course entre amis. Jouer en groupe est un bon moyen de progresser : on repère les meilleurs spots à figures, on se motive à battre des temps, et les courses ajoutent un objectif concret une fois les premiers vélos débloqués."
+        },
+        {
+          "h": "Y a-t-il des codes Bike Universe ?",
+          "p": "Au moment de la rédaction, aucun système de codes vérifié n'est associé à Bike Universe. On ne liste pas de codes tant qu'on n'a pas de preuve fiable qu'ils existent et fonctionnent. Si le jeu ajoute une zone de rédemption, on mettra cette page à jour."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Bike Universe a-t-il des codes ?",
+          "a": "Aucun code vérifié n'est connu pour le moment. Zoneblox n'invente jamais de codes : cette page sera mise à jour si un système de codes apparaît."
+        },
+        {
+          "q": "Comment gagner de l'argent rapidement ?",
+          "a": "En roulant tout en enchaînant wheelies et figures plutôt qu'en roulant normalement, et en réinvestissant dans un vélo plus rapide ou plus maniable dès que possible."
+        }
+      ]
+    }
+  ]
+}

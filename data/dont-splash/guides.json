@@ -1,0 +1,54 @@
+{
+  "game": "dont-splash",
+  "updated": "2026-10-23",
+  "sources": [
+    "https://www.roblox.com/games/119958473240233/DONT-SPLASH",
+    "https://freshgameradar.com/games/dont-splash/",
+    "https://www.dontsplashwiki.wiki/guide/DONT-SPLASH-how-to-play"
+  ],
+  "guides": [
+    {
+      "slug": "guide-debutant",
+      "title": "DON'T SPLASH : guide débutant (survie au son)",
+      "category": "Guide débutant",
+      "updated": "2026-10-23",
+      "intro": "DON'T SPLASH est un jeu d'horreur « poolrooms » où une entité aveugle te traque au bruit de l'eau. Voici les mécaniques à comprendre pour survivre : gérer son bruit, éviter la détection, utiliser les objets et progresser vers la sortie. Le cœur du jeu (survie au son) est confirmé ; les détails précis viennent de guides communautaires.",
+      "sections": [
+        {
+          "h": "Le principe : « il entend l'eau »",
+          "p": "Tu évolues dans des poolrooms inondés, et une entité aveugle te chasse au son — surtout le bruit de l'eau. Le mot d'ordre du jeu, « ne pas éclabousser », est littéral : éclabousser, sauter ou sprinter révèle ta position. L'objectif est d'atteindre la sortie calmement, sans te faire repérer."
+        },
+        {
+          "h": "Gérer son bruit selon l'action",
+          "p": "D'après les guides communautaires, le niveau de bruit dépend de ce que tu fais : rester immobile est silencieux (idéal pour écouter), marcher lentement fait peu de bruit (à privilégier pour explorer), patauger dans l'eau fait un bruit moyen, et sauter ou sprinter fait énormément de bruit (à réserver aux urgences). Règle simple : marche lentement par défaut, et ne cours que vers une sortie que tu connais déjà."
+        },
+        {
+          "h": "Éviter la détection",
+          "p": "Décide de ta direction de sortie avant d'entrer dans une zone d'eau bruyante, et traverse vers un repère reconnaissable plutôt qu'au hasard. Évite de repasser plusieurs fois au même endroit exposé. Si l'ambiance sonore change, arrête-toi et observe depuis un coin. Un casque audio est fortement recommandé : les indices sonores arrivent souvent avant que tu ne voies quoi que ce soit."
+        },
+        {
+          "h": "Les objets utiles (selon le wiki communautaire)",
+          "p": "Les guides communautaires décrivent plusieurs objets : le Pebble (caillou) se lance pour créer une éclaboussure à distance et détourner l'entité de ta route — présenté comme l'outil polyvalent le plus utile ; le Toy sert aussi de diversion ; la Rope (corde) aide aux traversées délicates et évite de sauter ; la Flare (fusée) dépanne dans les sections peu éclairées. Des améliorations permanentes (nombre d'emplacements d'objets, portée de lancer, vitesse de secours) se conservent d'une partie à l'autre."
+        },
+        {
+          "h": "Progresser dans un niveau",
+          "p": "Une bonne routine : repère-toi près du départ et choisis un point de repli ; explore par petites sections en t'arrêtant pour écouter entre chacune ; observe l'eau libre depuis un bord avant de traverser d'un coup ; atteins les valves/mécanismes en silence sans t'attarder ; puis, une fois la dernière valve ou grille franchie, suis la route de sortie que tu as repérée — sans partir explorer de nouvelles branches pendant la fuite."
+        },
+        {
+          "h": "Pas de codes : attention aux arnaques",
+          "p": "Aucun code vérifié n'est associé à DON'T SPLASH. Les guides fiables recommandent de n'utiliser que d'éventuels codes proposés en jeu et d'ignorer les liens « codes gratuits » hors plateforme. Zoneblox n'invente jamais de codes : si un système officiel apparaît, cette page sera mise à jour."
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Comment survivre dans DON'T SPLASH ?",
+          "a": "En gérant ton bruit : marche lentement, évite d'éclabousser, de sauter et de sprinter, utilise un casque pour repérer l'entité au son, et file vers une sortie que tu connais déjà."
+        },
+        {
+          "q": "DON'T SPLASH a-t-il des codes ?",
+          "a": "Aucun code vérifié n'est connu. N'utilise que d'éventuels codes proposés directement en jeu et ignore les liens externes."
+        }
+      ]
+    }
+  ]
+}
