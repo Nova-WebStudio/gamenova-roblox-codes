@@ -168,6 +168,7 @@ Il met le mois/année courant dans title + og:title + meta description de **tout
 - Par défaut le script **simule** ; `--send` envoie réellement. Sans argument : URL du sitemap dont `lastmod` = aujourd'hui. Aussi : `--date AAAA-MM-JJ`, `--all`, ou des URL explicites.
 - **Ordre** : MAJ des pages → `python3 tools/build_sitemap.py` → push par Peter → seulement ensuite `python3 tools/indexnow_ping.py --send`. Ne jamais notifier une page pas encore déployée.
 - Le shell de l'agent n'a pas toujours le réseau : si l'envoi échoue, laisser la commande à Peter.
+- Un `HTTP 403` = clé pas (encore) validée : vécu le 24/10/2026 juste après la mise en ligne de la clé, résolu tout seul quelques minutes plus tard. Vérifier que `https://zoneblox.com/<clé>.txt` répond 200, attendre, relancer. Premier envoi complet (`--all`, 432 URL) accepté le 24/10/2026.
 
 ---
 
