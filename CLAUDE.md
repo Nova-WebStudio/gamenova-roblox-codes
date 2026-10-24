@@ -156,7 +156,18 @@ Le `<head>` des pages codes affiche le mois courant à 3 endroits : `<title> (�
 python3 tools/sync_month.py
 ```
 
-Il met le mois/année courant dans title + og:title + meta description de **toutes** les pages `codes-*.html`, avec l'élision correcte (« de septembre » / « d'octobre » / « d'août »). Il ne touche QUE le `<head>` — jamais le corps, jamais les codes, jamais les dates « 🔄 Vérifié le » / « 🕐 Mis à jour le » (règle d'honnêteté préservée). Idempotent. Garde-fous : n'écrit pas une page qui ne finirait pas par `</html>` ou contiendrait un null byte.
+Il met le mois/année courant dans title + og:title + meta description de **toutes** les pages `codes-*.html`, avec l'élision correcte (« de septembre » / « d'octobre » / « d'août »), **et depuis le 24/10/2026 le libellé « — <mois> <année> » du `<h1>`** (169 H1 étaient restés à « septembre »). Dans le corps, il ne touche QUE ce libellé du H1 — jamais les codes, jamais les dates « 🔄 Vérifié le » / « 🕐 Mis à jour le » (règle d'honnêteté préservée). Idempotent. Garde-fous : n'écrit pas une page qui ne finirait pas par `</html>` ou contiendrait un null byte.
+
+---
+
+## IndexNow — notifier Bing des pages créées/modifiées (`tools/indexnow_ping.py`)
+
+**Bing apporte ~67 % des sessions** (~87 % avec Yahoo, DuckDuckGo, Qwant, Ecosia — GA4, 24/10/2026) ; Google ≈ 0. IndexNow fait découvrir une page à Bing (et Yandex, Seznam, Naver) en quelques heures.
+
+- Clé : fichier `7534b22b542ba85accf9006eeae26f49.txt` à la racine (contenu = la clé). **Ne pas le supprimer ni le renommer** ; il doit être en ligne pour que les envois soient acceptés.
+- Par défaut le script **simule** ; `--send` envoie réellement. Sans argument : URL du sitemap dont `lastmod` = aujourd'hui. Aussi : `--date AAAA-MM-JJ`, `--all`, ou des URL explicites.
+- **Ordre** : MAJ des pages → `python3 tools/build_sitemap.py` → push par Peter → seulement ensuite `python3 tools/indexnow_ping.py --send`. Ne jamais notifier une page pas encore déployée.
+- Le shell de l'agent n'a pas toujours le réseau : si l'envoi échoue, laisser la commande à Peter.
 
 ---
 

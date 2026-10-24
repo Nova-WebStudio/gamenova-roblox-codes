@@ -1324,7 +1324,8 @@ def build_global_news(games):
               '<div class="nx-hero-in"><span class="nx-eyebrow">ZONEBLOX</span><h1>Actualités jeux vidéo</h1>'
               '<p>Les dernières actualités, mises à jour et trailers des jeux couverts par Zoneblox — Roblox, Aniimo, GTA 6, FC 27 et plus.</p></div></header>')
     others = "".join('<a class="nx-other" href="/games/%s/updates/"><span class="nx-other-img" style="background-image:url(%s)"></span><span class="nx-other-n">%s</span></a>' % (
-        e_att(x["slug"]), e_att(x.get("coverImage", "/images/hero-bg.webp")), e_att(x.get("name", x["slug"]))) for x in games if x.get("isActive", True))
+        e_att(x["slug"]), e_att(x.get("coverImage", "/images/hero-bg.webp")), e_att(x.get("name", x["slug"]))) for x in games
+        if x.get("isActive", True) and os.path.exists(os.path.join(ROOT, "data", x["slug"], "updates.json")))
     side = '<div class="box nx-box"><h3>Par jeu</h3><div class="nx-others">%s</div></div>' % others
     body = (crumb_html([("Accueil", "/"), ("Actualités", None)]) + header
             + '<div class="layout nx-layout"><div>' + feat + grid + '</div><aside class="side">%s</aside></div>' % side)

@@ -3,8 +3,10 @@
 dans le <head> des pages codes-<slug>.html vers le MOIS COURANT.
 
 But : eviter le decalage "title = septembre / description = aout" reste sur une page
-(constate le 11/09/2026). Ne touche QUE le <head> (title, og:title, meta description) :
-jamais le corps, jamais les codes, jamais les dates "Verifie le" / "Mis a jour".
+(constate le 11/09/2026). Touche le <head> (title, og:title, meta description) et, dans le
+corps, UNIQUEMENT le libelle "— <mois> <annee>" du <h1> (H1 reste a "septembre" alors que
+le title disait "octobre" sur 169 pages, constate le 24/10/2026) : jamais les codes,
+jamais les dates "Verifie le" / "Mis a jour".
 
 Idempotent (relancer = no-op si deja a jour). A lancer a chaque debut de mois, et sans
 risque a chaque run quotidien. Verifier apres : aucune page ne doit finir sans </html>.
@@ -39,6 +41,14 @@ def sync_head(head):
     return head
 
 
+PAT_H1 = re.compile(r'(<h1\b[^>]*>[^<]*?—\s*)' + _MOISPAT + r'(\s+)20\d{2}')
+
+
+def sync_h1(body):
+    # un seul H1 par page : on ne remplace que le premier
+    return PAT_H1.sub(lambda m: f'{m.group(1)}{CUR_MOIS}{m.group(2)}{CUR_AN}', body, count=1)
+
+
 def main():
     changed = 0
     for f in sorted(glob.glob('codes-*.html')):
@@ -49,9 +59,10 @@ def main():
             continue
         head, rest = h[:i], h[i:]
         new_head = sync_head(head)
-        if new_head == head:
+        new_rest = sync_h1(rest)
+        if new_head == head and new_rest == rest:
             continue
-        out = new_head + rest
+        out = new_head + new_rest
         # garde-fous anti-troncature
         if not out.rstrip().endswith('</html>') or '\x00' in out:
             print(f'  ! {f} : sortie suspecte, NON ecrit')
