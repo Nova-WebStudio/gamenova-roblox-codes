@@ -6,7 +6,14 @@ Règles et pièges à éviter, documentés à partir des erreurs réelles rencon
 
 ## 🔁 Rotation quotidienne de vérification des codes (ÉTAPE 2ter de la tâche) — `catalogVerify`
 
-Le run quotidien vérifie, en plus des `hotGames`, un **lot de 15-20 jeux non-hot** en rotation, pour que **chaque** `codes-<slug>.html` soit revérifié contre une source datée ~tous les 10 jours. Suivi dans `tools/code-watch.json` → objet **`catalogVerify`** = `{ "<slug>": "<ISO dernière vérif approfondie>" }`. Les slugs **absents** = jamais vérifiés = **priorité max** du prochain lot.
+**Cadence (décision de Peter, 24/10/2026) : `hotGames` chaque jour ; TOUTES les autres pages `codes-<slug>.html` revérifiées au plus tard tous les 3 jours**, réparties sur les runs 05h / 15h / 22h. L'ancienne consigne (15-20 jeux à 05h, ~10 jours) n'était pas tenue : ~3,6 jeux/jour réels, 38 pages jamais revérifiées, jusqu'à 47 jours d'ancienneté.
+
+**Outil : `tools/verify_queue.py`** (à chaque run, avant tout le reste) :
+- `python3 tools/verify_queue.py --run 05h|15h|22h` → lot du run (jamais vérifiés → plus anciens → fort trafic ; à 05h, liste aussi les hotGames). 19 pages min par run, jusqu'à 38 en rattrapage.
+- `python3 tools/verify_queue.py --done <slug> ...` → enregistre `catalogVerify[slug] = aujourd'hui` (garde le format du JSON). **Uniquement après une vraie vérification** (codes modifiés, confirmés identiques, ou kill switch posé). Un jeu non vérifié n'est pas marqué et repasse en tête du lot suivant.
+- `python3 tools/verify_queue.py --status` → pages en retard (> 3 jours). À recopier dans chaque rapport ; objectif 0.
+
+Suivi dans `tools/code-watch.json` → objet **`catalogVerify`** = `{ "<slug>": "<ISO dernière vérif approfondie>" }`. Les slugs **absents** = jamais vérifiés = **priorité max** du prochain lot.
 
 Règles clés (voir le prompt de la tâche pour le détail) :
 - Source **datée du mois courant** via web_fetch/Chrome (pas un résumé de recherche : il ne donne presque jamais la liste complète).
@@ -16,7 +23,7 @@ Règles clés (voir le prompt de la tâche pour le détail) :
 - Pour le compteur « X codes actifs » du hero : **remplacement littéral exact**, jamais de regex global (sinon on écrase les compteurs cosmétiques des cartes RELATED/« jeux similaires »).
 - Après traitement (modifié OU confirmé OK) : `catalogVerify[slug]=<jour>`, rafraîchir « Vérifié le », et si codes changés → `python3 tools/build_codes_json.py`.
 
-Jeux laissés **absents exprès** (flaggés « à revérifier » le 03/09/2026) : a-one-piece-game, anime-adventures, anime-fighters, anime-fighting-simulator, anime-fighting-simulator-reborn, anime-rangers-x, anime-reversal, anime-rift-tower-defense, anime-rng, scroll-a-brainrot, world-fighters, heroes-battlegrounds.
+Jeux laissés **absents exprès** le 03/09/2026 (mapping ambigu, « à revérifier ») : a-one-piece-game, anime-adventures, anime-fighters, anime-fighting-simulator, anime-fighting-simulator-reborn, anime-rangers-x, anime-reversal, anime-rift-tower-defense, anime-rng, scroll-a-brainrot, world-fighters, heroes-battlegrounds. **Depuis le 24/10/2026 ils entrent dans la rotation comme les autres** : désambiguïser (placeId/universeId) puis vérifier ; si l'ambiguïté persiste, kill switch + note dans le rapport, mais la page ne doit plus rester sans vérification.
 
 ---
 

@@ -110,7 +110,7 @@ def header(active=""):
 def footer():
     return ('<footer><div class="wrap"><div class="foot-grid">'
         '<div class="foot-brand"><a href="/" class="brand" aria-label="Zoneblox"><img src="/images/logo-zoneblox.png" alt="Zoneblox — codes Roblox &amp; more" style="height:40px;width:auto;display:block" onerror="this.onerror=null;this.outerHTML=&#39;<span class=&quot;logo&quot;>🎮</span>Zone<span>blox</span>&#39;"></a>'
-        '<p>La plateforme gaming : codes, guides, tier lists, wikis et actus, vérifiés à la main et mis à jour chaque jour.</p></div>'
+        '<p>La plateforme gaming : codes, guides, tier lists, wikis et actus, vérifiés à la main et mis à jour régulièrement.</p></div>'
         '<div><h4>Explorer</h4><a href="/games/">Tous les jeux</a><a href="/tous-les-codes.html">Tous les codes</a><a href="/tier-lists.html">Tier lists</a><a href="/guides.html">Guides</a></div>'
         '<div><h4>Jeux</h4><a href="/games/aniimo/">Aniimo</a><a href="/tous-les-codes.html">Roblox</a></div>'
         '<div><h4>Site</h4><a href="/a-propos.html">À propos</a><a href="/a-propos.html#editorial">Politique éditoriale</a><a href="/a-propos.html#contact">Contact</a></div>'
@@ -558,7 +558,7 @@ def build_codes(g, data):
             e(c["code"]), '<span class="new">NOUVEAU</span>' if c.get("new") else "",
             e(c["reward"]),
             ('<div class="tag">Ajouté le %s · vérifié le %s</div>' % (fr_date(c.get("added","")), fr_date(c.get("verified","")))) if c.get("added") else "",
-            e(c["code"])) for c in active) or '<p class="prose" style="color:var(--muted)">Aucun code actif pour le moment — cette page est vérifiée chaque jour, reviens bientôt.</p>'
+            e(c["code"])) for c in active) or '<p class="prose" style="color:var(--muted)">Aucun code actif pour le moment — cette page est vérifiée régulièrement, reviens bientôt.</p>'
     if expired:
         exp_html = "".join('<div class="code"><div class="val"><code>%s</code></div>'
             '<div class="desc"><div class="tag">Expiré</div></div></div>' % e(c["code"]) for c in expired)
