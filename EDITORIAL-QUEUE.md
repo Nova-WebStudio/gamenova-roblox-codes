@@ -2,62 +2,61 @@
 
 > Mémoire éditoriale opérationnelle (spec V2, section 7). Mise à jour à chaque run.
 > Détail sourcé complet dans `tools/editorial-intelligence.json` et `tools/code-watch.json`.
-> **Dernière MAJ : 2026-10-24 (run 05h — 0 édition, kill switch sur tous les conflits)**
+> **Dernière MAJ : 2026-10-25 (run 05h — 2 content gaps comblés, 8 hot games vérifiés, 6 stubs)**
 
-## ✅ FAIT — RUN 05h 2026-10-24 (samedi, pas de Jeu de la semaine)
+## ✅ FAIT — RUN 05h 2026-10-25 (dimanche, pas de Jeu de la semaine)
 
-- **Codes : 0 édition.** Vérification prioritaire des hot games + lot de rotation + cibles de la file. **Toutes** les cibles actionnables se sont révélées soit **confirmées inchangées**, soit sous **KILL SWITCH justifié** (conflit / concordance insuffisante). Aucune invention, aucune suppression sans preuve.
-  - **Confirmés inchangés** : `steal-a-brainrot` (BESTBRAINROTEVER = Dexerto 12/10, set identique) · `anime-vanguards` (14 codes 2ᵉ anniversaire = Roonby 13/10, **source unique non vérifiée** → aucune addition) · `grow-a-garden` (RDCAward/BEANORLEAVE10 maintenus — ⚠️ la page Dexerto « FREESEED » concerne **grow-a-garden-2**, un AUTRE jeu, donc non applicable à la page originale ; clarification de l'item queue précédent).
-  - **KILL SWITCH maintenu** : `grimoires-era` (**conflit 3 voies CONFIRMÉ** — games.gg 03/10 vs pocketgamer+pockettactics vs notre page) · `rivals` (Insider 04/10 = FREE137 **plus ancien** que notre FREE182 ; Roonby 06/10 = FREE201 → version-dependent, pas de set actif concordant frais) · `fisch` (Roonby 17/10 « no codes available », non tranchable) · `anime-battle-rng` (sources syndiquées nerdschalk/allthings.how Aug 6 → pas de 2 sources fraîches indépendantes).
-- **Rotation** : `anime-battle-rng`, `attack-on-titan-revolution`, `project-mugetsu`, `grimoires-era`, `rivals`, `haze-piece`, `fisch`, `steal-a-brainrot`, `grow-a-garden`, `anime-vanguards` → dates `catalogVerify` rafraîchies au 24/10. Constat : listes gonflées non-prunables faute de **preuve d'expiration** (§4).
-- **News** : GTA 6 (preload 12/11 + sortie 19/11 confirmés, rien de neuf Newswire → evergreen inchangé) · **Aniimo « Season 1 Part II » annoncé pour le 29/10** (à préparer, data-driven) · FC : titre EA live = **FC 26** (promos FoF / Answer the Call) → décision naming toujours en attente de Peter.
-- **Régénération** : **aucune** — aucun contenu/data du site modifié ce run (seuls les fichiers mémoire `tools/*.json` + queue + rapport ont changé). Donc pas de `build_site`/`build_home`/`build_codes_json`/`build_sitemap` (éviter toute churn non justifiée, §3/§29).
-- **QC** : JSON `code-watch.json` + `editorial-intelligence.json` valides, 0 null byte, 0 fichier site touché. Arbre git propre avant run.
+- **2 content gaps comblés (codes réellement ajoutés)** :
+  - **sell-fries** : 0 → **1 code** `Halloween` (100 Candies, événement Halloween). Confirmé par **3 sources** (ProGameGuides 24/10, Dexerto 21/10, games.gg 21/10). Les 4 autres codes listés par ProGameGuides seul (4000Members, FreeCandy, CoolCode, 3000members) = **mono-source → non publiés**.
+  - **tap-simulator-reborn** : 0 → **2 codes** `BOO!` + `SPOOKY` (Halloween, potions + Candy Corn). Confirmé par **2 sources** (Dexerto 20/10 « 1ʳᵉ fournée de codes », games.gg 21/10). ⚠️ Casse de SPOOKY ambiguë (Dexerto minuscule vs games.gg majuscules) → **majuscules retenues**, à reconfirmer.
+  - Les deux pages affichaient « aucun code / tout code annoncé est faux » → **récit inversé proprement** (hero, intro, FAQ + JSON-LD, panneaux, ItemList). Synchro complète : page HTML + `const GAMES` (index) + cartes `tous-les-codes` + `data/codes.json` + sitemap.
+- **8 hot games vérifiés** (tous **confirmés inchangés** ou **MONITOR**, `verifDate` rafraîchie au 25/10) :
+  - blox-fruits (Dexerto 19/10 « no new codes »), **blue-lock-rivals** (Dexerto 18/10 = **4 codes identiques** à la page ; SPOOKY/SKELETON/AIKUCHANGES = roonby seul → MONITOR), volleyball-legends (Samlover 13/10 = 3 codes identiques, reste expiré), anime-vanguards (14 codes anniv maintenus, pas de preuve d'expiration), fisch (ChapelTroubles = roonby mono-source → MONITOR), grow-a-garden, king-legacy (DigitalCitizen = 9 codes concordants), blade-ball.
+- **Rotation (stubs)** : ride-a-dino, my-gaming-cafe, steal-from-the-rich, chop-a-forest → **confirmés SANS code** (roonby/absence de source). button-rng-2 & chicken-farm → source au même nom mais **identité non confirmée (pas de placeId)** → kill switch « à revérifier ». 16 pages marquées `catalogVerify=25/10`.
+- **Régénération** : `build_codes_json` (codes changés) + `build_home` (sections + GAMES) + `build_sitemap`. QC complet OK (0 null byte, div équilibrés, JSON/XML valides, GA4 présent, cache cohérent).
 
 ---
 
 ## 🔥 URGENT
 
-- **GTA 6** — ~4 semaines avant lancement (**19/11/2026**). Préchargement **12/11** confirmé. Surveiller le **Rockstar Newswire** à chaque run (heure de préchargement, patch day-one). **UPDATE evergreen uniquement**, séparer CONFIRMÉ / RAPPORTÉ / RUMEUR. Rien de neuf au 24/10.
+- **GTA 6** — ~3,5 semaines avant lancement (**19/11/2026**). Préchargement **12/11** confirmé. Surveiller le **Rockstar Newswire** à chaque run (heure de préchargement, patch day-one). **UPDATE evergreen uniquement**, séparer CONFIRMÉ / RAPPORTÉ / RUMEUR. Rien de neuf confirmé au 25/10.
 
 ## 🟢 À PUBLIER
 
-_(rien)_ — aucun nouveau jeu Roblox avec preuve d'intérêt multi-source **+ codes réels** cette nuit ; tous les conflits de codes sous kill switch.
+_(rien de nouveau)_ — les 2 content gaps mûrs (sell-fries, tap-simulator-reborn) ont été **publiés ce run**. Aucun nouveau jeu avec preuve d'intérêt multi-source **+ codes réels** cette nuit.
 
 ## 🛠️ À METTRE À JOUR (candidats near-ready)
 
-- **grimoires-era — PÉRIMÉE (conflit 3 voies CONFIRMÉ 24/10).** games.gg (NEXTCHAPTER!/MINING!/UPDATE0.6!/SYSTEMREWORK!) vs pocketgamer+pockettactics (REVAMPSOON!/25SPINS!/2025BOOSTS!/CLOVER) vs page (codes release). Rebuild via **source officielle** (Trello/Discord) requis. Ne rien éditer tant que non tranché.
+- **grimoires-era — PÉRIMÉE (conflit 3 voies CONFIRMÉ).** games.gg vs pocketgamer/pockettactics vs page. Rebuild via **source officielle** (Trello/Discord) requis. Ne rien éditer tant que non tranché.
 - **rivals — décalage de version.** Page FREE182 ; Insider 04/10=FREE137 (stale) ; Roonby 06/10=FREE201. Besoin d'une **source fraîche marquant clairement l'actif** + concordance.
-- **anime-battle-rng — gonflée (~35 codes).** Sources trouvées = contenu syndiqué (nerdschalk = allthings.how, Aug 6). Besoin 2 sources **indépendantes + fraîches** pour pruner (avec preuve d'expiration).
-- **attack-on-titan-revolution — gonflée (21 codes).** Dexerto 02/10 ne confirme que 2 actifs (WZINS+TERRA70K). Preuve d'expiration requise avant tout prune (§4 : jamais de suppression sans preuve).
-- **haze-piece** — PHANTOMSHIP + OKUCHI désormais à **2 sources** (Roonby 13/10 + TheSpike 06/10 stale) → toujours <3 requis OU officiel. Non ajoutés.
+- **tap-simulator-reborn — casse SPOOKY à reconfirmer** (publié en majuscules ; Dexerto l'affichait en minuscules). + 1 jeu souvent case-insensitive.
+- **sell-fries — 4 codes mono-source** (4000Members, FreeCandy, CoolCode, 3000members ProGameGuides) → publier si 2ᵉ source concordante.
+- **anime-battle-rng (~35) / attack-on-titan-revolution (21)** — gonflées, sources syndiquées/partielles → **preuve d'expiration** requise avant tout prune (§4).
 - **type-soul — page vide.** ~55 codes (Insider Gaming) mais **sans récompenses** → 2-3 sources propres avec récompenses.
-- **noob-incremental — MUST_UPDATE.** Rewrite + resync `const ACTIVE`/compteur.
-- **8 pages à liste vide** (`100-days-at-sea`, `basketball-zero`, `be-a-brainrot`, `encounters`, `garden-tower-defense`, `pet-simulator-x`, `royale-high`, `slap-battles`) : republier **seulement** là où ≥2 sources concordent.
+- **8 pages à liste vide historiques** (100-days-at-sea, basketball-zero, be-a-brainrot, encounters, garden-tower-defense, pet-simulator-x, royale-high, slap-battles) : republier **seulement** là où ≥2 sources concordent.
 
 ## 🟡 À PRÉPARER / DÉCISION PETER
 
-- **🆕 Aniimo « Season 1 Part II » (29/10)** : gros update annoncé (Update 1.019 déjà sorti le 15/10 = 1ᵉʳ nouveau monstre). **PRÉPARER** la mise à jour `data/aniimo/` + `build_site` **après** l'update officiel. Spécifics non confirmés au 24/10 → aucune invention avant confirmation.
-- **⚠️ Naming FC 27 vs FC 26** : titre EA live = **FC 26** (promos FoF / Answer the Call, calendrier actif). Bloque la couverture Ultimate Team. **À trancher.**
-- **⚠️ Jeu de la semaine (§30)** : marqueurs `<!-- FEATURED-WEEK-START/END -->` **toujours absents du code** → étape du lundi non exécutable. À Peter : ajouter les marqueurs ou confirmer le mécanisme.
-- **⚠️ Listes gonflées** (décision maintien vs rebuild) : anime-battle-rng (~35), anime-astral-simulator (~100), dragon-blox (~82), attack-on-titan-revolution (21).
-- **CTA manquant** : `codes-da-hood.html`, `codes-rivals.html`, `codes-knockout.html` n'ont **pas** de `data-cta="guidelink"` (pré-existant, pas de guide/tier dédié). À ajouter si des pages dédiées existent.
-- **Note cache obsolète dans CLAUDE.md** : dit « main.js?v=19 » mais le site est à **v47** (hors `/avatar/` off-limits). À corriger dans CLAUDE.md.
+- **🆕 Aniimo « Season 1 Part II » (29/10)** : update confirmé pour le **29 octobre**. **PRÉPARER** l'ingestion data-driven (`data/aniimo/` → `build_site.py`) **APRÈS** l'officiel. Détails encore spéculatifs (playnews) → **aucune invention** avant confirmation.
+- **⚠️ Naming FC 27 vs FC 26** : titre EA live = **FC 26** (promos actives, TOTY/Cornerstones). Vertical du site = `fc-27`. **Décision en attente de Peter** → couverture Ultimate Team bloquée.
+- **⚠️ Jeu de la semaine (§30)** : marqueurs `<!-- FEATURED-WEEK-START/END -->` **toujours absents du code** → étape du lundi non exécutable. À Peter.
+- **⚠️ Listes gonflées** (maintien vs rebuild) : anime-battle-rng (~35), anime-astral-simulator (~100), dragon-blox (~82), aotr (21).
+- **CTA manquant** : codes-da-hood, codes-rivals, codes-knockout (pas de `data-cta="guidelink"` — pas de guide/tier dédié).
 
-## 👀 À REVÉRIFIER (conflits non tranchés)
+## 👀 À REVÉRIFIER (conflits / identité non tranchés)
 
-- **Codes** : grimoires-era (conflit 3 voies), rivals (version en retard), anime-battle-rng (gonflée, sources syndiquées), attack-on-titan-revolution (gonflée), haze-piece (PHANTOMSHIP/OKUCHI 2/3), grand-piece-online (tailor vouchers), da-hood (ESKETIT 1 source), garden-tower-defense (conflit), aniimo (aniimazingfroyo = khelnow 04/10 actif vs mein-mmo 09/10 expiré).
-- **Rotation en retard** : anime-astral-simulator, dragon-blox (>40 j) ; ~30 jeux jamais entrés dans catalogVerify (beaucoup = stubs sans codes).
+- **Identité ambiguë (désambiguïser via placeId)** : **button-rng-2** (robloxden liste 8 codes pour un « Button RNG 2 » — même jeu ?), **chicken-farm** (Dexerto/Insider listent un « Chicken Farm » — même jeu ?). Nos pages = « aucun code ». Ne pas éditer sans confirmation placeId/universeId.
+- **Codes** : grimoires-era (3 voies), rivals (version), fisch (ChapelTroubles mono-source), blue-lock-rivals (SPOOKY/SKELETON/AIKUCHANGES = roonby seul), anime-battle-rng, aotr, haze-piece (PHANTOMSHIP/OKUCHI 2/3), aniimo (aniimazingfroyo khelnow vs mein-mmo).
+- **Rotation en retard** : anime-astral-simulator, dragon-blox (>45 j) ; clones anime (anime-rng, anime-fighters, anime-fighting-simulator(-reborn), anime-reversal, scroll-a-brainrot, heroes-battlegrounds) à désambiguïser (placeId) — codes = jalons longue durée, pas de preuve d'expiration donc inchangés.
 
-## 📅 PRIORITÉS PROCHAIN RUN (15h / 22h / 05h 25/10)
+## 📅 PRIORITÉS PROCHAIN RUN (15h / 22h / 05h 26/10)
 
 1. **Aniimo** : suivre l'update **29/10** (préparation data-driven ; ne rien publier avant l'officiel).
-2. **grimoires-era** : source officielle (Trello/Discord) → rebuild propre (seul moyen de trancher le conflit 3 voies).
-3. **rivals** : source fraîche marquant l'actif → combler le décalage FREE182→FREE201.
-4. **anime-battle-rng / attack-on-titan-revolution** : 2 sources **indépendantes + fraîches** + preuve d'expiration → élaguer.
-5. **haze-piece** : 3ᵉ source → PHANTOMSHIP + OKUCHI.
-6. **Hot games** : GPO (tailor vouchers), Da Hood (ESKETIT), Anime Vanguards (fin 2ᵉ anniversaire ?), Fisch (FischFright 3), GAG (FREESEED = GaG2, hors sujet page originale).
-7. **GTA 6** Newswire (préchargement/day-one) · **FC 26** (si naming tranché).
+2. **tap-simulator-reborn** : reconfirmer la casse de `SPOOKY` ; **sell-fries** : 2ᵉ source pour les 4 codes mono-source.
+3. **button-rng-2 / chicken-farm** : désambiguïser via placeId/universeId → publier si identité confirmée.
+4. **grimoires-era** (source officielle) · **rivals** (source fraîche actif).
+5. **Hot games** : GPO (tailor vouchers), Da Hood (ESKETIT), Fisch (ChapelTroubles 2ᵉ source), Blue Lock (SPOOKY/SKELETON 2ᵉ source).
+6. **GTA 6** Newswire (préchargement/day-one) · **FC 26** (si naming tranché).
 
 ---
 
