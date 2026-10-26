@@ -893,7 +893,7 @@
     }
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
-  "lastRun": "2026-10-24",
+  "lastRun": "2026-10-26",
   "_pending2026-07-18": [
     "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
     "blade-ball: SERPENT -> Beebom le dit expire, PT+GamesRadar actif, conserve actif",
@@ -970,8 +970,8 @@
     "a-prioriser-prochain-run": "Fruit Battlegrounds (paliers + OPE V2), Anime Last Stand (liste active exacte), Fisch (fluide), + long tail. Ficher Anime Origins & +1 Speed Keyboard Escape avec Chrome."
   },
   "meta": {
-    "updated": "2026-10-05",
-    "lastRun": "2026-10-05",
+    "updated": "2026-10-26",
+    "lastRun": "2026-10-26",
     "lastFullRun": "2026-10-10"
   },
   "_pending2026-08-29": {
@@ -1083,20 +1083,20 @@
     "dress-to-impress": "2026-09-28",
     "anime-last-stand": "2026-09-29",
     "royale-high": "2026-09-27",
-    "100-days-at-sea": "2026-09-25",
+    "100-days-at-sea": "2026-10-26",
     "99-nights-in-the-forest": "2026-09-27",
     "all-star-tower-defense": "2026-09-26",
     "anime-battle-rng": "2026-10-24",
     "driving-empire": "2026-09-28",
     "blox-fruits": "2026-10-25",
-    "grow-a-garden": "2026-10-25",
-    "steal-a-brainrot": "2026-10-24",
-    "anime-vanguards": "2026-10-25",
-    "blue-lock-rivals": "2026-10-25",
-    "volleyball-legends": "2026-10-25",
+    "grow-a-garden": "2026-10-26",
+    "steal-a-brainrot": "2026-10-26",
+    "anime-vanguards": "2026-10-26",
+    "blue-lock-rivals": "2026-10-26",
+    "volleyball-legends": "2026-10-26",
     "king-legacy": "2026-10-25",
-    "fisch": "2026-10-25",
-    "pet-simulator-99": "2026-09-25",
+    "fisch": "2026-10-26",
+    "pet-simulator-99": "2026-10-26",
     "dragon-blox": "2026-09-10",
     "brainrot-evolution": "2026-10-01",
     "a-dusty-trip": "2026-10-08T05:00:00Z",
@@ -1130,7 +1130,7 @@
     "rivals": "2026-10-24",
     "muscle-legends": "2026-09-22T05:00:00Z",
     "skibidi-masters-tower-defense": "2026-09-25",
-    "grow-a-garden-2": "2026-09-21",
+    "grow-a-garden-2": "2026-10-26",
     "knockout": "2026-10-22",
     "character-rng": "2026-10-21",
     "jules-rng": "2026-09-22T05:00:00Z",
@@ -1191,7 +1191,7 @@
     "be-a-brainrot": "2026-09-21",
     "tower-defense-simulator": "2026-09-25",
     "world-fighters": "2026-09-22T05:00:00Z",
-    "hypershot": "2026-09-22T05:00:00Z",
+    "hypershot": "2026-10-26",
     "squid-game-x": "2026-09-25",
     "blockspin": "2026-09-23",
     "illegal-soccer": "2026-09-23",
@@ -1215,13 +1215,13 @@
     "survive-zombie-arena": "2026-09-24",
     "my-gym": "2026-09-25",
     "anime-zero": "2026-10-12",
-    "steal-an-egg": "2026-10-15",
+    "steal-an-egg": "2026-10-26",
     "run-a-restaurant": "2026-10-16",
     "animal-hospital": "2026-10-16",
     "noob-incremental": "2026-10-16",
     "vv-ultimatum": "2026-10-16",
     "fifa-super-soccer": "2026-10-16",
-    "spin-a-soccer-card": "2026-10-16",
+    "spin-a-soccer-card": "2026-10-26",
     "ride-a-dino": "2026-10-25",
     "my-gaming-cafe": "2026-10-25",
     "steal-from-the-rich": "2026-10-25",
@@ -1945,5 +1945,28 @@
     "haze-piece": "PHANTOMSHIP + OKUCHI desormais a 2 sources (Roonby 13/10 + TheSpike 06/10 stale) -> toujours <3 requis OU officiel. Non ajoutes. MONITOR.",
     "aniimo": "aniimazingfroyo conflit maintenu (khelnow 04/10 actif vs mein-mmo 09/10 expire = 1 source fraiche d expiration chacun). Aucune action sur page data-driven.",
     "news": "GTA6 preload 12/11 + sortie 19/11 confirmes, rien de neuf sur Newswire -> evergreen inchange. Aniimo \"Season 1 Part II\" update annonce 29/10 (a preparer, data-driven, specifics non confirmes). FC: titre EA live = FC 26 (promo FoF/Answer the Call) -> decision naming FC27/FC26 tjs en attente de Peter."
+  },
+  "_notes2026-10-26": {
+    "run": "05h",
+    "verifies_hot": [
+      "steal-a-brainrot(OK=BESTBRAINROTEVER, dexerto12/10)",
+      "volleyball-legends(OK UPDATE_91/REPLAYS/MVP, samlover13/10)",
+      "grow-a-garden(OK RDCAward/BEANORLEAVE10, pocketgamer03/10+dexerto)",
+      "blue-lock-rivals(OK 4 codes, roonby mod 24/10 corrobore)",
+      "pet-simulator-99(OK 0 code, nerdschalk)",
+      "anime-vanguards(OK, notre liste 25/10 plus fraiche que sources)",
+      "fisch(OK 3/4 confirmes dexerto; MarianaIsGoingCrazy gardee)",
+      "steal-an-egg(OK 0 code, pas de systeme de codes - destructoid 22/10)"
+    ],
+    "changements": [
+      "hypershot: ONEBILLION retire (expire, confirme Dexerto.fr 01/10 + Dexerto.com, 2 sources). Page -> 0 code actif.",
+      "100-days-at-sea: SPOOKY (20 Pearls) AJOUTE (Halloween). Confirme Pro Game Guides 24/10 + Roblox Den 26/10. Page -> 1 code actif."
+    ],
+    "candidats_a_surveiller": [
+      "100-days-at-sea RIVAL: conflit (actif RobloxDen, inactif ProGameGuides) -> non publie",
+      "fisch CAVERN / ChapelTroubles(NEW roonby): source unique contradictoire -> non publie, surveiller FischFright",
+      "spin-a-soccer-card: conflit total (tryhardguides='release'; dexerto01/09=STAR-STORM/THUNDER-DIAMOND) -> kill switch, page reste a 0, revérifier",
+      "hypershot: sixstoreys annonce '6 new codes' mais contredit par 2 sources fiables (0 actif) -> ignore"
+    ]
   }
 }

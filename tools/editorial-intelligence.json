@@ -3,13 +3,13 @@
  "version": 1,
  "created": "2026-09-22",
  "meta": {
-  "updated": "2026-10-25",
-  "lastRun": "2026-10-25",
-  "runType": "05h-full-maintenance (dimanche)",
-  "note": "Run 05h dim 25/10: 2 content gaps combles (sell-fries +1 code Halloween 3 sources ; tap-simulator-reborn +2 codes BOO!/SPOOKY 2 sources). 8 hot games verifies (tous inchanges/monitor, verifDate rafraichie). 6 stubs rotation traites. Kill switch maintenu: grimoires-era (conflit 3 voies), rivals (version), anime-battle-rng/aotr (gonflees sans preuve d'expiration), button-rng-2/chicken-farm (identite ambigue). GTA6/Aniimo/FC26: surveillance.",
-  "lastUpdate": "2026-10-16T05:30:00Z",
-  "topicsCount": 54,
-  "derniereMiseAJour": "2026-10-24"
+  "updated": "2026-10-26",
+  "lastRun": "2026-10-26",
+  "runType": "05h-full-maintenance (lundi)",
+  "note": "Run 05h lun 26/10: 2 corrections codes (hypershot -ONEBILLION expire ; 100-days +SPOOKY). 12 hot/rotation verifies (confirmes inchanges, verifDate 26/10). Aniimo reverifie (15 codes OK, mein-mmo 09/10). GTA6 evergreen inchange (preload 12/11, sortie 19/11). Jeu de la semaine bloque (marqueurs FEATURED-WEEK absents). FC naming en attente Peter. Rotation backlog 151.",
+  "lastUpdate": "2026-10-26T05:00:00Z",
+  "topicsCount": 61,
+  "derniereMiseAJour": "2026-10-26"
  },
  "topics": [
   {
@@ -1691,6 +1691,44 @@
    "url": "",
    "prochaineAction": "15h/22h: Aniimo S1 Part II (29/10, data-driven, ne rien publier avant l'officiel) ; grimoires-era source officielle ; rivals source fraiche ; desambiguiser button-rng-2 & chicken-farm via placeId.",
    "notes": "Hot verifies (confirmes inchanges/monitor): blox-fruits (Dexerto 19/10 'no new'), blue-lock-rivals (Dexerto 18/10 = 4 codes identiques; SPOOKY/SKELETON/AIKUCHANGES roonby seul -> MONITOR), volleyball-legends (Samlover 13/10 identique), anime-vanguards (14 codes anniv, pas de preuve d'expiration), fisch (ChapelTroubles mono-source roonby -> MONITOR), grow-a-garden, king-legacy, blade-ball. Stubs: ride-a-dino/my-gaming-cafe/steal-from-the-rich/chop-a-forest confirmes SANS code; button-rng-2 & chicken-farm = source same-name mais identite non confirmee (pas de placeId) -> kill switch 'a reverifier'. GTA6 evergreen inchange (preload 12/11, sortie 19/11). FC live=FC26 (naming en attente Peter). Steal an Egg toujours viral (page existante)."
+  },
+  {
+   "id": "run-2026-10-26-05h",
+   "jeu": "(run log)",
+   "sujet": "Run 05h full 26/10 (lundi) - 2 corrections codes (hypershot -ONEBILLION expire ; 100-days +SPOOKY Halloween) + 12 hot/rotation verifies + Aniimo reverifie",
+   "categorie": "run-log",
+   "premiereDetection": "2026-10-26",
+   "derniereVerification": "2026-10-26",
+   "statut": "PUBLISHED",
+   "importance": "haute",
+   "confiance": "HIGH",
+   "sources": [
+    "Dexerto",
+    "ProGameGuides",
+    "RobloxDen",
+    "Nerdschalk",
+    "Samlover",
+    "Destructoid",
+    "mein-mmo",
+    "TryhardGuides",
+    "Roonby"
+   ],
+   "sourceOriginale": "Run planifie 05h (lundi)",
+   "trendScore": 0,
+   "potentielSEO": "1 code mort retire + 1 code live ajoute (fraicheur) ; verifDate rafraichie sur 12 pages ; Aniimo verifie",
+   "pagesZoneblox": [
+    "codes-hypershot.html (ONEBILLION->expire, 0 actif)",
+    "codes-100-days-at-sea.html (+SPOOKY, 1 actif)",
+    "11 codes-*.html verifDate 26/10",
+    "data/aniimo/codes.json",
+    "data/codes.json",
+    "sitemap.xml",
+    "tools/code-watch.json"
+   ],
+   "articleCree": false,
+   "url": "",
+   "prochaineAction": "15h/22h + 05h 27/10: Aniimo S1 Part II (29/10, data-driven apres l'officiel) ; FischFright (ChapelTroubles/CAVERN 2e source) ; spin-a-soccer-card & rotation backlog (151 en retard) ; grimoires-era/rivals ; GTA6 Newswire (preload 12/11).",
+   "notes": "CHANGEMENTS: hypershot ONEBILLION retire (expire, 2 sources Dexerto.fr 01/10 + Dexerto.com) -> page 0 code ; 100-days-at-sea SPOOKY ajoute (20 Pearls, Halloween ; 2 sources ProGameGuides 24/10 + RobloxDen 26/10). CONFIRMES INCHANGES (verifDate 26/10): steal-a-brainrot (BESTBRAINROTEVER, Dexerto 12/10), volleyball-legends (UPDATE_91/REPLAYS/MVP), grow-a-garden (RDCAward/BEANORLEAVE10, 2 sources), blue-lock-rivals (4 codes, roonby mod 24/10), pet-simulator-99 (0 code), anime-vanguards (14 codes, notre liste plus fraiche), fisch (3/4 confirmes Dexerto), steal-an-egg (0 - pas de systeme de codes), grow-a-garden-2 (4 codes = ProGameGuides 14/10). CANDIDATS MONITOR: 100-days RIVAL (conflit), fisch CAVERN/ChapelTroubles (mono-source), spin-a-soccer-card (conflit total -> kill switch). Aniimo: 15 codes reconfirmes (mein-mmo 09/10), aniimazingfroyo expire mono-source US-only -> surveille. GTA6 inchange. FC naming (FC27 live vs vertical) tjrs en attente Peter. Jeu de la semaine: marqueurs FEATURED-WEEK absents du HTML -> etape non executable, escalade Peter. Rotation backlog 151 pages (chronique)."
   }
  ]
 }
