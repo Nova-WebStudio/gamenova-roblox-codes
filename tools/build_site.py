@@ -79,7 +79,7 @@ def header(active=""):
           '<div class="nav-menu"><a href="/games/gta-6/updates/">📰 Actualités</a><a href="/games/gta-6/guides/">📖 Infos & preview</a>'
           '<a href="/games/gta-6/videos/">🎬 Trailers</a></div></div>'
         + '<div class="nav-item"><a href="/games/fc-27/">FC 27<span class="nav-caret">▾</span></a>'
-          '<div class="nav-menu"><a href="/games/fc-27/updates/">📰 Actualités</a><a href="/games/fc-27/guides/">📖 Infos & preview</a>'
+          '<div class="nav-menu"><a href="/games/fc-27/updates/">📰 Actualités</a><a href="/games/fc-27/guides/">📖 Guides & tutos</a>'
           '<a href="/games/fc-27/videos/">🎬 Trailers</a></div></div>'
         + '<a href="/games/"%s>Tous les jeux</a>' % ac("games")
         + '<a href="/avatar/"%s>Avatars</a>' % ac("avatars")
@@ -95,7 +95,7 @@ def header(active=""):
         '<a href="/games/gta-6/updates/">📰 Actualités</a><a href="/games/gta-6/guides/">📖 Infos & preview</a>'
         '<a href="/games/gta-6/videos/">🎬 Trailers</a>'
         '<span class="mob-group">FC 27</span>'
-        '<a href="/games/fc-27/updates/">📰 Actualités</a><a href="/games/fc-27/guides/">📖 Infos & preview</a>'
+        '<a href="/games/fc-27/updates/">📰 Actualités</a><a href="/games/fc-27/guides/">📖 Guides & tutos</a>'
         '<a href="/games/fc-27/videos/">🎬 Trailers</a>'
         '<span class="mob-group">Plus</span>'
         '<a href="/games/">Tous les jeux</a><a href="/avatar/">Avatars</a><a href="/ugc-gratuits.html">UGC gratuits</a>')
@@ -764,6 +764,10 @@ def build_guides(g, data):
 # ---------- rendu : tier list ----------
 def build_tierlist(g, data):
     slug = g["slug"]
+    lead = data.get("lead", "les meilleures créatures")
+    title_noun = data.get("titleNoun", "meilleures créatures")
+    roles_title = data.get("rolesTitle", "🎯 Meilleurs choix par rôle")
+    roles_intro = data.get("rolesIntro", "Une bonne équipe mélange au moins 3 rôles (DPS, Heal, Support, Break, Regen).")
     tiers_html = ""
     for t in data.get("tiers", []):
         chips = "".join('<span class="pill" style="background:var(--surface-2)">%s</span>' % e_att(x) for x in t.get("entries", []))
@@ -783,7 +787,7 @@ def build_tierlist(g, data):
     entries = [x for t in data.get("tiers", []) for x in t.get("entries", [])]
     itemlist = json.dumps({"@context": "https://schema.org", "@type": "ItemList", "name": "Tier list %s" % g["name"],
         "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": x} for i, x in enumerate(entries)]}, ensure_ascii=False)
-    hero = ghero(g, "Tier list %s : les meilleures créatures" % e_att(g["name"]),
+    hero = ghero(g, "Tier list %s : %s" % (e_att(g["name"]), e_att(lead)),
         '<span class="pill">🔄 Vérifié le <strong style="color:var(--text);margin-left:4px">%s</strong></span>'
         '<span class="pill">✍️ L\'équipe Zoneblox</span>' % fr_date(data.get("updated", "")))
     body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Tier list", None)]) +
@@ -791,16 +795,16 @@ def build_tierlist(g, data):
         '<p class="prose" style="margin-top:18px">%s</p>'
         '<section class="panel"><div class="panel-head"><h2>🏆 Classement</h2></div>%s</section>'
         '%s'
-        '<section class="panel"><div class="panel-head"><h2>🎯 Meilleurs choix par rôle</h2></div>'
-        '<p class="sub">Une bonne équipe mélange au moins 3 rôles (DPS, Heal, Support, Break, Regen).</p>'
+        '<section class="panel"><div class="panel-head"><h2>%s</h2></div>'
+        '<p class="sub">%s</p>'
         '<div class="steps">%s</div></section>'
         '%s'
         '</div><aside class="side">%s</aside></div>') % (
-        e_att(data.get("methodology", "")), tiers_html, elements_panel(data),
+        e_att(data.get("methodology", "")), tiers_html, elements_panel(data), e_att(roles_title), e_att(roles_intro),
         roles_html, sources_html(data.get("sources", [])), related_box(g, "tier-list"))
     ld = [itemlist, crumb_ld([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], "/games/%s/" % slug), ("Tier list", "/games/%s/tier-list/" % slug)])]
-    htmlp = page("Tier list %s (%s %d) — meilleures créatures | Zoneblox" % (g["name"], FR_MONTHS[datetime.date.today().month], datetime.date.today().year),
-        "Tier list %s : les meilleures créatures classées et les meilleurs choix par rôle, méta de lancement croisée entre plusieurs sources." % g["name"],
+    htmlp = page("Tier list %s (%s %d) — %s | Zoneblox" % (g["name"], FR_MONTHS[datetime.date.today().month], datetime.date.today().year, title_noun),
+        data.get("metaDesc", "Tier list %s : les meilleures créatures classées et les meilleurs choix par rôle, méta de lancement croisée entre plusieurs sources." % g["name"]),
         SITE + "/games/%s/tier-list/" % slug, body, active="games", extra_ld=ld)
     write("games/%s/tier-list/index.html" % slug, htmlp)
     return SITE + "/games/%s/tier-list/" % slug

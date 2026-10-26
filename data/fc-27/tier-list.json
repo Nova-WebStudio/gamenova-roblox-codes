@@ -1,0 +1,95 @@
+{
+  "game": "fc-27",
+  "updated": "2026-10-26",
+  "confidence": "MEDIUM",
+  "lead": "les meilleurs joueurs",
+  "titleNoun": "meilleurs joueurs",
+  "rolesTitle": "🎯 Meilleurs choix par poste",
+  "rolesIntro": "La méta évolue à chaque promo : voici les profils les plus utilisés par poste au 26/10/2026 (méta communautaire, indicative).",
+  "methodology": "Deux lectures complémentaires. Le « Classement » reprend les notes globales OFFICIELLES d'EA Sports (fait objectif). Les « choix par poste » reflètent la MÉTA communautaire de début de cycle (U7BUY, 21/10/2026) : en Ultimate Team, la jouabilité (vitesse, dribble, PlayStyles) prime souvent sur la note brute. Rafraîchi à chaque promo.",
+  "sources": [
+    "https://www.ea.com/games/ea-sports-fc/fc-27/news/fc27-ratings-top-27",
+    "https://realsport101.com/article/fc-27-top-100-player-ratings-haaland-mbapp-putellas-lead-list",
+    "https://www.u7buy.com/blog/fc-27-meta-players/"
+  ],
+  "roleColors": {
+    "Attaquant": "#ff5f80",
+    "Ailier": "#ffbd4a",
+    "Milieu": "#4d9bff",
+    "Défenseur": "#35e0a1",
+    "Gardien": "#9aa0c6"
+  },
+  "tiers": [
+    {
+      "label": "91",
+      "color": "#ffd24a",
+      "entries": [
+        "Alexia Putellas",
+        "Erling Haaland",
+        "Kylian Mbappé"
+      ],
+      "note": "Les 3 meilleures notes globales de FC 27 (notes officielles EA)."
+    },
+    {
+      "label": "90",
+      "color": "#c9b3ff",
+      "entries": [
+        "Aitana Bonmatí",
+        "Harry Kane",
+        "Jude Bellingham",
+        "Khadija Shaw",
+        "Lamine Yamal",
+        "Michael Olise",
+        "Ousmane Dembélé"
+      ],
+      "note": "Élite 90 OVR (notes officielles EA). Une note élevée ne garantit pas une carte « méta » en jeu (voir ci-dessous)."
+    }
+  ],
+  "rolePicks": [
+    {
+      "role": "Attaquant",
+      "picks": [
+        "Kylian Mbappé",
+        "Ousmane Dembélé",
+        "Karim Adeyemi (OTW)"
+      ],
+      "why": "Vitesse, finition et séparation — Mbappé est la référence en Avant-centre ; Dembélé l'option technique."
+    },
+    {
+      "role": "Ailier",
+      "picks": [
+        "Lamine Yamal",
+        "Yan Diomande (OTW)",
+        "Claudia Pina"
+      ],
+      "why": "Dribble et agilité pour déborder ou rentrer dans l'axe ; Diomande pour la transition explosive."
+    },
+    {
+      "role": "Milieu",
+      "picks": [
+        "Aitana Bonmatí",
+        "Bruno Fernandes",
+        "Sakina Karchaoui",
+        "Georgia Stanway"
+      ],
+      "why": "Création en CAM (difficile à presser) et profils box-to-box équilibrés en CM."
+    },
+    {
+      "role": "Défenseur",
+      "picks": [
+        "William Pacho",
+        "Maxence Lacroix (OTW)",
+        "Xavi Espart (FS)"
+      ],
+      "why": "Polyvalence défensive, vitesse de récupération et physique, adaptés aux lignes hautes."
+    },
+    {
+      "role": "Gardien",
+      "picks": [
+        "Joan García",
+        "Thibaut Courtois"
+      ],
+      "why": "Gabarit, réflexes et placement — solides sur les tirs classiques."
+    }
+  ]
+}

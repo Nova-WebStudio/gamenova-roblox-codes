@@ -19,7 +19,7 @@
     "Nintendo Switch",
     "Nintendo Switch 2"
   ],
-  "status": "upcoming",
+  "status": "released",
   "officialWebsite": "https://www.ea.com/games/ea-sports-fc/fc-27",
   "monogram": "FC",
   "accent": [
@@ -41,10 +41,10 @@
     },
     {
       "type": "guides",
-      "label": "Infos & preview",
+      "label": "Guides & tutos",
       "icon": "📖",
       "status": "available",
-      "blurb": "Nouveautés gameplay, éditions & prix, The Grounds."
+      "blurb": "Méta joueurs, SBC & solutions, tutos Ultimate Team et guides pour progresser."
     },
     {
       "type": "videos",
@@ -64,8 +64,8 @@
       "type": "tier-list",
       "label": "Tier list",
       "icon": "📊",
-      "status": "soon",
-      "blurb": "Meilleurs joueurs / méta — à venir."
+      "status": "available",
+      "blurb": "Classement par notes officielles + méta par poste en Ultimate Team."
     }
   ],
   "officialLinks": {
