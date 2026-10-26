@@ -41,8 +41,7 @@
    "url": "/games/bike-universe/",
    "source": "standalone",
    "platforms": [
-    "PC / Console",
-    "Mobile"
+    "Roblox"
    ],
    "genres": [
     "Course / Monde ouvert"
@@ -59,7 +58,7 @@
    "cts": [
     "Guides"
    ],
-   "platformLabel": "PC / Console · Mobile",
+   "platformLabel": "Roblox",
    "genreLabel": "Course / Monde ouvert"
   },
   {
@@ -68,8 +67,7 @@
    "url": "/games/dont-splash/",
    "source": "standalone",
    "platforms": [
-    "PC / Console",
-    "Mobile"
+    "Roblox"
    ],
    "genres": [
     "Horreur"
@@ -86,7 +84,7 @@
    "cts": [
     "Guides"
    ],
-   "platformLabel": "PC / Console · Mobile",
+   "platformLabel": "Roblox",
    "genreLabel": "Horreur"
   },
   {
@@ -152,8 +150,7 @@
    "url": "/games/the-hollow/",
    "source": "standalone",
    "platforms": [
-    "PC / Console",
-    "Mobile"
+    "Roblox"
    ],
    "genres": [
     "Événement Halloween / Survie"
@@ -171,7 +168,7 @@
     "Suivi de l'événement",
     "Guides"
    ],
-   "platformLabel": "PC / Console · Mobile",
+   "platformLabel": "Roblox",
    "genreLabel": "Événement Halloween / Survie"
   },
   {

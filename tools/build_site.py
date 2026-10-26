@@ -259,6 +259,8 @@ def derive_genres(genre_str):
 
 def platforms_of_standalone(game):
     labels = " ".join(game.get("platforms", [])).lower()
+    if "roblox" in labels:
+        return ["Roblox"]
     out = []
     if any(k in labels for k in ["pc","steam","epic","playstation","ps5","xbox","console","switch"]): out.append("PC / Console")
     if any(k in labels for k in ["ios","android","mobile"]): out.append("Mobile")
