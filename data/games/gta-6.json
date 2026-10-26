@@ -62,5 +62,10 @@
       "status": "soon",
       "blurb": "À la sortie du jeu."
     }
-  ]
+  ],
+  "officialLinks": {
+    "website": "https://www.rockstargames.com/VI",
+    "x": "https://x.com/RockstarGames",
+    "facebook": "https://www.facebook.com/RockstarGames"
+  }
 }

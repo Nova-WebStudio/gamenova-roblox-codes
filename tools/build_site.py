@@ -21,7 +21,7 @@ import json, os, glob, html, datetime, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://zoneblox.com"
 GA = "G-FEL71QVHNL"
-CSSV = "8"
+CSSV = "9"
 FR_MONTHS = ["", "janvier", "février", "mars", "avril", "mai", "juin", "juillet",
              "août", "septembre", "octobre", "novembre", "décembre"]
 
@@ -465,6 +465,38 @@ def build_directory(games):
     return SITE + "/games/"
 
 # ---------- rendu : hub d'un jeu ----------
+def official_links_box(g):
+    """Encadré réutilisable \"Liens officiels du jeu\" (rendu serveur, sans JS/lib).
+    Lit g[\"officialLinks\"] (objet optionnel) ; repli sur officialWebsite.
+    N\'affiche QUE les boutons dont le lien existe. Multigaming (pas de règle Roblox en dur)."""
+    ol = dict(g.get("officialLinks") or {})
+    if not ol and g.get("officialWebsite"):
+        ow = g["officialWebsite"]
+        if "roblox.com" in ow:
+            ol["roblox"] = ow
+        else:
+            ol["website"] = ow
+    order = [("roblox","🎮","Jouer sur Roblox",True),("website","🌐","Site officiel",False),
+             ("discord","💬","Discord officiel",False),("x","𝕏","Suivre sur X",False),
+             ("facebook","📘","Facebook",False),("youtube","▶️","YouTube",False)]
+    btns = []
+    for key, ico, label, primary in order:
+        url = ol.get(key)
+        if not url:
+            continue
+        cls = "ol-btn ol-primary" if primary else "ol-btn"
+        btns.append('<a class="%s" href="%s" target="_blank" rel="noopener noreferrer">'
+                    '<span class="ol-ic" aria-hidden="true">%s</span>%s</a>'
+                    % (cls, e(url), ico, e(label)))
+    if not btns:
+        return ""
+    return ('<section class="panel official-links" aria-labelledby="ol-title">'
+            '<h2 id="ol-title">🔗 Liens officiels du jeu</h2>'
+            '<div class="ol-btns">%s</div>'
+            '<p class="ol-note">Liens vérifiés vers les pages officielles du jeu et de son éditeur.</p>'
+            '</section>') % "".join(btns)
+
+
 def build_hub(g):
     slug = g["slug"]
     meta = []
@@ -492,9 +524,8 @@ def build_hub(g):
             cards.append('<span class="ct-card soon"><span class="ic">%s</span>'
                 '<span><h3>%s <span style="font-size:.7rem;color:var(--muted-2)">· bientôt</span></h3>'
                 '<p>%s</p></span></span>' % (ct["icon"], e(ct["label"]), e(ct.get("blurb", ""))))
-    # official link
-    off = ('<span class="pill">🔗 <a href="%s" rel="nofollow noopener" target="_blank" style="color:var(--text)">Site officiel</a></span>'
-           % e(g["officialWebsite"])) if g.get("officialWebsite") else ""
+    # official links box (encadré réutilisable, rendu serveur)
+    obox = official_links_box(g)
     body = (crumb_html([("Accueil", "/"), ("Jeux", "/games/"), (g["name"], None)]) +
         '<section class="ghero">%s<div class="info"><h1>%s</h1>'
         '<div class="meta">%s %s</div></div></section>'
@@ -505,7 +536,7 @@ def build_hub(g):
         '<section class="panel"><h2>À propos d\'%s</h2><p class="prose">%s</p>'
         '<p class="prose">%s</p></section>'
         '%s') % (
-        cover_html(g), e(g["name"]), "".join(meta), off,
+        cover_html(g), e(g["name"]), "".join(meta), obox,
         e(g.get("description", "")), ct_nav,
         e(g["name"]), e(g["name"]), "".join(cards),
         e(g["name"]), e(g.get("description", "")), e(g.get("releaseNote", "")),

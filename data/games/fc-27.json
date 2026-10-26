@@ -67,5 +67,9 @@
       "status": "soon",
       "blurb": "Meilleurs joueurs / méta — à venir."
     }
-  ]
+  ],
+  "officialLinks": {
+    "website": "https://www.ea.com/games/ea-sports-fc/fc-27",
+    "x": "https://x.com/EASPORTSFC"
+  }
 }
