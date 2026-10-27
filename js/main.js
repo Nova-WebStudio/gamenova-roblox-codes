@@ -3,6 +3,8 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+'1-venom-evolution': 'https://tr.rbxcdn.com/180DAY-f06fb48cf43e99da09f87ebe493c47d3/768/432/Image/Webp/noFilter',
+'hike-for-eggs': 'https://tr.rbxcdn.com/180DAY-a6bcd7b24166a2835b6f5aeaeade1c99/768/432/Image/Webp/noFilter',
   'ride-a-dino': 'https://tr.rbxcdn.com/180DAY-f8fecae0178a0050091a98a328c31ef4/768/432/Image/Webp/noFilter',
   '1-assassin-leveling': 'https://tr.rbxcdn.com/180DAY-ea4e60e626388a7b28472db2de1dfbd2/768/432/Image/Webp/noFilter',
   '1-money-per-click': 'https://tr.rbxcdn.com/180DAY-5a80f4f442272cce1d9decd9486f88da/768/432/Image/Webp/noFilter',
@@ -218,7 +220,10 @@ function initMobileNav() {
 }
 
 /* ---- Search index ---- */
-const GAMES_INDEX = [{ name: 'Ride a Dino', slug: 'ride-a-dino', emoji: '🦕', codes: 0 },
+const GAMES_INDEX = [
+{ name: '+1 Venom Evolution', slug: '1-venom-evolution', emoji: '⚔️', codes: 6 },
+{ name: 'Hike For Eggs', slug: 'hike-for-eggs', emoji: '🥚', codes: 0 },
+{ name: 'Ride a Dino', slug: 'ride-a-dino', emoji: '🦕', codes: 0 },
 { name: '+1 Assassin Leveling', slug: '1-assassin-leveling', emoji: '🗡️', codes: 4 },
 { name: '+1 Money Per Click', slug: '1-money-per-click', emoji: '💸', codes: 1 },
 { name: '+1 Aura for Anime', slug: '1-aura-for-anime', emoji: '🌀', codes: 0 },

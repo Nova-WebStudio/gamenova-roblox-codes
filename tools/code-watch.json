@@ -1229,7 +1229,9 @@
   "button-rng-2": "2026-10-25",
   "chicken-farm": "2026-10-25",
   "sell-fries": "2026-10-25",
-  "tap-simulator-reborn": "2026-10-25"
+  "tap-simulator-reborn": "2026-10-25",
+  "1-venom-evolution": "2026-10-27",
+  "hike-for-eggs": "2026-10-27"
  },
  "_catalogVerifyNote": "Suivi de la ROTATION quotidienne (ETAPE 2ter): date de derniere verif approfondie par slug. Les slugs ABSENTS de cet objet = jamais verifies en profondeur = priorite maximale du prochain lot. Jeux flagges 'a reverifier' laisses ABSENTS expres (a-one-piece-game, anime-adventures, anime-fighters, anime-fighting-simulator, anime-fighting-simulator-reborn, anime-rangers-x, anime-reversal, anime-rift-tower-defense, anime-rng, scroll-a-brainrot, world-fighters, heroes-battlegrounds).",
  "_pending2026-09-05": {
@@ -1988,5 +1990,15 @@
   "non_fait": [
    "Rotation approfondie 15-20 jeux: NON realisee (sources de codes massivement recyclees/perimees ce run -> verification fiable impossible sans risque; kill switch applique). Backlog rotation reste important (>150 pages >10j, ~30 jamais verifiees). A reprendre avec sources fraiches (Dexerto a jour) et desambiguisation placeId des clones anime."
   ]
+ },
+ "_notes2026-10-27-ajouts": {
+  "run": "session interactive (apres 05h)",
+  "nouveaux_jeux": [
+   "+1 Venom Evolution (slug 1-venom-evolution): LA TOTALE - page codes (6 codes confirmes Dexerto 26/10 + RobloxDen 27/10, dont HALLOWEEN/UPDATE2 event), guide complet, tier list de progression. Integre: GAMES, GAMES_INDEX, ROBLOX_THUMBS, tous-les-codes, guides, tier-lists, sitemap. Miniature reelle rbxcdn.",
+   "Hike For Eggs (slug hike-for-eggs): LA TOTALE - page codes (AUCUN code confirme = honnete, pas d'invention), guide complet, tier list de progression. Meme integration. Miniature reelle rbxcdn."
+  ],
+  "featured": "steal-an-egg mis en Jeu du moment (date GAMES -> 27 oct. 2026).",
+  "cache": "js/main.js modifie (GAMES_INDEX+ROBLOX_THUMBS) -> bump main.js?v=47 -> v=48 (186 pages).",
+  "tier_lists": "Type 'progression/priorites' (choix Peter), clairement provisoires, sans classement de force invente (jeux trop recents)."
  }
 }

@@ -17,6 +17,32 @@
 
 ---
 
+## ✅ FAIT — AJOUT INTERACTIF 27/10 (2 nouveaux jeux + Jeu du moment)
+
+- **+1 Venom Evolution** (slug `1-venom-evolution`) — **la totale** : page codes (**6 codes** confirmés Dexerto 26/10 + RobloxDen 27/10, dont les codes d'Halloween HALLOWEEN/UPDATE2), **guide complet**, **tier list de progression** (provisoire). Intégré partout (GAMES, GAMES_INDEX, ROBLOX_THUMBS, tous-les-codes, guides, tier-lists, sitemap) + liens croisés. Miniature réelle rbxcdn.
+- **Hike For Eggs** (slug `hike-for-eggs`) — **la totale** : page codes **honnête (aucun code confirmé)**, **guide complet**, **tier list de progression** (provisoire). Même intégration. Miniature réelle rbxcdn.
+- **steal-an-egg** passé en **Jeu du moment** sur l'accueil (date GAMES → 27 oct. 2026).
+- **Tier lists** = type « progression / priorités » (choix Peter), clairement **provisoires**, sans classement de force inventé (jeux trop récents).
+- `js/main.js` modifié (GAMES_INDEX + ROBLOX_THUMBS) → **cache bumpé main.js?v=47 → v=48** (186 pages). Régénération (build_site/home/codes_json/sitemap) + QC complet OK (0 null byte, div équilibrés, node --check main.js OK, sitemap 418 URLs).
+
+---
+
+## 🎃 COUVERTURE HALLOWEEN 2026 (programme — règle « guides d'événements », CLAUDE.md)
+
+> **Règle désormais permanente** : chaque event/MAJ d'un hotGame doit être couvert par un guide/section de guide (UPDATE before CREATE), **détails confirmés uniquement**.
+> **État au 27/10** : events Halloween **confirmés existants** sur plusieurs jeux suivis, MAIS les agrégateurs servent massivement des **données 2025 recyclées** → spécifics 2026 (dates/récompenses/pets) **NON publiés** tant que non confirmés sur **source fraîche/officielle** (Discord/Trello/X du jeu, ou média daté 2026). Kill switch respecté.
+
+| Jeu (suivi) | Event Halloween | Guide cible | Statut |
+|---|---|---|---|
+| **Grow a Garden** | « Ghoul Garden » (Part II évoquée) | `guides/grow-a-garden.html` → section « Événement Halloween » | ⏳ À vérifier 2026 (sources vues = 2025) |
+| **Fisch** | « FischFright » (annuel) | `guides/fisch.html` → section event | ⏳ À vérifier 2026 (FischFright 3 ?) |
+| **Steal a Brainrot** | Brainrots Halloween / « Haunted/Witch Fuse » | `guides/steal-a-brainrot.html` → section event | ⏳ À vérifier 2026 (sources faibles) |
+| **Adopt Me** | Event Halloween (+ Part 2) | `guides/adopt-me.html` → section event | ⏳ À vérifier 2026 |
+| **100-days-at-sea** | Code `SPOOKY` (Halloween) | page codes (déjà fait 26/10) | ✅ Code publié ; guide event optionnel |
+| Autres hotGames | à scanner chaque run | — | 🔎 Scan continu (règle standing) |
+
+**Action** : à chaque run, confirmer les détails 2026 via source fiable **avant** d'écrire ; dès confirmation → ajouter une **section « Événement Halloween en cours »** datée (début/fin) au guide existant du jeu. Retirer la section à la fin de l'event.
+
 ## 🔥 URGENT
 
 - **GTA 6** — ~3,2 semaines avant lancement (**19/11/2026**). Préchargement **12/11** confirmé (Forbes 26/10 via BusinessWire), mais **heure de préchargement et taille de fichier toujours non officielles**. **Rien de neuf confirmé au 27/10**. ⚠️ **« Official news update » rapporté pour le 29/10** (gamerant, non vérifiable en primaire) → **surveiller le Newswire chaque run**. **UPDATE evergreen uniquement**, séparer CONFIRMÉ / RAPPORTÉ / RUMEUR.

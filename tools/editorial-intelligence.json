@@ -6,7 +6,7 @@
   "updated": "2026-10-27",
   "lastRun": "2026-10-27",
   "runType": "05h-full-maintenance (mardi)",
-  "note": "Run 05h mar 27/10: FC 27 Ultimate Scream (Halloween) PUBLIE sur SBC-solutions + Meta (promo live 23/10->06/11, DCE Woltemade 85, cartes Raphinha 90 etc. ; FUT.GG 22/10). anime-last-stand reverifie (3 codes OK, Dexerto 24/10 -> verifDate 27/10). Hot games (blox-fruits, grow-a-garden, steal-a-brainrot, blade-ball) croises: stables, sources recyclees -> pas de changement (kill switch). fruit-battlegrounds: conflit source stale -> non modifie, a reverifier. GTA6 evergreen inchange (preload 12/11, sortie 19/11 ; Forbes 26/10 sans nouveaute officielle ; 'news update 29/10' RAPPORTE gamerant non verifie). Aniimo S1 Part II (29/10) roadmap confirmee (Whisperwake Isles, 51 nouveaux Aniimo, PvP) -> MONITOR, ingestion APRES officiel. Jeu de la semaine: mardi, N/A.",
+  "note": "Run 05h mar 27/10: FC 27 Ultimate Scream (Halloween) PUBLIE sur SBC-solutions + Meta (promo live 23/10->06/11, DCE Woltemade 85, cartes Raphinha 90 etc. ; FUT.GG 22/10). anime-last-stand reverifie (3 codes OK, Dexerto 24/10 -> verifDate 27/10). Hot games (blox-fruits, grow-a-garden, steal-a-brainrot, blade-ball) croises: stables, sources recyclees -> pas de changement (kill switch). fruit-battlegrounds: conflit source stale -> non modifie, a reverifier. GTA6 evergreen inchange (preload 12/11, sortie 19/11 ; Forbes 26/10 sans nouveaute officielle ; 'news update 29/10' RAPPORTE gamerant non verifie). Aniimo S1 Part II (29/10) roadmap confirmee (Whisperwake Isles, 51 nouveaux Aniimo, PvP) -> MONITOR, ingestion APRES officiel. Jeu de la semaine: mardi, N/A. | +ajout interactif 27/10: 2 nouveaux jeux la totale (+1 Venom Evolution, Hike For Eggs) + steal-an-egg en Jeu du moment.",
   "lastUpdate": "2026-10-26T05:00:00Z",
   "topicsCount": 61,
   "derniereMiseAJour": "2026-10-26"
@@ -1763,6 +1763,92 @@
    "url": "rapport-zoneblox-2026-10-27.md",
    "prochaineAction": "Voir PRIORITES PROCHAIN RUN dans EDITORIAL-QUEUE.md (Aniimo 29/10, FC27 Team 2 ~30/10, GTA6 Newswire, rotation backlog, fruit-battlegrounds a reverifier).",
    "notes": "1 promo FC27 publiee (Ultimate Scream, 2 guides data-driven). 1 code-page reverifiee (anime-last-stand, verifDate 27/10). Hot games croises stables (sources recyclees -> pas de changement). fruit-battlegrounds laisse en l'etat (conflit source stale). Regen OK, QC OK."
+  },
+  {
+   "id": "halloween-2026-coverage",
+   "jeu": "Multi (hotGames)",
+   "sujet": "Couverture des events Halloween 2026 par guides (règle standing guides d'événements)",
+   "categorie": "evenement saisonnier / programme editorial",
+   "premiereDetection": "2026-10-27",
+   "derniereVerification": "2026-10-27",
+   "statut": "UPDATE_REQUIRED",
+   "importance": "haute",
+   "confiance": "moyenne",
+   "sources": [
+    "pockettactics (ghoul garden - 2025)",
+    "progameguides",
+    "findingdulcinea",
+    "iggm (part II - 2025)",
+    "dexerto"
+   ],
+   "sourceOriginale": "demande Peter 27/10 + scan hotGames",
+   "potentielSEO": "tres eleve (requetes saisonnieres Halloween, fort trafic)",
+   "trendScore": 80,
+   "pagesZoneblox": [
+    "guides/grow-a-garden.html",
+    "guides/fisch.html",
+    "guides/steal-a-brainrot.html",
+    "guides/adopt-me.html",
+    "codes-100-days-at-sea.html"
+   ],
+   "articleCree": false,
+   "url": "",
+   "prochaineAction": "Confirmer les DETAILS 2026 (dates/recompenses/pets) sur source fraiche/officielle (Discord/Trello/X ou media date 2026) AVANT publication. Puis UPDATE before CREATE: ajouter une section 'Evenement Halloween en cours' datee au guide existant de chaque hotGame concerne. Retirer a la fin de l'event.",
+   "notes": "27/10: events Halloween CONFIRMES existants (Grow a Garden Ghoul Garden, Fisch FischFright, Steal a Brainrot brainrots Halloween, Adopt Me). MAIS web pollue par donnees 2025 recyclees (pockettactics=11-25 oct 2025; iggm Part II=25 oct 2025) -> specifics 2026 NON confirmes -> RIEN publie (kill switch, pas d'invention). 100-days-at-sea: code SPOOKY Halloween deja publie (26/10, 2 sources 2026). Regle 'guides d'evenements' ajoutee a CLAUDE.md (standing, tous les runs)."
+  },
+  {
+   "categorie": "nouveau jeu",
+   "premiereDetection": "2026-10-27",
+   "derniereVerification": "2026-10-27",
+   "statut": "PUBLISHED",
+   "importance": "moyenne",
+   "confiance": "haute",
+   "potentielSEO": "moyen-eleve",
+   "trendScore": null,
+   "articleCree": true,
+   "id": "venom-evolution-2026-10-27",
+   "jeu": "+1 Venom Evolution",
+   "sujet": "Nouveau jeu ajoute (la totale) - codes + guide + tier list",
+   "sources": [
+    "dexerto.com (26/10)",
+    "robloxden.com (27/10)",
+    "roblox.com (officiel)"
+   ],
+   "sourceOriginale": "demande Peter + Roblox officiel",
+   "pagesZoneblox": [
+    "codes-1-venom-evolution.html",
+    "guides/1-venom-evolution.html",
+    "tier-list/1-venom-evolution.html"
+   ],
+   "url": "/codes-1-venom-evolution.html",
+   "prochaineAction": "Suivre les codes (events Halloween HALLOWEEN/UPDATE2 peuvent expirer). Completer la tier list des evolutions quand des noms/seuils fiables existent.",
+   "notes": "6 codes confirmes 2 sources. Jeu de progression/combat (Bottled Potential), World 2 existe. Miniature reelle rbxcdn."
+  },
+  {
+   "categorie": "nouveau jeu",
+   "premiereDetection": "2026-10-27",
+   "derniereVerification": "2026-10-27",
+   "statut": "PUBLISHED",
+   "importance": "moyenne",
+   "confiance": "moyenne",
+   "potentielSEO": "moyen-eleve",
+   "trendScore": null,
+   "articleCree": true,
+   "id": "hike-for-eggs-2026-10-27",
+   "jeu": "Hike For Eggs",
+   "sujet": "Nouveau jeu ajoute (la totale) - page codes honnete (aucun code) + guide + tier list",
+   "sources": [
+    "roblox.com (officiel)"
+   ],
+   "sourceOriginale": "demande Peter + Roblox officiel",
+   "pagesZoneblox": [
+    "codes-hike-for-eggs.html",
+    "guides/hike-for-eggs.html",
+    "tier-list/hike-for-eggs.html"
+   ],
+   "url": "/codes-hike-for-eggs.html",
+   "prochaineAction": "Surveiller l'apparition d'un systeme de codes. Completer la tier list des 18 paliers/mutations quand une source fiable existe.",
+   "notes": "AUCUN code confirme (honnete, pas d'invention). Jeu grimpe/vol d'oeufs/collection (100+ animaux, 18 paliers chevre->dragon). Miniature reelle rbxcdn."
   }
  ]
 }

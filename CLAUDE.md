@@ -241,6 +241,19 @@ Mettre la vraie URL dans **les 3 endroits** : `ROBLOX_THUMBS` (js/main.js), `THU
 
 ---
 
+## 🎃 Guides d'ÉVÉNEMENTS & de MISES À JOUR (demande de Peter, 27 oct. 2026) — STANDING
+
+**Règle permanente, à exécuter à CHAQUE run (05h / 15h / 22h) :** pour **tous les jeux suivis de près (hotGames)**, repérer les **mises à jour et événements** en cours (événement saisonnier type **Halloween**, grosse update, collab, nouvelle zone/mécanique, event limité…) et **les COUVRIR par un guide dédié ou une section de guide** — pas seulement mettre à jour les codes.
+
+Procédure :
+1. À chaque run, pour chaque hotGame, vérifier s'il y a un **event / update notable confirmé** (source fiable, voir §sourcing). L'event Halloween en cours (oct. 2026) est l'exemple type : il **doit être couvert** sur chaque hotGame qui en a un.
+2. **UPDATE before CREATE** : si un guide existe déjà pour le jeu, y ajouter/rafraîchir une **section « Événement en cours »** (ou un guide `-halloween`/`-event` dédié uniquement si l'intention SEO est distincte et forte). Ne pas multiplier les URLs proches.
+3. **Exactitude d'abord** : ne couvrir qu'un event **confirmé** (officiel ou multi-sources). Pas d'invention de récompenses, dates, objets ou mécaniques. Kill switch si non confirmé → MONITOR dans la queue.
+4. **Datation** : indiquer les dates de début/fin de l'event et la date de vérif. Retirer/archiver la section quand l'event se termine.
+5. **Traçage** : noter chaque couverture d'event dans `editorial-intelligence.json` (statut PUBLISHED/UPDATE_REQUIRED) et le backlog dans `EDITORIAL-QUEUE.md` (section « À METTRE À JOUR »). Les jeux hotGames sans event confirmé = rien à faire (ne pas inventer).
+
+Objectif : capter l'intention de recherche saisonnière/événementielle (fort trafic SEO) et faire de ZoneBlox la référence « event + guide » sur ses jeux phares.
+
 ## Règles de contenu (codes)
 
 - **Minimum 2 sources** avant de publier des codes (Pocket Tactics, Beebom, Pro Game Guides, Destructoid…)

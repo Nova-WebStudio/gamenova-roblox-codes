@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-27",
- "count": 195,
+ "count": 197,
  "games": [
   {
    "name": "Aniimo",
@@ -170,6 +170,52 @@
    ],
    "platformLabel": "Roblox",
    "genreLabel": "Événement Halloween / Survie"
+  },
+  {
+   "name": "+1 Venom Evolution",
+   "slug": "1-venom-evolution",
+   "url": "/codes-1-venom-evolution.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-10-27",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-f06fb48cf43e99da09f87ebe493c47d3/768/432/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Guides",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Hike For Eggs",
+   "slug": "hike-for-eggs",
+   "url": "/codes-hike-for-eggs.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-10-27",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-a6bcd7b24166a2835b6f5aeaeade1c99/768/432/Image/Webp/noFilter",
+   "cts": [
+    "Codes",
+    "Guides",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
   },
   {
    "name": "Ride a Dino",
@@ -3027,7 +3073,7 @@
    "genres": [
     "Simulateur"
    ],
-   "updated": "2026-09-09",
+   "updated": "2026-10-27",
    "new": false,
    "hot": true,
    "thumb": "https://tr.rbxcdn.com/180DAY-875b2a6dc156ce6dd64eb637e73238ce/768/432/Image/Webp/noFilter",
