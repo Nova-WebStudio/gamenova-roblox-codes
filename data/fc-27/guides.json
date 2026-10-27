@@ -1,245 +1,259 @@
 {
-  "game": "fc-27",
-  "updated": "2026-10-26",
-  "sources": [
-    "https://www.ea.com/games/ea-sports-fc/fc-27/news/fc-27-editions-and-release-dates",
-    "https://www.gamingbible.com/news/ea-sports-fc-fifa-27-release-date-price-751881-20260805",
-    "https://www.ea.com/games/ea-sports-fc/fc-27/news/pitch-notes-fc27-gameplay-deep-dive",
-    "https://news.ea.com/press-releases/press-releases-details/2026/Kylian-Mbapp-and-Jude-Bellingham-Welcome-You-to-EA-SPORTS-FC-27-Launching-Worldwide-on-September-25/default.aspx",
-    "https://www.ea.com/games/ea-sports-fc/fc-27/news/fc27-ratings-top-27",
-    "https://realsport101.com/article/fc-27-top-100-player-ratings-haaland-mbapp-putellas-lead-list",
-    "https://www.u7buy.com/blog/fc-27-meta-players/"
-  ],
-  "guides": [
+ "game": "fc-27",
+ "updated": "2026-10-27",
+ "sources": [
+  "https://www.ea.com/games/ea-sports-fc/fc-27/news/fc-27-editions-and-release-dates",
+  "https://www.gamingbible.com/news/ea-sports-fc-fifa-27-release-date-price-751881-20260805",
+  "https://www.ea.com/games/ea-sports-fc/fc-27/news/pitch-notes-fc27-gameplay-deep-dive",
+  "https://news.ea.com/press-releases/press-releases-details/2026/Kylian-Mbapp-and-Jude-Bellingham-Welcome-You-to-EA-SPORTS-FC-27-Launching-Worldwide-on-September-25/default.aspx",
+  "https://www.ea.com/games/ea-sports-fc/fc-27/news/fc27-ratings-top-27",
+  "https://realsport101.com/article/fc-27-top-100-player-ratings-haaland-mbapp-putellas-lead-list",
+  "https://www.u7buy.com/blog/fc-27-meta-players/",
+  "https://www.fut.gg/news/ea-fc-27-ultimate-scream-release-date-times-upgrades/",
+  "https://www.dexerto.com/wikis/ea-fc-27/promo-calendar/"
+ ],
+ "guides": [
+  {
+   "slug": "tout-ce-quon-sait",
+   "title": "EA Sports FC 27 : tout ce qu'il faut savoir",
+   "category": "Infos & preview",
+   "updated": "2026-09-18",
+   "intro": "EA Sports FC 27 sort le 25 septembre 2026. Voici l'essentiel confirmé par EA : date, plateformes, éditions & prix, cover stars et nouveautés phares.",
+   "sections": [
     {
-      "slug": "tout-ce-quon-sait",
-      "title": "EA Sports FC 27 : tout ce qu'il faut savoir",
-      "category": "Infos & preview",
-      "updated": "2026-09-18",
-      "intro": "EA Sports FC 27 sort le 25 septembre 2026. Voici l'essentiel confirmé par EA : date, plateformes, éditions & prix, cover stars et nouveautés phares.",
-      "sections": [
-        {
-          "h": "Date de sortie & accès anticipé",
-          "p": "Sortie mondiale le 25 septembre 2026. Les éditions Ultimate et Ultimate Plus offrent jusqu'à 7 jours d'accès anticipé (dès le 18 septembre). Les membres EA Play ont un essai de 10 heures, et une démo gratuite « FC 27 Lite » est disponible au lancement."
-        },
-        {
-          "h": "Plateformes",
-          "p": "FC 27 sort sur PlayStation 5, PlayStation 4, Xbox Series X|S, Xbox One, PC, Nintendo Switch et Nintendo Switch 2."
-        },
-        {
-          "h": "Les cover stars",
-          "p": "Kylian Mbappé figure sur la jaquette de l'édition Standard ; l'édition Ultimate Plus met en avant Mbappé accompagné de Jude Bellingham. Mbappé est aussi la tête d'affiche d'EA Sports FC Mobile."
-        },
-        {
-          "h": "Les grandes nouveautés",
-          "p": "La nouveauté phare est « The Grounds », un mode social qui emmène le football du stade à la rue. Le gameplay évolue (corners repensés, dribble, défense retravaillée), le mode Carrière revoit son marché des transferts, et Ultimate Team ajoute de nouvelles fonctionnalités."
-        }
-      ],
-      "faqs": [
-        {
-          "q": "Quelle est la date de sortie d'EA Sports FC 27 ?",
-          "a": "Le 25 septembre 2026, avec un accès anticipé dès le 18 septembre pour les éditions Ultimate et Ultimate Plus."
-        },
-        {
-          "q": "Sur quelles plateformes sort FC 27 ?",
-          "a": "PS5, PS4, Xbox Series X|S, Xbox One, PC, Nintendo Switch et Nintendo Switch 2."
-        },
-        {
-          "q": "Qui sont les cover stars de FC 27 ?",
-          "a": "Kylian Mbappé (édition Standard) et Mbappé + Jude Bellingham (édition Ultimate Plus)."
-        }
-      ]
+     "h": "Date de sortie & accès anticipé",
+     "p": "Sortie mondiale le 25 septembre 2026. Les éditions Ultimate et Ultimate Plus offrent jusqu'à 7 jours d'accès anticipé (dès le 18 septembre). Les membres EA Play ont un essai de 10 heures, et une démo gratuite « FC 27 Lite » est disponible au lancement."
     },
     {
-      "slug": "editions-prix",
-      "title": "FC 27 : éditions et prix (Standard, Ultimate, Ultimate Plus)",
-      "category": "Infos & preview",
-      "updated": "2026-09-18",
-      "intro": "EA Sports FC 27 se décline en trois éditions. Voici les prix et différences confirmés par EA.",
-      "sections": [
-        {
-          "h": "Les trois éditions et leurs prix",
-          "p": "Édition Standard : 70 $ (69,99 £). Édition Ultimate : 100 $ (99,99 £). Édition Ultimate Plus : 140 $ (139,99 £). Chaque édition contient l'expérience complète de FC 27 ; l'Ultimate et l'Ultimate Plus ajoutent l'accès anticipé et du contenu en jeu supplémentaire."
-        },
-        {
-          "h": "L'Ultimate Plus : une fenêtre limitée",
-          "p": "L'édition Ultimate Plus n'était disponible que pendant la fenêtre de précommande « early bird », du 23 juillet au 31 août 2026."
-        },
-        {
-          "h": "Essayer avant d'acheter",
-          "p": "Deux façons de tester : « FC 27 Lite », une démo gratuite et limitée disponible au lancement, et l'essai de 10 heures réservé aux membres EA Play."
-        }
-      ],
-      "faqs": [
-        {
-          "q": "Combien coûte EA Sports FC 27 ?",
-          "a": "70 $ (Standard), 100 $ (Ultimate) et 140 $ (Ultimate Plus). Les deux éditions supérieures ajoutent l'accès anticipé et du contenu bonus."
-        },
-        {
-          "q": "Peut-on essayer FC 27 gratuitement ?",
-          "a": "Oui : la démo « FC 27 Lite » au lancement, et un essai de 10 h pour les membres EA Play."
-        }
-      ]
+     "h": "Plateformes",
+     "p": "FC 27 sort sur PlayStation 5, PlayStation 4, Xbox Series X|S, Xbox One, PC, Nintendo Switch et Nintendo Switch 2."
     },
     {
-      "slug": "nouveautes-gameplay",
-      "title": "FC 27 : les nouveautés de gameplay et « The Grounds »",
-      "category": "Infos & preview",
-      "updated": "2026-09-18",
-      "intro": "EA met l'accent sur plus de contrôle et un jeu plus réactif dans FC 27. Voici les changements confirmés côté gameplay, plus le nouveau mode « The Grounds ».",
-      "sections": [
-        {
-          "h": "The Grounds : le football de la rue au stade",
-          "p": "« The Grounds » est un nouvel environnement social de football, articulé autour d'une place centrale (la Terrace) reliant trois quartiers : Montclair, Zeiza et Parkside. C'est la grande nouveauté mise en avant par EA."
-        },
-        {
-          "h": "Corners repensés",
-          "p": "Les corners offrent un contrôle en temps réel du placement défensif et des intentions offensives, avec plus de liberté de mouvement pour des appels bien chronométrés et une meilleure simulation des têtes à deux joueurs."
-        },
-        {
-          "h": "Attaque plus fluide",
-          "p": "Une meilleure lecture de l'espace et des courses courbées intelligentes : les coéquipiers reconnaissent mieux l'espace et l'intention de passe, avec des appels en soutien (overlap/underlap) automatiques ou à la demande."
-        },
-        {
-          "h": "Dribble et défense retravaillés",
-          "p": "Le « off-balance dribbling » récompense les dribbleurs agiles en conservant l'élan malgré le contact. Côté défense, EA retire les tacles automatiques et réduit l'influence de l'IA pour redonner du poids à la défense manuelle (jockey, tacles bien placés, placement)."
-        },
-        {
-          "h": "Carrière & Ultimate Team",
-          "p": "Le mode Carrière revoit son marché des transferts, tandis qu'Ultimate Team ajoute de nouvelles fonctionnalités (dont la FUT Gallery) ; des améliorations PC sont aussi au programme."
-        }
-      ],
-      "faqs": [
-        {
-          "q": "Qu'est-ce que « The Grounds » dans FC 27 ?",
-          "a": "Un nouveau mode social de football reliant trois quartiers (Montclair, Zeiza, Parkside) autour d'une place centrale — l'ambiance passe du stade à la rue."
-        },
-        {
-          "q": "Qu'est-ce qui change en défense dans FC 27 ?",
-          "a": "EA retire les tacles automatiques et réduit l'influence de l'IA pour privilégier la défense manuelle : jockey, tacles bien timés et bon placement."
-        }
-      ]
+     "h": "Les cover stars",
+     "p": "Kylian Mbappé figure sur la jaquette de l'édition Standard ; l'édition Ultimate Plus met en avant Mbappé accompagné de Jude Bellingham. Mbappé est aussi la tête d'affiche d'EA Sports FC Mobile."
     },
     {
-      "slug": "meilleurs-joueurs-meta",
-      "title": "Méta FC 27 : les meilleurs joueurs du moment (Ultimate Team)",
-      "category": "Méta",
-      "updated": "2026-10-26",
-      "intro": "Qui sont les joueurs méta de FC 27 en Ultimate Team en ce début de cycle ? Voici les cartes les plus utilisées poste par poste au 26 octobre 2026. La méta évolue à chaque promo et mise à jour : cette page est indicative et rafraîchie régulièrement. Les notes sont les notes officielles d'EA Sports ; les choix méta s'appuient sur les classements communautaires récents (U7BUY, 21/10/2026).",
-      "sections": [
-        {
-          "h": "Comment lire cette méta",
-          "p": "« Méta » ne veut pas dire « mieux noté » : en Ultimate Team, la jouabilité (vitesse, dribble, physique, PlayStyles) compte souvent plus que la note globale. Beaucoup de cartes fortes sont des objets évolutifs (OTW « Ones to Watch », Future Stars) qui montent avec la saison. Les choix ci-dessous reflètent la méta communautaire au 26/10/2026 et changeront avec les promos."
-        },
-        {
-          "h": "Attaquants (ST)",
-          "p": "Kylian Mbappé est la référence du poste (vitesse, finition, mouvement, idéal en Avant-centre). Ousmane Dembélé est l'alternative technique (mobilité et dribble pour casser les lignes). Karim Adeyemi (OTW) sert d'option « vitesse pure » pour attaquer la profondeur."
-        },
-        {
-          "h": "Ailiers (LW / RW)",
-          "p": "À droite, Lamine Yamal domine (dribble, agilité, contrôle rapproché), avec Yan Diomande (OTW) comme profil explosif en transition. À gauche, Karim Adeyemi (OTW) pour la vitesse et Claudia Pina comme option technique qui rentre dans l'axe."
-        },
-        {
-          "h": "Milieux (CM / CAM)",
-          "p": "En meneur (CAM), Aitana Bonmatí (dribble/passe, difficile à presser) et Bruno Fernandes (playmaker, vision) sont très prisés. Au milieu (CM), Sakina Karchaoui (mobile, bonne conductrice de balle) et Georgia Stanway (box-to-box équilibrée) ressortent."
-        },
-        {
-          "h": "Défenseurs & latéraux",
-          "p": "En défense centrale, Maxence Lacroix (OTW) associe vitesse de récupération et physique (bon pour les lignes hautes), et William Pacho offre un profil complet contre attaquants rapides comme physiques. Xavi Espart (Future Stars) est un latéral/CDM polyvalent apprécié pour sa mobilité."
-        },
-        {
-          "h": "Gardiens",
-          "p": "Joan García est l'un des gardiens les plus utilisés en compétitif (gabarit, réflexes, placement). Thibaut Courtois reste une valeur sûre en or haut de gamme (grande taille, excellent sur les tirs classiques)."
-        },
-        {
-          "h": "Meilleures notes officielles FC 27",
-          "p": "Côté notes officielles EA (à distinguer de la méta FUT) : Alexia Putellas, Erling Haaland et Kylian Mbappé mènent à 91. Suivent à 90 Aitana Bonmatí, Harry Kane, Jude Bellingham, Khadija Shaw, Lamine Yamal, Michael Olise et Ousmane Dembélé. Une note élevée ne garantit pas une carte « méta » en jeu."
-        }
-      ],
-      "faqs": [
-        {
-          "q": "La méta FC 27 change-t-elle souvent ?",
-          "a": "Oui. Chaque promo Ultimate Team et chaque mise à jour de gameplay peut rebattre les cartes. Cette page est mise à jour régulièrement et datée en haut."
-        },
-        {
-          "q": "Faut-il viser les joueurs les mieux notés ?",
-          "a": "Pas forcément. En Ultimate Team, la jouabilité (vitesse, dribble, physique, PlayStyles) prime souvent sur la note globale : un joueur noté 86 bien typé peut surclasser un 90 moins adapté à votre style."
-        }
-      ]
-    },
-    {
-      "slug": "sbc-solutions",
-      "title": "SBC FC 27 : comment ça marche et nos solutions",
-      "category": "Ultimate Team",
-      "updated": "2026-10-26",
-      "intro": "Les SBC (Squad Building Challenges / Défis de Création d'Équipe) échangent des équipes contre des récompenses : joueurs, packs ou consommables. Voici leur fonctionnement, puis nos solutions pas chères des SBC actifs — ajoutées ici au fil de leurs sorties.",
-      "sections": [
-        {
-          "h": "C'est quoi un SBC ?",
-          "p": "Un SBC te demande de constituer une ou plusieurs équipes respectant des conditions (note d'équipe minimale, alchimie, nombre de joueurs d'un club/pays/championnat, cartes spéciales…). Une fois l'équipe soumise, les joueurs sont « dépensés » et tu reçois la récompense annoncée."
-        },
-        {
-          "h": "Les grands types de SBC",
-          "p": "On distingue surtout : les SBC joueurs (débloquent une carte spéciale), les SBC d'amélioration (packs contre un lot de cartes), les SBC de consommables (contrats, cartes de position) et les SBC événementiels (liés à une promo, durée limitée). Beaucoup sont répétables ou expirent — vérifie toujours la date."
-        },
-        {
-          "h": "Nos solutions pas chères (mise à jour en continu)",
-          "p": "ZoneBlox listera ici les SBC actifs du moment avec une solution économique vérifiée pour chacun. En attendant, deux réflexes utiles : garde des « fodder » (joueurs or 82-86 bon marché) pour les futurs SBC, et utilise tes doublons plutôt que de les revendre à vil prix. Cette rubrique démarre et s'enrichit à chaque nouvelle sortie de SBC."
-        }
-      ],
-      "faqs": [
-        {
-          "q": "Les SBC expirent-ils ?",
-          "a": "Souvent oui : beaucoup de SBC ont une durée limitée (quelques jours à quelques semaines). D'autres sont permanents. La date d'expiration est indiquée en jeu — vérifie-la avant de te lancer."
-        },
-        {
-          "q": "Un SBC vaut-il toujours le coup ?",
-          "a": "Pas toujours. Compare le coût des cartes à dépenser à la valeur de la récompense et à ton besoin réel. Un SBC « joueur » n'est intéressant que s'il améliore vraiment ton équipe ou ton alchimie."
-        }
-      ]
-    },
-    {
-      "slug": "ultimate-team-debutant",
-      "title": "Ultimate Team FC 27 : le guide pour bien débuter",
-      "category": "Tutoriel",
-      "updated": "2026-10-26",
-      "intro": "Nouveau sur Ultimate Team (FUT) dans FC 27 ? Voici l'essentiel pour construire ta première équipe, comprendre l'alchimie et progresser sans gâcher tes pièces.",
-      "sections": [
-        {
-          "h": "Qu'est-ce qu'Ultimate Team ?",
-          "p": "Ultimate Team est le mode où tu bâtis ton propre club à partir de cartes de joueurs obtenues en packs, sur le marché des transferts ou via les SBC. Tu enchaînes ensuite des matchs (contre l'IA ou d'autres joueurs) pour gagner des pièces et des récompenses, et améliorer ton équipe au fil de la saison."
-        },
-        {
-          "h": "L'alchimie (chemistry)",
-          "p": "L'alchimie récompense la cohérence de ton équipe : des joueurs du même club, championnat ou pays, placés à leur poste, gagnent des points d'alchimie qui boostent leurs stats. Construire autour de liens forts (un club ou un championnat dominant) est le moyen le plus simple d'avoir une équipe performante à petit budget."
-        },
-        {
-          "h": "Construire ta première équipe",
-          "p": "Vise d'abord une ossature cohérente (même championnat) plutôt que des stars isolées sans alchimie. Place chaque joueur à son poste naturel, privilégie des profils rapides et bien typés (PlayStyles utiles), et garde des pièces de côté pour remplacer un maillon faible plus tard."
-        },
-        {
-          "h": "Gagner des pièces et des packs",
-          "p": "Les pièces viennent des matchs, des objectifs et de la revente sur le marché. Évite d'ouvrir trop de packs au hasard : à budget égal, acheter les joueurs ciblés sur le marché est souvent plus efficace. Les récompenses hebdomadaires (Rivals, Champions) sont une source régulière de progression."
-        },
-        {
-          "h": "Les modes à connaître",
-          "p": "Division Rivals (classé, récompenses hebdo), Champions (la « Weekend League », plus exigeante) et Squad Battles (contre l'IA, à ton rythme) sont les trois piliers pour farmer récompenses et pièces. Commence par Squad Battles et Rivals pour monter en puissance sans pression."
-        },
-        {
-          "h": "Erreurs de débutant à éviter",
-          "p": "Ne dépense pas tout ton budget le premier jour (les prix baissent souvent après le lancement), ne néglige pas l'alchimie au profit des notes brutes, et ne jette pas tes doublons/cartes 82-86 : ils serviront pour les SBC. Enfin, vérifie toujours la date d'expiration des SBC et objectifs."
-        }
-      ],
-      "faqs": [
-        {
-          "q": "Ultimate Team est-il gratuit ?",
-          "a": "Le mode est inclus dans FC 27, sans achat obligatoire. Des achats optionnels (FC Points pour des packs) existent, mais on peut totalement progresser en jouant et en tradant intelligemment."
-        },
-        {
-          "q": "Faut-il acheter des packs avec de l'argent réel ?",
-          "a": "Non. Beaucoup de joueurs construisent d'excellentes équipes uniquement avec les pièces gagnées en jouant, les récompenses et les SBC. L'ouverture de packs payants reste un pari aléatoire."
-        }
-      ]
+     "h": "Les grandes nouveautés",
+     "p": "La nouveauté phare est « The Grounds », un mode social qui emmène le football du stade à la rue. Le gameplay évolue (corners repensés, dribble, défense retravaillée), le mode Carrière revoit son marché des transferts, et Ultimate Team ajoute de nouvelles fonctionnalités."
     }
-  ]
+   ],
+   "faqs": [
+    {
+     "q": "Quelle est la date de sortie d'EA Sports FC 27 ?",
+     "a": "Le 25 septembre 2026, avec un accès anticipé dès le 18 septembre pour les éditions Ultimate et Ultimate Plus."
+    },
+    {
+     "q": "Sur quelles plateformes sort FC 27 ?",
+     "a": "PS5, PS4, Xbox Series X|S, Xbox One, PC, Nintendo Switch et Nintendo Switch 2."
+    },
+    {
+     "q": "Qui sont les cover stars de FC 27 ?",
+     "a": "Kylian Mbappé (édition Standard) et Mbappé + Jude Bellingham (édition Ultimate Plus)."
+    }
+   ]
+  },
+  {
+   "slug": "editions-prix",
+   "title": "FC 27 : éditions et prix (Standard, Ultimate, Ultimate Plus)",
+   "category": "Infos & preview",
+   "updated": "2026-09-18",
+   "intro": "EA Sports FC 27 se décline en trois éditions. Voici les prix et différences confirmés par EA.",
+   "sections": [
+    {
+     "h": "Les trois éditions et leurs prix",
+     "p": "Édition Standard : 70 $ (69,99 £). Édition Ultimate : 100 $ (99,99 £). Édition Ultimate Plus : 140 $ (139,99 £). Chaque édition contient l'expérience complète de FC 27 ; l'Ultimate et l'Ultimate Plus ajoutent l'accès anticipé et du contenu en jeu supplémentaire."
+    },
+    {
+     "h": "L'Ultimate Plus : une fenêtre limitée",
+     "p": "L'édition Ultimate Plus n'était disponible que pendant la fenêtre de précommande « early bird », du 23 juillet au 31 août 2026."
+    },
+    {
+     "h": "Essayer avant d'acheter",
+     "p": "Deux façons de tester : « FC 27 Lite », une démo gratuite et limitée disponible au lancement, et l'essai de 10 heures réservé aux membres EA Play."
+    }
+   ],
+   "faqs": [
+    {
+     "q": "Combien coûte EA Sports FC 27 ?",
+     "a": "70 $ (Standard), 100 $ (Ultimate) et 140 $ (Ultimate Plus). Les deux éditions supérieures ajoutent l'accès anticipé et du contenu bonus."
+    },
+    {
+     "q": "Peut-on essayer FC 27 gratuitement ?",
+     "a": "Oui : la démo « FC 27 Lite » au lancement, et un essai de 10 h pour les membres EA Play."
+    }
+   ]
+  },
+  {
+   "slug": "nouveautes-gameplay",
+   "title": "FC 27 : les nouveautés de gameplay et « The Grounds »",
+   "category": "Infos & preview",
+   "updated": "2026-09-18",
+   "intro": "EA met l'accent sur plus de contrôle et un jeu plus réactif dans FC 27. Voici les changements confirmés côté gameplay, plus le nouveau mode « The Grounds ».",
+   "sections": [
+    {
+     "h": "The Grounds : le football de la rue au stade",
+     "p": "« The Grounds » est un nouvel environnement social de football, articulé autour d'une place centrale (la Terrace) reliant trois quartiers : Montclair, Zeiza et Parkside. C'est la grande nouveauté mise en avant par EA."
+    },
+    {
+     "h": "Corners repensés",
+     "p": "Les corners offrent un contrôle en temps réel du placement défensif et des intentions offensives, avec plus de liberté de mouvement pour des appels bien chronométrés et une meilleure simulation des têtes à deux joueurs."
+    },
+    {
+     "h": "Attaque plus fluide",
+     "p": "Une meilleure lecture de l'espace et des courses courbées intelligentes : les coéquipiers reconnaissent mieux l'espace et l'intention de passe, avec des appels en soutien (overlap/underlap) automatiques ou à la demande."
+    },
+    {
+     "h": "Dribble et défense retravaillés",
+     "p": "Le « off-balance dribbling » récompense les dribbleurs agiles en conservant l'élan malgré le contact. Côté défense, EA retire les tacles automatiques et réduit l'influence de l'IA pour redonner du poids à la défense manuelle (jockey, tacles bien placés, placement)."
+    },
+    {
+     "h": "Carrière & Ultimate Team",
+     "p": "Le mode Carrière revoit son marché des transferts, tandis qu'Ultimate Team ajoute de nouvelles fonctionnalités (dont la FUT Gallery) ; des améliorations PC sont aussi au programme."
+    }
+   ],
+   "faqs": [
+    {
+     "q": "Qu'est-ce que « The Grounds » dans FC 27 ?",
+     "a": "Un nouveau mode social de football reliant trois quartiers (Montclair, Zeiza, Parkside) autour d'une place centrale — l'ambiance passe du stade à la rue."
+    },
+    {
+     "q": "Qu'est-ce qui change en défense dans FC 27 ?",
+     "a": "EA retire les tacles automatiques et réduit l'influence de l'IA pour privilégier la défense manuelle : jockey, tacles bien timés et bon placement."
+    }
+   ]
+  },
+  {
+   "slug": "meilleurs-joueurs-meta",
+   "title": "Méta FC 27 : les meilleurs joueurs du moment (Ultimate Team)",
+   "category": "Méta",
+   "updated": "2026-10-27",
+   "intro": "Qui sont les joueurs méta de FC 27 en Ultimate Team en ce début de cycle ? Voici les cartes les plus utilisées poste par poste au 27 octobre 2026. La méta évolue à chaque promo et mise à jour : cette page est indicative et rafraîchie régulièrement. Les notes sont les notes officielles d'EA Sports ; les choix méta s'appuient sur les classements communautaires récents (U7BUY, 21/10/2026).",
+   "sections": [
+    {
+     "h": "Comment lire cette méta",
+     "p": "« Méta » ne veut pas dire « mieux noté » : en Ultimate Team, la jouabilité (vitesse, dribble, physique, PlayStyles) compte souvent plus que la note globale. Beaucoup de cartes fortes sont des objets évolutifs (OTW « Ones to Watch », Future Stars) qui montent avec la saison. Les choix ci-dessous reflètent la méta communautaire au 26/10/2026 et changeront avec les promos."
+    },
+    {
+     "h": "Attaquants (ST)",
+     "p": "Kylian Mbappé est la référence du poste (vitesse, finition, mouvement, idéal en Avant-centre). Ousmane Dembélé est l'alternative technique (mobilité et dribble pour casser les lignes). Karim Adeyemi (OTW) sert d'option « vitesse pure » pour attaquer la profondeur."
+    },
+    {
+     "h": "Ailiers (LW / RW)",
+     "p": "À droite, Lamine Yamal domine (dribble, agilité, contrôle rapproché), avec Yan Diomande (OTW) comme profil explosif en transition. À gauche, Karim Adeyemi (OTW) pour la vitesse et Claudia Pina comme option technique qui rentre dans l'axe."
+    },
+    {
+     "h": "Milieux (CM / CAM)",
+     "p": "En meneur (CAM), Aitana Bonmatí (dribble/passe, difficile à presser) et Bruno Fernandes (playmaker, vision) sont très prisés. Au milieu (CM), Sakina Karchaoui (mobile, bonne conductrice de balle) et Georgia Stanway (box-to-box équilibrée) ressortent."
+    },
+    {
+     "h": "Défenseurs & latéraux",
+     "p": "En défense centrale, Maxence Lacroix (OTW) associe vitesse de récupération et physique (bon pour les lignes hautes), et William Pacho offre un profil complet contre attaquants rapides comme physiques. Xavi Espart (Future Stars) est un latéral/CDM polyvalent apprécié pour sa mobilité."
+    },
+    {
+     "h": "Gardiens",
+     "p": "Joan García est l'un des gardiens les plus utilisés en compétitif (gabarit, réflexes, placement). Thibaut Courtois reste une valeur sûre en or haut de gamme (grande taille, excellent sur les tirs classiques)."
+    },
+    {
+     "h": "Promo en cours : Ultimate Scream (cartes fortes)",
+     "p": "La promo d'Halloween Ultimate Scream (Team 1 sortie le 23/10, fin le 06/11/2026) ajoute des cartes boostées utiles en Ultimate Team. En packs, les plus notables sont Raphinha (90, MOC), Cristiano Ronaldo (89, BU), Salma Paralluelo (88, BU), Dominik Szoboszlai (88, MDC) et Cole Palmer (87, MOC), plus des Héros comme Gianfranco Zola (89, BU) et Jaap Stam (88, DC). Un DCE Nick Woltemade (85, MOC) est également disponible. Ces objets Ultimate Scream utilisent parfois une position différente de l'habituelle et bénéficieront d'une amélioration « Beaver Moon » (24/11–01/12). Rappel : ce sont des cartes promo, limitées dans le temps."
+    },
+    {
+     "h": "Meilleures notes officielles FC 27",
+     "p": "Côté notes officielles EA (à distinguer de la méta FUT) : Alexia Putellas, Erling Haaland et Kylian Mbappé mènent à 91. Suivent à 90 Aitana Bonmatí, Harry Kane, Jude Bellingham, Khadija Shaw, Lamine Yamal, Michael Olise et Ousmane Dembélé. Une note élevée ne garantit pas une carte « méta » en jeu."
+    }
+   ],
+   "faqs": [
+    {
+     "q": "La méta FC 27 change-t-elle souvent ?",
+     "a": "Oui. Chaque promo Ultimate Team et chaque mise à jour de gameplay peut rebattre les cartes. Cette page est mise à jour régulièrement et datée en haut."
+    },
+    {
+     "q": "Faut-il viser les joueurs les mieux notés ?",
+     "a": "Pas forcément. En Ultimate Team, la jouabilité (vitesse, dribble, physique, PlayStyles) prime souvent sur la note globale : un joueur noté 86 bien typé peut surclasser un 90 moins adapté à votre style."
+    }
+   ]
+  },
+  {
+   "slug": "sbc-solutions",
+   "title": "SBC FC 27 : comment ça marche et nos solutions",
+   "category": "Ultimate Team",
+   "updated": "2026-10-27",
+   "intro": "Les SBC (Squad Building Challenges / Défis de Création d'Équipe) échangent des équipes contre des récompenses : joueurs, packs ou consommables. Voici leur fonctionnement, puis nos solutions pas chères des SBC actifs — ajoutées ici au fil de leurs sorties.",
+   "sections": [
+    {
+     "h": "C'est quoi un SBC ?",
+     "p": "Un SBC te demande de constituer une ou plusieurs équipes respectant des conditions (note d'équipe minimale, alchimie, nombre de joueurs d'un club/pays/championnat, cartes spéciales…). Une fois l'équipe soumise, les joueurs sont « dépensés » et tu reçois la récompense annoncée."
+    },
+    {
+     "h": "Les grands types de SBC",
+     "p": "On distingue surtout : les SBC joueurs (débloquent une carte spéciale), les SBC d'amélioration (packs contre un lot de cartes), les SBC de consommables (contrats, cartes de position) et les SBC événementiels (liés à une promo, durée limitée). Beaucoup sont répétables ou expirent — vérifie toujours la date."
+    },
+    {
+     "h": "Nos solutions pas chères (mise à jour en continu)",
+     "p": "ZoneBlox liste ici les SBC actifs du moment avec une solution économique vérifiée pour chacun. Pendant la promo Ultimate Scream, le DCE à suivre est Nick Woltemade (85, MOC) : vérifie ses conditions et sa date d'expiration directement en jeu avant de te lancer — on ajoute une solution pas chère dès qu'elle est validée. En attendant, deux réflexes utiles : garde des « fodder » (joueurs or 82-86 bon marché) pour les futurs SBC, et utilise tes doublons plutôt que de les revendre à vil prix. Cette rubrique s'enrichit à chaque nouvelle sortie de SBC."
+    },
+    {
+     "h": "Promo en cours : Ultimate Scream (Halloween)",
+     "p": "La promo d'Halloween Ultimate Scream est active : la Team 1 est sortie le 23 octobre 2026 et la promo se termine le 6 novembre 2026 (la boutique à jetons reste ouverte jusqu'au 13 novembre). Une Team 2 est attendue autour du 30 octobre, sans confirmation d'EA à ce stade. Côté DCE, un défi joueur Nick Woltemade (85, MOC) est disponible pendant la promo, aux côtés de DCE à énigmes, de DCE Ultimate Scream et de DCE Showdown thématiques. Bon à savoir : les cartes Ultimate Scream recevront une amélioration temporaire « Beaver Moon » du 24 novembre au 1er décembre 2026. Les objets issus des DCE sont non échangeables."
+    }
+   ],
+   "faqs": [
+    {
+     "q": "Les SBC expirent-ils ?",
+     "a": "Souvent oui : beaucoup de SBC ont une durée limitée (quelques jours à quelques semaines). D'autres sont permanents. La date d'expiration est indiquée en jeu — vérifie-la avant de te lancer."
+    },
+    {
+     "q": "Un SBC vaut-il toujours le coup ?",
+     "a": "Pas toujours. Compare le coût des cartes à dépenser à la valeur de la récompense et à ton besoin réel. Un SBC « joueur » n'est intéressant que s'il améliore vraiment ton équipe ou ton alchimie."
+    },
+    {
+     "q": "Quels SBC sont actifs en ce moment dans FC 27 ?",
+     "a": "Pendant la promo Ultimate Scream (jusqu'au 6 novembre 2026), un DCE joueur Nick Woltemade (85) est disponible, avec des DCE à énigmes, Ultimate Scream et Showdown thématiques. Les conditions et dates d'expiration sont indiquées en jeu — vérifie-les avant de dépenser tes cartes."
+    }
+   ]
+  },
+  {
+   "slug": "ultimate-team-debutant",
+   "title": "Ultimate Team FC 27 : le guide pour bien débuter",
+   "category": "Tutoriel",
+   "updated": "2026-10-26",
+   "intro": "Nouveau sur Ultimate Team (FUT) dans FC 27 ? Voici l'essentiel pour construire ta première équipe, comprendre l'alchimie et progresser sans gâcher tes pièces.",
+   "sections": [
+    {
+     "h": "Qu'est-ce qu'Ultimate Team ?",
+     "p": "Ultimate Team est le mode où tu bâtis ton propre club à partir de cartes de joueurs obtenues en packs, sur le marché des transferts ou via les SBC. Tu enchaînes ensuite des matchs (contre l'IA ou d'autres joueurs) pour gagner des pièces et des récompenses, et améliorer ton équipe au fil de la saison."
+    },
+    {
+     "h": "L'alchimie (chemistry)",
+     "p": "L'alchimie récompense la cohérence de ton équipe : des joueurs du même club, championnat ou pays, placés à leur poste, gagnent des points d'alchimie qui boostent leurs stats. Construire autour de liens forts (un club ou un championnat dominant) est le moyen le plus simple d'avoir une équipe performante à petit budget."
+    },
+    {
+     "h": "Construire ta première équipe",
+     "p": "Vise d'abord une ossature cohérente (même championnat) plutôt que des stars isolées sans alchimie. Place chaque joueur à son poste naturel, privilégie des profils rapides et bien typés (PlayStyles utiles), et garde des pièces de côté pour remplacer un maillon faible plus tard."
+    },
+    {
+     "h": "Gagner des pièces et des packs",
+     "p": "Les pièces viennent des matchs, des objectifs et de la revente sur le marché. Évite d'ouvrir trop de packs au hasard : à budget égal, acheter les joueurs ciblés sur le marché est souvent plus efficace. Les récompenses hebdomadaires (Rivals, Champions) sont une source régulière de progression."
+    },
+    {
+     "h": "Les modes à connaître",
+     "p": "Division Rivals (classé, récompenses hebdo), Champions (la « Weekend League », plus exigeante) et Squad Battles (contre l'IA, à ton rythme) sont les trois piliers pour farmer récompenses et pièces. Commence par Squad Battles et Rivals pour monter en puissance sans pression."
+    },
+    {
+     "h": "Erreurs de débutant à éviter",
+     "p": "Ne dépense pas tout ton budget le premier jour (les prix baissent souvent après le lancement), ne néglige pas l'alchimie au profit des notes brutes, et ne jette pas tes doublons/cartes 82-86 : ils serviront pour les SBC. Enfin, vérifie toujours la date d'expiration des SBC et objectifs."
+    }
+   ],
+   "faqs": [
+    {
+     "q": "Ultimate Team est-il gratuit ?",
+     "a": "Le mode est inclus dans FC 27, sans achat obligatoire. Des achats optionnels (FC Points pour des packs) existent, mais on peut totalement progresser en jouant et en tradant intelligemment."
+    },
+    {
+     "q": "Faut-il acheter des packs avec de l'argent réel ?",
+     "a": "Non. Beaucoup de joueurs construisent d'excellentes équipes uniquement avec les pièces gagnées en jouant, les récompenses et les SBC. L'ouverture de packs payants reste un pari aléatoire."
+    }
+   ]
+  }
+ ]
 }
