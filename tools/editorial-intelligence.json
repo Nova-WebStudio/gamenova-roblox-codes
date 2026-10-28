@@ -3,13 +3,13 @@
  "version": 1,
  "created": "2026-09-22",
  "meta": {
-  "updated": "2026-10-27",
-  "lastRun": "2026-10-27",
-  "runType": "05h-full-maintenance (mardi)",
-  "note": "Run 05h mar 27/10: FC 27 Ultimate Scream (Halloween) PUBLIE sur SBC-solutions + Meta (promo live 23/10->06/11, DCE Woltemade 85, cartes Raphinha 90 etc. ; FUT.GG 22/10). anime-last-stand reverifie (3 codes OK, Dexerto 24/10 -> verifDate 27/10). Hot games (blox-fruits, grow-a-garden, steal-a-brainrot, blade-ball) croises: stables, sources recyclees -> pas de changement (kill switch). fruit-battlegrounds: conflit source stale -> non modifie, a reverifier. GTA6 evergreen inchange (preload 12/11, sortie 19/11 ; Forbes 26/10 sans nouveaute officielle ; 'news update 29/10' RAPPORTE gamerant non verifie). Aniimo S1 Part II (29/10) roadmap confirmee (Whisperwake Isles, 51 nouveaux Aniimo, PvP) -> MONITOR, ingestion APRES officiel. Jeu de la semaine: mardi, N/A. | +ajout interactif 27/10: 2 nouveaux jeux la totale (+1 Venom Evolution, Hike For Eggs) + steal-an-egg en Jeu du moment.",
-  "lastUpdate": "2026-10-26T05:00:00Z",
-  "topicsCount": 61,
-  "derniereMiseAJour": "2026-10-26"
+  "updated": "2026-10-28",
+  "lastRun": "2026-10-28",
+  "runType": "05h-full-maintenance (mercredi)",
+  "note": "Run 05h mer 28/10: Volleyball Legends mis a jour (Update 93 'Cursed Tournaments' -> codes UPDATE_93/CURSED/TOURNAMENT; UPDATE_91/REPLAYS/MVP+UPDATE_92/MAMORI/PARRY expires; 2 sources concordantes TimeSaver+Roonby 24/10). 5 hotGames reverifies inchanges (blox-fruits, fisch 3/4 OK, steal-a-brainrot, king-legacy match parfait PocketTactics 23/10, grow-a-garden match gfinity 21/10) -> verifDate 28/10. Blue Lock Rivals: NOUVEAU conflit 3 voies (Dexerto SKELETON/AIKUCHANGES vs Insider codes hiver recycles vs notre page codes Halloween) -> KILL SWITCH, non modifie, source officielle requise. Fisch FischFright 2026: AUCUN nouveau code (tous expires, PocketTactics) -> MONITOR, rien a ecrire. GTA6 inchange (sortie 19/11, preload 12/11 confirmes; rien de neuf; 'news update' rapporte 29/10). Aniimo S1 Part II: Part I finit 28/10 23h59 UTC, update 29/10 -> ingestion data APRES officiel. FC27 Ultimate Scream Team 2: 'attendue' ~30/10 (NON confirmee EA) -> pas de publication. Jeu de la semaine: mercredi, N/A.",
+  "lastUpdate": "2026-10-28T05:00:00Z",
+  "topicsCount": 68,
+  "derniereMiseAJour": "2026-10-28"
  },
  "topics": [
   {
@@ -162,7 +162,7 @@
    "sujet": "Date de sortie 19 nov. 2026 (evergreen) + marketing pré-lancement",
    "categorie": "release/marketing",
    "premiereDetection": "2026-05",
-   "derniereVerification": "2026-10-27",
+   "derniereVerification": "2026-10-28",
    "statut": "UPDATED",
    "importance": "haute",
    "confiance": "HIGH",
@@ -180,7 +180,7 @@
    "articleCree": false,
    "url": "/games/gta-6.html",
    "prochaineAction": "Surveiller Rockstar Newswire (heure preload 12/11, patch day-one 19/11). UPDATE evergreen uniquement.",
-   "notes": "27/10: rien de neuf confirme. Forbes 26/10 confirme preload 12/11 (BusinessWire) et sortie 19/11 mais SANS heure de preload ni taille de fichier officielles (heures de deverrouillage PlayStation Store = non officielles). 'Official news update 29/10' = RAPPORTE (gamerant, non verifiable en primaire) -> a surveiller. Trailer 3 (launch trailer) deja couvert (15/10). Evergreen inchange."
+   "notes": "Verifie 28/10: aucune nouveaute officielle (sortie 19/11, preload 12/11 confirmes). 'News update' toujours rapporte pour 29/10 (non primaire). UPDATE evergreen uniquement. Surveiller Rockstar Newswire chaque run."
   },
   {
    "id": "aniimo-codes-sep2026",
@@ -955,8 +955,8 @@
    "sujet": "Drop hebdo candidat EPICSENDOU/ONEMOREWEEK/NELAIKUNEXT",
    "categorie": "codes",
    "premiereDetection": "2026-10-12",
-   "derniereVerification": "2026-10-18",
-   "statut": "UPDATED",
+   "derniereVerification": "2026-10-28",
+   "statut": "MONITOR",
    "importance": "moyenne",
    "confiance": "haute",
    "sources": [
@@ -973,8 +973,8 @@
    ],
    "articleCree": false,
    "url": null,
-   "prochaineAction": "Surveiller rotation hebdo. Re-trancher EPICSENDOU/ONEMOREWEEK/NELAIKUNEXT (conflit actif/expire) au prochain passage.",
-   "notes": "RESOLU 18/10. Ancien set page DONREVAMP/SENDOUNEXT/ACEEATER = EXPIRE (preuve 3 sources fraiches). Nouveau set publie: NELAIKU/HALLOWEEN/WSNAKE/SORRYFORDELAYAIKU (double-confirme Dexerto 18/10 + Twinfinite 17/10, recompenses concordantes). EPICSENDOU/ONEMOREWEEK/NELAIKUNEXT exclus (conflit: Dexerto=expire vs autres=actif, kill switch)."
+   "prochaineAction": "Resoudre via source OFFICIELLE (Discord/Trello/X @ du jeu). Ne pas modifier sur agregateurs conflictuels.",
+   "notes": "RESOLU 18/10. Ancien set page DONREVAMP/SENDOUNEXT/ACEEATER = EXPIRE (preuve 3 sources fraiches). Nouveau set publie: NELAIKU/HALLOWEEN/WSNAKE/SORRYFORDELAYAIKU (double-confirme Dexerto 18/10 + Twinfinite 17/10, recompenses concordantes). EPICSENDOU/ONEMOREWEEK/NELAIKUNEXT exclus (conflit: Dexerto=expire vs autres=actif, kill switch). | 28/10 CONFLIT 3 VOIES: Dexerto(25/10) SKELETON/AIKUCHANGES/NEW ; Insider('aout', codes hiver BAROUSNOWLOCK/SNOWLOCK2 recycles) ; notre page NELAIKU/HALLOWEEN/WSNAKE/SORRYFORDELAYAIKU. Aucune paire concordante -> KILL SWITCH, page inchangee. Codes Halloween probablement expires (fin event 31/10)."
   },
   {
    "id": "anime-zero-launch-2026-10",
@@ -1217,7 +1217,7 @@
    "sujet": "Promo Ultimate Scream (Halloween) + Scream Team 2",
    "categorie": "FUT / promo saisonniere",
    "premiereDetection": "2026-10-18",
-   "derniereVerification": "2026-10-27",
+   "derniereVerification": "2026-10-28",
    "statut": "PUBLISHED",
    "importance": "moyenne-haute",
    "confiance": "haute",
@@ -1238,8 +1238,8 @@
    ],
    "articleCree": true,
    "url": "/games/fc-27/guides/sbc-solutions/",
-   "prochaineAction": "Ajouter la Team 2 (attendue ~30/10, non confirmee EA) et une solution DCE Woltemade verifiee. Fin de promo 06/11 ; boutique jetons 13/11 ; upgrade Beaver Moon 24/11-01/12. Rafraichir a la fin de promo.",
-   "notes": "CORRECTION NAMING (resolue 26/10): la promo Ultimate Scream appartient a FC 27 (jeu courant, sorti 25/09/2026), pas FC 26 (l'attribution FC26 du 18/10 reposait sur un calendrier dexerto perime). 27/10: PUBLIE sur SBC-solutions (promo live + DCE Woltemade 85 MOC) et Meta (cartes fortes Ultimate Scream: Raphinha 90 MOC, Ronaldo 89 BU, Paralluelo 88 BU, Szoboszlai 88 MDC, Palmer 87 MOC, Heros Zola/Stam). Source FUT.GG 22/10, dexerto fc-27."
+   "prochaineAction": "Team 2 'attendue' vendredi 30/10 18:00 UTC (NON confirmee EA, fut.gg). Publier des sortie reelle + 1 solution DCE verifiee. Token store jusqu'au 13/11, upgrade Beaver Moon 24/11->01/12 (confirmes).",
+   "notes": "CORRECTION NAMING (resolue 26/10): la promo Ultimate Scream appartient a FC 27 (jeu courant, sorti 25/09/2026), pas FC 26 (l'attribution FC26 du 18/10 reposait sur un calendrier dexerto perime). 27/10: PUBLIE sur SBC-solutions (promo live + DCE Woltemade 85 MOC) et Meta (cartes fortes Ultimate Scream: Raphinha 90 MOC, Ronaldo 89 BU, Paralluelo 88 BU, Szoboszlai 88 MDC, Palmer 87 MOC, Heros Zola/Stam). Source FUT.GG 22/10, dexerto fc-27. | 28/10: Team 2 non sortie, seulement 'attendue' ~30/10 (fut.gg). Pas de publication (kill switch sur non-confirme)."
   },
   {
    "id": "run-2026-10-19-05h",
@@ -1539,7 +1539,7 @@
    "sujet": "Aniimo Season 1 Part II — gros update annonce le 29/10/2026",
    "categorie": "update",
    "premiereDetection": "2026-10-24",
-   "derniereVerification": "2026-10-27",
+   "derniereVerification": "2026-10-28",
    "statut": "MONITOR",
    "importance": "haute",
    "confiance": "haute",
@@ -1556,8 +1556,8 @@
    ],
    "articleCree": false,
    "url": null,
-   "prochaineAction": "Ingestion data-driven (data/aniimo/ + build_site.py) APRES l'update officiel du 29/10 (creatures, region, codes eventuels). Ne rien inventer avant l'officiel.",
-   "notes": "27/10: roadmap confirmee par la preview officielle des devs (via playnews 20/10): Version 1.1 le 29/10, region Whisperwake Isles (4 zones), 32 nouvelles especes / 51 nouveaux Aniimo, nouveaux Prismana (Whirlbite, Gachapus, Jabster, Sugartini), PvP 1v1 temps reel permanent, Vein Abundance 30/10-06/12. AUCUN nouveau code mentionne. Contenu 'sujet a changement'. Fin Part I: 28/10 23h59 UTC."
+   "prochaineAction": "Part I finit 28/10 23h59 UTC. Update officiel 29/10 -> ingerer data data/aniimo/ APRES officiel (build_site.py). Ne rien inventer.",
+   "notes": "Verifie 28/10: preview devs confirmee (playnews 20/10) - Whisperwake Isles, 51 nouveaux Aniimo, PvP 1v1 permanent, Vein Abundance 30/10->06/12. Aucun nouveau code annonce. En attente de l'officiel du 29/10."
   },
   {
    "id": "aotr-inflated-2026-10-24",
@@ -1849,6 +1849,90 @@
    "url": "/codes-hike-for-eggs.html",
    "prochaineAction": "Surveiller l'apparition d'un systeme de codes. Completer la tier list des 18 paliers/mutations quand une source fiable existe.",
    "notes": "AUCUN code confirme (honnete, pas d'invention). Jeu grimpe/vol d'oeufs/collection (100+ animaux, 18 paliers chevre->dragon). Miniature reelle rbxcdn."
+  },
+  {
+   "id": "volleyball-upd93-2026-10-28",
+   "jeu": "Volleyball Legends",
+   "sujet": "Update 93 'Cursed Tournaments' - rotation des codes (UPDATE_93/CURSED/TOURNAMENT)",
+   "categorie": "codes",
+   "premiereDetection": "2026-10-28",
+   "derniereVerification": "2026-10-28",
+   "statut": "PUBLISHED",
+   "importance": "haute",
+   "confiance": "haute",
+   "sources": [
+    "timesaver.gg (24/10)",
+    "roonby.com (24/10)"
+   ],
+   "sourceOriginale": "TimeSaver.gg + Roonby",
+   "potentielSEO": "fort (hotGame, MAJ frequentes)",
+   "trendScore": null,
+   "pagesZoneblox": [
+    "codes-volleyball-legends.html"
+   ],
+   "articleCree": true,
+   "url": "rapport-zoneblox-2026-10-28.md",
+   "prochaineAction": "Reverifier a chaque Update (codes VL ephemeres par patch). Surveiller @Protori_ / Discord.",
+   "notes": "Page passee de UPDATE_91/REPLAYS/MVP a UPDATE_93/CURSED/TOURNAMENT (3 actifs, Lvl 15 requis). UPDATE_91/REPLAYS/MVP + UPDATE_92/MAMORI/PARRY passes en expires. 2 sources fraiches concordantes. dateModified + verifDate + JSON-LD synchronises."
+  },
+  {
+   "id": "fisch-fischfright-2026-10-28",
+   "jeu": "Fisch",
+   "sujet": "FischFright (Halloween) 2026 - aucun nouveau code",
+   "categorie": "event",
+   "premiereDetection": "2026-10-28",
+   "derniereVerification": "2026-10-28",
+   "statut": "MONITOR",
+   "importance": "moyenne",
+   "confiance": "haute",
+   "sources": [
+    "pockettactics.com (07/10)"
+   ],
+   "sourceOriginale": "Pocket Tactics",
+   "potentielSEO": "saisonnier",
+   "trendScore": null,
+   "pagesZoneblox": [
+    "codes-fisch.html",
+    "guides/fisch.html"
+   ],
+   "articleCree": false,
+   "url": "",
+   "prochaineAction": "Surveiller Discord/X Fisch pour d'eventuels codes FischFright 2026. Ne rien ecrire sans confirmation.",
+   "notes": "Tous les codes FischFright sont en section expiree (FISCHFRIGHT2025, FischFrightPart2, FISCHFRIGHTSOON, FischFright2024). Aucun code 2026 trouve. Codes actifs Fisch confirmes: scarlet, TemporarySubmarine, CARBON (+ MarianaIsGoingCrazy garde, pas de preuve d'expiration). Pas de section event a ecrire (kill switch)."
+  },
+  {
+   "id": "run-2026-10-28-05h",
+   "jeu": "(run log)",
+   "sujet": "Run 05h full maintenance + editorial 28/10 (mercredi) - Volleyball Legends Update 93 + 5 hotGames reverifies",
+   "categorie": "run-log",
+   "premiereDetection": "2026-10-28",
+   "derniereVerification": "2026-10-28",
+   "statut": "PUBLISHED",
+   "importance": "moyenne",
+   "confiance": "haute",
+   "sources": [
+    "timesaver.gg",
+    "roonby.com",
+    "pockettactics.com",
+    "dexerto.com",
+    "gfinityesports.com",
+    "fut.gg"
+   ],
+   "sourceOriginale": "run interne",
+   "potentielSEO": "-",
+   "trendScore": null,
+   "pagesZoneblox": [
+    "codes-volleyball-legends.html",
+    "codes-blox-fruits.html",
+    "codes-fisch.html",
+    "codes-steal-a-brainrot.html",
+    "codes-king-legacy.html",
+    "codes-grow-a-garden.html"
+   ],
+   "articleCree": true,
+   "url": "rapport-zoneblox-2026-10-28.md",
+   "prochaineAction": "Voir PRIORITES PROCHAIN RUN dans EDITORIAL-QUEUE.md (Aniimo update officiel 29/10, FC27 Team 2 ~30/10, GTA6 Newswire, Blue Lock Rivals source officielle, rotation backlog).",
+   "notes": "1 vrai changement de codes (Volleyball Legends -> Update 93, 2 sources). 5 hotGames reverifies inchanges (verifDate 28/10). Blue Lock Rivals kill switch (conflit 3 voies). Fisch FischFright: rien a ecrire. GTA6/Aniimo/FC27: rien de nouveau a publier. Regen complete (build_site/home/codes_json/sitemap), QC OK (0 null byte, div=0, node --check OK, 418 URLs sitemap, cache v=48 coherent)."
   }
  ]
 }

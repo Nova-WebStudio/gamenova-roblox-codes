@@ -2,87 +2,77 @@
 
 > Mémoire éditoriale opérationnelle (spec V2, section 7). Mise à jour à chaque run.
 > Détail sourcé complet dans `tools/editorial-intelligence.json` et `tools/code-watch.json`.
-> **Dernière MAJ : 2026-10-27 (run 05h — mardi — FC 27 Ultimate Scream publié + anime-last-stand revérifié)**
+> **Dernière MAJ : 2026-10-28 (run 05h — mercredi — Volleyball Legends Update 93 publié + 5 hotGames revérifiés)**
 
-## ✅ FAIT — RUN 05h 2026-10-27 (mardi)
+## ✅ FAIT — RUN 05h 2026-10-28 (mercredi)
 
-- **FC 27 — Promo Ultimate Scream (Halloween) publiée** (data-driven, `data/fc-27/guides.json` → `build_site.py`) :
-  - **SBC & solutions** : nouvelle section « Promo en cours : Ultimate Scream » (Team 1 le 23/10, fin **06/11**, boutique jetons 13/11, upgrade **Beaver Moon 24/11–01/12**) + mise en avant du **DCE Nick Woltemade (85, MOC)** actif + nouvelle FAQ « SBC actifs ». Rubrique « solutions pas chères » actualisée (solution vérifiée à ajouter, pas d'invention).
-  - **Méta joueurs** : nouvelle section « Promo en cours : Ultimate Scream (cartes fortes) » — Raphinha (90 MOC), Ronaldo (89 BU), Paralluelo (88 BU), Szoboszlai (88 MDC), Palmer (87 MOC), Héros Zola/Stam + DCE Woltemade. Source **FUT.GG (22/10)** + dexerto fc-27 (ajoutées aux sources FC 27).
-  - **Correction naming entérinée** : Ultimate Scream = **FC 27** (jeu courant, sorti 25/09/2026), confirmé par EA/FUT.GG/dexerto/realsport101. L'étiquette « FC 26 » du 18/10 (basée sur un calendrier dexerto périmé) est corrigée dans `editorial-intelligence.json`.
-- **Codes — 1 page revérifiée, inchangée** :
-  - **anime-last-stand** : 3 codes actifs (MagicKnights!, ElfReincarnation!, IsItReallyWeekly?!) **confirmés par Dexerto.com 24/10** (match exact) → `verifDate` 16/10 → **27/10**. `catalogVerify` mis à jour.
-- **Codes — hot games croisés, aucun changement (kill switch)** : blox-fruits (liste plus fraîche que les sources recyclées ; jeu statique), grow-a-garden & steal-a-brainrot (déjà vérifiés 26/10, stables), blade-ball (cohérent, SPOOKYSEASON Halloween plausible). Sources de codes massivement **recyclées/périmées** ce run → pas de modification sans preuve fraîche.
-- **Régénération** : `build_site` + `build_home` + `build_codes_json` (verifDate ALS) + `build_sitemap`. **QC complet OK** (0 null byte, fins de fichiers, JSON/JS valides, sitemaps fermés, GA4/nav/CTA OK).
-
----
-
-## ✅ FAIT — AJOUT INTERACTIF 27/10 (2 nouveaux jeux + Jeu du moment)
-
-- **+1 Venom Evolution** (slug `1-venom-evolution`) — **la totale** : page codes (**6 codes** confirmés Dexerto 26/10 + RobloxDen 27/10, dont les codes d'Halloween HALLOWEEN/UPDATE2), **guide complet**, **tier list de progression** (provisoire). Intégré partout (GAMES, GAMES_INDEX, ROBLOX_THUMBS, tous-les-codes, guides, tier-lists, sitemap) + liens croisés. Miniature réelle rbxcdn.
-- **Hike For Eggs** (slug `hike-for-eggs`) — **la totale** : page codes **honnête (aucun code confirmé)**, **guide complet**, **tier list de progression** (provisoire). Même intégration. Miniature réelle rbxcdn.
-- **steal-an-egg** passé en **Jeu du moment** sur l'accueil (date GAMES → 27 oct. 2026).
-- **Tier lists** = type « progression / priorités » (choix Peter), clairement **provisoires**, sans classement de force inventé (jeux trop récents).
-- `js/main.js` modifié (GAMES_INDEX + ROBLOX_THUMBS) → **cache bumpé main.js?v=47 → v=48** (186 pages). Régénération (build_site/home/codes_json/sitemap) + QC complet OK (0 null byte, div équilibrés, node --check main.js OK, sitemap 418 URLs).
+- **Volleyball Legends — mise à jour de codes (Update 93 « Cursed Tournaments »)** : page passée de `UPDATE_91 / REPLAYS / MVP` à **`UPDATE_93` (5 Lucky Style Spins), `CURSED` (5 Lucky Style Spins), `TOURNAMENT` (5 Lucky Ability Spins)** — 3 codes actifs (niveau 15 requis). Anciens codes + `UPDATE_92 / MAMORI / PARRY` passés en expirés. **2 sources fraîches concordantes** : TimeSaver.gg + Roonby (24/10). Dates « Mis à jour le » (prose) + `verifDate` + JSON-LD (`dateModified` 28/10 + ItemList) synchronisées. `build_codes_json` relancé.
+- **5 hotGames revérifiés, inchangés** (→ `verifDate` 28/10, `catalogVerify` 28/10) :
+  - **king-legacy** : **match parfait** (9 codes) avec Pocket Tactics (23/10).
+  - **grow-a-garden** : match exact (RDCAward, BEANORLEAVE10) avec gfinityesports (vérifié 21/10).
+  - **steal-a-brainrot** : match (BESTBRAINROTEVER) avec Dexerto (12/10).
+  - **fisch** : 3/4 confirmés (scarlet, TemporarySubmarine, CARBON) via Pocket Tactics (07/10) ; `MarianaIsGoingCrazy` gardé (pas de preuve d'expiration).
+  - **blox-fruits** : jeu statique, aucun nouveau code depuis Pâques (Pocket Tactics 23/10) → inchangé.
+- **Blue Lock Rivals — KILL SWITCH (nouveau conflit 3 voies)** : Dexerto (25/10) = SKELETON/AIKUCHANGES/NEW ; Insider (codes hiver BAROUSNOWLOCK/SNOWLOCK2 recyclés) ; notre page = NELAIKU/HALLOWEEN/WSNAKE/SORRYFORDELAYAIKU. **Aucune paire concordante → page non modifiée.** Besoin d'une **source officielle** (Discord/Trello/X). ⚠️ nos codes Halloween sont probablement expirés (fin event 31/10).
+- **Fisch FischFright 2026** : **aucun nouveau code** (tous les FischFright en section expirée — Pocket Tactics). Pas de section event à écrire (kill switch respecté).
+- **Régénération** : `build_site` + `build_home` + `build_codes_json` (1335 codes, 198 jeux) + `build_sitemap` (418 URLs). **QC complet OK** (0 null byte, div équilibrés site entier, `node --check main.js` OK, JSON/XML valides, sitemap fermé, GA4/nav/CTA OK, cache `main.js?v=48` cohérent).
 
 ---
 
 ## 🎃 COUVERTURE HALLOWEEN 2026 (programme — règle « guides d'événements », CLAUDE.md)
 
-> **Règle désormais permanente** : chaque event/MAJ d'un hotGame doit être couvert par un guide/section de guide (UPDATE before CREATE), **détails confirmés uniquement**.
-> **État au 27/10** : events Halloween **confirmés existants** sur plusieurs jeux suivis, MAIS les agrégateurs servent massivement des **données 2025 recyclées** → spécifics 2026 (dates/récompenses/pets) **NON publiés** tant que non confirmés sur **source fraîche/officielle** (Discord/Trello/X du jeu, ou média daté 2026). Kill switch respecté.
+> **Règle permanente** : chaque event/MAJ d'un hotGame doit être couvert par un guide/section de guide (UPDATE before CREATE), **détails confirmés uniquement**. **L'événement Halloween se termine le 31/10** → après cette date, retirer/archiver les sections event.
+> **État au 28/10** : **Fisch FischFright 2026 = aucun code confirmé** (tous expirés) → rien à écrire. Les autres events saisonniers se terminent cette semaine ; aucun nouveau détail 2026 confirmé sur source fraîche → kill switch maintenu.
 
 | Jeu (suivi) | Event Halloween | Guide cible | Statut |
 |---|---|---|---|
-| **Grow a Garden** | « Ghoul Garden » (Part II évoquée) | `guides/grow-a-garden.html` → section « Événement Halloween » | ⏳ À vérifier 2026 (sources vues = 2025) |
-| **Fisch** | « FischFright » (annuel) | `guides/fisch.html` → section event | ⏳ À vérifier 2026 (FischFright 3 ?) |
-| **Steal a Brainrot** | Brainrots Halloween / « Haunted/Witch Fuse » | `guides/steal-a-brainrot.html` → section event | ⏳ À vérifier 2026 (sources faibles) |
-| **Adopt Me** | Event Halloween (+ Part 2) | `guides/adopt-me.html` → section event | ⏳ À vérifier 2026 |
-| **100-days-at-sea** | Code `SPOOKY` (Halloween) | page codes (déjà fait 26/10) | ✅ Code publié ; guide event optionnel |
-| Autres hotGames | à scanner chaque run | — | 🔎 Scan continu (règle standing) |
-
-**Action** : à chaque run, confirmer les détails 2026 via source fiable **avant** d'écrire ; dès confirmation → ajouter une **section « Événement Halloween en cours »** datée (début/fin) au guide existant du jeu. Retirer la section à la fin de l'event.
+| **Fisch** | FischFright | `guides/fisch.html` | ✅ Vérifié 28/10 : aucun code 2026 (tous expirés) → rien à écrire |
+| **Grow a Garden** | « Ghoul Garden » | `guides/grow-a-garden.html` | ⏳ Non confirmé 2026 (sources = 2025) |
+| **Steal a Brainrot** | Halloween brainrots | `guides/steal-a-brainrot.html` | ⏳ Non confirmé 2026 |
+| **100-days-at-sea** | Code `SPOOKY` | page codes (fait 26/10) | ✅ Code publié |
+| Autres hotGames | scan continu | — | 🔎 Fin event 31/10 |
 
 ## 🔥 URGENT
 
-- **GTA 6** — ~3,2 semaines avant lancement (**19/11/2026**). Préchargement **12/11** confirmé (Forbes 26/10 via BusinessWire), mais **heure de préchargement et taille de fichier toujours non officielles**. **Rien de neuf confirmé au 27/10**. ⚠️ **« Official news update » rapporté pour le 29/10** (gamerant, non vérifiable en primaire) → **surveiller le Newswire chaque run**. **UPDATE evergreen uniquement**, séparer CONFIRMÉ / RAPPORTÉ / RUMEUR.
-- **Aniimo « Season 1 Part II » (29/10)** — update **confirmé** (preview officielle des devs via playnews 20/10) : région **Whisperwake Isles**, **51 nouveaux Aniimo** (32 espèces), nouveaux Prismana, **PvP 1v1 permanent**, Vein Abundance 30/10→06/12. **Aucun nouveau code annoncé.** Fin Part I : 28/10 23h59 UTC. → **Préparer l'ingestion data-driven APRÈS l'officiel du 29/10** (`data/aniimo/` → `build_site.py`). Ne rien inventer.
+- **Aniimo « Season 1 Part II » (29/10 — DEMAIN)** — update **confirmé** (preview officielle devs via playnews 20/10) : région **Whisperwake Isles**, **51 nouveaux Aniimo** (32 espèces), nouveaux Prismana, **PvP 1v1 permanent**, Vein Abundance 30/10→06/12. **Fin Part I : 28/10 23h59 UTC (ce soir).** Aucun nouveau code annoncé. → **Préparer l'ingestion data-driven (`data/aniimo/` → `build_site.py`) dès l'officiel du 29/10. NE RIEN inventer / ne rien publier avant l'officiel.**
+- **GTA 6** — ~3 semaines avant lancement (**19/11/2026**). Préchargement **12/11** confirmé. **Rien de neuf confirmé au 28/10.** ⚠️ « News update » toujours rapporté pour le **29/10** (non primaire) → **surveiller le Rockstar Newswire chaque run**. **UPDATE evergreen uniquement**, séparer CONFIRMÉ / RAPPORTÉ / RUMEUR.
+- **Blue Lock Rivals — conflit 3 voies non résolu** (voir FAIT). Page probablement périmée (codes Halloween). **Trancher via source officielle**, pas via agrégateurs.
 
 ## 🟢 À PUBLIER
 
-_(rien de neuf)_ — aucun nouveau jeu avec preuve d'intérêt multi-source **+ codes réels** détecté cette nuit (recherches tendances = résultats spam/recyclés).
+_(rien de neuf)_ — aucun nouveau jeu avec preuve d'intérêt multi-source **+ codes réels** détecté cette nuit.
 
 ## 🛠️ À METTRE À JOUR (candidats near-ready)
 
-- **FC 27 Ultimate Scream — Team 2** attendue **~30/10** (non confirmée EA) → ajouter dès sortie + **une solution DCE Woltemade vérifiée** (ne pas inventer de recette). Rafraîchir en fin de promo (06/11).
-- **fruit-battlegrounds — à revérifier (conflit).** Dexerto.com (copie 25/08 périmée) liste BIGMILLIHUNNID!/ITSTHEBILLION!/CODEFIX (absents de notre page) et ignore nos EVENHIGHER!/OMGUPDATE22. Source unique + stale → **kill switch**, page inchangée (verif 01/10). Besoin d'une **source fraîche**.
+- **FC 27 Ultimate Scream — Team 2** « attendue » **~30/10 18:00 UTC** (NON confirmée EA, fut.gg) → ajouter dès sortie réelle + **une solution DCE Woltemade vérifiée** (ne pas inventer). Token store jusqu'au 13/11, upgrade Beaver Moon 24/11→01/12 (confirmés). Rafraîchir en fin de promo (06/11).
+- **fruit-battlegrounds — à revérifier (conflit).** Dexerto (copie 25/08 périmée) vs notre page ; source unique + stale → **kill switch**, page inchangée (verif 01/10). Besoin d'une **source fraîche**.
 - **grimoires-era — PÉRIMÉE (conflit 3 voies).** Rebuild via **source officielle** (Trello/Discord) requis.
-- **rivals — décalage de version.** Page FREE182 ; sources divergentes. Besoin d'une **source fraîche marquant clairement l'actif**.
-- **tap-simulator-reborn — casse `SPOOKY` à reconfirmer.**
-- **sell-fries — 4 codes mono-source** → publier si 2ᵉ source concordante.
+- **rivals — décalage de version.** Page FREE182 ; sources divergentes. Besoin d'une **source fraîche**.
 - **type-soul — page vide** (~55 codes sans récompenses) → 2-3 sources propres avec récompenses.
-- **Listes gonflées (maintien vs rebuild)** : anime-battle-rng, anime-astral-simulator (~100), dragon-blox (~82), attack-on-titan-revolution → **preuve d'expiration** requise avant prune (§4).
+- **noob-incremental, attack-on-titan-revolution, anime-battle-rng, anime-astral-simulator (~100), dragon-blox (~82)** : listes gonflées → **preuve d'expiration** requise avant prune (§4).
+- **CTA manquant** : codes-da-hood, codes-rivals, codes-knockout (pas de guide/tier dédié).
 
 ## 🟡 À PRÉPARER / DÉCISION PETER
 
 - **⚠️ Jeu de la semaine (§30) — BLOQUÉ.** Marqueurs `<!-- FEATURED-WEEK-START/END -->` toujours **absents** d'`index.html` et `meilleurs-jeux-roblox.html`. Étape du lundi **non exécutable** sans créer la structure. **→ Peter : indiquer où placer le bloc** (ou valider sa création).
 - **FC 27 — Prix des cartes live = NON fait** (nécessite un feed type Futbin/Futwiz — à cadrer).
-- **CTA manquant** : codes-da-hood, codes-rivals, codes-knockout (pas de guide/tier dédié).
+- **/avatar/** : 3 pages encore en `main.js?v=43` (reste du site en v=48). Dossier **NE PAS MODIFIER** → laissé tel quel ; à signaler si Peter veut aligner le cache.
 
 ## 👀 À REVÉRIFIER (conflits / identité non tranchés)
 
-- **fruit-battlegrounds** (voir ci-dessus), **spin-a-soccer-card** (conflit total, page à 0), **fisch** (`CAVERN`/`ChapelTroubles` source unique), **100-days-at-sea** (`RIVAL` conflit).
+- **Blue Lock Rivals** (conflit 3 voies — voir URGENT), **fruit-battlegrounds** (source unique stale), **spin-a-soccer-card** (conflit total, page à 0), **100-days-at-sea** (`RIVAL` conflit), **grimoires-era** (3 voies), **rivals** (version), **haze-piece** (PHANTOMSHIP/OKUCHI 2/3).
 - **Identité ambiguë (désambiguïser via placeId)** : button-rng-2, chicken-farm ; clones anime : anime-rng, anime-fighters, anime-fighting-simulator(-reborn), anime-reversal, scroll-a-brainrot, heroes-battlegrounds.
-- **Codes** : grimoires-era (3 voies), rivals (version), haze-piece (PHANTOMSHIP/OKUCHI 2/3).
-- **Rotation en retard** : **>150 pages > 10 j (dont ~30 jamais vérifiées)** — backlog chronique. Rotation approfondie **non réalisée ce run** (sources recyclées → vérif fiable impossible). À reprendre avec sources fraîches.
+- **Rotation en retard** : **~150 pages > 3 j (dont ~30 jamais vérifiées)** — backlog chronique. Rotation approfondie **non traitée ce run** (priorité donnée aux hotGames + Volleyball ; sources agrégées conflictuelles/recyclées sur le reste). À reprendre avec sources fraîches/officielles.
 
-## 📅 PRIORITÉS PROCHAIN RUN (15h / 22h / 05h 28–29/10)
+## 📅 PRIORITÉS PROCHAIN RUN (15h / 22h 28/10 ; 05h 29/10)
 
-1. **Aniimo** : fin Part I le 28/10 23h59 UTC, update **29/10** → préparer l'ingestion data-driven (ne rien publier avant l'officiel).
-2. **FC 27 Ultimate Scream Team 2** (~30/10) + solution DCE Woltemade vérifiée.
+1. **Aniimo** : update **officiel 29/10** (Part I finit ce soir 23h59 UTC) → ingérer la data (`data/aniimo/`) dès l'officiel, puis `build_site.py`. Ne rien publier avant.
+2. **FC 27 Ultimate Scream Team 2** (~30/10) + solution DCE Woltemade vérifiée dès sortie.
 3. **GTA 6** : surveiller Newswire (« news update » rapporté 29/10 ; heure préchargement / taille fichier / patch day-one).
-4. **Rotation backlog** : attaquer les ~30 « jamais vérifiées » désambiguïsables (placeId) avec sources fraîches ; **fruit-battlegrounds** (2ᵉ source).
-5. **Décisions Peter** : bloc « Jeu de la semaine » ; feed prix cartes FC 27.
+4. **Blue Lock Rivals** : trancher via source officielle (codes Halloween à expirer au 31/10).
+5. **Volleyball Legends** : revérifier au prochain Update (codes éphémères par patch).
+6. **Rotation backlog** : attaquer les ~30 « jamais vérifiées » désambiguïsables (placeId) + fruit-battlegrounds (2ᵉ source fraîche).
+7. **Décisions Peter** : bloc « Jeu de la semaine » ; feed prix cartes FC 27.
 
 ---
 
