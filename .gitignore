@@ -32,4 +32,7 @@ __pycache__/
 *.pyc
 deploy-log.txt
 disavow*.txt
-"audit-seo-2026-10-24/"  
+"audit-seo-2026-10-24/"
+
+# Pinterest (visuels + file d'attente = assets locaux, non déployés)
+pinterest/

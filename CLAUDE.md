@@ -106,7 +106,7 @@ Quand Peter dit **« fais-moi la totale »** sur un jeu, cela signifie produire 
 2. **Tier list** — `tier-list/<slug>.html` (classement pertinent : classes, unités, pets, fruits… selon le jeu ; 2 sources ; chips + ItemList + date).
 3. **Guide complet** — `guides/<slug>.html` (gabarit `guides/blox-fruits.html` : TOC ancré, sections adaptées, CTA, FAQ ; 2 sources).
 
-**Intégrations obligatoires à chaque fois** : carte accueil + `GAMES_INDEX`/`ALL_GAMES`/`ROBLOX_THUMBS`/`THUMBS`/`ROBLOX_UNIVERSE_IDS` (pour la page codes) ; carte + ItemList du hub tier-list (vraie miniature) et du hub guides ; `<li>` accueil ; `<url>` au sitemap pour les 3 pages ; **liens croisés** codes ↔ tier list ↔ guide (boutons hero + bandeau CTA `data-cta="guidelink"` pointant vers les pages dédiées) ; SVG fallback ; bump cache si `js/main.js` modifié.
+**Intégrations obligatoires à chaque fois** : carte accueil + `GAMES_INDEX`/`ALL_GAMES`/`ROBLOX_THUMBS`/`THUMBS`/`ROBLOX_UNIVERSE_IDS` (pour la page codes) ; carte + ItemList du hub tier-list (vraie miniature) et du hub guides ; `<li>` accueil ; `<url>` au sitemap pour les 3 pages ; **liens croisés** codes ↔ tier list ↔ guide (boutons hero + bandeau CTA `data-cta="guidelink"` pointant vers les pages dédiées) ; SVG fallback ; bump cache si `js/main.js` modifié. **+ Épingle Pinterest** : générer le visuel du jeu via `tools/build_pins.py --slug <slug>` (voir section « Épingles Pinterest ») — génération seule, publication assistée.
 
 ---
 
@@ -326,3 +326,22 @@ Pour chaque fichier HTML modifié, vérifier :
 5. **Backlinks toxiques (spam score 53/100).** Le désaveu est géré **manuellement par Peter** (fichier `disavow-*.txt`, soumis en Search Console). Le run ne crée JAMAIS de liens douteux ; il peut citer des sources fiables.
 
 6. **Verticale jeux mobiles / gacha** (Genshin Impact, Honkai Star Rail, Zenless, Wuthering Waves — même modèle « codes par patch ») = **phase 2, UNIQUEMENT sur feu vert explicite de Peter.** Ne pas ouvrir cette verticale de sa propre initiative (ne pas diluer l'autorité Roblox tant que les fondations ne sont pas stabilisées).
+
+---
+
+## 📌 Épingles Pinterest — 1 visuel par jeu (`tools/build_pins.py`) — STANDING (29 oct. 2026)
+
+Compte Pinterest **business « Zoneblox » (@ptorreele)**, site **revendiqué/vérifié** (meta `p:domain_verify` dans `index.html`, profil dans le `sameAs` de `about.html`). 4 tableaux publics : **Codes Roblox**, **Tier Lists Roblox**, **Guides Roblox**, **Nouveaux jeux Roblox**.
+
+**Objectif** : à chaque **nouveau jeu ajouté** (et quand les codes d'un jeu changent), générer **1 épingle verticale de marque** (1000×1500, 2:3, format « liste de codes » qui marche en FR) prête à publier. Valeur = **trafic visuel FR + signal de marque** (liens Pinterest = nofollow, donc pas de « jus » SEO direct).
+
+**Outil** : `tools/build_pins.py` (nécessite **playwright + Pillow → conteneur cloud**, pas la machine de Peter). Lit `data/codes.json` + `data/games-index.json`, écrit `pinterest/pins/<slug>.jpg` + le manifeste `pinterest/pins.json` + la file lisible `pinterest/PIN-QUEUE.md` (titre/description/lien/tableau prêts). Ne (re)génère QUE les jeux absents du manifeste (= nouveaux) ou dont les codes ont changé (hash). Jeu **avec codes** → épingle « liste de codes », tableau **Codes Roblox**, lien `/codes-<slug>.html`. Jeu **sans code** → épingle « découverte », tableau **Nouveaux jeux Roblox**.
+
+**À CHAQUE run quotidien (après build du site), étape de génération (cloud) :**
+1. Stager vers le cloud : `data/codes.json`, `data/games-index.json`, et `pinterest/pins.json` s'il existe (état à conserver).
+2. Lancer dans le conteneur cloud : `python3 tools/build_pins.py --codes <...>/codes.json --index <...>/games-index.json --out <outdir>/pins --manifest <outdir>/pins.json --queue <outdir>/PIN-QUEUE.md` (plafond `--max 60` par défaut ; `--all` pour un backfill complet ; `--slug <slug> --force` pour un jeu précis).
+3. **Committer en retour** vers le dossier connecté : les nouveaux `pinterest/pins/*.jpg` + `pinterest/pins.json` + `pinterest/PIN-QUEUE.md`.
+
+**⛔ NE PAS PUBLIER automatiquement.** La publication passe par le navigateur + la session Pinterest de Peter et demande son feu vert → **étape assistée/manuelle, en lot** (pin-creation-tool : upload du `.jpg`, coller titre/description/lien, choisir le tableau, Publier). Après publication d'une épingle, passer son `status` à `published` dans `pinterest/pins.json` pour qu'elle ne revienne pas dans la file. **Cadence anti-spam : ~2-3 épingles/semaine max**, pas de rafale (cf. historique spam score). Les visuels s'accumulent sans risque dans la file en attendant.
+
+**Note repo** : `pinterest/` est **gitignoré** (visuels + file d'attente = assets locaux, ni déployés sur Vercel ni publics). L'état (`pins.json`) persiste dans le dossier connecté de Peter entre les runs.
