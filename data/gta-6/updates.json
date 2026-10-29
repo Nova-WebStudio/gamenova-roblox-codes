@@ -1,8 +1,19 @@
 {
   "game": "gta-6",
-  "updated": "2026-10-20",
+  "updated": "2026-10-29",
   "intro": "Le suivi de l'actualité officielle de GTA 6 : date de sortie, trailers et annonces de Rockstar. Aucune rumeur présentée comme un fait.",
   "entries": [
+    {
+      "date": "2026-10-29",
+      "kind": "update",
+      "title": "Edge #430 : dossier exclusif de 16 pages (visite du studio Rockstar)",
+      "summary": "Le magazine Edge (n°430, en kiosque le 29 octobre 2026) publie un dossier de 16 pages sur GTA 6 : la rédaction a visité le QG de Rockstar North à Édimbourg, s'est entretenue avec les dirigeants du studio et a vu le jeu tourner. Au programme : de nouvelles images exclusives, des interviews et une couverture gatefold de Jason et Lucia. Le dossier est aussi mis gratuitement en ligne le 29 octobre. À trois semaines du lancement, aucune nouvelle date ni report : la sortie reste fixée au 19 novembre 2026.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://www.pcgamer.com/games/grand-theft-auto/edge-magazine-went-to-rockstar-to-see-gta-6-and-will-tell-you-all-about-in-lavish-detail-this-thursday-october-29/",
+        "https://www.gtaboom.com/gta-6-is-getting-the-full-edge-magazine-treatment-before-november-19-f9ec"
+      ]
+    },
     {
       "date": "2026-11-19",
       "kind": "event",

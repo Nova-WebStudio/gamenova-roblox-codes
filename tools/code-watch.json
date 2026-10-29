@@ -311,13 +311,13 @@
       "note0823": "Verifie 23/08 (Beebom/Pocket Tactics/GamesRadar): 4BVISITS/GIVEMELUCK/SERPENT/DUNGEONSRELEASE cites actifs; set servi (13 codes wheel-spins) stable, inchange par prudence."
     },
     "blue-lock-rivals": {
-      "lastChecked": "2026-09-03T05:00:00Z",
+      "lastChecked": "2026-10-29T05:00:00Z",
       "descLen": 0,
-      "descExcerpt": "9 actifs (PGG 29/08 + agregat 30/08). Ajout UBERSTAKEOVER/KINGNEXTWEEK/EGODEFENSE aux 6 existants.",
+      "descExcerpt": "29/10: codes tournés (update Aiku). Actifs = SKELETON (5 Lucky Spins), AIKUCHANGES (5 Lucky Flow Spins), SPOOKY (reward non détaillé). Anciens NELAIKU/HALLOWEEN/WSNAKE/SORRYFORDELAYAIKU expirés. 2 sources: Dexerto 25/10 + Game.guide 28/10.",
       "knownCodes": [
-        "UBERSTAKEOVER",
-        "KINGNEXTWEEK",
-        "EGODEFENSE"
+        "SKELETON",
+        "AIKUCHANGES",
+        "SPOOKY"
       ],
       "officialSource": "twitter"
     },
@@ -379,10 +379,11 @@
       "note0731": "Verifie 31/07 (web >=3 sources) : aucun changement. blox-fruits 23-24, blade-ball 14, fisch 5, volleyball 3 (UPDATE_80/HIDARI_FINALLY/ENCHO_NERF), blue-lock 9, ALS inchange, AV inchange, GAG/GAG2 inchanges."
     },
     "fisch": {
-      "lastChecked": "2026-09-22T05:00:00Z",
+      "lastChecked": "2026-10-29T05:00:00Z",
       "descLen": 320,
-      "descExcerpt": "3 actifs stables (scarlet, TemporarySubmarine, CARBON). Ancien candidat SkycrestNextWeek confirme EXPIRE (Beebom/Pocket Gamer 01/09) -> jamais publie, resolu.",
+      "descExcerpt": "29/10: FischFright2026 ajouté (actif, exp 09/11 — TimeSaver 27/10 + Roonby 24/10). scarlet + CARBON confirmés. Mariana/TemporarySubmarine conservés (pas de preuve d'expiration).",
       "knownCodes": [
+        "FischFright2026",
         "MarianaIsGoingCrazy",
         "scarlet",
         "TemporarySubmarine",
@@ -464,15 +465,13 @@
       "note0722": "Verifie 22/07 : aucun nouveau code depuis ~4 mois (PC Gamer). RainbowDragon apparait comme ancien code actif chez certaines sources. Liste inchangee par prudence."
     },
     "fruit-battlegrounds": {
-      "lastChecked": "2026-09-03T05:00:00Z",
+      "lastChecked": "2026-10-29T05:00:00Z",
       "descLen": 314,
-      "descExcerpt": "5 actifs. HIGHER1M120K (800 Gems) confirme NOUVEAU par Beebom(maj 01/09)+PocketTactics+PGG -> publie. OMGUPDATE22 passe expire (Beebom 01/09).",
+      "descExcerpt": "29/10: OMGUPDATE22 (disputé TimeSaver 18/10) repassé en expiré. Actifs = EVENHIGHER!, HIGHER1M120K, YOO1M110K! (confirmés TimeSaver 18/10).",
       "knownCodes": [
+        "EVENHIGHER!",
         "HIGHER1M120K",
-        "YOO1M110K!",
-        "BIGMILLIHUNNID!",
-        "ITSTHEBILLION!",
-        "CODEFIX"
+        "YOO1M110K!"
       ],
       "note": "5 actifs confirmés par Pocket Tactics (17/07, source la plus récente). Aucun changement de liste.",
       "note0719": "Verifie 19/07 : OMGUPDATE22 confirme actif (sources July). Correction d'un compteur incoherent (intro/banner disaient 4 alors que 5 codes affiches et game-meta=5) -> aligne a 5. Zoneblox en retard sur les codes recents (BIG1M170K!! etc.) : reconciliation dediee au prochain run. Pas de changement de liste.",
@@ -893,7 +892,7 @@
     }
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
-  "lastRun": "2026-10-27",
+  "lastRun": "2026-10-29",
   "_pending2026-07-18": [
     "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
     "blade-ball: SERPENT -> Beebom le dit expire, PT+GamesRadar actif, conserve actif",
@@ -970,9 +969,9 @@
     "a-prioriser-prochain-run": "Fruit Battlegrounds (paliers + OPE V2), Anime Last Stand (liste active exacte), Fisch (fluide), + long tail. Ficher Anime Origins & +1 Speed Keyboard Escape avec Chrome."
   },
   "meta": {
-    "updated": "2026-10-27",
-    "lastRun": "2026-10-27",
-    "lastFullRun": "2026-10-10"
+    "updated": "2026-10-29",
+    "lastRun": "2026-10-29",
+    "lastFullRun": "2026-10-29"
   },
   "_pending2026-08-29": {
     "grow-a-garden": {
@@ -1075,8 +1074,8 @@
     "blox-monsters": "2026-10-03",
     "case-simulator-rng": "2026-10-04",
     "survive-the-killer": "2026-10-05",
-    "blade-ball": "2026-10-25",
-    "fruit-battlegrounds": "2026-10-01",
+    "blade-ball": "2026-10-29",
+    "fruit-battlegrounds": "2026-10-29",
     "anime-astral-simulator": "2026-09-10",
     "doors": "2026-09-27",
     "clover-retribution": "2026-10-05",
@@ -1089,14 +1088,14 @@
     "anime-battle-rng": "2026-10-24",
     "driving-empire": "2026-09-28",
     "blox-fruits": "2026-10-28",
-    "grow-a-garden": "2026-10-28",
-    "steal-a-brainrot": "2026-10-28",
-    "anime-vanguards": "2026-10-26",
-    "blue-lock-rivals": "2026-10-26",
-    "volleyball-legends": "2026-10-28",
-    "king-legacy": "2026-10-28",
-    "fisch": "2026-10-28",
-    "pet-simulator-99": "2026-10-26",
+    "grow-a-garden": "2026-10-29",
+    "steal-a-brainrot": "2026-10-29",
+    "anime-vanguards": "2026-10-29",
+    "blue-lock-rivals": "2026-10-29",
+    "volleyball-legends": "2026-10-29",
+    "king-legacy": "2026-10-29",
+    "fisch": "2026-10-29",
+    "pet-simulator-99": "2026-10-29",
     "dragon-blox": "2026-09-10",
     "brainrot-evolution": "2026-10-01",
     "a-dusty-trip": "2026-10-08T05:00:00Z",
@@ -1189,10 +1188,10 @@
     "catch-and-tame": "2026-10-17",
     "fish-an-anime-rng": "2026-10-18T05:00:00Z",
     "be-a-brainrot": "2026-09-21",
-    "tower-defense-simulator": "2026-09-25",
+    "tower-defense-simulator": "2026-10-29",
     "world-fighters": "2026-09-22T05:00:00Z",
     "hypershot": "2026-10-26",
-    "squid-game-x": "2026-09-25",
+    "squid-game-x": "2026-10-29",
     "blockspin": "2026-09-23",
     "illegal-soccer": "2026-09-23",
     "defend-ur-base-with-anime": "2026-09-23",
@@ -2000,5 +1999,36 @@
     "featured": "steal-an-egg mis en Jeu du moment (date GAMES -> 27 oct. 2026).",
     "cache": "js/main.js modifie (GAMES_INDEX+ROBLOX_THUMBS) -> bump main.js?v=47 -> v=48 (186 pages).",
     "tier_lists": "Type 'progression/priorites' (choix Peter), clairement provisoires, sans classement de force invente (jeux trop recents)."
+  },
+  "_notes2026-10-29": {
+    "run": "05h jeudi — FULL maintenance + editorial",
+    "codes_edits": {
+      "blue-lock-rivals": "CONFLIT D'HIER TRANCHÉ. Dexerto 25/10 + Game.guide 28/10 concordants -> actifs SKELETON/AIKUCHANGES/SPOOKY, anciens 4 expirés. Page publiée (actifs/expirés/compteur/JS/prose/verifDate/JSON-LD).",
+      "fisch": "FischFright2026 ajouté (actif, TimeSaver 27/10 exp 09/11 + Roonby 24/10).",
+      "fruit-battlegrounds": "OMGUPDATE22 -> expiré (disputé TimeSaver 18/10 ; cohérent avec note 03/09). 3 actifs confirmés gardés."
+    },
+    "hot_verifies_inchanges": {
+      "grow-a-garden": "gfinity 28/10 match exact (RDCAward, BEANORLEAVE10)",
+      "steal-a-brainrot": "Dexerto 12/10 + TimeSaver 08/10 : BESTBRAINROTEVER seul (saturn non confirmé)",
+      "volleyball-legends": "TimeSaver 24/10 match exact (UPDATE_93/CURSED/TOURNAMENT)",
+      "king-legacy": "TimeSaver 20/10 : core 5 OK, nos 9 = superset (YouTuber codes longue durée)",
+      "blade-ball": "TimeSaver 20/10 : superset OK, pas de preuve d'expiration sur SERPENT/DUNGEONSRELEASE",
+      "anime-vanguards": "Roonby 13/24-10 : set 2e anniversaire présent",
+      "pet-simulator-99": "gfinity 26/10 : 0 code (jeu arrêté, merch only) — page déjà à 0",
+      "tower-defense-simulator": "TimeSaver 26/10 + Dexerto 15/09 : 2 codes (1MILCOMMUNITY, 2MILLION), pas de code Halloween",
+      "squid-game-x": "next-stage.fr 29/10 : nos 6 confirmés actifs. Liste source de 59 codes = majorité génériques single-source -> NON ajoutés (risque faux-actifs §4)."
+    },
+    "monitor": {
+      "blue-lock-rivals-SPOOKY": "récompense exacte non confirmée par les sources — à préciser via source officielle",
+      "fisch-mariana-temporarysubmarine": "non listés actifs par TimeSaver 27/10 mais aucune preuve d'expiration -> garder + 2e source",
+      "brainrot-evolution": "sources en vrac (dexerto.fr/allthings = dumps mélangés, mal datés). Codes Halloween possibles non confirmables proprement -> inchangé, source fraîche requise",
+      "squid-game-x-extras": "~53 codes supplémentaires listés par next-stage.fr seul -> MONITOR (2e source requise)"
+    },
+    "editorial": {
+      "aniimo": "Part II/Whisperwake Isles (prévue 29/10) ajoutée à data/aniimo/updates.json (roadmap officielle). Ingestion créatures après passage LIVE.",
+      "gta6": "Edge #430 (dossier 16p, 29/10) ajouté à updates.json. 19/11 maintenu, préload 12/11.",
+      "fc27": "Ultimate Scream Team 2 tjs 'attendue' ~30/10 (NON confirmée EA) -> pas de publication."
+    },
+    "non_fait": "Backlog rotation ~38 pages non-hot (dont ~30 jamais vérifiées, noms francophones novelty + clones anime à désambiguïser) non traité ce run (priorité hotGames + exactitude). À reprendre runs 15h/22h + suivants."
   }
 }

@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-28",
- "count": 197,
+ "generated": "2026-10-29",
+ "count": 198,
  "games": [
   {
    "name": "Aniimo",
@@ -170,6 +170,29 @@
    ],
    "platformLabel": "Roblox",
    "genreLabel": "Événement Halloween / Survie"
+  },
+  {
+   "name": "+1 Anime Eyes",
+   "slug": "1-anime-eyes",
+   "url": "/codes-1-anime-eyes.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-10-29",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-208272b087f4342775b93bb84a7259c7/768/432/Image/Png/noFilter",
+   "cts": [
+    "Codes",
+    "Guides",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
   },
   {
    "name": "+1 Venom Evolution",

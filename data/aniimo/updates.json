@@ -1,8 +1,20 @@
 {
   "game": "aniimo",
-  "updated": "2026-10-18",
+  "updated": "2026-10-29",
   "intro": "Le suivi des mises à jour, patchs et évènements d'Aniimo. On ne publie que ce qui est confirmé par une source (notice officielle, patch notes, presse spécialisée) — jamais d'annonce inventée.",
   "entries": [
+    {
+      "date": "2026-10-29",
+      "kind": "update",
+      "featured": true,
+      "title": "Season 1 Part II — Whisperwake Isles (prévue le 29 octobre 2026)",
+      "summary": "La roadmap officielle des développeurs programme la Season 1 Part II « Whisperwake Isles » pour le 29 octobre 2026, à la fin de la Part I (28/10 23h59 UTC). Au menu annoncé : une nouvelle région archipel Whisperwake Isles (4 zones : Crescent Bay, Wildwater Gorge, Rosy Mirelands, Cloudreach Falls), 32 nouvelles espèces d'Aniimo (dont 4 formes Prismana liées aux îles : Gachapus, Whirlbite, Sugartini, Jabster) et 3 nouvelles quêtes (A Tale of Tide and Song, Secluded Seas, Challenge of the Roaring Rapids). Nouveautés de jeu : duels 1v1 en temps réel et un mode PvP fair-play dans Operation: Egg Heist (permanents), plus Aniimo Dash (course en monde ouvert) et de nouveaux paliers Dark/Earth/Lightning du Holo-Battle Sim (temps limité). Aniimo saisonniers : Prismana Hypnyto et Prismana Ekrim (29/10→09/12), Hoptail (06→19/11), Jaguaraun communautaire via Resonance Fantasia (20/11→09/12). Déblocage de la région : niveau 55, rang I Trailblazer et quête « A Tale of Tide and Song ». Évènements : Vein Abundance 30/10→29/11, Prismana Carnival 30/11→06/12. Aucun nouveau code annoncé.",
+      "confidence": "HIGH",
+      "sources": [
+        "https://gamewith.ai/aniimo/en/articles/roadmap",
+        "https://aniimotools.dev/patch-notes/"
+      ]
+    },
     {
       "date": "2026-09-16",
       "kind": "event",
