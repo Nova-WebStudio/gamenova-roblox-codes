@@ -892,7 +892,7 @@
     }
   },
   "_trelloNote": "Champ trello par jeu (3e source de codes). codes = ou se trouvent les codes sur le board: 'list' (une liste dont le nom contient Code, 1 carte = 1 code, desc = recompense), 'card' (une seule carte nommee Codes, codes listes dans sa description/checklist), 'none' (board officiel existe mais aucun code dessus -> codes sur Discord/X), 'private' (board prive 401, inaccessible), 'absent' (pas de board officiel). url = endpoint JSON public a fetcher. listMatch = nom de la liste/carte a chercher. checked = date de la derniere validation du board.",
-  "lastRun": "2026-10-29",
+  "lastRun": "2026-10-30",
   "_pending2026-07-18": [
     "blade-ball: BATTLEROYALE, DUNGEONSRELEASE, GOODVSEVIL -> conflit 2 sources actives vs 1 expiree, non publies",
     "blade-ball: SERPENT -> Beebom le dit expire, PT+GamesRadar actif, conserve actif",
@@ -1075,26 +1075,26 @@
     "case-simulator-rng": "2026-10-04",
     "survive-the-killer": "2026-10-05",
     "blade-ball": "2026-10-29",
-    "fruit-battlegrounds": "2026-10-29",
+    "fruit-battlegrounds": "2026-10-30",
     "anime-astral-simulator": "2026-09-10",
     "doors": "2026-09-27",
     "clover-retribution": "2026-10-05",
     "dress-to-impress": "2026-09-28",
-    "anime-last-stand": "2026-10-27",
+    "anime-last-stand": "2026-10-30",
     "royale-high": "2026-09-27",
     "100-days-at-sea": "2026-10-26",
     "99-nights-in-the-forest": "2026-09-27",
     "all-star-tower-defense": "2026-09-26",
     "anime-battle-rng": "2026-10-24",
     "driving-empire": "2026-09-28",
-    "blox-fruits": "2026-10-28",
-    "grow-a-garden": "2026-10-29",
-    "steal-a-brainrot": "2026-10-29",
-    "anime-vanguards": "2026-10-29",
-    "blue-lock-rivals": "2026-10-29",
-    "volleyball-legends": "2026-10-29",
+    "blox-fruits": "2026-10-30",
+    "grow-a-garden": "2026-10-30",
+    "steal-a-brainrot": "2026-10-30",
+    "anime-vanguards": "2026-10-30",
+    "blue-lock-rivals": "2026-10-30",
+    "volleyball-legends": "2026-10-30",
     "king-legacy": "2026-10-29",
-    "fisch": "2026-10-29",
+    "fisch": "2026-10-30",
     "pet-simulator-99": "2026-10-29",
     "dragon-blox": "2026-09-10",
     "brainrot-evolution": "2026-10-01",
@@ -2030,5 +2030,6 @@
       "fc27": "Ultimate Scream Team 2 tjs 'attendue' ~30/10 (NON confirmée EA) -> pas de publication."
     },
     "non_fait": "Backlog rotation ~38 pages non-hot (dont ~30 jamais vérifiées, noms francophones novelty + clones anime à désambiguïser) non traité ce run (priorité hotGames + exactitude). À reprendre runs 15h/22h + suivants."
-  }
+  },
+  "_notes2026-10-30": "Run 05h ven (fired ~08:30 UTC). 9 hotGames revérifiés via sources datées, AUCUN changement de code: steal-a-brainrot (BESTBRAINROTEVER seul; timesaver 08/10+esportnow 04/10), grow-a-garden (RDCAward/BEANORLEAVE10 disputés wiki vs trackers -> gardés §4; torigate NON ajouté), blue-lock-rivals (sources dispo stale/pré-update Aiku dexerto.fr 02/10+beatcopgame 17/10 -> set 25-28/10 maintenu SKELETON/AIKUCHANGES/SPOOKY), volleyball-legends (roonby 24/10 UPD93 match), fisch (dumps sans statut; ChapelTroubles NOUVEAU mono-source -> MONITOR), fruit-battlegrounds (timesaver 18/10 EVENHIGHER!/HIGHER1M120K/YOO1M110K! match; prochain code a 1.14M likes), anime-vanguards (next-stage 29/10 superset 28 codes -> nos 14 sous-liste OK; 2ndAnniDay7 mono-source MONITOR), blox-fruits (next-stage 30/10 nos 23 confirmes; Chandler=erreur probable + pleasezakineedthis mono NON ajoutes), anime-last-stand (switchblade 26/10 match 3 codes; ElfReincarnation! dispute garde). verifDate->30/10 + catalogVerify 9. Aucune invention; kill switch sur ambigus. Rotation non-hot (38) non traitee (backlog 167). Aniimo feed corrige (patch notes officiels 51/cap70/4v4 LIVE)."
 }
