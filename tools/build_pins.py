@@ -55,6 +55,8 @@ h1{{margin-top:26px;font-weight:900;font-size:{titlesize}px;line-height:.98;lett
   text-shadow:0 10px 60px {accent}30;word-break:break-word}}
 .sub{{margin-top:22px;font-size:33px;font-weight:600;color:#b9bde6}}
 .sub .ok{{color:#35e0a1;font-weight:800}}
+.art{{margin-top:30px;border-radius:26px;overflow:hidden;border:3px solid {accent}66;box-shadow:0 22px 60px #00000066,0 0 46px {accent}2e;background:#0b0b20;aspect-ratio:16/9}}
+.art img{{width:100%;height:100%;object-fit:cover;display:block}}
 .body{{margin-top:48px;display:flex;flex-direction:column;gap:20px;flex:1}}
 .chip{{background:linear-gradient(180deg,#191c3e,#12132f);border:2px solid #2a2c55;border-radius:22px;
   padding:24px 30px;box-shadow:0 10px 30px #00000040}}
@@ -73,6 +75,7 @@ h1{{margin-top:26px;font-weight:900;font-size:{titlesize}px;line-height:.98;lett
   <div class="kicker">{kicker}</div>
   <h1>{title}</h1>
   <div class="sub">{sub} <span class="ok">✅</span></div>
+  {art}
   <div class="body">{body}</div>
   <div class="footer">
     <div class="cta"><span>👉</span><span class="url">zoneblox.com</span></div>
@@ -88,7 +91,7 @@ def title_size(title: str) -> int:
     if n <= 30: return 70
     return 58
 
-def build_html(name, kicker, sub, accent, mode, items):
+def build_html(name, kicker, sub, accent, mode, items, art_src=None):
     if mode == "chips":
         body = "\n".join(
             f'<div class="chip"><div class="code">{c}</div><div class="reward">{r}</div></div>'
@@ -98,8 +101,9 @@ def build_html(name, kicker, sub, accent, mode, items):
             body += f'<div class="more">+ {len(items)-4} autre(s) code(s) sur zoneblox.com</div>'
     else:
         body = "\n".join(f'<div class="line"><span class="dot">▸</span>{t}</div>' for t in items[:4])
+    art = f'<div class="art"><img src="{art_src}" alt="{name}" onerror="this.closest(&quot;.art&quot;).style.display=&quot;none&quot;"></div>' if art_src else ""
     return TEMPLATE.format(accent=accent, kicker=kicker, title=name, sub=sub,
-                           body=body, titlesize=title_size(name))
+                           body=body, titlesize=title_size(name), art=art)
 
 def plan_pin(slug, cg, idx):
     """Retourne (spec_pour_render, meta_queue) pour un jeu."""
@@ -111,6 +115,7 @@ def plan_pin(slug, cg, idx):
         if a: accent = a[0]
         platforms = idx.get("platforms") or []
     is_roblox = any("roblox" in p.lower() for p in platforms) or True  # défaut Roblox
+    thumb = (idx or {}).get("thumb") or cg.get("thumb")
     rob = " (Roblox)" if is_roblox else ""
     link = f"https://zoneblox.com/codes-{slug}.html"
     codes = cg.get("codes") or []
@@ -118,7 +123,7 @@ def plan_pin(slug, cg, idx):
         items = [(c["code"], strip_emoji(c.get("reward", ""))) for c in codes]
         code_names = ", ".join(c["code"] for c in codes[:4])
         spec = dict(name=name, kicker="CODES ROBLOX" if is_roblox else "CODES",
-                    sub="Vérifiés à la main · à jour", accent=accent, mode="chips", items=items)
+                    sub="Vérifiés à la main · à jour", accent=accent, mode="chips", items=items, art_src=thumb)
         title = f"Codes {name}{rob} — vérifiés à la main & à jour"
         desc = (f"Tous les codes actifs de {name}{rob}, vérifiés à la main : {code_names}. "
                 f"Récompenses + guide et tier list sur ZoneBlox. "
@@ -128,7 +133,7 @@ def plan_pin(slug, cg, idx):
         spec = dict(name=name, kicker="NOUVEAU SUR ZONEBLOX", sub="Codes · Tier list · Guide",
                     accent=accent, mode="lines",
                     items=["Tous les codes dès leur sortie", "La tier list de progression",
-                           "Le guide complet pour débuter", "Mis à jour régulièrement"])
+                           "Le guide complet pour débuter", "Mis à jour régulièrement"], art_src=thumb)
         title = f"{name}{rob} — codes, tier list & guide"
         desc = (f"Nouveau sur ZoneBlox : {name}{rob} ! Codes vérifiés à la main dès leur sortie, "
                 f"tier list et guide complet. #Roblox #RobloxFR #NouveauxJeux")
@@ -174,6 +179,7 @@ def main():
     ap.add_argument("--all", action="store_true", help="ignore le plafond (backfill complet)")
     ap.add_argument("--slug", default=None, help="ne traiter qu'un slug")
     ap.add_argument("--force", action="store_true", help="régénère même si à jour")
+    ap.add_argument("--art-dir", default=None, help="dossier d'images locales <slug>.jpg à embarquer (data URI) si le CDN est injoignable")
     args = ap.parse_args()
 
     root = pathlib.Path(args.root)
@@ -218,6 +224,11 @@ def main():
         pg = b.new_page(viewport={"width": 1000, "height": 1500}, device_scale_factor=2)
         for slug, cg, h in todo:
             spec, meta = plan_pin(slug, cg, idx_by_slug.get(slug))
+            if args.art_dir:
+                ap_ = pathlib.Path(args.art_dir) / f"{slug}.jpg"
+                if ap_.exists():
+                    import base64 as _b64
+                    spec["art_src"] = "data:image/jpeg;base64," + _b64.b64encode(ap_.read_bytes()).decode()
             pg.set_content(build_html(**spec), wait_until="networkidle")
             pg.wait_for_timeout(500)
             tmp_png = out_dir / f".{slug}.tmp.png"
