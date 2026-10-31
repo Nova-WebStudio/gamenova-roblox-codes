@@ -1,1968 +1,2001 @@
 {
- "_comment": "Mémoire éditoriale persistante de ZoneBlox (spec V2, section 7). Chaque sujet suit le lifecycle DETECTED->VERIFIED->PUBLISHED->UPDATED->EVERGREEN->ARCHIVED. Statuts: DISCOVERED, MONITOR, VERIFIED, MUST_PUBLISH, PUBLISHED, UPDATE_REQUIRED, UPDATED, EVERGREEN, IGNORED, EXPIRED. Le trendScore (0-100) sert UNIQUEMENT à prioriser le travail interne, ce n'est pas une mesure scientifique.",
- "version": 1,
- "created": "2026-09-22",
- "meta": {
-  "updated": "2026-10-30",
-  "lastRun": "2026-10-30",
-  "runType": "05h-full-maintenance (vendredi)",
-  "note": "Run 05h ven 30/10: 9 hotGames revérifiés (sources datées) = AUCUN changement de code (qualité>quantité). Correction du feed Aniimo avec les patch notes OFFICIELS (51 Aniimo, cap 70, Spar 4v4, LIVE 28-29/10) — remplace la roadmap du 29/10. FC27 Ultimate Scream Team 2 attendue 30/10 18:00 UTC non confirmée EA (après l'heure du run). GTA6: pas de Newswire depuis Edge #430. MONITOR 2e source: Fisch ChapelTroubles, Anime Vanguards 2ndAnniDay7. Backlog rotation non-hot non traité (voir queue).",
-  "lastUpdate": "2026-10-29T05:00:00Z",
-  "topicsCount": 68,
-  "derniereMiseAJour": "2026-10-29"
- },
- "topics": [
-  {
-   "id": "run-2026-10-30-05h",
-   "jeu": "(run log)",
-   "sujet": "Run 05h full maintenance + editorial 30/10 (vendredi) — 9 hotGames revérifiés inchangés + correction feed Aniimo LIVE",
-   "categorie": "run-log",
-   "premiereDetection": "2026-10-30",
-   "derniereVerification": "2026-10-30",
-   "statut": "PUBLISHED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "timesaver.gg",
-    "roonby",
-    "next-stage.fr",
-    "switchbladegaming",
-    "gamerfuzion",
-    "fut.gg"
-   ],
-   "sourceOriginale": "run interne",
-   "potentielSEO": "-",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-*.html (9 hot verifDate 30/10)",
-    "data/aniimo/updates.json"
-   ],
-   "articleCree": true,
-   "url": "rapport-zoneblox-2026-10-30.md",
-   "prochaineAction": "Runs 15h/22h: FC27 Ultimate Scream Team 2 (sortie 30/10 18:00 UTC si confirmée), Aniimo (codes/ingestion data), GTA6 Newswire. Candidats MONITOR à 2e source: Fisch ChapelTroubles, Anime Vanguards 2ndAnniDay7.",
-   "notes": "9 hotGames revérifiés via sources datées fraîches, AUCUN changement de code: steal-a-brainrot (BESTBRAINROTEVER seul, timesaver 08/10+esportnow 04/10), grow-a-garden (RDCA*/BEANOR* disputés wiki vs trackers -> gardés), blue-lock-rivals (sources dispo stale/pré-update Aiku -> set 25-28/10 maintenu), volleyball-legends (roonby 24/10 UPD93 match), fisch (dumps sans statut, ChapelTroubles NOUVEAU mono-source -> MONITOR), fruit-battlegrounds (timesaver 18/10 EVENHIGHER!+2 match), anime-vanguards (next-stage 29/10 superset 28 codes -> under-list OK, 2ndAnniDay7 mono-source MONITOR), blox-fruits (next-stage 30/10 nos 23 confirmés), anime-last-stand (switchblade 26/10 match 3 codes). verifDate->30/10 + catalogVerify 9. Aniimo feed corrigé (patch notes officiels: 51/cap70/4v4). FC27 Team2 non sortie. GTA6 rien. Regen+QC à suivre."
-  },
-  {
-   "id": "run-2026-10-15-05h",
-   "jeu": "(run log)",
-   "sujet": "Run 05h full 15/10 (fire ~08:30 UTC) - FIX SYSTEMIQUE copyAll (68 pages) + 0 edition de code risquee",
-   "categorie": "run-log",
-   "premiereDetection": "2026-10-15",
-   "derniereVerification": "2026-10-15",
-   "statut": "PUBLISHED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "Dexerto",
-    "PocketTactics",
-    "PCGamer",
-    "Roonby",
-    "Samlover",
-    "Destructoid",
-    "Nerdschalk",
-    "PCGamesN"
-   ],
-   "sourceOriginale": "Run planifie 05h",
-   "potentielSEO": "qualite/confiance (bouton Tout copier donnait des codes perimes)",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "68 pages codes-*.html (resync const ACTIVE)",
-    "+4 verifDate: volleyball-legends, steal-a-brainrot, grow-a-garden, steal-an-egg"
-   ],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "15h/22h: 2e source blue-lock drop; 3e source iron-soul; Aniimo codes octobre (>=2 sources); decisions Peter (naming FC26, jeu de la semaine, listes gonflees).",
-   "notes": "const ACTIVE (bouton Tout copier) etait desynchro de #activeList sur 68/185 pages -> copyAll copiait des codes perimes/absents. Resync sur donnees visibles verifiees, 0 invention. QC OK."
-  },
-  {
-   "id": "copyall-desync-2026-10-15",
-   "jeu": "(site-wide)",
-   "sujet": "Bug systemique: const ACTIVE (Tout copier) desynchronise de la liste visible sur 68 pages",
-   "categorie": "qc-data-integrity",
-   "premiereDetection": "2026-10-15",
-   "derniereVerification": "2026-10-15",
-   "statut": "UPDATED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "audit interne build/QC"
-   ],
-   "sourceOriginale": "QC run 05h 15/10",
-   "potentielSEO": "-",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "68 pages codes-*.html"
-   ],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "Surveiller: a l'avenir, synchroniser const ACTIVE lors de chaque edition de la liste visible (ou supprimer la duplication). 8 pages a liste visible VIDE a revoir editorialement: 100-days-at-sea, basketball-zero, be-a-brainrot, encounters, garden-tower-defense, pet-simulator-x, royale-high, slap-battles.",
-   "notes": "Meme bug que l'incident wizard-alchemy (const ACTIVE vs liste visible). Fix: const ACTIVE <- #activeList."
-  },
-  {
-   "id": "run-2026-10-14-05h",
-   "jeu": "(run log)",
-   "sujet": "Run 05h full maintenance 14/10 - 1 edition (wizard-alchemy)",
-   "categorie": "run-log",
-   "premiereDetection": "2026-10-14",
-   "derniereVerification": "2026-10-14",
-   "statut": "PUBLISHED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "Dexerto",
-    "RobloxDen",
-    "Nerdschalk",
-    "TweakTown/Forbes (GTA)",
-    "Dexerto FC26 promo calendar",
-    "rowatcher/industry.co.id (trends)"
-   ],
-   "sourceOriginale": "Run planifie 05h",
-   "potentielSEO": "-",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "codes-wizard-alchemy.html"
-   ],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "Prochain run: blue-lock-rivals (2e source drop EPICSENDOU/ONEMOREWEEK/NELAIKUNEXT), iron-soul-dungeon/anime-expeditions/dig-and-clean (sources manquantes), Aniimo codes octobre (verifier data/aniimo), GTA Newswire, decision Peter naming FC26 + jeu de la semaine.",
-   "notes": "HOT stables (volleyball Update91 confirme/pas d'U92; anime-vanguards verif 12/10; grow-a-garden/steal-a-brainrot stables). GTA6 Trailer3 TOUJOURS non sorti (que des rumeurs insiders, 0 confirmation Rockstar). FC live = FC26 (pas FC27). Trend: Steal an Egg viral confirme (deja couvert). Kill-switch maintenu ailleurs."
-  },
-  {
-   "id": "1-loot-to-forge-launch",
-   "jeu": "+1 Loot To Forge",
-   "sujet": "Nouveau simulateur de forge en forte croissance (cluster complet créé)",
-   "categorie": "new-game",
-   "premiereDetection": "2026-09-22",
-   "derniereVerification": "2026-09-22",
-   "statut": "PUBLISHED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "API Roblox (games/thumbnails/universes) + description in-game",
-    "https://www.destructoid.com/1-loot-to-forge-codes/",
-    "https://tryhardguides.com/1-loot-to-forge-codes/",
-    "https://1loottoforge.wiki/",
-    "https://www.sportskeeda.com/roblox-news/1-loot-forge-a-beginner-s-guide"
-   ],
-   "sourceOriginale": "Demande de Peter (URL Roblox) + API Roblox",
-   "potentielSEO": "eleve",
-   "trendScore": 82,
-   "pagesZoneblox": [
-    "codes-1-loot-to-forge.html",
-    "tier-list/1-loot-to-forge.html",
-    "guides/1-loot-to-forge.html"
-   ],
-   "articleCree": true,
-   "url": "/codes-1-loot-to-forge.html",
-   "prochaineAction": "MONITOR : surveiller le prochain code de palier (40000CCU probable) et l'ajouter ; suivre les patchs (après RACES du 20 sept.). Revérifier les codes ~tous les 10 jours (rotation).",
-   "notes": "Good Bro Studio, place 118805555015549, universe 10684750879, group 828376264. ~30k CCU, ~11M visites, 656k favoris, créé 12/08/2026. Cluster « totale » créé le 22/09 : codes (2 actifs 30000CCU/20000CCU), tier list (priorités — pas d'armes inventées, stats en aperçu live), guide complet (2 vidéos oEmbed vérifiées). Intégré : GAMES_INDEX/ROBLOX_THUMBS/ROBLOX_UNIVERSE_IDS (main.js), const GAMES (index.html), tous-les-codes/tier-lists/guides, sitemap, régénérations OK."
-  },
-  {
-   "id": "fc27-launch-2026",
-   "jeu": "EA Sports FC 27",
-   "sujet": "Sortie mondiale + contenu de lancement (Ones to Watch, TOTW 1-2, Destined for Glory)",
-   "categorie": "release",
-   "premiereDetection": "2026-09-18",
-   "derniereVerification": "2026-10-30",
-   "statut": "MONITOR",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "https://www.ea.com/games/ea-sports-fc/fc-27/news/pitch-notes-fc27-launch-update",
-    "https://dotesports.com/ea-sports-fc/guides/ea-sports-fc-27-launch-update-patch-notes",
-    "https://www.ea.com/games/ea-sports-fc/fc-27/news/fc-27-editions-and-release-dates",
-    "https://athlonsports.com/sports-video-games/ea-fc-27-season-1-roadmap"
-   ],
-   "sourceOriginale": "EA Sports (officiel)",
-   "potentielSEO": "eleve",
-   "trendScore": 88,
-   "pagesZoneblox": [
-    "data/fc-27/updates.json",
-    "data/fc-27/guides.json",
-    "data/games/(fc-27 evergreen)"
-   ],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "DECISION PETER naming FC27 vs FC26 (titre EA live=FC26). Promos Festival of Football 'Answer the Call' + Halloween Puzzle Crafting en cours.",
-   "notes": "[16/10] Titre EA live = FC 26 (promo Festival of Football en cours). Naming FC26 vs pages 'FC 27' = decision Peter. A VERIFIER (naming): au 13/10/2026 le jeu EA live est FC 26 (FC 27 attendu ~sept 2027). Les verticales/pages 'FC 27' pourraient devoir cibler FC 26. Promo calendar FC 26 suivi via Dexerto/ea.com. MONITOR, aucune edition ce run. [30/10] Ultimate Scream Team 2 ATTENDUE ven 30/10 18:00 UTC mais NON confirmée par EA (fut.gg 23/10, basé sur l'historique). Scream fin 06/11, token store 13/11, Beaver Moon 24/11→01/12 (confirmés). Rien publié ce run (sortie après l'heure du run 05h) — à traiter aux runs 15h/22h si live."
-  },
-  {
-   "id": "gta6-release-nov19",
-   "jeu": "GTA 6",
-   "sujet": "Date de sortie 19 nov. 2026 (evergreen) + marketing pré-lancement",
-   "categorie": "release/marketing",
-   "premiereDetection": "2026-05",
-   "derniereVerification": "2026-10-30",
-   "statut": "UPDATED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "https://www.rockstargames.com/newswire",
-    "https://www.gamespot.com/articles/gta-6-is-taking-over-miami-one-airlifted-letter-at-a-time/",
-    "https://www.gtabase.com/grand-theft-auto-6/"
-   ],
-   "sourceOriginale": "Rockstar Games (officiel)",
-   "potentielSEO": "eleve",
-   "trendScore": 84,
-   "pagesZoneblox": [
-    "data/games/gta-6.json"
-   ],
-   "articleCree": false,
-   "url": "/games/gta-6.html",
-   "prochaineAction": "Surveiller Rockstar Newswire (heure preload 12/11, patch day-one 19/11). UPDATE evergreen uniquement.",
-   "notes": "Verifie 28/10: aucune nouveaute officielle (sortie 19/11, preload 12/11 confirmes). 'News update' toujours rapporte pour 29/10 (non primaire). UPDATE evergreen uniquement. Surveiller Rockstar Newswire chaque run. | 29/10: Edge #430 publie un dossier exclusif de 16 pages (visite studio Rockstar North, nouvelles images, interviews, gratuit en ligne le 29/10) — ajouté à updates.json. À 3 semaines du lancement, aucun report : 19/11 maintenu, préload 12/11. [30/10] Aucun nouveau post Newswire officiel depuis Edge #430 (29/10). Sortie 19/11 + préchargement 12/11 maintenus. Rumeurs website/Instagram = spéculation (non publiable). MONITOR Newswire."
-  },
-  {
-   "id": "aniimo-codes-sep2026",
-   "jeu": "Aniimo",
-   "sujet": "Codes actifs + nouvelle créature Prismana Glynsera",
-   "categorie": "codes/content",
-   "premiereDetection": "2026-09-16",
-   "derniereVerification": "2026-10-24",
-   "statut": "EVERGREEN",
-   "importance": "moyenne",
-   "confiance": "HIGH (codes) / MOYENNE (détail butin de 6 codes)",
-   "sources": [
-    "https://game8.co/games/Aniimo/archives/624090",
-    "https://beebom.com/aniimo-codes/",
-    "https://www.destructoid.com/aniimo-codes/",
-    "https://www.pcgamer.com/games/rpg/aniimo-codes/",
-    "https://www.gamesradar.com/games/rpg/aniimo-codes/"
-   ],
-   "sourceOriginale": "game8 / agrégat médias",
-   "potentielSEO": "moyen",
-   "trendScore": 58,
-   "pagesZoneblox": [
-    "data/aniimo/codes.json",
-    "data/aniimo/creatures.json",
-    "games/aniimo/codes/"
-   ],
-   "articleCree": true,
-   "url": "/games/aniimo/codes/",
-   "prochaineAction": "MONITOR : stats de combat d'Irisalis TOUJOURS non publiees au 11/10. Ne rien inventer. Ajouter a creatures.json des publication officielle.",
-   "notes": "24/10: khelnow 04/10 liste 14 codes actifs dont aniimazingfroyo; mein-mmo 09/10 le marque expire -> conflit 1v1 non tranche. Aucune edition page data-driven."
-  },
-  {
-   "id": "steal-a-brainrot-spawn-codes",
-   "jeu": "Steal a Brainrot",
-   "sujet": "Codes de spawn éphémères (BESTBRAINROTEVER / saturn)",
-   "categorie": "codes",
-   "premiereDetection": "2026-09-22",
-   "derniereVerification": "2026-10-13",
-   "statut": "EVERGREEN",
-   "importance": "basse",
-   "confiance": "HIGH",
-   "sources": [
-    "https://www.dexerto.com/roblox/steal-a-brainrot-codes-3388813/",
-    "https://www.gamesradar.com/games/simulation/roblox-steal-a-brainrot-codes/"
-   ],
-   "sourceOriginale": "agrégat médias (conflit)",
-   "potentielSEO": "faible",
-   "trendScore": 30,
-   "pagesZoneblox": [
-    "codes-steal-a-brainrot.html"
-   ],
-   "articleCree": true,
-   "url": "/codes-steal-a-brainrot.html",
-   "prochaineAction": "Surveiller expiration (code ephemere). Revérifier chaque run.",
-   "notes": "BESTBRAINROTEVER TOUJOURS actif, confirme Dexerto (12/10, 'no new codes found') + nerdschalk. Page a jour, aucun changement. Evenement Halloween = objets d'event (Phoenix via Haunted Fuse), pas des codes."
-  },
-  {
-   "id": "roblox-everywhere-2026",
-   "jeu": "Roblox (plateforme)",
-   "sujet": "Roblox Everywhere — jeux distribués comme apps autonomes",
-   "categorie": "platform",
-   "premiereDetection": "2026-09-11",
-   "derniereVerification": "2026-09-22",
-   "statut": "MONITOR",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "https://kotaku.com/the-most-viral-roblox-games-are-about-to-break-containment-2000733606"
-   ],
-   "sourceOriginale": "Roblox (annonce 11 sept.)",
-   "potentielSEO": "moyen (angle explicatif)",
-   "trendScore": 55,
-   "pagesZoneblox": [],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "MONITOR. Sujet 'meta/plateforme' — pertinent pour un article explicatif si la fonctionnalité se déploie réellement côté joueurs. Pas d'intention de recherche forte à ce stade. Réévaluer si un jeu couvert par ZoneBlox sort en app autonome.",
-   "notes": "Annoncé le 11 sept.: option pour les créateurs de publier leurs jeux en apps autonomes (mobile/PC/consoles), Roblox fournissant la techno sous-jacente."
-  },
-  {
-   "id": "steal-an-egg-leader",
-   "jeu": "Steal An Egg",
-   "sujet": "#1 Roblox par joueurs simultanés (~1,7M, pic 24h 2,3M)",
-   "categorie": "trend",
-   "premiereDetection": "2026-08-24",
-   "derniereVerification": "2026-09-22",
-   "statut": "EVERGREEN",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "https://rblxdb.com/charts/most-played",
-    "https://rotrends.com/top-roblox-games"
-   ],
-   "sourceOriginale": "rblxdb / rotrends",
-   "potentielSEO": "moyen",
-   "trendScore": 60,
-   "pagesZoneblox": [
-    "codes-steal-an-egg.html",
-    "hotGames"
-   ],
-   "articleCree": true,
-   "url": "/codes-steal-an-egg.html",
-   "prochaineAction": "Couvert (hotGames). Surveiller ajout d'un système de codes (absent au 24 août). Pas d'action.",
-   "notes": "Reste #1. Set 'no-fixed-time' codes: aucun code de récompense confirmé."
-  },
-  {
-   "id": "roblox-fall-games-2026",
-   "jeu": "Roblox (plateforme)",
-   "sujet": "Roblox Fall Games 2026 — 6 nouveaux jeux (Showdown FPS anime, Monster in the Mansion, GOAT Football League, Nemesis, Fossil Force, Caramel)",
-   "categorie": "nouveaux jeux / plateforme",
-   "premiereDetection": "2026-09-23",
-   "derniereVerification": "2026-10-05",
-   "statut": "MONITOR",
-   "importance": "moyenne",
-   "sources": [
-    "https://about.roblox.com/newsroom/2026/09/roblox-fall-games-preview",
-    "https://www.sportskeeda.com/roblox-news/news-all-new-roblox-fall-games-lineup-2026"
-   ],
-   "confiance": "HIGH (annonce officielle Roblox)",
-   "potentielSEO": "À évaluer par jeu — Showdown (FPS anime) le plus prometteur pour un cluster codes/guide si traction réelle.",
-   "trendScore": "~35/100 (traction joueur faible)",
-   "pagesZoneblox": [],
-   "prochaineAction": "MONITOR. Showdown (Anime FPS Jutsu Shooter, SuperGaming) ~240 CCU au 7 sept = PAS de hit → NE PAS créer de page (kill switch). Réévaluer si un titre du lot dépasse un seuil de hit réel + a des codes.",
-   "notes": "05/10 : nouveaux jeux oct. (Prime Heroes, Octane, Starforged, Scrapbook Saga) absents du top joueurs/trending au 01/10 -> aucun breakout, 0 URL."
-  },
-  {
-   "id": "anime-reborn-codes-sep2026",
-   "jeu": "Anime Reborn",
-   "sujet": "Ajout de 3 codes actifs (page passée de 0 à 3)",
-   "categorie": "codes",
-   "premiereDetection": "2026-09-24",
-   "derniereVerification": "2026-09-24",
-   "statut": "UPDATED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "https://fossbytes.com/roblox-new-anime-reborn-codes/",
-    "https://www.pockettactics.com/anime-reborn/codes"
-   ],
-   "sourceOriginale": "Fossbytes (1 sept) + Pocket Tactics",
-   "potentielSEO": "moyen",
-   "trendScore": 55,
-   "pagesZoneblox": [
-    "codes-anime-reborn.html"
-   ],
-   "articleCree": true,
-   "url": "/codes-anime-reborn.html",
-   "prochaineAction": "Rotation ~10j. Surveiller nouveaux codes (TD, ~10 actifs chez les trackers). Envisager d'ajouter d'autres codes confirmés 2 sources.",
-   "notes": "AJOUT domainexpansion! (NEW), Crystals, PATCH — 2 sources concordantes. Page était vide (0 actif)."
-  },
-  {
-   "id": "survive-zombie-arena-codes-sep2026",
-   "jeu": "Survive Zombie Arena",
-   "sujet": "Expansion des codes actifs (2 → 11)",
-   "categorie": "codes",
-   "premiereDetection": "2026-09-24",
-   "derniereVerification": "2026-09-24",
-   "statut": "UPDATED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "https://www.gamesradar.com/games/survival/survive-zombie-arena-codes/",
-    "https://www.pockettactics.com/survive-zombie-arena-codes"
-   ],
-   "sourceOriginale": "GamesRadar (14 sept) + agrégat trackers",
-   "potentielSEO": "moyen",
-   "trendScore": 52,
-   "pagesZoneblox": [
-    "codes-survive-zombie-arena.html"
-   ],
-   "articleCree": true,
-   "url": "/codes-survive-zombie-arena.html",
-   "prochaineAction": "Rotation ~10j. Codes conflictuels (NODELAYSWAG/TUNDRASZN/BOSSRUSH... GR=expirés, agrégat=actifs) à retrancher si confirmés.",
-   "notes": "AJOUT 9 codes (FACTIONS,FRONTIER neufs + QolSwag,Viciboy,Pirate,Swaggin,Iron,DELAY,UPDATEDAYSWAG). Nectarforge Studios, update Frontier War."
-  },
-  {
-   "id": "catch-a-monster-new-codes",
-   "jeu": "Catch a Monster",
-   "sujet": "Nouveaux codes actifs à ajouter (stowerbug/stellawolf/nexa)",
-   "categorie": "codes",
-   "premiereDetection": "2026-09-24",
-   "derniereVerification": "2026-09-24",
-   "statut": "UPDATE_REQUIRED",
-   "importance": "basse",
-   "confiance": "MOYENNE",
-   "sources": [
-    "https://www.pockettactics.com/catch-a-monster-codes",
-    "https://fossbytes.com/catch-a-monster-codes/",
-    "https://tryhardguides.com/catch-a-monster-codes/"
-   ],
-   "sourceOriginale": "agrégat trackers sept 2026",
-   "potentielSEO": "faible",
-   "trendScore": 38,
-   "pagesZoneblox": [
-    "codes-catch-a-monster.html"
-   ],
-   "articleCree": true,
-   "url": "/codes-catch-a-monster.html",
-   "prochaineAction": "Prochain run: ajouter stowerbug (2k tower gems + task points), stellawolf (task points), nexa (1 Star Lantern Egg) après confirmation 2 sources + récompenses exactes. Nos 9 codes gardés (pas de preuve d'expiration).",
-   "notes": "Flaggé à revérifier. Page à 9 actifs, nouveaux codes non encore intégrés (prudence: récompenses à confirmer)."
-  },
-  {
-   "id": "code-maintenance-2026-09-25",
-   "jeu": "Multi (maintenance codes)",
-   "sujet": "Run 05h 25 sept — rotation + hotGames: 8 pages avec vrais changements de codes",
-   "categorie": "codes/maintenance",
-   "premiereDetection": "2026-09-25",
-   "derniereVerification": "2026-09-25",
-   "statut": "UPDATED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "Pocket Tactics",
-    "Pro Game Guides",
-    "Beebom",
-    "GamesRadar",
-    "PC Gamer",
-    "Dexerto",
-    "Fossbytes",
-    "RobloxDen"
-   ],
-   "sourceOriginale": "agrégat médias (2 sources min par changement)",
-   "potentielSEO": "maintien fraîcheur/autorité",
-   "trendScore": "n/a",
-   "pagesZoneblox": [
-    "codes-blue-lock-rivals.html",
-    "codes-fruit-battlegrounds.html",
-    "codes-catch-a-monster.html",
-    "codes-untitled-tag-game.html",
-    "codes-100-days-at-sea.html",
-    "codes-skibidi-masters-tower-defense.html",
-    "codes-peroxide.html",
-    "codes-my-gym.html",
-    "codes-anime-apocalypse.html"
-   ],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "Voir _rotationARevoir2026-09-25 dans code-watch.json (all-star-tower-defense +4 codes 2e source, anime-apocalypse codes en conflit, skibidi 130KLIKES/candidats). Prochaine rotation: grosses listes non vérifiées (astral, dragon-blox, battle-rng, brainrot-evolution, clover-retribution).",
-   "notes": "Changements: blue-lock-rivals (3 codes tournés), fruit-battlegrounds (+2), catch-a-monster (+2), untitled-tag-game (0->3), 100-days-at-sea (3->0 expirés), skibidi (5->6), peroxide (7->2), my-gym (3->2), anime-apocalypse (15->2 page périmée nettoyée). Tous ≥2 sources. Total site: 1222 codes actifs / 183 jeux."
-  },
-  {
-   "id": "code-maintenance-2026-09-26",
-   "jeu": "Multi (maintenance codes)",
-   "sujet": "Run 05h 26 sept — hotGames + rotation : 3 pages avec vrais changements (SAB +1, Blade Ball -1, ASTD +3)",
-   "categorie": "codes/maintenance",
-   "premiereDetection": "2026-09-26",
-   "derniereVerification": "2026-09-26",
-   "statut": "UPDATED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "Pocket Tactics",
-    "Pro Game Guides",
-    "Beebom",
-    "GamesRadar",
-    "Dexerto"
-   ],
-   "sourceOriginale": "agrégat médias (2 sources min par changement)",
-   "potentielSEO": "maintien fraîcheur/autorité",
-   "trendScore": "n/a",
-   "pagesZoneblox": [
-    "codes-steal-a-brainrot.html",
-    "codes-blade-ball.html",
-    "codes-all-star-tower-defense.html"
-   ],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "Prochain run : anime-apocalypse (TRANSCENDENT/INVASION si 2e source fraiche), petites rotations (doors/99-nights/royale-high) avec URL à jour, grosses listes.",
-   "notes": "SAB: BESTBRAINROTEVER réactivé (Dexerto+GamesRadar). Blade Ball: GOODVSEVIL expiré (PT 22 sept + GamesRadar 18 sept). ASTD: +ReturnOfTheLobbies/ALateSummerAwaits/AwesomeBeginnerCode (PT 21 sept + Beebom 4 sept). 7 hotGames revérifiés sans changement (ALS, GAG, blox-fruits, fisch, king-legacy, +blade-ball/SAB). codes.json 1222->1225 actifs."
-  },
-  {
-   "id": "code-maintenance-2026-09-27",
-   "jeu": "Multi (maintenance codes)",
-   "sujet": "Run 05h 27 sept — hotGames + petites rotations + Aniimo",
-   "categorie": "maintenance",
-   "premiereDetection": "2026-09-27",
-   "derniereVerification": "2026-09-27",
-   "statut": "UPDATED",
-   "importance": "haute",
-   "confiance": "haute",
-   "sources": [
-    "Pocket Tactics",
-    "Beebom",
-    "Pro Game Guides",
-    "GamesRadar",
-    "Dexerto",
-    "PC Gamer",
-    "Pocket Gamer",
-    "Destructoid"
-   ],
-   "sourceOriginale": "rotation quotidienne",
-   "potentielSEO": "maintien fraîcheur/exactitude",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-blue-lock-rivals.html",
-    "codes-doors.html",
-    "codes-anime-apocalypse.html",
-    "codes-slap-battles.html",
-    "data/aniimo/codes.json"
-   ],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "Reverifier blue-lock-rivals (rotation rapide) + dress-to-impress (prioritaire, non fait) au prochain run.",
-   "notes": "4 pages codes modifiées (2 sources min): blue-lock-rivals 3->4 (rotation), doors 8->30 (nettoyage 4 expirés + set evergreen), anime-apocalypse 2->7 (TRANSCENDENT/INVASION/SUBARU/WORLDBOSS/GUILDBATTLES), slap-battles 3->0 (aucun code actif confirmé). Aniimo: aniimoparty expiré + aniimofreetoplay ajouté + 7 récompenses confirmées. 6 pages \"aucun changement\" avec date rafraîchie (2 sources). Total codes.json: 1225->1250 (+25)."
-  },
-  {
-   "id": "code-maintenance-2026-09-28",
-   "jeu": "Multi (maintenance codes)",
-   "sujet": "Run 05h lundi : vérif hotGames + rotation. FIX MAJEUR Anime Vanguards.",
-   "categorie": "code-maintenance",
-   "premiereDetection": "2026-09-28",
-   "derniereVerification": "2026-09-28",
-   "statut": "UPDATED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "Pocket Tactics",
-    "Pocket Gamer",
-    "Beebom",
-    "PC Gamer",
-    "GamesRadar",
-    "Pro Game Guides",
-    "Dexerto"
-   ],
-   "notes": "anime-vanguards: FIX MAJEUR 4->22 actifs (19 codes étaient à tort en expirés; double-source PT27+PG26). dress-to-impress 27->29. blade-ball 14->15 (+BATTLEROYALE). driving-empire 2->5. Dates rafraîchies: blue-lock-rivals/grow-a-garden/steal-a-brainrot/volleyball-legends/fruit-battlegrounds/anime-last-stand. 0 confirmé: forsaken/dead-rails/the-strongest-battlegrounds. Conflits à surveiller: anime-last-stand (Beebom 20+ vs PGG 3), sols-rng (sources stale).",
-   "prochaineAction": "Prochaine rotation: sols-rng (source fraîche), grosses listes (anime-astral 100 / dragon-blox 82 / anime-battle-rng 35 / clover-retribution 14), tiebreak anime-last-stand."
-  },
-  {
-   "id": "code-maintenance-2026-10-01",
-   "jeu": "multi",
-   "sujet": "Maintenance codes + rotation 01/10 (debut de mois)",
-   "categorie": "maintenance",
-   "premiereDetection": "2026-10-01",
-   "derniereVerification": "2026-10-01",
-   "statut": "UPDATED",
-   "importance": "haute",
-   "confiance": "haute",
-   "sources": [
-    "mmoculture",
-    "theclick.gg",
-    "progameguides",
-    "beebom",
-    "pockettactics",
-    "fossbytes",
-    "robloxden",
-    "pocketgamer",
-    "destructoid",
-    "gamesradar"
-   ],
-   "sourceOriginale": "rotation quotidienne",
-   "potentielSEO": "fraicheur",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-universal-tower-defense-x.html",
-    "codes-combat-warriors.html",
-    "+14 verifDate"
-   ],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "Prochain run : anime-champions-simulator (source fraiche), anime-eternal (ajouter Update56-60), trancher steal-a-brainrot.",
-   "notes": "sync_month 184 pages -> octobre. FIX UTDX 18->7, AJOUT combat-warriors 0->2, 14 pages verifDate rafraichies. codes.json 1260 codes. QC clean."
-  },
-  {
-   "id": "code-maintenance-2026-10-02",
-   "jeu": "multi",
-   "sujet": "Maintenance codes + rotation 02/10 (vendredi)",
-   "categorie": "maintenance",
-   "premiereDetection": "2026-10-02",
-   "derniereVerification": "2026-10-02",
-   "statut": "UPDATED",
-   "importance": "haute",
-   "confiance": "haute",
-   "sources": [
-    "progameguides",
-    "pockettactics",
-    "beebom",
-    "fossbytes",
-    "mmoculture",
-    "gamesradar",
-    "theclick.gg"
-   ],
-   "sourceOriginale": "veille codes multi-sources",
-   "potentielSEO": "fraicheur mensuelle + pages perimees corrigees",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-anime-eternal",
-    "codes-clover-retribution",
-    "codes-anime-origins",
-    "codes-blue-lock-rivals",
-    "codes-volleyball-legends",
-    "codes-grow-a-garden",
-    "codes-steal-a-brainrot",
-    "codes-anime-vanguards"
-   ],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "Rotation: anime-astral-simulator, anime-battle-rng, dragon-blox, anime-champions-simulator (source fraiche introuvable), anime-spirits/slime-rng/etc.",
-   "notes": "anime-eternal 13->33 (Update56->60P4, PGG+PT). clover-retribution 14->13 (-3 perimes PGG, +!SPINS200/!DOUBLEUP double-confirmes; conflit PT 23/09 vs PGG 28/09). anime-origins 9->7 (-5 perimes GamesRadar 01/10, +HolyGrail/Update2/Labyrinth double-confirmes Beebom+GamesRadar). Hot games reverifies sans changement (BLR, VL, GaG, SaB conflit resolu via mmoculture 30/09, AV). universal-tower-defense-x: theclick 28/09 ne confirme que 3 codes football (divergence, non modifie)."
-  },
-  {
-   "id": "gta6-netflix-extended-look",
-   "jeu": "GTA 6",
-   "sujet": "Netflix 'An Extended Look' — 27 min de gameplay officiel (27/08/2026)",
-   "categorie": "news",
-   "premiereDetection": "2026-10-02",
-   "derniereVerification": "2026-10-08",
-   "statut": "EVERGREEN",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "https://variety.com/2026/tv/news/gta-6-netflix-trailer-extended-look-release-1236845475/",
-    "https://www.pcgamer.com/news/live/grand-theft-auto-6-reveal-live-coverage-breaking-down-the-netflix-extended-look-event/"
-   ],
-   "sourceOriginale": "Variety / PC Gamer",
-   "potentielSEO": "renforce hub evergreen GTA 6",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "data/gta-6/updates.json"
-   ],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "Veille annonce officielle Rockstar (trailer 3 attendu novembre, rumeurs). UPDATE evergreen uniquement.",
-   "notes": "Jalon officiel majeur (premier vrai gameplay, 27 min, PS5) qui manquait a l'evergreen -> backfill dans updates.json. Evenement du 27/08, pas une news fraiche 24h. Sortie 19/11/2026 maintenue."
-  },
-  {
-   "id": "maint-2026-10-03",
-   "jeu": "multi",
-   "sujet": "Maintenance codes + rotation 03/10 (samedi, full)",
-   "categorie": "maintenance",
-   "premiereDetection": "2026-10-03",
-   "derniereVerification": "2026-10-03",
-   "statut": "UPDATED",
-   "importance": "haute",
-   "sources": [
-    "PocketTactics",
-    "ProGameGuides",
-    "Beebom",
-    "GamesRadar",
-    "Destructoid",
-    "Dexerto",
-    "theclick"
-   ],
-   "confiance": "haute",
-   "prochaineAction": "Prochain run: trancher anime-squadron (Beebom 01/10 UPD4.75!/Dragon!/Slime! = source unique vs nos 5), 2e source clover !wspainplusdelay/!earlybirdgetsdaspins (conflit), retrancher anime-spirits suspects (MAHORAGARIKA/2NDANNIVERSARYUPDATE/SCARLETAZTHOTH/HAJUNUPDATE) si source les expire. De-prioriser anime-champions-simulator (aucune source fraiche). Rotation suivante: anime-astral/dragon-blox/anime-battle-rng (grosses listes), case-simulator-rng, survive-the-killer, mad-city, anime-story-2.",
-   "notes": "anime-vanguards 22->9, clover 13->13 (5 out/5 in), anime-spirits 6->10, aniimo 11->15. Hot games sans changement. GTA6 evergreen a jour (aucune annonce officielle Rockstar; sortie 19 nov 2026 confirmee, pas de trailer 3). FC: vertical reste FC26 live (Ultimate Scream S1) - ambiguite FC26/FC27 a clarifier avec Peter, aucune page creee (kill switch)."
-  },
-  {
-   "id": "maint-2026-10-04",
-   "jeu": "multi",
-   "sujet": "Run 05h full maintenance (dimanche) — rotation codes hot + rotation + conflits tranchés",
-   "categorie": "code-maintenance",
-   "premiereDetection": "2026-10-04",
-   "derniereVerification": "2026-10-04",
-   "statut": "UPDATED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "Pro Game Guides, Beebom, RoCodes, Twinfinite, GamesRadar, Destructoid, PocketTactics, TheClick, mmoculture, Try Hard Guides, bloxed.gg (01-04/10/2026)"
-   ],
-   "sourceOriginale": "Veille autonome multi-sources",
-   "potentielSEO": "maintien autorité topicale",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-blue-lock-rivals.html (4->3)",
-    "codes-anime-vanguards.html (9->3)",
-    "codes-case-simulator-rng.html (1->6)",
-    "codes-pressure.html (4->4)",
-    "codes-anime-squadron.html (5->12)",
-    "codes-clover-retribution.html (13->13)",
-    "codes-anime-spirits.html (10->6)",
-    "data/aniimo/codes.json (15, lastChecked 04/10)",
-    "+10 pages verifDate (volleyball-legends, grow-a-garden, steal-a-brainrot, universal-tower-defense-x, war-tycoon, anime-souls-simulator-x, fire-force-online, car-crushers-2, mad-city, survive-the-killer)"
-   ],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "Trancher conflits (2ndAnniDay1/100thTournament, pressure 2 codes, clover !wspainplusdelay, STK MINING, mad-city 3 codes). Rotation suivante : grosses listes (astral/dragon-blox/battle-rng, verifDate 09-10) + reste 09-17.",
-   "notes": "0 nouvelle URL (kill switch). 7 pages codes mises à jour + 10 verifDate. GTA6/FC/Aniimo sans action (confirmé stable)."
-  },
-  {
-   "id": "maint-2026-10-05",
-   "jeu": "multi",
-   "sujet": "Run 05h lundi — rotation codes + QC compteurs + jeu de la semaine (auto)",
-   "categorie": "maintenance",
-   "premiereDetection": "2026-10-05",
-   "derniereVerification": "2026-10-05",
-   "statut": "UPDATED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "Pro Game Guides",
-    "Fossbytes",
-    "RoCodes",
-    "Beebom",
-    "The Click",
-    "Pocket Tactics",
-    "RobloxDen",
-    "GamesRadar",
-    "Destructoid",
-    "mmoculture"
-   ],
-   "sourceOriginale": "Veille quotidienne",
-   "potentielSEO": "moyen",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "codes-volleyball-legends.html",
-    "codes-pressure.html",
-    "codes-war-tycoon.html"
-   ],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "Prochain run : grosses listes (anime-astral-simulator, dragon-blox, anime-battle-rng) spot-check faux-actifs ; trancher 2ndAnniDay1 / clover / restaurant-tycoon-3 / untitled-aot avec 2e source.",
-   "notes": "CHANGEMENTS CODES: volleyball-legends 3->4 (Update90, 3 sources) ; pressure 4->3 (-2 expirés, +Gullible piège) ; war-tycoon 4->6 (+Boom/Wiki200K, 2 sources). QC: 5 compteurs hero resynchronisés (désync run 04/10). Aniimo 15 confirmés (carte accueil rendue dynamique). GTA6/FC/tendances: kill switch, 0 nouvelle URL."
-  },
-  {
-   "id": "maint-2026-10-06",
-   "jeu": "multi",
-   "sujet": "Maintenance codes + veille overnight (mardi 06/10, 05h)",
-   "categorie": "maintenance",
-   "premiereDetection": "2026-10-06",
-   "derniereVerification": "2026-10-06",
-   "statut": "UPDATED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "https://www.dexerto.com/roblox/volleyball-legends-codes-3275983 (04/10)",
-    "https://www.pockettactics.com/blue-lock-rivals/codes (04/10)",
-    "https://www.pockettactics.com/steal-a-brainrot-codes (05/10)",
-    "https://www.gfinityesports.com/article/grow-a-garden-codes (30/09)",
-    "https://www.pockettactics.com/anime-vanguards/codes + dexerto (27/09)",
-    "https://progameguides.com/roblox/clover-retribution-codes/ (28/09)",
-    "https://mein-mmo.de/en/aniimo-codes...october-2026 (05/10)"
-   ],
-   "sourceOriginale": "Run planifie 05h",
-   "potentielSEO": "n/a",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "codes-volleyball-legends.html",
-    "codes-blue-lock-rivals.html",
-    "codes-steal-a-brainrot.html",
-    "codes-grow-a-garden.html",
-    "codes-anime-vanguards.html",
-    "data/aniimo/codes.json"
-   ],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "Revérifier grosses listes (anime-astral-simulator 100, dragon-blox 82, anime-battle-rng 35) des qu'une source fraiche avec liste expires datee est trouvee. Trancher clover 13->5 (PGG 28/09) avec 2e source. restaurant-tycoon-3 & untitled-aot : sources trop anciennes, maintenu.",
-   "notes": "5 hot games revérifiés SANS changement (verifDate -> 06/10) : volleyball-legends (4: UPDATE_90/SKELETON_BUNDLE/JINX/SLOT_REWORK, Dexerto 04/10), blue-lock-rivals (3: DONREVAMP/SENDOUNEXT/ACEEATER, PT 04/10), steal-a-brainrot (1: BESTBRAINROTEVER, PT 05/10+Dexerto), grow-a-garden (2: RDCAward/BEANORLEAVE10, Gfinity), anime-vanguards (3: Assault/SummerLeaving/AnniNextHopefully confirmes PT+Dexerto). 2ndAnniDay1 INTROUVABLE sur sources fiables -> NON ajoute (resolu). AV codes disputes (Wrath/Retribution/MiniUpd2 : actifs PT vs expires Dexerto, meme date) -> kill switch maintenu. clover !wspainplusdelay = EXPIRE confirme PGG -> reste hors page. Aniimo lastChecked -> 06/10. GTA6 inchange. Grosses listes: aucune source fraiche (404 PGG/PT) -> deferred, pas de preuve d'expiration."
-  },
-  {
-   "id": "maint-2026-10-07",
-   "jeu": "multi",
-   "sujet": "Maintenance codes + veille overnight (mercredi 07/10, 05h — run decale fire 09h10 UTC)",
-   "categorie": "maintenance",
-   "premiereDetection": "2026-10-07",
-   "derniereVerification": "2026-10-07",
-   "statut": "UPDATED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "https://www.dexerto.com/roblox/volleyball-legends-codes-3275983 (04/10)",
-    "https://www.dexerto.com/roblox/blue-lock-rivals-codes-3252484 (04/10)",
-    "https://www.gfinityesports.com/article/grow-a-garden-codes (30/09)",
-    "https://www.pockettactics.com/steal-a-brainrot-codes (05/10)",
-    "https://www.pocketgamer.com/roblox/jailbreak-codes/ (03/10)",
-    "https://www.pocketgamer.com/roblox/dandys-world-codes/ (03/10)",
-    "https://mein-mmo.de/en/aniimo-codes...october-2026 (06/10) + patch v1.1 (23/09)",
-    "https://opencritic.com/news/34709 (GTA6 Take-Two CEO 17/07)",
-    "colby.si + netzwelt + redbull (FC27 live 25/09)"
-   ],
-   "sourceOriginale": "Run planifie 05h (decale)",
-   "potentielSEO": "n/a",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "codes-volleyball-legends.html",
-    "codes-blue-lock-rivals.html",
-    "codes-grow-a-garden.html",
-    "codes-steal-a-brainrot.html",
-    "codes-jailbreak.html",
-    "codes-dandys-world.html"
-   ],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "1) basketball-zero: 2e source fraiche pour trancher CYBERRETURN/RANKEDBLEWUPAGAIN vs nos SCARYMONSTER (probablement perimes). 2) Grosses listes (anime-astral/dragon-blox/anime-battle-rng): remonter a Peter la DECISION rebuild (sources contradictoires, trim non prouvable). 3) clover 13 vs 5: 2e source fraiche concordante. 4) Aniimo Irisalis: stats de combat + 2e source avant edition creatures.json. 5) Rotation en retard: anime-expeditions, shindo-life, bee-swarm, bubble-gum, a-dusty-trip, sakura-stand.",
-   "notes": "6 pages revERIFIEES SANS changement de code (verifDate -> 07/10): 4 hot (volleyball-legends 4, blue-lock-rivals 3, grow-a-garden 2, steal-a-brainrot 1) + 2 rotation (jailbreak 2, dandys-world 1 ICHOR). TOUTES matches exactes sur sources fraiches. AUCUN code ajoute/retire ce run (kill switch sur tous les conflits). basketball-zero NON edite (3 sources discordantes, nos codes introuvables mais pas de preuve d'expiration). clover 13 maintenu (3 sources fraiches discordantes). Grosses listes maintenues (expiration non prouvable, PocketGamer agregateur non-pruning). GTA6 kill switch. Aniimo Irisalis identifiee mais NON ajoutee (stats non publiees). FC27 live confirme. Roblox trends: aucun breakout. build_codes_json NON lance (aucun code modifie)."
-  },
-  {
-   "id": "anime-vanguards-2ndanni-2026-10",
-   "jeu": "Anime Vanguards",
-   "sujet": "Événement 2e anniversaire : codes quotidiens 2ndAnniDayX",
-   "categorie": "codes/event",
-   "premiereDetection": "2026-10-08",
-   "derniereVerification": "2026-10-20",
-   "statut": "UPDATED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "https://destructoid.com/anime-vanguards-codes/ (07/10)",
-    "https://twinfinite.net/roblox/anime-vanguards-codes/ (07/10)",
-    "https://robloxden.com/game-codes/anime-vanguards (07/10)"
-   ],
-   "sourceOriginale": "Destructoid/Twinfinite/RobloxDen",
-   "potentielSEO": "maintien fraîcheur page codes hot",
-   "pagesLiees": [
-    "/codes-anime-vanguards.html"
-   ],
-   "articleCree": false,
-   "prochaineAction": "Surveiller fin event anniversaire + expirations quotidiennes. 2ndAnniDay1 (PGG) / 2ndAnniDay2 (Twinfinite) = 1 source chacun.",
-   "notes": "20/10: page passee de 8 a 13 codes. +5 double-confirmes (Twinfinite 19/10 + PGG 12/10): Finally, 2ndAnniversary, TrueShadowMonarch, HappyAnniversary, 100thTournament. Prepare expire confirme."
-  },
-  {
-   "id": "maint-2026-10-08",
-   "jeu": "multi",
-   "sujet": "Maintenance codes full 05h (jeudi 08/10) + veille overnight",
-   "categorie": "maintenance",
-   "premiereDetection": "2026-10-08",
-   "derniereVerification": "2026-10-08",
-   "statut": "UPDATED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "Dexerto/Gfinity/Destructoid/Twinfinite/RobloxDen/insider-gaming (04-07/10)"
-   ],
-   "sourceOriginale": "multi",
-   "potentielSEO": "fraîcheur + exactitude pages codes",
-   "pagesLiees": [
-    "/codes-anime-vanguards.html",
-    "/codes-basketball-zero.html",
-    "/codes-encounters.html",
-    "/codes-bubble-gum-simulator-infinity.html"
-   ],
-   "articleCree": false,
-   "prochaineAction": "Cross-check anime-expeditions/steal-a-fish/evade/slime-rng ; décision Peter grosses listes",
-   "notes": "Hot codes 4 inchangés (VL/BLR/GAG/SAB). anime-vanguards +4. Retraits prouvés: basketball-zero SCARYMONSTER/15SCARYMONSTER (→0), encounters IKES (→0), bgs-infinity throwback (→4). Kill switch: basketball-zero nouveaux codes (sources discordantes), anime-stars 11 candidats (jeu mal identifié). GTA6 19 nov confirmé no-delay. Aniimo Irisalis stats toujours non publiées (MONITOR). Aucun breakout Roblox. FC27 live, promos sur leaks → à préparer (sources EA off requises)."
-  },
-  {
-   "id": "evade-codes-2026-10",
-   "jeu": "Evade",
-   "sujet": "MAJ codes: retrait HAPPY4THBIRTHDAYEVADE (expire) + ajout Summer2026/isurviveddatahaul",
-   "categorie": "codes",
-   "premiereDetection": "2026-10-10",
-   "derniereVerification": "2026-10-10",
-   "statut": "UPDATED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "https://robloxden.com/game-codes/evade",
-    "https://www.dexerto.com/roblox/evade-codes-3357718/",
-    "https://allthings.how/evade-codes/"
-   ],
-   "sourceOriginale": "Reverif conflit queue 08/10",
-   "potentielSEO": "moyen",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-evade.html"
-   ],
-   "articleCree": false,
-   "url": "/codes-evade.html",
-   "prochaineAction": "Surveiller TrollgeTungTung (candidat, RobloxDen=Check)",
-   "notes": "HAPPY4THBIRTHDAYEVADE confirme EXPIRE par RobloxDen 10/10 (preuve)."
-  },
-  {
-   "id": "maint-2026-10-10",
-   "jeu": "Multi",
-   "sujet": "Run 05h full: verif codes hot (6) + rotation (8), 1 changement (evade)",
-   "categorie": "maintenance",
-   "premiereDetection": "2026-10-10",
-   "derniereVerification": "2026-10-10",
-   "statut": "UPDATED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "Destructoid 10/10",
-    "roonby 03/10",
-    "Gfinity 07/10",
-    "timesaver 08/10",
-    "RobloxDen 10/10",
-    "Dexerto",
-    "allthings"
-   ],
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-evade.html",
-    "+9 verifDate (AV, volleyball, grow-a-garden, steal-a-brainrot, steal-a-fish, slime-rng, anime-champions-sim, evomon, anime-card-farm)"
-   ],
-   "articleCree": false,
-   "prochaineAction": "BLR drop hebdo; anime-expeditions & be-a-fish-bait cross-check; evomon/anime-champions-sim refresh multi-source (GHOUL, saison evomon)",
-   "notes": "codes.json 184 jeux / 1253 codes actifs. Candidats non ajoutes (kill switch): GHOUL (anime-champions-sim, 1 src), TRADING! (anime-card-farm, 1 src perimee), Clash!/Brothers/HollowWorld (anime-expeditions, roonby seul)."
-  },
-  {
-   "id": "maint-2026-10-11",
-   "jeu": "Multi",
-   "sujet": "Run 05h full (dimanche): 8 hot/rotation re-verifies, 0 changement de code (kill switch)",
-   "categorie": "maintenance",
-   "premiereDetection": "2026-10-11",
-   "derniereVerification": "2026-10-11",
-   "statut": "UPDATED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "Destructoid 10/10",
-    "Dexerto 04/10",
-    "Pockettactics 04-08/10",
-    "Gfinity 07/10",
-    "timesaver 08/10",
-    "roonby 10/10",
-    "Beebom"
-   ],
-   "trendScore": null,
-   "pagesZoneblox": [
-    "verifDate +8: anime-vanguards, blue-lock-rivals, volleyball-legends, grow-a-garden, steal-a-brainrot, blox-fruits, fisch, plants-vs-brainrots"
-   ],
-   "articleCree": false,
-   "prochaineAction": "Prochain run: 2e source VL Update 91 (UPDATE_91/REPLAYS/MVP); 2e source da-hood (PVP/BUFF/WORLDCUP26); re-verifier fisch MarianaIsGoingCrazy & dragon-adventures SeasonXP; evomon saison; BLR drop hebdo.",
-   "notes": "Aucun ajout/retrait: tous les candidats neufs = mono-source. GTA6 rumeur Trailer3. FC27 Destined for Glory live (non publie=leaks). Aniimo Irisalis MONITOR. Steal-a-Brainrot: secret Phoenix via Haunted Fuse (Halloween) = angle guide, pas un code."
-  },
-  {
-   "id": "volleyball-upd91-2026-10-11",
-   "jeu": "Volleyball Legends",
-   "sujet": "UPDATE 91 Instant Replay - codes UPDATE_91/REPLAYS/MVP (candidats mono-source)",
-   "categorie": "codes",
-   "premiereDetection": "2026-10-11",
-   "derniereVerification": "2026-10-12",
-   "statut": "PUBLISHED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "roonby 10/10 (seul)",
-    "https://roonby.com/2025/04/19/volleyball-legends-codes/",
-    "https://www.dexerto.com/roblox/volleyball-legends-codes-3275983"
-   ],
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-volleyball-legends.html"
-   ],
-   "articleCree": true,
-   "prochaineAction": "Surveiller Update 92 ; verifier expiration reelle Update 90 (2e source)",
-   "notes": "UPDATE_91/REPLAYS/MVP publies le 12/10 (Roonby 10/10 + Dexerto 11/10). Ancien set Update 90 passe expire (pattern de rotation du jeu + Dexerto 11/10).",
-   "url": "/codes-volleyball-legends.html"
-  },
-  {
-   "id": "maint-2026-10-12",
-   "jeu": "Multi (maintenance codes)",
-   "sujet": "Run 05h lundi — VL Update 91 publie + dragon-adventures SeasonXP expire",
-   "categorie": "code-maintenance",
-   "premiereDetection": "2026-10-12",
-   "derniereVerification": "2026-10-12",
-   "statut": "UPDATED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "https://www.dexerto.com/roblox/volleyball-legends-codes-3275983",
-    "https://roonby.com/2025/04/19/volleyball-legends-codes/",
-    "https://robloxden.com/game-codes/dragon-adventures"
-   ],
-   "sourceOriginale": "Veille codes run 05h",
-   "potentielSEO": "moyen",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-volleyball-legends.html",
-    "codes-dragon-adventures.html",
-    "codes-arm-wrestle-simulator.html",
-    "codes-anime-vanguards.html",
-    "codes-blue-lock-rivals.html"
-   ],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "Confirmer candidats BLR + anime-defenders (2e source)",
-   "notes": "VL: UPDATE_91/REPLAYS/MVP actifs, Update 90 expire. dragon-adventures: SeasonXP expire (RobloxDen 10/10 + Pockettactics). arm-wrestle, anime-vanguards, blue-lock-rivals re-verifies stables. Jeu de la semaine (lundi) mis a jour."
-  },
-  {
-   "id": "blue-lock-rivals-drop-2026-10-12",
-   "jeu": "Blue Lock Rivals",
-   "sujet": "Drop hebdo candidat EPICSENDOU/ONEMOREWEEK/NELAIKUNEXT",
-   "categorie": "codes",
-   "premiereDetection": "2026-10-12",
-   "derniereVerification": "2026-10-29",
-   "statut": "UPDATED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "Dexerto 18/10",
-    "Twinfinite 17/10",
-    "ProGameGuides 11/10",
-    "GamesRadar 12/10"
-   ],
-   "sourceOriginale": "Dexerto 11/10",
-   "potentielSEO": "moyen",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-blue-lock-rivals.html"
-   ],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "Revérifier au prochain drop hebdo; confirmer la récompense exacte de SPOOKY via source officielle.",
-   "notes": "29/10: conflit tranché. 2 sources récentes concordantes (Dexerto 25/10 + Game.guide 28/10) : les codes ont tourné avec l'update Aiku — NELAIKU/HALLOWEEN/WSNAKE/SORRYFORDELAYAIKU expirés, remplacés par SKELETON (5 Lucky Spins), AIKUCHANGES (5 Lucky Flow Spins) et SPOOKY (récompense non détaillée par les sources). Page mise à jour (actifs+expirés, compteur, JS ACTIVE, prose, verifDate, JSON-LD dateModified 2026-10-29). TimeSaver 22/10 listait encore les anciens = simplement antérieur à l'update, pas un conflit."
-  },
-  {
-   "id": "anime-zero-launch-2026-10",
-   "jeu": "Anime Zero",
-   "sujet": "Nouveau cluster (codes + guide debutant) - RPG anime/dungeon crawler en dev actif",
-   "categorie": "new-game",
-   "premiereDetection": "2026-10-12",
-   "derniereVerification": "2026-10-12",
-   "statut": "PUBLISHED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "https://www.pockettactics.com/anime-zero-codes",
-    "https://www.dexerto.com/roblox/anime-zero-codes-3416634/",
-    "https://www.igeeksblog.com/anime-zero-codes/",
-    "https://www.roblox.com/games/114574503491412/Anime-Zero"
-   ],
-   "sourceOriginale": "Demande de Peter (URL Roblox)",
-   "potentielSEO": "eleve",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-anime-zero.html",
-    "guides/anime-zero.html"
-   ],
-   "articleCree": true,
-   "url": "/codes-anime-zero.html",
-   "prochaineAction": "Surveiller nouveaux codes (jeu en dev actif); tier list quand donnees unites sourcees; 2e guide forte intention si traction",
-   "notes": "25 codes publies (2+ sources). Miniature rbxcdn reelle. Integration complete (GAMES, GAMES_INDEX, hubs, sitemap). Jeu en developpement actif -> drops frequents."
-  },
-  {
-   "id": "halloween-audit-2026-10",
-   "jeu": "Multi (Halloween)",
-   "sujet": "Audit Halloween du catalogue (demande Peter)",
-   "categorie": "maintenance",
-   "premiereDetection": "2026-10-12",
-   "derniereVerification": "2026-10-12",
-   "statut": "MONITOR",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "https://www.dexerto.com/roblox/roblox-bee-swarm-simulator-codes-1664631/",
-    "https://www.pockettactics.com/tower-defense-simulator/codes",
-    "https://timesaver.gg/blog/steal-a-brainrot-codes-october-2026"
-   ],
-   "sourceOriginale": "Demande de Peter",
-   "potentielSEO": "moyen",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-blade-ball.html",
-    "codes-steal-a-brainrot.html"
-   ],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "Surveiller drops de codes Halloween; angle guide Steal a Brainrot (Haunted Fuse/Phoenix, pas un code)",
-   "notes": "blade-ball a deja SPOOKYSEASON actif. Evenements Halloween en cours (Steal a Brainrot Haunted Fuse, Adopt Me) mais peu/pas de codes neufs. Kill switch: FREEOCTOBLOCK777 + saturn rejetes (mono-source)."
-  },
-  {
-   "id": "maint-2026-10-13",
-   "jeu": "Multi (maintenance codes)",
-   "sujet": "Run 05h 13/10 - verification hot games + rotation, 0 edition",
-   "categorie": "code-maintenance",
-   "premiereDetection": "2026-10-13",
-   "derniereVerification": "2026-10-13",
-   "statut": "VERIFIED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "Dexerto",
-    "Pocket Tactics",
-    "RobloxDen",
-    "roonby",
-    "destructoid",
-    "nerdschalk",
-    "igeeksblog"
-   ],
-   "sourceOriginale": "Run quotidien",
-   "potentielSEO": "na",
-   "trendScore": 0,
-   "pagesZoneblox": [],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "Voir EDITORIAL-QUEUE.md",
-   "notes": "HOT verifies, tous a jour ou kill-switch: volleyball-legends (UPDATE_91/REPLAYS/MVP confirme Dexerto 11/10, pas d'Update 92), anime-vanguards (8 codes 12/10 OK), grow-a-garden (stable, pas de codes neufs), steal-a-brainrot (BESTBRAINROTEVER OK), blox-fruits (stable). Aucun code hot a modifier. ROTATION verifiee: voir topics dedies wizard-alchemy / iron-soul / anime-expeditions / dig-and-clean."
-  },
-  {
-   "id": "wizard-alchemy-stale-2026-10-13",
-   "jeu": "Wizard Alchemy",
-   "sujet": "Page codes obsolete - rotation thematique non prise en compte",
-   "categorie": "code-update",
-   "premiereDetection": "2026-10-13",
-   "derniereVerification": "2026-10-14",
-   "statut": "UPDATED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "https://www.dexerto.com/roblox/wizard-alchemy-codes-3366201/ (MAJ 09/10)",
-    "https://robloxden.com/game-codes/wizard-alchemy (verif 12/10)",
-    "https://nerdschalk.com/wizard-alchemy-codes/ (3e source, confirme expirations)"
-   ],
-   "sourceOriginale": "Rotation 13/10",
-   "potentielSEO": "moyen",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "codes-wizard-alchemy.html"
-   ],
-   "articleCree": false,
-   "url": "/codes-wizard-alchemy.html",
-   "prochaineAction": "FAIT le 14/10: liste visible + const ACTIVE + compteur + verifDate + narratif code-specifique corriges. Set actif = POISON, SPIDER, SPELL, BREW, 17kCCU, 20kMembers (6 codes, 3 sources). 60KMEMBERS/UPDATE1/QILIN + ancien set retires. Extras mono-source RobloxDen (MAGICPETS/PIRATEPETS/AGGROAAR) NON ajoutes par prudence. A surveiller: si traction, ajouter extras avec 2e source.",
-   "notes": "RESOLU. 3e source (nerdschalk) obtenue -> seuil Option A atteint. Edition surgicale verifiee (abort-safe, 16 cibles, QC: 0 null byte, </html> ok, div 90/90, ACTIVE valide node). build_codes_json + build_sitemap relances."
-  },
-  {
-   "id": "iron-soul-conflict-2026-10-13",
-   "jeu": "Iron Soul: Dungeon",
-   "sujet": "Conflit d'ampleur sur le nombre de codes actifs",
-   "categorie": "code-conflict",
-   "premiereDetection": "2026-10-13",
-   "derniereVerification": "2026-10-15",
-   "statut": "MONITOR",
-   "importance": "moyenne",
-   "confiance": "LOW",
-   "sources": [
-    "https://www.dexerto.com/roblox/iron-soul-dungeon-codes-3387280/ (11/10: 1 actif RAGNAROK)",
-    "https://robloxden.com/game-codes/iron-soul-dungeon (03/10: ~25 actifs)"
-   ],
-   "sourceOriginale": "Rotation 13/10",
-   "potentielSEO": "faible",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "codes-iron-soul-dungeon.html"
-   ],
-   "articleCree": false,
-   "url": "/codes-iron-soul-dungeon.html",
-   "prochaineAction": "RAGNAROK (3 Race Rerolls) confirme actif par les 2 sources = ajout sur -> mais verifDate page = 19/09 (perime) et liste visible ~23 codes. Conflit majeur Dexerto(conservateur) vs RobloxDen(liberal) sur l'ampleur -> ne pas reecrire en auto. Trancher avec 3e source.",
-   "notes": "Kill switch sur l'ampleur. Seul consensus: RAGNAROK actif; IRONSOULWEEKEND1-12 + 50KMEMBER expires (2 sources). | Re-verif 15/10: Dexerto 11/10 = 1 actif (RAGNAROK) ; nerdschalk = 43 mais date 19/09 (perime) ; RobloxDen ~25. Page=23. Non tranche, kill switch."
-  },
-  {
-   "id": "anime-expeditions-stale-2026-10-13",
-   "jeu": "Anime Expeditions",
-   "sujet": "Page codes obsolete vs source fraiche",
-   "categorie": "code-update",
-   "premiereDetection": "2026-10-13",
-   "derniereVerification": "2026-10-13",
-   "statut": "MONITOR",
-   "importance": "moyenne",
-   "confiance": "MEDIUM",
-   "sources": [
-    "https://www.dexerto.com/roblox/anime-expeditions-codes-3388290/ (12/10: Clash!, Brothers, HollowWorld)",
-    "https://www.thespike.gg/roblox/game-codes/anime-expeditions-codes (10/08 PERIME)"
-   ],
-   "sourceOriginale": "Rotation 13/10",
-   "potentielSEO": "moyen",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "codes-anime-expeditions.html"
-   ],
-   "articleCree": false,
-   "url": "/codes-anime-expeditions.html",
-   "prochaineAction": "Page affiche un set ancien (HAPPYBDAYCOOP/wfade/100mvisits...). Dexerto 12/10 donne Clash!/Brothers/HollowWorld mais 1 seule source fraiche (TheSpike perime). 2e source fraiche requise avant rewrite.",
-   "notes": "Candidat update, bloque faute de 2e source fraiche."
-  },
-  {
-   "id": "dig-and-clean-upd3-2026-10-13",
-   "jeu": "Dig and Clean",
-   "sujet": "Candidat ajout UPDATE3",
-   "categorie": "code-update",
-   "premiereDetection": "2026-10-13",
-   "derniereVerification": "2026-10-13",
-   "statut": "MONITOR",
-   "importance": "faible",
-   "confiance": "MEDIUM",
-   "sources": [
-    "https://www.destructoid.com/dig-and-clean-codes/ (01/10: UPDATE3 nouveau)",
-    "https://www.pcgamesn.com/dig-and-clean-codes (perime: SECRET10 seul)"
-   ],
-   "sourceOriginale": "Rotation 13/10",
-   "potentielSEO": "faible",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "codes-dig-and-clean.html"
-   ],
-   "articleCree": false,
-   "url": "/codes-dig-and-clean.html",
-   "prochaineAction": "Ajouter UPDATE3 (2x Luck 30 min) apres 2e source fraiche. Page actuelle UPDATE2/UPDATE1/SECRET10 OK (non prouves expires).",
-   "notes": "Mono-source fraiche pour UPDATE3."
-  },
-  {
-   "id": "slayers-2-conflict-2026-10-13",
-   "jeu": "Slayers 2",
-   "sujet": "Conflit 3 voies non tranche",
-   "categorie": "code-conflict",
-   "premiereDetection": "2026-10-12",
-   "derniereVerification": "2026-10-13",
-   "statut": "MONITOR",
-   "importance": "moyenne",
-   "confiance": "LOW",
-   "sources": [
-    "Page: SkillTreeReset, Release26",
-    "Pocket Tactics 12/10: AUCUN code actif (POINTSRESET/SORRYFORSHUTDOWN expires)",
-    "igeeksblog 12/10: 5 codes sans rapport (Roguelike, M1LL1ON, Anime Overload...)"
-   ],
-   "sourceOriginale": "Queue 12/10",
-   "potentielSEO": "faible",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "codes-slayers-2.html"
-   ],
-   "articleCree": false,
-   "url": "/codes-slayers-2.html",
-   "prochaineAction": "3 sources, 3 reponses differentes -> KILL SWITCH. Aucune preuve d'expiration de SkillTreeReset/Release26. Jeu en ligne. Attendre convergence.",
-   "notes": "Conflit maximal, aucune edition."
-  },
-  {
-   "id": "noob-incremental-stale-2026-10-16",
-   "jeu": "Noob Incremental",
-   "sujet": "Liste de codes perimee a reecrire (set actif double-confirme)",
-   "categorie": "codes",
-   "premiereDetection": "2026-10-16",
-   "derniereVerification": "2026-10-16",
-   "statut": "UPDATE_REQUIRED",
-   "importance": "moyenne",
-   "confiance": "haute",
-   "sources": [
-    "dexerto.com/roblox/noob-incremental-codes-3379039 (10/10)",
-    "robloxden.com/game-codes/noob-incremental (15/10)"
-   ],
-   "sourceOriginale": "rotation jamais-verifie",
-   "potentielSEO": "moyen",
-   "trendScore": 55,
-   "pagesZoneblox": [
-    "codes-noob-incremental.html"
-   ],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "Reecrire #activeList + const ACTIVE + compteur + Mis a jour, avec recompenses fiables par code. Set confirme 2 sources: ANOTHERMINIUPDATE, FIXINGSTUFF, UPDATEFIX, UNDERWATERISFINALLYHERE, YINYANG, MASTERIESAREHERE!, SPACEREALMISOUT!, 500KGROUPMEMBERS!!!, FOOTBALLEVENT, RELEASE (+LABUPDATE, +ANOTHERMINIUPDATEINNOOBINC/INOHIO/THANKS4JOINING).",
-   "notes": "Page actuelle (REFUNDPRISM/10MVISITS!/...CCU) non confirmee par aucune source fraiche sauf RELEASE/LABUPDATE. Rewrite reporte faute de recompenses fiables (regle anti-invention)."
-  },
-  {
-   "id": "fc26-ultimate-scream-2026-10-18",
-   "jeu": "EA Sports FC 27",
-   "sujet": "Promo Ultimate Scream (Halloween) + Scream Team 2",
-   "categorie": "FUT / promo saisonniere",
-   "premiereDetection": "2026-10-18",
-   "derniereVerification": "2026-10-28",
-   "statut": "PUBLISHED",
-   "importance": "moyenne-haute",
-   "confiance": "haute",
-   "sources": [
-    "ea.com (officiel) /fc-26/news/fc-26-ultimate-scream",
-    "fut.gg",
-    "sportskeeda (Halloween Puzzle Crafting)",
-    "destructoid (Scream Team 2)",
-    "https://www.fut.gg/news/ea-fc-27-ultimate-scream-release-date-times-upgrades/",
-    "https://www.dexerto.com/wikis/ea-fc-27/promo-calendar/"
-   ],
-   "sourceOriginale": "ea.com officiel",
-   "potentielSEO": "eleve (requete saisonniere Halloween, intention FUT)",
-   "trendScore": 74,
-   "pagesZoneblox": [
-    "/games/fc-27/guides/sbc-solutions/",
-    "/games/fc-27/guides/meilleurs-joueurs-meta/"
-   ],
-   "articleCree": true,
-   "url": "/games/fc-27/guides/sbc-solutions/",
-   "prochaineAction": "Team 2 'attendue' vendredi 30/10 18:00 UTC (NON confirmee EA, fut.gg). Publier des sortie reelle + 1 solution DCE verifiee. Token store jusqu'au 13/11, upgrade Beaver Moon 24/11->01/12 (confirmes).",
-   "notes": "CORRECTION NAMING (resolue 26/10): la promo Ultimate Scream appartient a FC 27 (jeu courant, sorti 25/09/2026), pas FC 26 (l'attribution FC26 du 18/10 reposait sur un calendrier dexerto perime). 27/10: PUBLIE sur SBC-solutions (promo live + DCE Woltemade 85 MOC) et Meta (cartes fortes Ultimate Scream: Raphinha 90 MOC, Ronaldo 89 BU, Paralluelo 88 BU, Szoboszlai 88 MDC, Palmer 87 MOC, Heros Zola/Stam). Source FUT.GG 22/10, dexerto fc-27. | 28/10: Team 2 non sortie, seulement 'attendue' ~30/10 (fut.gg). Pas de publication (kill switch sur non-confirme)."
-  },
-  {
-   "id": "run-2026-10-19-05h",
-   "jeu": "(run log)",
-   "sujet": "Run 05h full lundi 19/10 - 0 edition de code, verification hot+rotation, 2 candidats near-ready",
-   "categorie": "run-log",
-   "premiereDetection": "2026-10-19",
-   "derniereVerification": "2026-10-19",
-   "statut": "PUBLISHED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "Dexerto",
-    "Samlover",
-    "PocketTactics",
-    "Beebom",
-    "RobloxDen",
-    "ProGameGuides",
-    "g2a",
-    "Roonby",
-    "Rockstar Newswire",
-    "ea.com",
-    "khelnow"
-   ],
-   "sourceOriginale": "Run planifie 05h",
-   "potentielSEO": "",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "catalogVerify -> 19/10: shindo-life, grand-piece-online, da-hood, car-dealership-tycoon, toilet-tower-defense"
-   ],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "Voir EDITORIAL-QUEUE.md et _notes2026-10-19 (code-watch.json).",
-   "notes": ""
-  },
-  {
-   "id": "gpo-rotation-2026-10-19",
-   "jeu": "Grand Piece Online",
-   "sujet": "Page codes legerement stale - ajout FREE_Drops8 + 5FREETAILORVOUCHERS_2 (2 sources)",
-   "categorie": "codes-maintenance",
-   "premiereDetection": "2026-10-19",
-   "derniereVerification": "2026-10-19",
-   "statut": "UPDATE_REQUIRED",
-   "importance": "moyenne",
-   "confiance": "MEDIUM",
-   "sources": [
-    "Dexerto (18/10)",
-    "g2a (01/10)"
-   ],
-   "sourceOriginale": "",
-   "potentielSEO": "",
-   "trendScore": 30,
-   "pagesZoneblox": [
-    "codes-grand-piece-online.html"
-   ],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "3e source fiable -> ajouter FREE_Drops8 (24h 2x Drop) + 5FREETAILORVOUCHERS_2 (5 Tailor Vouchers), concordants Dexerto+g2a. NE PAS retirer FREE_Drops7/FREE_EXP6 (conflit, pas de preuve d'expiration). ILOVEGPO_3 double-confirme actif.",
-   "notes": "GPO rotation lente de codes Drop/EXP/Voucher. g2a liste tout actif (accumulateur) -> fiabilite moyenne."
-  },
-  {
-   "id": "da-hood-rotation-2026-10-19",
-   "jeu": "Da Hood",
-   "sujet": "Ajout MACRO!/ETERNAL (2 sources) + conflit DOG/SHARK non tranche",
-   "categorie": "codes-maintenance",
-   "premiereDetection": "2026-10-19",
-   "derniereVerification": "2026-10-19",
-   "statut": "MONITOR",
-   "importance": "moyenne",
-   "confiance": "MEDIUM",
-   "sources": [
-    "RobloxDen (18/10)",
-    "ProGameGuides (12/10)",
-    "AllThings (19/09)"
-   ],
-   "sourceOriginale": "",
-   "potentielSEO": "",
-   "trendScore": 20,
-   "pagesZoneblox": [
-    "codes-da-hood.html"
-   ],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "3e source fraiche -> ajouter MACRO! (1M DHC) + ETERNAL (500K DHC), concordants robloxden+progameguides. DOG/SHARK: KILL SWITCH (robloxden=expires vs progameguides+allthings=actifs) -> ne pas retirer sans 2e preuve d'expiration fraiche.",
-   "notes": "Page actuelle = DOG/SHARK. Conflit 3 voies. bluestacks/digitalcitizen stale inexploitables."
-  },
-  {
-   "id": "roblox-trends-2026-10-19",
-   "jeu": "Roblox (veille)",
-   "sujet": "Jeux montants a surveiller (pas encore de preuve multi-source + codes)",
-   "categorie": "trend-detection",
-   "premiereDetection": "2026-10-19",
-   "derniereVerification": "2026-10-19",
-   "statut": "MONITOR",
-   "importance": "moyenne",
-   "confiance": "LOW",
-   "sources": [
-    "rblxstat (19/10)",
-    "blast.tv fall games",
-    "sportskeeda"
-   ],
-   "sourceOriginale": "",
-   "potentielSEO": "",
-   "trendScore": 35,
-   "pagesZoneblox": [],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "Croiser signaux (YouTube/TikTok/Reddit + codes reels) avant toute page. Candidats: Facecard: Makeup Showdown, Ride a Dino, [SHINJI] Legends Battlegrounds, Break and Steal an Egg (meta vol d'oeufs).",
-   "notes": "Compteurs rblxstat peu fiables. Pas de creation precipitee (mode conquete = 1 page principale d'abord)."
-  },
-  {
-   "id": "gpo-dahood-codes-2026-10-20",
-   "jeu": "Grand Piece Online + Da Hood",
-   "sujet": "Codes: ajouts multi-sources (edition propre non destructive)",
-   "categorie": "codes",
-   "premiereDetection": "2026-10-20",
-   "derniereVerification": "2026-10-20",
-   "statut": "PUBLISHED",
-   "importance": "HAUTE",
-   "confiance": "HAUTE",
-   "sources": [
-    "Dexerto 18/10",
-    "ProGameGuides 01/10 & 12/10",
-    "Destructoid 19/10",
-    "TechWiser 12/10"
-   ],
-   "sourceOriginale": "rotation+hotGames",
-   "potentielSEO": "fort (pages a fort trafic)",
-   "trendScore": 70,
-   "pagesZoneblox": [
-    "/codes-grand-piece-online.html",
-    "/codes-da-hood.html"
-   ],
-   "articleCree": true,
-   "url": "/codes-grand-piece-online.html",
-   "prochaineAction": "GPO: surveiller FREE_Drops7/FREE_EXP6. DaHood: 3e source expiration DOG/SHARK; candidats PVP/BUFF.",
-   "notes": "GPO +FREE_Drops8 (3 sources). DaHood +MACRO!/ETERNAL (3 sources). Kill switch GPO 5FREETAILORVOUCHERS_2/ANOTHER (expires 2 sources)."
-  },
-  {
-   "id": "grimoires-era-stale-2026-10-20",
-   "jeu": "Grimoires Era",
-   "sujet": "Page codes tres probablement perimee (conflit 3 voies)",
-   "categorie": "codes",
-   "premiereDetection": "2026-10-20",
-   "derniereVerification": "2026-10-24",
-   "statut": "MONITOR",
-   "importance": "HAUTE",
-   "confiance": "faible",
-   "sources": [
-    "games.gg 03/10",
-    "pocketgamer 03/10",
-    "pockettactics (stale nov-2025)",
-    "macmyths"
-   ],
-   "sourceOriginale": "rotation",
-   "potentielSEO": "moyen",
-   "trendScore": 55,
-   "pagesZoneblox": [
-    "/codes-grimoires-era.html"
-   ],
-   "articleCree": false,
-   "url": "/codes-grimoires-era.html",
-   "prochaineAction": "Source OFFICIELLE requise (Trello/Discord). Conflit 3 voies CONFIRME le 24/10: games.gg (NEXTCHAPTER!/MINING!/UPDATE0.6!/SYSTEMREWORK!) vs pocketgamer+pockettactics (REVAMPSOON!/25SPINS!/2025BOOSTS!/CLOVER) vs page (codes release). Aucun rebuild sans officiel.",
-   "notes": "24/10: 2 sources fraiches (games.gg, pocketgamer, meme date 03/10) totalement contradictoires + page obsolete. KILL SWITCH maintenu."
-  },
-  {
-   "id": "maint-2026-10-20",
-   "jeu": "Multi (maintenance codes)",
-   "sujet": "Run 05h full 20/10 (mardi)",
-   "categorie": "maintenance",
-   "premiereDetection": "2026-10-20",
-   "derniereVerification": "2026-10-20",
-   "statut": "UPDATED",
-   "importance": "NORMALE",
-   "confiance": "HAUTE",
-   "sources": [
-    "Dexerto",
-    "ProGameGuides",
-    "Destructoid",
-    "Twinfinite",
-    "TechWiser",
-    "roonby",
-    "mein-mmo",
-    "RockstarINTEL"
-   ],
-   "sourceOriginale": "run",
-   "potentielSEO": "-",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "/codes-grand-piece-online.html",
-    "/codes-da-hood.html",
-    "/codes-anime-vanguards.html",
-    "/games/gta-6/"
-   ],
-   "articleCree": true,
-   "url": "",
-   "prochaineAction": "Rotation suite (grimoires-era rebuild, inflated lists Peter). Candidats: haze-piece PHANTOMSHIP/OKUCHI, rivals SORRY retrait.",
-   "notes": "3 editions codes (GPO, DaHood, AnimeVanguards) + GTA6 evergreen. 11 jeux re-verifies. Hot games defendables. Regeneration + QC OK."
-  },
-  {
-   "id": "maint-2026-10-21",
-   "jeu": "Multi (maintenance codes)",
-   "sujet": "Run 05h full 21/10 (mercredi)",
-   "categorie": "maintenance",
-   "premiereDetection": "2026-10-21",
-   "derniereVerification": "2026-10-21",
-   "statut": "UPDATED",
-   "importance": "NORMALE",
-   "confiance": "HAUTE",
-   "sources": [
-    "samlover",
-    "roonby",
-    "TechWiser",
-    "NerdSchalk",
-    "Insider Gaming",
-    "Dexerto",
-    "PocketGamer",
-    "games.gg",
-    "thespike",
-    "pockettactics"
-   ],
-   "sourceOriginale": "run",
-   "potentielSEO": "-",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "/codes-anime-vanguards.html",
-    "/codes-da-hood.html",
-    "/codes-rivals.html"
-   ],
-   "articleCree": true,
-   "url": "",
-   "prochaineAction": "grimoires-era rebuild (source officielle, conflit 3 voies); knockout/anime-battle-rng 2e source pour pruner; garden-tower-defense conflit non tranche; FC26 naming (Peter).",
-   "notes": "3 editions propres: AV +2ndAnniDay1, DaHood +PRESIDENT/PVP/BUFF, Rivals -SORRY. grimoires-era KILL SWITCH (conflit 3 voies). 6 hot games + character-rng re-verifies sans edition. GTA6/Aniimo stables. build x4 + QC OK (1317 codes/396 URLs)."
-  },
-  {
-   "id": "knockout-prune-2026-10-22",
-   "jeu": "Knockout",
-   "sujet": "Prune liste gonflée: 7->2 codes actifs",
-   "categorie": "codes-maintenance",
-   "premiereDetection": "2026-10-21",
-   "derniereVerification": "2026-10-22",
-   "statut": "UPDATED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "Dexerto (13/08)",
-    "Nerdschalk (23/09)"
-   ],
-   "sourceOriginale": "Rotation / queue",
-   "potentielSEO": "honnêteté liste codes (anti faux-actifs)",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "codes-knockout.html",
-    "tous-les-codes.html",
-    "js/main.js (GAMES_INDEX)"
-   ],
-   "articleCree": false,
-   "url": "https://zoneblox.com/codes-knockout.html",
-   "prochaineAction": "Surveiller CORALCRUSHER (nerdschalk seul, sans récompense) -> 2e source avant ajout.",
-   "notes": "CRABRAVE/SOCIALHUB/PUNCHMONKEY/DOOMSDAY/ADMINABUSE = expirés confirmés par 2 sources concordantes. Gardé EMPERORRETURNS + THANKSFORPLAYING. numberOfItems/ItemList/counter/GAMES_INDEX/hub resynchronisés."
-  },
-  {
-   "id": "run-2026-10-22-05h",
-   "jeu": "(run log)",
-   "sujet": "Run 05h full (jeudi 22/10) - 1 prune propre (knockout) + 6 hot confirmés, kill switch sur 4 conflits",
-   "categorie": "run-log",
-   "premiereDetection": "2026-10-22",
-   "derniereVerification": "2026-10-22",
-   "statut": "PUBLISHED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "Dexerto",
-    "Nerdschalk",
-    "Roonby",
-    "PocketTactics",
-    "PocketGamer",
-    "Samlover",
-    "mein-mmo",
-    "khelnow"
-   ],
-   "sourceOriginale": "Run planifié 05h",
-   "potentielSEO": "fraîcheur + honnêteté listes",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "codes-knockout.html (prune 7->2)",
-    "+6 verifDate: blox-fruits, grow-a-garden, steal-a-brainrot, blue-lock-rivals, anime-vanguards, fisch"
-   ],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "15h/22h: grimoires-era source officielle; anime-battle-rng 2e source FRAÎCHE (non syndiquée); aniimo-froyo 2e source expiration; GTA6 Newswire préchargement; FC26 naming (Peter).",
-   "notes": "Codes: knockout prune (2 sources). Confirmés sans édition: anime-vanguards (Roonby 13/10), fisch (source contradictoire), steal-a-brainrot (Dexerto 12/10), grow-a-garden (2 sources), blox-fruits (PT 16/10), blue-lock-rivals (sources + anciennes que page). Kill switch: grimoires-era (conflit 3 voies), anime-battle-rng (source stale syndiquée), aniimo-froyo (1 source fraîche expiration), grow-a-garden FREESEED/torigate. GTA6/FC26/Aniimo: rien de neuf actionnable. Pas de nouveau jeu avec preuve multi-source + codes réels cette nuit."
-  },
-  {
-   "id": "aniimo-s1-partii-2026-10-29",
-   "jeu": "Aniimo",
-   "sujet": "Aniimo Season 1 Part II — gros update annonce le 29/10/2026",
-   "categorie": "update",
-   "premiereDetection": "2026-10-24",
-   "derniereVerification": "2026-10-30",
-   "statut": "UPDATED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "gamerfuzion (patch notes officiels Pawprint/Steam, 27/10)",
-    "playnews.gg",
-    "aniimotools.dev"
-   ],
-   "sourceOriginale": "playnews.gg — Aniimo Season 1 Part II preview",
-   "potentielSEO": "eleve (vertical Aniimo data-driven)",
-   "trendScore": 70,
-   "pagesZoneblox": [
-    "/games/aniimo/ (data-driven)"
-   ],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "Ingérer les données créatures officielles (51 Aniimo) quand la liste détaillée + stats seront publiées ; vérifier d'éventuels codes de lancement de la Part II.",
-   "notes": "30/10: feed corrigé avec les PATCH NOTES OFFICIELS (Pawprint/Steam, via gamerfuzion 27/10) — supersèdent la roadmap du 29/10. Chiffres corrigés: 51 nouveaux Aniimo (pas 32) dont Jaguaraun (1er co-créé communauté), niveau max 70, Spar 4v4 (pas 1v1), Egg Heist PvP 3 équipes (en test), Magical Wonder Night jusqu'au 10/12. LIVE après maintenance 28-29/10. Aucun code annoncé. Stats des 51 créatures NON ingérées (données officielles détaillées attendues) — ne pas inventer."
-  },
-  {
-   "id": "aotr-inflated-2026-10-24",
-   "jeu": "Attack on Titan Revolution",
-   "sujet": "Liste codes gonflee (21) vs sources (2 actifs)",
-   "categorie": "codes",
-   "premiereDetection": "2026-10-24",
-   "derniereVerification": "2026-10-24",
-   "statut": "MONITOR",
-   "importance": "moyenne",
-   "confiance": "moyenne",
-   "sources": [
-    "dexerto 02/10"
-   ],
-   "sourceOriginale": "dexerto 3333301",
-   "potentielSEO": "moyen",
-   "trendScore": 40,
-   "pagesZoneblox": [
-    "codes-attack-on-titan-revolution.html"
-   ],
-   "articleCree": true,
-   "url": "/codes-attack-on-titan-revolution.html",
-   "prochaineAction": "Page liste 21 codes; Dexerto 02/10 n'en confirme que 2 actifs (WZINS+TERRA70K, tous deux presents). Besoin preuve d'expiration (§4) + 2 sources concordantes avant tout prune. Ne rien supprimer.",
-   "notes": "Candidat prune mais regle anti-suppression sans preuve maintenue."
-  },
-  {
-   "id": "run-2026-10-24-05h",
-   "jeu": "(run log)",
-   "sujet": "Run 05h full maintenance + editorial 24/10 (samedi) — 0 edition, kill switch",
-   "categorie": "run",
-   "premiereDetection": "2026-10-24",
-   "derniereVerification": "2026-10-24",
-   "statut": "PUBLISHED",
-   "importance": "normale",
-   "confiance": "elevee",
-   "sources": [],
-   "sourceOriginale": null,
-   "potentielSEO": null,
-   "trendScore": null,
-   "pagesZoneblox": [],
-   "articleCree": false,
-   "url": null,
-   "prochaineAction": "Voir EDITORIAL-QUEUE.md + rapport-zoneblox-2026-10-24.md",
-   "notes": "0 edition de codes, 0 nouvelle page. Cibles sous kill switch (grimoires-era conflit 3 voies, rivals version-dependent, fisch non verifiable, anime-battle-rng sources syndiquees) ou confirmees inchangees (steal-a-brainrot, anime-vanguards, grow-a-garden). haze-piece PHANTOMSHIP/OKUCHI a 2/3 sources. Aucune regeneration (aucun contenu site modifie). News: Aniimo S1 Part II 29/10 (a preparer), GTA6 inchange, FC26 naming en attente Peter."
-  },
-  {
-   "id": "sell-fries-halloween-2026-10-25",
-   "jeu": "Sell Fries",
-   "sujet": "Content gap comble: page passee de 0 a 1 code (Halloween, 100 Candies - evenement Halloween)",
-   "categorie": "codes",
-   "premiereDetection": "2026-10-25",
-   "derniereVerification": "2026-10-25",
-   "statut": "PUBLISHED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "ProGameGuides (24/10)",
-    "Dexerto (21/10)",
-    "games.gg (21/10)"
-   ],
-   "sourceOriginale": "Veille rotation 05h 25/10",
-   "potentielSEO": "long-tail 'codes sell fries' (faible difficulte, page auparavant vide)",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "codes-sell-fries.html",
-    "index.html (const GAMES)",
-    "tous-les-codes.html",
-    "data/codes.json",
-    "sitemap.xml"
-   ],
-   "articleCree": true,
-   "url": "https://zoneblox.com/codes-sell-fries.html",
-   "prochaineAction": "Revalider 'Halloween' + surveiller les 4 codes mono-source (4000Members, FreeCandy, CoolCode, 3000members) pour 2e source.",
-   "notes": "'Halloween' confirme par 3 sources (meme recompense 100 Candies). Les 4 autres codes ProGameGuides restent mono-source -> non publies. Recit 'aucun code' de la page inverse proprement. QC OK."
-  },
-  {
-   "id": "tap-simulator-reborn-halloween-2026-10-25",
-   "jeu": "Tap Simulator REBORN",
-   "sujet": "Content gap comble: page passee de 0 a 2 codes Halloween (BOO!, SPOOKY)",
-   "categorie": "codes",
-   "premiereDetection": "2026-10-25",
-   "derniereVerification": "2026-10-25",
-   "statut": "PUBLISHED",
-   "importance": "moyenne",
-   "confiance": "MEDIUM",
-   "sources": [
-    "Dexerto (20/10, 'premiere fournee de codes')",
-    "games.gg (21/10)"
-   ],
-   "sourceOriginale": "Veille rotation 05h 25/10",
-   "potentielSEO": "long-tail 'codes tap simulator reborn' (page auparavant vide, 1ers codes du jeu)",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "codes-tap-simulator-reborn.html",
-    "index.html (const GAMES)",
-    "tous-les-codes.html",
-    "data/codes.json",
-    "sitemap.xml"
-   ],
-   "articleCree": true,
-   "url": "https://zoneblox.com/codes-tap-simulator-reborn.html",
-   "prochaineAction": "Reverifier la CASSE de SPOOKY (Dexerto 'spooky' minuscule vs games.gg 'SPOOKY' majuscules) - retenu majuscules; corriger si infirme.",
-   "notes": "2 sources concordent sur l'existence de BOO! et SPOOKY (recompenses identiques). Casse de SPOOKY ambigue -> majuscules retenues (games.gg explicite + style BOO!). Jeu souvent case-insensitive. Recit 'tout code est faux' inverse proprement. QC OK."
-  },
-  {
-   "id": "run-2026-10-25-05h",
-   "jeu": "(run log)",
-   "sujet": "Run 05h full 25/10 (dimanche, pas de Jeu de la semaine) - 2 content gaps combles (sell-fries +1, tap-sim-reborn +2) + 8 hot games verifies + 6 stubs",
-   "categorie": "run-log",
-   "premiereDetection": "2026-10-25",
-   "derniereVerification": "2026-10-25",
-   "statut": "PUBLISHED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "Dexerto",
-    "ProGameGuides",
-    "games.gg",
-    "Roonby",
-    "Samlover",
-    "DigitalCitizen",
-    "PlayNews"
-   ],
-   "sourceOriginale": "Run planifie 05h",
-   "potentielSEO": "2 pages vides -> contenu frais + fraicheur verifDate sur 16 pages",
-   "trendScore": 0,
-   "pagesZoneblox": [
-    "16 pages codes-*.html (2 editees + 14 verifDate)",
-    "index.html",
-    "tous-les-codes.html",
-    "data/codes.json",
-    "sitemap.xml",
-    "tools/code-watch.json"
-   ],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "15h/22h: Aniimo S1 Part II (29/10, data-driven, ne rien publier avant l'officiel) ; grimoires-era source officielle ; rivals source fraiche ; desambiguiser button-rng-2 & chicken-farm via placeId.",
-   "notes": "Hot verifies (confirmes inchanges/monitor): blox-fruits (Dexerto 19/10 'no new'), blue-lock-rivals (Dexerto 18/10 = 4 codes identiques; SPOOKY/SKELETON/AIKUCHANGES roonby seul -> MONITOR), volleyball-legends (Samlover 13/10 identique), anime-vanguards (14 codes anniv, pas de preuve d'expiration), fisch (ChapelTroubles mono-source roonby -> MONITOR), grow-a-garden, king-legacy, blade-ball. Stubs: ride-a-dino/my-gaming-cafe/steal-from-the-rich/chop-a-forest confirmes SANS code; button-rng-2 & chicken-farm = source same-name mais identite non confirmee (pas de placeId) -> kill switch 'a reverifier'. GTA6 evergreen inchange (preload 12/11, sortie 19/11). FC live=FC26 (naming en attente Peter). Steal an Egg toujours viral (page existante)."
-  },
-  {
-   "id": "run-2026-10-26-05h",
-   "jeu": "(run log)",
-   "sujet": "Run 05h full 26/10 (lundi) - 2 corrections codes (hypershot -ONEBILLION expire ; 100-days +SPOOKY Halloween) + 12 hot/rotation verifies + Aniimo reverifie",
-   "categorie": "run-log",
-   "premiereDetection": "2026-10-26",
-   "derniereVerification": "2026-10-26",
-   "statut": "PUBLISHED",
-   "importance": "haute",
-   "confiance": "HIGH",
-   "sources": [
-    "Dexerto",
-    "ProGameGuides",
-    "RobloxDen",
-    "Nerdschalk",
-    "Samlover",
-    "Destructoid",
-    "mein-mmo",
-    "TryhardGuides",
-    "Roonby"
-   ],
-   "sourceOriginale": "Run planifie 05h (lundi)",
-   "trendScore": 0,
-   "potentielSEO": "1 code mort retire + 1 code live ajoute (fraicheur) ; verifDate rafraichie sur 12 pages ; Aniimo verifie",
-   "pagesZoneblox": [
-    "codes-hypershot.html (ONEBILLION->expire, 0 actif)",
-    "codes-100-days-at-sea.html (+SPOOKY, 1 actif)",
-    "11 codes-*.html verifDate 26/10",
-    "data/aniimo/codes.json",
-    "data/codes.json",
-    "sitemap.xml",
-    "tools/code-watch.json"
-   ],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "15h/22h + 05h 27/10: Aniimo S1 Part II (29/10, data-driven apres l'officiel) ; FischFright (ChapelTroubles/CAVERN 2e source) ; spin-a-soccer-card & rotation backlog (151 en retard) ; grimoires-era/rivals ; GTA6 Newswire (preload 12/11).",
-   "notes": "CHANGEMENTS: hypershot ONEBILLION retire (expire, 2 sources Dexerto.fr 01/10 + Dexerto.com) -> page 0 code ; 100-days-at-sea SPOOKY ajoute (20 Pearls, Halloween ; 2 sources ProGameGuides 24/10 + RobloxDen 26/10). CONFIRMES INCHANGES (verifDate 26/10): steal-a-brainrot (BESTBRAINROTEVER, Dexerto 12/10), volleyball-legends (UPDATE_91/REPLAYS/MVP), grow-a-garden (RDCAward/BEANORLEAVE10, 2 sources), blue-lock-rivals (4 codes, roonby mod 24/10), pet-simulator-99 (0 code), anime-vanguards (14 codes, notre liste plus fraiche), fisch (3/4 confirmes Dexerto), steal-an-egg (0 - pas de systeme de codes), grow-a-garden-2 (4 codes = ProGameGuides 14/10). CANDIDATS MONITOR: 100-days RIVAL (conflit), fisch CAVERN/ChapelTroubles (mono-source), spin-a-soccer-card (conflit total -> kill switch). Aniimo: 15 codes reconfirmes (mein-mmo 09/10), aniimazingfroyo expire mono-source US-only -> surveille. GTA6 inchange. FC naming (FC27 live vs vertical) tjrs en attente Peter. Jeu de la semaine: marqueurs FEATURED-WEEK absents du HTML -> etape non executable, escalade Peter. Rotation backlog 151 pages (chronique)."
-  },
-  {
-   "id": "run-2026-10-27-05h",
-   "jeu": "(run log)",
-   "sujet": "Run 05h full maintenance + editorial 27/10 (mardi) - FC27 Ultimate Scream publie + anime-last-stand reverifie",
-   "categorie": "run-log",
-   "premiereDetection": "2026-10-27",
-   "derniereVerification": "2026-10-27",
-   "statut": "PUBLISHED",
-   "importance": "moyenne",
-   "confiance": "haute",
-   "sources": [
-    "fut.gg",
-    "dexerto",
-    "forbes",
-    "playnews.gg"
-   ],
-   "sourceOriginale": "run interne",
-   "potentielSEO": "-",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "/games/fc-27/guides/sbc-solutions/",
-    "/games/fc-27/guides/meilleurs-joueurs-meta/",
-    "codes-anime-last-stand.html"
-   ],
-   "articleCree": true,
-   "url": "rapport-zoneblox-2026-10-27.md",
-   "prochaineAction": "Voir PRIORITES PROCHAIN RUN dans EDITORIAL-QUEUE.md (Aniimo 29/10, FC27 Team 2 ~30/10, GTA6 Newswire, rotation backlog, fruit-battlegrounds a reverifier).",
-   "notes": "1 promo FC27 publiee (Ultimate Scream, 2 guides data-driven). 1 code-page reverifiee (anime-last-stand, verifDate 27/10). Hot games croises stables (sources recyclees -> pas de changement). fruit-battlegrounds laisse en l'etat (conflit source stale). Regen OK, QC OK."
-  },
-  {
-   "id": "halloween-2026-coverage",
-   "jeu": "Multi (hotGames)",
-   "sujet": "Couverture des events Halloween 2026 par guides (règle standing guides d'événements)",
-   "categorie": "evenement saisonnier / programme editorial",
-   "premiereDetection": "2026-10-27",
-   "derniereVerification": "2026-10-27",
-   "statut": "UPDATE_REQUIRED",
-   "importance": "haute",
-   "confiance": "moyenne",
-   "sources": [
-    "pockettactics (ghoul garden - 2025)",
-    "progameguides",
-    "findingdulcinea",
-    "iggm (part II - 2025)",
-    "dexerto"
-   ],
-   "sourceOriginale": "demande Peter 27/10 + scan hotGames",
-   "potentielSEO": "tres eleve (requetes saisonnieres Halloween, fort trafic)",
-   "trendScore": 80,
-   "pagesZoneblox": [
-    "guides/grow-a-garden.html",
-    "guides/fisch.html",
-    "guides/steal-a-brainrot.html",
-    "guides/adopt-me.html",
-    "codes-100-days-at-sea.html"
-   ],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "Confirmer les DETAILS 2026 (dates/recompenses/pets) sur source fraiche/officielle (Discord/Trello/X ou media date 2026) AVANT publication. Puis UPDATE before CREATE: ajouter une section 'Evenement Halloween en cours' datee au guide existant de chaque hotGame concerne. Retirer a la fin de l'event.",
-   "notes": "27/10: events Halloween CONFIRMES existants (Grow a Garden Ghoul Garden, Fisch FischFright, Steal a Brainrot brainrots Halloween, Adopt Me). MAIS web pollue par donnees 2025 recyclees (pockettactics=11-25 oct 2025; iggm Part II=25 oct 2025) -> specifics 2026 NON confirmes -> RIEN publie (kill switch, pas d'invention). 100-days-at-sea: code SPOOKY Halloween deja publie (26/10, 2 sources 2026). Regle 'guides d'evenements' ajoutee a CLAUDE.md (standing, tous les runs)."
-  },
-  {
-   "categorie": "nouveau jeu",
-   "premiereDetection": "2026-10-27",
-   "derniereVerification": "2026-10-27",
-   "statut": "PUBLISHED",
-   "importance": "moyenne",
-   "confiance": "haute",
-   "potentielSEO": "moyen-eleve",
-   "trendScore": null,
-   "articleCree": true,
-   "id": "venom-evolution-2026-10-27",
-   "jeu": "+1 Venom Evolution",
-   "sujet": "Nouveau jeu ajoute (la totale) - codes + guide + tier list",
-   "sources": [
-    "dexerto.com (26/10)",
-    "robloxden.com (27/10)",
-    "roblox.com (officiel)"
-   ],
-   "sourceOriginale": "demande Peter + Roblox officiel",
-   "pagesZoneblox": [
-    "codes-1-venom-evolution.html",
-    "guides/1-venom-evolution.html",
-    "tier-list/1-venom-evolution.html"
-   ],
-   "url": "/codes-1-venom-evolution.html",
-   "prochaineAction": "Suivre les codes (events Halloween HALLOWEEN/UPDATE2 peuvent expirer). Completer la tier list des evolutions quand des noms/seuils fiables existent.",
-   "notes": "6 codes confirmes 2 sources. Jeu de progression/combat (Bottled Potential), World 2 existe. Miniature reelle rbxcdn."
-  },
-  {
-   "categorie": "nouveau jeu",
-   "premiereDetection": "2026-10-27",
-   "derniereVerification": "2026-10-27",
-   "statut": "PUBLISHED",
-   "importance": "moyenne",
-   "confiance": "moyenne",
-   "potentielSEO": "moyen-eleve",
-   "trendScore": null,
-   "articleCree": true,
-   "id": "hike-for-eggs-2026-10-27",
-   "jeu": "Hike For Eggs",
-   "sujet": "Nouveau jeu ajoute (la totale) - page codes honnete (aucun code) + guide + tier list",
-   "sources": [
-    "roblox.com (officiel)"
-   ],
-   "sourceOriginale": "demande Peter + Roblox officiel",
-   "pagesZoneblox": [
-    "codes-hike-for-eggs.html",
-    "guides/hike-for-eggs.html",
-    "tier-list/hike-for-eggs.html"
-   ],
-   "url": "/codes-hike-for-eggs.html",
-   "prochaineAction": "Surveiller l'apparition d'un systeme de codes. Completer la tier list des 18 paliers/mutations quand une source fiable existe.",
-   "notes": "AUCUN code confirme (honnete, pas d'invention). Jeu grimpe/vol d'oeufs/collection (100+ animaux, 18 paliers chevre->dragon). Miniature reelle rbxcdn."
-  },
-  {
-   "id": "volleyball-upd93-2026-10-28",
-   "jeu": "Volleyball Legends",
-   "sujet": "Update 93 'Cursed Tournaments' - rotation des codes (UPDATE_93/CURSED/TOURNAMENT)",
-   "categorie": "codes",
-   "premiereDetection": "2026-10-28",
-   "derniereVerification": "2026-10-28",
-   "statut": "PUBLISHED",
-   "importance": "haute",
-   "confiance": "haute",
-   "sources": [
-    "timesaver.gg (24/10)",
-    "roonby.com (24/10)"
-   ],
-   "sourceOriginale": "TimeSaver.gg + Roonby",
-   "potentielSEO": "fort (hotGame, MAJ frequentes)",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-volleyball-legends.html"
-   ],
-   "articleCree": true,
-   "url": "rapport-zoneblox-2026-10-28.md",
-   "prochaineAction": "Reverifier a chaque Update (codes VL ephemeres par patch). Surveiller @Protori_ / Discord.",
-   "notes": "Page passee de UPDATE_91/REPLAYS/MVP a UPDATE_93/CURSED/TOURNAMENT (3 actifs, Lvl 15 requis). UPDATE_91/REPLAYS/MVP + UPDATE_92/MAMORI/PARRY passes en expires. 2 sources fraiches concordantes. dateModified + verifDate + JSON-LD synchronises."
-  },
-  {
-   "id": "fisch-fischfright-2026-10-28",
-   "jeu": "Fisch",
-   "sujet": "FischFright (Halloween) 2026 - aucun nouveau code",
-   "categorie": "event",
-   "premiereDetection": "2026-10-28",
-   "derniereVerification": "2026-10-29",
-   "statut": "PUBLISHED",
-   "importance": "moyenne",
-   "confiance": "HIGH",
-   "sources": [
-    "pockettactics.com (07/10)"
-   ],
-   "sourceOriginale": "Pocket Tactics",
-   "potentielSEO": "saisonnier",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-fisch.html",
-    "guides/fisch.html"
-   ],
-   "articleCree": false,
-   "url": "",
-   "prochaineAction": "Confirmer la récompense exacte de FischFright2026; revérifier Mariana/TemporarySubmarine (preuve expiration).",
-   "notes": "29/10: FischFright2026 confirmé ACTIF par 2 sources (TimeSaver 27/10 — expire 09/11 — + Roonby 24/10). Ajouté aux codes actifs de Fisch (scarlet + CARBON aussi confirmés). MarianaIsGoingCrazy et TemporarySubmarine conservés (non listés actifs par TimeSaver mais aucune preuve d'expiration — règle §4) → à revérifier avec 2e source."
-  },
-  {
-   "id": "run-2026-10-28-05h",
-   "jeu": "(run log)",
-   "sujet": "Run 05h full maintenance + editorial 28/10 (mercredi) - Volleyball Legends Update 93 + 5 hotGames reverifies",
-   "categorie": "run-log",
-   "premiereDetection": "2026-10-28",
-   "derniereVerification": "2026-10-28",
-   "statut": "PUBLISHED",
-   "importance": "moyenne",
-   "confiance": "haute",
-   "sources": [
-    "timesaver.gg",
-    "roonby.com",
-    "pockettactics.com",
-    "dexerto.com",
-    "gfinityesports.com",
-    "fut.gg"
-   ],
-   "sourceOriginale": "run interne",
-   "potentielSEO": "-",
-   "trendScore": null,
-   "pagesZoneblox": [
-    "codes-volleyball-legends.html",
-    "codes-blox-fruits.html",
-    "codes-fisch.html",
-    "codes-steal-a-brainrot.html",
-    "codes-king-legacy.html",
-    "codes-grow-a-garden.html"
-   ],
-   "articleCree": true,
-   "url": "rapport-zoneblox-2026-10-28.md",
-   "prochaineAction": "Voir PRIORITES PROCHAIN RUN dans EDITORIAL-QUEUE.md (Aniimo update officiel 29/10, FC27 Team 2 ~30/10, GTA6 Newswire, Blue Lock Rivals source officielle, rotation backlog).",
-   "notes": "1 vrai changement de codes (Volleyball Legends -> Update 93, 2 sources). 5 hotGames reverifies inchanges (verifDate 28/10). Blue Lock Rivals kill switch (conflit 3 voies). Fisch FischFright: rien a ecrire. GTA6/Aniimo/FC27: rien de nouveau a publier. Regen complete (build_site/home/codes_json/sitemap), QC OK (0 null byte, div=0, node --check OK, 418 URLs sitemap, cache v=48 coherent)."
-  }
- ]
+  "_comment": "Mémoire éditoriale persistante de ZoneBlox (spec V2, section 7). Chaque sujet suit le lifecycle DETECTED->VERIFIED->PUBLISHED->UPDATED->EVERGREEN->ARCHIVED. Statuts: DISCOVERED, MONITOR, VERIFIED, MUST_PUBLISH, PUBLISHED, UPDATE_REQUIRED, UPDATED, EVERGREEN, IGNORED, EXPIRED. Le trendScore (0-100) sert UNIQUEMENT à prioriser le travail interne, ce n'est pas une mesure scientifique.",
+  "version": 1,
+  "created": "2026-09-22",
+  "meta": {
+    "updated": "2026-10-31",
+    "lastRun": "2026-10-31",
+    "runType": "05h-full-maintenance (samedi)",
+    "note": "Run 05h sam 31/10 : 4 hotGames verifies via sources datees fraiches — blade-ball +GOODVSEVIL (2 sources: next-stage 31/10 + fossbytes), king-legacy / pet-sim-99 (0 code) / 100-days-at-sea (SPOOKY 20 Pearls, robloxden 31/10) inchanges. GTA6: rapport Edge (carte ~2x GTA5) = RAPPORTE, aucun nouveau Newswire officiel; prechargement 12/11 / sortie 19/11 maintenus. FC27 Ultimate Scream Team 2 LIVE (beebom) mais attribution version (medias 'FC 26' vs FC 27 sorti 25/09) + escouade/DCE non recoupees 2 sources exactes -> MONITOR 15h/22h, non publie. Aniimo: stats officielles des 51 creatures toujours indisponibles proprement -> non ingerees (pas d'invention). Halloween: dernier jour, retrait des sections programme au 05h 01/11 (FischFright2026 garde <=09/11). Jeu de la semaine: N/A (samedi). Rotation 38 non traitee (priorite exactitude hotGames + editorial).",
+    "lastUpdate": "2026-10-29T05:00:00Z",
+    "topicsCount": 68,
+    "derniereMiseAJour": "2026-10-29"
+  },
+  "topics": [
+    {
+      "id": "run-2026-10-30-05h",
+      "jeu": "(run log)",
+      "sujet": "Run 05h full maintenance + editorial 30/10 (vendredi) — 9 hotGames revérifiés inchangés + correction feed Aniimo LIVE",
+      "categorie": "run-log",
+      "premiereDetection": "2026-10-30",
+      "derniereVerification": "2026-10-30",
+      "statut": "PUBLISHED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "timesaver.gg",
+        "roonby",
+        "next-stage.fr",
+        "switchbladegaming",
+        "gamerfuzion",
+        "fut.gg"
+      ],
+      "sourceOriginale": "run interne",
+      "potentielSEO": "-",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-*.html (9 hot verifDate 30/10)",
+        "data/aniimo/updates.json"
+      ],
+      "articleCree": true,
+      "url": "rapport-zoneblox-2026-10-30.md",
+      "prochaineAction": "Runs 15h/22h: FC27 Ultimate Scream Team 2 (sortie 30/10 18:00 UTC si confirmée), Aniimo (codes/ingestion data), GTA6 Newswire. Candidats MONITOR à 2e source: Fisch ChapelTroubles, Anime Vanguards 2ndAnniDay7.",
+      "notes": "9 hotGames revérifiés via sources datées fraîches, AUCUN changement de code: steal-a-brainrot (BESTBRAINROTEVER seul, timesaver 08/10+esportnow 04/10), grow-a-garden (RDCA*/BEANOR* disputés wiki vs trackers -> gardés), blue-lock-rivals (sources dispo stale/pré-update Aiku -> set 25-28/10 maintenu), volleyball-legends (roonby 24/10 UPD93 match), fisch (dumps sans statut, ChapelTroubles NOUVEAU mono-source -> MONITOR), fruit-battlegrounds (timesaver 18/10 EVENHIGHER!+2 match), anime-vanguards (next-stage 29/10 superset 28 codes -> under-list OK, 2ndAnniDay7 mono-source MONITOR), blox-fruits (next-stage 30/10 nos 23 confirmés), anime-last-stand (switchblade 26/10 match 3 codes). verifDate->30/10 + catalogVerify 9. Aniimo feed corrigé (patch notes officiels: 51/cap70/4v4). FC27 Team2 non sortie. GTA6 rien. Regen+QC à suivre."
+    },
+    {
+      "id": "run-2026-10-15-05h",
+      "jeu": "(run log)",
+      "sujet": "Run 05h full 15/10 (fire ~08:30 UTC) - FIX SYSTEMIQUE copyAll (68 pages) + 0 edition de code risquee",
+      "categorie": "run-log",
+      "premiereDetection": "2026-10-15",
+      "derniereVerification": "2026-10-15",
+      "statut": "PUBLISHED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "Dexerto",
+        "PocketTactics",
+        "PCGamer",
+        "Roonby",
+        "Samlover",
+        "Destructoid",
+        "Nerdschalk",
+        "PCGamesN"
+      ],
+      "sourceOriginale": "Run planifie 05h",
+      "potentielSEO": "qualite/confiance (bouton Tout copier donnait des codes perimes)",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "68 pages codes-*.html (resync const ACTIVE)",
+        "+4 verifDate: volleyball-legends, steal-a-brainrot, grow-a-garden, steal-an-egg"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "15h/22h: 2e source blue-lock drop; 3e source iron-soul; Aniimo codes octobre (>=2 sources); decisions Peter (naming FC26, jeu de la semaine, listes gonflees).",
+      "notes": "const ACTIVE (bouton Tout copier) etait desynchro de #activeList sur 68/185 pages -> copyAll copiait des codes perimes/absents. Resync sur donnees visibles verifiees, 0 invention. QC OK."
+    },
+    {
+      "id": "copyall-desync-2026-10-15",
+      "jeu": "(site-wide)",
+      "sujet": "Bug systemique: const ACTIVE (Tout copier) desynchronise de la liste visible sur 68 pages",
+      "categorie": "qc-data-integrity",
+      "premiereDetection": "2026-10-15",
+      "derniereVerification": "2026-10-15",
+      "statut": "UPDATED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "audit interne build/QC"
+      ],
+      "sourceOriginale": "QC run 05h 15/10",
+      "potentielSEO": "-",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "68 pages codes-*.html"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "Surveiller: a l'avenir, synchroniser const ACTIVE lors de chaque edition de la liste visible (ou supprimer la duplication). 8 pages a liste visible VIDE a revoir editorialement: 100-days-at-sea, basketball-zero, be-a-brainrot, encounters, garden-tower-defense, pet-simulator-x, royale-high, slap-battles.",
+      "notes": "Meme bug que l'incident wizard-alchemy (const ACTIVE vs liste visible). Fix: const ACTIVE <- #activeList."
+    },
+    {
+      "id": "run-2026-10-14-05h",
+      "jeu": "(run log)",
+      "sujet": "Run 05h full maintenance 14/10 - 1 edition (wizard-alchemy)",
+      "categorie": "run-log",
+      "premiereDetection": "2026-10-14",
+      "derniereVerification": "2026-10-14",
+      "statut": "PUBLISHED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "Dexerto",
+        "RobloxDen",
+        "Nerdschalk",
+        "TweakTown/Forbes (GTA)",
+        "Dexerto FC26 promo calendar",
+        "rowatcher/industry.co.id (trends)"
+      ],
+      "sourceOriginale": "Run planifie 05h",
+      "potentielSEO": "-",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "codes-wizard-alchemy.html"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "Prochain run: blue-lock-rivals (2e source drop EPICSENDOU/ONEMOREWEEK/NELAIKUNEXT), iron-soul-dungeon/anime-expeditions/dig-and-clean (sources manquantes), Aniimo codes octobre (verifier data/aniimo), GTA Newswire, decision Peter naming FC26 + jeu de la semaine.",
+      "notes": "HOT stables (volleyball Update91 confirme/pas d'U92; anime-vanguards verif 12/10; grow-a-garden/steal-a-brainrot stables). GTA6 Trailer3 TOUJOURS non sorti (que des rumeurs insiders, 0 confirmation Rockstar). FC live = FC26 (pas FC27). Trend: Steal an Egg viral confirme (deja couvert). Kill-switch maintenu ailleurs."
+    },
+    {
+      "id": "1-loot-to-forge-launch",
+      "jeu": "+1 Loot To Forge",
+      "sujet": "Nouveau simulateur de forge en forte croissance (cluster complet créé)",
+      "categorie": "new-game",
+      "premiereDetection": "2026-09-22",
+      "derniereVerification": "2026-09-22",
+      "statut": "PUBLISHED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "API Roblox (games/thumbnails/universes) + description in-game",
+        "https://www.destructoid.com/1-loot-to-forge-codes/",
+        "https://tryhardguides.com/1-loot-to-forge-codes/",
+        "https://1loottoforge.wiki/",
+        "https://www.sportskeeda.com/roblox-news/1-loot-forge-a-beginner-s-guide"
+      ],
+      "sourceOriginale": "Demande de Peter (URL Roblox) + API Roblox",
+      "potentielSEO": "eleve",
+      "trendScore": 82,
+      "pagesZoneblox": [
+        "codes-1-loot-to-forge.html",
+        "tier-list/1-loot-to-forge.html",
+        "guides/1-loot-to-forge.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-1-loot-to-forge.html",
+      "prochaineAction": "MONITOR : surveiller le prochain code de palier (40000CCU probable) et l'ajouter ; suivre les patchs (après RACES du 20 sept.). Revérifier les codes ~tous les 10 jours (rotation).",
+      "notes": "Good Bro Studio, place 118805555015549, universe 10684750879, group 828376264. ~30k CCU, ~11M visites, 656k favoris, créé 12/08/2026. Cluster « totale » créé le 22/09 : codes (2 actifs 30000CCU/20000CCU), tier list (priorités — pas d'armes inventées, stats en aperçu live), guide complet (2 vidéos oEmbed vérifiées). Intégré : GAMES_INDEX/ROBLOX_THUMBS/ROBLOX_UNIVERSE_IDS (main.js), const GAMES (index.html), tous-les-codes/tier-lists/guides, sitemap, régénérations OK."
+    },
+    {
+      "id": "fc27-launch-2026",
+      "jeu": "EA Sports FC 27",
+      "sujet": "Sortie mondiale + contenu de lancement (Ones to Watch, TOTW 1-2, Destined for Glory)",
+      "categorie": "release",
+      "premiereDetection": "2026-09-18",
+      "derniereVerification": "2026-10-30",
+      "statut": "MONITOR",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "https://www.ea.com/games/ea-sports-fc/fc-27/news/pitch-notes-fc27-launch-update",
+        "https://dotesports.com/ea-sports-fc/guides/ea-sports-fc-27-launch-update-patch-notes",
+        "https://www.ea.com/games/ea-sports-fc/fc-27/news/fc-27-editions-and-release-dates",
+        "https://athlonsports.com/sports-video-games/ea-fc-27-season-1-roadmap"
+      ],
+      "sourceOriginale": "EA Sports (officiel)",
+      "potentielSEO": "eleve",
+      "trendScore": 88,
+      "pagesZoneblox": [
+        "data/fc-27/updates.json",
+        "data/fc-27/guides.json",
+        "data/games/(fc-27 evergreen)"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "DECISION PETER naming FC27 vs FC26 (titre EA live=FC26). Promos Festival of Football 'Answer the Call' + Halloween Puzzle Crafting en cours.",
+      "notes": "[16/10] Titre EA live = FC 26 (promo Festival of Football en cours). Naming FC26 vs pages 'FC 27' = decision Peter. A VERIFIER (naming): au 13/10/2026 le jeu EA live est FC 26 (FC 27 attendu ~sept 2027). Les verticales/pages 'FC 27' pourraient devoir cibler FC 26. Promo calendar FC 26 suivi via Dexerto/ea.com. MONITOR, aucune edition ce run. [30/10] Ultimate Scream Team 2 ATTENDUE ven 30/10 18:00 UTC mais NON confirmée par EA (fut.gg 23/10, basé sur l'historique). Scream fin 06/11, token store 13/11, Beaver Moon 24/11→01/12 (confirmés). Rien publié ce run (sortie après l'heure du run 05h) — à traiter aux runs 15h/22h si live."
+    },
+    {
+      "id": "gta6-release-nov19",
+      "jeu": "GTA 6",
+      "sujet": "Date de sortie 19 nov. 2026 (evergreen) + marketing pré-lancement",
+      "categorie": "release/marketing",
+      "premiereDetection": "2026-05",
+      "derniereVerification": "2026-10-31",
+      "statut": "UPDATED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "https://www.rockstargames.com/newswire",
+        "https://www.gamespot.com/articles/gta-6-is-taking-over-miami-one-airlifted-letter-at-a-time/",
+        "https://www.gtabase.com/grand-theft-auto-6/"
+      ],
+      "sourceOriginale": "Rockstar Games (officiel)",
+      "potentielSEO": "eleve",
+      "trendScore": 84,
+      "pagesZoneblox": [
+        "data/games/gta-6.json"
+      ],
+      "articleCree": false,
+      "url": "/games/gta-6.html",
+      "prochaineAction": "Surveiller Rockstar Newswire (heure preload 12/11, patch day-one 19/11). UPDATE evergreen uniquement.",
+      "notes": "erifie 28/10: aucune nouveaute officielle (sortie 19/11, preload 12/11 confirmes). 'News update' toujours rapporte pour 29/10 (non primaire). UPDATE evergreen uniquement. Surveiller Rockstar Newswire chaque run. | 29/10: Edge #430 publie un dossier exclusif de 16 pages (visite studio Rockstar North, nouvelles images, interviews, gratuit en ligne le 29/10) — ajouté à updates.json. À 3 semaines du lancement, aucun report : 19/11 maintenu, préload 12/11. [30/10] Aucun nouveau post Newswire officiel depuis Edge #430 (29/10). Sortie 19/11 + préchargement 12/11 maintenus. Rumeurs website/Instagram = spéculation (non publiable). MONITOR Newswire. | 31/10: rapport Edge Magazine (via Insider Gaming/OpenCritic) = carte ~2x GTA5, dev principal termine = RAPPORTE (pas un post Newswire officiel). Rien de nouveau a publier; prechargement 12/11, sortie 19/11 confirmes. Surveillance Newswire poursuivie."
+    },
+    {
+      "id": "aniimo-codes-sep2026",
+      "jeu": "Aniimo",
+      "sujet": "Codes actifs + nouvelle créature Prismana Glynsera",
+      "categorie": "codes/content",
+      "premiereDetection": "2026-09-16",
+      "derniereVerification": "2026-10-24",
+      "statut": "EVERGREEN",
+      "importance": "moyenne",
+      "confiance": "HIGH (codes) / MOYENNE (détail butin de 6 codes)",
+      "sources": [
+        "https://game8.co/games/Aniimo/archives/624090",
+        "https://beebom.com/aniimo-codes/",
+        "https://www.destructoid.com/aniimo-codes/",
+        "https://www.pcgamer.com/games/rpg/aniimo-codes/",
+        "https://www.gamesradar.com/games/rpg/aniimo-codes/"
+      ],
+      "sourceOriginale": "game8 / agrégat médias",
+      "potentielSEO": "moyen",
+      "trendScore": 58,
+      "pagesZoneblox": [
+        "data/aniimo/codes.json",
+        "data/aniimo/creatures.json",
+        "games/aniimo/codes/"
+      ],
+      "articleCree": true,
+      "url": "/games/aniimo/codes/",
+      "prochaineAction": "MONITOR : stats de combat d'Irisalis TOUJOURS non publiees au 11/10. Ne rien inventer. Ajouter a creatures.json des publication officielle.",
+      "notes": "24/10: khelnow 04/10 liste 14 codes actifs dont aniimazingfroyo; mein-mmo 09/10 le marque expire -> conflit 1v1 non tranche. Aucune edition page data-driven."
+    },
+    {
+      "id": "steal-a-brainrot-spawn-codes",
+      "jeu": "Steal a Brainrot",
+      "sujet": "Codes de spawn éphémères (BESTBRAINROTEVER / saturn)",
+      "categorie": "codes",
+      "premiereDetection": "2026-09-22",
+      "derniereVerification": "2026-10-31",
+      "statut": "EVERGREEN",
+      "importance": "basse",
+      "confiance": "HIGH",
+      "sources": [
+        "https://www.dexerto.com/roblox/steal-a-brainrot-codes-3388813/",
+        "https://www.gamesradar.com/games/simulation/roblox-steal-a-brainrot-codes/"
+      ],
+      "sourceOriginale": "agrégat médias (conflit)",
+      "potentielSEO": "faible",
+      "trendScore": 30,
+      "pagesZoneblox": [
+        "codes-steal-a-brainrot.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-steal-a-brainrot.html",
+      "prochaineAction": "Surveiller expiration (code ephemere). Revérifier chaque run.",
+      "notes": "BESTBRAINROTEVER TOUJOURS actif, confirme Dexerto (12/10, 'no new codes found') + nerdschalk. Page a jour, aucun changement. Evenement Halloween = objets d'event (Phoenix via Haunted Fuse), pas des codes. | 31/10: pas de source plus fraiche que la verif 30/10 (timesaver 08/10 perime) -> set inchange (BESTBRAINROTEVER), saturn non confirme."
+    },
+    {
+      "id": "roblox-everywhere-2026",
+      "jeu": "Roblox (plateforme)",
+      "sujet": "Roblox Everywhere — jeux distribués comme apps autonomes",
+      "categorie": "platform",
+      "premiereDetection": "2026-09-11",
+      "derniereVerification": "2026-09-22",
+      "statut": "MONITOR",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "https://kotaku.com/the-most-viral-roblox-games-are-about-to-break-containment-2000733606"
+      ],
+      "sourceOriginale": "Roblox (annonce 11 sept.)",
+      "potentielSEO": "moyen (angle explicatif)",
+      "trendScore": 55,
+      "pagesZoneblox": [],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "MONITOR. Sujet 'meta/plateforme' — pertinent pour un article explicatif si la fonctionnalité se déploie réellement côté joueurs. Pas d'intention de recherche forte à ce stade. Réévaluer si un jeu couvert par ZoneBlox sort en app autonome.",
+      "notes": "Annoncé le 11 sept.: option pour les créateurs de publier leurs jeux en apps autonomes (mobile/PC/consoles), Roblox fournissant la techno sous-jacente."
+    },
+    {
+      "id": "steal-an-egg-leader",
+      "jeu": "Steal An Egg",
+      "sujet": "#1 Roblox par joueurs simultanés (~1,7M, pic 24h 2,3M)",
+      "categorie": "trend",
+      "premiereDetection": "2026-08-24",
+      "derniereVerification": "2026-09-22",
+      "statut": "EVERGREEN",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "https://rblxdb.com/charts/most-played",
+        "https://rotrends.com/top-roblox-games"
+      ],
+      "sourceOriginale": "rblxdb / rotrends",
+      "potentielSEO": "moyen",
+      "trendScore": 60,
+      "pagesZoneblox": [
+        "codes-steal-an-egg.html",
+        "hotGames"
+      ],
+      "articleCree": true,
+      "url": "/codes-steal-an-egg.html",
+      "prochaineAction": "Couvert (hotGames). Surveiller ajout d'un système de codes (absent au 24 août). Pas d'action.",
+      "notes": "Reste #1. Set 'no-fixed-time' codes: aucun code de récompense confirmé."
+    },
+    {
+      "id": "roblox-fall-games-2026",
+      "jeu": "Roblox (plateforme)",
+      "sujet": "Roblox Fall Games 2026 — 6 nouveaux jeux (Showdown FPS anime, Monster in the Mansion, GOAT Football League, Nemesis, Fossil Force, Caramel)",
+      "categorie": "nouveaux jeux / plateforme",
+      "premiereDetection": "2026-09-23",
+      "derniereVerification": "2026-10-05",
+      "statut": "MONITOR",
+      "importance": "moyenne",
+      "sources": [
+        "https://about.roblox.com/newsroom/2026/09/roblox-fall-games-preview",
+        "https://www.sportskeeda.com/roblox-news/news-all-new-roblox-fall-games-lineup-2026"
+      ],
+      "confiance": "HIGH (annonce officielle Roblox)",
+      "potentielSEO": "À évaluer par jeu — Showdown (FPS anime) le plus prometteur pour un cluster codes/guide si traction réelle.",
+      "trendScore": "~35/100 (traction joueur faible)",
+      "pagesZoneblox": [],
+      "prochaineAction": "MONITOR. Showdown (Anime FPS Jutsu Shooter, SuperGaming) ~240 CCU au 7 sept = PAS de hit → NE PAS créer de page (kill switch). Réévaluer si un titre du lot dépasse un seuil de hit réel + a des codes.",
+      "notes": "05/10 : nouveaux jeux oct. (Prime Heroes, Octane, Starforged, Scrapbook Saga) absents du top joueurs/trending au 01/10 -> aucun breakout, 0 URL."
+    },
+    {
+      "id": "anime-reborn-codes-sep2026",
+      "jeu": "Anime Reborn",
+      "sujet": "Ajout de 3 codes actifs (page passée de 0 à 3)",
+      "categorie": "codes",
+      "premiereDetection": "2026-09-24",
+      "derniereVerification": "2026-09-24",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "https://fossbytes.com/roblox-new-anime-reborn-codes/",
+        "https://www.pockettactics.com/anime-reborn/codes"
+      ],
+      "sourceOriginale": "Fossbytes (1 sept) + Pocket Tactics",
+      "potentielSEO": "moyen",
+      "trendScore": 55,
+      "pagesZoneblox": [
+        "codes-anime-reborn.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-anime-reborn.html",
+      "prochaineAction": "Rotation ~10j. Surveiller nouveaux codes (TD, ~10 actifs chez les trackers). Envisager d'ajouter d'autres codes confirmés 2 sources.",
+      "notes": "AJOUT domainexpansion! (NEW), Crystals, PATCH — 2 sources concordantes. Page était vide (0 actif)."
+    },
+    {
+      "id": "survive-zombie-arena-codes-sep2026",
+      "jeu": "Survive Zombie Arena",
+      "sujet": "Expansion des codes actifs (2 → 11)",
+      "categorie": "codes",
+      "premiereDetection": "2026-09-24",
+      "derniereVerification": "2026-09-24",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "https://www.gamesradar.com/games/survival/survive-zombie-arena-codes/",
+        "https://www.pockettactics.com/survive-zombie-arena-codes"
+      ],
+      "sourceOriginale": "GamesRadar (14 sept) + agrégat trackers",
+      "potentielSEO": "moyen",
+      "trendScore": 52,
+      "pagesZoneblox": [
+        "codes-survive-zombie-arena.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-survive-zombie-arena.html",
+      "prochaineAction": "Rotation ~10j. Codes conflictuels (NODELAYSWAG/TUNDRASZN/BOSSRUSH... GR=expirés, agrégat=actifs) à retrancher si confirmés.",
+      "notes": "AJOUT 9 codes (FACTIONS,FRONTIER neufs + QolSwag,Viciboy,Pirate,Swaggin,Iron,DELAY,UPDATEDAYSWAG). Nectarforge Studios, update Frontier War."
+    },
+    {
+      "id": "catch-a-monster-new-codes",
+      "jeu": "Catch a Monster",
+      "sujet": "Nouveaux codes actifs à ajouter (stowerbug/stellawolf/nexa)",
+      "categorie": "codes",
+      "premiereDetection": "2026-09-24",
+      "derniereVerification": "2026-09-24",
+      "statut": "UPDATE_REQUIRED",
+      "importance": "basse",
+      "confiance": "MOYENNE",
+      "sources": [
+        "https://www.pockettactics.com/catch-a-monster-codes",
+        "https://fossbytes.com/catch-a-monster-codes/",
+        "https://tryhardguides.com/catch-a-monster-codes/"
+      ],
+      "sourceOriginale": "agrégat trackers sept 2026",
+      "potentielSEO": "faible",
+      "trendScore": 38,
+      "pagesZoneblox": [
+        "codes-catch-a-monster.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-catch-a-monster.html",
+      "prochaineAction": "Prochain run: ajouter stowerbug (2k tower gems + task points), stellawolf (task points), nexa (1 Star Lantern Egg) après confirmation 2 sources + récompenses exactes. Nos 9 codes gardés (pas de preuve d'expiration).",
+      "notes": "Flaggé à revérifier. Page à 9 actifs, nouveaux codes non encore intégrés (prudence: récompenses à confirmer)."
+    },
+    {
+      "id": "code-maintenance-2026-09-25",
+      "jeu": "Multi (maintenance codes)",
+      "sujet": "Run 05h 25 sept — rotation + hotGames: 8 pages avec vrais changements de codes",
+      "categorie": "codes/maintenance",
+      "premiereDetection": "2026-09-25",
+      "derniereVerification": "2026-09-25",
+      "statut": "UPDATED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "Pocket Tactics",
+        "Pro Game Guides",
+        "Beebom",
+        "GamesRadar",
+        "PC Gamer",
+        "Dexerto",
+        "Fossbytes",
+        "RobloxDen"
+      ],
+      "sourceOriginale": "agrégat médias (2 sources min par changement)",
+      "potentielSEO": "maintien fraîcheur/autorité",
+      "trendScore": "n/a",
+      "pagesZoneblox": [
+        "codes-blue-lock-rivals.html",
+        "codes-fruit-battlegrounds.html",
+        "codes-catch-a-monster.html",
+        "codes-untitled-tag-game.html",
+        "codes-100-days-at-sea.html",
+        "codes-skibidi-masters-tower-defense.html",
+        "codes-peroxide.html",
+        "codes-my-gym.html",
+        "codes-anime-apocalypse.html"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "Voir _rotationARevoir2026-09-25 dans code-watch.json (all-star-tower-defense +4 codes 2e source, anime-apocalypse codes en conflit, skibidi 130KLIKES/candidats). Prochaine rotation: grosses listes non vérifiées (astral, dragon-blox, battle-rng, brainrot-evolution, clover-retribution).",
+      "notes": "Changements: blue-lock-rivals (3 codes tournés), fruit-battlegrounds (+2), catch-a-monster (+2), untitled-tag-game (0->3), 100-days-at-sea (3->0 expirés), skibidi (5->6), peroxide (7->2), my-gym (3->2), anime-apocalypse (15->2 page périmée nettoyée). Tous ≥2 sources. Total site: 1222 codes actifs / 183 jeux."
+    },
+    {
+      "id": "code-maintenance-2026-09-26",
+      "jeu": "Multi (maintenance codes)",
+      "sujet": "Run 05h 26 sept — hotGames + rotation : 3 pages avec vrais changements (SAB +1, Blade Ball -1, ASTD +3)",
+      "categorie": "codes/maintenance",
+      "premiereDetection": "2026-09-26",
+      "derniereVerification": "2026-09-26",
+      "statut": "UPDATED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "Pocket Tactics",
+        "Pro Game Guides",
+        "Beebom",
+        "GamesRadar",
+        "Dexerto"
+      ],
+      "sourceOriginale": "agrégat médias (2 sources min par changement)",
+      "potentielSEO": "maintien fraîcheur/autorité",
+      "trendScore": "n/a",
+      "pagesZoneblox": [
+        "codes-steal-a-brainrot.html",
+        "codes-blade-ball.html",
+        "codes-all-star-tower-defense.html"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "Prochain run : anime-apocalypse (TRANSCENDENT/INVASION si 2e source fraiche), petites rotations (doors/99-nights/royale-high) avec URL à jour, grosses listes.",
+      "notes": "SAB: BESTBRAINROTEVER réactivé (Dexerto+GamesRadar). Blade Ball: GOODVSEVIL expiré (PT 22 sept + GamesRadar 18 sept). ASTD: +ReturnOfTheLobbies/ALateSummerAwaits/AwesomeBeginnerCode (PT 21 sept + Beebom 4 sept). 7 hotGames revérifiés sans changement (ALS, GAG, blox-fruits, fisch, king-legacy, +blade-ball/SAB). codes.json 1222->1225 actifs."
+    },
+    {
+      "id": "code-maintenance-2026-09-27",
+      "jeu": "Multi (maintenance codes)",
+      "sujet": "Run 05h 27 sept — hotGames + petites rotations + Aniimo",
+      "categorie": "maintenance",
+      "premiereDetection": "2026-09-27",
+      "derniereVerification": "2026-09-27",
+      "statut": "UPDATED",
+      "importance": "haute",
+      "confiance": "haute",
+      "sources": [
+        "Pocket Tactics",
+        "Beebom",
+        "Pro Game Guides",
+        "GamesRadar",
+        "Dexerto",
+        "PC Gamer",
+        "Pocket Gamer",
+        "Destructoid"
+      ],
+      "sourceOriginale": "rotation quotidienne",
+      "potentielSEO": "maintien fraîcheur/exactitude",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-blue-lock-rivals.html",
+        "codes-doors.html",
+        "codes-anime-apocalypse.html",
+        "codes-slap-battles.html",
+        "data/aniimo/codes.json"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "Reverifier blue-lock-rivals (rotation rapide) + dress-to-impress (prioritaire, non fait) au prochain run.",
+      "notes": "4 pages codes modifiées (2 sources min): blue-lock-rivals 3->4 (rotation), doors 8->30 (nettoyage 4 expirés + set evergreen), anime-apocalypse 2->7 (TRANSCENDENT/INVASION/SUBARU/WORLDBOSS/GUILDBATTLES), slap-battles 3->0 (aucun code actif confirmé). Aniimo: aniimoparty expiré + aniimofreetoplay ajouté + 7 récompenses confirmées. 6 pages \"aucun changement\" avec date rafraîchie (2 sources). Total codes.json: 1225->1250 (+25)."
+    },
+    {
+      "id": "code-maintenance-2026-09-28",
+      "jeu": "Multi (maintenance codes)",
+      "sujet": "Run 05h lundi : vérif hotGames + rotation. FIX MAJEUR Anime Vanguards.",
+      "categorie": "code-maintenance",
+      "premiereDetection": "2026-09-28",
+      "derniereVerification": "2026-09-28",
+      "statut": "UPDATED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "Pocket Tactics",
+        "Pocket Gamer",
+        "Beebom",
+        "PC Gamer",
+        "GamesRadar",
+        "Pro Game Guides",
+        "Dexerto"
+      ],
+      "notes": "anime-vanguards: FIX MAJEUR 4->22 actifs (19 codes étaient à tort en expirés; double-source PT27+PG26). dress-to-impress 27->29. blade-ball 14->15 (+BATTLEROYALE). driving-empire 2->5. Dates rafraîchies: blue-lock-rivals/grow-a-garden/steal-a-brainrot/volleyball-legends/fruit-battlegrounds/anime-last-stand. 0 confirmé: forsaken/dead-rails/the-strongest-battlegrounds. Conflits à surveiller: anime-last-stand (Beebom 20+ vs PGG 3), sols-rng (sources stale).",
+      "prochaineAction": "Prochaine rotation: sols-rng (source fraîche), grosses listes (anime-astral 100 / dragon-blox 82 / anime-battle-rng 35 / clover-retribution 14), tiebreak anime-last-stand."
+    },
+    {
+      "id": "code-maintenance-2026-10-01",
+      "jeu": "multi",
+      "sujet": "Maintenance codes + rotation 01/10 (debut de mois)",
+      "categorie": "maintenance",
+      "premiereDetection": "2026-10-01",
+      "derniereVerification": "2026-10-01",
+      "statut": "UPDATED",
+      "importance": "haute",
+      "confiance": "haute",
+      "sources": [
+        "mmoculture",
+        "theclick.gg",
+        "progameguides",
+        "beebom",
+        "pockettactics",
+        "fossbytes",
+        "robloxden",
+        "pocketgamer",
+        "destructoid",
+        "gamesradar"
+      ],
+      "sourceOriginale": "rotation quotidienne",
+      "potentielSEO": "fraicheur",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-universal-tower-defense-x.html",
+        "codes-combat-warriors.html",
+        "+14 verifDate"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "Prochain run : anime-champions-simulator (source fraiche), anime-eternal (ajouter Update56-60), trancher steal-a-brainrot.",
+      "notes": "sync_month 184 pages -> octobre. FIX UTDX 18->7, AJOUT combat-warriors 0->2, 14 pages verifDate rafraichies. codes.json 1260 codes. QC clean."
+    },
+    {
+      "id": "code-maintenance-2026-10-02",
+      "jeu": "multi",
+      "sujet": "Maintenance codes + rotation 02/10 (vendredi)",
+      "categorie": "maintenance",
+      "premiereDetection": "2026-10-02",
+      "derniereVerification": "2026-10-02",
+      "statut": "UPDATED",
+      "importance": "haute",
+      "confiance": "haute",
+      "sources": [
+        "progameguides",
+        "pockettactics",
+        "beebom",
+        "fossbytes",
+        "mmoculture",
+        "gamesradar",
+        "theclick.gg"
+      ],
+      "sourceOriginale": "veille codes multi-sources",
+      "potentielSEO": "fraicheur mensuelle + pages perimees corrigees",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-anime-eternal",
+        "codes-clover-retribution",
+        "codes-anime-origins",
+        "codes-blue-lock-rivals",
+        "codes-volleyball-legends",
+        "codes-grow-a-garden",
+        "codes-steal-a-brainrot",
+        "codes-anime-vanguards"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "Rotation: anime-astral-simulator, anime-battle-rng, dragon-blox, anime-champions-simulator (source fraiche introuvable), anime-spirits/slime-rng/etc.",
+      "notes": "anime-eternal 13->33 (Update56->60P4, PGG+PT). clover-retribution 14->13 (-3 perimes PGG, +!SPINS200/!DOUBLEUP double-confirmes; conflit PT 23/09 vs PGG 28/09). anime-origins 9->7 (-5 perimes GamesRadar 01/10, +HolyGrail/Update2/Labyrinth double-confirmes Beebom+GamesRadar). Hot games reverifies sans changement (BLR, VL, GaG, SaB conflit resolu via mmoculture 30/09, AV). universal-tower-defense-x: theclick 28/09 ne confirme que 3 codes football (divergence, non modifie)."
+    },
+    {
+      "id": "gta6-netflix-extended-look",
+      "jeu": "GTA 6",
+      "sujet": "Netflix 'An Extended Look' — 27 min de gameplay officiel (27/08/2026)",
+      "categorie": "news",
+      "premiereDetection": "2026-10-02",
+      "derniereVerification": "2026-10-08",
+      "statut": "EVERGREEN",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "https://variety.com/2026/tv/news/gta-6-netflix-trailer-extended-look-release-1236845475/",
+        "https://www.pcgamer.com/news/live/grand-theft-auto-6-reveal-live-coverage-breaking-down-the-netflix-extended-look-event/"
+      ],
+      "sourceOriginale": "Variety / PC Gamer",
+      "potentielSEO": "renforce hub evergreen GTA 6",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "data/gta-6/updates.json"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "Veille annonce officielle Rockstar (trailer 3 attendu novembre, rumeurs). UPDATE evergreen uniquement.",
+      "notes": "Jalon officiel majeur (premier vrai gameplay, 27 min, PS5) qui manquait a l'evergreen -> backfill dans updates.json. Evenement du 27/08, pas une news fraiche 24h. Sortie 19/11/2026 maintenue."
+    },
+    {
+      "id": "maint-2026-10-03",
+      "jeu": "multi",
+      "sujet": "Maintenance codes + rotation 03/10 (samedi, full)",
+      "categorie": "maintenance",
+      "premiereDetection": "2026-10-03",
+      "derniereVerification": "2026-10-03",
+      "statut": "UPDATED",
+      "importance": "haute",
+      "sources": [
+        "PocketTactics",
+        "ProGameGuides",
+        "Beebom",
+        "GamesRadar",
+        "Destructoid",
+        "Dexerto",
+        "theclick"
+      ],
+      "confiance": "haute",
+      "prochaineAction": "Prochain run: trancher anime-squadron (Beebom 01/10 UPD4.75!/Dragon!/Slime! = source unique vs nos 5), 2e source clover !wspainplusdelay/!earlybirdgetsdaspins (conflit), retrancher anime-spirits suspects (MAHORAGARIKA/2NDANNIVERSARYUPDATE/SCARLETAZTHOTH/HAJUNUPDATE) si source les expire. De-prioriser anime-champions-simulator (aucune source fraiche). Rotation suivante: anime-astral/dragon-blox/anime-battle-rng (grosses listes), case-simulator-rng, survive-the-killer, mad-city, anime-story-2.",
+      "notes": "anime-vanguards 22->9, clover 13->13 (5 out/5 in), anime-spirits 6->10, aniimo 11->15. Hot games sans changement. GTA6 evergreen a jour (aucune annonce officielle Rockstar; sortie 19 nov 2026 confirmee, pas de trailer 3). FC: vertical reste FC26 live (Ultimate Scream S1) - ambiguite FC26/FC27 a clarifier avec Peter, aucune page creee (kill switch)."
+    },
+    {
+      "id": "maint-2026-10-04",
+      "jeu": "multi",
+      "sujet": "Run 05h full maintenance (dimanche) — rotation codes hot + rotation + conflits tranchés",
+      "categorie": "code-maintenance",
+      "premiereDetection": "2026-10-04",
+      "derniereVerification": "2026-10-04",
+      "statut": "UPDATED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "Pro Game Guides, Beebom, RoCodes, Twinfinite, GamesRadar, Destructoid, PocketTactics, TheClick, mmoculture, Try Hard Guides, bloxed.gg (01-04/10/2026)"
+      ],
+      "sourceOriginale": "Veille autonome multi-sources",
+      "potentielSEO": "maintien autorité topicale",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-blue-lock-rivals.html (4->3)",
+        "codes-anime-vanguards.html (9->3)",
+        "codes-case-simulator-rng.html (1->6)",
+        "codes-pressure.html (4->4)",
+        "codes-anime-squadron.html (5->12)",
+        "codes-clover-retribution.html (13->13)",
+        "codes-anime-spirits.html (10->6)",
+        "data/aniimo/codes.json (15, lastChecked 04/10)",
+        "+10 pages verifDate (volleyball-legends, grow-a-garden, steal-a-brainrot, universal-tower-defense-x, war-tycoon, anime-souls-simulator-x, fire-force-online, car-crushers-2, mad-city, survive-the-killer)"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "Trancher conflits (2ndAnniDay1/100thTournament, pressure 2 codes, clover !wspainplusdelay, STK MINING, mad-city 3 codes). Rotation suivante : grosses listes (astral/dragon-blox/battle-rng, verifDate 09-10) + reste 09-17.",
+      "notes": "0 nouvelle URL (kill switch). 7 pages codes mises à jour + 10 verifDate. GTA6/FC/Aniimo sans action (confirmé stable)."
+    },
+    {
+      "id": "maint-2026-10-05",
+      "jeu": "multi",
+      "sujet": "Run 05h lundi — rotation codes + QC compteurs + jeu de la semaine (auto)",
+      "categorie": "maintenance",
+      "premiereDetection": "2026-10-05",
+      "derniereVerification": "2026-10-05",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "Pro Game Guides",
+        "Fossbytes",
+        "RoCodes",
+        "Beebom",
+        "The Click",
+        "Pocket Tactics",
+        "RobloxDen",
+        "GamesRadar",
+        "Destructoid",
+        "mmoculture"
+      ],
+      "sourceOriginale": "Veille quotidienne",
+      "potentielSEO": "moyen",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "codes-volleyball-legends.html",
+        "codes-pressure.html",
+        "codes-war-tycoon.html"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "Prochain run : grosses listes (anime-astral-simulator, dragon-blox, anime-battle-rng) spot-check faux-actifs ; trancher 2ndAnniDay1 / clover / restaurant-tycoon-3 / untitled-aot avec 2e source.",
+      "notes": "CHANGEMENTS CODES: volleyball-legends 3->4 (Update90, 3 sources) ; pressure 4->3 (-2 expirés, +Gullible piège) ; war-tycoon 4->6 (+Boom/Wiki200K, 2 sources). QC: 5 compteurs hero resynchronisés (désync run 04/10). Aniimo 15 confirmés (carte accueil rendue dynamique). GTA6/FC/tendances: kill switch, 0 nouvelle URL."
+    },
+    {
+      "id": "maint-2026-10-06",
+      "jeu": "multi",
+      "sujet": "Maintenance codes + veille overnight (mardi 06/10, 05h)",
+      "categorie": "maintenance",
+      "premiereDetection": "2026-10-06",
+      "derniereVerification": "2026-10-06",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "https://www.dexerto.com/roblox/volleyball-legends-codes-3275983 (04/10)",
+        "https://www.pockettactics.com/blue-lock-rivals/codes (04/10)",
+        "https://www.pockettactics.com/steal-a-brainrot-codes (05/10)",
+        "https://www.gfinityesports.com/article/grow-a-garden-codes (30/09)",
+        "https://www.pockettactics.com/anime-vanguards/codes + dexerto (27/09)",
+        "https://progameguides.com/roblox/clover-retribution-codes/ (28/09)",
+        "https://mein-mmo.de/en/aniimo-codes...october-2026 (05/10)"
+      ],
+      "sourceOriginale": "Run planifie 05h",
+      "potentielSEO": "n/a",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "codes-volleyball-legends.html",
+        "codes-blue-lock-rivals.html",
+        "codes-steal-a-brainrot.html",
+        "codes-grow-a-garden.html",
+        "codes-anime-vanguards.html",
+        "data/aniimo/codes.json"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "Revérifier grosses listes (anime-astral-simulator 100, dragon-blox 82, anime-battle-rng 35) des qu'une source fraiche avec liste expires datee est trouvee. Trancher clover 13->5 (PGG 28/09) avec 2e source. restaurant-tycoon-3 & untitled-aot : sources trop anciennes, maintenu.",
+      "notes": "5 hot games revérifiés SANS changement (verifDate -> 06/10) : volleyball-legends (4: UPDATE_90/SKELETON_BUNDLE/JINX/SLOT_REWORK, Dexerto 04/10), blue-lock-rivals (3: DONREVAMP/SENDOUNEXT/ACEEATER, PT 04/10), steal-a-brainrot (1: BESTBRAINROTEVER, PT 05/10+Dexerto), grow-a-garden (2: RDCAward/BEANORLEAVE10, Gfinity), anime-vanguards (3: Assault/SummerLeaving/AnniNextHopefully confirmes PT+Dexerto). 2ndAnniDay1 INTROUVABLE sur sources fiables -> NON ajoute (resolu). AV codes disputes (Wrath/Retribution/MiniUpd2 : actifs PT vs expires Dexerto, meme date) -> kill switch maintenu. clover !wspainplusdelay = EXPIRE confirme PGG -> reste hors page. Aniimo lastChecked -> 06/10. GTA6 inchange. Grosses listes: aucune source fraiche (404 PGG/PT) -> deferred, pas de preuve d'expiration."
+    },
+    {
+      "id": "maint-2026-10-07",
+      "jeu": "multi",
+      "sujet": "Maintenance codes + veille overnight (mercredi 07/10, 05h — run decale fire 09h10 UTC)",
+      "categorie": "maintenance",
+      "premiereDetection": "2026-10-07",
+      "derniereVerification": "2026-10-07",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "https://www.dexerto.com/roblox/volleyball-legends-codes-3275983 (04/10)",
+        "https://www.dexerto.com/roblox/blue-lock-rivals-codes-3252484 (04/10)",
+        "https://www.gfinityesports.com/article/grow-a-garden-codes (30/09)",
+        "https://www.pockettactics.com/steal-a-brainrot-codes (05/10)",
+        "https://www.pocketgamer.com/roblox/jailbreak-codes/ (03/10)",
+        "https://www.pocketgamer.com/roblox/dandys-world-codes/ (03/10)",
+        "https://mein-mmo.de/en/aniimo-codes...october-2026 (06/10) + patch v1.1 (23/09)",
+        "https://opencritic.com/news/34709 (GTA6 Take-Two CEO 17/07)",
+        "colby.si + netzwelt + redbull (FC27 live 25/09)"
+      ],
+      "sourceOriginale": "Run planifie 05h (decale)",
+      "potentielSEO": "n/a",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "codes-volleyball-legends.html",
+        "codes-blue-lock-rivals.html",
+        "codes-grow-a-garden.html",
+        "codes-steal-a-brainrot.html",
+        "codes-jailbreak.html",
+        "codes-dandys-world.html"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "1) basketball-zero: 2e source fraiche pour trancher CYBERRETURN/RANKEDBLEWUPAGAIN vs nos SCARYMONSTER (probablement perimes). 2) Grosses listes (anime-astral/dragon-blox/anime-battle-rng): remonter a Peter la DECISION rebuild (sources contradictoires, trim non prouvable). 3) clover 13 vs 5: 2e source fraiche concordante. 4) Aniimo Irisalis: stats de combat + 2e source avant edition creatures.json. 5) Rotation en retard: anime-expeditions, shindo-life, bee-swarm, bubble-gum, a-dusty-trip, sakura-stand.",
+      "notes": "6 pages revERIFIEES SANS changement de code (verifDate -> 07/10): 4 hot (volleyball-legends 4, blue-lock-rivals 3, grow-a-garden 2, steal-a-brainrot 1) + 2 rotation (jailbreak 2, dandys-world 1 ICHOR). TOUTES matches exactes sur sources fraiches. AUCUN code ajoute/retire ce run (kill switch sur tous les conflits). basketball-zero NON edite (3 sources discordantes, nos codes introuvables mais pas de preuve d'expiration). clover 13 maintenu (3 sources fraiches discordantes). Grosses listes maintenues (expiration non prouvable, PocketGamer agregateur non-pruning). GTA6 kill switch. Aniimo Irisalis identifiee mais NON ajoutee (stats non publiees). FC27 live confirme. Roblox trends: aucun breakout. build_codes_json NON lance (aucun code modifie)."
+    },
+    {
+      "id": "anime-vanguards-2ndanni-2026-10",
+      "jeu": "Anime Vanguards",
+      "sujet": "Événement 2e anniversaire : codes quotidiens 2ndAnniDayX",
+      "categorie": "codes/event",
+      "premiereDetection": "2026-10-08",
+      "derniereVerification": "2026-10-31",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "https://destructoid.com/anime-vanguards-codes/ (07/10)",
+        "https://twinfinite.net/roblox/anime-vanguards-codes/ (07/10)",
+        "https://robloxden.com/game-codes/anime-vanguards (07/10)"
+      ],
+      "sourceOriginale": "Destructoid/Twinfinite/RobloxDen",
+      "potentielSEO": "maintien fraîcheur page codes hot",
+      "pagesLiees": [
+        "/codes-anime-vanguards.html"
+      ],
+      "articleCree": false,
+      "prochaineAction": "Surveiller fin event anniversaire + expirations quotidiennes. 2ndAnniDay1 (PGG) / 2ndAnniDay2 (Twinfinite) = 1 source chacun.",
+      "notes": "20/10: page passee de 8 a 13 codes. +5 double-confirmes (Twinfinite 19/10 + PGG 12/10): Finally, 2ndAnniversary, TrueShadowMonarch, HappyAnniversary, 100thTournament. Prepare expire confirme. | 31/10: 2ndAnniDay7 confirme par next-stage.fr seul (timesaver 17/10 trop ancien, s_arrete a Day6) -> reste MONITOR (2e source requise avant ajout)."
+    },
+    {
+      "id": "maint-2026-10-08",
+      "jeu": "multi",
+      "sujet": "Maintenance codes full 05h (jeudi 08/10) + veille overnight",
+      "categorie": "maintenance",
+      "premiereDetection": "2026-10-08",
+      "derniereVerification": "2026-10-08",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "Dexerto/Gfinity/Destructoid/Twinfinite/RobloxDen/insider-gaming (04-07/10)"
+      ],
+      "sourceOriginale": "multi",
+      "potentielSEO": "fraîcheur + exactitude pages codes",
+      "pagesLiees": [
+        "/codes-anime-vanguards.html",
+        "/codes-basketball-zero.html",
+        "/codes-encounters.html",
+        "/codes-bubble-gum-simulator-infinity.html"
+      ],
+      "articleCree": false,
+      "prochaineAction": "Cross-check anime-expeditions/steal-a-fish/evade/slime-rng ; décision Peter grosses listes",
+      "notes": "Hot codes 4 inchangés (VL/BLR/GAG/SAB). anime-vanguards +4. Retraits prouvés: basketball-zero SCARYMONSTER/15SCARYMONSTER (→0), encounters IKES (→0), bgs-infinity throwback (→4). Kill switch: basketball-zero nouveaux codes (sources discordantes), anime-stars 11 candidats (jeu mal identifié). GTA6 19 nov confirmé no-delay. Aniimo Irisalis stats toujours non publiées (MONITOR). Aucun breakout Roblox. FC27 live, promos sur leaks → à préparer (sources EA off requises)."
+    },
+    {
+      "id": "evade-codes-2026-10",
+      "jeu": "Evade",
+      "sujet": "MAJ codes: retrait HAPPY4THBIRTHDAYEVADE (expire) + ajout Summer2026/isurviveddatahaul",
+      "categorie": "codes",
+      "premiereDetection": "2026-10-10",
+      "derniereVerification": "2026-10-10",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "https://robloxden.com/game-codes/evade",
+        "https://www.dexerto.com/roblox/evade-codes-3357718/",
+        "https://allthings.how/evade-codes/"
+      ],
+      "sourceOriginale": "Reverif conflit queue 08/10",
+      "potentielSEO": "moyen",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-evade.html"
+      ],
+      "articleCree": false,
+      "url": "/codes-evade.html",
+      "prochaineAction": "Surveiller TrollgeTungTung (candidat, RobloxDen=Check)",
+      "notes": "HAPPY4THBIRTHDAYEVADE confirme EXPIRE par RobloxDen 10/10 (preuve)."
+    },
+    {
+      "id": "maint-2026-10-10",
+      "jeu": "Multi",
+      "sujet": "Run 05h full: verif codes hot (6) + rotation (8), 1 changement (evade)",
+      "categorie": "maintenance",
+      "premiereDetection": "2026-10-10",
+      "derniereVerification": "2026-10-10",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "Destructoid 10/10",
+        "roonby 03/10",
+        "Gfinity 07/10",
+        "timesaver 08/10",
+        "RobloxDen 10/10",
+        "Dexerto",
+        "allthings"
+      ],
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-evade.html",
+        "+9 verifDate (AV, volleyball, grow-a-garden, steal-a-brainrot, steal-a-fish, slime-rng, anime-champions-sim, evomon, anime-card-farm)"
+      ],
+      "articleCree": false,
+      "prochaineAction": "BLR drop hebdo; anime-expeditions & be-a-fish-bait cross-check; evomon/anime-champions-sim refresh multi-source (GHOUL, saison evomon)",
+      "notes": "codes.json 184 jeux / 1253 codes actifs. Candidats non ajoutes (kill switch): GHOUL (anime-champions-sim, 1 src), TRADING! (anime-card-farm, 1 src perimee), Clash!/Brothers/HollowWorld (anime-expeditions, roonby seul)."
+    },
+    {
+      "id": "maint-2026-10-11",
+      "jeu": "Multi",
+      "sujet": "Run 05h full (dimanche): 8 hot/rotation re-verifies, 0 changement de code (kill switch)",
+      "categorie": "maintenance",
+      "premiereDetection": "2026-10-11",
+      "derniereVerification": "2026-10-11",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "Destructoid 10/10",
+        "Dexerto 04/10",
+        "Pockettactics 04-08/10",
+        "Gfinity 07/10",
+        "timesaver 08/10",
+        "roonby 10/10",
+        "Beebom"
+      ],
+      "trendScore": null,
+      "pagesZoneblox": [
+        "verifDate +8: anime-vanguards, blue-lock-rivals, volleyball-legends, grow-a-garden, steal-a-brainrot, blox-fruits, fisch, plants-vs-brainrots"
+      ],
+      "articleCree": false,
+      "prochaineAction": "Prochain run: 2e source VL Update 91 (UPDATE_91/REPLAYS/MVP); 2e source da-hood (PVP/BUFF/WORLDCUP26); re-verifier fisch MarianaIsGoingCrazy & dragon-adventures SeasonXP; evomon saison; BLR drop hebdo.",
+      "notes": "Aucun ajout/retrait: tous les candidats neufs = mono-source. GTA6 rumeur Trailer3. FC27 Destined for Glory live (non publie=leaks). Aniimo Irisalis MONITOR. Steal-a-Brainrot: secret Phoenix via Haunted Fuse (Halloween) = angle guide, pas un code."
+    },
+    {
+      "id": "volleyball-upd91-2026-10-11",
+      "jeu": "Volleyball Legends",
+      "sujet": "UPDATE 91 Instant Replay - codes UPDATE_91/REPLAYS/MVP (candidats mono-source)",
+      "categorie": "codes",
+      "premiereDetection": "2026-10-11",
+      "derniereVerification": "2026-10-12",
+      "statut": "PUBLISHED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "roonby 10/10 (seul)",
+        "https://roonby.com/2025/04/19/volleyball-legends-codes/",
+        "https://www.dexerto.com/roblox/volleyball-legends-codes-3275983"
+      ],
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-volleyball-legends.html"
+      ],
+      "articleCree": true,
+      "prochaineAction": "Surveiller Update 92 ; verifier expiration reelle Update 90 (2e source)",
+      "notes": "UPDATE_91/REPLAYS/MVP publies le 12/10 (Roonby 10/10 + Dexerto 11/10). Ancien set Update 90 passe expire (pattern de rotation du jeu + Dexerto 11/10).",
+      "url": "/codes-volleyball-legends.html"
+    },
+    {
+      "id": "maint-2026-10-12",
+      "jeu": "Multi (maintenance codes)",
+      "sujet": "Run 05h lundi — VL Update 91 publie + dragon-adventures SeasonXP expire",
+      "categorie": "code-maintenance",
+      "premiereDetection": "2026-10-12",
+      "derniereVerification": "2026-10-12",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "https://www.dexerto.com/roblox/volleyball-legends-codes-3275983",
+        "https://roonby.com/2025/04/19/volleyball-legends-codes/",
+        "https://robloxden.com/game-codes/dragon-adventures"
+      ],
+      "sourceOriginale": "Veille codes run 05h",
+      "potentielSEO": "moyen",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-volleyball-legends.html",
+        "codes-dragon-adventures.html",
+        "codes-arm-wrestle-simulator.html",
+        "codes-anime-vanguards.html",
+        "codes-blue-lock-rivals.html"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "Confirmer candidats BLR + anime-defenders (2e source)",
+      "notes": "VL: UPDATE_91/REPLAYS/MVP actifs, Update 90 expire. dragon-adventures: SeasonXP expire (RobloxDen 10/10 + Pockettactics). arm-wrestle, anime-vanguards, blue-lock-rivals re-verifies stables. Jeu de la semaine (lundi) mis a jour."
+    },
+    {
+      "id": "blue-lock-rivals-drop-2026-10-12",
+      "jeu": "Blue Lock Rivals",
+      "sujet": "Drop hebdo candidat EPICSENDOU/ONEMOREWEEK/NELAIKUNEXT",
+      "categorie": "codes",
+      "premiereDetection": "2026-10-12",
+      "derniereVerification": "2026-10-29",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "Dexerto 18/10",
+        "Twinfinite 17/10",
+        "ProGameGuides 11/10",
+        "GamesRadar 12/10"
+      ],
+      "sourceOriginale": "Dexerto 11/10",
+      "potentielSEO": "moyen",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-blue-lock-rivals.html"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "Revérifier au prochain drop hebdo; confirmer la récompense exacte de SPOOKY via source officielle.",
+      "notes": "29/10: conflit tranché. 2 sources récentes concordantes (Dexerto 25/10 + Game.guide 28/10) : les codes ont tourné avec l'update Aiku — NELAIKU/HALLOWEEN/WSNAKE/SORRYFORDELAYAIKU expirés, remplacés par SKELETON (5 Lucky Spins), AIKUCHANGES (5 Lucky Flow Spins) et SPOOKY (récompense non détaillée par les sources). Page mise à jour (actifs+expirés, compteur, JS ACTIVE, prose, verifDate, JSON-LD dateModified 2026-10-29). TimeSaver 22/10 listait encore les anciens = simplement antérieur à l'update, pas un conflit."
+    },
+    {
+      "id": "anime-zero-launch-2026-10",
+      "jeu": "Anime Zero",
+      "sujet": "Nouveau cluster (codes + guide debutant) - RPG anime/dungeon crawler en dev actif",
+      "categorie": "new-game",
+      "premiereDetection": "2026-10-12",
+      "derniereVerification": "2026-10-12",
+      "statut": "PUBLISHED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "https://www.pockettactics.com/anime-zero-codes",
+        "https://www.dexerto.com/roblox/anime-zero-codes-3416634/",
+        "https://www.igeeksblog.com/anime-zero-codes/",
+        "https://www.roblox.com/games/114574503491412/Anime-Zero"
+      ],
+      "sourceOriginale": "Demande de Peter (URL Roblox)",
+      "potentielSEO": "eleve",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-anime-zero.html",
+        "guides/anime-zero.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-anime-zero.html",
+      "prochaineAction": "Surveiller nouveaux codes (jeu en dev actif); tier list quand donnees unites sourcees; 2e guide forte intention si traction",
+      "notes": "25 codes publies (2+ sources). Miniature rbxcdn reelle. Integration complete (GAMES, GAMES_INDEX, hubs, sitemap). Jeu en developpement actif -> drops frequents."
+    },
+    {
+      "id": "halloween-audit-2026-10",
+      "jeu": "Multi (Halloween)",
+      "sujet": "Audit Halloween du catalogue (demande Peter)",
+      "categorie": "maintenance",
+      "premiereDetection": "2026-10-12",
+      "derniereVerification": "2026-10-12",
+      "statut": "MONITOR",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "https://www.dexerto.com/roblox/roblox-bee-swarm-simulator-codes-1664631/",
+        "https://www.pockettactics.com/tower-defense-simulator/codes",
+        "https://timesaver.gg/blog/steal-a-brainrot-codes-october-2026"
+      ],
+      "sourceOriginale": "Demande de Peter",
+      "potentielSEO": "moyen",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-blade-ball.html",
+        "codes-steal-a-brainrot.html"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "Surveiller drops de codes Halloween; angle guide Steal a Brainrot (Haunted Fuse/Phoenix, pas un code)",
+      "notes": "blade-ball a deja SPOOKYSEASON actif. Evenements Halloween en cours (Steal a Brainrot Haunted Fuse, Adopt Me) mais peu/pas de codes neufs. Kill switch: FREEOCTOBLOCK777 + saturn rejetes (mono-source)."
+    },
+    {
+      "id": "maint-2026-10-13",
+      "jeu": "Multi (maintenance codes)",
+      "sujet": "Run 05h 13/10 - verification hot games + rotation, 0 edition",
+      "categorie": "code-maintenance",
+      "premiereDetection": "2026-10-13",
+      "derniereVerification": "2026-10-13",
+      "statut": "VERIFIED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "Dexerto",
+        "Pocket Tactics",
+        "RobloxDen",
+        "roonby",
+        "destructoid",
+        "nerdschalk",
+        "igeeksblog"
+      ],
+      "sourceOriginale": "Run quotidien",
+      "potentielSEO": "na",
+      "trendScore": 0,
+      "pagesZoneblox": [],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "Voir EDITORIAL-QUEUE.md",
+      "notes": "HOT verifies, tous a jour ou kill-switch: volleyball-legends (UPDATE_91/REPLAYS/MVP confirme Dexerto 11/10, pas d'Update 92), anime-vanguards (8 codes 12/10 OK), grow-a-garden (stable, pas de codes neufs), steal-a-brainrot (BESTBRAINROTEVER OK), blox-fruits (stable). Aucun code hot a modifier. ROTATION verifiee: voir topics dedies wizard-alchemy / iron-soul / anime-expeditions / dig-and-clean."
+    },
+    {
+      "id": "wizard-alchemy-stale-2026-10-13",
+      "jeu": "Wizard Alchemy",
+      "sujet": "Page codes obsolete - rotation thematique non prise en compte",
+      "categorie": "code-update",
+      "premiereDetection": "2026-10-13",
+      "derniereVerification": "2026-10-14",
+      "statut": "UPDATED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "https://www.dexerto.com/roblox/wizard-alchemy-codes-3366201/ (MAJ 09/10)",
+        "https://robloxden.com/game-codes/wizard-alchemy (verif 12/10)",
+        "https://nerdschalk.com/wizard-alchemy-codes/ (3e source, confirme expirations)"
+      ],
+      "sourceOriginale": "Rotation 13/10",
+      "potentielSEO": "moyen",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "codes-wizard-alchemy.html"
+      ],
+      "articleCree": false,
+      "url": "/codes-wizard-alchemy.html",
+      "prochaineAction": "FAIT le 14/10: liste visible + const ACTIVE + compteur + verifDate + narratif code-specifique corriges. Set actif = POISON, SPIDER, SPELL, BREW, 17kCCU, 20kMembers (6 codes, 3 sources). 60KMEMBERS/UPDATE1/QILIN + ancien set retires. Extras mono-source RobloxDen (MAGICPETS/PIRATEPETS/AGGROAAR) NON ajoutes par prudence. A surveiller: si traction, ajouter extras avec 2e source.",
+      "notes": "RESOLU. 3e source (nerdschalk) obtenue -> seuil Option A atteint. Edition surgicale verifiee (abort-safe, 16 cibles, QC: 0 null byte, </html> ok, div 90/90, ACTIVE valide node). build_codes_json + build_sitemap relances."
+    },
+    {
+      "id": "iron-soul-conflict-2026-10-13",
+      "jeu": "Iron Soul: Dungeon",
+      "sujet": "Conflit d'ampleur sur le nombre de codes actifs",
+      "categorie": "code-conflict",
+      "premiereDetection": "2026-10-13",
+      "derniereVerification": "2026-10-15",
+      "statut": "MONITOR",
+      "importance": "moyenne",
+      "confiance": "LOW",
+      "sources": [
+        "https://www.dexerto.com/roblox/iron-soul-dungeon-codes-3387280/ (11/10: 1 actif RAGNAROK)",
+        "https://robloxden.com/game-codes/iron-soul-dungeon (03/10: ~25 actifs)"
+      ],
+      "sourceOriginale": "Rotation 13/10",
+      "potentielSEO": "faible",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "codes-iron-soul-dungeon.html"
+      ],
+      "articleCree": false,
+      "url": "/codes-iron-soul-dungeon.html",
+      "prochaineAction": "RAGNAROK (3 Race Rerolls) confirme actif par les 2 sources = ajout sur -> mais verifDate page = 19/09 (perime) et liste visible ~23 codes. Conflit majeur Dexerto(conservateur) vs RobloxDen(liberal) sur l'ampleur -> ne pas reecrire en auto. Trancher avec 3e source.",
+      "notes": "Kill switch sur l'ampleur. Seul consensus: RAGNAROK actif; IRONSOULWEEKEND1-12 + 50KMEMBER expires (2 sources). | Re-verif 15/10: Dexerto 11/10 = 1 actif (RAGNAROK) ; nerdschalk = 43 mais date 19/09 (perime) ; RobloxDen ~25. Page=23. Non tranche, kill switch."
+    },
+    {
+      "id": "anime-expeditions-stale-2026-10-13",
+      "jeu": "Anime Expeditions",
+      "sujet": "Page codes obsolete vs source fraiche",
+      "categorie": "code-update",
+      "premiereDetection": "2026-10-13",
+      "derniereVerification": "2026-10-13",
+      "statut": "MONITOR",
+      "importance": "moyenne",
+      "confiance": "MEDIUM",
+      "sources": [
+        "https://www.dexerto.com/roblox/anime-expeditions-codes-3388290/ (12/10: Clash!, Brothers, HollowWorld)",
+        "https://www.thespike.gg/roblox/game-codes/anime-expeditions-codes (10/08 PERIME)"
+      ],
+      "sourceOriginale": "Rotation 13/10",
+      "potentielSEO": "moyen",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "codes-anime-expeditions.html"
+      ],
+      "articleCree": false,
+      "url": "/codes-anime-expeditions.html",
+      "prochaineAction": "Page affiche un set ancien (HAPPYBDAYCOOP/wfade/100mvisits...). Dexerto 12/10 donne Clash!/Brothers/HollowWorld mais 1 seule source fraiche (TheSpike perime). 2e source fraiche requise avant rewrite.",
+      "notes": "Candidat update, bloque faute de 2e source fraiche."
+    },
+    {
+      "id": "dig-and-clean-upd3-2026-10-13",
+      "jeu": "Dig and Clean",
+      "sujet": "Candidat ajout UPDATE3",
+      "categorie": "code-update",
+      "premiereDetection": "2026-10-13",
+      "derniereVerification": "2026-10-13",
+      "statut": "MONITOR",
+      "importance": "faible",
+      "confiance": "MEDIUM",
+      "sources": [
+        "https://www.destructoid.com/dig-and-clean-codes/ (01/10: UPDATE3 nouveau)",
+        "https://www.pcgamesn.com/dig-and-clean-codes (perime: SECRET10 seul)"
+      ],
+      "sourceOriginale": "Rotation 13/10",
+      "potentielSEO": "faible",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "codes-dig-and-clean.html"
+      ],
+      "articleCree": false,
+      "url": "/codes-dig-and-clean.html",
+      "prochaineAction": "Ajouter UPDATE3 (2x Luck 30 min) apres 2e source fraiche. Page actuelle UPDATE2/UPDATE1/SECRET10 OK (non prouves expires).",
+      "notes": "Mono-source fraiche pour UPDATE3."
+    },
+    {
+      "id": "slayers-2-conflict-2026-10-13",
+      "jeu": "Slayers 2",
+      "sujet": "Conflit 3 voies non tranche",
+      "categorie": "code-conflict",
+      "premiereDetection": "2026-10-12",
+      "derniereVerification": "2026-10-13",
+      "statut": "MONITOR",
+      "importance": "moyenne",
+      "confiance": "LOW",
+      "sources": [
+        "Page: SkillTreeReset, Release26",
+        "Pocket Tactics 12/10: AUCUN code actif (POINTSRESET/SORRYFORSHUTDOWN expires)",
+        "igeeksblog 12/10: 5 codes sans rapport (Roguelike, M1LL1ON, Anime Overload...)"
+      ],
+      "sourceOriginale": "Queue 12/10",
+      "potentielSEO": "faible",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "codes-slayers-2.html"
+      ],
+      "articleCree": false,
+      "url": "/codes-slayers-2.html",
+      "prochaineAction": "3 sources, 3 reponses differentes -> KILL SWITCH. Aucune preuve d'expiration de SkillTreeReset/Release26. Jeu en ligne. Attendre convergence.",
+      "notes": "Conflit maximal, aucune edition."
+    },
+    {
+      "id": "noob-incremental-stale-2026-10-16",
+      "jeu": "Noob Incremental",
+      "sujet": "Liste de codes perimee a reecrire (set actif double-confirme)",
+      "categorie": "codes",
+      "premiereDetection": "2026-10-16",
+      "derniereVerification": "2026-10-16",
+      "statut": "UPDATE_REQUIRED",
+      "importance": "moyenne",
+      "confiance": "haute",
+      "sources": [
+        "dexerto.com/roblox/noob-incremental-codes-3379039 (10/10)",
+        "robloxden.com/game-codes/noob-incremental (15/10)"
+      ],
+      "sourceOriginale": "rotation jamais-verifie",
+      "potentielSEO": "moyen",
+      "trendScore": 55,
+      "pagesZoneblox": [
+        "codes-noob-incremental.html"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "Reecrire #activeList + const ACTIVE + compteur + Mis a jour, avec recompenses fiables par code. Set confirme 2 sources: ANOTHERMINIUPDATE, FIXINGSTUFF, UPDATEFIX, UNDERWATERISFINALLYHERE, YINYANG, MASTERIESAREHERE!, SPACEREALMISOUT!, 500KGROUPMEMBERS!!!, FOOTBALLEVENT, RELEASE (+LABUPDATE, +ANOTHERMINIUPDATEINNOOBINC/INOHIO/THANKS4JOINING).",
+      "notes": "Page actuelle (REFUNDPRISM/10MVISITS!/...CCU) non confirmee par aucune source fraiche sauf RELEASE/LABUPDATE. Rewrite reporte faute de recompenses fiables (regle anti-invention)."
+    },
+    {
+      "id": "fc26-ultimate-scream-2026-10-18",
+      "jeu": "EA Sports FC 27",
+      "sujet": "Promo Ultimate Scream (Halloween) + Scream Team 2",
+      "categorie": "FUT / promo saisonniere",
+      "premiereDetection": "2026-10-18",
+      "derniereVerification": "2026-10-31",
+      "statut": "MONITOR",
+      "importance": "moyenne-haute",
+      "confiance": "haute",
+      "sources": [
+        "ea.com (officiel) /fc-26/news/fc-26-ultimate-scream",
+        "fut.gg",
+        "sportskeeda (Halloween Puzzle Crafting)",
+        "destructoid (Scream Team 2)",
+        "https://www.fut.gg/news/ea-fc-27-ultimate-scream-release-date-times-upgrades/",
+        "https://www.dexerto.com/wikis/ea-fc-27/promo-calendar/"
+      ],
+      "sourceOriginale": "ea.com officiel",
+      "potentielSEO": "eleve (requete saisonniere Halloween, intention FUT)",
+      "trendScore": 74,
+      "pagesZoneblox": [
+        "/games/fc-27/guides/sbc-solutions/",
+        "/games/fc-27/guides/meilleurs-joueurs-meta/"
+      ],
+      "articleCree": true,
+      "url": "/games/fc-27/guides/sbc-solutions/",
+      "prochaineAction": "15h/22h: confirmer Team 2 via 2e source alignee (escouade+DCE exacts) avant publication; clarifier label FC26 vs FC27 dans les medias.",
+      "notes": "31/10: Ultimate Scream Team 2 LIVE (beebom). Conflit: beebom/futbin labellisent \"FC 26\" alors que FC 27 est sorti le 25/09/2026 (PSU/Insider). Escouade listee (Dembele, Dybala, Pulisic, Griezmann, J.Felix, Frimpong, heroes Sneijder/Toure...) mais sans notes ni DCE recoupes 2 sources -> non publie (kill switch exactitude)."
+    },
+    {
+      "id": "run-2026-10-19-05h",
+      "jeu": "(run log)",
+      "sujet": "Run 05h full lundi 19/10 - 0 edition de code, verification hot+rotation, 2 candidats near-ready",
+      "categorie": "run-log",
+      "premiereDetection": "2026-10-19",
+      "derniereVerification": "2026-10-19",
+      "statut": "PUBLISHED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "Dexerto",
+        "Samlover",
+        "PocketTactics",
+        "Beebom",
+        "RobloxDen",
+        "ProGameGuides",
+        "g2a",
+        "Roonby",
+        "Rockstar Newswire",
+        "ea.com",
+        "khelnow"
+      ],
+      "sourceOriginale": "Run planifie 05h",
+      "potentielSEO": "",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "catalogVerify -> 19/10: shindo-life, grand-piece-online, da-hood, car-dealership-tycoon, toilet-tower-defense"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "Voir EDITORIAL-QUEUE.md et _notes2026-10-19 (code-watch.json).",
+      "notes": ""
+    },
+    {
+      "id": "gpo-rotation-2026-10-19",
+      "jeu": "Grand Piece Online",
+      "sujet": "Page codes legerement stale - ajout FREE_Drops8 + 5FREETAILORVOUCHERS_2 (2 sources)",
+      "categorie": "codes-maintenance",
+      "premiereDetection": "2026-10-19",
+      "derniereVerification": "2026-10-19",
+      "statut": "UPDATE_REQUIRED",
+      "importance": "moyenne",
+      "confiance": "MEDIUM",
+      "sources": [
+        "Dexerto (18/10)",
+        "g2a (01/10)"
+      ],
+      "sourceOriginale": "",
+      "potentielSEO": "",
+      "trendScore": 30,
+      "pagesZoneblox": [
+        "codes-grand-piece-online.html"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "3e source fiable -> ajouter FREE_Drops8 (24h 2x Drop) + 5FREETAILORVOUCHERS_2 (5 Tailor Vouchers), concordants Dexerto+g2a. NE PAS retirer FREE_Drops7/FREE_EXP6 (conflit, pas de preuve d'expiration). ILOVEGPO_3 double-confirme actif.",
+      "notes": "GPO rotation lente de codes Drop/EXP/Voucher. g2a liste tout actif (accumulateur) -> fiabilite moyenne."
+    },
+    {
+      "id": "da-hood-rotation-2026-10-19",
+      "jeu": "Da Hood",
+      "sujet": "Ajout MACRO!/ETERNAL (2 sources) + conflit DOG/SHARK non tranche",
+      "categorie": "codes-maintenance",
+      "premiereDetection": "2026-10-19",
+      "derniereVerification": "2026-10-19",
+      "statut": "MONITOR",
+      "importance": "moyenne",
+      "confiance": "MEDIUM",
+      "sources": [
+        "RobloxDen (18/10)",
+        "ProGameGuides (12/10)",
+        "AllThings (19/09)"
+      ],
+      "sourceOriginale": "",
+      "potentielSEO": "",
+      "trendScore": 20,
+      "pagesZoneblox": [
+        "codes-da-hood.html"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "3e source fraiche -> ajouter MACRO! (1M DHC) + ETERNAL (500K DHC), concordants robloxden+progameguides. DOG/SHARK: KILL SWITCH (robloxden=expires vs progameguides+allthings=actifs) -> ne pas retirer sans 2e preuve d'expiration fraiche.",
+      "notes": "Page actuelle = DOG/SHARK. Conflit 3 voies. bluestacks/digitalcitizen stale inexploitables."
+    },
+    {
+      "id": "roblox-trends-2026-10-19",
+      "jeu": "Roblox (veille)",
+      "sujet": "Jeux montants a surveiller (pas encore de preuve multi-source + codes)",
+      "categorie": "trend-detection",
+      "premiereDetection": "2026-10-19",
+      "derniereVerification": "2026-10-19",
+      "statut": "MONITOR",
+      "importance": "moyenne",
+      "confiance": "LOW",
+      "sources": [
+        "rblxstat (19/10)",
+        "blast.tv fall games",
+        "sportskeeda"
+      ],
+      "sourceOriginale": "",
+      "potentielSEO": "",
+      "trendScore": 35,
+      "pagesZoneblox": [],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "Croiser signaux (YouTube/TikTok/Reddit + codes reels) avant toute page. Candidats: Facecard: Makeup Showdown, Ride a Dino, [SHINJI] Legends Battlegrounds, Break and Steal an Egg (meta vol d'oeufs).",
+      "notes": "Compteurs rblxstat peu fiables. Pas de creation precipitee (mode conquete = 1 page principale d'abord)."
+    },
+    {
+      "id": "gpo-dahood-codes-2026-10-20",
+      "jeu": "Grand Piece Online + Da Hood",
+      "sujet": "Codes: ajouts multi-sources (edition propre non destructive)",
+      "categorie": "codes",
+      "premiereDetection": "2026-10-20",
+      "derniereVerification": "2026-10-20",
+      "statut": "PUBLISHED",
+      "importance": "HAUTE",
+      "confiance": "HAUTE",
+      "sources": [
+        "Dexerto 18/10",
+        "ProGameGuides 01/10 & 12/10",
+        "Destructoid 19/10",
+        "TechWiser 12/10"
+      ],
+      "sourceOriginale": "rotation+hotGames",
+      "potentielSEO": "fort (pages a fort trafic)",
+      "trendScore": 70,
+      "pagesZoneblox": [
+        "/codes-grand-piece-online.html",
+        "/codes-da-hood.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-grand-piece-online.html",
+      "prochaineAction": "GPO: surveiller FREE_Drops7/FREE_EXP6. DaHood: 3e source expiration DOG/SHARK; candidats PVP/BUFF.",
+      "notes": "GPO +FREE_Drops8 (3 sources). DaHood +MACRO!/ETERNAL (3 sources). Kill switch GPO 5FREETAILORVOUCHERS_2/ANOTHER (expires 2 sources)."
+    },
+    {
+      "id": "grimoires-era-stale-2026-10-20",
+      "jeu": "Grimoires Era",
+      "sujet": "Page codes tres probablement perimee (conflit 3 voies)",
+      "categorie": "codes",
+      "premiereDetection": "2026-10-20",
+      "derniereVerification": "2026-10-24",
+      "statut": "MONITOR",
+      "importance": "HAUTE",
+      "confiance": "faible",
+      "sources": [
+        "games.gg 03/10",
+        "pocketgamer 03/10",
+        "pockettactics (stale nov-2025)",
+        "macmyths"
+      ],
+      "sourceOriginale": "rotation",
+      "potentielSEO": "moyen",
+      "trendScore": 55,
+      "pagesZoneblox": [
+        "/codes-grimoires-era.html"
+      ],
+      "articleCree": false,
+      "url": "/codes-grimoires-era.html",
+      "prochaineAction": "Source OFFICIELLE requise (Trello/Discord). Conflit 3 voies CONFIRME le 24/10: games.gg (NEXTCHAPTER!/MINING!/UPDATE0.6!/SYSTEMREWORK!) vs pocketgamer+pockettactics (REVAMPSOON!/25SPINS!/2025BOOSTS!/CLOVER) vs page (codes release). Aucun rebuild sans officiel.",
+      "notes": "24/10: 2 sources fraiches (games.gg, pocketgamer, meme date 03/10) totalement contradictoires + page obsolete. KILL SWITCH maintenu."
+    },
+    {
+      "id": "maint-2026-10-20",
+      "jeu": "Multi (maintenance codes)",
+      "sujet": "Run 05h full 20/10 (mardi)",
+      "categorie": "maintenance",
+      "premiereDetection": "2026-10-20",
+      "derniereVerification": "2026-10-20",
+      "statut": "UPDATED",
+      "importance": "NORMALE",
+      "confiance": "HAUTE",
+      "sources": [
+        "Dexerto",
+        "ProGameGuides",
+        "Destructoid",
+        "Twinfinite",
+        "TechWiser",
+        "roonby",
+        "mein-mmo",
+        "RockstarINTEL"
+      ],
+      "sourceOriginale": "run",
+      "potentielSEO": "-",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "/codes-grand-piece-online.html",
+        "/codes-da-hood.html",
+        "/codes-anime-vanguards.html",
+        "/games/gta-6/"
+      ],
+      "articleCree": true,
+      "url": "",
+      "prochaineAction": "Rotation suite (grimoires-era rebuild, inflated lists Peter). Candidats: haze-piece PHANTOMSHIP/OKUCHI, rivals SORRY retrait.",
+      "notes": "3 editions codes (GPO, DaHood, AnimeVanguards) + GTA6 evergreen. 11 jeux re-verifies. Hot games defendables. Regeneration + QC OK."
+    },
+    {
+      "id": "maint-2026-10-21",
+      "jeu": "Multi (maintenance codes)",
+      "sujet": "Run 05h full 21/10 (mercredi)",
+      "categorie": "maintenance",
+      "premiereDetection": "2026-10-21",
+      "derniereVerification": "2026-10-21",
+      "statut": "UPDATED",
+      "importance": "NORMALE",
+      "confiance": "HAUTE",
+      "sources": [
+        "samlover",
+        "roonby",
+        "TechWiser",
+        "NerdSchalk",
+        "Insider Gaming",
+        "Dexerto",
+        "PocketGamer",
+        "games.gg",
+        "thespike",
+        "pockettactics"
+      ],
+      "sourceOriginale": "run",
+      "potentielSEO": "-",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "/codes-anime-vanguards.html",
+        "/codes-da-hood.html",
+        "/codes-rivals.html"
+      ],
+      "articleCree": true,
+      "url": "",
+      "prochaineAction": "grimoires-era rebuild (source officielle, conflit 3 voies); knockout/anime-battle-rng 2e source pour pruner; garden-tower-defense conflit non tranche; FC26 naming (Peter).",
+      "notes": "3 editions propres: AV +2ndAnniDay1, DaHood +PRESIDENT/PVP/BUFF, Rivals -SORRY. grimoires-era KILL SWITCH (conflit 3 voies). 6 hot games + character-rng re-verifies sans edition. GTA6/Aniimo stables. build x4 + QC OK (1317 codes/396 URLs)."
+    },
+    {
+      "id": "knockout-prune-2026-10-22",
+      "jeu": "Knockout",
+      "sujet": "Prune liste gonflée: 7->2 codes actifs",
+      "categorie": "codes-maintenance",
+      "premiereDetection": "2026-10-21",
+      "derniereVerification": "2026-10-22",
+      "statut": "UPDATED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "Dexerto (13/08)",
+        "Nerdschalk (23/09)"
+      ],
+      "sourceOriginale": "Rotation / queue",
+      "potentielSEO": "honnêteté liste codes (anti faux-actifs)",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "codes-knockout.html",
+        "tous-les-codes.html",
+        "js/main.js (GAMES_INDEX)"
+      ],
+      "articleCree": false,
+      "url": "https://zoneblox.com/codes-knockout.html",
+      "prochaineAction": "Surveiller CORALCRUSHER (nerdschalk seul, sans récompense) -> 2e source avant ajout.",
+      "notes": "CRABRAVE/SOCIALHUB/PUNCHMONKEY/DOOMSDAY/ADMINABUSE = expirés confirmés par 2 sources concordantes. Gardé EMPERORRETURNS + THANKSFORPLAYING. numberOfItems/ItemList/counter/GAMES_INDEX/hub resynchronisés."
+    },
+    {
+      "id": "run-2026-10-22-05h",
+      "jeu": "(run log)",
+      "sujet": "Run 05h full (jeudi 22/10) - 1 prune propre (knockout) + 6 hot confirmés, kill switch sur 4 conflits",
+      "categorie": "run-log",
+      "premiereDetection": "2026-10-22",
+      "derniereVerification": "2026-10-22",
+      "statut": "PUBLISHED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "Dexerto",
+        "Nerdschalk",
+        "Roonby",
+        "PocketTactics",
+        "PocketGamer",
+        "Samlover",
+        "mein-mmo",
+        "khelnow"
+      ],
+      "sourceOriginale": "Run planifié 05h",
+      "potentielSEO": "fraîcheur + honnêteté listes",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "codes-knockout.html (prune 7->2)",
+        "+6 verifDate: blox-fruits, grow-a-garden, steal-a-brainrot, blue-lock-rivals, anime-vanguards, fisch"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "15h/22h: grimoires-era source officielle; anime-battle-rng 2e source FRAÎCHE (non syndiquée); aniimo-froyo 2e source expiration; GTA6 Newswire préchargement; FC26 naming (Peter).",
+      "notes": "Codes: knockout prune (2 sources). Confirmés sans édition: anime-vanguards (Roonby 13/10), fisch (source contradictoire), steal-a-brainrot (Dexerto 12/10), grow-a-garden (2 sources), blox-fruits (PT 16/10), blue-lock-rivals (sources + anciennes que page). Kill switch: grimoires-era (conflit 3 voies), anime-battle-rng (source stale syndiquée), aniimo-froyo (1 source fraîche expiration), grow-a-garden FREESEED/torigate. GTA6/FC26/Aniimo: rien de neuf actionnable. Pas de nouveau jeu avec preuve multi-source + codes réels cette nuit."
+    },
+    {
+      "id": "aniimo-s1-partii-2026-10-29",
+      "jeu": "Aniimo",
+      "sujet": "Aniimo Season 1 Part II — gros update annonce le 29/10/2026",
+      "categorie": "update",
+      "premiereDetection": "2026-10-24",
+      "derniereVerification": "2026-10-31",
+      "statut": "UPDATED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "gamerfuzion (patch notes officiels Pawprint/Steam, 27/10)",
+        "playnews.gg",
+        "aniimotools.dev"
+      ],
+      "sourceOriginale": "playnews.gg — Aniimo Season 1 Part II preview",
+      "potentielSEO": "eleve (vertical Aniimo data-driven)",
+      "trendScore": 70,
+      "pagesZoneblox": [
+        "/games/aniimo/ (data-driven)"
+      ],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "Ingérer les données créatures officielles (51 Aniimo) quand la liste détaillée + stats seront publiées ; vérifier d'éventuels codes de lancement de la Part II.",
+      "notes": "30/10: feed corrigé avec les PATCH NOTES OFFICIELS (Pawprint/Steam, via gamerfuzion 27/10) — supersèdent la roadmap du 29/10. Chiffres corrigés: 51 nouveaux Aniimo (pas 32) dont Jaguaraun (1er co-créé communauté), niveau max 70, Spar 4v4 (pas 1v1), Egg Heist PvP 3 équipes (en test), Magical Wonder Night jusqu'au 10/12. LIVE après maintenance 28-29/10. Aucun code annoncé. Stats des 51 créatures NON ingérées (données officielles détaillées attendues) — ne pas inventer. | 31/10: feed a jour; stats detaillees des 51 creatures toujours pas publiees en donnees officielles structurees -> NON ingerees (pas d_invention). Aucun code de lancement annonce."
+    },
+    {
+      "id": "aotr-inflated-2026-10-24",
+      "jeu": "Attack on Titan Revolution",
+      "sujet": "Liste codes gonflee (21) vs sources (2 actifs)",
+      "categorie": "codes",
+      "premiereDetection": "2026-10-24",
+      "derniereVerification": "2026-10-24",
+      "statut": "MONITOR",
+      "importance": "moyenne",
+      "confiance": "moyenne",
+      "sources": [
+        "dexerto 02/10"
+      ],
+      "sourceOriginale": "dexerto 3333301",
+      "potentielSEO": "moyen",
+      "trendScore": 40,
+      "pagesZoneblox": [
+        "codes-attack-on-titan-revolution.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-attack-on-titan-revolution.html",
+      "prochaineAction": "Page liste 21 codes; Dexerto 02/10 n'en confirme que 2 actifs (WZINS+TERRA70K, tous deux presents). Besoin preuve d'expiration (§4) + 2 sources concordantes avant tout prune. Ne rien supprimer.",
+      "notes": "Candidat prune mais regle anti-suppression sans preuve maintenue."
+    },
+    {
+      "id": "run-2026-10-24-05h",
+      "jeu": "(run log)",
+      "sujet": "Run 05h full maintenance + editorial 24/10 (samedi) — 0 edition, kill switch",
+      "categorie": "run",
+      "premiereDetection": "2026-10-24",
+      "derniereVerification": "2026-10-24",
+      "statut": "PUBLISHED",
+      "importance": "normale",
+      "confiance": "elevee",
+      "sources": [],
+      "sourceOriginale": null,
+      "potentielSEO": null,
+      "trendScore": null,
+      "pagesZoneblox": [],
+      "articleCree": false,
+      "url": null,
+      "prochaineAction": "Voir EDITORIAL-QUEUE.md + rapport-zoneblox-2026-10-24.md",
+      "notes": "0 edition de codes, 0 nouvelle page. Cibles sous kill switch (grimoires-era conflit 3 voies, rivals version-dependent, fisch non verifiable, anime-battle-rng sources syndiquees) ou confirmees inchangees (steal-a-brainrot, anime-vanguards, grow-a-garden). haze-piece PHANTOMSHIP/OKUCHI a 2/3 sources. Aucune regeneration (aucun contenu site modifie). News: Aniimo S1 Part II 29/10 (a preparer), GTA6 inchange, FC26 naming en attente Peter."
+    },
+    {
+      "id": "sell-fries-halloween-2026-10-25",
+      "jeu": "Sell Fries",
+      "sujet": "Content gap comble: page passee de 0 a 1 code (Halloween, 100 Candies - evenement Halloween)",
+      "categorie": "codes",
+      "premiereDetection": "2026-10-25",
+      "derniereVerification": "2026-10-25",
+      "statut": "PUBLISHED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "ProGameGuides (24/10)",
+        "Dexerto (21/10)",
+        "games.gg (21/10)"
+      ],
+      "sourceOriginale": "Veille rotation 05h 25/10",
+      "potentielSEO": "long-tail 'codes sell fries' (faible difficulte, page auparavant vide)",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "codes-sell-fries.html",
+        "index.html (const GAMES)",
+        "tous-les-codes.html",
+        "data/codes.json",
+        "sitemap.xml"
+      ],
+      "articleCree": true,
+      "url": "https://zoneblox.com/codes-sell-fries.html",
+      "prochaineAction": "Revalider 'Halloween' + surveiller les 4 codes mono-source (4000Members, FreeCandy, CoolCode, 3000members) pour 2e source.",
+      "notes": "'Halloween' confirme par 3 sources (meme recompense 100 Candies). Les 4 autres codes ProGameGuides restent mono-source -> non publies. Recit 'aucun code' de la page inverse proprement. QC OK."
+    },
+    {
+      "id": "tap-simulator-reborn-halloween-2026-10-25",
+      "jeu": "Tap Simulator REBORN",
+      "sujet": "Content gap comble: page passee de 0 a 2 codes Halloween (BOO!, SPOOKY)",
+      "categorie": "codes",
+      "premiereDetection": "2026-10-25",
+      "derniereVerification": "2026-10-25",
+      "statut": "PUBLISHED",
+      "importance": "moyenne",
+      "confiance": "MEDIUM",
+      "sources": [
+        "Dexerto (20/10, 'premiere fournee de codes')",
+        "games.gg (21/10)"
+      ],
+      "sourceOriginale": "Veille rotation 05h 25/10",
+      "potentielSEO": "long-tail 'codes tap simulator reborn' (page auparavant vide, 1ers codes du jeu)",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "codes-tap-simulator-reborn.html",
+        "index.html (const GAMES)",
+        "tous-les-codes.html",
+        "data/codes.json",
+        "sitemap.xml"
+      ],
+      "articleCree": true,
+      "url": "https://zoneblox.com/codes-tap-simulator-reborn.html",
+      "prochaineAction": "Reverifier la CASSE de SPOOKY (Dexerto 'spooky' minuscule vs games.gg 'SPOOKY' majuscules) - retenu majuscules; corriger si infirme.",
+      "notes": "2 sources concordent sur l'existence de BOO! et SPOOKY (recompenses identiques). Casse de SPOOKY ambigue -> majuscules retenues (games.gg explicite + style BOO!). Jeu souvent case-insensitive. Recit 'tout code est faux' inverse proprement. QC OK."
+    },
+    {
+      "id": "run-2026-10-25-05h",
+      "jeu": "(run log)",
+      "sujet": "Run 05h full 25/10 (dimanche, pas de Jeu de la semaine) - 2 content gaps combles (sell-fries +1, tap-sim-reborn +2) + 8 hot games verifies + 6 stubs",
+      "categorie": "run-log",
+      "premiereDetection": "2026-10-25",
+      "derniereVerification": "2026-10-25",
+      "statut": "PUBLISHED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "Dexerto",
+        "ProGameGuides",
+        "games.gg",
+        "Roonby",
+        "Samlover",
+        "DigitalCitizen",
+        "PlayNews"
+      ],
+      "sourceOriginale": "Run planifie 05h",
+      "potentielSEO": "2 pages vides -> contenu frais + fraicheur verifDate sur 16 pages",
+      "trendScore": 0,
+      "pagesZoneblox": [
+        "16 pages codes-*.html (2 editees + 14 verifDate)",
+        "index.html",
+        "tous-les-codes.html",
+        "data/codes.json",
+        "sitemap.xml",
+        "tools/code-watch.json"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "15h/22h: Aniimo S1 Part II (29/10, data-driven, ne rien publier avant l'officiel) ; grimoires-era source officielle ; rivals source fraiche ; desambiguiser button-rng-2 & chicken-farm via placeId.",
+      "notes": "Hot verifies (confirmes inchanges/monitor): blox-fruits (Dexerto 19/10 'no new'), blue-lock-rivals (Dexerto 18/10 = 4 codes identiques; SPOOKY/SKELETON/AIKUCHANGES roonby seul -> MONITOR), volleyball-legends (Samlover 13/10 identique), anime-vanguards (14 codes anniv, pas de preuve d'expiration), fisch (ChapelTroubles mono-source roonby -> MONITOR), grow-a-garden, king-legacy, blade-ball. Stubs: ride-a-dino/my-gaming-cafe/steal-from-the-rich/chop-a-forest confirmes SANS code; button-rng-2 & chicken-farm = source same-name mais identite non confirmee (pas de placeId) -> kill switch 'a reverifier'. GTA6 evergreen inchange (preload 12/11, sortie 19/11). FC live=FC26 (naming en attente Peter). Steal an Egg toujours viral (page existante)."
+    },
+    {
+      "id": "run-2026-10-26-05h",
+      "jeu": "(run log)",
+      "sujet": "Run 05h full 26/10 (lundi) - 2 corrections codes (hypershot -ONEBILLION expire ; 100-days +SPOOKY Halloween) + 12 hot/rotation verifies + Aniimo reverifie",
+      "categorie": "run-log",
+      "premiereDetection": "2026-10-26",
+      "derniereVerification": "2026-10-26",
+      "statut": "PUBLISHED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "Dexerto",
+        "ProGameGuides",
+        "RobloxDen",
+        "Nerdschalk",
+        "Samlover",
+        "Destructoid",
+        "mein-mmo",
+        "TryhardGuides",
+        "Roonby"
+      ],
+      "sourceOriginale": "Run planifie 05h (lundi)",
+      "trendScore": 0,
+      "potentielSEO": "1 code mort retire + 1 code live ajoute (fraicheur) ; verifDate rafraichie sur 12 pages ; Aniimo verifie",
+      "pagesZoneblox": [
+        "codes-hypershot.html (ONEBILLION->expire, 0 actif)",
+        "codes-100-days-at-sea.html (+SPOOKY, 1 actif)",
+        "11 codes-*.html verifDate 26/10",
+        "data/aniimo/codes.json",
+        "data/codes.json",
+        "sitemap.xml",
+        "tools/code-watch.json"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "15h/22h + 05h 27/10: Aniimo S1 Part II (29/10, data-driven apres l'officiel) ; FischFright (ChapelTroubles/CAVERN 2e source) ; spin-a-soccer-card & rotation backlog (151 en retard) ; grimoires-era/rivals ; GTA6 Newswire (preload 12/11).",
+      "notes": "CHANGEMENTS: hypershot ONEBILLION retire (expire, 2 sources Dexerto.fr 01/10 + Dexerto.com) -> page 0 code ; 100-days-at-sea SPOOKY ajoute (20 Pearls, Halloween ; 2 sources ProGameGuides 24/10 + RobloxDen 26/10). CONFIRMES INCHANGES (verifDate 26/10): steal-a-brainrot (BESTBRAINROTEVER, Dexerto 12/10), volleyball-legends (UPDATE_91/REPLAYS/MVP), grow-a-garden (RDCAward/BEANORLEAVE10, 2 sources), blue-lock-rivals (4 codes, roonby mod 24/10), pet-simulator-99 (0 code), anime-vanguards (14 codes, notre liste plus fraiche), fisch (3/4 confirmes Dexerto), steal-an-egg (0 - pas de systeme de codes), grow-a-garden-2 (4 codes = ProGameGuides 14/10). CANDIDATS MONITOR: 100-days RIVAL (conflit), fisch CAVERN/ChapelTroubles (mono-source), spin-a-soccer-card (conflit total -> kill switch). Aniimo: 15 codes reconfirmes (mein-mmo 09/10), aniimazingfroyo expire mono-source US-only -> surveille. GTA6 inchange. FC naming (FC27 live vs vertical) tjrs en attente Peter. Jeu de la semaine: marqueurs FEATURED-WEEK absents du HTML -> etape non executable, escalade Peter. Rotation backlog 151 pages (chronique)."
+    },
+    {
+      "id": "run-2026-10-27-05h",
+      "jeu": "(run log)",
+      "sujet": "Run 05h full maintenance + editorial 27/10 (mardi) - FC27 Ultimate Scream publie + anime-last-stand reverifie",
+      "categorie": "run-log",
+      "premiereDetection": "2026-10-27",
+      "derniereVerification": "2026-10-27",
+      "statut": "PUBLISHED",
+      "importance": "moyenne",
+      "confiance": "haute",
+      "sources": [
+        "fut.gg",
+        "dexerto",
+        "forbes",
+        "playnews.gg"
+      ],
+      "sourceOriginale": "run interne",
+      "potentielSEO": "-",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "/games/fc-27/guides/sbc-solutions/",
+        "/games/fc-27/guides/meilleurs-joueurs-meta/",
+        "codes-anime-last-stand.html"
+      ],
+      "articleCree": true,
+      "url": "rapport-zoneblox-2026-10-27.md",
+      "prochaineAction": "Voir PRIORITES PROCHAIN RUN dans EDITORIAL-QUEUE.md (Aniimo 29/10, FC27 Team 2 ~30/10, GTA6 Newswire, rotation backlog, fruit-battlegrounds a reverifier).",
+      "notes": "1 promo FC27 publiee (Ultimate Scream, 2 guides data-driven). 1 code-page reverifiee (anime-last-stand, verifDate 27/10). Hot games croises stables (sources recyclees -> pas de changement). fruit-battlegrounds laisse en l'etat (conflit source stale). Regen OK, QC OK."
+    },
+    {
+      "id": "halloween-2026-coverage",
+      "jeu": "Multi (hotGames)",
+      "sujet": "Couverture des events Halloween 2026 par guides (règle standing guides d'événements)",
+      "categorie": "evenement saisonnier / programme editorial",
+      "premiereDetection": "2026-10-27",
+      "derniereVerification": "2026-10-27",
+      "statut": "UPDATE_REQUIRED",
+      "importance": "haute",
+      "confiance": "moyenne",
+      "sources": [
+        "pockettactics (ghoul garden - 2025)",
+        "progameguides",
+        "findingdulcinea",
+        "iggm (part II - 2025)",
+        "dexerto"
+      ],
+      "sourceOriginale": "demande Peter 27/10 + scan hotGames",
+      "potentielSEO": "tres eleve (requetes saisonnieres Halloween, fort trafic)",
+      "trendScore": 80,
+      "pagesZoneblox": [
+        "guides/grow-a-garden.html",
+        "guides/fisch.html",
+        "guides/steal-a-brainrot.html",
+        "guides/adopt-me.html",
+        "codes-100-days-at-sea.html"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "Confirmer les DETAILS 2026 (dates/recompenses/pets) sur source fraiche/officielle (Discord/Trello/X ou media date 2026) AVANT publication. Puis UPDATE before CREATE: ajouter une section 'Evenement Halloween en cours' datee au guide existant de chaque hotGame concerne. Retirer a la fin de l'event.",
+      "notes": "27/10: events Halloween CONFIRMES existants (Grow a Garden Ghoul Garden, Fisch FischFright, Steal a Brainrot brainrots Halloween, Adopt Me). MAIS web pollue par donnees 2025 recyclees (pockettactics=11-25 oct 2025; iggm Part II=25 oct 2025) -> specifics 2026 NON confirmes -> RIEN publie (kill switch, pas d'invention). 100-days-at-sea: code SPOOKY Halloween deja publie (26/10, 2 sources 2026). Regle 'guides d'evenements' ajoutee a CLAUDE.md (standing, tous les runs)."
+    },
+    {
+      "categorie": "nouveau jeu",
+      "premiereDetection": "2026-10-27",
+      "derniereVerification": "2026-10-27",
+      "statut": "PUBLISHED",
+      "importance": "moyenne",
+      "confiance": "haute",
+      "potentielSEO": "moyen-eleve",
+      "trendScore": null,
+      "articleCree": true,
+      "id": "venom-evolution-2026-10-27",
+      "jeu": "+1 Venom Evolution",
+      "sujet": "Nouveau jeu ajoute (la totale) - codes + guide + tier list",
+      "sources": [
+        "dexerto.com (26/10)",
+        "robloxden.com (27/10)",
+        "roblox.com (officiel)"
+      ],
+      "sourceOriginale": "demande Peter + Roblox officiel",
+      "pagesZoneblox": [
+        "codes-1-venom-evolution.html",
+        "guides/1-venom-evolution.html",
+        "tier-list/1-venom-evolution.html"
+      ],
+      "url": "/codes-1-venom-evolution.html",
+      "prochaineAction": "Suivre les codes (events Halloween HALLOWEEN/UPDATE2 peuvent expirer). Completer la tier list des evolutions quand des noms/seuils fiables existent.",
+      "notes": "6 codes confirmes 2 sources. Jeu de progression/combat (Bottled Potential), World 2 existe. Miniature reelle rbxcdn."
+    },
+    {
+      "categorie": "nouveau jeu",
+      "premiereDetection": "2026-10-27",
+      "derniereVerification": "2026-10-27",
+      "statut": "PUBLISHED",
+      "importance": "moyenne",
+      "confiance": "moyenne",
+      "potentielSEO": "moyen-eleve",
+      "trendScore": null,
+      "articleCree": true,
+      "id": "hike-for-eggs-2026-10-27",
+      "jeu": "Hike For Eggs",
+      "sujet": "Nouveau jeu ajoute (la totale) - page codes honnete (aucun code) + guide + tier list",
+      "sources": [
+        "roblox.com (officiel)"
+      ],
+      "sourceOriginale": "demande Peter + Roblox officiel",
+      "pagesZoneblox": [
+        "codes-hike-for-eggs.html",
+        "guides/hike-for-eggs.html",
+        "tier-list/hike-for-eggs.html"
+      ],
+      "url": "/codes-hike-for-eggs.html",
+      "prochaineAction": "Surveiller l'apparition d'un systeme de codes. Completer la tier list des 18 paliers/mutations quand une source fiable existe.",
+      "notes": "AUCUN code confirme (honnete, pas d'invention). Jeu grimpe/vol d'oeufs/collection (100+ animaux, 18 paliers chevre->dragon). Miniature reelle rbxcdn."
+    },
+    {
+      "id": "volleyball-upd93-2026-10-28",
+      "jeu": "Volleyball Legends",
+      "sujet": "Update 93 'Cursed Tournaments' - rotation des codes (UPDATE_93/CURSED/TOURNAMENT)",
+      "categorie": "codes",
+      "premiereDetection": "2026-10-28",
+      "derniereVerification": "2026-10-28",
+      "statut": "PUBLISHED",
+      "importance": "haute",
+      "confiance": "haute",
+      "sources": [
+        "timesaver.gg (24/10)",
+        "roonby.com (24/10)"
+      ],
+      "sourceOriginale": "TimeSaver.gg + Roonby",
+      "potentielSEO": "fort (hotGame, MAJ frequentes)",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-volleyball-legends.html"
+      ],
+      "articleCree": true,
+      "url": "rapport-zoneblox-2026-10-28.md",
+      "prochaineAction": "Reverifier a chaque Update (codes VL ephemeres par patch). Surveiller @Protori_ / Discord.",
+      "notes": "Page passee de UPDATE_91/REPLAYS/MVP a UPDATE_93/CURSED/TOURNAMENT (3 actifs, Lvl 15 requis). UPDATE_91/REPLAYS/MVP + UPDATE_92/MAMORI/PARRY passes en expires. 2 sources fraiches concordantes. dateModified + verifDate + JSON-LD synchronises."
+    },
+    {
+      "id": "fisch-fischfright-2026-10-28",
+      "jeu": "Fisch",
+      "sujet": "FischFright (Halloween) 2026 - aucun nouveau code",
+      "categorie": "event",
+      "premiereDetection": "2026-10-28",
+      "derniereVerification": "2026-10-29",
+      "statut": "PUBLISHED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "pockettactics.com (07/10)"
+      ],
+      "sourceOriginale": "Pocket Tactics",
+      "potentielSEO": "saisonnier",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-fisch.html",
+        "guides/fisch.html"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "Confirmer la récompense exacte de FischFright2026; revérifier Mariana/TemporarySubmarine (preuve expiration).",
+      "notes": "29/10: FischFright2026 confirmé ACTIF par 2 sources (TimeSaver 27/10 — expire 09/11 — + Roonby 24/10). Ajouté aux codes actifs de Fisch (scarlet + CARBON aussi confirmés). MarianaIsGoingCrazy et TemporarySubmarine conservés (non listés actifs par TimeSaver mais aucune preuve d'expiration — règle §4) → à revérifier avec 2e source."
+    },
+    {
+      "id": "run-2026-10-28-05h",
+      "jeu": "(run log)",
+      "sujet": "Run 05h full maintenance + editorial 28/10 (mercredi) - Volleyball Legends Update 93 + 5 hotGames reverifies",
+      "categorie": "run-log",
+      "premiereDetection": "2026-10-28",
+      "derniereVerification": "2026-10-28",
+      "statut": "PUBLISHED",
+      "importance": "moyenne",
+      "confiance": "haute",
+      "sources": [
+        "timesaver.gg",
+        "roonby.com",
+        "pockettactics.com",
+        "dexerto.com",
+        "gfinityesports.com",
+        "fut.gg"
+      ],
+      "sourceOriginale": "run interne",
+      "potentielSEO": "-",
+      "trendScore": null,
+      "pagesZoneblox": [
+        "codes-volleyball-legends.html",
+        "codes-blox-fruits.html",
+        "codes-fisch.html",
+        "codes-steal-a-brainrot.html",
+        "codes-king-legacy.html",
+        "codes-grow-a-garden.html"
+      ],
+      "articleCree": true,
+      "url": "rapport-zoneblox-2026-10-28.md",
+      "prochaineAction": "Voir PRIORITES PROCHAIN RUN dans EDITORIAL-QUEUE.md (Aniimo update officiel 29/10, FC27 Team 2 ~30/10, GTA6 Newswire, Blue Lock Rivals source officielle, rotation backlog).",
+      "notes": "1 vrai changement de codes (Volleyball Legends -> Update 93, 2 sources). 5 hotGames reverifies inchanges (verifDate 28/10). Blue Lock Rivals kill switch (conflit 3 voies). Fisch FischFright: rien a ecrire. GTA6/Aniimo/FC27: rien de nouveau a publier. Regen complete (build_site/home/codes_json/sitemap), QC OK (0 null byte, div=0, node --check OK, 418 URLs sitemap, cache v=48 coherent)."
+    },
+    {
+      "id": "run-2026-10-31-05h",
+      "jeu": "(run log)",
+      "sujet": "Run 05h full maintenance + editorial 31/10 (samedi) — 4 hotGames verifies (blade-ball +GOODVSEVIL ; king-legacy/pet-sim-99/100-days-at-sea inchanges) ; GTA6/FC27/Aniimo monitors",
+      "categorie": "run-log",
+      "premiereDetection": "2026-10-31",
+      "derniereVerification": "2026-10-31",
+      "statut": "PUBLISHED",
+      "importance": "moyenne",
+      "confiance": "HIGH",
+      "sources": [
+        "next-stage.fr",
+        "fossbytes",
+        "robloxden",
+        "gamewave.fr",
+        "pockettactics",
+        "beebom",
+        "opencritic"
+      ],
+      "sourceOriginale": "run interne",
+      "potentielSEO": "-",
+      "trendScore": "-",
+      "pagesZoneblox": [
+        "codes-blade-ball.html",
+        "codes-king-legacy.html",
+        "codes-pet-simulator-99.html",
+        "codes-100-days-at-sea.html"
+      ],
+      "articleCree": false,
+      "url": "",
+      "prochaineAction": "05h 01/11: retirer sections Halloween (sauf FischFright2026 <=09/11); FC27 Team 2 (confirmation propre); backlog rotation (31 jamais verifiees).",
+      "notes": "1 code ajoute (blade-ball GOODVSEVIL, 2 sources) -> 1339 codes actifs total. MONITOR: SORRY4DELAY/LIVEEVENTS (conflit), RIVAL/100days (1 source+conflit hist.), ChapelTroubles/Fisch, 2ndAnniDay7/AV, torigate/GAG (mono-source)."
+    }
+  ]
 }
