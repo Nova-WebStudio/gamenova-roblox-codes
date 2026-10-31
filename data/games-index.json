@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-31",
- "count": 198,
+ "count": 200,
  "games": [
   {
    "name": "Aniimo",
@@ -170,6 +170,52 @@
    ],
    "platformLabel": "Roblox",
    "genreLabel": "Événement Halloween / Survie"
+  },
+  {
+   "name": "Throw Food For Animals",
+   "slug": "throw-food-for-animals",
+   "url": "/codes-throw-food-for-animals.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-10-31",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-e8b4deada30535db18163fe79a016492/768/432/Image/Png/noFilter",
+   "cts": [
+    "Codes",
+    "Guides",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
+  },
+  {
+   "name": "Steal A Pet And Ride It",
+   "slug": "steal-a-pet-and-ride-it",
+   "url": "/codes-steal-a-pet-and-ride-it.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Simulateur"
+   ],
+   "updated": "2026-10-31",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-2c31c54f52a3a79ef8c069711d76e346/768/432/Image/Png/noFilter",
+   "cts": [
+    "Codes",
+    "Guides",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Simulateur"
   },
   {
    "name": "+1 Anime Eyes",

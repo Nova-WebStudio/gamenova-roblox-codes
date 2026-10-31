@@ -79,3 +79,31 @@ Descriptions in-game / notices via médias fiables datés (next-stage.fr, fossby
 ---
 
 **Pour publier** : dans le dossier GameNova, lance `git add -A && git commit -m "MAJ Zoneblox du jour" && git push origin main`. Hostinger déploie automatiquement après le push. (Si `.git/index.lock` bloque : `del ".git\index.lock"` puis relance.)
+
+---
+
+# SESSION INTERACTIVE (après le run 05h) — « la totale » sur 2 jeux (demande de Peter)
+
+Peter a demandé **la totale** (codes + guide + tier list, dans le ton du site) sur deux jeux Roblox qui montent, confirmés très populaires via l'API Roblox :
+
+- **Throw Food For Animals** (Goofy Chupacabra) — **129 695 joueurs simultanés, 19,3 M de visites**. universeId 10766972131.
+- **Steal A Pet And Ride It** (Snail Riders) — **44 538 joueurs simultanés, 11,6 M de visites**. universeId 10769315427.
+
+### Décisions clés (exactitude > fraîcheur)
+- **Aucun des deux jeux n'a de système de codes** (vérifié : gamewave 28/10 pour Throw Food ; aucune source propre pour Steal A Pet, à ne pas confondre avec « Ride a Pet »/« Steal a Ride »). → Les 2 **pages codes sont honnêtes** (« aucun code confirmé ») — ce qui est aussi la bonne réponse SEO pour « codes <jeu> ». Jamais de code inventé.
+- **Tier lists = priorités de progression** (choix validé par Peter) : classement des systèmes du jeu basé **uniquement sur la description officielle**, pas de stats d'items inventées (même modèle que la tier list 1-anime-eyes).
+- **Vraies miniatures** `tr.rbxcdn.com` (API officielle), jamais de SVG en src.
+
+### Livré (6 pages + intégrations)
+- `codes-throw-food-for-animals.html`, `guides/throw-food-for-animals.html`, `tier-list/throw-food-for-animals.html`
+- `codes-steal-a-pet-and-ride-it.html`, `guides/steal-a-pet-and-ride-it.html`, `tier-list/steal-a-pet-and-ride-it.html`
+- Intégrations : `const GAMES` (index.html), `ROBLOX_THUMBS` + `ROBLOX_UNIVERSE_IDS` (js/main.js), cartes sur `tous-les-codes.html` / `guides.html` / `tier-lists.html`, **+6 URLs au sitemap**, cross-links codes↔guide↔tier, bandeau CTA `data-cta="guidelink"` unique sur les pages codes.
+- **Cache bump `main.js?v=48` → `v=49`** sur 192 pages (main.js modifié). /avatar/ laissé en v=43 (hors périmètre).
+- Régénération : build_site → build_home → build_codes_json (201 jeux) → build_sitemap (427 URLs).
+
+### QC
+0 déséquilibre `<div>` (hors /avatar/) ; 0 null byte ; les 6 pages finissent par `</html>` ; GA4 présent ; CTA `guidelink` unique sur les pages codes ; `node --check js/main.js` OK ; `data/codes.json` + `data/games-index.json` valides (2 jeux présents, 0 code) ; `sitemap.xml` XML valide (`</urlset>`) ; 0 page en `v=48` hors /avatar/.
+
+### Reste (non bloquant)
+- **Épingles Pinterest** des 2 jeux (génération cloud) : voir ci-dessous / à générer.
+- Tier lists d'items détaillées : à créer **quand** des données communautaires fiables (2 sources) existeront.

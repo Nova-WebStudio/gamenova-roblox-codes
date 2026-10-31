@@ -1996,6 +1996,37 @@
       "url": "",
       "prochaineAction": "05h 01/11: retirer sections Halloween (sauf FischFright2026 <=09/11); FC27 Team 2 (confirmation propre); backlog rotation (31 jamais verifiees).",
       "notes": "1 code ajoute (blade-ball GOODVSEVIL, 2 sources) -> 1339 codes actifs total. MONITOR: SORRY4DELAY/LIVEEVENTS (conflit), RIVAL/100days (1 source+conflit hist.), ChapelTroubles/Fisch, 2ndAnniDay7/AV, torigate/GAG (mono-source)."
+    },
+    {
+      "id": "totale-2games-2026-10-31",
+      "jeu": "Throw Food For Animals / Steal A Pet And Ride It",
+      "sujet": "La totale (codes+guide+tier) sur 2 nouveaux jeux tendance (demande de Peter, session interactive)",
+      "categorie": "conquete",
+      "premiereDetection": "2026-10-31",
+      "derniereVerification": "2026-10-31",
+      "statut": "PUBLISHED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "roblox API (universe/thumbnails/games)",
+        "gamewave.fr",
+        "roblox game description"
+      ],
+      "sourceOriginale": "demande Peter",
+      "potentielSEO": "eleve (codes <jeu> long-tail, 2 jeux a fort trafic)",
+      "trendScore": "~85 (Throw Food: 129k joueurs/19.3M visites ; Steal A Pet: 44k/11.6M visites)",
+      "pagesZoneblox": [
+        "codes-throw-food-for-animals.html",
+        "guides/throw-food-for-animals.html",
+        "tier-list/throw-food-for-animals.html",
+        "codes-steal-a-pet-and-ride-it.html",
+        "guides/steal-a-pet-and-ride-it.html",
+        "tier-list/steal-a-pet-and-ride-it.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-throw-food-for-animals.html",
+      "prochaineAction": "Surveiller l arrivee de vrais codes (aucun systeme de codes a ce jour, gamewave 28/10). Ingerer des tier lists d items quand des donnees fiables 2 sources existeront.",
+      "notes": "Les 2 jeux n ont PAS de systeme de codes -> pages codes honnetes (aucun code confirme). Tier lists = priorites de progression (pas de stats inventees, choix Peter). Vraies miniatures tr.rbxcdn. main.js (ROBLOX_THUMBS/UNIVERSE_IDS) + const GAMES + hubs + sitemap MAJ ; cache bump v=48->v=49 (192 pages). Steal A Pet: ne pas confondre avec Ride a Pet / Steal a Ride (jeux differents)."
     }
   ]
 }

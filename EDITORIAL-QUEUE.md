@@ -34,7 +34,11 @@
 
 ## 🟢 À PUBLIER
 
-_(rien de neuf)_ — aucun nouveau jeu avec preuve d'intérêt multi-source **+ codes réels** détecté (recherches overnight = listicles SEO / dumps recyclés). Kill switch, 0 nouvelle URL.
+- **✅ FAIT (session interactive, demande Peter) — « la totale » sur 2 nouveaux jeux tendance :**
+  - **Throw Food For Animals** (129k joueurs / 19,3M visites) — codes + guide + tier list (priorités). **Aucun système de codes** → page codes honnête.
+  - **Steal A Pet And Ride It** (44k joueurs / 11,6M visites) — codes + guide + tier list (priorités). **Aucun système de codes** → page codes honnête (pet légendaire gratuit via groupe Snail Riders signalé).
+  - Intégrations complètes :  (index), / (main.js), hubs (tous-les-codes / guides / tier-lists), sitemap (+6 URLs), vraies miniatures , cross-links codes↔guide↔tier, cache bump **v=48→v=49** (192 pages). ⇒ **À pousser.**
+- _(reste)_ aucun autre nouveau jeu avec preuve d'intérêt multi-source détecté via la veille overnight.
 
 ## 🛠️ À METTRE À JOUR (candidats near-ready)
 
