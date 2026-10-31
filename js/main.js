@@ -3,6 +3,7 @@
    ============================================================ */
 
 const ROBLOX_THUMBS = {
+'arise-crossover': 'https://tr.rbxcdn.com/180DAY-2fee873de8538afd75eef3503ade8a10/768/432/Image/Png/noFilter',
 'throw-food-for-animals': 'https://tr.rbxcdn.com/180DAY-e8b4deada30535db18163fe79a016492/768/432/Image/Png/noFilter',
 'steal-a-pet-and-ride-it': 'https://tr.rbxcdn.com/180DAY-2c31c54f52a3a79ef8c069711d76e346/768/432/Image/Png/noFilter',
 '1-venom-evolution': 'https://tr.rbxcdn.com/180DAY-f06fb48cf43e99da09f87ebe493c47d3/768/432/Image/Webp/noFilter',
@@ -480,6 +481,7 @@ function highlightNav() {
 
 /* ---- Miniatures Roblox officielles (chargées via proxy /api/thumbnails si dispo) ---- */
 const ROBLOX_UNIVERSE_IDS = {
+'arise-crossover': 7074860883,
 'throw-food-for-animals': 10766972131,
 'steal-a-pet-and-ride-it': 10769315427,
   'ride-a-dino': 10758824872,

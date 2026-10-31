@@ -107,3 +107,25 @@ Peter a demandé **la totale** (codes + guide + tier list, dans le ton du site) 
 ### Reste (non bloquant)
 - **Épingles Pinterest** des 2 jeux (génération cloud) : voir ci-dessous / à générer.
 - Tier lists d'items détaillées : à créer **quand** des données communautaires fiables (2 sources) existeront.
+
+---
+
+# SESSION INTERACTIVE — Arise Crossover : la totale + mise en vedette (demande de Peter)
+
+Peter a signalé une mise à jour sur **Arise Crossover** (RPG anime Solo Leveling, **1 012 902 167 visites / 2,74 M favoris** — un mastodonte) et demandé la totale sur cette MAJ + la mise en vedette du jeu.
+
+### Mise à jour couverte : « Nuit des Monarques » (Halloween)
+Identifiée et sourcée via la **description officielle du jeu** (Roblox, datée du 31/10/2026) — source officielle = suffisante (§3 Option B). Contenu : 3 îles d'Halloween + nouvelle île 30, raid de la Porte des friandises ou des farces, Passe des cauchemars (200 niveaux d'ombres + arme + montures), soirée d'Halloween toutes les 2 h (Roi des citrouilles), 26 nouvelles ombres, nouveaux rangs **GL / GL+**, nouveau système de guilde. Event hebdomadaire **jusqu'à Noël**.
+
+### Codes (7, source OFFICIELLE)
+`NIGHTFALLS`, `WEAREBACK`, `ARISECROSSOVER`, `PUMPKINHOLLOW`, `MONARCHSNIGHT`, `SOULCANDY`, `1BGZIRU` — confirmés par la description officielle du jeu. ⚠️ Les sources tierces (100+ codes « recyclés », dates 2025) ont été **écartées** (périmées/contradictoires) : on ne retient que l'officiel. Rewards exactes non détaillées par les devs → libellés honnêtes, aucun montant inventé.
+
+### Livré (3 pages + intégrations + vedette + épingle)
+- `codes-arise-crossover.html` (7 codes + section dédiée à la MAJ), `guides/arise-crossover.html`, `tier-list/arise-crossover.html` (priorités de progression, honnête).
+- Intégrations : `const GAMES` (**placé en 1er** pour la vedette), `ROBLOX_THUMBS` + `ROBLOX_UNIVERSE_IDS` (main.js), cartes hubs, +3 URLs sitemap, cross-links, vraie miniature `tr.rbxcdn`.
+- **Mise en vedette** : Arise Crossover est désormais **#1 des « Jeux du moment »** sur l'accueil (tag « new », date du jour) + tête de catalogue.
+- **Épingle Pinterest** générée (avec l'art du jeu, tableau « Codes Roblox ») — dans la file, **non publiée** (à ta main, cadence anti-spam).
+- Build (202 jeux, **1346 codes**, sitemap 430 URLs) + QC clean.
+
+### QC
+0 déséquilibre `<div>` (hors /avatar/) ; 0 null byte ; les 3 pages finissent par `</html>` ; GA4 + CTA `guidelink` unique (codes) ; vraie miniature ; `node --check js/main.js` OK ; `codes.json` (arise = 7 codes) + `sitemap.xml` valides ; 0 page en `v=48` hors /avatar/.

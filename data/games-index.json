@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-31",
- "count": 200,
+ "count": 201,
  "games": [
   {
    "name": "Aniimo",
@@ -170,6 +170,29 @@
    ],
    "platformLabel": "Roblox",
    "genreLabel": "Événement Halloween / Survie"
+  },
+  {
+   "name": "Arise Crossover",
+   "slug": "arise-crossover",
+   "url": "/codes-arise-crossover.html",
+   "source": "roblox",
+   "platforms": [
+    "Roblox"
+   ],
+   "genres": [
+    "Anime"
+   ],
+   "updated": "2026-10-31",
+   "new": true,
+   "hot": false,
+   "thumb": "https://tr.rbxcdn.com/180DAY-2fee873de8538afd75eef3503ade8a10/768/432/Image/Png/noFilter",
+   "cts": [
+    "Codes",
+    "Guides",
+    "Tier list"
+   ],
+   "platformLabel": "Roblox",
+   "genreLabel": "Anime"
   },
   {
    "name": "Throw Food For Animals",

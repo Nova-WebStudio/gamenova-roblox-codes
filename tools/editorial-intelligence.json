@@ -2027,6 +2027,33 @@
       "url": "/codes-throw-food-for-animals.html",
       "prochaineAction": "Surveiller l arrivee de vrais codes (aucun systeme de codes a ce jour, gamewave 28/10). Ingerer des tier lists d items quand des donnees fiables 2 sources existeront.",
       "notes": "Les 2 jeux n ont PAS de systeme de codes -> pages codes honnetes (aucun code confirme). Tier lists = priorites de progression (pas de stats inventees, choix Peter). Vraies miniatures tr.rbxcdn. main.js (ROBLOX_THUMBS/UNIVERSE_IDS) + const GAMES + hubs + sitemap MAJ ; cache bump v=48->v=49 (192 pages). Steal A Pet: ne pas confondre avec Ride a Pet / Steal a Ride (jeux differents)."
+    },
+    {
+      "id": "arise-crossover-monarques-2026-10-31",
+      "jeu": "Arise Crossover",
+      "sujet": "La totale + mise en vedette sur la MAJ Nuit des Monarques (Halloween) — demande Peter",
+      "categorie": "conquete",
+      "premiereDetection": "2026-10-31",
+      "derniereVerification": "2026-10-31",
+      "statut": "PUBLISHED",
+      "importance": "haute",
+      "confiance": "HIGH",
+      "sources": [
+        "description officielle du jeu (Roblox, MAJ 31/10)",
+        "roblox API (universe/thumbnails/games)"
+      ],
+      "sourceOriginale": "description officielle Roblox",
+      "potentielSEO": "tres eleve (1.0B visites, codes <jeu> + MAJ)",
+      "trendScore": "~92 (1,012,902,167 visites ; 2,74M favoris ; RPG Solo Leveling)",
+      "pagesZoneblox": [
+        "codes-arise-crossover.html",
+        "guides/arise-crossover.html",
+        "tier-list/arise-crossover.html"
+      ],
+      "articleCree": true,
+      "url": "/codes-arise-crossover.html",
+      "prochaineAction": "Suivre les updates hebdo de la Nuit des Monarques (jusqu_a Noel) ; retirer les codes d_event a leur expiration ; ajouter les nouveaux codes officiels.",
+      "notes": "7 codes confirmes par la description OFFICIELLE (NIGHTFALLS, WEAREBACK, ARISECROSSOVER, PUMPKINHOLLOW, MONARCHSNIGHT, SOULCANDY, 1BGZIRU). Tier list = priorites de progression (pas de stats inventees). Mis en VEDETTE : 1er de const GAMES -> tete de Jeux du moment. Epingle Pinterest generee (tableau Codes Roblox, avec art). Sources tierces = dumps perimes/recycles -> ecartees, source officielle retenue."
     }
   ]
 }

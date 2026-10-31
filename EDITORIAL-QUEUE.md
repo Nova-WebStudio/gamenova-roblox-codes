@@ -34,6 +34,9 @@
 
 ## 🟢 À PUBLIER
 
+- **✅ FAIT (session interactive, demande Peter) — Arise Crossover : la totale + MISE EN VEDETTE :**
+  - **Arise Crossover** (RPG Solo Leveling, **1,0 Md de visites**) — codes (7, source officielle) + guide + tier list, centrés sur la MAJ **Nuit des Monarques** (Halloween, hebdo jusqu_à Noël).
+  - **En vedette** : #1 des « Jeux du moment » (accueil). Épingle Pinterest générée (non publiée). ⇒ **À pousser.**
 - **✅ FAIT (session interactive, demande Peter) — « la totale » sur 2 nouveaux jeux tendance :**
   - **Throw Food For Animals** (129k joueurs / 19,3M visites) — codes + guide + tier list (priorités). **Aucun système de codes** → page codes honnête.
   - **Steal A Pet And Ride It** (44k joueurs / 11,6M visites) — codes + guide + tier list (priorités). **Aucun système de codes** → page codes honnête (pet légendaire gratuit via groupe Snail Riders signalé).
